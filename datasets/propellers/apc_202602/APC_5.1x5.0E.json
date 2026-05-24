@@ -1,0 +1,9 @@
+{
+  "id": "APC_5.1x5.0E",
+  "manufacturer": "APC",
+  "model": "5.1x5.0E",
+  "diameter_in": 5.1,
+  "pitch_in": 5.0,
+  "blade_count": 2,
+  "data_csv": "APC_5.1x5.0E.csv"
+}

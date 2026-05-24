@@ -1,0 +1,9 @@
+{
+  "id": "APC_13x7",
+  "manufacturer": "APC",
+  "model": "13x7",
+  "diameter_in": 13.0,
+  "pitch_in": 7.0,
+  "blade_count": 2,
+  "data_csv": "APC_13x7.csv"
+}

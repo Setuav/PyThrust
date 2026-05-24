@@ -1,0 +1,9 @@
+{
+  "id": "APC_9x4.4SFR",
+  "manufacturer": "APC",
+  "model": "9x4.4SFR",
+  "diameter_in": 9.0,
+  "pitch_in": 4.4,
+  "blade_count": 2,
+  "data_csv": "APC_9x4.4SFR.csv"
+}

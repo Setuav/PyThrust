@@ -1,0 +1,9 @@
+{
+  "id": "APC_22x13EPN",
+  "manufacturer": "APC",
+  "model": "22x13EPN",
+  "diameter_in": 22.0,
+  "pitch_in": 13.0,
+  "blade_count": 2,
+  "data_csv": "APC_22x13EPN.csv"
+}
