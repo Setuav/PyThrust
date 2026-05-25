@@ -69,7 +69,7 @@ class PropulsionSolver:
             )
             if cp <= 0.0 or ct < 0.0 or j < 0.0:
                 return float("inf")
-            v_motor = v_back + current_a * motor.resistance_ohm
+            v_motor = v_back + current_a * motor.get_winding_resistance(current_a)
             v_applied = throttle * battery.voltage_v
             return v_motor + current_a * system.resistance_ohm - v_applied
 
@@ -144,9 +144,11 @@ class PropulsionSolver:
         ct, cp = prop_entry.get_coefficients(rpm, j)
 
         torque_nm = cp * rho * (n**2) * (propeller.diameter_m**5) / (2.0 * math.pi)
-        kt = 60.0 / (2.0 * math.pi * motor.kv_rpm_per_v)
-        current_a = torque_nm / kt + motor.no_load_current_a
-        v_back = rpm / motor.kv_rpm_per_v
+        kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
+        current_a = torque_nm / kt + motor.get_no_load_current(rpm)
+        
+        # Back-EMF with magnetic lag: V_back = (omega * (1 + tau*omega)) / Kv
+        v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
 
         return ct, cp, j, torque_nm, current_a, v_back
 
@@ -173,7 +175,7 @@ class PropulsionSolver:
         n = max(rpm / 60.0, 1e-6)
         thrust_n = ct * rho * (n**2) * (propeller.diameter_m**4)
         shaft_power_w = cp * rho * (n**3) * (propeller.diameter_m**5)
-        motor_voltage_v = v_back + current_a * motor.resistance_ohm
+        motor_voltage_v = v_back + current_a * motor.get_winding_resistance(current_a)
         motor_power_w = motor_voltage_v * current_a
         battery_power_w = (motor_power_w + (current_a ** 2) * system.resistance_ohm) / max(1e-6, battery.discharge_efficiency)
 

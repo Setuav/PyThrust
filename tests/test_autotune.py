@@ -248,3 +248,73 @@ class TestToSystemSpec:
         spec = result.to_system_spec()
         assert isinstance(spec, SystemSpec)
         assert spec.resistance_ohm == pytest.approx(0.052)
+
+
+class TestSecondOrderMotor:
+    def test_no_load_current_exponent(self):
+        motor = MotorSpec(
+            kv_rpm_per_v=860.0,
+            resistance_ohm=0.025,
+            no_load_current_a=1.3,
+            current_max_a=65.0,
+            no_load_voltage_v=10.0,
+            iron_loss_exponent=1.5,
+        )
+        assert motor.get_no_load_current(8600.0) == pytest.approx(1.3)
+        assert motor.get_no_load_current(17200.0) == pytest.approx(1.3 * (2.0 ** 1.5))
+        assert motor.get_no_load_current(0.0) == pytest.approx(1.3)
+
+    def test_no_load_current_quadratic(self):
+        motor = MotorSpec(
+            kv_rpm_per_v=800.0,
+            resistance_ohm=0.03,
+            no_load_current_a=1.0,
+            current_max_a=50.0,
+            no_load_current_linear=0.02,
+            no_load_current_quadratic=0.005,
+        )
+        omega = 1000.0 * math.pi / 30.0
+        expected = 1.0 + 0.02 * omega + 0.005 * (omega ** 2)
+        assert motor.get_no_load_current(1000.0) == pytest.approx(expected)
+
+    def test_winding_resistance_quadratic(self):
+        motor = MotorSpec(
+            kv_rpm_per_v=800.0,
+            resistance_ohm=0.03,
+            no_load_current_a=1.0,
+            current_max_a=50.0,
+            resistance_quadratic=0.001,
+        )
+        assert motor.get_winding_resistance(10.0) == pytest.approx(0.13)
+        assert motor.get_winding_resistance(0.0) == pytest.approx(0.03)
+
+    def test_solver_with_second_order_parameters(self, prop_entry):
+        motor = MotorSpec(
+            kv_rpm_per_v=860.0,
+            resistance_ohm=0.0258,
+            no_load_current_a=1.3,
+            current_max_a=65.0,
+            torque_constant_kv_ratio=1.02,
+            magnetic_lag_tau=1e-5,
+            no_load_current_linear=0.001,
+            resistance_quadratic=1e-5,
+        )
+        battery = BatterySpec(voltage_v=14.8)
+        system = SystemSpec(resistance_ohm=0.05)
+        propeller = PropellerSpec(diameter_m=0.3302)
+        solver = PropulsionSolver()
+
+        op = solver.solve_operating_point(
+            motor=motor,
+            battery=battery,
+            system=system,
+            propeller=propeller,
+            prop_entry=prop_entry,
+            rho=1.225,
+            airspeed_mps=0.0,
+            throttle=0.7,
+        )
+        assert op.is_feasible
+        assert op.rpm > 3000.0
+        assert op.motor_current_a > 1.0
+        assert op.motor_voltage_v > 0.0
