@@ -1,4 +1,4 @@
-"""Propeller database loader for APC JSON metadata + CSV data files."""
+"""Propeller database loader for JSON metadata + CSV data files."""
 
 from __future__ import annotations
 
@@ -265,7 +265,7 @@ def _load_entry(json_path: Path, data_dir: Path, strict: bool = False) -> Option
 
     data_by_rpm: Dict[float, List[PropellerDataPoint]] = {}
     seen_keys: Dict[float, set[float]] = {}
-    required_cols = {"rpm", "J", "Ct", "Cp"}
+    required_cols = {"rpm", "advance_ratio", "thrust_coeff", "power_coeff"}
     with csv_path.open("r", newline="") as handle:
         reader = csv.DictReader(handle)
         if reader.fieldnames is None or not required_cols.issubset(set(reader.fieldnames)):
@@ -275,9 +275,9 @@ def _load_entry(json_path: Path, data_dir: Path, strict: bool = False) -> Option
         for row in reader:
             try:
                 rpm = _normalize_rpm(float(row["rpm"]))
-                j_value = float(row["J"])
-                ct = float(row["Ct"])
-                cp = float(row["Cp"])
+                j_value = float(row["advance_ratio"])
+                ct = float(row["thrust_coeff"])
+                cp = float(row["power_coeff"])
             except (KeyError, ValueError):
                 if strict:
                     raise ValueError(f"Invalid numeric values in {csv_path.name}")

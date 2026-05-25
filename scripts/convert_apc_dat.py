@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-_COLUMNS = [
+_INPUT_COLUMNS = [
     "V_mph",
     "J",
     "Pe",
@@ -27,6 +27,24 @@ _COLUMNS = [
     "Reyn",
     "FOM",
 ]
+
+_OUTPUT_COLUMNS = [
+    "rpm",
+    "speed_mps",
+    "advance_ratio",
+    "efficiency",
+    "thrust_coeff",
+    "power_coeff",
+    "power_w",
+    "torque_nm",
+    "thrust_n",
+    "thrust_per_power_n_w",
+    "mach",
+    "reynolds",
+    "figure_of_merit",
+]
+
+_MPH_TO_MPS = 0.44704
 
 _RPM_RE = re.compile(r"PROP RPM\s*=\s*(\d+)")
 _MODEL_RE = re.compile(r"(?P<diam>\d+(?:\.\d+)?)x(?P<pitch>\d+(?:\.\d+)?).*")
@@ -71,7 +89,7 @@ def _iter_data_rows(lines: Iterable[str]) -> list[dict[str, float]]:
             continue
 
         parts = stripped.split()
-        if len(parts) < len(_COLUMNS):
+        if len(parts) < len(_INPUT_COLUMNS):
             continue
 
         try:
@@ -79,9 +97,9 @@ def _iter_data_rows(lines: Iterable[str]) -> list[dict[str, float]]:
         except ValueError:
             continue
 
-        values = parts[: len(_COLUMNS)]
+        values = parts[: len(_INPUT_COLUMNS)]
         row = {"rpm": float(rpm)}
-        for key, token in zip(_COLUMNS, values):
+        for key, token in zip(_INPUT_COLUMNS, values):
             row[key] = float(token)
         rows.append(row)
 
@@ -110,9 +128,28 @@ def _convert_file(path: Path, output_dir: Path) -> int:
 
     with csv_path.open("w", newline="") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["rpm", *_COLUMNS])
+        writer.writerow(_OUTPUT_COLUMNS)
         for row in rows:
-            writer.writerow([row["rpm"], *[row[col] for col in _COLUMNS]])
+            speed_mps = row["V_mph"] * _MPH_TO_MPS
+            power_w = row["Pwr_W"]
+            thrust_n = row["Thrust_N"]
+            thrust_per_power = (thrust_n / power_w) if power_w > 0 else 0.0
+            output = {
+                "rpm": row["rpm"],
+                "speed_mps": speed_mps,
+                "advance_ratio": row["J"],
+                "efficiency": row["Pe"],
+                "thrust_coeff": row["Ct"],
+                "power_coeff": row["Cp"],
+                "power_w": power_w,
+                "torque_nm": row["Torque_Nm"],
+                "thrust_n": thrust_n,
+                "thrust_per_power_n_w": thrust_per_power,
+                "mach": row["Mach"],
+                "reynolds": row["Reyn"],
+                "figure_of_merit": row["FOM"],
+            }
+            writer.writerow([output[col] for col in _OUTPUT_COLUMNS])
 
     metadata = {
         "id": prop_id,
