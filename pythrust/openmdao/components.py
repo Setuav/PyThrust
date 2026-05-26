@@ -15,11 +15,8 @@ from pythrust.propulsion import (
 )
 
 
-class PropulsionComponent(om.ImplicitComponent):
-    """OpenMDAO ImplicitComponent wrapping the PyThrust propulsion solver.
-
-    Solves for the equilibrium RPM under torque/voltage balance.
-    """
+class PropulsionComponent(om.ExplicitComponent):
+    """OpenMDAO ExplicitComponent wrapping the PyThrust propulsion solver."""
 
     def initialize(self) -> None:
         self.options.declare(
@@ -45,10 +42,8 @@ class PropulsionComponent(om.ImplicitComponent):
         self.add_input('rho', val=1.225, desc='Air density [kg/m^3]')
         self.add_input('airspeed_mps', val=0.0, desc='Flight airspeed [m/s]')
 
-        # State (Implicit output)
+        # Outputs
         self.add_output('rpm', val=5000.0, desc='Equilibrium shaft speed [RPM]')
-
-        # Explicit outputs
         self.add_output('thrust_n', val=10.0, desc='Generated static/dynamic thrust [N]')
         self.add_output('torque_nm', val=0.2, desc='Propeller shaft torque [N-m]')
         self.add_output('battery_current_a', val=15.0, desc='Battery DC current draw [A]')
@@ -79,28 +74,7 @@ class PropulsionComponent(om.ImplicitComponent):
         )
         return motor, battery, system, propeller
 
-    def apply_nonlinear(self, inputs: om.Vector, outputs: om.Vector, residuals: om.Vector) -> None:
-        motor, battery, system, propeller = self._get_specs(inputs)
-        prop_entry = self.options['prop_entry']
-        rpm = float(outputs['rpm'][0])
-        throttle = float(inputs['throttle'][0])
-        rho = float(inputs['rho'][0])
-        airspeed_mps = float(inputs['airspeed_mps'][0])
-
-        solver = PropulsionSolver()
-        if throttle <= 0.0:
-            residuals['rpm'] = rpm
-            return
-
-        ct, cp, j, torque_nm, current_a, v_back = solver._evaluate_state(
-            motor, propeller, prop_entry, rho, airspeed_mps, rpm
-        )
-        v_motor = v_back + current_a * motor.get_winding_resistance(current_a)
-        v_applied = throttle * battery.voltage_v
-
-        residuals['rpm'] = v_motor + current_a * system.resistance_ohm - v_applied
-
-    def solve_nonlinear(self, inputs: om.Vector, outputs: om.Vector) -> None:
+    def compute(self, inputs: om.Vector, outputs: om.Vector) -> None:
         motor, battery, system, propeller = self._get_specs(inputs)
         prop_entry = self.options['prop_entry']
         throttle = float(inputs['throttle'][0])
