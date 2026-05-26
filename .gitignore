@@ -6,8 +6,8 @@ venv/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# temp.
-docs/
-references/
+
+# output folders
+*_out/
 
 .antigravitycli/

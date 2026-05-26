@@ -167,10 +167,10 @@ def main():
 
     ax3.set_title('Throttle and RPM vs Motor Kv')
 
-    fig.suptitle('Drone Powertrain Co-Design Optimization & Parameter Sweeps', fontsize=14)
+    fig.suptitle('Propulsion Co-Design Optimization', fontsize=14)
     plt.tight_layout()
     
-    output_image = Path("examples/optimize_and_plot_results.png")
+    output_image = Path("docs/images/optimize_and_plot_results.png")
     plt.savefig(output_image, bbox_inches='tight')
     print(f"\nSaved default style plot to: {output_image.resolve()}")
     
