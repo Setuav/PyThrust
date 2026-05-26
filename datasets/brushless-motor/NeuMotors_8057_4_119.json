@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_4_119",
+  "name": "8057/4/119",
+  "manufacturer": "NeuMotors",
+  "kv": 119.0,
+  "resistance": 0.0101,
+  "io": 2.025,
+  "max_current": 255.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

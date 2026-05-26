@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-29-16_1600",
+  "name": "C35-29-16 1600",
+  "manufacturer": "ROXXY",
+  "kv": 1600.0,
+  "resistance": 0.037,
+  "io": 2.41,
+  "max_current": 25.0,
+  "weight_g": 78.0,
+  "max_power": 480.0,
+  "io_voltage": 10.5
+}

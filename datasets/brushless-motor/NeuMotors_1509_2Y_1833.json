@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_2Y_1833",
+  "name": "1509/2Y 1833",
+  "manufacturer": "NeuMotors",
+  "kv": 1833.0,
+  "resistance": 0.0144,
+  "io": 1.3,
+  "max_current": 46.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_2Y_1300",
+  "name": "1117/2Y 1300",
+  "manufacturer": "NeuMotors",
+  "kv": 1300.0,
+  "resistance": 0.035,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

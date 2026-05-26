@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_BEE_1104M-KV4000",
+  "name": "BEE 1104M-KV4000",
+  "manufacturer": "Team Hunter RC",
+  "kv": 4000.0,
+  "resistance": 0.105,
+  "io": 0.3,
+  "max_current": 3.5,
+  "weight_g": 5.4,
+  "max_power": 25.0,
+  "io_voltage": 10.0
+}

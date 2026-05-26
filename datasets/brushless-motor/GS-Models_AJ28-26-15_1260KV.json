@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ28-26-15_1260KV",
+  "name": "AJ28-26-15 1260KV",
+  "manufacturer": "GS-Models",
+  "kv": 1260.0,
+  "resistance": 0.152,
+  "io": 1.0,
+  "max_current": 19.0,
+  "weight_g": 42.0,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

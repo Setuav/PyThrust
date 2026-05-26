@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2820_14_Gold_Line_V3_Long",
+  "name": "2820/14 Gold Line V3 Long",
+  "manufacturer": "AXI motors",
+  "kv": 860.0,
+  "resistance": 0.033,
+  "io": 1.6,
+  "max_current": 37.0,
+  "weight_g": 158.2,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

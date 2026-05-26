@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_5060-9_V3",
+  "name": "Joker 5060-9 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 290.0,
+  "resistance": 0.0388,
+  "io": 0.8,
+  "max_current": 65.0,
+  "weight_g": 380.2,
+  "max_power": 2080.0,
+  "io_voltage": 10.0
+}

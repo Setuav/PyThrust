@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_5.75D_892",
+  "name": "1704/5.75D 892",
+  "manufacturer": "NeuMotors",
+  "kv": 892.0,
+  "resistance": 0.071,
+  "io": 0.82,
+  "max_current": 25.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

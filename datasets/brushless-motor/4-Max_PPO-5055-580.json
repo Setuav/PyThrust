@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-5055-580",
+  "name": "PPO-5055-580",
+  "manufacturer": "4-Max",
+  "kv": 580.0,
+  "resistance": 0.02,
+  "io": 2.3,
+  "max_current": 63.0,
+  "weight_g": 315.2,
+  "max_power": 1280.0,
+  "io_voltage": 10.0
+}

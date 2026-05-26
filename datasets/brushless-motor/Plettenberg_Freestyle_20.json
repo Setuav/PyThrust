@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Freestyle_20",
+  "name": "Freestyle 20",
+  "manufacturer": "Plettenberg",
+  "kv": 1461.0,
+  "resistance": 0.149,
+  "io": 0.93,
+  "max_current": 12.0,
+  "weight_g": 75.1,
+  "max_power": 225.0,
+  "io_voltage": 8.0
+}

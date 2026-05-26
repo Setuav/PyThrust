@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_0.75Y_1222",
+  "name": "1536/0.75Y 1222",
+  "manufacturer": "NeuMotors",
+  "kv": 1222.0,
+  "resistance": 0.0081,
+  "io": 3.33,
+  "max_current": 71.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

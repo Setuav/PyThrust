@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2826-18_KV1000",
+  "name": "C2826-18 KV1000",
+  "manufacturer": "EMP",
+  "kv": 1000.0,
+  "resistance": 0.262,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 50.2,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

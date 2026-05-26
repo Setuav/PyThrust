@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3650-3D_3840",
+  "name": "TP3650-3D 3840",
+  "manufacturer": "TP Power",
+  "kv": 3840.0,
+  "resistance": 0.0024,
+  "io": 9.2,
+  "max_current": 420.0,
+  "weight_g": 370.2,
+  "max_power": 4500.0,
+  "io_voltage": 6.0
+}

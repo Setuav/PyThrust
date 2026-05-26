@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_2315-2250",
+  "name": "RO-Power Torque 2315-2250",
+  "manufacturer": "Robbe",
+  "kv": 2250.0,
+  "resistance": 0.1381,
+  "io": 0.51,
+  "max_current": 12.0,
+  "weight_g": 21.0,
+  "max_power": 74.0,
+  "io_voltage": 10.0
+}

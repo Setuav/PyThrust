@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_490-37G_4.4_1",
+  "name": "490-37G 4.4:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 3850.0,
+  "resistance": 0.0106,
+  "io": 4.6,
+  "max_current": 80.0,
+  "weight_g": 234.2,
+  "max_power": 1150.0,
+  "io_voltage": 7.4
+}

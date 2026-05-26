@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N6364-07_KV270",
+  "name": "N6364-07 KV270",
+  "manufacturer": "EMP",
+  "kv": 270.0,
+  "resistance": 0.027,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 706.5,
+  "max_power": 2860.0,
+  "io_voltage": 15.0
+}

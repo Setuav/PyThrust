@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_V28-M_1212KV",
+  "name": "V-MAX V28-M 1212KV",
+  "manufacturer": "Dymond",
+  "kv": 1212.0,
+  "resistance": 0.132,
+  "io": 0.79,
+  "max_current": 20.0,
+  "weight_g": 78.0,
+  "max_power": 250.0,
+  "io_voltage": 9.72
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_14_207",
+  "name": "4613/14/207",
+  "manufacturer": "NeuMotors",
+  "kv": 207.0,
+  "resistance": 0.18,
+  "io": 0.39,
+  "max_current": 38.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

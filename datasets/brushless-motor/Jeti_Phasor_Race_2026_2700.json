@@ -1,0 +1,12 @@
+{
+  "id": "Jeti_Phasor_Race_2026_2700",
+  "name": "Phasor Race 2026/2700",
+  "manufacturer": "Jeti",
+  "kv": 2700.0,
+  "resistance": 0.0112,
+  "io": 3.8,
+  "max_current": 120.0,
+  "weight_g": 298.2,
+  "max_power": 1100.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2221_10",
+  "name": "C-2221/10",
+  "manufacturer": "Cobra",
+  "kv": 1500.0,
+  "resistance": 0.037,
+  "io": 1.38,
+  "max_current": 38.0,
+  "weight_g": 87.9,
+  "max_power": 420.0,
+  "io_voltage": 12.0
+}

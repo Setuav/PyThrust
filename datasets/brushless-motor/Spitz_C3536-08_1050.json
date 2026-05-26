@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C3536-08_1050",
+  "name": "C3536-08 1050",
+  "manufacturer": "Spitz",
+  "kv": 1050.0,
+  "resistance": 0.055,
+  "io": 1.5,
+  "max_current": 38.0,
+  "weight_g": 109.1,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

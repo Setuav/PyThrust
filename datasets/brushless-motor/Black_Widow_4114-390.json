@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_4114-390",
+  "name": "4114-390",
+  "manufacturer": "Black Widow",
+  "kv": 394.0,
+  "resistance": 0.0833,
+  "io": 1.26,
+  "max_current": 0.0,
+  "weight_g": 219.1,
+  "max_power": 510.0,
+  "io_voltage": 22.2
+}

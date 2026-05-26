@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_2_221",
+  "name": "6560/2/221",
+  "manufacturer": "NeuMotors",
+  "kv": 221.0,
+  "resistance": 0.01,
+  "io": 2.45,
+  "max_current": 360.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1515_12_4600",
+  "name": "TS-EZ1515/12 4600",
+  "manufacturer": "Tenshock",
+  "kv": 4600.0,
+  "resistance": 0.0115,
+  "io": 2.5,
+  "max_current": 51.0,
+  "weight_g": 83.1,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

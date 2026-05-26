@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_2.75Y_1655",
+  "name": "1110/2.75Y 1655",
+  "manufacturer": "NeuMotors",
+  "kv": 1655.0,
+  "resistance": 0.038,
+  "io": 0.9,
+  "max_current": 28.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

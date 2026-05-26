@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-5T_1600kv",
+  "name": "LC2835-5T 1600kv",
+  "manufacturer": "Leopard",
+  "kv": 1600.0,
+  "resistance": 0.0408,
+  "io": 1.4,
+  "max_current": 35.0,
+  "weight_g": 71.2,
+  "max_power": 355.0,
+  "io_voltage": 7.4
+}

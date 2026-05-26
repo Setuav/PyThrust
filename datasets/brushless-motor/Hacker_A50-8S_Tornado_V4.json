@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A50-8S_Tornado_V4",
+  "name": "A50-8S Tornado V4",
+  "manufacturer": "Hacker",
+  "kv": 850.0,
+  "resistance": 0.009,
+  "io": 4.1,
+  "max_current": 80.0,
+  "weight_g": 348.1,
+  "max_power": 2000.0,
+  "io_voltage": 8.4
+}

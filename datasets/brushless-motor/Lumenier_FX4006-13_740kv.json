@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_FX4006-13_740kv",
+  "name": "FX4006-13 740kv",
+  "manufacturer": "Lumenier",
+  "kv": 740.0,
+  "resistance": 0.136,
+  "io": 0.5,
+  "max_current": 24.0,
+  "weight_g": 92.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

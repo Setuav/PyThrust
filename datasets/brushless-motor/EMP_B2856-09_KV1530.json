@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2856-09_KV1530",
+  "name": "B2856-09 KV1530",
+  "manufacturer": "EMP",
+  "kv": 1530.0,
+  "resistance": 0.057,
+  "io": 1.1,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 780.0,
+  "io_voltage": 10.0
+}

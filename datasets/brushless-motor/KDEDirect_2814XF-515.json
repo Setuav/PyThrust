@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_2814XF-515",
+  "name": "2814XF-515",
+  "manufacturer": "KDEDirect",
+  "kv": 515.0,
+  "resistance": 0.13,
+  "io": 0.3,
+  "max_current": 24.0,
+  "weight_g": 95.0,
+  "max_power": 535.0,
+  "io_voltage": 10.0
+}

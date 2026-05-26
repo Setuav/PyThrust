@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_70_6",
+  "name": "12030/70/6",
+  "manufacturer": "NeuMotors",
+  "kv": 6.0,
+  "resistance": 2.2223,
+  "io": 0.169,
+  "max_current": 17.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

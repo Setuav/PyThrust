@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_5.75D_950",
+  "name": "1115/5.75D 950",
+  "manufacturer": "NeuMotors",
+  "kv": 950.0,
+  "resistance": 0.083,
+  "io": 0.8,
+  "max_current": 22.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

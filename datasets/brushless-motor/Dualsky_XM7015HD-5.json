@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM7015HD-5",
+  "name": "XM7015HD-5",
+  "manufacturer": "Dualsky",
+  "kv": 330.0,
+  "resistance": 0.042,
+  "io": 1.8,
+  "max_current": 67.0,
+  "weight_g": 350.1,
+  "max_power": 1480.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_6359-350",
+  "name": "RO-Power Torque 6359-350",
+  "manufacturer": "Robbe",
+  "kv": 350.0,
+  "resistance": 0.06,
+  "io": 1.85,
+  "max_current": 73.0,
+  "weight_g": 571.5,
+  "max_power": 2400.0,
+  "io_voltage": 10.0
+}

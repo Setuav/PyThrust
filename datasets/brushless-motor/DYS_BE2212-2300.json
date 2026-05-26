@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2212-2300",
+  "name": "BE2212-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.032,
+  "io": 1.5,
+  "max_current": 39.0,
+  "weight_g": 66.1,
+  "max_power": 288.0,
+  "io_voltage": 7.4
+}

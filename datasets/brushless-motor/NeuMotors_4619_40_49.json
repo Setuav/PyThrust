@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_40_49",
+  "name": "4619/40/49",
+  "manufacturer": "NeuMotors",
+  "kv": 49.0,
+  "resistance": 2.0,
+  "io": 0.14,
+  "max_current": 13.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

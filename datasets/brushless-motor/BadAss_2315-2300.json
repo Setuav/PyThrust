@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2315-2300",
+  "name": "2315-2300",
+  "manufacturer": "BadAss",
+  "kv": 2300.0,
+  "resistance": 0.019,
+  "io": 3.26,
+  "max_current": 55.0,
+  "weight_g": 75.7,
+  "max_power": 610.0,
+  "io_voltage": 10.0
+}

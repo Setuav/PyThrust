@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_1408_3750KV",
+  "name": "XRotor 1408 3750KV",
+  "manufacturer": "HobbyWing",
+  "kv": 3750.0,
+  "resistance": 0.093,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 15.9,
+  "max_power": 115.0,
+  "io_voltage": 10.0
+}

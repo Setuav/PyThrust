@@ -1,0 +1,12 @@
+{
+  "id": "DYS_X3115-1050",
+  "name": "X3115-1050",
+  "manufacturer": "DYS",
+  "kv": 1050.0,
+  "resistance": 0.046,
+  "io": 2.0,
+  "max_current": 56.0,
+  "weight_g": 112.0,
+  "max_power": 1330.0,
+  "io_voltage": 10.0
+}

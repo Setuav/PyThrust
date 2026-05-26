@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2213-2640",
+  "name": "HS2213-2640",
+  "manufacturer": "Hyperion",
+  "kv": 2640.0,
+  "resistance": 0.063,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 54.1,
+  "max_power": 375.0,
+  "io_voltage": 10.0
+}

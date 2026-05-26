@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Legend_1805-3400",
+  "name": "Legend 1805-3400",
+  "manufacturer": "Exceed RC",
+  "kv": 2000.0,
+  "resistance": 0.315,
+  "io": 0.2,
+  "max_current": 15.0,
+  "weight_g": 21.0,
+  "max_power": 85.0,
+  "io_voltage": 8.0
+}

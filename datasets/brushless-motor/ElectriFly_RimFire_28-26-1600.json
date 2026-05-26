@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_RimFire_28-26-1600",
+  "name": "RimFire 28-26-1600",
+  "manufacturer": "ElectriFly",
+  "kv": 1600.0,
+  "resistance": 0.098,
+  "io": 1.0,
+  "max_current": 17.0,
+  "weight_g": 41.1,
+  "max_power": 123.0,
+  "io_voltage": 7.4
+}

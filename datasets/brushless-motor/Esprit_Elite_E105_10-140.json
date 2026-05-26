@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E105_10-140",
+  "name": "Elite E105/10-140",
+  "manufacturer": "Esprit",
+  "kv": 140.0,
+  "resistance": 0.0265,
+  "io": 2.7,
+  "max_current": 120.0,
+  "weight_g": 1450.9,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_1.5Y_815",
+  "name": "1527/1.5Y 815",
+  "manufacturer": "NeuMotors",
+  "kv": 815.0,
+  "resistance": 0.0243,
+  "io": 1.7,
+  "max_current": 61.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

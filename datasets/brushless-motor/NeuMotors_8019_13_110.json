@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_13_110",
+  "name": "8019/13/110",
+  "manufacturer": "NeuMotors",
+  "kv": 110.0,
+  "resistance": 0.043,
+  "io": 0.623,
+  "max_current": 78.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

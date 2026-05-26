@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M1818_Micro_3500KV",
+  "name": "PRO M1818 Micro 3500KV",
+  "manufacturer": "Avionic",
+  "kv": 3500.0,
+  "resistance": 0.33,
+  "io": 0.4,
+  "max_current": 6.5,
+  "weight_g": 9.9,
+  "max_power": 40.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_1.75Y_1048",
+  "name": "1518/1.75Y 1048",
+  "manufacturer": "NeuMotors",
+  "kv": 1048.0,
+  "resistance": 0.0221,
+  "io": 1.43,
+  "max_current": 52.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

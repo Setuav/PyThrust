@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC5065-7T_380kv",
+  "name": "LC5065-7T 380kv",
+  "manufacturer": "Leopard",
+  "kv": 380.0,
+  "resistance": 0.0298,
+  "io": 2.1,
+  "max_current": 80.0,
+  "weight_g": 371.4,
+  "max_power": 1814.0,
+  "io_voltage": 15.0
+}

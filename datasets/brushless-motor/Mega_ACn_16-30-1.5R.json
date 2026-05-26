@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_16-30-1.5R",
+  "name": "ACn 16-30-1.5R",
+  "manufacturer": "Mega",
+  "kv": 3110.0,
+  "resistance": 0.011,
+  "io": 3.0,
+  "max_current": 40.0,
+  "weight_g": 135.2,
+  "max_power": 410.0,
+  "io_voltage": 8.4
+}

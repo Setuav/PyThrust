@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_E-R2207_KV1800_6S",
+  "name": "E-R2207 KV1800 6S",
+  "manufacturer": "SunnySky",
+  "kv": 1800.0,
+  "resistance": 0.056,
+  "io": 0.9,
+  "max_current": 42.0,
+  "weight_g": 34.0,
+  "max_power": 672.0,
+  "io_voltage": 10.0
+}

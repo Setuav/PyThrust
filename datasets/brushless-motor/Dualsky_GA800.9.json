@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA800.9",
+  "name": "GA800.9",
+  "manufacturer": "Dualsky",
+  "kv": 660.0,
+  "resistance": 0.032,
+  "io": 1.75,
+  "max_current": 48.0,
+  "weight_g": 160.2,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

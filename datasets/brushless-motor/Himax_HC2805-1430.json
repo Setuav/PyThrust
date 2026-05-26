@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HC2805-1430",
+  "name": "HC2805-1430",
+  "manufacturer": "Himax",
+  "kv": 1430.0,
+  "resistance": 0.33,
+  "io": 0.5,
+  "max_current": 11.0,
+  "weight_g": 26.9,
+  "max_power": 90.0,
+  "io_voltage": 10.0
+}

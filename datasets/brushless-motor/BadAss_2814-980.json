@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2814-980",
+  "name": "2814-980",
+  "manufacturer": "BadAss",
+  "kv": 980.0,
+  "resistance": 0.039,
+  "io": 1.18,
+  "max_current": 46.0,
+  "weight_g": 117.1,
+  "max_power": 680.0,
+  "io_voltage": 10.0
+}

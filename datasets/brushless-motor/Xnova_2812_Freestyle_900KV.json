@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2812_Freestyle_900KV",
+  "name": "2812 Freestyle 900KV",
+  "manufacturer": "Xnova",
+  "kv": 900.0,
+  "resistance": 0.07,
+  "io": 1.1,
+  "max_current": 50.0,
+  "weight_g": 79.9,
+  "max_power": 1252.0,
+  "io_voltage": 10.0
+}

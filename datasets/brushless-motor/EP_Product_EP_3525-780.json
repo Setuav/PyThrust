@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_3525-780",
+  "name": "EP 3525-780",
+  "manufacturer": "EP Product",
+  "kv": 780.0,
+  "resistance": 0.035,
+  "io": 1.65,
+  "max_current": 62.0,
+  "weight_g": 253.2,
+  "max_power": 1380.0,
+  "io_voltage": 20.0
+}

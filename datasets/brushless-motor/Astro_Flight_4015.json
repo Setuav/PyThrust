@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_4015",
+  "name": "4015",
+  "manufacturer": "Astro Flight",
+  "kv": 250.0,
+  "resistance": 0.023,
+  "io": 1.6,
+  "max_current": 100.0,
+  "weight_g": 1679.1,
+  "max_power": 4500.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_2216-820",
+  "name": "2216-820",
+  "manufacturer": "Black Widow",
+  "kv": 854.0,
+  "resistance": 0.1147,
+  "io": 0.47,
+  "max_current": 0.0,
+  "weight_g": 66.1,
+  "max_power": 370.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN5006_KV300",
+  "name": "MN5006 KV300",
+  "manufacturer": "T-Motor",
+  "kv": 300.0,
+  "resistance": 0.125,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 108.0,
+  "max_power": 500.0,
+  "io_voltage": 22.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FMS_2627-KV4500",
+  "name": "2627-KV4500",
+  "manufacturer": "FMS",
+  "kv": 4500.0,
+  "resistance": 0.032,
+  "io": 1.5,
+  "max_current": 40.0,
+  "weight_g": 57.0,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

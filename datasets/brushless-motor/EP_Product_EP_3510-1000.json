@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_3510-1000",
+  "name": "EP 3510-1000",
+  "manufacturer": "EP Product",
+  "kv": 1000.0,
+  "resistance": 0.06,
+  "io": 1.06,
+  "max_current": 32.0,
+  "weight_g": 141.2,
+  "max_power": 590.0,
+  "io_voltage": 14.0
+}

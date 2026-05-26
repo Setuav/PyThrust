@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-6Y_780",
+  "name": "TP4070-6Y 780",
+  "manufacturer": "TP Power",
+  "kv": 780.0,
+  "resistance": 0.014,
+  "io": 2.2,
+  "max_current": 125.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

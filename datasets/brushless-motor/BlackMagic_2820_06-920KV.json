@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2820_06-920KV",
+  "name": "2820/06-920KV",
+  "manufacturer": "BlackMagic",
+  "kv": 920.0,
+  "resistance": 0.036,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

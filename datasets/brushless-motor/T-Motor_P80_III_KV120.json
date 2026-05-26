@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_P80_III_KV120",
+  "name": "P80 III KV120",
+  "manufacturer": "T-Motor",
+  "kv": 120.0,
+  "resistance": 0.041,
+  "io": 2.0,
+  "max_current": 70.0,
+  "weight_g": 649.5,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

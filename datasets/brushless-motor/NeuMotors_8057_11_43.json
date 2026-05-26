@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_11_43",
+  "name": "8057/11/43",
+  "manufacturer": "NeuMotors",
+  "kv": 43.0,
+  "resistance": 0.0724,
+  "io": 0.736,
+  "max_current": 93.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

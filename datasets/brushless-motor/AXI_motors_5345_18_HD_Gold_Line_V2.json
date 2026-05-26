@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5345_18_HD_Gold_Line_V2",
+  "name": "5345/18 HD Gold Line V2",
+  "manufacturer": "AXI motors",
+  "kv": 171.0,
+  "resistance": 0.026,
+  "io": 1.5,
+  "max_current": 77.0,
+  "weight_g": 995.6,
+  "max_power": 3510.0,
+  "io_voltage": 10.0
+}

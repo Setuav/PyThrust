@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2230-15_KV1780",
+  "name": "C2230-15 KV1780",
+  "manufacturer": "EMP",
+  "kv": 1780.0,
+  "resistance": 0.642,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 26.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

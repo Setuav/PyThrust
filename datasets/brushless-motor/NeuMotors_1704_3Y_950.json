@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_3Y_950",
+  "name": "1704/3Y 950",
+  "manufacturer": "NeuMotors",
+  "kv": 950.0,
+  "resistance": 0.058,
+  "io": 0.87,
+  "max_current": 27.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

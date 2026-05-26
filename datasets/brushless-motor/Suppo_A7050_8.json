@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A7050_8",
+  "name": "A7050/8",
+  "manufacturer": "Suppo",
+  "kv": 200.0,
+  "resistance": 0.015,
+  "io": 2.8,
+  "max_current": 150.0,
+  "weight_g": 1681.1,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

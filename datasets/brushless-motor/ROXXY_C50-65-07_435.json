@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C50-65-07_435",
+  "name": "C50-65-07 435",
+  "manufacturer": "ROXXY",
+  "kv": 435.0,
+  "resistance": 0.021,
+  "io": 3.26,
+  "max_current": 90.0,
+  "weight_g": 377.3,
+  "max_power": 2250.0,
+  "io_voltage": 17.5
+}

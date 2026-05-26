@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4023-2250",
+  "name": "L4023-2250",
+  "manufacturer": "Leomotion",
+  "kv": 2250.0,
+  "resistance": 0.008,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1910_1.5Y_680",
+  "name": "1910/1.5Y 680",
+  "manufacturer": "NeuMotors",
+  "kv": 680.0,
+  "resistance": 0.02,
+  "io": 1.0,
+  "max_current": 51.0,
+  "weight_g": 283.2,
+  "max_power": 2400.0,
+  "io_voltage": 10.0
+}

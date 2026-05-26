@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1404-3800",
+  "name": "F1404-3800",
+  "manufacturer": "T-Motor",
+  "kv": 3800.0,
+  "resistance": 0.195,
+  "io": 0.5,
+  "max_current": 19.0,
+  "weight_g": 9.4,
+  "max_power": 304.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_3015-750",
+  "name": "Rocket 3015-750",
+  "manufacturer": "Exceed RC",
+  "kv": 750.0,
+  "resistance": 0.063,
+  "io": 0.6,
+  "max_current": 32.0,
+  "weight_g": 115.1,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

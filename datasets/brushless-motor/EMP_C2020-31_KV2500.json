@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2020-31_KV2500",
+  "name": "C2020-31 KV2500",
+  "manufacturer": "EMP",
+  "kv": 2500.0,
+  "resistance": 0.702,
+  "io": 0.2,
+  "max_current": 0.0,
+  "weight_g": 11.1,
+  "max_power": 60.0,
+  "io_voltage": 10.0
+}

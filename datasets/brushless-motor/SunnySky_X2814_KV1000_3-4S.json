@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2814_KV1000_3-4S",
+  "name": "X2814 KV1000 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1000.0,
+  "resistance": 0.032,
+  "io": 1.5,
+  "max_current": 40.0,
+  "weight_g": 108.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

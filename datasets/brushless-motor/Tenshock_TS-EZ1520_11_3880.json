@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_11_3880",
+  "name": "TS-EZ1520/11 3880",
+  "manufacturer": "Tenshock",
+  "kv": 3880.0,
+  "resistance": 0.014,
+  "io": 3.0,
+  "max_current": 60.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

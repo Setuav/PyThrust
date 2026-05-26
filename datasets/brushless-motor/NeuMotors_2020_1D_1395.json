@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_1D_1395",
+  "name": "2020/1D 1395",
+  "manufacturer": "NeuMotors",
+  "kv": 1395.0,
+  "resistance": 0.002,
+  "io": 5.04,
+  "max_current": 143.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

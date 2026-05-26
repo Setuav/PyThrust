@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_5.75D_243",
+  "name": "2020/5.75D 243",
+  "manufacturer": "NeuMotors",
+  "kv": 243.0,
+  "resistance": 0.077,
+  "io": 0.88,
+  "max_current": 13.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

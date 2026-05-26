@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_F42-55-18_850KV",
+  "name": "F42-55-18 850KV",
+  "manufacturer": "GS-Models",
+  "kv": 850.0,
+  "resistance": 0.0153,
+  "io": 2.5,
+  "max_current": 80.0,
+  "weight_g": 270.2,
+  "max_power": 2900.0,
+  "io_voltage": 10.0
+}

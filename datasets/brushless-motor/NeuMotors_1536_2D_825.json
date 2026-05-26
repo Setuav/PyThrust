@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_2D_825",
+  "name": "1536/2D 825",
+  "manufacturer": "NeuMotors",
+  "kv": 825.0,
+  "resistance": 0.0192,
+  "io": 2.25,
+  "max_current": 48.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

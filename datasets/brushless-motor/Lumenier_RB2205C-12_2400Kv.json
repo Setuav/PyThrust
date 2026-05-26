@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RB2205C-12_2400Kv",
+  "name": "RB2205C-12 2400Kv",
+  "manufacturer": "Lumenier",
+  "kv": 2400.0,
+  "resistance": 0.26,
+  "io": 0.81,
+  "max_current": 32.0,
+  "weight_g": 24.1,
+  "max_power": 290.0,
+  "io_voltage": 12.6
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_1_434",
+  "name": "12030/1/434",
+  "manufacturer": "NeuMotors",
+  "kv": 434.0,
+  "resistance": 0.0007,
+  "io": 11.83,
+  "max_current": 1210.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD5055-06_720",
+  "name": "HD5055-06/720",
+  "manufacturer": "PowerHD",
+  "kv": 720.0,
+  "resistance": 0.016,
+  "io": 2.4,
+  "max_current": 0.0,
+  "weight_g": 270.2,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

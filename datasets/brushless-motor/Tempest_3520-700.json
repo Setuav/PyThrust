@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_3520-700",
+  "name": "3520-700",
+  "manufacturer": "Tempest",
+  "kv": 700.0,
+  "resistance": 0.029,
+  "io": 1.6,
+  "max_current": 52.0,
+  "weight_g": 203.0,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_3.75D_440",
+  "name": "1536/3.75D 440",
+  "manufacturer": "NeuMotors",
+  "kv": 440.0,
+  "resistance": 0.0675,
+  "io": 1.2,
+  "max_current": 26.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

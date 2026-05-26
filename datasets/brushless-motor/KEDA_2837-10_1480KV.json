@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2837-10_1480KV",
+  "name": "2837-10 1480KV",
+  "manufacturer": "KEDA",
+  "kv": 1500.0,
+  "resistance": 0.1,
+  "io": 1.65,
+  "max_current": 20.0,
+  "weight_g": 81.1,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

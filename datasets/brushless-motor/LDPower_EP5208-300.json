@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_EP5208-300",
+  "name": "EP5208-300",
+  "manufacturer": "LDPower",
+  "kv": 300.0,
+  "resistance": 0.14,
+  "io": 0.74,
+  "max_current": 55.0,
+  "weight_g": 175.2,
+  "max_power": 1221.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_4110-400",
+  "name": "4110-400",
+  "manufacturer": "Black Widow",
+  "kv": 397.0,
+  "resistance": 0.1274,
+  "io": 0.86,
+  "max_current": 0.0,
+  "weight_g": 188.2,
+  "max_power": 450.0,
+  "io_voltage": 22.2
+}

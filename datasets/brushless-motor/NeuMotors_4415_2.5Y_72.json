@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4415_2.5Y_72",
+  "name": "4415/2.5Y 72",
+  "manufacturer": "NeuMotors",
+  "kv": 72.0,
+  "resistance": 0.044,
+  "io": 1.2,
+  "max_current": 108.0,
+  "weight_g": 2520.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

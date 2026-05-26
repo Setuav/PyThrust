@@ -1,0 +1,12 @@
+{
+  "id": "HiTec_2208_18_1900KV",
+  "name": "2208/18 1900KV",
+  "manufacturer": "HiTec",
+  "kv": 1900.0,
+  "resistance": 0.051,
+  "io": 0.86,
+  "max_current": 28.0,
+  "weight_g": 42.5,
+  "max_power": 220.0,
+  "io_voltage": 8.0
+}

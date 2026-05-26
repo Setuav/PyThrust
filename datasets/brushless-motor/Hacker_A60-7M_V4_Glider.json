@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-7M_V4_Glider",
+  "name": "A60-7M V4 Glider",
+  "manufacturer": "Hacker",
+  "kv": 205.0,
+  "resistance": 0.024,
+  "io": 1.4,
+  "max_current": 100.0,
+  "weight_g": 751.5,
+  "max_power": 2300.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1907_2.5Y_580",
+  "name": "1907/2.5Y 580",
+  "manufacturer": "NeuMotors",
+  "kv": 580.0,
+  "resistance": 0.03,
+  "io": 0.7,
+  "max_current": 30.0,
+  "weight_g": 235.3,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2213-3585",
+  "name": "HS2213-3585",
+  "manufacturer": "Hyperion",
+  "kv": 3595.0,
+  "resistance": 0.038,
+  "io": 1.74,
+  "max_current": 43.0,
+  "weight_g": 54.1,
+  "max_power": 445.0,
+  "io_voltage": 10.0
+}

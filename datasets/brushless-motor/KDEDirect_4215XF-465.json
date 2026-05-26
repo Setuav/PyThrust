@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_4215XF-465",
+  "name": "4215XF-465",
+  "manufacturer": "KDEDirect",
+  "kv": 465.0,
+  "resistance": 0.052,
+  "io": 0.7,
+  "max_current": 62.0,
+  "weight_g": 195.0,
+  "max_power": 1375.0,
+  "io_voltage": 10.0
+}

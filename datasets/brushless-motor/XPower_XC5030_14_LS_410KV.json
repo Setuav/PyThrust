@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC5030_14_LS_410KV",
+  "name": "XC5030/14 LS 410KV",
+  "manufacturer": "XPower",
+  "kv": 410.0,
+  "resistance": 0.0275,
+  "io": 1.2,
+  "max_current": 70.0,
+  "weight_g": 450.5,
+  "max_power": 1900.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HA2025-4200",
+  "name": "HA2025-4200",
+  "manufacturer": "Himax",
+  "kv": 4200.0,
+  "resistance": 0.075,
+  "io": 0.75,
+  "max_current": 0.0,
+  "weight_g": 65.2,
+  "max_power": 175.0,
+  "io_voltage": 10.0
+}

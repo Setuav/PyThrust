@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2312C-V2-960",
+  "name": "ECO 2312C-V2-960",
+  "manufacturer": "Dualsky",
+  "kv": 960.0,
+  "resistance": 0.1235,
+  "io": 0.5,
+  "max_current": 22.0,
+  "weight_g": 58.1,
+  "max_power": 258.0,
+  "io_voltage": 10.0
+}

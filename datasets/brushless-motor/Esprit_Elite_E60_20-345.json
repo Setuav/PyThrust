@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E60_20-345",
+  "name": "Elite E60/20-345",
+  "manufacturer": "Esprit",
+  "kv": 345.0,
+  "resistance": 0.032,
+  "io": 1.9,
+  "max_current": 90.0,
+  "weight_g": 495.3,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

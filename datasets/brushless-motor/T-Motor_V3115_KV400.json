@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V3115_KV400",
+  "name": "V3115 KV400",
+  "manufacturer": "T-Motor",
+  "kv": 400.0,
+  "resistance": 0.14538,
+  "io": 0.59,
+  "max_current": 41.0,
+  "weight_g": 113.4,
+  "max_power": 1982.0,
+  "io_voltage": 10.0
+}

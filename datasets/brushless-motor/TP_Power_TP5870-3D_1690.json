@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-3D_1690",
+  "name": "TP5870-3D 1690",
+  "manufacturer": "TP Power",
+  "kv": 1690.0,
+  "resistance": 0.0016,
+  "io": 16.2,
+  "max_current": 650.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

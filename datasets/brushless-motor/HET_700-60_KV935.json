@@ -1,0 +1,12 @@
+{
+  "id": "HET_700-60_KV935",
+  "name": "700-60 KV935",
+  "manufacturer": "HET",
+  "kv": 935.0,
+  "resistance": 0.032,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 280.1,
+  "max_power": 2400.0,
+  "io_voltage": 12.0
+}

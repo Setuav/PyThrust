@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_microRex_330-1250",
+  "name": "microRex 330-1250*",
+  "manufacturer": "Flyware",
+  "kv": 1277.0,
+  "resistance": 0.075,
+  "io": 1.4,
+  "max_current": 40.0,
+  "weight_g": 91.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

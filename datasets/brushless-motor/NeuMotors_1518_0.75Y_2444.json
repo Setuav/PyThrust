@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_0.75Y_2444",
+  "name": "1518/0.75Y 2444",
+  "manufacturer": "NeuMotors",
+  "kv": 2444.0,
+  "resistance": 0.0041,
+  "io": 3.33,
+  "max_current": 122.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

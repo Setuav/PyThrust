@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6542_5_127",
+  "name": "6542/5/127",
+  "manufacturer": "NeuMotors",
+  "kv": 127.0,
+  "resistance": 0.041,
+  "io": 0.98,
+  "max_current": 144.0,
+  "weight_g": 968.7,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

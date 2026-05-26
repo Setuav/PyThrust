@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-16L_2800KV",
+  "name": "B24-45-16L 2800KV",
+  "manufacturer": "KEDA",
+  "kv": 2800.0,
+  "resistance": 0.052,
+  "io": 1.0,
+  "max_current": 19.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-4120_12",
+  "name": "C-4120/12",
+  "manufacturer": "Cobra",
+  "kv": 850.0,
+  "resistance": 0.014,
+  "io": 2.77,
+  "max_current": 75.0,
+  "weight_g": 292.0,
+  "max_power": 1110.0,
+  "io_voltage": 14.0
+}

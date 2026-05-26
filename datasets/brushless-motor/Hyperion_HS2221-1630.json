@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2221-1630",
+  "name": "HS2221-1630",
+  "manufacturer": "Hyperion",
+  "kv": 1630.0,
+  "resistance": 0.079,
+  "io": 0.71,
+  "max_current": 38.0,
+  "weight_g": 79.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

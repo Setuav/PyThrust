@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2204-27_1400KV",
+  "name": "2204-27 1400KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1400.0,
+  "resistance": 0.307,
+  "io": 0.5,
+  "max_current": 13.0,
+  "weight_g": 30.1,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4025-0740",
+  "name": "HS4025-0740",
+  "manufacturer": "Hyperion",
+  "kv": 740.0,
+  "resistance": 0.017,
+  "io": 1.33,
+  "max_current": 101.0,
+  "weight_g": 326.3,
+  "max_power": 3510.0,
+  "io_voltage": 8.4
+}

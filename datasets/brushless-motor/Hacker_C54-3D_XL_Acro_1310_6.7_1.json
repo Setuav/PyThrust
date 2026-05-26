@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-3D_XL_Acro_1310_6.7_1",
+  "name": "C54-3D XL Acro 1310 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1310.0,
+  "resistance": 0.012,
+  "io": 3.3,
+  "max_current": 90.0,
+  "weight_g": 520.5,
+  "max_power": 3900.0,
+  "io_voltage": 37.0
+}

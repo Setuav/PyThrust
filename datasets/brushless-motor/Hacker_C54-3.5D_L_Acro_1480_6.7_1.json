@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-3.5D_L_Acro_1480_6.7_1",
+  "name": "C54-3.5D L Acro 1480 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1480.0,
+  "resistance": 0.014,
+  "io": 2.8,
+  "max_current": 0.0,
+  "weight_g": 445.4,
+  "max_power": 3500.0,
+  "io_voltage": 37.0
+}

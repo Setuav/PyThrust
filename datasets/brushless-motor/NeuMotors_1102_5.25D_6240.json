@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_5.25D_6240",
+  "name": "1102/5.25D 6240",
+  "manufacturer": "NeuMotors",
+  "kv": 6240.0,
+  "resistance": 0.011,
+  "io": 0.9,
+  "max_current": 21.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

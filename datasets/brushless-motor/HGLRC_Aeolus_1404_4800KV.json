@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1404_4800KV",
+  "name": "Aeolus 1404 4800KV",
+  "manufacturer": "HGLRC",
+  "kv": 4800.0,
+  "resistance": 0.126,
+  "io": 0.5,
+  "max_current": 19.0,
+  "weight_g": 11.1,
+  "max_power": 292.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M50C60_IPE_PRO_10KV",
+  "name": "M50C60 IPE PRO 10KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 10.0,
+  "resistance": 0.065,
+  "io": 1.5,
+  "max_current": 81.0,
+  "weight_g": 7205.3,
+  "max_power": 32051.0,
+  "io_voltage": 30.0
+}

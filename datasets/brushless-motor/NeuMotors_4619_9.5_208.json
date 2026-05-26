@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_9.5_208",
+  "name": "4619/9.5/208",
+  "manufacturer": "NeuMotors",
+  "kv": 208.0,
+  "resistance": 0.124,
+  "io": 0.57,
+  "max_current": 57.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

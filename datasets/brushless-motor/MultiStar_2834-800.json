@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_2834-800",
+  "name": "2834-800",
+  "manufacturer": "MultiStar",
+  "kv": 800.0,
+  "resistance": 0.038,
+  "io": 1.6,
+  "max_current": 45.0,
+  "weight_g": 195.0,
+  "max_power": 660.0,
+  "io_voltage": 10.0
+}

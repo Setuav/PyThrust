@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-4025_16_385kv",
+  "name": "LPA-4025/16 385kv",
+  "manufacturer": "LiPolice",
+  "kv": 385.0,
+  "resistance": 0.0262,
+  "io": 2.18,
+  "max_current": 55.0,
+  "weight_g": 335.4,
+  "max_power": 1100.0,
+  "io_voltage": 8.4
+}

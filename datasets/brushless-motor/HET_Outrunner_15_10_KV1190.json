@@ -1,0 +1,12 @@
+{
+  "id": "HET_Outrunner_15_10_KV1190",
+  "name": "Outrunner 15/10 KV1190",
+  "manufacturer": "HET",
+  "kv": 1190.0,
+  "resistance": 0.071,
+  "io": 0.66,
+  "max_current": 17.0,
+  "weight_g": 74.0,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W35-42_KV950",
+  "name": "W35-42 KV950",
+  "manufacturer": "HangLi",
+  "kv": 950.0,
+  "resistance": 0.0284,
+  "io": 1.8,
+  "max_current": 39.0,
+  "weight_g": 132.1,
+  "max_power": 500.0,
+  "io_voltage": 7.4
+}

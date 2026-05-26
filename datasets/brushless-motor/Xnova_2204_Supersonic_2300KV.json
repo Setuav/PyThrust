@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2204_Supersonic_2300KV",
+  "name": "2204 Supersonic 2300KV",
+  "manufacturer": "Xnova",
+  "kv": 2300.0,
+  "resistance": 0.07,
+  "io": 1.0,
+  "max_current": 21.0,
+  "weight_g": 28.9,
+  "max_power": 343.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2826-1030",
+  "name": "2826-1030",
+  "manufacturer": "BadAss",
+  "kv": 1030.0,
+  "resistance": 0.018,
+  "io": 2.41,
+  "max_current": 70.0,
+  "weight_g": 180.9,
+  "max_power": 1040.0,
+  "io_voltage": 10.0
+}

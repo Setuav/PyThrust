@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2020_Micro_2500KV",
+  "name": "PRO M2020 Micro 2500KV",
+  "manufacturer": "Avionic",
+  "kv": 2500.0,
+  "resistance": 0.405,
+  "io": 0.3,
+  "max_current": 7.0,
+  "weight_g": 15.0,
+  "max_power": 60.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_9.5_107",
+  "name": "4638/9.5/107",
+  "manufacturer": "NeuMotors",
+  "kv": 107.0,
+  "resistance": 0.213,
+  "io": 0.568,
+  "max_current": 57.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

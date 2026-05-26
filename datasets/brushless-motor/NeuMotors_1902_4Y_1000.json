@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1902_4Y_1000",
+  "name": "1902/4Y 1000",
+  "manufacturer": "NeuMotors",
+  "kv": 1000.0,
+  "resistance": 0.09,
+  "io": 0.6,
+  "max_current": 17.0,
+  "weight_g": 125.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

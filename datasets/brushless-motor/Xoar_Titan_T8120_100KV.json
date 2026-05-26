@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T8120_100KV",
+  "name": "Titan T8120 100KV",
+  "manufacturer": "Xoar",
+  "kv": 100.0,
+  "resistance": 0.215,
+  "io": 0.87,
+  "max_current": 49.0,
+  "weight_g": 556.5,
+  "max_power": 2267.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYS_SE2205_PRO-2300",
+  "name": "SE2205 PRO-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 27.0,
+  "weight_g": 30.1,
+  "max_power": 429.0,
+  "io_voltage": 12.0
+}

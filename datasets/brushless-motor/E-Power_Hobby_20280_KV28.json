@@ -1,0 +1,12 @@
+{
+  "id": "E-Power_Hobby_20280_KV28",
+  "name": "20280 KV28",
+  "manufacturer": "E-Power Hobby",
+  "kv": 28.0,
+  "resistance": 0.035,
+  "io": 2.0,
+  "max_current": 200.0,
+  "weight_g": 6407.0,
+  "max_power": 25000.0,
+  "io_voltage": 20.0
+}

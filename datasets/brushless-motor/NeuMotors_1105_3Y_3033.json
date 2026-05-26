@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_3Y_3033",
+  "name": "1105/3Y 3033",
+  "manufacturer": "NeuMotors",
+  "kv": 3033.0,
+  "resistance": 0.023,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

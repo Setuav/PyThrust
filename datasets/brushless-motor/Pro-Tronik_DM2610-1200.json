@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2610-1200",
+  "name": "DM2610-1200",
+  "manufacturer": "Pro-Tronik",
+  "kv": 1200.0,
+  "resistance": 0.053,
+  "io": 1.23,
+  "max_current": 23.0,
+  "weight_g": 78.0,
+  "max_power": 240.0,
+  "io_voltage": 8.4
+}

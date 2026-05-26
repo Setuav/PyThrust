@@ -1,0 +1,12 @@
+{
+  "id": "Apex_Hornet_2306.6-1875",
+  "name": "Hornet 2306.6-1875",
+  "manufacturer": "Apex",
+  "kv": 1875.0,
+  "resistance": 0.05,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 34.0,
+  "max_power": 830.0,
+  "io_voltage": 10.0
+}

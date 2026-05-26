@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2405_2850KV",
+  "name": "XRotor 2405 2850KV",
+  "manufacturer": "HobbyWing",
+  "kv": 2850.0,
+  "resistance": 0.031,
+  "io": 1.8,
+  "max_current": 25.0,
+  "weight_g": 36.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

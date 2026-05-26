@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-7D_8110",
+  "name": "TP2020-7D 8110",
+  "manufacturer": "TP Power",
+  "kv": 8110.0,
+  "resistance": 0.0187,
+  "io": 1.8,
+  "max_current": 45.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

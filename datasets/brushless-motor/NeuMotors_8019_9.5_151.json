@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_9.5_151",
+  "name": "8019/9.5/151",
+  "manufacturer": "NeuMotors",
+  "kv": 151.0,
+  "resistance": 0.024,
+  "io": 0.853,
+  "max_current": 107.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

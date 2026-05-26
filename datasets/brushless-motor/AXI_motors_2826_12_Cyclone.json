@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2826_12_Cyclone",
+  "name": "2826/12 Cyclone",
+  "manufacturer": "AXI motors",
+  "kv": 760.0,
+  "resistance": 0.03,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 230.2,
+  "max_power": 665.0,
+  "io_voltage": 10.0
+}

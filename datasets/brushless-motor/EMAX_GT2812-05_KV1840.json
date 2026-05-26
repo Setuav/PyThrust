@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2812-05_KV1840",
+  "name": "GT2812-05 KV1840",
+  "manufacturer": "EMAX",
+  "kv": 1840.0,
+  "resistance": 0.027,
+  "io": 2.8,
+  "max_current": 27.0,
+  "weight_g": 105.2,
+  "max_power": 408.0,
+  "io_voltage": 11.0
+}

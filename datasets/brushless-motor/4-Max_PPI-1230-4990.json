@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-1230-4990",
+  "name": "PPI-1230-4990",
+  "manufacturer": "4-Max",
+  "kv": 4990.0,
+  "resistance": 0.605,
+  "io": 0.2,
+  "max_current": 8.0,
+  "weight_g": 18.1,
+  "max_power": 34.0,
+  "io_voltage": 10.0
+}

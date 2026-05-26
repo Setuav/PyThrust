@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M1826_Micro_1800KV",
+  "name": "PRO M1826 Micro 1800KV",
+  "manufacturer": "Avionic",
+  "kv": 1800.0,
+  "resistance": 0.219,
+  "io": 0.4,
+  "max_current": 7.1,
+  "weight_g": 22.1,
+  "max_power": 90.0,
+  "io_voltage": 7.0
+}

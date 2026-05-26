@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2810_Freestyle_1150KV",
+  "name": "2810 Freestyle 1150KV",
+  "manufacturer": "Xnova",
+  "kv": 1150.0,
+  "resistance": 0.067,
+  "io": 1.3,
+  "max_current": 52.0,
+  "weight_g": 69.2,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

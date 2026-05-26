@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_20_99",
+  "name": "4619/20/99",
+  "manufacturer": "NeuMotors",
+  "kv": 99.0,
+  "resistance": 0.51,
+  "io": 0.27,
+  "max_current": 27.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

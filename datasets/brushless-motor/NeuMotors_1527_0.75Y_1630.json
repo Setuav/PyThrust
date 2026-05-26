@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_0.75Y_1630",
+  "name": "1527/0.75Y 1630",
+  "manufacturer": "NeuMotors",
+  "kv": 1630.0,
+  "resistance": 0.0061,
+  "io": 3.33,
+  "max_current": 122.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

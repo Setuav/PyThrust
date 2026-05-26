@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B4465-04_KV2060",
+  "name": "B4465-04 KV2060",
+  "manufacturer": "EMP",
+  "kv": 2060.0,
+  "resistance": 0.0038,
+  "io": 4.6,
+  "max_current": 0.0,
+  "weight_g": 455.3,
+  "max_power": 2590.0,
+  "io_voltage": 10.0
+}

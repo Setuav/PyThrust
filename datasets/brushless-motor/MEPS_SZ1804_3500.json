@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1804_3500",
+  "name": "SZ1804 3500",
+  "manufacturer": "MEPS",
+  "kv": 3500.0,
+  "resistance": 0.19,
+  "io": 1.3,
+  "max_current": 24.0,
+  "weight_g": 15.0,
+  "max_power": 386.0,
+  "io_voltage": 10.0
+}

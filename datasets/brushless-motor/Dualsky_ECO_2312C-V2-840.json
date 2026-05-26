@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2312C-V2-840",
+  "name": "ECO 2312C-V2-840",
+  "manufacturer": "Dualsky",
+  "kv": 840.0,
+  "resistance": 0.14,
+  "io": 0.5,
+  "max_current": 19.0,
+  "weight_g": 58.1,
+  "max_power": 304.0,
+  "io_voltage": 10.0
+}

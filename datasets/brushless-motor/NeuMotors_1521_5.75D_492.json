@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_5.75D_492",
+  "name": "1521/5.75D 492",
+  "manufacturer": "NeuMotors",
+  "kv": 492.0,
+  "resistance": 0.093,
+  "io": 0.78,
+  "max_current": 29.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

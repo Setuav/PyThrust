@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RX1306-7_4000Kv",
+  "name": "RX1306-7 4000Kv",
+  "manufacturer": "Lumenier",
+  "kv": 4000.0,
+  "resistance": 0.062,
+  "io": 0.2,
+  "max_current": 16.0,
+  "weight_g": 11.1,
+  "max_power": 120.0,
+  "io_voltage": 12.6
+}

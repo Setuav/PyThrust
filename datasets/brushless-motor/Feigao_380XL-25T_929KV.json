@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-25T_929KV",
+  "name": "380XL-25T 929KV",
+  "manufacturer": "Feigao",
+  "kv": 929.0,
+  "resistance": 0.1215,
+  "io": 0.3,
+  "max_current": 17.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

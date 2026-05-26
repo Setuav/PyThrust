@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ18-17-11_3050KV",
+  "name": "AJ18-17-11 3050KV",
+  "manufacturer": "GS-Models",
+  "kv": 3050.0,
+  "resistance": 0.258,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 9.9,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

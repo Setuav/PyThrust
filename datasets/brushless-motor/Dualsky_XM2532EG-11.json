@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2532EG-11",
+  "name": "XM2532EG-11",
+  "manufacturer": "Dualsky",
+  "kv": 2200.0,
+  "resistance": 0.043,
+  "io": 1.9,
+  "max_current": 36.0,
+  "weight_g": 47.9,
+  "max_power": 266.0,
+  "io_voltage": 10.0
+}

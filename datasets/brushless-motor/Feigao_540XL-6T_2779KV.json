@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-6T_2779KV",
+  "name": "540XL-6T 2779KV",
+  "manufacturer": "Feigao",
+  "kv": 2779.0,
+  "resistance": 0.0041,
+  "io": 5.2,
+  "max_current": 110.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

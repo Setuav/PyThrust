@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_4.5_440",
+  "name": "4619/4.5/440",
+  "manufacturer": "NeuMotors",
+  "kv": 440.0,
+  "resistance": 0.027,
+  "io": 1.2,
+  "max_current": 120.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

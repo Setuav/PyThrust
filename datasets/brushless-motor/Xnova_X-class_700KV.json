@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_X-class_700KV",
+  "name": "X-class 700KV",
+  "manufacturer": "Xnova",
+  "kv": 700.0,
+  "resistance": 0.025,
+  "io": 4.5,
+  "max_current": 102.0,
+  "weight_g": 320.3,
+  "max_power": 2576.0,
+  "io_voltage": 10.0
+}

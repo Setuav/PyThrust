@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_1Y_306",
+  "name": "2530/1Y 306",
+  "manufacturer": "NeuMotors",
+  "kv": 306.0,
+  "resistance": 0.007,
+  "io": 3.0,
+  "max_current": 245.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

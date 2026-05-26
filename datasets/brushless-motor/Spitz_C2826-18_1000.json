@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C2826-18_1000",
+  "name": "C2826-18 1000",
+  "manufacturer": "Spitz",
+  "kv": 1000.0,
+  "resistance": 0.256,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 45.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

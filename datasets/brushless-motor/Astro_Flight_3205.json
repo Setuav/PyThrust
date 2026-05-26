@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_3205",
+  "name": "3205",
+  "manufacturer": "Astro Flight",
+  "kv": 339.0,
+  "resistance": 0.05,
+  "io": 0.7,
+  "max_current": 63.0,
+  "weight_g": 640.7,
+  "max_power": 1500.0,
+  "io_voltage": 8.4
+}

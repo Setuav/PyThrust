@@ -1,0 +1,12 @@
+{
+  "id": "Spektrum_Avian_6362-250",
+  "name": "Avian 6362-250",
+  "manufacturer": "Spektrum",
+  "kv": 250.0,
+  "resistance": 0.0294,
+  "io": 1.5,
+  "max_current": 100.0,
+  "weight_g": 634.5,
+  "max_power": 3200.0,
+  "io_voltage": 7.4
+}

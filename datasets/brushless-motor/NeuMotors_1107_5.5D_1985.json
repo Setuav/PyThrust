@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_5.5D_1985",
+  "name": "1107/5.5D 1985",
+  "manufacturer": "NeuMotors",
+  "kv": 1985.0,
+  "resistance": 0.038,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3640-09_KV2250",
+  "name": "B3640-09 KV2250",
+  "manufacturer": "EMP",
+  "kv": 2250.0,
+  "resistance": 0.035,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 1155.0,
+  "io_voltage": 10.0
+}

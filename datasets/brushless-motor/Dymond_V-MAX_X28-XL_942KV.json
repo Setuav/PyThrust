@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_X28-XL_942KV",
+  "name": "V-MAX X28-XL 942KV",
+  "manufacturer": "Dymond",
+  "kv": 942.0,
+  "resistance": 0.1405,
+  "io": 0.86,
+  "max_current": 19.0,
+  "weight_g": 98.1,
+  "max_power": 320.0,
+  "io_voltage": 9.76
+}

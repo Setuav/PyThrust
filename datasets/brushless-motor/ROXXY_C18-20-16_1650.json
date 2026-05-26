@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C18-20-16_1650",
+  "name": "C18-20-16 1650",
+  "manufacturer": "ROXXY",
+  "kv": 1650.0,
+  "resistance": 0.387,
+  "io": 0.47,
+  "max_current": 7.0,
+  "weight_g": 19.0,
+  "max_power": 60.0,
+  "io_voltage": 10.5
+}

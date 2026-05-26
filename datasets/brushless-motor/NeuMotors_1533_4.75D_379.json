@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_4.75D_379",
+  "name": "1533/4.75D 379",
+  "manufacturer": "NeuMotors",
+  "kv": 379.0,
+  "resistance": 0.0993,
+  "io": 0.95,
+  "max_current": 38.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

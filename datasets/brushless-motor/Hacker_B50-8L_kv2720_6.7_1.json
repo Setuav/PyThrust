@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-8L_kv2720_6.7_1",
+  "name": "B50-8L kv2720 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 2720.0,
+  "resistance": 0.007,
+  "io": 4.3,
+  "max_current": 115.0,
+  "weight_g": 347.3,
+  "max_power": 2100.0,
+  "io_voltage": 8.4
+}

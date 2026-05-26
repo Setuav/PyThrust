@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2216_KV880_V3_3-4S",
+  "name": "X2216 KV880 V3 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 880.0,
+  "resistance": 0.089,
+  "io": 0.5,
+  "max_current": 32.0,
+  "weight_g": 68.0,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

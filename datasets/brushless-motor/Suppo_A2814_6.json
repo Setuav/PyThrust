@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2814_6",
+  "name": "A2814/6",
+  "manufacturer": "Suppo",
+  "kv": 1410.0,
+  "resistance": 0.05,
+  "io": 2.1,
+  "max_current": 40.0,
+  "weight_g": 100.1,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

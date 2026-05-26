@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1907_1Y_1400",
+  "name": "1907/1Y 1400",
+  "manufacturer": "NeuMotors",
+  "kv": 1400.0,
+  "resistance": 0.012,
+  "io": 1.4,
+  "max_current": 72.0,
+  "weight_g": 235.3,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

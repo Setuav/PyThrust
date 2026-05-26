@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO2835-800-MK",
+  "name": "MTO2835-800-MK",
+  "manufacturer": "MayTech",
+  "kv": 800.0,
+  "resistance": 0.168,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 72.0,
+  "max_power": 455.0,
+  "io_voltage": 7.4
+}

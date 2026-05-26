@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-6XS_V4_Kv370",
+  "name": "A60-6XS V4 Kv370",
+  "manufacturer": "Hacker",
+  "kv": 370.0,
+  "resistance": 0.015,
+  "io": 1.8,
+  "max_current": 120.0,
+  "weight_g": 480.2,
+  "max_power": 2300.0,
+  "io_voltage": 8.4
+}

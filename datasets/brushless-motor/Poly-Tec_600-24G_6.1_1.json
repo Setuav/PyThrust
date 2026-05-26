@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_600-24G_6.1_1",
+  "name": "600-24G 6.1:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 2400.0,
+  "resistance": 0.0084,
+  "io": 5.0,
+  "max_current": 125.0,
+  "weight_g": 375.3,
+  "max_power": 1550.0,
+  "io_voltage": 7.4
+}

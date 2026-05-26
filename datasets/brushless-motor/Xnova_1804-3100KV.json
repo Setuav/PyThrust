@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_1804-3100KV",
+  "name": "1804-3100KV",
+  "manufacturer": "Xnova",
+  "kv": 3100.0,
+  "resistance": 0.123,
+  "io": 1.1,
+  "max_current": 20.0,
+  "weight_g": 15.3,
+  "max_power": 299.0,
+  "io_voltage": 10.0
+}

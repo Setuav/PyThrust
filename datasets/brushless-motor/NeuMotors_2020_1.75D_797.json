@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_1.75D_797",
+  "name": "2020/1.75D 797",
+  "manufacturer": "NeuMotors",
+  "kv": 797.0,
+  "resistance": 0.007,
+  "io": 2.88,
+  "max_current": 129.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD3530-10_1380",
+  "name": "HD3530-10/1380",
+  "manufacturer": "PowerHD",
+  "kv": 1380.0,
+  "resistance": 0.057,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 72.0,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING-E_Pro_2306_1700",
+  "name": "XING-E Pro 2306 1700",
+  "manufacturer": "iFlight",
+  "kv": 1700.0,
+  "resistance": 0.0406,
+  "io": 2.1,
+  "max_current": 55.0,
+  "weight_g": 33.2,
+  "max_power": 885.0,
+  "io_voltage": 12.6
+}

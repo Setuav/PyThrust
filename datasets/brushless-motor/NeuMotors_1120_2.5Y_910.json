@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_2.5Y_910",
+  "name": "1120/2.5Y 910",
+  "manufacturer": "NeuMotors",
+  "kv": 910.0,
+  "resistance": 0.063,
+  "io": 1.0,
+  "max_current": 24.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

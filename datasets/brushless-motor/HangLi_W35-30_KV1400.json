@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W35-30_KV1400",
+  "name": "W35-30 KV1400",
+  "manufacturer": "HangLi",
+  "kv": 1400.0,
+  "resistance": 0.0569,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 77.1,
+  "max_power": 280.0,
+  "io_voltage": 7.4
+}

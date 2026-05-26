@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3007-6000_F5J",
+  "name": "L3007-6000 F5J",
+  "manufacturer": "Leomotion",
+  "kv": 6000.0,
+  "resistance": 0.032,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 47.9,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

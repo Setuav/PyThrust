@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS8012S_KV150_12S",
+  "name": "XS8012S KV150 12S",
+  "manufacturer": "SunnySky",
+  "kv": 150.0,
+  "resistance": 0.042,
+  "io": 1.3,
+  "max_current": 63.0,
+  "weight_g": 512.3,
+  "max_power": 2800.0,
+  "io_voltage": 10.0
+}

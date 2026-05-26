@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_4130-310",
+  "name": "4130-310",
+  "manufacturer": "Tempest",
+  "kv": 310.0,
+  "resistance": 0.043,
+  "io": 1.66,
+  "max_current": 52.0,
+  "weight_g": 371.9,
+  "max_power": 1920.0,
+  "io_voltage": 10.0
+}

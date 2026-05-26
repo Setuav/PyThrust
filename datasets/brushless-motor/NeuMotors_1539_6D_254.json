@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_6D_254",
+  "name": "1539/6D 254",
+  "manufacturer": "NeuMotors",
+  "kv": 254.0,
+  "resistance": 0.1872,
+  "io": 0.75,
+  "max_current": 30.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

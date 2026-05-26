@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_3525-650",
+  "name": "3525-650",
+  "manufacturer": "MultiStar",
+  "kv": 650.0,
+  "resistance": 0.178,
+  "io": 0.5,
+  "max_current": 17.0,
+  "weight_g": 58.1,
+  "max_power": 250.0,
+  "io_voltage": 11.0
+}

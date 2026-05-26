@@ -1,0 +1,12 @@
+{
+  "id": "Castle_C._Vertigo_550-3530",
+  "name": "Vertigo 550-3530",
+  "manufacturer": "Castle C.",
+  "kv": 1175.0,
+  "resistance": 0.009,
+  "io": 3.0,
+  "max_current": 250.0,
+  "weight_g": 360.0,
+  "max_power": 2800.0,
+  "io_voltage": 10.0
+}

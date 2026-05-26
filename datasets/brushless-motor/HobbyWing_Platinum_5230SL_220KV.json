@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_Platinum_5230SL_220KV",
+  "name": "Platinum 5230SL 220KV",
+  "manufacturer": "HobbyWing",
+  "kv": 220.0,
+  "resistance": 0.0172,
+  "io": 3.7,
+  "max_current": 122.0,
+  "weight_g": 579.5,
+  "max_power": 5423.0,
+  "io_voltage": 44.4
+}

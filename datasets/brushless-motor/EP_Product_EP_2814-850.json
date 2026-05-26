@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2814-850",
+  "name": "EP 2814-850",
+  "manufacturer": "EP Product",
+  "kv": 850.0,
+  "resistance": 0.099,
+  "io": 0.7,
+  "max_current": 25.0,
+  "weight_g": 109.1,
+  "max_power": 370.0,
+  "io_voltage": 10.0
+}

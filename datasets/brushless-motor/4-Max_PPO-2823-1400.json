@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-2823-1400",
+  "name": "PPO-2823-1400",
+  "manufacturer": "4-Max",
+  "kv": 1400.0,
+  "resistance": 0.352,
+  "io": 0.7,
+  "max_current": 12.0,
+  "weight_g": 35.2,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

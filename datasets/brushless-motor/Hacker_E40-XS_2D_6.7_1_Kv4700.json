@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_E40-XS_2D_6.7_1_Kv4700",
+  "name": "E40-XS 2D 6.7:1 Kv4700",
+  "manufacturer": "Hacker",
+  "kv": 4700.0,
+  "resistance": 0.009,
+  "io": 2.9,
+  "max_current": 80.0,
+  "weight_g": 176.1,
+  "max_power": 1100.0,
+  "io_voltage": 8.4
+}

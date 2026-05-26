@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_ROBO_2207_2450KV",
+  "name": "ROBO 2207 2450KV",
+  "manufacturer": "Flywoo",
+  "kv": 2450.0,
+  "resistance": 0.058,
+  "io": 1.8,
+  "max_current": 35.0,
+  "weight_g": 34.0,
+  "max_power": 588.0,
+  "io_voltage": 10.0
+}

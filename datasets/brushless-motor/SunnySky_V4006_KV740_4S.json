@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4006_KV740_4S",
+  "name": "V4006 KV740 4S",
+  "manufacturer": "SunnySky",
+  "kv": 740.0,
+  "resistance": 0.047,
+  "io": 0.9,
+  "max_current": 35.0,
+  "weight_g": 68.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

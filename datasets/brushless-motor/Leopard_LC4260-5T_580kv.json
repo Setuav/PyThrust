@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4260-5T_580kv",
+  "name": "LC4260-5T 580kv",
+  "manufacturer": "Leopard",
+  "kv": 580.0,
+  "resistance": 0.022,
+  "io": 2.0,
+  "max_current": 56.0,
+  "weight_g": 281.2,
+  "max_power": 1017.0,
+  "io_voltage": 10.0
+}

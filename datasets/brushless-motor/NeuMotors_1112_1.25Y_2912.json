@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_1.25Y_2912",
+  "name": "1112/1.25Y 2912",
+  "manufacturer": "NeuMotors",
+  "kv": 2912.0,
+  "resistance": 0.01,
+  "io": 2.0,
+  "max_current": 58.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

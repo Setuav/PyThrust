@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4110_KV340",
+  "name": "MN4110 KV340",
+  "manufacturer": "T-Motor",
+  "kv": 340.0,
+  "resistance": 0.112,
+  "io": 0.9,
+  "max_current": 30.0,
+  "weight_g": 152.2,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

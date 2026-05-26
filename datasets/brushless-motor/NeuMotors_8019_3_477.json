@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_3_477",
+  "name": "8019/3/477",
+  "manufacturer": "NeuMotors",
+  "kv": 477.0,
+  "resistance": 0.003,
+  "io": 2.7,
+  "max_current": 340.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

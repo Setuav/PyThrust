@@ -1,0 +1,12 @@
+{
+  "id": "Kyosho_LeMans_480_Gold",
+  "name": "LeMans 480 Gold",
+  "manufacturer": "Kyosho",
+  "kv": 2500.0,
+  "resistance": 0.076,
+  "io": 1.1,
+  "max_current": 30.0,
+  "weight_g": 177.2,
+  "max_power": 530.0,
+  "io_voltage": 8.0
+}

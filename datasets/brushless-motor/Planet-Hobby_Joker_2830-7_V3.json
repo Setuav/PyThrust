@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2830-7_V3",
+  "name": "Joker 2830-7 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1500.0,
+  "resistance": 0.0464,
+  "io": 1.1,
+  "max_current": 26.0,
+  "weight_g": 58.1,
+  "max_power": 208.0,
+  "io_voltage": 10.0
+}

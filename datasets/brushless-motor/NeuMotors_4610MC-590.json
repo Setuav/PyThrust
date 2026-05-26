@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-590",
+  "name": "4610MC-590",
+  "manufacturer": "NeuMotors",
+  "kv": 590.0,
+  "resistance": 0.03,
+  "io": 0.35,
+  "max_current": 83.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

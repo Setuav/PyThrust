@@ -1,0 +1,12 @@
+{
+  "id": "HET_700-68_KV900",
+  "name": "700-68 KV900",
+  "manufacturer": "HET",
+  "kv": 900.0,
+  "resistance": 0.026,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 330.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

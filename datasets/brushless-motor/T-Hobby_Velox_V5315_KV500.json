@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_Velox_V5315_KV500",
+  "name": "Velox V5315 KV500",
+  "manufacturer": "T-Hobby",
+  "kv": 500.0,
+  "resistance": 0.015,
+  "io": 2.9,
+  "max_current": 116.0,
+  "weight_g": 390.4,
+  "max_power": 3070.0,
+  "io_voltage": 10.0
+}

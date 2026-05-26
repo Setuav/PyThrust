@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1530_10_2750",
+  "name": "TS-EZ1530/10 2750",
+  "manufacturer": "Tenshock",
+  "kv": 2750.0,
+  "resistance": 0.014,
+  "io": 2.5,
+  "max_current": 65.0,
+  "weight_g": 137.2,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

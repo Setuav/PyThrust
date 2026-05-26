@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-2221-2010",
+  "name": "HKII-2221-2010",
+  "manufacturer": "Scorpion",
+  "kv": 2010.0,
+  "resistance": 0.052,
+  "io": 1.01,
+  "max_current": 28.0,
+  "weight_g": 81.1,
+  "max_power": 590.0,
+  "io_voltage": 10.0
+}

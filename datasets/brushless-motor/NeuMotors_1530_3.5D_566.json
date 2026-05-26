@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_3.5D_566",
+  "name": "1530/3.5D 566",
+  "manufacturer": "NeuMotors",
+  "kv": 566.0,
+  "resistance": 0.049,
+  "io": 1.3,
+  "max_current": 52.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

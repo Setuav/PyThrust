@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._3506_460KV",
+  "name": "3506 460KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 460.0,
+  "resistance": 0.2,
+  "io": 0.36,
+  "max_current": 10.0,
+  "weight_g": 72.0,
+  "max_power": 204.0,
+  "io_voltage": 20.0
+}

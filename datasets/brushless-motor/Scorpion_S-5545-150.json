@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-5545-150",
+  "name": "S-5545-150",
+  "manufacturer": "Scorpion",
+  "kv": 150.0,
+  "resistance": 0.03,
+  "io": 1.31,
+  "max_current": 90.0,
+  "weight_g": 1026.5,
+  "max_power": 3800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_370_BL_5400",
+  "name": "Park 370 BL 5400",
+  "manufacturer": "E-flite",
+  "kv": 5400.0,
+  "resistance": 0.12,
+  "io": 1.3,
+  "max_current": 15.0,
+  "weight_g": 47.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

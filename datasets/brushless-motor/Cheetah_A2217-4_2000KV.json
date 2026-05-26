@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2217-4_2000KV",
+  "name": "A2217-4 2000KV",
+  "manufacturer": "Cheetah",
+  "kv": 2000.0,
+  "resistance": 0.042,
+  "io": 3.8,
+  "max_current": 0.0,
+  "weight_g": 70.0,
+  "max_power": 610.0,
+  "io_voltage": 10.0
+}

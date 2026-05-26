@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Orbit_20-10",
+  "name": "Orbit 20-10",
+  "manufacturer": "Plettenberg",
+  "kv": 1130.0,
+  "resistance": 0.025,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1250.0,
+  "io_voltage": 11.0
+}

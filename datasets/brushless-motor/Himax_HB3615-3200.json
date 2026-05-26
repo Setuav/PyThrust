@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HB3615-3200",
+  "name": "HB3615-3200",
+  "manufacturer": "Himax",
+  "kv": 3190.0,
+  "resistance": 0.0167,
+  "io": 3.7,
+  "max_current": 0.0,
+  "weight_g": 141.2,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

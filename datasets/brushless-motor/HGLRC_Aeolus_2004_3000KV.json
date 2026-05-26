@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2004_3000KV",
+  "name": "Aeolus 2004 3000KV",
+  "manufacturer": "HGLRC",
+  "kv": 3000.0,
+  "resistance": 0.12,
+  "io": 0.95,
+  "max_current": 22.0,
+  "weight_g": 15.9,
+  "max_power": 455.0,
+  "io_voltage": 10.0
+}

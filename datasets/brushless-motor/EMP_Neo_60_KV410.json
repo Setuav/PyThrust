@@ -1,0 +1,12 @@
+{
+  "id": "EMP_Neo_60_KV410",
+  "name": "Neo 60 KV410",
+  "manufacturer": "EMP",
+  "kv": 410.0,
+  "resistance": 0.017,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 443.4,
+  "max_power": 1750.0,
+  "io_voltage": 13.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5850-6D_1180",
+  "name": "TP5850-6D 1180",
+  "manufacturer": "TP Power",
+  "kv": 1180.0,
+  "resistance": 0.0031,
+  "io": 4.5,
+  "max_current": 279.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_V35-M_932KV",
+  "name": "V-MAX V35-M 932KV",
+  "manufacturer": "Dymond",
+  "kv": 932.0,
+  "resistance": 0.0839,
+  "io": 1.44,
+  "max_current": 40.0,
+  "weight_g": 172.1,
+  "max_power": 550.0,
+  "io_voltage": 11.1
+}

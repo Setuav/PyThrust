@@ -1,0 +1,12 @@
+{
+  "id": "Infinite_A1709-1500",
+  "name": "A1709-1500",
+  "manufacturer": "Infinite",
+  "kv": 1500.0,
+  "resistance": 0.181,
+  "io": 0.9,
+  "max_current": 8.0,
+  "weight_g": 24.9,
+  "max_power": 75.0,
+  "io_voltage": 10.0
+}

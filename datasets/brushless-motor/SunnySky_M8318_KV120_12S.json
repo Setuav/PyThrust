@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M8318_KV120_12S",
+  "name": "M8318 KV120 12S",
+  "manufacturer": "SunnySky",
+  "kv": 120.0,
+  "resistance": 0.037,
+  "io": 1.3,
+  "max_current": 64.0,
+  "weight_g": 635.6,
+  "max_power": 2870.0,
+  "io_voltage": 10.0
+}

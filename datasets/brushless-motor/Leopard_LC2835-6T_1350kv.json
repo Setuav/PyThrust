@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-6T_1350kv",
+  "name": "LC2835-6T 1350kv",
+  "manufacturer": "Leopard",
+  "kv": 1350.0,
+  "resistance": 0.0468,
+  "io": 1.2,
+  "max_current": 32.0,
+  "weight_g": 71.2,
+  "max_power": 321.0,
+  "io_voltage": 7.4
+}

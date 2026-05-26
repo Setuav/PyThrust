@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-23T_1543KV",
+  "name": "540S-23T 1543KV",
+  "manufacturer": "Feigao",
+  "kv": 1543.0,
+  "resistance": 0.05,
+  "io": 0.7,
+  "max_current": 28.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

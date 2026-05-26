@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2508_O_3_1612",
+  "name": "2508 O/3/1612",
+  "manufacturer": "NeuMotors",
+  "kv": 1612.0,
+  "resistance": 0.085,
+  "io": 1.0,
+  "max_current": 64.0,
+  "weight_g": 32.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

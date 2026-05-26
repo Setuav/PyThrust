@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ35-36-08_1000KV",
+  "name": "AJ35-36-08 1000KV",
+  "manufacturer": "GS-Models",
+  "kv": 1000.0,
+  "resistance": 0.048,
+  "io": 1.6,
+  "max_current": 48.0,
+  "weight_g": 100.1,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

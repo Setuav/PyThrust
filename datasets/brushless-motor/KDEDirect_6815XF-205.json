@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_6815XF-205",
+  "name": "6815XF-205",
+  "manufacturer": "KDEDirect",
+  "kv": 205.0,
+  "resistance": 0.048,
+  "io": 1.9,
+  "max_current": 57.0,
+  "weight_g": 550.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

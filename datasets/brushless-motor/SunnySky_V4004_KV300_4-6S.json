@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4004_KV300_4-6S",
+  "name": "V4004 KV300 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 300.0,
+  "resistance": 0.448,
+  "io": 0.2,
+  "max_current": 10.0,
+  "weight_g": 51.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1917_2.5Y_240",
+  "name": "1917/2.5Y 240",
+  "manufacturer": "NeuMotors",
+  "kv": 240.0,
+  "resistance": 0.094,
+  "io": 0.5,
+  "max_current": 28.0,
+  "weight_g": 453.3,
+  "max_power": 4100.0,
+  "io_voltage": 10.0
+}

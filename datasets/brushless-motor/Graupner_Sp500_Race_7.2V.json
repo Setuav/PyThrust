@@ -1,0 +1,12 @@
+{
+  "id": "Graupner_Sp500_Race_7.2V",
+  "name": "Sp500 Race 7.2V",
+  "manufacturer": "Graupner",
+  "kv": 2985.0,
+  "resistance": 0.105,
+  "io": 2.5,
+  "max_current": 20.0,
+  "weight_g": 104.9,
+  "max_power": 315.0,
+  "io_voltage": 7.2
+}

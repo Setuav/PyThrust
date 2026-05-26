@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN605-S_KV170",
+  "name": "MN605-S KV170",
+  "manufacturer": "T-Motor",
+  "kv": 170.0,
+  "resistance": 0.065,
+  "io": 1.0,
+  "max_current": 35.0,
+  "weight_g": 327.2,
+  "max_power": 1700.0,
+  "io_voltage": 17.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_C2826-18_1000KV",
+  "name": "C2826-18 1000KV",
+  "manufacturer": "Avionic",
+  "kv": 1000.0,
+  "resistance": 0.252,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 50.2,
+  "max_power": 190.0,
+  "io_voltage": 10.0
+}

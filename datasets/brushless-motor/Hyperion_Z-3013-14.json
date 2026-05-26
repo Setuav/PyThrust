@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-3013-14",
+  "name": "Z-3013-14",
+  "manufacturer": "Hyperion",
+  "kv": 1080.0,
+  "resistance": 0.048,
+  "io": 2.5,
+  "max_current": 40.0,
+  "weight_g": 110.0,
+  "max_power": 330.0,
+  "io_voltage": 8.0
+}

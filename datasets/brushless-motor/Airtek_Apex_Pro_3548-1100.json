@@ -1,0 +1,12 @@
+{
+  "id": "Airtek_Apex_Pro_3548-1100",
+  "name": "Apex Pro 3548-1100",
+  "manufacturer": "Airtek",
+  "kv": 1100.0,
+  "resistance": 0.024,
+  "io": 2.2,
+  "max_current": 95.0,
+  "weight_g": 153.1,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

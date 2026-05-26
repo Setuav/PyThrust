@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C4250-06_800",
+  "name": "C4250-06 800",
+  "manufacturer": "Spitz",
+  "kv": 800.0,
+  "resistance": 0.0212,
+  "io": 2.3,
+  "max_current": 62.0,
+  "weight_g": 205.3,
+  "max_power": 1250.0,
+  "io_voltage": 10.0
+}

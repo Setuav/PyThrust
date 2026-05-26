@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2208-2600",
+  "name": "HS2208-2600",
+  "manufacturer": "Hyperion",
+  "kv": 2600.0,
+  "resistance": 0.126,
+  "io": 0.85,
+  "max_current": 20.0,
+  "weight_g": 39.1,
+  "max_power": 215.0,
+  "io_voltage": 10.0
+}

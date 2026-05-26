@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_A3215_450",
+  "name": "A3215 450",
+  "manufacturer": "Flash Hobby",
+  "kv": 450.0,
+  "resistance": 0.12,
+  "io": 0.49,
+  "max_current": 46.0,
+  "weight_g": 126.2,
+  "max_power": 835.0,
+  "io_voltage": 10.0
+}

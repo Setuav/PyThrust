@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_3.25D_5040",
+  "name": "1105/3.25D 5040",
+  "manufacturer": "NeuMotors",
+  "kv": 5040.0,
+  "resistance": 0.009,
+  "io": 1.4,
+  "max_current": 34.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

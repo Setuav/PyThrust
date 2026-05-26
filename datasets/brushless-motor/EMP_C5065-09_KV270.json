@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C5065-09_KV270",
+  "name": "C5065-09 KV270",
+  "manufacturer": "EMP",
+  "kv": 270.0,
+  "resistance": 0.042,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 420.4,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

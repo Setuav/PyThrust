@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_2.25D_4853",
+  "name": "1107/2.25D 4853",
+  "manufacturer": "NeuMotors",
+  "kv": 4853.0,
+  "resistance": 0.006,
+  "io": 2.0,
+  "max_current": 49.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

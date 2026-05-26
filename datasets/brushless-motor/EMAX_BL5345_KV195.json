@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL5345_KV195",
+  "name": "BL5345 KV195",
+  "manufacturer": "EMAX",
+  "kv": 195.0,
+  "resistance": 0.032,
+  "io": 1.9,
+  "max_current": 90.0,
+  "weight_g": 790.7,
+  "max_power": 3780.0,
+  "io_voltage": 15.0
+}

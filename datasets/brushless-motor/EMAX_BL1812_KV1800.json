@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL1812_KV1800",
+  "name": "BL1812 KV1800",
+  "manufacturer": "EMAX",
+  "kv": 1800.0,
+  "resistance": 0.108,
+  "io": 1.4,
+  "max_current": 13.0,
+  "weight_g": 28.1,
+  "max_power": 159.0,
+  "io_voltage": 8.0
+}

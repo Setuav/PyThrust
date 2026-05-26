@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1920_1Y_510",
+  "name": "1920/1Y 510",
+  "manufacturer": "NeuMotors",
+  "kv": 510.0,
+  "resistance": 0.016,
+  "io": 1.0,
+  "max_current": 73.0,
+  "weight_g": 509.4,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

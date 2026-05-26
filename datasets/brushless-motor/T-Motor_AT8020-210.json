@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT8020-210",
+  "name": "AT8020-210",
+  "manufacturer": "T-Motor",
+  "kv": 210.0,
+  "resistance": 0.012,
+  "io": 5.3,
+  "max_current": 135.0,
+  "weight_g": 870.6,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

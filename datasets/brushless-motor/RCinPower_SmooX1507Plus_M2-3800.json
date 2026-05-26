@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_SmooX1507Plus_M2-3800",
+  "name": "SmooX1507Plus M2-3800",
+  "manufacturer": "RCinPower",
+  "kv": 3800.0,
+  "resistance": 0.08,
+  "io": 1.5,
+  "max_current": 23.0,
+  "weight_g": 17.0,
+  "max_power": 368.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M5212_KV340",
+  "name": "M5212 KV340",
+  "manufacturer": "SunnySky",
+  "kv": 340.0,
+  "resistance": 0.067,
+  "io": 1.0,
+  "max_current": 46.5,
+  "weight_g": 260.2,
+  "max_power": 1032.0,
+  "io_voltage": 10.0
+}

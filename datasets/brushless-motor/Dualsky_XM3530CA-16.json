@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3530CA-16",
+  "name": "XM3530CA-16",
+  "manufacturer": "Dualsky",
+  "kv": 920.0,
+  "resistance": 0.113,
+  "io": 0.68,
+  "max_current": 24.0,
+  "weight_g": 74.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

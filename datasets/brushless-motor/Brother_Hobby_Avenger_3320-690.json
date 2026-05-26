@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3320-690",
+  "name": "Avenger 3320-690",
+  "manufacturer": "Brother Hobby",
+  "kv": 690.0,
+  "resistance": 0.0473,
+  "io": 2.51,
+  "max_current": 73.0,
+  "weight_g": 151.1,
+  "max_power": 2460.0,
+  "io_voltage": 10.0
+}

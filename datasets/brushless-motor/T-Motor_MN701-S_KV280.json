@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN701-S_KV280",
+  "name": "MN701-S KV280",
+  "manufacturer": "T-Motor",
+  "kv": 280.0,
+  "resistance": 0.023,
+  "io": 2.0,
+  "max_current": 65.0,
+  "weight_g": 355.2,
+  "max_power": 1600.0,
+  "io_voltage": 22.0
+}

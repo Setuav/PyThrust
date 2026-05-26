@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2814-910",
+  "name": "BE2814-910",
+  "manufacturer": "DYS",
+  "kv": 910.0,
+  "resistance": 0.061,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 100.1,
+  "max_power": 759.0,
+  "io_voltage": 14.8
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_1.75D_1616",
+  "name": "1521/1.75D 1616",
+  "manufacturer": "NeuMotors",
+  "kv": 1616.0,
+  "resistance": 0.0086,
+  "io": 2.57,
+  "max_current": 94.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

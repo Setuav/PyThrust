@@ -1,0 +1,12 @@
+{
+  "id": "Quantum_QT-4135-530",
+  "name": "QT-4135-530*",
+  "manufacturer": "Quantum",
+  "kv": 530.0,
+  "resistance": 0.024,
+  "io": 2.5,
+  "max_current": 80.0,
+  "weight_g": 440.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

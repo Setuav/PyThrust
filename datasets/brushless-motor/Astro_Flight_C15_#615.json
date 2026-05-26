@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_C15_#615",
+  "name": "C15 #615*",
+  "manufacturer": "Astro Flight",
+  "kv": 1488.0,
+  "resistance": 0.069,
+  "io": 2.0,
+  "max_current": 25.0,
+  "weight_g": 226.8,
+  "max_power": 680.0,
+  "io_voltage": 8.0
+}

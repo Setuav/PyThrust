@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5008_300KV",
+  "name": "5008 300KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 300.0,
+  "resistance": 0.08,
+  "io": 0.99,
+  "max_current": 26.0,
+  "weight_g": 127.0,
+  "max_power": 602.0,
+  "io_voltage": 20.0
+}

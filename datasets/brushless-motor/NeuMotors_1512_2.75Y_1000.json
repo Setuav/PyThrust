@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_2.75Y_1000",
+  "name": "1512/2.75Y 1000",
+  "manufacturer": "NeuMotors",
+  "kv": 1000.0,
+  "resistance": 0.0363,
+  "io": 0.91,
+  "max_current": 33.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

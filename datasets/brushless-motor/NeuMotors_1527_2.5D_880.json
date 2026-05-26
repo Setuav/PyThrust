@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_2.5D_880",
+  "name": "1527/2.5D 880",
+  "manufacturer": "NeuMotors",
+  "kv": 880.0,
+  "resistance": 0.0225,
+  "io": 1.8,
+  "max_current": 66.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

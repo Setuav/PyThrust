@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A3520-6_840KV",
+  "name": "A3520-6  840KV",
+  "manufacturer": "Cheetah",
+  "kv": 840.0,
+  "resistance": 0.05,
+  "io": 2.1,
+  "max_current": 50.0,
+  "weight_g": 210.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

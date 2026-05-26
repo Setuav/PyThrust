@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2812-10_KV970",
+  "name": "GT2812-10 KV970",
+  "manufacturer": "EMAX",
+  "kv": 970.0,
+  "resistance": 0.095,
+  "io": 0.9,
+  "max_current": 27.0,
+  "weight_g": 105.2,
+  "max_power": 324.0,
+  "io_voltage": 11.0
+}

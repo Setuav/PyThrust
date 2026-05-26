@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4260-7T_420kv",
+  "name": "LC4260-7T 420kv",
+  "manufacturer": "Leopard",
+  "kv": 420.0,
+  "resistance": 0.0415,
+  "io": 1.3,
+  "max_current": 45.0,
+  "weight_g": 281.2,
+  "max_power": 1221.0,
+  "io_voltage": 10.0
+}

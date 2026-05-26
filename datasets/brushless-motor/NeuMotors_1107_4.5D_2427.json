@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_4.5D_2427",
+  "name": "1107/4.5D 2427",
+  "manufacturer": "NeuMotors",
+  "kv": 2427.0,
+  "resistance": 0.025,
+  "io": 1.0,
+  "max_current": 24.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

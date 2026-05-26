@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A10-9L",
+  "name": "A10-9L",
+  "manufacturer": "Hacker",
+  "kv": 1700.0,
+  "resistance": 0.18,
+  "io": 0.72,
+  "max_current": 8.0,
+  "weight_g": 20.1,
+  "max_power": 75.0,
+  "io_voltage": 8.4
+}

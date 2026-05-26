@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2835-08_KV3900",
+  "name": "B2835-08 KV3900",
+  "manufacturer": "EMP",
+  "kv": 3900.0,
+  "resistance": 0.04,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 705.0,
+  "io_voltage": 10.0
+}

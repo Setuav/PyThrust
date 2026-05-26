@@ -1,0 +1,12 @@
+{
+  "id": "HET_650-68_KV1340",
+  "name": "650-68 KV1340",
+  "manufacturer": "HET",
+  "kv": 1340.0,
+  "resistance": 0.0175,
+  "io": 1.5,
+  "max_current": 120.0,
+  "weight_g": 300.2,
+  "max_power": 4100.0,
+  "io_voltage": 10.0
+}

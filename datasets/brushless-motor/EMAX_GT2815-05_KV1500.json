@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2815-05_KV1500",
+  "name": "GT2815-05 KV1500",
+  "manufacturer": "EMAX",
+  "kv": 1500.0,
+  "resistance": 0.078,
+  "io": 2.7,
+  "max_current": 34.0,
+  "weight_g": 120.2,
+  "max_power": 360.0,
+  "io_voltage": 11.0
+}

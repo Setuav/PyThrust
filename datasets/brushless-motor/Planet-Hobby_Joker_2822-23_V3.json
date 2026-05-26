@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2822-23_V3",
+  "name": "Joker 2822-23 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1450.0,
+  "resistance": 0.23,
+  "io": 0.6,
+  "max_current": 10.0,
+  "weight_g": 30.1,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

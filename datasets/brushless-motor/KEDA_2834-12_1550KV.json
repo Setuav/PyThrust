@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2834-12_1550KV",
+  "name": "2834-12 1550KV",
+  "manufacturer": "KEDA",
+  "kv": 1550.0,
+  "resistance": 0.14,
+  "io": 1.75,
+  "max_current": 20.0,
+  "weight_g": 70.0,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

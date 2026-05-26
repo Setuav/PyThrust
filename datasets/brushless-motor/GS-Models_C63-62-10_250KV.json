@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C63-62-10_250KV",
+  "name": "C63-62-10 250KV",
+  "manufacturer": "GS-Models",
+  "kv": 250.0,
+  "resistance": 0.0293,
+  "io": 1.6,
+  "max_current": 90.0,
+  "weight_g": 660.5,
+  "max_power": 2900.0,
+  "io_voltage": 20.0
+}

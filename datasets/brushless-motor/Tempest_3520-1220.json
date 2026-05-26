@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_3520-1220",
+  "name": "3520-1220",
+  "manufacturer": "Tempest",
+  "kv": 1220.0,
+  "resistance": 0.015,
+  "io": 3.0,
+  "max_current": 82.0,
+  "weight_g": 206.1,
+  "max_power": 1515.0,
+  "io_voltage": 10.0
+}

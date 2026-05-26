@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2217-1120",
+  "name": "2217-1120",
+  "manufacturer": "Tempest",
+  "kv": 1120.0,
+  "resistance": 0.064,
+  "io": 1.06,
+  "max_current": 30.0,
+  "weight_g": 72.0,
+  "max_power": 445.0,
+  "io_voltage": 10.0
+}

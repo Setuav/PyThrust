@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-4020-420",
+  "name": "SII-4020-420",
+  "manufacturer": "Scorpion",
+  "kv": 420.0,
+  "resistance": 0.032,
+  "io": 0.91,
+  "max_current": 70.0,
+  "weight_g": 288.0,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_4120-440",
+  "name": "EP 4120-440",
+  "manufacturer": "EP Product",
+  "kv": 430.0,
+  "resistance": 0.06,
+  "io": 1.14,
+  "max_current": 54.0,
+  "weight_g": 290.3,
+  "max_power": 1330.0,
+  "io_voltage": 20.0
+}

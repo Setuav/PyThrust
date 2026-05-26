@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3548CA-5",
+  "name": "XM3548CA-5",
+  "manufacturer": "Dualsky",
+  "kv": 850.0,
+  "resistance": 0.032,
+  "io": 1.87,
+  "max_current": 40.0,
+  "weight_g": 165.0,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

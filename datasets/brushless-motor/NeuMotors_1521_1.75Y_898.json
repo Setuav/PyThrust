@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_1.75Y_898",
+  "name": "1521/1.75Y 898",
+  "manufacturer": "NeuMotors",
+  "kv": 898.0,
+  "resistance": 0.026,
+  "io": 1.43,
+  "max_current": 52.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

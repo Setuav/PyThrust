@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC450-7.5T_3200kv",
+  "name": "LC450-7.5T 3200kv",
+  "manufacturer": "Leopard",
+  "kv": 3200.0,
+  "resistance": 0.028,
+  "io": 1.5,
+  "max_current": 35.0,
+  "weight_g": 68.0,
+  "max_power": 450.0,
+  "io_voltage": 7.4
+}

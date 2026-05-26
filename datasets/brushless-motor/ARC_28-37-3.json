@@ -1,0 +1,12 @@
+{
+  "id": "ARC_28-37-3",
+  "name": "28-37-3",
+  "manufacturer": "ARC",
+  "kv": 2500.0,
+  "resistance": 0.112,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 79.4,
+  "max_power": 250.0,
+  "io_voltage": 12.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_0.75D_8800",
+  "name": "1509/0.75D 8800",
+  "manufacturer": "NeuMotors",
+  "kv": 8800.0,
+  "resistance": 0.0007,
+  "io": 6.0,
+  "max_current": 220.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

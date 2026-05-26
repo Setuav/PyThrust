@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56114_7D",
+  "name": "SSS 56114 7D",
+  "manufacturer": "TFL Hobby",
+  "kv": 880.0,
+  "resistance": 0.0052,
+  "io": 5.4,
+  "max_current": 230.0,
+  "weight_g": 1100.8,
+  "max_power": 13000.0,
+  "io_voltage": 11.1
+}

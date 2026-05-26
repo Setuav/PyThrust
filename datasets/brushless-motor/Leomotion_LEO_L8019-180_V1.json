@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8019-180_V1",
+  "name": "LEO L8019-180 V1",
+  "manufacturer": "Leomotion",
+  "kv": 183.0,
+  "resistance": 0.0154,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 1230.9,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

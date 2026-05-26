@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS3026-1600",
+  "name": "HS3026-1600",
+  "manufacturer": "Hyperion",
+  "kv": 1600.0,
+  "resistance": 0.016,
+  "io": 1.9,
+  "max_current": 94.0,
+  "weight_g": 196.2,
+  "max_power": 1980.0,
+  "io_voltage": 10.0
+}

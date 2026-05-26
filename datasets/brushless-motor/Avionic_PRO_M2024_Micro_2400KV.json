@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2024_Micro_2400KV",
+  "name": "PRO M2024 Micro 2400KV",
+  "manufacturer": "Avionic",
+  "kv": 2400.0,
+  "resistance": 0.153,
+  "io": 0.5,
+  "max_current": 8.1,
+  "weight_g": 21.0,
+  "max_power": 84.0,
+  "io_voltage": 7.0
+}

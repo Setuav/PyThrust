@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N4260-04_KV600",
+  "name": "N4260-04 KV600",
+  "manufacturer": "EMP",
+  "kv": 600.0,
+  "resistance": 0.014,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 295.1,
+  "max_power": 1350.0,
+  "io_voltage": 11.0
+}

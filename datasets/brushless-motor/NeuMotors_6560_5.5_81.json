@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_5.5_81",
+  "name": "6560/5.5/81",
+  "manufacturer": "NeuMotors",
+  "kv": 81.0,
+  "resistance": 0.067,
+  "io": 0.891,
+  "max_current": 131.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_2835-9_950KV",
+  "name": "AL 2835-9 950KV",
+  "manufacturer": "D-Power",
+  "kv": 950.0,
+  "resistance": 0.1032,
+  "io": 0.6,
+  "max_current": 19.0,
+  "weight_g": 70.0,
+  "max_power": 240.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-341",
+  "name": "4606MC-341",
+  "manufacturer": "NeuMotors",
+  "kv": 341.0,
+  "resistance": 0.133,
+  "io": 0.13,
+  "max_current": 24.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

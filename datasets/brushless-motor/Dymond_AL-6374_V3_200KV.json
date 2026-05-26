@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-6374_V3_200KV",
+  "name": "AL-6374 V3 200KV",
+  "manufacturer": "Dymond",
+  "kv": 200.0,
+  "resistance": 0.0385,
+  "io": 1.3,
+  "max_current": 80.0,
+  "weight_g": 819.0,
+  "max_power": 1950.0,
+  "io_voltage": 15.0
+}

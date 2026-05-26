@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-15T_1638KV",
+  "name": "540L-15T 1638KV",
+  "manufacturer": "Feigao",
+  "kv": 1638.0,
+  "resistance": 0.0259,
+  "io": 1.5,
+  "max_current": 41.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

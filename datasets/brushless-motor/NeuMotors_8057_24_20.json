@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_24_20",
+  "name": "8057/24/20",
+  "manufacturer": "NeuMotors",
+  "kv": 20.0,
+  "resistance": 0.3384,
+  "io": 0.338,
+  "max_current": 42.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

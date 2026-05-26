@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2826-5_840KV",
+  "name": "A2826-5  840KV",
+  "manufacturer": "Cheetah",
+  "kv": 840.0,
+  "resistance": 0.04,
+  "io": 2.1,
+  "max_current": 45.0,
+  "weight_g": 175.2,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

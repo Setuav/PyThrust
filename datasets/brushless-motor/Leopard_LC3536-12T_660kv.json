@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3536-12T_660kv",
+  "name": "LC3536-12T 660kv",
+  "manufacturer": "Leopard",
+  "kv": 660.0,
+  "resistance": 0.1028,
+  "io": 0.5,
+  "max_current": 22.0,
+  "weight_g": 105.2,
+  "max_power": 386.0,
+  "io_voltage": 7.4
+}

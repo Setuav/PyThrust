@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Power_10_BL_1100",
+  "name": "Power 10 BL 1100",
+  "manufacturer": "E-flite",
+  "kv": 1100.0,
+  "resistance": 0.043,
+  "io": 2.1,
+  "max_current": 38.0,
+  "weight_g": 122.2,
+  "max_power": 375.0,
+  "io_voltage": 10.0
+}

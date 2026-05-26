@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2826-760",
+  "name": "2826-760",
+  "manufacturer": "Tempest",
+  "kv": 760.0,
+  "resistance": 0.043,
+  "io": 2.06,
+  "max_current": 50.0,
+  "weight_g": 165.0,
+  "max_power": 1110.0,
+  "io_voltage": 10.0
+}

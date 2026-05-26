@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT4125-540",
+  "name": "AT4125-540",
+  "manufacturer": "T-Motor",
+  "kv": 540.0,
+  "resistance": 0.014,
+  "io": 2.6,
+  "max_current": 85.0,
+  "weight_g": 355.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

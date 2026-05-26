@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-40-10-22w_190KV",
+  "name": "NT430-40-10-22w 190KV",
+  "manufacturer": "Torcman",
+  "kv": 190.0,
+  "resistance": 0.065,
+  "io": 1.3,
+  "max_current": 110.0,
+  "weight_g": 700.5,
+  "max_power": 2200.0,
+  "io_voltage": 12.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR1507_3600kv",
+  "name": "GR1507 3600kv",
+  "manufacturer": "GEPRC",
+  "kv": 3600.0,
+  "resistance": 0.104,
+  "io": 1.15,
+  "max_current": 27.0,
+  "weight_g": 15.6,
+  "max_power": 334.0,
+  "io_voltage": 10.0
+}

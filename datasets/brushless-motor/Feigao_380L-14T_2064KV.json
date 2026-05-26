@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-14T_2064KV",
+  "name": "380L-14T 2064KV",
+  "manufacturer": "Feigao",
+  "kv": 2064.0,
+  "resistance": 0.0348,
+  "io": 0.7,
+  "max_current": 29.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_2.5_174",
+  "name": "12030/2.5/174",
+  "manufacturer": "NeuMotors",
+  "kv": 174.0,
+  "resistance": 0.0034,
+  "io": 4.732,
+  "max_current": 484.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

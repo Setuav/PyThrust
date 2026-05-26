@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_ROBO_1002_19800KV",
+  "name": "ROBO 1002 19800KV",
+  "manufacturer": "Flywoo",
+  "kv": 19800.0,
+  "resistance": 0.089,
+  "io": 1.3,
+  "max_current": 12.0,
+  "weight_g": 2.6,
+  "max_power": 44.0,
+  "io_voltage": 5.0
+}

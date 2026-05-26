@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W28-30_KV1480",
+  "name": "W28-30 KV1480",
+  "manufacturer": "HangLi",
+  "kv": 1480.0,
+  "resistance": 0.0517,
+  "io": 1.1,
+  "max_current": 29.0,
+  "weight_g": 53.0,
+  "max_power": 260.0,
+  "io_voltage": 7.4
+}

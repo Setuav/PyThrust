@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4430_2.5Y_38",
+  "name": "4430/2.5Y 38",
+  "manufacturer": "NeuMotors",
+  "kv": 38.0,
+  "resistance": 0.081,
+  "io": 1.2,
+  "max_current": 68.0,
+  "weight_g": 4135.1,
+  "max_power": 18000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Mars-2400",
+  "name": "Mars-2400",
+  "manufacturer": "DYS",
+  "kv": 2400.0,
+  "resistance": 0.04,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 34.3,
+  "max_power": 575.0,
+  "io_voltage": 12.0
+}

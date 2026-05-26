@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X1507_2800",
+  "name": "XING X1507 2800",
+  "manufacturer": "iFlight",
+  "kv": 2800.0,
+  "resistance": 0.208,
+  "io": 0.87,
+  "max_current": 23.0,
+  "weight_g": 15.9,
+  "max_power": 556.0,
+  "io_voltage": 5.5
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2212_08_1300",
+  "name": "2212/08 1300",
+  "manufacturer": "RedRock",
+  "kv": 1300.0,
+  "resistance": 0.104,
+  "io": 1.0,
+  "max_current": 20.0,
+  "weight_g": 62.1,
+  "max_power": 305.0,
+  "io_voltage": 10.0
+}

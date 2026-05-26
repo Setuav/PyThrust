@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4035_300KV",
+  "name": "4035 300KV",
+  "manufacturer": "Xnova",
+  "kv": 300.0,
+  "resistance": 0.043,
+  "io": 0.5,
+  "max_current": 58.0,
+  "weight_g": 495.3,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

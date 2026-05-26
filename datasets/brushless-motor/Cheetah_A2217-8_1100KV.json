@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2217-8_1100KV",
+  "name": "A2217-8 1100KV",
+  "manufacturer": "Cheetah",
+  "kv": 1100.0,
+  "resistance": 0.125,
+  "io": 1.0,
+  "max_current": 18.0,
+  "weight_g": 70.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

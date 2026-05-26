@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_1720-09_4311KV",
+  "name": "1720-09 4311KV",
+  "manufacturer": "Lehner",
+  "kv": 4311.0,
+  "resistance": 0.013,
+  "io": 2.9,
+  "max_current": 80.0,
+  "weight_g": 170.1,
+  "max_power": 680.0,
+  "io_voltage": 11.0
+}

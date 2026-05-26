@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_2.5_625",
+  "name": "4625/2.5/625",
+  "manufacturer": "NeuMotors",
+  "kv": 625.0,
+  "resistance": 0.01,
+  "io": 2.16,
+  "max_current": 215.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

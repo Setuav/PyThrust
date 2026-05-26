@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_1D_1800",
+  "name": "1533/1D 1800",
+  "manufacturer": "NeuMotors",
+  "kv": 1800.0,
+  "resistance": 0.0044,
+  "io": 4.5,
+  "max_current": 180.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

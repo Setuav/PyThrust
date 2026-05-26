@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_3060-10_HiAmp_700KV",
+  "name": "3060-10 HiAmp 700KV",
+  "manufacturer": "Lehner",
+  "kv": 700.0,
+  "resistance": 0.006,
+  "io": 4.5,
+  "max_current": 200.0,
+  "weight_g": 1200.9,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

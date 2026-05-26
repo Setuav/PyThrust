@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T8115_100KV",
+  "name": "Titan T8115 100KV",
+  "manufacturer": "Xoar",
+  "kv": 100.0,
+  "resistance": 0.383,
+  "io": 0.72,
+  "max_current": 35.0,
+  "weight_g": 451.3,
+  "max_power": 1613.0,
+  "io_voltage": 10.0
+}

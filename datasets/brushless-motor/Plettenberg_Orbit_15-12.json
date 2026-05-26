@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Orbit_15-12",
+  "name": "Orbit 15-12",
+  "manufacturer": "Plettenberg",
+  "kv": 1290.0,
+  "resistance": 0.039,
+  "io": 3.1,
+  "max_current": 55.0,
+  "weight_g": 170.1,
+  "max_power": 850.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E105_20-185",
+  "name": "Elite E105/20-185",
+  "manufacturer": "Esprit",
+  "kv": 185.0,
+  "resistance": 0.0115,
+  "io": 7.6,
+  "max_current": 195.0,
+  "weight_g": 1851.2,
+  "max_power": 9000.0,
+  "io_voltage": 10.0
+}

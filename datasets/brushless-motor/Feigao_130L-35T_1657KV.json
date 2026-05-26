@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-35T_1657KV",
+  "name": "130L-35T 1657KV",
+  "manufacturer": "Feigao",
+  "kv": 1657.0,
+  "resistance": 0.3289,
+  "io": 0.18,
+  "max_current": 7.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

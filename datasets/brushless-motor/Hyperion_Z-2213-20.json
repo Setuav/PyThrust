@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-2213-20",
+  "name": "Z-2213-20",
+  "manufacturer": "Hyperion",
+  "kv": 1010.0,
+  "resistance": 0.15,
+  "io": 0.65,
+  "max_current": 14.0,
+  "weight_g": 53.0,
+  "max_power": 159.0,
+  "io_voltage": 8.0
+}

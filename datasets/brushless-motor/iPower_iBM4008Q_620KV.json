@@ -1,0 +1,12 @@
+{
+  "id": "iPower_iBM4008Q_620KV",
+  "name": "iBM4008Q 620KV",
+  "manufacturer": "iPower",
+  "kv": 620.0,
+  "resistance": 0.129,
+  "io": 0.8,
+  "max_current": 24.0,
+  "weight_g": 115.1,
+  "max_power": 290.0,
+  "io_voltage": 10.0
+}

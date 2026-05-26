@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2205-22_KV1660",
+  "name": "GT2205-22 KV1660",
+  "manufacturer": "EMAX",
+  "kv": 1660.0,
+  "resistance": 0.27,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 23.0,
+  "max_power": 144.0,
+  "io_voltage": 11.0
+}

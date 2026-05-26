@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_42-07_710KV",
+  "name": "AL 42-07 710KV",
+  "manufacturer": "D-Power",
+  "kv": 710.0,
+  "resistance": 0.026,
+  "io": 1.9,
+  "max_current": 43.0,
+  "weight_g": 195.0,
+  "max_power": 680.0,
+  "io_voltage": 8.0
+}

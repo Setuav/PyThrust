@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2212_13-980KV",
+  "name": "2212/13-980KV",
+  "manufacturer": "BlackMagic",
+  "kv": 980.0,
+  "resistance": 0.141,
+  "io": 0.68,
+  "max_current": 0.0,
+  "weight_g": 58.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

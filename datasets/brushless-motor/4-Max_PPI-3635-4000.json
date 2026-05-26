@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-3635-4000",
+  "name": "PPI-3635-4000",
+  "manufacturer": "4-Max",
+  "kv": 4000.0,
+  "resistance": 0.03,
+  "io": 4.0,
+  "max_current": 24.0,
+  "weight_g": 120.2,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

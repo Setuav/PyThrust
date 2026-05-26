@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_V35-XL_821KV",
+  "name": "V-MAX V35-XL 821KV",
+  "manufacturer": "Dymond",
+  "kv": 821.0,
+  "resistance": 0.0859,
+  "io": 1.33,
+  "max_current": 45.0,
+  "weight_g": 201.3,
+  "max_power": 650.0,
+  "io_voltage": 11.2
+}

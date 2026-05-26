@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2203_52",
+  "name": "C-2203/52",
+  "manufacturer": "Cobra",
+  "kv": 1540.0,
+  "resistance": 0.238,
+  "io": 0.36,
+  "max_current": 7.0,
+  "weight_g": 17.6,
+  "max_power": 55.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W42-60_KV710",
+  "name": "W42-60 KV710",
+  "manufacturer": "HangLi",
+  "kv": 710.0,
+  "resistance": 0.0133,
+  "io": 2.4,
+  "max_current": 74.0,
+  "weight_g": 265.1,
+  "max_power": 1250.0,
+  "io_voltage": 7.4
+}

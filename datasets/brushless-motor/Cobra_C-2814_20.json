@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2814_20",
+  "name": "C-2814/20",
+  "manufacturer": "Cobra",
+  "kv": 850.0,
+  "resistance": 0.066,
+  "io": 0.7,
+  "max_current": 25.0,
+  "weight_g": 108.9,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

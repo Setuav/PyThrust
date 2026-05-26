@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4010_KV580",
+  "name": "MN4010 KV580",
+  "manufacturer": "T-Motor",
+  "kv": 580.0,
+  "resistance": 0.042,
+  "io": 1.3,
+  "max_current": 31.0,
+  "weight_g": 112.0,
+  "max_power": 575.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-1709_9_1580kv",
+  "name": "LPA-1709/9 1580kv",
+  "manufacturer": "LiPolice",
+  "kv": 1580.0,
+  "resistance": 0.181,
+  "io": 0.9,
+  "max_current": 8.0,
+  "weight_g": 25.5,
+  "max_power": 75.0,
+  "io_voltage": 7.2
+}

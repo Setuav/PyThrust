@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-10T_1668KV",
+  "name": "540XL-10T 1668KV",
+  "manufacturer": "Feigao",
+  "kv": 1668.0,
+  "resistance": 0.0114,
+  "io": 2.3,
+  "max_current": 66.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3515-1130",
+  "name": "3515-1130",
+  "manufacturer": "BadAss",
+  "kv": 1130.0,
+  "resistance": 0.014,
+  "io": 2.4,
+  "max_current": 80.0,
+  "weight_g": 187.1,
+  "max_power": 890.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C3536-06_1300",
+  "name": "C3536-06 1300",
+  "manufacturer": "Spitz",
+  "kv": 1300.0,
+  "resistance": 0.038,
+  "io": 1.8,
+  "max_current": 50.0,
+  "weight_g": 109.1,
+  "max_power": 680.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C5055-06_760",
+  "name": "C5055-06 760",
+  "manufacturer": "Surpass",
+  "kv": 760.0,
+  "resistance": 0.0173,
+  "io": 2.4,
+  "max_current": 83.0,
+  "weight_g": 275.3,
+  "max_power": 1660.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-1709_7_2180kv",
+  "name": "LPA-1709/7 2180kv",
+  "manufacturer": "LiPolice",
+  "kv": 2180.0,
+  "resistance": 0.12,
+  "io": 1.3,
+  "max_current": 8.0,
+  "weight_g": 25.5,
+  "max_power": 75.0,
+  "io_voltage": 7.2
+}

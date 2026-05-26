@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4008_600KV",
+  "name": "4008 600KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 600.0,
+  "resistance": 0.054,
+  "io": 1.3,
+  "max_current": 24.0,
+  "weight_g": 88.2,
+  "max_power": 372.0,
+  "io_voltage": 20.0
+}

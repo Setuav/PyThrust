@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3210_2Y_165",
+  "name": "3210/2Y 165",
+  "manufacturer": "NeuMotors",
+  "kv": 165.0,
+  "resistance": 0.047,
+  "io": 0.7,
+  "max_current": 44.0,
+  "weight_g": 1007.8,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

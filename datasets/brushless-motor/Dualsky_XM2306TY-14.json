@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2306TY-14",
+  "name": "XM2306TY-14",
+  "manufacturer": "Dualsky",
+  "kv": 2800.0,
+  "resistance": 0.0283,
+  "io": 1.67,
+  "max_current": 39.0,
+  "weight_g": 32.0,
+  "max_power": 312.0,
+  "io_voltage": 7.0
+}

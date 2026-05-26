@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-30T_1934KV",
+  "name": "130L-30T 1934KV",
+  "manufacturer": "Feigao",
+  "kv": 1934.0,
+  "resistance": 0.2417,
+  "io": 0.2,
+  "max_current": 8.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_3.5D_808",
+  "name": "1521/3.5D 808",
+  "manufacturer": "NeuMotors",
+  "kv": 808.0,
+  "resistance": 0.0343,
+  "io": 1.3,
+  "max_current": 47.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

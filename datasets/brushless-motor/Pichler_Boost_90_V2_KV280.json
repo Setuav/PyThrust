@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_90_V2_KV280",
+  "name": "Boost 90 V2 KV280",
+  "manufacturer": "Pichler",
+  "kv": 280.0,
+  "resistance": 0.0375,
+  "io": 1.4,
+  "max_current": 65.0,
+  "weight_g": 455.3,
+  "max_power": 1550.0,
+  "io_voltage": 8.4
+}

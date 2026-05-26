@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-4540-400",
+  "name": "HK-4540-400",
+  "manufacturer": "Scorpion",
+  "kv": 400.0,
+  "resistance": 0.013,
+  "io": 1.65,
+  "max_current": 150.0,
+  "weight_g": 718.7,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-22L_EVO",
+  "name": "A20-22L EVO",
+  "manufacturer": "Hacker",
+  "kv": 924.0,
+  "resistance": 0.109,
+  "io": 0.75,
+  "max_current": 25.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U13II_KV130",
+  "name": "U13II KV130",
+  "manufacturer": "T-Motor",
+  "kv": 130.0,
+  "resistance": 0.018,
+  "io": 1.5,
+  "max_current": 118.0,
+  "weight_g": 1132.6,
+  "max_power": 5659.0,
+  "io_voltage": 18.0
+}

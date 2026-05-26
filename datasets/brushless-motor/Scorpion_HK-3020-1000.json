@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-3020-1000",
+  "name": "HK-3020-1000",
+  "manufacturer": "Scorpion",
+  "kv": 1000.0,
+  "resistance": 0.03,
+  "io": 1.75,
+  "max_current": 45.0,
+  "weight_g": 152.8,
+  "max_power": 1050.0,
+  "io_voltage": 10.0
+}

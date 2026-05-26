@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-3Y_1520",
+  "name": "TP4070-3Y 1520",
+  "manufacturer": "TP Power",
+  "kv": 1520.0,
+  "resistance": 0.0058,
+  "io": 5.8,
+  "max_current": 230.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

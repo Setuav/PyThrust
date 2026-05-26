@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3530-700",
+  "name": "3530-700",
+  "manufacturer": "BadAss",
+  "kv": 700.0,
+  "resistance": 0.014,
+  "io": 2.5,
+  "max_current": 90.0,
+  "weight_g": 318.1,
+  "max_power": 1330.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C80100-06_KV180",
+  "name": "C80100-06 KV180",
+  "manufacturer": "EMP",
+  "kv": 180.0,
+  "resistance": 0.017,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 1751.4,
+  "max_power": 7100.0,
+  "io_voltage": 10.0
+}

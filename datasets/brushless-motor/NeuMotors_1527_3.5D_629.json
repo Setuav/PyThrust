@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_3.5D_629",
+  "name": "1527/3.5D 629",
+  "manufacturer": "NeuMotors",
+  "kv": 629.0,
+  "resistance": 0.0441,
+  "io": 1.3,
+  "max_current": 47.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

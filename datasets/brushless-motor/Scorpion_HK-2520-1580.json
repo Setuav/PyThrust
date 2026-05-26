@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-2520-1580",
+  "name": "HK-2520-1580",
+  "manufacturer": "Scorpion",
+  "kv": 1580.0,
+  "resistance": 0.032,
+  "io": 1.77,
+  "max_current": 34.0,
+  "weight_g": 103.2,
+  "max_power": 715.0,
+  "io_voltage": 10.0
+}

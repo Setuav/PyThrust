@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B28-47-09S_4300KV",
+  "name": "B28-47-09S 4300KV",
+  "manufacturer": "KEDA",
+  "kv": 4300.0,
+  "resistance": 0.0119,
+  "io": 2.4,
+  "max_current": 45.0,
+  "weight_g": 135.2,
+  "max_power": 540.0,
+  "io_voltage": 7.4
+}

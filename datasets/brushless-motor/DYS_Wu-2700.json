@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Wu-2700",
+  "name": "Wu-2700",
+  "manufacturer": "DYS",
+  "kv": 2700.0,
+  "resistance": 0.06,
+  "io": 1.4,
+  "max_current": 43.0,
+  "weight_g": 30.9,
+  "max_power": 691.0,
+  "io_voltage": 12.0
+}

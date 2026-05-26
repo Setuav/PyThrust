@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M1826-10_KV2800",
+  "name": "M1826-10 KV2800",
+  "manufacturer": "EMP",
+  "kv": 2800.0,
+  "resistance": 0.212,
+  "io": 0.4,
+  "max_current": 9.0,
+  "weight_g": 18.4,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

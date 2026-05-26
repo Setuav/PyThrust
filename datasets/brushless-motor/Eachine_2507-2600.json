@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_2507-2600",
+  "name": "2507-2600",
+  "manufacturer": "Eachine",
+  "kv": 2600.0,
+  "resistance": 0.0321,
+  "io": 2.45,
+  "max_current": 0.0,
+  "weight_g": 47.1,
+  "max_power": 672.0,
+  "io_voltage": 10.0
+}

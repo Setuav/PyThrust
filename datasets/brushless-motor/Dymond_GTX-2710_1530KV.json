@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_GTX-2710_1530KV",
+  "name": "GTX-2710 1530KV",
+  "manufacturer": "Dymond",
+  "kv": 1530.0,
+  "resistance": 0.336,
+  "io": 0.25,
+  "max_current": 8.0,
+  "weight_g": 15.0,
+  "max_power": 50.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2028_Micro_1400KV",
+  "name": "PRO M2028 Micro 1400KV",
+  "manufacturer": "Avionic",
+  "kv": 1400.0,
+  "resistance": 0.26,
+  "io": 0.3,
+  "max_current": 8.0,
+  "weight_g": 26.9,
+  "max_power": 108.0,
+  "io_voltage": 7.0
+}

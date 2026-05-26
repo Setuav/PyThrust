@@ -1,0 +1,12 @@
+{
+  "id": "Cyclon_Heli_4000-3742KV",
+  "name": "Heli 4000-3742KV",
+  "manufacturer": "Cyclon",
+  "kv": 3742.0,
+  "resistance": 0.021,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 120.2,
+  "max_power": 530.0,
+  "io_voltage": 6.0
+}

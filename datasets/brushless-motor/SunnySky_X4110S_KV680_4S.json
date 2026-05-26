@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4110S_KV680_4S",
+  "name": "X4110S KV680 4S",
+  "manufacturer": "SunnySky",
+  "kv": 680.0,
+  "resistance": 0.038,
+  "io": 0.6,
+  "max_current": 40.0,
+  "weight_g": 148.0,
+  "max_power": 592.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2825-650",
+  "name": "DM2825-650",
+  "manufacturer": "Pro-Tronik",
+  "kv": 650.0,
+  "resistance": 0.019,
+  "io": 2.06,
+  "max_current": 45.0,
+  "weight_g": 175.2,
+  "max_power": 500.0,
+  "io_voltage": 8.4
+}

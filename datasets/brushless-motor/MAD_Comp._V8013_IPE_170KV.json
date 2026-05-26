@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._V8013_IPE_170KV",
+  "name": "V8013 IPE 170KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 170.0,
+  "resistance": 0.0295,
+  "io": 2.4,
+  "max_current": 104.0,
+  "weight_g": 534.4,
+  "max_power": 4576.0,
+  "io_voltage": 25.0
+}

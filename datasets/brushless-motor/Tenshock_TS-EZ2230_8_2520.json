@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_8_2520",
+  "name": "TS-EZ2230/8 2520",
+  "manufacturer": "Tenshock",
+  "kv": 2520.0,
+  "resistance": 0.0091,
+  "io": 3.0,
+  "max_current": 88.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

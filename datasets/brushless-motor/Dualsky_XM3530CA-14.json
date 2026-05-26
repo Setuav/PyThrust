@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3530CA-14",
+  "name": "XM3530CA-14",
+  "manufacturer": "Dualsky",
+  "kv": 1000.0,
+  "resistance": 0.102,
+  "io": 0.75,
+  "max_current": 24.0,
+  "weight_g": 74.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

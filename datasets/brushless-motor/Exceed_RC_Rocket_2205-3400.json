@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_2205-3400",
+  "name": "Rocket 2205-3400",
+  "manufacturer": "Exceed RC",
+  "kv": 3400.0,
+  "resistance": 0.023,
+  "io": 1.8,
+  "max_current": 70.0,
+  "weight_g": 62.7,
+  "max_power": 350.0,
+  "io_voltage": 8.0
+}

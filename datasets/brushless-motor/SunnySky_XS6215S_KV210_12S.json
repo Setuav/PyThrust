@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS6215S_KV210_12S",
+  "name": "XS6215S KV210 12S",
+  "manufacturer": "SunnySky",
+  "kv": 210.0,
+  "resistance": 0.058,
+  "io": 1.6,
+  "max_current": 73.0,
+  "weight_g": 364.3,
+  "max_power": 3675.0,
+  "io_voltage": 10.0
+}

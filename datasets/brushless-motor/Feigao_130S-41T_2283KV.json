@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-41T_2283KV",
+  "name": "130S-41T 2283KV",
+  "manufacturer": "Feigao",
+  "kv": 2283.0,
+  "resistance": 0.3682,
+  "io": 0.1,
+  "max_current": 5.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

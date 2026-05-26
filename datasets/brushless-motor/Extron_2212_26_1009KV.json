@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2212_26_1009KV",
+  "name": "2212/26 1009KV",
+  "manufacturer": "Extron",
+  "kv": 1006.0,
+  "resistance": 0.1484,
+  "io": 0.7,
+  "max_current": 14.0,
+  "weight_g": 57.8,
+  "max_power": 210.0,
+  "io_voltage": 11.1
+}

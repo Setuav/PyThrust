@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3536-7T_1100kv",
+  "name": "LC3536-7T 1100kv",
+  "manufacturer": "Leopard",
+  "kv": 1100.0,
+  "resistance": 0.0375,
+  "io": 0.9,
+  "max_current": 42.0,
+  "weight_g": 105.2,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_1Y_775",
+  "name": "2020/1Y 775",
+  "manufacturer": "NeuMotors",
+  "kv": 775.0,
+  "resistance": 0.007,
+  "io": 2.8,
+  "max_current": 122.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

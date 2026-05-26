@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3525_KV520_6-8S",
+  "name": "X3525 KV520 6-8S",
+  "manufacturer": "SunnySky",
+  "kv": 520.0,
+  "resistance": 0.022,
+  "io": 1.3,
+  "max_current": 76.0,
+  "weight_g": 243.2,
+  "max_power": 1918.0,
+  "io_voltage": 10.0
+}

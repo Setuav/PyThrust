@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_3.5D_399",
+  "name": "2020/3.5D 399",
+  "manufacturer": "NeuMotors",
+  "kv": 399.0,
+  "resistance": 0.029,
+  "io": 1.44,
+  "max_current": 77.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

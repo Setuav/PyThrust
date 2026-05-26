@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_2.75D_1865",
+  "name": "1704/2.75D 1865",
+  "manufacturer": "NeuMotors",
+  "kv": 1865.0,
+  "resistance": 0.016,
+  "io": 1.7,
+  "max_current": 53.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

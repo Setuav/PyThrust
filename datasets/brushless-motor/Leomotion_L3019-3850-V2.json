@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3019-3850-V2",
+  "name": "L3019-3850-V2",
+  "manufacturer": "Leomotion",
+  "kv": 3850.0,
+  "resistance": 0.011,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 105.2,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

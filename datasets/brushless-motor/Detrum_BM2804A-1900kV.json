@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2804A-1900kV",
+  "name": "BM2804A-1900kV",
+  "manufacturer": "Detrum",
+  "kv": 1900.0,
+  "resistance": 0.155,
+  "io": 0.84,
+  "max_current": 17.0,
+  "weight_g": 20.1,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

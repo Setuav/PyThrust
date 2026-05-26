@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_38_60",
+  "name": "8012/38/60",
+  "manufacturer": "NeuMotors",
+  "kv": 60.0,
+  "resistance": 0.263,
+  "io": 0.213,
+  "max_current": 27.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

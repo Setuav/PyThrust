@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2503_O_11_1345",
+  "name": "2503 O/11/1345",
+  "manufacturer": "NeuMotors",
+  "kv": 1345.0,
+  "resistance": 0.463,
+  "io": 0.273,
+  "max_current": 17.0,
+  "weight_g": 13.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

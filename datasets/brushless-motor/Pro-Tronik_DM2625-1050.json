@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2625-1050",
+  "name": "DM2625-1050",
+  "manufacturer": "Pro-Tronik",
+  "kv": 1050.0,
+  "resistance": 0.028,
+  "io": 1.61,
+  "max_current": 37.0,
+  "weight_g": 138.1,
+  "max_power": 400.0,
+  "io_voltage": 8.4
+}

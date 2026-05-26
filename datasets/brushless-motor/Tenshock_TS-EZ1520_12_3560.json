@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_12_3560",
+  "name": "TS-EZ1520/12 3560",
+  "manufacturer": "Tenshock",
+  "kv": 3560.0,
+  "resistance": 0.017,
+  "io": 2.6,
+  "max_current": 55.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

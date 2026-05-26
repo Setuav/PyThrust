@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS8016S_KV90_12S",
+  "name": "XS8016S KV90 12S",
+  "manufacturer": "SunnySky",
+  "kv": 90.0,
+  "resistance": 0.06,
+  "io": 1.1,
+  "max_current": 43.0,
+  "weight_g": 623.4,
+  "max_power": 2150.0,
+  "io_voltage": 10.0
+}

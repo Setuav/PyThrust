@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2218-10_KV1000",
+  "name": "GT2218-10 KV1000",
+  "manufacturer": "EMAX",
+  "kv": 1000.0,
+  "resistance": 0.099,
+  "io": 0.8,
+  "max_current": 21.0,
+  "weight_g": 79.9,
+  "max_power": 252.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_4.25D_424",
+  "name": "1533/4.25D 424",
+  "manufacturer": "NeuMotors",
+  "kv": 424.0,
+  "resistance": 0.0795,
+  "io": 1.06,
+  "max_current": 42.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

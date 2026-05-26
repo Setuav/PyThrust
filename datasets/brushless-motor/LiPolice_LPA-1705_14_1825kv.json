@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-1705_14_1825kv",
+  "name": "LPA-1705/14 1825kv",
+  "manufacturer": "LiPolice",
+  "kv": 1825.0,
+  "resistance": 0.319,
+  "io": 0.7,
+  "max_current": 6.0,
+  "weight_g": 16.4,
+  "max_power": 55.0,
+  "io_voltage": 7.2
+}

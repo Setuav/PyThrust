@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_5.25D_419",
+  "name": "1527/5.25D 419",
+  "manufacturer": "NeuMotors",
+  "kv": 419.0,
+  "resistance": 0.0992,
+  "io": 0.85,
+  "max_current": 31.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

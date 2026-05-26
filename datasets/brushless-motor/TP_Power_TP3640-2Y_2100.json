@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-2Y_2100",
+  "name": "TP3640-2Y 2100",
+  "manufacturer": "TP Power",
+  "kv": 2100.0,
+  "resistance": 0.0082,
+  "io": 1.8,
+  "max_current": 100.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_4D_495",
+  "name": "1530/4D 495",
+  "manufacturer": "NeuMotors",
+  "kv": 495.0,
+  "resistance": 0.064,
+  "io": 1.13,
+  "max_current": 45.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

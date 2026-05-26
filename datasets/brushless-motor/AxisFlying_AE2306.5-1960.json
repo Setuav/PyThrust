@@ -1,0 +1,12 @@
+{
+  "id": "AxisFlying_AE2306.5-1960",
+  "name": "AE2306.5-1960",
+  "manufacturer": "AxisFlying",
+  "kv": 1960.0,
+  "resistance": 0.0602,
+  "io": 1.28,
+  "max_current": 45.0,
+  "weight_g": 34.0,
+  "max_power": 1042.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_4.25D_1207",
+  "name": "1704/4.25D 1207",
+  "manufacturer": "NeuMotors",
+  "kv": 1207.0,
+  "resistance": 0.039,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-23T_725KV",
+  "name": "540XL-23T 725KV",
+  "manufacturer": "Feigao",
+  "kv": 725.0,
+  "resistance": 0.0602,
+  "io": 0.5,
+  "max_current": 29.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

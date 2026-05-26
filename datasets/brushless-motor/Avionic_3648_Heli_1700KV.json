@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_3648_Heli_1700KV",
+  "name": "3648 Heli 1700KV",
+  "manufacturer": "Avionic",
+  "kv": 1700.0,
+  "resistance": 0.012,
+  "io": 4.6,
+  "max_current": 70.0,
+  "weight_g": 195.0,
+  "max_power": 900.0,
+  "io_voltage": 14.8
+}

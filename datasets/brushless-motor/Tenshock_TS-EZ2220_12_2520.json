@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2220_12_2520",
+  "name": "TS-EZ2220/12 2520",
+  "manufacturer": "Tenshock",
+  "kv": 2520.0,
+  "resistance": 0.0136,
+  "io": 2.1,
+  "max_current": 60.0,
+  "weight_g": 165.0,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

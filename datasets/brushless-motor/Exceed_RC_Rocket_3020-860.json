@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_3020-860",
+  "name": "Rocket 3020-860",
+  "manufacturer": "Exceed RC",
+  "kv": 860.0,
+  "resistance": 0.029,
+  "io": 1.7,
+  "max_current": 40.0,
+  "weight_g": 145.1,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

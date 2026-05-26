@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_Aerodrive_SK3-2118-3100",
+  "name": "Aerodrive SK3-2118-3100",
+  "manufacturer": "Turnigy",
+  "kv": 3100.0,
+  "resistance": 0.18,
+  "io": 1.02,
+  "max_current": 5.0,
+  "weight_g": 17.0,
+  "max_power": 42.0,
+  "io_voltage": 7.0
+}

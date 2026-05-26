@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3512-750",
+  "name": "Avenger 3512-750",
+  "manufacturer": "Brother Hobby",
+  "kv": 750.0,
+  "resistance": 0.048,
+  "io": 1.32,
+  "max_current": 70.0,
+  "weight_g": 130.1,
+  "max_power": 1772.0,
+  "io_voltage": 10.0
+}

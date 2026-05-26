@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3631-2550",
+  "name": "L3631-2550",
+  "manufacturer": "Leomotion",
+  "kv": 2550.0,
+  "resistance": 0.007,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 258.3,
+  "max_power": 1900.0,
+  "io_voltage": 10.0
+}

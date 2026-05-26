@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8013-205_F3A",
+  "name": "LEO L8013-205 F3A",
+  "manufacturer": "Leomotion",
+  "kv": 205.0,
+  "resistance": 0.021,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 590.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

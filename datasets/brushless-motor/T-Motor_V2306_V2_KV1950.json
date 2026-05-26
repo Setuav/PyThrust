@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V2306_V2_KV1950",
+  "name": "V2306 V2 KV1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.064,
+  "io": 1.35,
+  "max_current": 38.0,
+  "weight_g": 28.3,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

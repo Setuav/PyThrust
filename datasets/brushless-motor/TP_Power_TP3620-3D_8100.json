@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-3D_8100",
+  "name": "TP3620-3D 8100",
+  "manufacturer": "TP Power",
+  "kv": 8100.0,
+  "resistance": 0.0017,
+  "io": 13.2,
+  "max_current": 222.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

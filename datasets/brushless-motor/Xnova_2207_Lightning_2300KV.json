@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Lightning_2300KV",
+  "name": "2207 Lightning 2300KV",
+  "manufacturer": "Xnova",
+  "kv": 2300.0,
+  "resistance": 0.045,
+  "io": 1.7,
+  "max_current": 56.0,
+  "weight_g": 32.0,
+  "max_power": 1163.0,
+  "io_voltage": 10.0
+}

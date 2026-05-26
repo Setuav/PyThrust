@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C12_150KV",
+  "name": "M6C12 150KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 150.0,
+  "resistance": 0.09,
+  "io": 0.67,
+  "max_current": 36.0,
+  "weight_g": 257.1,
+  "max_power": 1725.0,
+  "io_voltage": 20.0
+}

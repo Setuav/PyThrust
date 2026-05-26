@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5860-4D_1440",
+  "name": "TP5860-4D 1440",
+  "manufacturer": "TP Power",
+  "kv": 1440.0,
+  "resistance": 0.0018,
+  "io": 10.9,
+  "max_current": 441.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 8.0
+}

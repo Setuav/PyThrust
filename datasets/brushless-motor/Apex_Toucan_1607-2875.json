@@ -1,0 +1,12 @@
+{
+  "id": "Apex_Toucan_1607-2875",
+  "name": "Toucan 1607-2875",
+  "manufacturer": "Apex",
+  "kv": 2875.0,
+  "resistance": 0.09,
+  "io": 1.2,
+  "max_current": 25.0,
+  "weight_g": 16.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

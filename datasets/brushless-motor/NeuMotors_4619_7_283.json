@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_7_283",
+  "name": "4619/7/283",
+  "manufacturer": "NeuMotors",
+  "kv": 283.0,
+  "resistance": 0.064,
+  "io": 0.77,
+  "max_current": 77.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

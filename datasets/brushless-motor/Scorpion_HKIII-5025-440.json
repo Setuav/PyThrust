@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIII-5025-440",
+  "name": "HKIII-5025-440",
+  "manufacturer": "Scorpion",
+  "kv": 440.0,
+  "resistance": 0.015,
+  "io": 1.15,
+  "max_current": 95.0,
+  "weight_g": 565.9,
+  "max_power": 4200.0,
+  "io_voltage": 10.0
+}

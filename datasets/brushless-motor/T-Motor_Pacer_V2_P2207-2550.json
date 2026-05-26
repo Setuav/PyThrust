@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Pacer_V2_P2207-2550",
+  "name": "Pacer V2 P2207-2550",
+  "manufacturer": "T-Motor",
+  "kv": 2550.0,
+  "resistance": 0.042,
+  "io": 2.0,
+  "max_current": 38.0,
+  "weight_g": 30.3,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_2Y_2750",
+  "name": "1506/2Y 2750",
+  "manufacturer": "NeuMotors",
+  "kv": 2750.0,
+  "resistance": 0.0096,
+  "io": 1.25,
+  "max_current": 46.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

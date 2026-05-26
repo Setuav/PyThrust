@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HA2015-3600",
+  "name": "HA2015-3600",
+  "manufacturer": "Himax",
+  "kv": 3600.0,
+  "resistance": 0.295,
+  "io": 0.54,
+  "max_current": 0.0,
+  "weight_g": 48.2,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

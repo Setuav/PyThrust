@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A40-10S_V4G_Kv1600_6.7_1",
+  "name": "A40-10S V4G Kv1600 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1600.0,
+  "resistance": 0.014,
+  "io": 2.54,
+  "max_current": 80.0,
+  "weight_g": 247.2,
+  "max_power": 1500.0,
+  "io_voltage": 8.4
+}

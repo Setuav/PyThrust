@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2221_8",
+  "name": "C-2221/8",
+  "manufacturer": "Cobra",
+  "kv": 1860.0,
+  "resistance": 0.033,
+  "io": 1.59,
+  "max_current": 45.0,
+  "weight_g": 87.9,
+  "max_power": 500.0,
+  "io_voltage": 8.0
+}

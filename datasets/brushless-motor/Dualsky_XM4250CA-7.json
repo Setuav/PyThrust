@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4250CA-7",
+  "name": "XM4250CA-7",
+  "manufacturer": "Dualsky",
+  "kv": 720.0,
+  "resistance": 0.024,
+  "io": 1.97,
+  "max_current": 65.0,
+  "weight_g": 200.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

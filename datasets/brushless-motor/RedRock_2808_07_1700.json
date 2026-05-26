@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2808_07_1700",
+  "name": "2808/07 1700",
+  "manufacturer": "RedRock",
+  "kv": 1700.0,
+  "resistance": 0.039,
+  "io": 1.8,
+  "max_current": 25.0,
+  "weight_g": 90.2,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

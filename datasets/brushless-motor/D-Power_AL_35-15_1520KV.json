@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_35-15_1520KV",
+  "name": "AL 35-15 1520KV",
+  "manufacturer": "D-Power",
+  "kv": 1520.0,
+  "resistance": 0.022,
+  "io": 2.2,
+  "max_current": 42.0,
+  "weight_g": 95.0,
+  "max_power": 330.0,
+  "io_voltage": 8.0
+}

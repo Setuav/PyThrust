@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_5.5D_5956",
+  "name": "1102/5.5D 5956",
+  "manufacturer": "NeuMotors",
+  "kv": 5956.0,
+  "resistance": 0.013,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

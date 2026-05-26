@@ -1,0 +1,12 @@
+{
+  "id": "DYS_X2812-1115",
+  "name": "X2812-1115",
+  "manufacturer": "DYS",
+  "kv": 1115.0,
+  "resistance": 0.078,
+  "io": 1.2,
+  "max_current": 60.0,
+  "weight_g": 73.1,
+  "max_power": 950.0,
+  "io_voltage": 10.0
+}

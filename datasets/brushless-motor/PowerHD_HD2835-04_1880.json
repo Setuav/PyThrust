@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD2835-04_1880",
+  "name": "HD2835-04/1880",
+  "manufacturer": "PowerHD",
+  "kv": 1880.0,
+  "resistance": 0.032,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 68.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

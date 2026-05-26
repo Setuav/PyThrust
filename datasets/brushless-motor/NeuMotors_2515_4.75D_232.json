@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_4.75D_232",
+  "name": "2515/4.75D 232",
+  "manufacturer": "NeuMotors",
+  "kv": 232.0,
+  "resistance": 0.027,
+  "io": 1.1,
+  "max_current": 93.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

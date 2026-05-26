@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C42-50-07_720KV",
+  "name": "C42-50-07 720KV",
+  "manufacturer": "GS-Models",
+  "kv": 720.0,
+  "resistance": 0.0298,
+  "io": 1.8,
+  "max_current": 60.0,
+  "weight_g": 190.2,
+  "max_power": 1120.0,
+  "io_voltage": 10.0
+}

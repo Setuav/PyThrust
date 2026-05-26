@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_4.5D_3640",
+  "name": "1105/4.5D 3640",
+  "manufacturer": "NeuMotors",
+  "kv": 3640.0,
+  "resistance": 0.017,
+  "io": 1.0,
+  "max_current": 24.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

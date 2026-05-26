@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_0.75D_6600",
+  "name": "1512/0.75D 6600",
+  "manufacturer": "NeuMotors",
+  "kv": 6600.0,
+  "resistance": 0.0009,
+  "io": 6.0,
+  "max_current": 220.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

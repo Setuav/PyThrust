@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4125_KV480_V3_6S",
+  "name": "X4125 KV480 V3 6S",
+  "manufacturer": "SunnySky",
+  "kv": 480.0,
+  "resistance": 0.0143,
+  "io": 1.8,
+  "max_current": 110.0,
+  "weight_g": 355.2,
+  "max_power": 2750.0,
+  "io_voltage": 10.0
+}

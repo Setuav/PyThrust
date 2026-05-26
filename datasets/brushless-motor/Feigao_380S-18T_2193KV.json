@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-18T_2193KV",
+  "name": "380S-18T 2193KV",
+  "manufacturer": "Feigao",
+  "kv": 2193.0,
+  "resistance": 0.0477,
+  "io": 0.7,
+  "max_current": 23.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

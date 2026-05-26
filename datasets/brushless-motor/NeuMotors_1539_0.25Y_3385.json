@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_0.25Y_3385",
+  "name": "1539/0.25Y 3385",
+  "manufacturer": "NeuMotors",
+  "kv": 3385.0,
+  "resistance": 0.001,
+  "io": 10.0,
+  "max_current": 395.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

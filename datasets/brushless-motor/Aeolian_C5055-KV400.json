@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C5055-KV400",
+  "name": "C5055-KV400",
+  "manufacturer": "Aeolian",
+  "kv": 400.0,
+  "resistance": 0.0285,
+  "io": 1.6,
+  "max_current": 58.0,
+  "weight_g": 275.3,
+  "max_power": 1420.0,
+  "io_voltage": 10.0
+}

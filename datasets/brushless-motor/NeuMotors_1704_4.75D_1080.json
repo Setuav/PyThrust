@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_4.75D_1080",
+  "name": "1704/4.75D 1080",
+  "manufacturer": "NeuMotors",
+  "kv": 1080.0,
+  "resistance": 0.048,
+  "io": 0.99,
+  "max_current": 31.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

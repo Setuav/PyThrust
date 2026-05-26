@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_2217-16",
+  "name": "2217-16",
+  "manufacturer": "Turnigy",
+  "kv": 1120.0,
+  "resistance": 0.133,
+  "io": 1.15,
+  "max_current": 23.0,
+  "weight_g": 71.2,
+  "max_power": 210.0,
+  "io_voltage": 11.5
+}

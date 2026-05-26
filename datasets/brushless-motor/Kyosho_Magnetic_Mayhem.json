@@ -1,0 +1,12 @@
+{
+  "id": "Kyosho_Magnetic_Mayhem",
+  "name": "Magnetic Mayhem",
+  "manufacturer": "Kyosho",
+  "kv": 2260.0,
+  "resistance": 0.0667,
+  "io": 1.37,
+  "max_current": 30.0,
+  "weight_g": 226.8,
+  "max_power": 680.0,
+  "io_voltage": 8.0
+}

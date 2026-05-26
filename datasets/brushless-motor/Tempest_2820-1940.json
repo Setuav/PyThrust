@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2820-1940",
+  "name": "2820-1940",
+  "manufacturer": "Tempest",
+  "kv": 1940.0,
+  "resistance": 0.014,
+  "io": 5.2,
+  "max_current": 80.0,
+  "weight_g": 136.9,
+  "max_power": 1480.0,
+  "io_voltage": 10.0
+}

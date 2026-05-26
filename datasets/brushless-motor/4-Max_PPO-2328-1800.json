@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-2328-1800",
+  "name": "PPO-2328-1800",
+  "manufacturer": "4-Max",
+  "kv": 1800.0,
+  "resistance": 0.657,
+  "io": 0.5,
+  "max_current": 8.0,
+  "weight_g": 21.0,
+  "max_power": 115.0,
+  "io_voltage": 10.0
+}

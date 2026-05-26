@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_480-32XLG_4.4_1",
+  "name": "480-32XLG 4.4:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 3200.0,
+  "resistance": 0.0128,
+  "io": 3.8,
+  "max_current": 80.0,
+  "weight_g": 220.3,
+  "max_power": 900.0,
+  "io_voltage": 7.4
+}

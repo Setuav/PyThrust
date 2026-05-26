@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM3720A-500kV",
+  "name": "BM3720A-500kV",
+  "manufacturer": "Detrum",
+  "kv": 500.0,
+  "resistance": 0.0931,
+  "io": 1.3,
+  "max_current": 49.0,
+  "weight_g": 115.1,
+  "max_power": 580.0,
+  "io_voltage": 10.0
+}

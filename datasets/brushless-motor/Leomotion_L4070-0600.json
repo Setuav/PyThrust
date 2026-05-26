@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4070-0600",
+  "name": "L4070-0600",
+  "manufacturer": "Leomotion",
+  "kv": 625.0,
+  "resistance": 0.018,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 620.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

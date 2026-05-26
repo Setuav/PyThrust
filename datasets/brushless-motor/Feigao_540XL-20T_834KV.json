@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-20T_834KV",
+  "name": "540XL-20T 834KV",
+  "manufacturer": "Feigao",
+  "kv": 834.0,
+  "resistance": 0.0456,
+  "io": 0.7,
+  "max_current": 33.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

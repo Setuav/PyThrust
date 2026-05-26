@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2215_12_2Y_750",
+  "name": "2215/12/2Y 750",
+  "manufacturer": "NeuMotors",
+  "kv": 750.0,
+  "resistance": 0.008,
+  "io": 1.4,
+  "max_current": 125.0,
+  "weight_g": 708.5,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

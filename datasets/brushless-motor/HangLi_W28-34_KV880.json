@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W28-34_KV880",
+  "name": "W28-34 KV880",
+  "manufacturer": "HangLi",
+  "kv": 880.0,
+  "resistance": 0.0956,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 64.9,
+  "max_power": 260.0,
+  "io_voltage": 7.4
+}

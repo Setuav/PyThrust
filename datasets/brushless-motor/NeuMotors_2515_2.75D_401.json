@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_2.75D_401",
+  "name": "2515/2.75D 401",
+  "manufacturer": "NeuMotors",
+  "kv": 401.0,
+  "resistance": 0.009,
+  "io": 2.0,
+  "max_current": 160.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

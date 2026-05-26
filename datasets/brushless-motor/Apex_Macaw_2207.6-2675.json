@@ -1,0 +1,12 @@
+{
+  "id": "Apex_Macaw_2207.6-2675",
+  "name": "Macaw 2207.6-2675",
+  "manufacturer": "Apex",
+  "kv": 2675.0,
+  "resistance": 0.035,
+  "io": 1.9,
+  "max_current": 45.0,
+  "weight_g": 34.0,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

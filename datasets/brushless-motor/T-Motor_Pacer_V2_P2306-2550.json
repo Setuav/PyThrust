@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Pacer_V2_P2306-2550",
+  "name": "Pacer V2 P2306-2550",
+  "manufacturer": "T-Motor",
+  "kv": 2550.0,
+  "resistance": 0.043,
+  "io": 2.05,
+  "max_current": 40.0,
+  "weight_g": 28.3,
+  "max_power": 628.0,
+  "io_voltage": 10.0
+}

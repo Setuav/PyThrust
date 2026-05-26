@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8057-100_V2",
+  "name": "LEO L8057-100 V2",
+  "manufacturer": "Leomotion",
+  "kv": 101.0,
+  "resistance": 0.011,
+  "io": 2.5,
+  "max_current": 0.0,
+  "weight_g": 2662.0,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

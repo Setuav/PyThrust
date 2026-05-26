@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_FA2216-2400",
+  "name": "FA2216-2400",
+  "manufacturer": "LDPower",
+  "kv": 2400.0,
+  "resistance": 0.0222,
+  "io": 3.2,
+  "max_current": 37.0,
+  "weight_g": 72.0,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

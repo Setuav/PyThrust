@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2225_12_2.5Y_385",
+  "name": "2225/12/2.5Y 385",
+  "manufacturer": "NeuMotors",
+  "kv": 385.0,
+  "resistance": 0.02,
+  "io": 1.3,
+  "max_current": 108.0,
+  "weight_g": 1132.8,
+  "max_power": 8400.0,
+  "io_voltage": 10.0
+}

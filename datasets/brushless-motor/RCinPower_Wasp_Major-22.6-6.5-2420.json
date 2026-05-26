@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_Wasp_Major-22.6-6.5-2420",
+  "name": "Wasp Major-22.6-6.5-2420",
+  "manufacturer": "RCinPower",
+  "kv": 2420.0,
+  "resistance": 0.034,
+  "io": 1.7,
+  "max_current": 46.0,
+  "weight_g": 30.9,
+  "max_power": 970.0,
+  "io_voltage": 10.0
+}

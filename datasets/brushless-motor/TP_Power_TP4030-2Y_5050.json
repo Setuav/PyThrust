@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4030-2Y_5050",
+  "name": "TP4030-2Y 5050",
+  "manufacturer": "TP Power",
+  "kv": 5050.0,
+  "resistance": 0.0018,
+  "io": 5.2,
+  "max_current": 305.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 8.0
+}

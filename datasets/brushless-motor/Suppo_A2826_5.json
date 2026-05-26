@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2826_5",
+  "name": "A2826/5",
+  "manufacturer": "Suppo",
+  "kv": 840.0,
+  "resistance": 0.04,
+  "io": 2.1,
+  "max_current": 45.0,
+  "weight_g": 175.2,
+  "max_power": 815.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_GTX-3546_650KV",
+  "name": "GTX-3546 650KV",
+  "manufacturer": "Dymond",
+  "kv": 650.0,
+  "resistance": 0.051,
+  "io": 1.1,
+  "max_current": 42.0,
+  "weight_g": 171.2,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

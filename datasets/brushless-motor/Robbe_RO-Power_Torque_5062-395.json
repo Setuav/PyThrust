@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_5062-395",
+  "name": "RO-Power Torque 5062-395",
+  "manufacturer": "Robbe",
+  "kv": 395.0,
+  "resistance": 0.067,
+  "io": 1.12,
+  "max_current": 55.0,
+  "weight_g": 397.2,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

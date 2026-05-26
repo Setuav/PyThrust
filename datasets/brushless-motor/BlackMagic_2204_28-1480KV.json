@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2204_28-1480KV",
+  "name": "2204/28-1480KV",
+  "manufacturer": "BlackMagic",
+  "kv": 1480.0,
+  "resistance": 0.29,
+  "io": 0.45,
+  "max_current": 0.0,
+  "weight_g": 22.1,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Graupner_Sp400_6V",
+  "name": "Sp400 6V",
+  "manufacturer": "Graupner",
+  "kv": 3000.0,
+  "resistance": 0.303,
+  "io": 0.7,
+  "max_current": 12.0,
+  "weight_g": 73.7,
+  "max_power": 222.0,
+  "io_voltage": 6.0
+}

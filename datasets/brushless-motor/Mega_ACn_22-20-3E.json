@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-20-3E",
+  "name": "ACn 22-20-3E",
+  "manufacturer": "Mega",
+  "kv": 1410.0,
+  "resistance": 0.027,
+  "io": 1.56,
+  "max_current": 70.0,
+  "weight_g": 165.0,
+  "max_power": 510.0,
+  "io_voltage": 8.4
+}

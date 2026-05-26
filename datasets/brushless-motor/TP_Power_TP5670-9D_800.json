@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5670-9D_800",
+  "name": "TP5670-9D 800",
+  "manufacturer": "TP Power",
+  "kv": 800.0,
+  "resistance": 0.0062,
+  "io": 2.7,
+  "max_current": 187.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 8.0
+}

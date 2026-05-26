@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-20-14-18w_460KV",
+  "name": "NT430-20-14-18w 460KV",
+  "manufacturer": "Torcman",
+  "kv": 460.0,
+  "resistance": 0.024,
+  "io": 2.0,
+  "max_current": 60.0,
+  "weight_g": 375.3,
+  "max_power": 1000.0,
+  "io_voltage": 12.0
+}

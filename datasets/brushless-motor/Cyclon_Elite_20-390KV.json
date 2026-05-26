@@ -1,0 +1,12 @@
+{
+  "id": "Cyclon_Elite_20-390KV",
+  "name": "Elite 20-390KV",
+  "manufacturer": "Cyclon",
+  "kv": 390.0,
+  "resistance": 0.01,
+  "io": 2.7,
+  "max_current": 0.0,
+  "weight_g": 250.0,
+  "max_power": 1450.0,
+  "io_voltage": 6.0
+}

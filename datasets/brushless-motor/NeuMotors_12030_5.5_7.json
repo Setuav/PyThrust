@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_5.5_7",
+  "name": "12030/5.5/7",
+  "manufacturer": "NeuMotors",
+  "kv": 79.0,
+  "resistance": 0.0149,
+  "io": 2.1509,
+  "max_current": 220.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

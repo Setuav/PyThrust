@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C12090_KV140",
+  "name": "C12090 KV140",
+  "manufacturer": "EMP",
+  "kv": 140.0,
+  "resistance": 0.0053,
+  "io": 18.0,
+  "max_current": 0.0,
+  "weight_g": 2781.9,
+  "max_power": 15000.0,
+  "io_voltage": 40.0
+}

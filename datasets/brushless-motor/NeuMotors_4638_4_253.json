@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_4_253",
+  "name": "4638/4/253",
+  "manufacturer": "NeuMotors",
+  "kv": 253.0,
+  "resistance": 0.039,
+  "io": 1.35,
+  "max_current": 135.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

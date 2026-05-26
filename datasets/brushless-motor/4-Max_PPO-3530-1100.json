@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-3530-1100",
+  "name": "PPO-3530-1100",
+  "manufacturer": "4-Max",
+  "kv": 1100.0,
+  "resistance": 0.082,
+  "io": 1.5,
+  "max_current": 24.0,
+  "weight_g": 78.0,
+  "max_power": 340.0,
+  "io_voltage": 10.0
+}

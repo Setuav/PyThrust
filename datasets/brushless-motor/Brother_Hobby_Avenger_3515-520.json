@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3515-520",
+  "name": "Avenger 3515-520",
+  "manufacturer": "Brother Hobby",
+  "kv": 520.0,
+  "resistance": 0.063,
+  "io": 1.02,
+  "max_current": 58.0,
+  "weight_g": 162.2,
+  "max_power": 1932.0,
+  "io_voltage": 10.0
+}

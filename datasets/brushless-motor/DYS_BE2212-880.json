@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2212-880",
+  "name": "BE2212-880",
+  "manufacturer": "DYS",
+  "kv": 880.0,
+  "resistance": 0.162,
+  "io": 0.6,
+  "max_current": 17.0,
+  "weight_g": 66.1,
+  "max_power": 254.0,
+  "io_voltage": 11.1
+}

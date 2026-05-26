@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_Squid_3510M-KV700",
+  "name": "Squid 3510M-KV700",
+  "manufacturer": "Team Hunter RC",
+  "kv": 700.0,
+  "resistance": 0.062,
+  "io": 0.7,
+  "max_current": 25.0,
+  "weight_g": 97.0,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

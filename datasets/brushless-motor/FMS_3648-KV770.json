@@ -1,0 +1,12 @@
+{
+  "id": "FMS_3648-KV770",
+  "name": "3648-KV770",
+  "manufacturer": "FMS",
+  "kv": 770.0,
+  "resistance": 0.037,
+  "io": 2.3,
+  "max_current": 55.0,
+  "weight_g": 195.0,
+  "max_power": 890.0,
+  "io_voltage": 10.0
+}

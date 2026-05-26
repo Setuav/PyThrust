@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_VY2004-2100",
+  "name": "VY2004-2100",
+  "manufacturer": "Brother Hobby",
+  "kv": 2100.0,
+  "resistance": 0.1903,
+  "io": 0.68,
+  "max_current": 14.0,
+  "weight_g": 15.0,
+  "max_power": 215.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_4108-380",
+  "name": "4108-380",
+  "manufacturer": "MultiStar",
+  "kv": 380.0,
+  "resistance": 0.225,
+  "io": 0.5,
+  "max_current": 17.0,
+  "weight_g": 111.1,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

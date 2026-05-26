@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_1.5Y_1900",
+  "name": "1704/1.5Y 1900",
+  "manufacturer": "NeuMotors",
+  "kv": 1900.0,
+  "resistance": 0.014,
+  "io": 3.04,
+  "max_current": 54.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_9.5_305",
+  "name": "4613/9.5/305",
+  "manufacturer": "NeuMotors",
+  "kv": 305.0,
+  "resistance": 0.09,
+  "io": 0.57,
+  "max_current": 57.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

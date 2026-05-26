@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_T6215_180KV",
+  "name": "T6215 180KV",
+  "manufacturer": "Gartt",
+  "kv": 180.0,
+  "resistance": 0.0545,
+  "io": 0.7,
+  "max_current": 60.0,
+  "weight_g": 354.9,
+  "max_power": 2800.0,
+  "io_voltage": 10.0
+}

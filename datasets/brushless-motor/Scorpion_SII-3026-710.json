@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-3026-710",
+  "name": "SII-3026-710",
+  "manufacturer": "Scorpion",
+  "kv": 710.0,
+  "resistance": 0.022,
+  "io": 1.56,
+  "max_current": 60.0,
+  "weight_g": 205.0,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C5055-05_KV700",
+  "name": "C5055-05 KV700",
+  "manufacturer": "EMP",
+  "kv": 700.0,
+  "resistance": 0.017,
+  "io": 2.6,
+  "max_current": 0.0,
+  "weight_g": 346.1,
+  "max_power": 1350.0,
+  "io_voltage": 10.0
+}

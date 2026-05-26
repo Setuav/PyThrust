@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6355DA-10",
+  "name": "XM6355DA-10",
+  "manufacturer": "Dualsky",
+  "kv": 278.0,
+  "resistance": 0.02,
+  "io": 1.5,
+  "max_current": 100.0,
+  "weight_g": 563.3,
+  "max_power": 1440.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2808_24_Cyclone",
+  "name": "2808/24 Cyclone",
+  "manufacturer": "AXI motors",
+  "kv": 1190.0,
+  "resistance": 0.058,
+  "io": 1.0,
+  "max_current": 25.0,
+  "weight_g": 130.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

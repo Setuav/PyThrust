@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2218_KV3950_3S",
+  "name": "A2218 KV3950 3S",
+  "manufacturer": "SunnySky",
+  "kv": 3950.0,
+  "resistance": 0.02,
+  "io": 2.6,
+  "max_current": 37.0,
+  "weight_g": 67.2,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

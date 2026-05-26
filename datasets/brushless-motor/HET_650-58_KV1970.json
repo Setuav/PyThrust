@@ -1,0 +1,12 @@
+{
+  "id": "HET_650-58_KV1970",
+  "name": "650-58 KV1970",
+  "manufacturer": "HET",
+  "kv": 1970.0,
+  "resistance": 0.012,
+  "io": 2.3,
+  "max_current": 100.0,
+  "weight_g": 240.1,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

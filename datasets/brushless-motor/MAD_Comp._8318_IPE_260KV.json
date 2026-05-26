@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._8318_IPE_260KV",
+  "name": "8318 IPE 260KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 260.0,
+  "resistance": 0.009,
+  "io": 5.1,
+  "max_current": 111.0,
+  "weight_g": 660.5,
+  "max_power": 2392.0,
+  "io_voltage": 15.0
+}

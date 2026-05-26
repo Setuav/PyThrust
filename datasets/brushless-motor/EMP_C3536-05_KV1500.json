@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3536-05_KV1500",
+  "name": "C3536-05 KV1500",
+  "manufacturer": "EMP",
+  "kv": 1500.0,
+  "resistance": 0.032,
+  "io": 2.8,
+  "max_current": 0.0,
+  "weight_g": 110.0,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

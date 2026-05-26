@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_PRO_2626_KV2500",
+  "name": "PRO 2626 KV2500",
+  "manufacturer": "Kavan",
+  "kv": 2500.0,
+  "resistance": 0.036,
+  "io": 1.7,
+  "max_current": 35.0,
+  "weight_g": 51.0,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

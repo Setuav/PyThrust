@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2808-1350",
+  "name": "LEO 2808-1350",
+  "manufacturer": "Leomotion",
+  "kv": 1350.0,
+  "resistance": 0.039,
+  "io": 2.1,
+  "max_current": 24.0,
+  "weight_g": 73.1,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_MX2206-9_2450Kv",
+  "name": "MX2206-9 2450Kv",
+  "manufacturer": "Lumenier",
+  "kv": 2450.0,
+  "resistance": 0.24,
+  "io": 0.76,
+  "max_current": 32.0,
+  "weight_g": 28.1,
+  "max_power": 320.0,
+  "io_voltage": 12.6
+}

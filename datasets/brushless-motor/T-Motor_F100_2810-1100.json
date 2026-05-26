@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F100_2810-1100",
+  "name": "F100 2810-1100",
+  "manufacturer": "T-Motor",
+  "kv": 1100.0,
+  "resistance": 0.061,
+  "io": 0.98,
+  "max_current": 46.0,
+  "weight_g": 67.2,
+  "max_power": 1176.0,
+  "io_voltage": 10.0
+}

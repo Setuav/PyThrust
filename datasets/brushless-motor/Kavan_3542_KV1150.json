@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3542_KV1150",
+  "name": "3542 KV1150",
+  "manufacturer": "Kavan",
+  "kv": 1150.0,
+  "resistance": 0.016,
+  "io": 2.7,
+  "max_current": 70.0,
+  "weight_g": 141.2,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

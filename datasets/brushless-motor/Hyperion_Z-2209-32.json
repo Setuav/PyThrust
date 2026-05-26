@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-2209-32",
+  "name": "Z-2209-32",
+  "manufacturer": "Hyperion",
+  "kv": 900.0,
+  "resistance": 0.24,
+  "io": 0.55,
+  "max_current": 10.0,
+  "weight_g": 41.7,
+  "max_power": 126.0,
+  "io_voltage": 8.0
+}

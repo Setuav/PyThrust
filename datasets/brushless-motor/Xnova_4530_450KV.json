@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4530_450KV",
+  "name": "4530 450KV",
+  "manufacturer": "Xnova",
+  "kv": 450.0,
+  "resistance": 0.013,
+  "io": 1.3,
+  "max_current": 110.0,
+  "weight_g": 535.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_1.5Y_6067",
+  "name": "1105/1.5Y 6067",
+  "manufacturer": "NeuMotors",
+  "kv": 6067.0,
+  "resistance": 0.006,
+  "io": 1.7,
+  "max_current": 40.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

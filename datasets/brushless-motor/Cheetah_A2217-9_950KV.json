@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2217-9_950KV",
+  "name": "A2217-9 950KV",
+  "manufacturer": "Cheetah",
+  "kv": 950.0,
+  "resistance": 0.095,
+  "io": 0.9,
+  "max_current": 15.0,
+  "weight_g": 70.0,
+  "max_power": 165.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-6D_990",
+  "name": "TP5870-6D 990",
+  "manufacturer": "TP Power",
+  "kv": 990.0,
+  "resistance": 0.0046,
+  "io": 7.0,
+  "max_current": 380.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_5.5D_933",
+  "name": "1704/5.5D 933",
+  "manufacturer": "NeuMotors",
+  "kv": 933.0,
+  "resistance": 0.065,
+  "io": 0.85,
+  "max_current": 27.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

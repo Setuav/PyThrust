@@ -1,0 +1,12 @@
+{
+  "id": "iPower_iBM2212Q_1000KV",
+  "name": "iBM2212Q 1000KV",
+  "manufacturer": "iPower",
+  "kv": 1000.0,
+  "resistance": 0.127,
+  "io": 0.5,
+  "max_current": 14.0,
+  "weight_g": 64.9,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

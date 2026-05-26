@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_2.5D_792",
+  "name": "1530/2.5D 792",
+  "manufacturer": "NeuMotors",
+  "kv": 792.0,
+  "resistance": 0.025,
+  "io": 1.8,
+  "max_current": 73.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

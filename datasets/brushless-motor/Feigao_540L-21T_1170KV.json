@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-21T_1170KV",
+  "name": "540L-21T 1170KV",
+  "manufacturer": "Feigao",
+  "kv": 1170.0,
+  "resistance": 0.0527,
+  "io": 0.9,
+  "max_current": 29.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M1822-16_KV2700",
+  "name": "M1822-16 KV2700",
+  "manufacturer": "EMP",
+  "kv": 2700.0,
+  "resistance": 0.272,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 12.2,
+  "max_power": 40.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2205-1800",
+  "name": "DM 2205-1800",
+  "manufacturer": "MotrolFly",
+  "kv": 1890.0,
+  "resistance": 0.11,
+  "io": 0.9,
+  "max_current": 12.0,
+  "weight_g": 28.1,
+  "max_power": 129.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_Nano_X1105_4500",
+  "name": "XING Nano X1105 4500",
+  "manufacturer": "iFlight",
+  "kv": 4500.0,
+  "resistance": 0.256,
+  "io": 0.56,
+  "max_current": 8.7,
+  "weight_g": 6.2,
+  "max_power": 139.0,
+  "io_voltage": 5.5
+}

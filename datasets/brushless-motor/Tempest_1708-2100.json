@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_1708-2100",
+  "name": "1708-2100",
+  "manufacturer": "Tempest",
+  "kv": 2100.0,
+  "resistance": 0.153,
+  "io": 0.68,
+  "max_current": 13.0,
+  "weight_g": 21.3,
+  "max_power": 145.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2208_12-1500KV",
+  "name": "2208/12-1500KV",
+  "manufacturer": "BlackMagic",
+  "kv": 1500.0,
+  "resistance": 0.086,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 45.9,
+  "max_power": 165.0,
+  "io_voltage": 10.0
+}

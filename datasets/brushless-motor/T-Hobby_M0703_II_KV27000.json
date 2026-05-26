@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_M0703_II_KV27000",
+  "name": "M0703 II KV27000",
+  "manufacturer": "T-Hobby",
+  "kv": 27000.0,
+  "resistance": 0.145,
+  "io": 1.6,
+  "max_current": 6.0,
+  "weight_g": 2.0,
+  "max_power": 22.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_SE_2816-810KV",
+  "name": "SE 2816-810KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 810.0,
+  "resistance": 0.0746,
+  "io": 1.36,
+  "max_current": 55.0,
+  "weight_g": 98.9,
+  "max_power": 1303.0,
+  "io_voltage": 10.0
+}

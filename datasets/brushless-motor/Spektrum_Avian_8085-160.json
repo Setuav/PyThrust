@@ -1,0 +1,12 @@
+{
+  "id": "Spektrum_Avian_8085-160",
+  "name": "Avian 8085-160",
+  "manufacturer": "Spektrum",
+  "kv": 160.0,
+  "resistance": 0.0114,
+  "io": 2.8,
+  "max_current": 150.0,
+  "weight_g": 1481.0,
+  "max_power": 8400.0,
+  "io_voltage": 7.4
+}

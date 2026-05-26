@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD4250-07_710",
+  "name": "HD4250-07/710",
+  "manufacturer": "PowerHD",
+  "kv": 710.0,
+  "resistance": 0.028,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 195.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

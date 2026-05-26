@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_1.75D_2263",
+  "name": "1515/1.75D 2263",
+  "manufacturer": "NeuMotors",
+  "kv": 2263.0,
+  "resistance": 0.0061,
+  "io": 2.6,
+  "max_current": 75.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

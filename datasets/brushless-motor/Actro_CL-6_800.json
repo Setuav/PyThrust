@@ -1,0 +1,12 @@
+{
+  "id": "Actro_CL-6_800",
+  "name": "CL-6 (800)",
+  "manufacturer": "Actro",
+  "kv": 800.0,
+  "resistance": 0.081,
+  "io": 0.9,
+  "max_current": 25.0,
+  "weight_g": 190.2,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

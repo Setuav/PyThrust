@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C50-55-08_570",
+  "name": "C50-55-08 570",
+  "manufacturer": "ROXXY",
+  "kv": 570.0,
+  "resistance": 0.022,
+  "io": 3.95,
+  "max_current": 80.0,
+  "weight_g": 276.1,
+  "max_power": 1550.0,
+  "io_voltage": 17.5
+}

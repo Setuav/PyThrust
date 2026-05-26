@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2105.5_3600KV",
+  "name": "Aeolus 2105.5 3600KV",
+  "manufacturer": "HGLRC",
+  "kv": 3600.0,
+  "resistance": 0.046,
+  "io": 2.0,
+  "max_current": 37.0,
+  "weight_g": 25.5,
+  "max_power": 586.0,
+  "io_voltage": 10.0
+}

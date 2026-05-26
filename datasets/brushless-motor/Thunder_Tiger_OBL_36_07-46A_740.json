@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_36_07-46A_740",
+  "name": "OBL 36/07-46A 740",
+  "manufacturer": "Thunder Tiger",
+  "kv": 740.0,
+  "resistance": 0.027,
+  "io": 1.7,
+  "max_current": 42.0,
+  "weight_g": 200.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

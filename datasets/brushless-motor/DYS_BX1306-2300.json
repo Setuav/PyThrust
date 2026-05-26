@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BX1306-2300",
+  "name": "BX1306-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.54,
+  "io": 0.3,
+  "max_current": 5.7,
+  "weight_g": 11.9,
+  "max_power": 63.0,
+  "io_voltage": 11.1
+}

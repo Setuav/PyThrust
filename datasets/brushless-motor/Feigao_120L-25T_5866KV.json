@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_120L-25T_5866KV",
+  "name": "120L-25T 5866KV",
+  "manufacturer": "Feigao",
+  "kv": 5866.0,
+  "resistance": 0.316,
+  "io": 0.6,
+  "max_current": 5.5,
+  "weight_g": 17.0,
+  "max_power": 70.0,
+  "io_voltage": 6.0
+}

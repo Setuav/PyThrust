@@ -1,0 +1,12 @@
+{
+  "id": "FMS_2627-KV5400",
+  "name": "2627-KV5400",
+  "manufacturer": "FMS",
+  "kv": 5400.0,
+  "resistance": 0.023,
+  "io": 2.5,
+  "max_current": 40.0,
+  "weight_g": 58.1,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

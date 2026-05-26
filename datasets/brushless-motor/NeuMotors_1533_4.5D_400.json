@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_4.5D_400",
+  "name": "1533/4.5D 400",
+  "manufacturer": "NeuMotors",
+  "kv": 400.0,
+  "resistance": 0.0891,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

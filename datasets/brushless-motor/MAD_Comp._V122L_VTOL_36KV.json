@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._V122L_VTOL_36KV",
+  "name": "V122L VTOL 36KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 36.0,
+  "resistance": 0.081,
+  "io": 1.06,
+  "max_current": 133.0,
+  "weight_g": 1678.0,
+  "max_power": 12830.0,
+  "io_voltage": 30.0
+}

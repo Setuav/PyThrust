@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_0802-22000",
+  "name": "GTS V3 0802-22000",
+  "manufacturer": "RCinPower",
+  "kv": 22000.0,
+  "resistance": 0.117,
+  "io": 0.2,
+  "max_current": 5.8,
+  "weight_g": 2.0,
+  "max_power": 22.0,
+  "io_voltage": 5.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2814-1200",
+  "name": "AT2814-1200",
+  "manufacturer": "T-Motor",
+  "kv": 1200.0,
+  "resistance": 0.026,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 108.0,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

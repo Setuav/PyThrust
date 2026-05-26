@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-9XL_kv1820_6.7_1",
+  "name": "B50-9XL kv1820 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1820.0,
+  "resistance": 0.01,
+  "io": 3.0,
+  "max_current": 100.0,
+  "weight_g": 405.4,
+  "max_power": 2500.0,
+  "io_voltage": 8.4
+}

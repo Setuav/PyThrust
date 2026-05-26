@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_3D_3640",
+  "name": "1107/3D 3640",
+  "manufacturer": "NeuMotors",
+  "kv": 3640.0,
+  "resistance": 0.011,
+  "io": 1.5,
+  "max_current": 36.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

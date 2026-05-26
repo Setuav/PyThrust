@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD2822-25_1450",
+  "name": "HD2822-25/1450",
+  "manufacturer": "PowerHD",
+  "kv": 1450.0,
+  "resistance": 0.311,
+  "io": 0.5,
+  "max_current": 8.0,
+  "weight_g": 28.9,
+  "max_power": 80.0,
+  "io_voltage": 10.0
+}

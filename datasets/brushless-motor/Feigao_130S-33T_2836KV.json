@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-33T_2836KV",
+  "name": "130S-33T 2836KV",
+  "manufacturer": "Feigao",
+  "kv": 2836.0,
+  "resistance": 0.2385,
+  "io": 0.38,
+  "max_current": 6.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

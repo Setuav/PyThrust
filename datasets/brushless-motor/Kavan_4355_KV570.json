@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_4355_KV570",
+  "name": "4355 KV570",
+  "manufacturer": "Kavan",
+  "kv": 570.0,
+  "resistance": 0.018,
+  "io": 1.9,
+  "max_current": 65.0,
+  "weight_g": 298.2,
+  "max_power": 1440.0,
+  "io_voltage": 10.0
+}

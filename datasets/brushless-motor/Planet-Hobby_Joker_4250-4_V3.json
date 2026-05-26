@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_4250-4_V3",
+  "name": "Joker 4250-4 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1020.0,
+  "resistance": 0.0108,
+  "io": 2.6,
+  "max_current": 80.0,
+  "weight_g": 210.1,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

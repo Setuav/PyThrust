@@ -1,0 +1,12 @@
+{
+  "id": "EMP_K4465-09_KV1030",
+  "name": "K4465-09 KV1030",
+  "manufacturer": "EMP",
+  "kv": 1030.0,
+  "resistance": 0.0067,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 455.3,
+  "max_power": 2460.0,
+  "io_voltage": 10.0
+}

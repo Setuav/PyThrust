@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-697",
+  "name": "4610MC-697",
+  "manufacturer": "NeuMotors",
+  "kv": 697.0,
+  "resistance": 0.022,
+  "io": 0.41,
+  "max_current": 98.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

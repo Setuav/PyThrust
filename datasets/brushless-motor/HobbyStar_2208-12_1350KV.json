@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2208-12_1350KV",
+  "name": "2208-12 1350KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1350.0,
+  "resistance": 0.097,
+  "io": 0.8,
+  "max_current": 24.0,
+  "weight_g": 45.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

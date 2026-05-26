@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_3_422",
+  "name": "6521/3/422",
+  "manufacturer": "NeuMotors",
+  "kv": 422.0,
+  "resistance": 0.009,
+  "io": 1.633,
+  "max_current": 240.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HET_600-33_KV1360",
+  "name": "600-33 KV1360",
+  "manufacturer": "HET",
+  "kv": 1360.0,
+  "resistance": 0.034,
+  "io": 1.3,
+  "max_current": 70.0,
+  "weight_g": 205.3,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

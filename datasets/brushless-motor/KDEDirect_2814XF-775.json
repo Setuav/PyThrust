@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_2814XF-775",
+  "name": "2814XF-775",
+  "manufacturer": "KDEDirect",
+  "kv": 775.0,
+  "resistance": 0.069,
+  "io": 0.5,
+  "max_current": 36.0,
+  "weight_g": 95.0,
+  "max_power": 535.0,
+  "io_voltage": 10.0
+}

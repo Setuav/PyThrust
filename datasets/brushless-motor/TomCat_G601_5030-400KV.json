@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G601_5030-400KV",
+  "name": "G601 5030-400KV",
+  "manufacturer": "TomCat",
+  "kv": 400.0,
+  "resistance": 0.034,
+  "io": 1.65,
+  "max_current": 65.0,
+  "weight_g": 408.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

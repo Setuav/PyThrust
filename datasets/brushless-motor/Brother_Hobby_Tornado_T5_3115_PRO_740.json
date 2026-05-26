@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Tornado_T5_3115_PRO_740",
+  "name": "Tornado T5 3115 PRO 740",
+  "manufacturer": "Brother Hobby",
+  "kv": 740.0,
+  "resistance": 0.0831,
+  "io": 1.18,
+  "max_current": 49.0,
+  "weight_g": 112.0,
+  "max_power": 1166.0,
+  "io_voltage": 10.0
+}

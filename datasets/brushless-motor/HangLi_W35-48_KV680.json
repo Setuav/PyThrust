@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W35-48_KV680",
+  "name": "W35-48 KV680",
+  "manufacturer": "HangLi",
+  "kv": 680.0,
+  "resistance": 0.04216,
+  "io": 1.3,
+  "max_current": 41.0,
+  "weight_g": 171.2,
+  "max_power": 700.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_FR2204-2400Kv",
+  "name": "FR2204-2400Kv",
+  "manufacturer": "RCTimer",
+  "kv": 2400.0,
+  "resistance": 0.09,
+  "io": 0.5,
+  "max_current": 19.0,
+  "weight_g": 24.1,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

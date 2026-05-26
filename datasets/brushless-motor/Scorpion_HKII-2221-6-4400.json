@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-2221-6-4400",
+  "name": "HKII-2221-6-4400",
+  "manufacturer": "Scorpion",
+  "kv": 4400.0,
+  "resistance": 0.016,
+  "io": 2.89,
+  "max_current": 52.0,
+  "weight_g": 81.1,
+  "max_power": 525.0,
+  "io_voltage": 10.0
+}

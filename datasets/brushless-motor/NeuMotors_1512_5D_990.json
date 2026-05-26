@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_5D_990",
+  "name": "1512/5D 990",
+  "manufacturer": "NeuMotors",
+  "kv": 990.0,
+  "resistance": 0.04,
+  "io": 0.9,
+  "max_current": 33.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

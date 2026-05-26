@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-7050-330",
+  "name": "HKII-7050-330",
+  "manufacturer": "Scorpion",
+  "kv": 330.0,
+  "resistance": 0.005,
+  "io": 3.6,
+  "max_current": 200.0,
+  "weight_g": 1915.6,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

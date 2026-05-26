@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2040-07_KV3500",
+  "name": "B2040-07 KV3500",
+  "manufacturer": "EMP",
+  "kv": 3500.0,
+  "resistance": 0.08,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 60.1,
+  "max_power": 315.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._VAX_5320_235KV",
+  "name": "VAX 5320 235KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 235.0,
+  "resistance": 0.0375,
+  "io": 2.84,
+  "max_current": 55.0,
+  "weight_g": 411.4,
+  "max_power": 2398.0,
+  "io_voltage": 20.0
+}

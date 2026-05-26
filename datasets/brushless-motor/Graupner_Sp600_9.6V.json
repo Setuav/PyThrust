@@ -1,0 +1,12 @@
+{
+  "id": "Graupner_Sp600_9.6V",
+  "name": "Sp600 9.6V",
+  "manufacturer": "Graupner",
+  "kv": 1470.0,
+  "resistance": 0.201,
+  "io": 1.0,
+  "max_current": 30.0,
+  "weight_g": 195.6,
+  "max_power": 585.0,
+  "io_voltage": 9.6
+}

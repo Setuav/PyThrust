@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4520-540",
+  "name": "4520-540",
+  "manufacturer": "BadAss",
+  "kv": 540.0,
+  "resistance": 0.015,
+  "io": 2.1,
+  "max_current": 90.0,
+  "weight_g": 395.8,
+  "max_power": 1670.0,
+  "io_voltage": 10.0
+}

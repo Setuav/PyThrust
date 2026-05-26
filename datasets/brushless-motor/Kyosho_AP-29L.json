@@ -1,0 +1,12 @@
+{
+  "id": "Kyosho_AP-29L",
+  "name": "AP-29L",
+  "manufacturer": "Kyosho",
+  "kv": 4099.0,
+  "resistance": 0.0907,
+  "io": 3.5,
+  "max_current": 30.0,
+  "weight_g": 155.9,
+  "max_power": 468.0,
+  "io_voltage": 8.0
+}

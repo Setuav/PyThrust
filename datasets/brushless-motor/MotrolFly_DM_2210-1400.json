@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2210-1400",
+  "name": "DM 2210-1400",
+  "manufacturer": "MotrolFly",
+  "kv": 1290.0,
+  "resistance": 0.095,
+  "io": 1.033,
+  "max_current": 15.0,
+  "weight_g": 43.1,
+  "max_power": 155.0,
+  "io_voltage": 7.0
+}

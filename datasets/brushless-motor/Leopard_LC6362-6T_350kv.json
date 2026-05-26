@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC6362-6T_350kv",
+  "name": "LC6362-6T 350kv",
+  "manufacturer": "Leopard",
+  "kv": 350.0,
+  "resistance": 0.0129,
+  "io": 3.8,
+  "max_current": 90.0,
+  "weight_g": 595.3,
+  "max_power": 1350.0,
+  "io_voltage": 20.0
+}

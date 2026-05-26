@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2814_12_1299KV",
+  "name": "2814/12 1299KV",
+  "manufacturer": "Extron",
+  "kv": 1299.0,
+  "resistance": 0.0283,
+  "io": 2.9,
+  "max_current": 34.0,
+  "weight_g": 112.5,
+  "max_power": 510.0,
+  "io_voltage": 11.1
+}

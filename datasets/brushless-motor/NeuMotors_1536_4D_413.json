@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_4D_413",
+  "name": "1536/4D 413",
+  "manufacturer": "NeuMotors",
+  "kv": 413.0,
+  "resistance": 0.077,
+  "io": 1.13,
+  "max_current": 24.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

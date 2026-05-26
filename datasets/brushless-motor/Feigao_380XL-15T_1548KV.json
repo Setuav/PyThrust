@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-15T_1548KV",
+  "name": "380XL-15T 1548KV",
+  "manufacturer": "Feigao",
+  "kv": 1548.0,
+  "resistance": 0.0438,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR2306_1600kv",
+  "name": "GR2306 1600kv",
+  "manufacturer": "GEPRC",
+  "kv": 1600.0,
+  "resistance": 0.068,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 32.0,
+  "max_power": 950.0,
+  "io_voltage": 10.0
+}

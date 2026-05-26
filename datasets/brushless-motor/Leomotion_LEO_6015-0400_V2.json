@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_6015-0400_V2",
+  "name": "LEO 6015-0400 V2",
+  "manufacturer": "Leomotion",
+  "kv": 400.0,
+  "resistance": 0.018,
+  "io": 2.1,
+  "max_current": 100.0,
+  "weight_g": 350.1,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

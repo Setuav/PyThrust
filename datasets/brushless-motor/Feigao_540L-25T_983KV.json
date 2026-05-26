@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-25T_983KV",
+  "name": "540L-25T 983KV",
+  "manufacturer": "Feigao",
+  "kv": 983.0,
+  "resistance": 0.0747,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

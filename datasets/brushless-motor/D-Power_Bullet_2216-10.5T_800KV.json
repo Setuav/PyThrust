@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_Bullet_2216-10.5T_800KV",
+  "name": "Bullet 2216-10.5T 800KV",
+  "manufacturer": "D-Power",
+  "kv": 800.0,
+  "resistance": 0.111,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 68.0,
+  "max_power": 280.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_3_397",
+  "name": "4632/3/397",
+  "manufacturer": "NeuMotors",
+  "kv": 397.0,
+  "resistance": 0.021,
+  "io": 1.8,
+  "max_current": 179.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

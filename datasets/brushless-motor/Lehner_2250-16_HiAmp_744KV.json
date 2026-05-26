@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2250-16_HiAmp_744KV",
+  "name": "2250-16 HiAmp 744KV",
+  "manufacturer": "Lehner",
+  "kv": 744.0,
+  "resistance": 0.022,
+  "io": 1.9,
+  "max_current": 80.0,
+  "weight_g": 570.4,
+  "max_power": 1860.0,
+  "io_voltage": 10.0
+}

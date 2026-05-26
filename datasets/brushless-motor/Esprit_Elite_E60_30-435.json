@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E60_30-435",
+  "name": "Elite E60/30-435",
+  "manufacturer": "Esprit",
+  "kv": 435.0,
+  "resistance": 0.02,
+  "io": 4.9,
+  "max_current": 100.0,
+  "weight_g": 640.4,
+  "max_power": 2100.0,
+  "io_voltage": 10.0
+}

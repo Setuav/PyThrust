@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_3620_05_950",
+  "name": "3620/05 950",
+  "manufacturer": "RedRock",
+  "kv": 950.0,
+  "resistance": 0.024,
+  "io": 1.9,
+  "max_current": 55.0,
+  "weight_g": 230.2,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

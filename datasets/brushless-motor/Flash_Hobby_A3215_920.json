@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_A3215_920",
+  "name": "A3215 920",
+  "manufacturer": "Flash Hobby",
+  "kv": 920.0,
+  "resistance": 0.037,
+  "io": 1.36,
+  "max_current": 70.0,
+  "weight_g": 126.2,
+  "max_power": 1670.0,
+  "io_voltage": 10.0
+}

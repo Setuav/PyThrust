@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_15_68",
+  "name": "4638/15/68",
+  "manufacturer": "NeuMotors",
+  "kv": 68.0,
+  "resistance": 0.527,
+  "io": 0.36,
+  "max_current": 36.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

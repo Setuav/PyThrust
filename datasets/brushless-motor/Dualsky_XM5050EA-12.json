@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5050EA-12",
+  "name": "XM5050EA-12",
+  "manufacturer": "Dualsky",
+  "kv": 610.0,
+  "resistance": 0.0142,
+  "io": 1.8,
+  "max_current": 70.0,
+  "weight_g": 290.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3030_2Y_233",
+  "name": "3030/2Y 233",
+  "manufacturer": "NeuMotors",
+  "kv": 233.0,
+  "resistance": 0.014,
+  "io": 3.0,
+  "max_current": 350.0,
+  "weight_g": 2897.3,
+  "max_power": 30000.0,
+  "io_voltage": 10.0
+}

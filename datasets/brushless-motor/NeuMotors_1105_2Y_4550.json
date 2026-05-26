@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_2Y_4550",
+  "name": "1105/2Y 4550",
+  "manufacturer": "NeuMotors",
+  "kv": 4550.0,
+  "resistance": 0.01,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

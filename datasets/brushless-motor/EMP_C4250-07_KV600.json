@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C4250-07_KV600",
+  "name": "C4250-07 KV600",
+  "manufacturer": "EMP",
+  "kv": 600.0,
+  "resistance": 0.036,
+  "io": 2.5,
+  "max_current": 0.0,
+  "weight_g": 210.1,
+  "max_power": 1050.0,
+  "io_voltage": 10.0
+}

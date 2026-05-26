@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1907_3Y_480",
+  "name": "1907/3Y 480",
+  "manufacturer": "NeuMotors",
+  "kv": 480.0,
+  "resistance": 0.075,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 235.3,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

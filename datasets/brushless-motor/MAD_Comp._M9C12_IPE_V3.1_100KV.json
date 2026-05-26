@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M9C12_IPE_V3.1_100KV",
+  "name": "M9C12 IPE V3.1 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.071,
+  "io": 1.3,
+  "max_current": 51.0,
+  "weight_g": 486.5,
+  "max_power": 2437.0,
+  "io_voltage": 30.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_F100_2810_KV1350",
+  "name": "F100 2810 KV1350",
+  "manufacturer": "T-Hobby",
+  "kv": 1350.0,
+  "resistance": 0.042,
+  "io": 1.5,
+  "max_current": 62.0,
+  "weight_g": 58.1,
+  "max_power": 1237.0,
+  "io_voltage": 10.0
+}

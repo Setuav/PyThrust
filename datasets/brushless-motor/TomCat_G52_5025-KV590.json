@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G52_5025-KV590",
+  "name": "G52 5025-KV590",
+  "manufacturer": "TomCat",
+  "kv": 590.0,
+  "resistance": 0.019,
+  "io": 2.6,
+  "max_current": 70.0,
+  "weight_g": 355.2,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

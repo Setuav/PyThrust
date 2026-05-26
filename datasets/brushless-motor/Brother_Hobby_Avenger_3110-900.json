@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3110-900",
+  "name": "Avenger 3110-900",
+  "manufacturer": "Brother Hobby",
+  "kv": 900.0,
+  "resistance": 0.08,
+  "io": 1.02,
+  "max_current": 47.0,
+  "weight_g": 76.0,
+  "max_power": 1178.0,
+  "io_voltage": 10.0
+}

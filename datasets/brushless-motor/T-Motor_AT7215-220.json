@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT7215-220",
+  "name": "AT7215-220",
+  "manufacturer": "T-Motor",
+  "kv": 220.0,
+  "resistance": 0.024,
+  "io": 2.4,
+  "max_current": 100.0,
+  "weight_g": 565.3,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

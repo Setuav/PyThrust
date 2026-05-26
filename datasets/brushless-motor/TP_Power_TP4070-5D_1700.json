@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-5D_1700",
+  "name": "TP4070-5D 1700",
+  "manufacturer": "TP Power",
+  "kv": 1700.0,
+  "resistance": 0.0043,
+  "io": 8.3,
+  "max_current": 277.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

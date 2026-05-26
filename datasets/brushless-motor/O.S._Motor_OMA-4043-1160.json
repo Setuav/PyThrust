@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-4043-1160",
+  "name": "OMA-4043-1160",
+  "manufacturer": "O.S. Motor",
+  "kv": 1160.0,
+  "resistance": 0.0132,
+  "io": 1.9,
+  "max_current": 125.0,
+  "weight_g": 390.4,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

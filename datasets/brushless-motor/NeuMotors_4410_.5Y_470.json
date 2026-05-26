@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4410_.5Y_470",
+  "name": "4410/.5Y 470",
+  "manufacturer": "NeuMotors",
+  "kv": 470.0,
+  "resistance": 0.002,
+  "io": 6.0,
+  "max_current": 470.0,
+  "weight_g": 1982.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

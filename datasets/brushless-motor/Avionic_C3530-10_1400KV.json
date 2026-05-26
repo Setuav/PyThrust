@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_C3530-10_1400KV",
+  "name": "C3530-10 1400KV",
+  "manufacturer": "Avionic",
+  "kv": 1400.0,
+  "resistance": 0.062,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 79.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

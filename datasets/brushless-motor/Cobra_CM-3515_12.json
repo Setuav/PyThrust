@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-3515_12",
+  "name": "CM-3515/12",
+  "manufacturer": "Cobra",
+  "kv": 1100.0,
+  "resistance": 0.024,
+  "io": 1.64,
+  "max_current": 45.0,
+  "weight_g": 178.0,
+  "max_power": 670.0,
+  "io_voltage": 10.0
+}

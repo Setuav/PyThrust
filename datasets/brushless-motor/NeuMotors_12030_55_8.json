@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_55_8",
+  "name": "12030/55/8",
+  "manufacturer": "NeuMotors",
+  "kv": 8.0,
+  "resistance": 1.3746,
+  "io": 0.2151,
+  "max_current": 22.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

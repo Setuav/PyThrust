@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2250-14_HiAmp_865KV",
+  "name": "2250-14 HiAmp 865KV",
+  "manufacturer": "Lehner",
+  "kv": 865.0,
+  "resistance": 0.02,
+  "io": 1.9,
+  "max_current": 95.0,
+  "weight_g": 570.4,
+  "max_power": 1860.0,
+  "io_voltage": 10.0
+}

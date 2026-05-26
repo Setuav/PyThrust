@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN8012_14_KV100",
+  "name": "MN8012/14 KV100",
+  "manufacturer": "T-Motor",
+  "kv": 100.0,
+  "resistance": 0.085,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 351.3,
+  "max_power": 1873.0,
+  "io_voltage": 24.0
+}

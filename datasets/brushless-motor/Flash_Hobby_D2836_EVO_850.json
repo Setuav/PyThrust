@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D2836_EVO_850",
+  "name": "D2836 EVO 850",
+  "manufacturer": "Flash Hobby",
+  "kv": 850.0,
+  "resistance": 0.0974,
+  "io": 0.92,
+  "max_current": 15.0,
+  "weight_g": 89.0,
+  "max_power": 245.0,
+  "io_voltage": 10.0
+}

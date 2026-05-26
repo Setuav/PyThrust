@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_3Y_867",
+  "name": "1117/3Y 867",
+  "manufacturer": "NeuMotors",
+  "kv": 867.0,
+  "resistance": 0.079,
+  "io": 0.8,
+  "max_current": 23.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

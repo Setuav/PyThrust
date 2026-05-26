@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2320-1090",
+  "name": "2320-1090",
+  "manufacturer": "BadAss",
+  "kv": 1090.0,
+  "resistance": 0.056,
+  "io": 1.26,
+  "max_current": 35.0,
+  "weight_g": 92.4,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

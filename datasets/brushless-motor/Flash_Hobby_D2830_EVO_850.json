@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D2830_EVO_850",
+  "name": "D2830 EVO 850",
+  "manufacturer": "Flash Hobby",
+  "kv": 850.0,
+  "resistance": 0.145,
+  "io": 0.68,
+  "max_current": 16.0,
+  "weight_g": 68.0,
+  "max_power": 195.0,
+  "io_voltage": 10.0
+}

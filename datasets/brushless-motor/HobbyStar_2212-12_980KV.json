@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2212-12_980KV",
+  "name": "2212-12 980KV",
+  "manufacturer": "HobbyStar",
+  "kv": 980.0,
+  "resistance": 0.152,
+  "io": 0.9,
+  "max_current": 21.0,
+  "weight_g": 52.2,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

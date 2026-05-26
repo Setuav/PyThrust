@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_10_109",
+  "name": "8025/10/109",
+  "manufacturer": "NeuMotors",
+  "kv": 109.0,
+  "resistance": 0.031,
+  "io": 0.81,
+  "max_current": 102.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

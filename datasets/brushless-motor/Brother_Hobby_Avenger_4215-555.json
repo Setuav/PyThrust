@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_4215-555",
+  "name": "Avenger 4215-555",
+  "manufacturer": "Brother Hobby",
+  "kv": 555.0,
+  "resistance": 0.044,
+  "io": 1.66,
+  "max_current": 62.0,
+  "weight_g": 199.0,
+  "max_power": 1550.0,
+  "io_voltage": 10.0
+}

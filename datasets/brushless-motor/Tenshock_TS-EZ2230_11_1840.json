@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_11_1840",
+  "name": "TS-EZ2230/11 1840",
+  "manufacturer": "Tenshock",
+  "kv": 1840.0,
+  "resistance": 0.0173,
+  "io": 1.7,
+  "max_current": 64.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

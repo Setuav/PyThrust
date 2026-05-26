@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2217_12",
+  "name": "C-2217/12",
+  "manufacturer": "Cobra",
+  "kv": 1550.0,
+  "resistance": 0.044,
+  "io": 1.15,
+  "max_current": 32.0,
+  "weight_g": 74.0,
+  "max_power": 230.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._POLAR_XC5000_380KV",
+  "name": "POLAR XC5000 380KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 380.0,
+  "resistance": 0.051,
+  "io": 1.4,
+  "max_current": 75.0,
+  "weight_g": 324.3,
+  "max_power": 2886.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5006-1350",
+  "name": "L5006-1350",
+  "manufacturer": "Leomotion",
+  "kv": 1350.0,
+  "resistance": 0.048,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 130.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-20M_V4_Kv170",
+  "name": "A60-20M V4 Kv170",
+  "manufacturer": "Hacker",
+  "kv": 170.0,
+  "resistance": 0.032,
+  "io": 1.7,
+  "max_current": 100.0,
+  "weight_g": 760.6,
+  "max_power": 2200.0,
+  "io_voltage": 8.4
+}

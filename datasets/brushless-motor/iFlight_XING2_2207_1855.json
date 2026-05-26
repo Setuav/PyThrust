@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING2_2207_1855",
+  "name": "XING2 2207 1855",
+  "manufacturer": "iFlight",
+  "kv": 1855.0,
+  "resistance": 0.05,
+  "io": 2.1,
+  "max_current": 35.0,
+  "weight_g": 31.8,
+  "max_power": 842.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Pacer_V2_P2207-1950",
+  "name": "Pacer V2 P2207-1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.0565,
+  "io": 1.1,
+  "max_current": 39.0,
+  "weight_g": 30.3,
+  "max_power": 878.0,
+  "io_voltage": 10.0
+}

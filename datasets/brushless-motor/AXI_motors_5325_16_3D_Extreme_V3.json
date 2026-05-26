@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5325_16_3D_Extreme_V3",
+  "name": "5325/16 3D Extreme V3",
+  "manufacturer": "AXI motors",
+  "kv": 350.0,
+  "resistance": 0.013,
+  "io": 2.0,
+  "max_current": 86.0,
+  "weight_g": 640.4,
+  "max_power": 2700.0,
+  "io_voltage": 10.0
+}

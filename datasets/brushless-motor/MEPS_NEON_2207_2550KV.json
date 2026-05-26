@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_NEON_2207_2550KV",
+  "name": "NEON 2207 2550KV",
+  "manufacturer": "MEPS",
+  "kv": 2550.0,
+  "resistance": 0.05,
+  "io": 2.0,
+  "max_current": 39.0,
+  "weight_g": 36.0,
+  "max_power": 633.0,
+  "io_voltage": 10.0
+}

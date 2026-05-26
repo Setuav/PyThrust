@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A30-8XL_V4_Para",
+  "name": "A30-8XL V4 Para",
+  "manufacturer": "Hacker",
+  "kv": 1100.0,
+  "resistance": 0.015,
+  "io": 2.8,
+  "max_current": 65.0,
+  "weight_g": 177.2,
+  "max_power": 650.0,
+  "io_voltage": 8.4
+}

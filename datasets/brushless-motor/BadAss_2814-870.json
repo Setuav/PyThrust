@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2814-870",
+  "name": "2814-870",
+  "manufacturer": "BadAss",
+  "kv": 870.0,
+  "resistance": 0.051,
+  "io": 1.12,
+  "max_current": 40.0,
+  "weight_g": 117.1,
+  "max_power": 440.0,
+  "io_voltage": 10.0
+}

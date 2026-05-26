@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L9031-0125",
+  "name": "L9031-0125",
+  "manufacturer": "Leomotion",
+  "kv": 125.0,
+  "resistance": 0.037,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 980.6,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

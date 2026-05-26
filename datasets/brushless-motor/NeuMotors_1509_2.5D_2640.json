@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_2.5D_2640",
+  "name": "1509/2.5D 2640",
+  "manufacturer": "NeuMotors",
+  "kv": 2640.0,
+  "resistance": 0.0075,
+  "io": 1.8,
+  "max_current": 66.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_5.25D_943",
+  "name": "1512/5.25D 943",
+  "manufacturer": "NeuMotors",
+  "kv": 943.0,
+  "resistance": 0.0441,
+  "io": 0.86,
+  "max_current": 31.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

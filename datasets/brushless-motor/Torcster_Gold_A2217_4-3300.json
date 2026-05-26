@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Gold_A2217_4-3300",
+  "name": "Gold A2217/4-3300",
+  "manufacturer": "Torcster",
+  "kv": 3300.0,
+  "resistance": 0.04,
+  "io": 3.8,
+  "max_current": 28.0,
+  "weight_g": 70.0,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

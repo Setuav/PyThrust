@@ -1,0 +1,12 @@
+{
+  "id": "FMS_5060-KV360",
+  "name": "5060-KV360",
+  "manufacturer": "FMS",
+  "kv": 360.0,
+  "resistance": 0.02,
+  "io": 2.2,
+  "max_current": 80.0,
+  "weight_g": 470.3,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

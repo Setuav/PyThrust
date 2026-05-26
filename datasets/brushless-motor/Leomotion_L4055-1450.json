@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4055-1450",
+  "name": "L4055-1450",
+  "manufacturer": "Leomotion",
+  "kv": 1425.0,
+  "resistance": 0.008,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 480.2,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

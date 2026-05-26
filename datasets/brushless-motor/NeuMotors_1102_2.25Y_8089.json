@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_2.25Y_8089",
+  "name": "1102/2.25Y 8089",
+  "manufacturer": "NeuMotors",
+  "kv": 8089.0,
+  "resistance": 0.006,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

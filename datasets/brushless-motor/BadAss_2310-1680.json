@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2310-1680",
+  "name": "2310-1680",
+  "manufacturer": "BadAss",
+  "kv": 1680.0,
+  "resistance": 0.05,
+  "io": 1.33,
+  "max_current": 32.0,
+  "weight_g": 57.8,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

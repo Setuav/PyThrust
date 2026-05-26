@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C42-40-10_980",
+  "name": "C42-40-10 980",
+  "manufacturer": "ROXXY",
+  "kv": 980.0,
+  "resistance": 0.03,
+  "io": 2.53,
+  "max_current": 50.0,
+  "weight_g": 130.1,
+  "max_power": 650.0,
+  "io_voltage": 14.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1606_3100KV",
+  "name": "Toka 1606 3100KV",
+  "manufacturer": "Mamba",
+  "kv": 3100.0,
+  "resistance": 0.11,
+  "io": 0.9,
+  "max_current": 21.0,
+  "weight_g": 22.7,
+  "max_power": 512.0,
+  "io_voltage": 10.0
+}

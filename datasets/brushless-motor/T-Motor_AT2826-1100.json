@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2826-1100",
+  "name": "AT2826-1100",
+  "manufacturer": "T-Motor",
+  "kv": 1100.0,
+  "resistance": 0.011,
+  "io": 2.9,
+  "max_current": 59.0,
+  "weight_g": 175.2,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-7T_4129KV",
+  "name": "380L-7T 4129KV",
+  "manufacturer": "Feigao",
+  "kv": 4129.0,
+  "resistance": 0.0087,
+  "io": 2.6,
+  "max_current": 59.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

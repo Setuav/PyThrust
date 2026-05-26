@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_4D_2475",
+  "name": "1506/4D 2475",
+  "manufacturer": "NeuMotors",
+  "kv": 2475.0,
+  "resistance": 0.0128,
+  "io": 1.13,
+  "max_current": 41.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

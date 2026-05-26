@@ -1,0 +1,12 @@
+{
+  "id": "Actro_CL-4_1240",
+  "name": "CL-4 (1240)",
+  "manufacturer": "Actro",
+  "kv": 1240.0,
+  "resistance": 0.041,
+  "io": 1.8,
+  "max_current": 45.0,
+  "weight_g": 190.2,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

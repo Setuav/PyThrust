@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_18P_KV2100",
+  "name": "Boost 18P KV2100",
+  "manufacturer": "Pichler",
+  "kv": 2100.0,
+  "resistance": 0.041,
+  "io": 1.5,
+  "max_current": 25.0,
+  "weight_g": 75.1,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

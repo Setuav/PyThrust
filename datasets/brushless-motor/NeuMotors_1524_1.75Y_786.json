@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_1.75Y_786",
+  "name": "1524/1.75Y 786",
+  "manufacturer": "NeuMotors",
+  "kv": 786.0,
+  "resistance": 0.0294,
+  "io": 1.43,
+  "max_current": 52.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

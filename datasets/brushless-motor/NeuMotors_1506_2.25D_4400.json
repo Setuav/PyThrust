@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_2.25D_4400",
+  "name": "1506/2.25D 4400",
+  "manufacturer": "NeuMotors",
+  "kv": 4400.0,
+  "resistance": 0.0041,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

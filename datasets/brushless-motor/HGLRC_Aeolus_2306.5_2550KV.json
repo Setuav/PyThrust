@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2306.5_2550KV",
+  "name": "Aeolus 2306.5 2550KV",
+  "manufacturer": "HGLRC",
+  "kv": 2550.0,
+  "resistance": 0.039,
+  "io": 1.55,
+  "max_current": 49.0,
+  "weight_g": 37.1,
+  "max_power": 789.0,
+  "io_voltage": 10.0
+}

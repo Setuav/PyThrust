@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-404",
+  "name": "4610MC-404",
+  "manufacturer": "NeuMotors",
+  "kv": 404.0,
+  "resistance": 0.065,
+  "io": 0.24,
+  "max_current": 57.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

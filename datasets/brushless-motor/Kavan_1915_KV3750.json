@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_1915_KV3750",
+  "name": "1915 KV3750",
+  "manufacturer": "Kavan",
+  "kv": 3750.0,
+  "resistance": 0.098,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 16.2,
+  "max_power": 310.0,
+  "io_voltage": 10.0
+}

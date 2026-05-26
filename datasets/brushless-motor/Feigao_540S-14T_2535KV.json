@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-14T_2535KV",
+  "name": "540S-14T 2535KV",
+  "manufacturer": "Feigao",
+  "kv": 2535.0,
+  "resistance": 0.0185,
+  "io": 1.7,
+  "max_current": 45.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

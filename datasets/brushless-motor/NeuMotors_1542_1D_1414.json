@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_1D_1414",
+  "name": "1542/1D 1414",
+  "manufacturer": "NeuMotors",
+  "kv": 1414.0,
+  "resistance": 0.006,
+  "io": 4.5,
+  "max_current": 177.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

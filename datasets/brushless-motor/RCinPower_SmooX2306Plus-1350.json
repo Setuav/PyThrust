@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_SmooX2306Plus-1350",
+  "name": "SmooX2306Plus-1350",
+  "manufacturer": "RCinPower",
+  "kv": 1350.0,
+  "resistance": 0.09,
+  "io": 0.95,
+  "max_current": 25.0,
+  "weight_g": 32.9,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

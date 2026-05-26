@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_1.5Y_1733",
+  "name": "1117/1.5Y 1733",
+  "manufacturer": "NeuMotors",
+  "kv": 1733.0,
+  "resistance": 0.02,
+  "io": 1.7,
+  "max_current": 46.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

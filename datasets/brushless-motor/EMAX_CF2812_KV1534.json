@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_CF2812_KV1534",
+  "name": "CF2812 KV1534",
+  "manufacturer": "EMAX",
+  "kv": 1534.0,
+  "resistance": 0.133,
+  "io": 2.2,
+  "max_current": 16.0,
+  "weight_g": 39.1,
+  "max_power": 121.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-9T_900kv",
+  "name": "LC2835-9T 900kv",
+  "manufacturer": "Leopard",
+  "kv": 900.0,
+  "resistance": 0.1023,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 71.2,
+  "max_power": 352.0,
+  "io_voltage": 7.4
+}

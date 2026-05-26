@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_2D_2048",
+  "name": "1120/2D 2048",
+  "manufacturer": "NeuMotors",
+  "kv": 2048.0,
+  "resistance": 0.013,
+  "io": 2.3,
+  "max_current": 55.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

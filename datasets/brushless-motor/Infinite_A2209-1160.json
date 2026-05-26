@@ -1,0 +1,12 @@
+{
+  "id": "Infinite_A2209-1160",
+  "name": "A2209-1160",
+  "manufacturer": "Infinite",
+  "kv": 1160.0,
+  "resistance": 0.115,
+  "io": 0.84,
+  "max_current": 12.0,
+  "weight_g": 45.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

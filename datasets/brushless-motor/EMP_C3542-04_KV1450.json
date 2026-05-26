@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3542-04_KV1450",
+  "name": "C3542-04 KV1450",
+  "manufacturer": "EMP",
+  "kv": 1450.0,
+  "resistance": 0.027,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 595.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1204-6500",
+  "name": "F1204-6500",
+  "manufacturer": "T-Motor",
+  "kv": 6500.0,
+  "resistance": 0.14,
+  "io": 0.9,
+  "max_current": 7.0,
+  "weight_g": 6.2,
+  "max_power": 60.0,
+  "io_voltage": 10.0
+}

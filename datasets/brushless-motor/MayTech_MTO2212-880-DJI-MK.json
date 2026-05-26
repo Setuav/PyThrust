@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO2212-880-DJI-MK",
+  "name": "MTO2212-880-DJI-MK",
+  "manufacturer": "MayTech",
+  "kv": 880.0,
+  "resistance": 0.309,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 60.1,
+  "max_power": 180.0,
+  "io_voltage": 7.4
+}

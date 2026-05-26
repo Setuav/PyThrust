@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3548EGL-9",
+  "name": "XM3548EGL-9",
+  "manufacturer": "Dualsky",
+  "kv": 820.0,
+  "resistance": 0.0205,
+  "io": 1.5,
+  "max_current": 60.0,
+  "weight_g": 200.1,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING-E_X2306_2450",
+  "name": "XING-E X2306 2450",
+  "manufacturer": "iFlight",
+  "kv": 2450.0,
+  "resistance": 0.0473,
+  "io": 2.0,
+  "max_current": 45.0,
+  "weight_g": 32.9,
+  "max_power": 749.0,
+  "io_voltage": 10.0
+}

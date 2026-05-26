@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2304C-V2-1450",
+  "name": "ECO 2304C-V2-1450",
+  "manufacturer": "Dualsky",
+  "kv": 1450.0,
+  "resistance": 0.23,
+  "io": 0.3,
+  "max_current": 10.0,
+  "weight_g": 23.0,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

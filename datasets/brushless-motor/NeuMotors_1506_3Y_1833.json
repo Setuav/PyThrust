@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_3Y_1833",
+  "name": "1506/3Y 1833",
+  "manufacturer": "NeuMotors",
+  "kv": 1833.0,
+  "resistance": 0.022,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

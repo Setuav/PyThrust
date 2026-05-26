@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_ROBO_1002_15500KV",
+  "name": "ROBO 1002 15500KV",
+  "manufacturer": "Flywoo",
+  "kv": 15500.0,
+  "resistance": 0.165,
+  "io": 0.8,
+  "max_current": 10.0,
+  "weight_g": 2.6,
+  "max_power": 67.0,
+  "io_voltage": 5.0
+}

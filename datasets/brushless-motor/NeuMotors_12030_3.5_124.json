@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_3.5_124",
+  "name": "12030/3.5/124",
+  "manufacturer": "NeuMotors",
+  "kv": 124.0,
+  "resistance": 0.0063,
+  "io": 3.38,
+  "max_current": 346.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

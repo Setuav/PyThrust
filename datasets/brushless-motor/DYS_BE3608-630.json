@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE3608-630",
+  "name": "BE3608-630",
+  "manufacturer": "DYS",
+  "kv": 630.0,
+  "resistance": 0.076,
+  "io": 0.8,
+  "max_current": 32.0,
+  "weight_g": 83.1,
+  "max_power": 700.0,
+  "io_voltage": 14.8
+}

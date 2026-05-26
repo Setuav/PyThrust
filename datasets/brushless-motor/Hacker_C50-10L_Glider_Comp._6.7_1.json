@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C50-10L_Glider_Comp._6.7_1",
+  "name": "C50-10L Glider Comp. 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 2170.0,
+  "resistance": 0.0103,
+  "io": 2.93,
+  "max_current": 100.0,
+  "weight_g": 423.3,
+  "max_power": 2100.0,
+  "io_voltage": 8.4
+}

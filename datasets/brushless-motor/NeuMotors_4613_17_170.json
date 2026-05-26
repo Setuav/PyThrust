@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_17_170",
+  "name": "4613/17/170",
+  "manufacturer": "NeuMotors",
+  "kv": 170.0,
+  "resistance": 0.27,
+  "io": 0.32,
+  "max_current": 32.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

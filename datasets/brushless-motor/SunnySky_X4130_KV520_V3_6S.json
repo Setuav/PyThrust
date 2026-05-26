@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4130_KV520_V3_6S",
+  "name": "X4130 KV520 V3 6S",
+  "manufacturer": "SunnySky",
+  "kv": 520.0,
+  "resistance": 0.0129,
+  "io": 2.5,
+  "max_current": 120.0,
+  "weight_g": 399.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

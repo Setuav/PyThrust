@@ -1,0 +1,12 @@
+{
+  "id": "Foxy_G2_C2808-1500",
+  "name": "G2 C2808-1500*",
+  "manufacturer": "Foxy",
+  "kv": 1500.0,
+  "resistance": 0.04,
+  "io": 1.1,
+  "max_current": 33.0,
+  "weight_g": 77.1,
+  "max_power": 365.0,
+  "io_voltage": 10.0
+}

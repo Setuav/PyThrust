@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F2203.5-3550",
+  "name": "F2203.5-3550",
+  "manufacturer": "T-Motor",
+  "kv": 3550.0,
+  "resistance": 0.076,
+  "io": 1.29,
+  "max_current": 27.0,
+  "weight_g": 19.6,
+  "max_power": 412.0,
+  "io_voltage": 8.0
+}

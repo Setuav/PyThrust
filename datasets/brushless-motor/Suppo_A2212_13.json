@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2212_13",
+  "name": "A2212/13",
+  "manufacturer": "Suppo",
+  "kv": 1000.0,
+  "resistance": 0.09,
+  "io": 0.5,
+  "max_current": 12.0,
+  "weight_g": 47.1,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

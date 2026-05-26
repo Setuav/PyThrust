@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_705_2Y_7400",
+  "name": "705/2Y 7400",
+  "manufacturer": "NeuMotors",
+  "kv": 7400.0,
+  "resistance": 0.044,
+  "io": 1.1,
+  "max_current": 16.0,
+  "weight_g": 28.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

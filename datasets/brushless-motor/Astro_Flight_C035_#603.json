@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_C035_#603",
+  "name": "C035 #603*",
+  "manufacturer": "Astro Flight",
+  "kv": 2765.0,
+  "resistance": 0.04,
+  "io": 2.5,
+  "max_current": 30.0,
+  "weight_g": 170.1,
+  "max_power": 510.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2832_KV805",
+  "name": "BL2832 KV805",
+  "manufacturer": "EMAX",
+  "kv": 805.0,
+  "resistance": 0.023,
+  "io": 3.1,
+  "max_current": 69.0,
+  "weight_g": 210.1,
+  "max_power": 1159.0,
+  "io_voltage": 14.0
+}

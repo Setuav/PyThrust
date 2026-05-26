@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1924_1Y_400",
+  "name": "1924/1Y 400",
+  "manufacturer": "NeuMotors",
+  "kv": 400.0,
+  "resistance": 0.018,
+  "io": 1.5,
+  "max_current": 69.0,
+  "weight_g": 623.4,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

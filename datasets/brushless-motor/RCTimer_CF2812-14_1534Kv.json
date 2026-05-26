@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_CF2812-14_1534Kv",
+  "name": "CF2812-14 1534Kv",
+  "manufacturer": "RCTimer",
+  "kv": 1534.0,
+  "resistance": 0.074,
+  "io": 1.1,
+  "max_current": 10.0,
+  "weight_g": 50.2,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

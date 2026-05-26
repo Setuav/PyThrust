@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1202.5_5600KV",
+  "name": "Aeolus 1202.5 5600KV",
+  "manufacturer": "HGLRC",
+  "kv": 5600.0,
+  "resistance": 0.32,
+  "io": 0.55,
+  "max_current": 6.2,
+  "weight_g": 4.0,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-8T_3613KV",
+  "name": "380L-8T 3613KV",
+  "manufacturer": "Feigao",
+  "kv": 3613.0,
+  "resistance": 0.0114,
+  "io": 2.2,
+  "max_current": 51.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

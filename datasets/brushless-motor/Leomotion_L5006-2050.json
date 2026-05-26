@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5006-2050",
+  "name": "L5006-2050",
+  "manufacturer": "Leomotion",
+  "kv": 2050.0,
+  "resistance": 0.023,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 130.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

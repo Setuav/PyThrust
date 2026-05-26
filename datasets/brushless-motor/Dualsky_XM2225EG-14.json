@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2225EG-14",
+  "name": "XM2225EG-14",
+  "manufacturer": "Dualsky",
+  "kv": 2700.0,
+  "resistance": 0.043,
+  "io": 1.3,
+  "max_current": 27.0,
+  "weight_g": 32.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

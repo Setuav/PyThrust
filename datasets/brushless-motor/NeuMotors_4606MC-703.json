@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-703",
+  "name": "4606MC-703",
+  "manufacturer": "NeuMotors",
+  "kv": 703.0,
+  "resistance": 0.031,
+  "io": 0.26,
+  "max_current": 63.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

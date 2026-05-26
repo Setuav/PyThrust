@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_2.5D_720",
+  "name": "1533/2.5D 720",
+  "manufacturer": "NeuMotors",
+  "kv": 720.0,
+  "resistance": 0.0275,
+  "io": 1.8,
+  "max_current": 72.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

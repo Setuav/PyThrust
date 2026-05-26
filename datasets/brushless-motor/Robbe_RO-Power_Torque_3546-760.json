@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_3546-760",
+  "name": "RO-Power Torque 3546-760",
+  "manufacturer": "Robbe",
+  "kv": 760.0,
+  "resistance": 0.076,
+  "io": 1.06,
+  "max_current": 43.0,
+  "weight_g": 177.2,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

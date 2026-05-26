@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_10_48",
+  "name": "8057/10/48",
+  "manufacturer": "NeuMotors",
+  "kv": 48.0,
+  "resistance": 0.06,
+  "io": 0.81,
+  "max_current": 102.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

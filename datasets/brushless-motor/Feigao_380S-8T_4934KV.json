@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-8T_4934KV",
+  "name": "380S-8T 4934KV",
+  "manufacturer": "Feigao",
+  "kv": 4934.0,
+  "resistance": 0.0094,
+  "io": 2.7,
+  "max_current": 52.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_ML4114_400KV",
+  "name": "ML4114 400KV",
+  "manufacturer": "Gartt",
+  "kv": 400.0,
+  "resistance": 0.1086,
+  "io": 0.8,
+  "max_current": 30.0,
+  "weight_g": 170.1,
+  "max_power": 660.0,
+  "io_voltage": 10.0
+}

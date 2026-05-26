@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Gs3020-06",
+  "name": "Gs3020-06",
+  "manufacturer": "Hyperion",
+  "kv": 1440.0,
+  "resistance": 0.01,
+  "io": 3.1,
+  "max_current": 110.0,
+  "weight_g": 176.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

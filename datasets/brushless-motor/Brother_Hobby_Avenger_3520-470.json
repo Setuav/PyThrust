@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3520-470",
+  "name": "Avenger 3520-470",
+  "manufacturer": "Brother Hobby",
+  "kv": 470.0,
+  "resistance": 0.06,
+  "io": 1.38,
+  "max_current": 58.0,
+  "weight_g": 191.1,
+  "max_power": 1453.0,
+  "io_voltage": 10.0
+}

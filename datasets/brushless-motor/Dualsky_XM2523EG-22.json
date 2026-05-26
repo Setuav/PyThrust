@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2523EG-22",
+  "name": "XM2523EG-22",
+  "manufacturer": "Dualsky",
+  "kv": 2900.0,
+  "resistance": 0.08,
+  "io": 1.1,
+  "max_current": 19.0,
+  "weight_g": 28.6,
+  "max_power": 141.0,
+  "io_voltage": 10.0
+}

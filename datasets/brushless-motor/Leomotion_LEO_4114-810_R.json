@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4114-810_R",
+  "name": "LEO 4114-810 R",
+  "manufacturer": "Leomotion",
+  "kv": 810.0,
+  "resistance": 0.021,
+  "io": 2.22,
+  "max_current": 52.0,
+  "weight_g": 171.2,
+  "max_power": 770.0,
+  "io_voltage": 10.0
+}

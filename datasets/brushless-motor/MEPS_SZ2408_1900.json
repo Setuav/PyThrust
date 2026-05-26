@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2408_1900",
+  "name": "SZ2408 1900",
+  "manufacturer": "MEPS",
+  "kv": 1900.0,
+  "resistance": 0.042,
+  "io": 1.7,
+  "max_current": 73.0,
+  "weight_g": 40.0,
+  "max_power": 1122.0,
+  "io_voltage": 10.0
+}

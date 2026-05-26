@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_3.5D_707",
+  "name": "1524/3.5D 707",
+  "manufacturer": "NeuMotors",
+  "kv": 707.0,
+  "resistance": 0.0392,
+  "io": 1.3,
+  "max_current": 47.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

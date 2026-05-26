@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-30-14-20w_275KV",
+  "name": "NT430-30-14-20w 275KV",
+  "manufacturer": "Torcman",
+  "kv": 275.0,
+  "resistance": 0.043,
+  "io": 1.2,
+  "max_current": 75.0,
+  "weight_g": 470.3,
+  "max_power": 1500.0,
+  "io_voltage": 12.0
+}

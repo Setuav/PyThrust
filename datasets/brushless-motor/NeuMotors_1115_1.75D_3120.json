@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_1.75D_3120",
+  "name": "1115/1.75D 3120",
+  "manufacturer": "NeuMotors",
+  "kv": 3120.0,
+  "resistance": 0.008,
+  "io": 2.6,
+  "max_current": 73.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2826-06_KV710",
+  "name": "GT2826-06 KV710",
+  "manufacturer": "EMAX",
+  "kv": 710.0,
+  "resistance": 0.041,
+  "io": 1.3,
+  "max_current": 52.0,
+  "weight_g": 175.2,
+  "max_power": 962.0,
+  "io_voltage": 11.0
+}

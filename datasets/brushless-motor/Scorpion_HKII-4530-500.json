@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-4530-500",
+  "name": "HKII-4530-500",
+  "manufacturer": "Scorpion",
+  "kv": 500.0,
+  "resistance": 0.012,
+  "io": 2.12,
+  "max_current": 115.0,
+  "weight_g": 597.9,
+  "max_power": 4800.0,
+  "io_voltage": 10.0
+}

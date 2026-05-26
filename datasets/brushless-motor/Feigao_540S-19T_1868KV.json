@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-19T_1868KV",
+  "name": "540S-19T 1868KV",
+  "manufacturer": "Feigao",
+  "kv": 1868.0,
+  "resistance": 0.0341,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

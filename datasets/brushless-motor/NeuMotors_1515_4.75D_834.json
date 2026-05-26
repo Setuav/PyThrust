@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_4.75D_834",
+  "name": "1515/4.75D 834",
+  "manufacturer": "NeuMotors",
+  "kv": 834.0,
+  "resistance": 0.0451,
+  "io": 0.95,
+  "max_current": 28.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

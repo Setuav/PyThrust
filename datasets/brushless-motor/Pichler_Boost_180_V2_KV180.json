@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_180_V2_KV180",
+  "name": "Boost 180 V2 KV180",
+  "manufacturer": "Pichler",
+  "kv": 180.0,
+  "resistance": 0.031,
+  "io": 1.2,
+  "max_current": 85.0,
+  "weight_g": 995.6,
+  "max_power": 3380.0,
+  "io_voltage": 8.4
+}

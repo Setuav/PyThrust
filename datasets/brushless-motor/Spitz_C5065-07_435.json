@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C5065-07_435",
+  "name": "C5065-07 435",
+  "manufacturer": "Spitz",
+  "kv": 435.0,
+  "resistance": 0.0234,
+  "io": 1.6,
+  "max_current": 73.0,
+  "weight_g": 375.3,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

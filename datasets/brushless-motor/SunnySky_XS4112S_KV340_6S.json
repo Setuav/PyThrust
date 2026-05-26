@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS4112S_KV340_6S",
+  "name": "XS4112S KV340 6S",
+  "manufacturer": "SunnySky",
+  "kv": 340.0,
+  "resistance": 0.108,
+  "io": 0.6,
+  "max_current": 30.0,
+  "weight_g": 188.2,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

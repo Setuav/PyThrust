@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-45-1",
+  "name": "ACn 22-45-1",
+  "manufacturer": "Mega",
+  "kv": 2570.0,
+  "resistance": 0.004,
+  "io": 4.9,
+  "max_current": 100.0,
+  "weight_g": 300.2,
+  "max_power": 950.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_60_18",
+  "name": "8025/60/18",
+  "manufacturer": "NeuMotors",
+  "kv": 18.0,
+  "resistance": 1.067,
+  "io": 0.135,
+  "max_current": 17.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

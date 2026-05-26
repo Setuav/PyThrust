@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_9_113",
+  "name": "4638/9/113",
+  "manufacturer": "NeuMotors",
+  "kv": 113.0,
+  "resistance": 0.192,
+  "io": 0.6,
+  "max_current": 60.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

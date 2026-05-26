@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_4D_1283",
+  "name": "1704/4D 1283",
+  "manufacturer": "NeuMotors",
+  "kv": 1283.0,
+  "resistance": 0.034,
+  "io": 1.17,
+  "max_current": 37.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

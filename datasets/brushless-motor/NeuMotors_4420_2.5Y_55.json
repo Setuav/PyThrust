@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4420_2.5Y_55",
+  "name": "4420/2.5Y 55",
+  "manufacturer": "NeuMotors",
+  "kv": 55.0,
+  "resistance": 0.063,
+  "io": 1.2,
+  "max_current": 88.0,
+  "weight_g": 3058.3,
+  "max_power": 16000.0,
+  "io_voltage": 10.0
+}

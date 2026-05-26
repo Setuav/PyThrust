@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_A-3017-560",
+  "name": "A-3017-560",
+  "manufacturer": "Scorpion",
+  "kv": 560.0,
+  "resistance": 0.08,
+  "io": 0.69,
+  "max_current": 32.0,
+  "weight_g": 134.1,
+  "max_power": 710.0,
+  "io_voltage": 15.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPPO-2837-1120",
+  "name": "PPPO-2837-1120",
+  "manufacturer": "4-Max",
+  "kv": 1120.0,
+  "resistance": 0.09,
+  "io": 1.3,
+  "max_current": 32.0,
+  "weight_g": 75.1,
+  "max_power": 310.0,
+  "io_voltage": 10.0
+}

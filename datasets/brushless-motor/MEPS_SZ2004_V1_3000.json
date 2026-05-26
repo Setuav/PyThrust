@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2004_V1_3000",
+  "name": "SZ2004 V1 3000",
+  "manufacturer": "MEPS",
+  "kv": 3000.0,
+  "resistance": 0.088,
+  "io": 0.86,
+  "max_current": 33.0,
+  "weight_g": 17.0,
+  "max_power": 534.0,
+  "io_voltage": 10.0
+}

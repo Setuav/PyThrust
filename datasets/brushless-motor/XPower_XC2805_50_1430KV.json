@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2805_50_1430KV",
+  "name": "XC2805/50 1430KV",
+  "manufacturer": "XPower",
+  "kv": 1430.0,
+  "resistance": 0.265,
+  "io": 0.3,
+  "max_current": 9.0,
+  "weight_g": 24.1,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

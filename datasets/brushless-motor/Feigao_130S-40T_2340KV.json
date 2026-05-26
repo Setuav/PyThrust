@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-40T_2340KV",
+  "name": "130S-40T 2340KV",
+  "manufacturer": "Feigao",
+  "kv": 2340.0,
+  "resistance": 0.3504,
+  "io": 0.1,
+  "max_current": 5.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

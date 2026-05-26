@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4430_1Y_97",
+  "name": "4430/1Y 97",
+  "manufacturer": "NeuMotors",
+  "kv": 97.0,
+  "resistance": 0.013,
+  "io": 3.0,
+  "max_current": 175.0,
+  "weight_g": 4135.1,
+  "max_power": 18000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_RimFire_28-22-1380",
+  "name": "RimFire 28-22-1380",
+  "manufacturer": "ElectriFly",
+  "kv": 1380.0,
+  "resistance": 0.37,
+  "io": 0.4,
+  "max_current": 9.0,
+  "weight_g": 27.2,
+  "max_power": 81.0,
+  "io_voltage": 7.4
+}

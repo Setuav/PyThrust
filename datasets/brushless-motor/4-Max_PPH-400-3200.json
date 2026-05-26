@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPH-400-3200",
+  "name": "PPH-400-3200",
+  "manufacturer": "4-Max",
+  "kv": 3200.0,
+  "resistance": 0.065,
+  "io": 1.5,
+  "max_current": 26.0,
+  "weight_g": 68.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

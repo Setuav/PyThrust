@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2808-08_1700KV",
+  "name": "2808-08 1700KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1700.0,
+  "resistance": 0.041,
+  "io": 1.8,
+  "max_current": 42.0,
+  "weight_g": 72.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

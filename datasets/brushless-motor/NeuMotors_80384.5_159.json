@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_80384.5_159",
+  "name": "80384.5/159",
+  "manufacturer": "NeuMotors",
+  "kv": 159.0,
+  "resistance": 0.0093,
+  "io": 1.8,
+  "max_current": 227.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

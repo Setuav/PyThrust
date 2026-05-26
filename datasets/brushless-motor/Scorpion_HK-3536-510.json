@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-3536-510",
+  "name": "HK-3536-510",
+  "manufacturer": "Scorpion",
+  "kv": 510.0,
+  "resistance": 0.028,
+  "io": 1.24,
+  "max_current": 70.0,
+  "weight_g": 335.9,
+  "max_power": 2900.0,
+  "io_voltage": 10.0
+}

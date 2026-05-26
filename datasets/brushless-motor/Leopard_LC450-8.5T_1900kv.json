@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC450-8.5T_1900kv",
+  "name": "LC450-8.5T 1900kv",
+  "manufacturer": "Leopard",
+  "kv": 1900.0,
+  "resistance": 0.0886,
+  "io": 1.0,
+  "max_current": 25.0,
+  "weight_g": 81.1,
+  "max_power": 440.0,
+  "io_voltage": 7.4
+}

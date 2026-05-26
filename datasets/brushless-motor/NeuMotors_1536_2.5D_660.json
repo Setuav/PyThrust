@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_2.5D_660",
+  "name": "1536/2.5D 660",
+  "manufacturer": "NeuMotors",
+  "kv": 660.0,
+  "resistance": 0.03,
+  "io": 1.8,
+  "max_current": 39.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

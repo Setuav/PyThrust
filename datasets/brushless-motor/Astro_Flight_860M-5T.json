@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_860M-5T",
+  "name": "860M-5T",
+  "manufacturer": "Astro Flight",
+  "kv": 450.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 60.0,
+  "weight_g": 450.5,
+  "max_power": 1400.0,
+  "io_voltage": 8.4
+}

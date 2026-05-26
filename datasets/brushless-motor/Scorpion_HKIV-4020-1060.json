@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-4020-1060",
+  "name": "HKIV-4020-1060",
+  "manufacturer": "Scorpion",
+  "kv": 1060.0,
+  "resistance": 0.009,
+  "io": 4.03,
+  "max_current": 78.0,
+  "weight_g": 310.1,
+  "max_power": 1731.0,
+  "io_voltage": 10.0
+}

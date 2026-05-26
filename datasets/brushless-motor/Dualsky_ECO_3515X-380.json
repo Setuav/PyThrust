@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_3515X-380",
+  "name": "ECO 3515X-380",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.119,
+  "io": 0.3,
+  "max_current": 22.0,
+  "weight_g": 160.2,
+  "max_power": 481.0,
+  "io_voltage": 10.0
+}

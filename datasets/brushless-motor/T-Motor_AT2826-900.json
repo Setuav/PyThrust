@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2826-900",
+  "name": "AT2826-900",
+  "manufacturer": "T-Motor",
+  "kv": 900.0,
+  "resistance": 0.024,
+  "io": 2.2,
+  "max_current": 59.0,
+  "weight_g": 175.2,
+  "max_power": 820.0,
+  "io_voltage": 10.0
+}

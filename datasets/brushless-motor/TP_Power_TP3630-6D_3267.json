@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-6D_3267",
+  "name": "TP3630-6D 3267",
+  "manufacturer": "TP Power",
+  "kv": 3267.0,
+  "resistance": 0.0046,
+  "io": 2.3,
+  "max_current": 100.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

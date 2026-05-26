@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_MII-2204-2300",
+  "name": "MII-2204-2300",
+  "manufacturer": "Scorpion",
+  "kv": 2440.0,
+  "resistance": 0.0754,
+  "io": 1.01,
+  "max_current": 20.0,
+  "weight_g": 30.1,
+  "max_power": 110.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1415_2Y_1100",
+  "name": "1415/2Y 1100",
+  "manufacturer": "NeuMotors",
+  "kv": 1100.0,
+  "resistance": 0.024,
+  "io": 1.1,
+  "max_current": 40.0,
+  "weight_g": 297.1,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

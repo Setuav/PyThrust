@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_490-23G_4.4_1",
+  "name": "490-23G 4.4:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 2250.0,
+  "resistance": 0.0291,
+  "io": 2.3,
+  "max_current": 80.0,
+  "weight_g": 234.2,
+  "max_power": 1100.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-2447-2900",
+  "name": "PPI-2447-2900",
+  "manufacturer": "4-Max",
+  "kv": 2900.0,
+  "resistance": 0.055,
+  "io": 0.7,
+  "max_current": 16.0,
+  "weight_g": 90.2,
+  "max_power": 165.0,
+  "io_voltage": 10.0
+}

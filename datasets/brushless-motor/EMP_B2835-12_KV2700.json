@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2835-12_KV2700",
+  "name": "B2835-12 KV2700",
+  "manufacturer": "EMP",
+  "kv": 2700.0,
+  "resistance": 0.084,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 715.0,
+  "io_voltage": 10.0
+}

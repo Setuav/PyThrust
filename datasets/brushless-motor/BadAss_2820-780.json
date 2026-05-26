@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2820-780",
+  "name": "2820-780",
+  "manufacturer": "BadAss",
+  "kv": 780.0,
+  "resistance": 0.039,
+  "io": 1.32,
+  "max_current": 54.0,
+  "weight_g": 149.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

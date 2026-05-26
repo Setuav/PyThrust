@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_3020_1800Kv",
+  "name": "3020 1800Kv*",
+  "manufacturer": "Turnigy",
+  "kv": 1800.0,
+  "resistance": 0.145,
+  "io": 0.6,
+  "max_current": 16.0,
+  "weight_g": 24.9,
+  "max_power": 100.0,
+  "io_voltage": 7.4
+}

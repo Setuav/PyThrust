@@ -1,0 +1,12 @@
+{
+  "id": "Align_BL450S_1500Kv",
+  "name": "BL450S 1500Kv",
+  "manufacturer": "Align",
+  "kv": 1500.0,
+  "resistance": 0.115,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 48.2,
+  "max_power": 144.0,
+  "io_voltage": 8.0
+}

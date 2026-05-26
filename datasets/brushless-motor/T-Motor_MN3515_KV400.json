@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN3515_KV400",
+  "name": "MN3515 KV400",
+  "manufacturer": "T-Motor",
+  "kv": 400.0,
+  "resistance": 0.116,
+  "io": 0.3,
+  "max_current": 30.0,
+  "weight_g": 153.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

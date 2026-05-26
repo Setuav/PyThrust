@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._1105_6500KV",
+  "name": "1105 6500KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 6500.0,
+  "resistance": 0.158,
+  "io": 0.6,
+  "max_current": 9.5,
+  "weight_g": 7.7,
+  "max_power": 40.0,
+  "io_voltage": 6.8
+}

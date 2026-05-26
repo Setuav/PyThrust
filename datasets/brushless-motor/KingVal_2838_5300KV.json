@@ -1,0 +1,12 @@
+{
+  "id": "KingVal_2838_5300KV",
+  "name": "2838 5300KV",
+  "manufacturer": "KingVal",
+  "kv": 5300.0,
+  "resistance": 0.0175,
+  "io": 2.2,
+  "max_current": 60.0,
+  "weight_g": 95.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2838EG-14L",
+  "name": "XM2838EG-14L",
+  "manufacturer": "Dualsky",
+  "kv": 860.0,
+  "resistance": 0.063,
+  "io": 1.0,
+  "max_current": 21.0,
+  "weight_g": 98.1,
+  "max_power": 336.0,
+  "io_voltage": 10.0
+}

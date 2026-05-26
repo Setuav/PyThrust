@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Wei-2600",
+  "name": "Wei-2600",
+  "manufacturer": "DYS",
+  "kv": 2600.0,
+  "resistance": 0.05,
+  "io": 1.6,
+  "max_current": 44.0,
+  "weight_g": 34.6,
+  "max_power": 704.0,
+  "io_voltage": 12.0
+}

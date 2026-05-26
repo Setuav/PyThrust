@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2806CD-1200kV",
+  "name": "BM2806CD-1200kV",
+  "manufacturer": "Detrum",
+  "kv": 1200.0,
+  "resistance": 0.284,
+  "io": 0.6,
+  "max_current": 14.0,
+  "weight_g": 20.1,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

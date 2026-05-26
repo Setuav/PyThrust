@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._2205_2500KV",
+  "name": "2205 2500KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 2500.0,
+  "resistance": 0.061,
+  "io": 0.8,
+  "max_current": 40.0,
+  "weight_g": 27.5,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

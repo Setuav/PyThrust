@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2814-1700",
+  "name": "2814-1700",
+  "manufacturer": "Tempest",
+  "kv": 1700.0,
+  "resistance": 0.023,
+  "io": 3.49,
+  "max_current": 60.0,
+  "weight_g": 108.0,
+  "max_power": 1110.0,
+  "io_voltage": 10.0
+}

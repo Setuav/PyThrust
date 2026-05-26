@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-1096",
+  "name": "4610MC-1096",
+  "manufacturer": "NeuMotors",
+  "kv": 1096.0,
+  "resistance": 0.009,
+  "io": 0.64,
+  "max_current": 154.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

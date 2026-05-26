@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_3Y_407",
+  "name": "1527/3Y 407",
+  "manufacturer": "NeuMotors",
+  "kv": 407.0,
+  "resistance": 0.0972,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

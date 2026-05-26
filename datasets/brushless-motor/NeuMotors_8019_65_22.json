@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_65_22",
+  "name": "8019/65/22",
+  "manufacturer": "NeuMotors",
+  "kv": 22.0,
+  "resistance": 1.024,
+  "io": 0.125,
+  "max_current": 16.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

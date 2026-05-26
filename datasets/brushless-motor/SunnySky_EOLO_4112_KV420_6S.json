@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_EOLO_4112_KV420_6S",
+  "name": "EOLO 4112 KV420 6S",
+  "manufacturer": "SunnySky",
+  "kv": 420.0,
+  "resistance": 0.067,
+  "io": 0.7,
+  "max_current": 40.0,
+  "weight_g": 168.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

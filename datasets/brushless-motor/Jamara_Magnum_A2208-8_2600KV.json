@@ -1,0 +1,12 @@
+{
+  "id": "Jamara_Magnum_A2208-8_2600KV",
+  "name": "Magnum A2208-8 2600KV",
+  "manufacturer": "Jamara",
+  "kv": 2600.0,
+  "resistance": 0.062,
+  "io": 1.3,
+  "max_current": 7.5,
+  "weight_g": 36.0,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

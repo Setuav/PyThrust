@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4031-4900",
+  "name": "L4031-4900",
+  "manufacturer": "Leomotion",
+  "kv": 4875.0,
+  "resistance": 0.002,
+  "io": 6.0,
+  "max_current": 0.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

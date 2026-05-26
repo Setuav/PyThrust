@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4608MR-15",
+  "name": "XM4608MR-15",
+  "manufacturer": "Dualsky",
+  "kv": 400.0,
+  "resistance": 0.158,
+  "io": 0.4,
+  "max_current": 18.0,
+  "weight_g": 100.1,
+  "max_power": 392.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_1Y_846",
+  "name": "1539/1Y 846",
+  "manufacturer": "NeuMotors",
+  "kv": 846.0,
+  "resistance": 0.0156,
+  "io": 2.5,
+  "max_current": 99.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

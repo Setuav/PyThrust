@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3650-2Y_3080",
+  "name": "TP3650-2Y 3080",
+  "manufacturer": "TP Power",
+  "kv": 3080.0,
+  "resistance": 0.0031,
+  "io": 6.5,
+  "max_current": 350.0,
+  "weight_g": 370.2,
+  "max_power": 4500.0,
+  "io_voltage": 6.0
+}

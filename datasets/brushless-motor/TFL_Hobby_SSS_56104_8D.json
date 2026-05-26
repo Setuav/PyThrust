@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56104_8D",
+  "name": "SSS 56104 8D",
+  "manufacturer": "TFL Hobby",
+  "kv": 900.0,
+  "resistance": 0.0065,
+  "io": 3.2,
+  "max_current": 200.0,
+  "weight_g": 1020.9,
+  "max_power": 11000.0,
+  "io_voltage": 11.1
+}

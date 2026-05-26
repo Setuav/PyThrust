@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_2216-640",
+  "name": "2216-640",
+  "manufacturer": "Black Widow",
+  "kv": 660.0,
+  "resistance": 0.2144,
+  "io": 0.32,
+  "max_current": 0.0,
+  "weight_g": 66.1,
+  "max_power": 370.0,
+  "io_voltage": 8.4
+}

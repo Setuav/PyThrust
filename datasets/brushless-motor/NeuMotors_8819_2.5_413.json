@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8819_2.5_413",
+  "name": "8819/2.5/413",
+  "manufacturer": "NeuMotors",
+  "kv": 413.0,
+  "resistance": 0.003,
+  "io": 4.06,
+  "max_current": 486.0,
+  "weight_g": 906.6,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-9Y_3460",
+  "name": "TP2020-9Y 3460",
+  "manufacturer": "TP Power",
+  "kv": 3460.0,
+  "resistance": 0.0777,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

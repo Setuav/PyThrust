@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_G1506-3400",
+  "name": "G1506-3400",
+  "manufacturer": "RCinPower",
+  "kv": 3400.0,
+  "resistance": 0.105,
+  "io": 1.1,
+  "max_current": 25.0,
+  "weight_g": 17.0,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

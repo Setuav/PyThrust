@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_2.25D_620",
+  "name": "2020/2.25D 620",
+  "manufacturer": "NeuMotors",
+  "kv": 620.0,
+  "resistance": 0.012,
+  "io": 2.24,
+  "max_current": 108.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

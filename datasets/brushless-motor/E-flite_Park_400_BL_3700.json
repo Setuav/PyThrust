@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_400_BL_3700",
+  "name": "Park 400 BL 3700",
+  "manufacturer": "E-flite",
+  "kv": 3700.0,
+  "resistance": 0.11,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 68.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

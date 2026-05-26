@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_EX2205-2350",
+  "name": "EX2205-2350",
+  "manufacturer": "RCinPower",
+  "kv": 2350.0,
+  "resistance": 0.07,
+  "io": 0.9,
+  "max_current": 35.0,
+  "weight_g": 30.1,
+  "max_power": 518.0,
+  "io_voltage": 10.0
+}

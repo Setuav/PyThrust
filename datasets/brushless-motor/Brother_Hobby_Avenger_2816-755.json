@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_2816-755",
+  "name": "Avenger 2816-755",
+  "manufacturer": "Brother Hobby",
+  "kv": 755.0,
+  "resistance": 0.066,
+  "io": 1.18,
+  "max_current": 57.0,
+  "weight_g": 98.9,
+  "max_power": 1444.0,
+  "io_voltage": 10.0
+}

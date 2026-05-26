@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_707_1.5Y_6400",
+  "name": "707/1.5Y 6400",
+  "manufacturer": "NeuMotors",
+  "kv": 6400.0,
+  "resistance": 0.029,
+  "io": 1.4,
+  "max_current": 21.0,
+  "weight_g": 40.0,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

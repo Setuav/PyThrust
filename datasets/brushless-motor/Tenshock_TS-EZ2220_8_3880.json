@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2220_8_3880",
+  "name": "TS-EZ2220/8 3880",
+  "manufacturer": "Tenshock",
+  "kv": 3880.0,
+  "resistance": 0.0068,
+  "io": 3.9,
+  "max_current": 88.0,
+  "weight_g": 165.0,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

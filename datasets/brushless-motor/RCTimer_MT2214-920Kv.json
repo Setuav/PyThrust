@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_MT2214-920Kv",
+  "name": "MT2214-920Kv",
+  "manufacturer": "RCTimer",
+  "kv": 920.0,
+  "resistance": 0.13,
+  "io": 0.7,
+  "max_current": 28.0,
+  "weight_g": 55.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HET_Outrunner_29_18_KV820",
+  "name": "Outrunner 29/18 KV820",
+  "manufacturer": "HET",
+  "kv": 820.0,
+  "resistance": 0.054,
+  "io": 0.82,
+  "max_current": 32.0,
+  "weight_g": 143.2,
+  "max_power": 450.0,
+  "io_voltage": 8.4
+}

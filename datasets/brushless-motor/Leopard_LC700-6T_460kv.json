@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC700-6T_460kv",
+  "name": "LC700-6T 460kv",
+  "manufacturer": "Leopard",
+  "kv": 460.0,
+  "resistance": 0.0245,
+  "io": 2.3,
+  "max_current": 105.0,
+  "weight_g": 433.2,
+  "max_power": 4800.0,
+  "io_voltage": 7.4
+}

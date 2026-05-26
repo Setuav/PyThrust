@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Wei-2300",
+  "name": "Wei-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 36.0,
+  "weight_g": 34.6,
+  "max_power": 579.0,
+  "io_voltage": 12.0
+}

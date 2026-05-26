@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4060-2Y_2620",
+  "name": "TP4060-2Y 2620",
+  "manufacturer": "TP Power",
+  "kv": 2620.0,
+  "resistance": 0.0023,
+  "io": 5.8,
+  "max_current": 327.0,
+  "weight_g": 455.0,
+  "max_power": 6200.0,
+  "io_voltage": 8.0
+}

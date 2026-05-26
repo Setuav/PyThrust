@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_6360-218",
+  "name": "EP 6360-218",
+  "manufacturer": "EP Product",
+  "kv": 218.0,
+  "resistance": 0.024,
+  "io": 1.4,
+  "max_current": 100.0,
+  "weight_g": 655.4,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

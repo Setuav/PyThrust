@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM4330-340",
+  "name": "DM4330-340",
+  "manufacturer": "Pro-Tronik",
+  "kv": 340.0,
+  "resistance": 0.028,
+  "io": 1.4,
+  "max_current": 70.0,
+  "weight_g": 470.3,
+  "max_power": 1400.0,
+  "io_voltage": 8.4
+}

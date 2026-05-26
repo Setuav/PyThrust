@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-18T_926KV",
+  "name": "540XL-18T 926KV",
+  "manufacturer": "Feigao",
+  "kv": 926.0,
+  "resistance": 0.0369,
+  "io": 0.7,
+  "max_current": 37.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

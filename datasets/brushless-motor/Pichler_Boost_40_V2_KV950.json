@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_40_V2_KV950",
+  "name": "Boost 40 V2 KV950",
+  "manufacturer": "Pichler",
+  "kv": 950.0,
+  "resistance": 0.035,
+  "io": 3.6,
+  "max_current": 45.0,
+  "weight_g": 190.2,
+  "max_power": 650.0,
+  "io_voltage": 7.4
+}

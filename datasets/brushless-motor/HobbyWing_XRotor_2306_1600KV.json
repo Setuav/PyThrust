@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2306_1600KV",
+  "name": "XRotor 2306 1600KV",
+  "manufacturer": "HobbyWing",
+  "kv": 1600.0,
+  "resistance": 0.083,
+  "io": 0.66,
+  "max_current": 25.0,
+  "weight_g": 28.1,
+  "max_power": 606.0,
+  "io_voltage": 10.0
+}

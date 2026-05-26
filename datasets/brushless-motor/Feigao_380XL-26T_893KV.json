@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-26T_893KV",
+  "name": "380XL-26T 893KV",
+  "manufacturer": "Feigao",
+  "kv": 893.0,
+  "resistance": 0.1314,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

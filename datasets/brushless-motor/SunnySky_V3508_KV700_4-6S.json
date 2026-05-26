@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V3508_KV700_4-6S",
+  "name": "V3508 KV700 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 700.0,
+  "resistance": 0.092,
+  "io": 0.7,
+  "max_current": 32.0,
+  "weight_g": 97.0,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

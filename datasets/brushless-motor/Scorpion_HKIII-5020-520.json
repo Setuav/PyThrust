@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIII-5020-520",
+  "name": "HKIII-5020-520",
+  "manufacturer": "Scorpion",
+  "kv": 520.0,
+  "resistance": 0.014,
+  "io": 1.26,
+  "max_current": 90.0,
+  "weight_g": 497.8,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

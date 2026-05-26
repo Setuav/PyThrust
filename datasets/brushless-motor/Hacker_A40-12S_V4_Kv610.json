@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A40-12S_V4_Kv610",
+  "name": "A40-12S V4 Kv610",
+  "manufacturer": "Hacker",
+  "kv": 610.0,
+  "resistance": 0.031,
+  "io": 1.35,
+  "max_current": 60.0,
+  "weight_g": 198.2,
+  "max_power": 900.0,
+  "io_voltage": 8.4
+}

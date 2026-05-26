@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-4D_2080",
+  "name": "TP4070-4D 2080",
+  "manufacturer": "TP Power",
+  "kv": 2080.0,
+  "resistance": 0.0024,
+  "io": 9.8,
+  "max_current": 300.0,
+  "weight_g": 487.3,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

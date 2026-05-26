@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-12T_690kv",
+  "name": "LC2835-12T 690kv",
+  "manufacturer": "Leopard",
+  "kv": 690.0,
+  "resistance": 0.1758,
+  "io": 0.4,
+  "max_current": 14.0,
+  "weight_g": 71.2,
+  "max_power": 244.0,
+  "io_voltage": 7.4
+}

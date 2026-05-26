@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_4D_1638",
+  "name": "1112/4D 1638",
+  "manufacturer": "NeuMotors",
+  "kv": 1638.0,
+  "resistance": 0.033,
+  "io": 1.1,
+  "max_current": 33.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

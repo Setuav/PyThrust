@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2212_09-1400KV",
+  "name": "2212/09-1400KV",
+  "manufacturer": "BlackMagic",
+  "kv": 1400.0,
+  "resistance": 0.07,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 58.1,
+  "max_power": 310.0,
+  "io_voltage": 10.0
+}

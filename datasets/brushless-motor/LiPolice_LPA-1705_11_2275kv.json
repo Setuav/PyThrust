@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-1705_11_2275kv",
+  "name": "LPA-1705/11 2275kv",
+  "manufacturer": "LiPolice",
+  "kv": 2275.0,
+  "resistance": 0.195,
+  "io": 0.95,
+  "max_current": 6.0,
+  "weight_g": 16.4,
+  "max_power": 55.0,
+  "io_voltage": 7.2
+}

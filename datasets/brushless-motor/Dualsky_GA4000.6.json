@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA4000.6",
+  "name": "GA4000.6",
+  "manufacturer": "Dualsky",
+  "kv": 210.0,
+  "resistance": 0.0184,
+  "io": 1.8,
+  "max_current": 108.0,
+  "weight_g": 700.5,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

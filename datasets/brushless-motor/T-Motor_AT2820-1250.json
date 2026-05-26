@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2820-1250",
+  "name": "AT2820-1250",
+  "manufacturer": "T-Motor",
+  "kv": 1250.0,
+  "resistance": 0.016,
+  "io": 2.7,
+  "max_current": 70.0,
+  "weight_g": 141.2,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

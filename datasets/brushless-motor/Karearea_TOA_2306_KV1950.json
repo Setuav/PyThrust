@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_2306_KV1950",
+  "name": "TOA 2306 KV1950",
+  "manufacturer": "Karearea",
+  "kv": 1950.0,
+  "resistance": 0.0525,
+  "io": 1.0,
+  "max_current": 52.0,
+  "weight_g": 34.0,
+  "max_power": 1362.0,
+  "io_voltage": 10.0
+}

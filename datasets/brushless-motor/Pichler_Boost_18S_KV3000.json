@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_18S_KV3000",
+  "name": "Boost 18S KV3000",
+  "manufacturer": "Pichler",
+  "kv": 3000.0,
+  "resistance": 0.025,
+  "io": 2.0,
+  "max_current": 25.0,
+  "weight_g": 75.1,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

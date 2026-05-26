@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1930_3Y_112",
+  "name": "1930/3Y 112",
+  "manufacturer": "NeuMotors",
+  "kv": 112.0,
+  "resistance": 0.2,
+  "io": 0.5,
+  "max_current": 22.0,
+  "weight_g": 792.7,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

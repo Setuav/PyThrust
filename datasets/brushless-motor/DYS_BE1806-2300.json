@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE1806-2300",
+  "name": "BE1806-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.19,
+  "io": 0.6,
+  "max_current": 14.0,
+  "weight_g": 18.1,
+  "max_power": 229.0,
+  "io_voltage": 11.1
+}

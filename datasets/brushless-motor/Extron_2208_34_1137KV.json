@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2208_34_1137KV",
+  "name": "2208/34 1137KV",
+  "manufacturer": "Extron",
+  "kv": 1137.0,
+  "resistance": 0.199,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 43.1,
+  "max_power": 180.0,
+  "io_voltage": 11.1
+}

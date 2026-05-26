@@ -1,0 +1,12 @@
+{
+  "id": "FMS_4023-KV920",
+  "name": "4023-KV920",
+  "manufacturer": "FMS",
+  "kv": 920.0,
+  "resistance": 0.031,
+  "io": 2.4,
+  "max_current": 30.0,
+  "weight_g": 110.0,
+  "max_power": 370.0,
+  "io_voltage": 10.0
+}

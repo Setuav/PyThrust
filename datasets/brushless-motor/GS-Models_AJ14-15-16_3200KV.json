@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ14-15-16_3200KV",
+  "name": "AJ14-15-16 3200KV",
+  "manufacturer": "GS-Models",
+  "kv": 3200.0,
+  "resistance": 0.951,
+  "io": 0.3,
+  "max_current": 4.2,
+  "weight_g": 6.0,
+  "max_power": 41.0,
+  "io_voltage": 10.0
+}

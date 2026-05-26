@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M10_IPE_150KV",
+  "name": "M10 IPE 150KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 150.0,
+  "resistance": 0.024,
+  "io": 2.5,
+  "max_current": 85.0,
+  "weight_g": 656.6,
+  "max_power": 4079.0,
+  "io_voltage": 20.0
+}

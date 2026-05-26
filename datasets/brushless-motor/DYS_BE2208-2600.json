@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2208-2600",
+  "name": "BE2208-2600",
+  "manufacturer": "DYS",
+  "kv": 2600.0,
+  "resistance": 0.044,
+  "io": 1.2,
+  "max_current": 43.0,
+  "weight_g": 43.9,
+  "max_power": 478.0,
+  "io_voltage": 11.1
+}

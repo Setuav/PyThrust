@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-29T_801KV",
+  "name": "380XL-29T 801KV",
+  "manufacturer": "Feigao",
+  "kv": 801.0,
+  "resistance": 0.1635,
+  "io": 0.3,
+  "max_current": 15.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

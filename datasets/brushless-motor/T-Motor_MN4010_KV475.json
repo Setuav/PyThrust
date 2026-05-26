@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4010_KV475",
+  "name": "MN4010 KV475",
+  "manufacturer": "T-Motor",
+  "kv": 475.0,
+  "resistance": 0.098,
+  "io": 0.8,
+  "max_current": 30.0,
+  "weight_g": 112.0,
+  "max_power": 540.0,
+  "io_voltage": 10.0
+}

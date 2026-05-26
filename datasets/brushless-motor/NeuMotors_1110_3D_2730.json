@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_3D_2730",
+  "name": "1110/3D 2730",
+  "manufacturer": "NeuMotors",
+  "kv": 2730.0,
+  "resistance": 0.015,
+  "io": 1.5,
+  "max_current": 46.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

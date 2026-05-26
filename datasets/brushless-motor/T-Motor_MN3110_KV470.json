@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN3110_KV470",
+  "name": "MN3110 KV470",
+  "manufacturer": "T-Motor",
+  "kv": 470.0,
+  "resistance": 0.135,
+  "io": 0.3,
+  "max_current": 15.0,
+  "weight_g": 79.9,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

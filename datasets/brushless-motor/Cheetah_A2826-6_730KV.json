@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2826-6_730KV",
+  "name": "A2826-6  730KV",
+  "manufacturer": "Cheetah",
+  "kv": 730.0,
+  "resistance": 0.06,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 175.2,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

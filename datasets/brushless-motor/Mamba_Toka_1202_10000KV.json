@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1202_10000KV",
+  "name": "Toka 1202 10000KV",
+  "manufacturer": "Mamba",
+  "kv": 10000.0,
+  "resistance": 0.167,
+  "io": 0.49,
+  "max_current": 8.4,
+  "weight_g": 5.1,
+  "max_power": 71.0,
+  "io_voltage": 3.0
+}

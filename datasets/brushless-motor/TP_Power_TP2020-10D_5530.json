@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-10D_5530",
+  "name": "TP2020-10D 5530",
+  "manufacturer": "TP Power",
+  "kv": 5530.0,
+  "resistance": 0.027,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

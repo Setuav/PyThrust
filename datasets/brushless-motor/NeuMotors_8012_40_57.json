@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_40_57",
+  "name": "8012/40/57",
+  "manufacturer": "NeuMotors",
+  "kv": 57.0,
+  "resistance": 0.291,
+  "io": 0.203,
+  "max_current": 26.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

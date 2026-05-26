@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-3020_10_1135kv",
+  "name": "LPA-3020/10 1135kv",
+  "manufacturer": "LiPolice",
+  "kv": 1135.0,
+  "resistance": 0.021,
+  "io": 2.52,
+  "max_current": 40.0,
+  "weight_g": 144.0,
+  "max_power": 450.0,
+  "io_voltage": 8.4
+}

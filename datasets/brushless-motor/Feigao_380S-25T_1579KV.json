@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-25T_1579KV",
+  "name": "380S-25T 1579KV",
+  "manufacturer": "Feigao",
+  "kv": 1579.0,
+  "resistance": 0.092,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

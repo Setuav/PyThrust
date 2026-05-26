@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2006_2800KV",
+  "name": "Aeolus 2006 2800KV",
+  "manufacturer": "HGLRC",
+  "kv": 2800.0,
+  "resistance": 0.063,
+  "io": 1.0,
+  "max_current": 42.0,
+  "weight_g": 20.7,
+  "max_power": 998.0,
+  "io_voltage": 10.0
+}

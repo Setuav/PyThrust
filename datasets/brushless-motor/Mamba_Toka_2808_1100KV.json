@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_2808_1100KV",
+  "name": "Toka 2808 1100KV",
+  "manufacturer": "Mamba",
+  "kv": 1100.0,
+  "resistance": 0.068,
+  "io": 1.2,
+  "max_current": 39.0,
+  "weight_g": 63.5,
+  "max_power": 863.0,
+  "io_voltage": 10.0
+}

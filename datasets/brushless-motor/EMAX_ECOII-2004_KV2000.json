@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECOII-2004_KV2000",
+  "name": "ECOII-2004 KV2000",
+  "manufacturer": "EMAX",
+  "kv": 2000.0,
+  "resistance": 0.158,
+  "io": 0.7,
+  "max_current": 23.0,
+  "weight_g": 16.7,
+  "max_power": 580.0,
+  "io_voltage": 10.0
+}

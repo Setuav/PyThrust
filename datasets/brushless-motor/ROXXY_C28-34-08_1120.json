@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-34-08_1120",
+  "name": "C28-34-08 1120",
+  "manufacturer": "ROXXY",
+  "kv": 1120.0,
+  "resistance": 0.055,
+  "io": 1.28,
+  "max_current": 26.0,
+  "weight_g": 67.2,
+  "max_power": 380.0,
+  "io_voltage": 10.5
+}

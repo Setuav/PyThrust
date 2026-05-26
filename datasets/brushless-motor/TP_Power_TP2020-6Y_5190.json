@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-6Y_5190",
+  "name": "TP2020-6Y 5190",
+  "manufacturer": "TP Power",
+  "kv": 5190.0,
+  "resistance": 0.0319,
+  "io": 1.1,
+  "max_current": 28.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-26-12_1450",
+  "name": "C28-26-12 1450",
+  "manufacturer": "ROXXY",
+  "kv": 1450.0,
+  "resistance": 0.117,
+  "io": 1.01,
+  "max_current": 24.0,
+  "weight_g": 45.1,
+  "max_power": 240.0,
+  "io_voltage": 10.5
+}

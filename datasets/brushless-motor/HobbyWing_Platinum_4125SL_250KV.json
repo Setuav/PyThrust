@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_Platinum_4125SL_250KV",
+  "name": "Platinum 4125SL 250KV",
+  "manufacturer": "HobbyWing",
+  "kv": 250.0,
+  "resistance": 0.047,
+  "io": 1.4,
+  "max_current": 60.0,
+  "weight_g": 363.2,
+  "max_power": 2681.0,
+  "io_voltage": 44.4
+}

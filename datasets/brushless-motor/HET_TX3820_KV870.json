@@ -1,0 +1,12 @@
+{
+  "id": "HET_TX3820_KV870",
+  "name": "TX3820 KV870",
+  "manufacturer": "HET",
+  "kv": 870.0,
+  "resistance": 0.024,
+  "io": 1.2,
+  "max_current": 38.0,
+  "weight_g": 161.0,
+  "max_power": 570.0,
+  "io_voltage": 8.4
+}

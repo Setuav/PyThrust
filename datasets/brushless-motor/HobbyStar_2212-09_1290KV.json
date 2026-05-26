@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2212-09_1290KV",
+  "name": "2212-09 1290KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1290.0,
+  "resistance": 0.085,
+  "io": 1.2,
+  "max_current": 25.0,
+  "weight_g": 52.2,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

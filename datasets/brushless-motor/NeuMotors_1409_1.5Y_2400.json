@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1409_1.5Y_2400",
+  "name": "1409/1.5Y 2400",
+  "manufacturer": "NeuMotors",
+  "kv": 2400.0,
+  "resistance": 0.012,
+  "io": 2.0,
+  "max_current": 56.0,
+  "weight_g": 218.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

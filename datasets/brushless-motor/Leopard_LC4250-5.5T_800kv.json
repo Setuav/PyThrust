@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4250-5.5T_800kv",
+  "name": "LC4250-5.5T 800kv",
+  "manufacturer": "Leopard",
+  "kv": 800.0,
+  "resistance": 0.0218,
+  "io": 2.2,
+  "max_current": 65.0,
+  "weight_g": 208.1,
+  "max_power": 1135.0,
+  "io_voltage": 10.0
+}

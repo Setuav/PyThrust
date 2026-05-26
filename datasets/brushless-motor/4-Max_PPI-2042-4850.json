@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-2042-4850",
+  "name": "PPI-2042-4850",
+  "manufacturer": "4-Max",
+  "kv": 4850.0,
+  "resistance": 0.045,
+  "io": 1.8,
+  "max_current": 16.0,
+  "weight_g": 60.1,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

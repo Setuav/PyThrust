@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_0.25Y_9100",
+  "name": "1120/0.25Y 9100",
+  "manufacturer": "NeuMotors",
+  "kv": 9100.0,
+  "resistance": 0.001,
+  "io": 10.0,
+  "max_current": 243.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

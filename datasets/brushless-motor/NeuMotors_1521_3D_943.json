@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_3D_943",
+  "name": "1521/3D 943",
+  "manufacturer": "NeuMotors",
+  "kv": 943.0,
+  "resistance": 0.0252,
+  "io": 1.5,
+  "max_current": 55.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

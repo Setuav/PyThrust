@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_28-35-3900",
+  "name": "AMMO 28-35-3900",
+  "manufacturer": "ElectriFly",
+  "kv": 3900.0,
+  "resistance": 0.0365,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 94.1,
+  "max_power": 500.0,
+  "io_voltage": 7.4
+}

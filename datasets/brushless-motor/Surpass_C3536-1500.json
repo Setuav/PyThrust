@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C3536-1500",
+  "name": "C3536-1500",
+  "manufacturer": "Surpass",
+  "kv": 1500.0,
+  "resistance": 0.025,
+  "io": 2.5,
+  "max_current": 55.0,
+  "weight_g": 109.1,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

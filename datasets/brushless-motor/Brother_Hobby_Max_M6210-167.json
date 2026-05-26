@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Max_M6210-167",
+  "name": "Max M6210-167",
+  "manufacturer": "Brother Hobby",
+  "kv": 167.0,
+  "resistance": 0.1403,
+  "io": 0.56,
+  "max_current": 39.0,
+  "weight_g": 352.4,
+  "max_power": 1690.0,
+  "io_voltage": 20.0
+}

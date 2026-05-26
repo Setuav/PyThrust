@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-2208-34-2600",
+  "name": "HKII-2208-34-2600",
+  "manufacturer": "Scorpion",
+  "kv": 2600.0,
+  "resistance": 0.126,
+  "io": 0.85,
+  "max_current": 15.0,
+  "weight_g": 39.1,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

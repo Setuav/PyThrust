@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_5_4020",
+  "name": "TS-EZ2230/5 4020",
+  "manufacturer": "Tenshock",
+  "kv": 4020.0,
+  "resistance": 0.0039,
+  "io": 5.5,
+  "max_current": 140.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

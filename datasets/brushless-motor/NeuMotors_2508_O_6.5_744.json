@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2508_O_6.5_744",
+  "name": "2508 O/6.5/744",
+  "manufacturer": "NeuMotors",
+  "kv": 744.0,
+  "resistance": 0.343,
+  "io": 0.462,
+  "max_current": 30.0,
+  "weight_g": 32.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

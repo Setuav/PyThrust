@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_5.25D_266",
+  "name": "2020/5.25D 266",
+  "manufacturer": "NeuMotors",
+  "kv": 266.0,
+  "resistance": 0.064,
+  "io": 0.96,
+  "max_current": 26.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

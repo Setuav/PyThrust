@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2810-11_1100KV",
+  "name": "A2810-11 1100KV",
+  "manufacturer": "Cheetah",
+  "kv": 1100.0,
+  "resistance": 0.108,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 78.0,
+  "max_power": 390.0,
+  "io_voltage": 10.0
+}

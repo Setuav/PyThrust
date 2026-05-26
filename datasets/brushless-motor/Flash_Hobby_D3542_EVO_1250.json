@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D3542_EVO_1250",
+  "name": "D3542 EVO 1250",
+  "manufacturer": "Flash Hobby",
+  "kv": 1250.0,
+  "resistance": 0.024,
+  "io": 2.66,
+  "max_current": 63.0,
+  "weight_g": 136.1,
+  "max_power": 962.0,
+  "io_voltage": 10.0
+}

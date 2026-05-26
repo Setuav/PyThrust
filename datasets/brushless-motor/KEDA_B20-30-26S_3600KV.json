@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B20-30-26S_3600KV",
+  "name": "B20-30-26S 3600KV",
+  "manufacturer": "KEDA",
+  "kv": 3600.0,
+  "resistance": 0.148,
+  "io": 0.7,
+  "max_current": 8.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 7.4
+}

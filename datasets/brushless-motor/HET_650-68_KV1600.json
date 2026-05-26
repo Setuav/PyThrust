@@ -1,0 +1,12 @@
+{
+  "id": "HET_650-68_KV1600",
+  "name": "650-68 KV1600",
+  "manufacturer": "HET",
+  "kv": 1600.0,
+  "resistance": 0.012,
+  "io": 2.2,
+  "max_current": 100.0,
+  "weight_g": 300.2,
+  "max_power": 2300.0,
+  "io_voltage": 10.0
+}

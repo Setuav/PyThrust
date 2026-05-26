@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC8072-8T_220kv",
+  "name": "LC8072-8T 220kv",
+  "manufacturer": "Leopard",
+  "kv": 220.0,
+  "resistance": 0.0156,
+  "io": 2.4,
+  "max_current": 110.0,
+  "weight_g": 1098.8,
+  "max_power": 4200.0,
+  "io_voltage": 15.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_5030-310",
+  "name": "RO-Power Torque 5030-310",
+  "manufacturer": "Robbe",
+  "kv": 310.0,
+  "resistance": 0.077,
+  "io": 0.82,
+  "max_current": 57.0,
+  "weight_g": 405.4,
+  "max_power": 1850.0,
+  "io_voltage": 10.0
+}

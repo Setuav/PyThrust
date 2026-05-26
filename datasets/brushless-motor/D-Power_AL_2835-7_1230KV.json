@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_2835-7_1230KV",
+  "name": "AL 2835-7 1230KV",
+  "manufacturer": "D-Power",
+  "kv": 1230.0,
+  "resistance": 0.0611,
+  "io": 1.0,
+  "max_current": 22.0,
+  "weight_g": 68.0,
+  "max_power": 250.0,
+  "io_voltage": 8.0
+}

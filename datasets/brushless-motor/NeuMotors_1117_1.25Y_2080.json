@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_1.25Y_2080",
+  "name": "1117/1.25Y 2080",
+  "manufacturer": "NeuMotors",
+  "kv": 2080.0,
+  "resistance": 0.014,
+  "io": 2.0,
+  "max_current": 55.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

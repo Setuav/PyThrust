@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA3500R.10",
+  "name": "GA3500R.10",
+  "manufacturer": "Dualsky",
+  "kv": 200.0,
+  "resistance": 0.0284,
+  "io": 1.2,
+  "max_current": 80.0,
+  "weight_g": 538.4,
+  "max_power": 3550.0,
+  "io_voltage": 10.0
+}

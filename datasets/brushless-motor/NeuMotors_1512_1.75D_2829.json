@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_1.75D_2829",
+  "name": "1512/1.75D 2829",
+  "manufacturer": "NeuMotors",
+  "kv": 2829.0,
+  "resistance": 0.005,
+  "io": 2.6,
+  "max_current": 94.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

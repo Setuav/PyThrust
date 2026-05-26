@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2212_14_750",
+  "name": "2212/14 750",
+  "manufacturer": "RedRock",
+  "kv": 750.0,
+  "resistance": 0.334,
+  "io": 0.4,
+  "max_current": 20.0,
+  "weight_g": 62.1,
+  "max_power": 245.0,
+  "io_voltage": 10.0
+}

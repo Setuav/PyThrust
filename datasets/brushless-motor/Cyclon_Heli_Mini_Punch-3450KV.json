@@ -1,0 +1,12 @@
+{
+  "id": "Cyclon_Heli_Mini_Punch-3450KV",
+  "name": "Heli Mini Punch-3450KV",
+  "manufacturer": "Cyclon",
+  "kv": 3450.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 55.0,
+  "max_power": 300.0,
+  "io_voltage": 6.0
+}

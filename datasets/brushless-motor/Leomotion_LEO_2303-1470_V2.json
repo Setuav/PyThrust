@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2303-1470_V2",
+  "name": "LEO 2303-1470 V2",
+  "manufacturer": "Leomotion",
+  "kv": 1470.0,
+  "resistance": 0.377,
+  "io": 0.38,
+  "max_current": 8.0,
+  "weight_g": 19.0,
+  "max_power": 95.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A4120_6",
+  "name": "A4120/6",
+  "manufacturer": "Suppo",
+  "kv": 620.0,
+  "resistance": 0.033,
+  "io": 2.6,
+  "max_current": 60.0,
+  "weight_g": 309.3,
+  "max_power": 950.0,
+  "io_voltage": 10.0
+}

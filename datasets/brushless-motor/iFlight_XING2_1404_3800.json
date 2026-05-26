@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING2_1404_3800",
+  "name": "XING2 1404 3800",
+  "manufacturer": "iFlight",
+  "kv": 3800.0,
+  "resistance": 0.22,
+  "io": 0.47,
+  "max_current": 16.0,
+  "weight_g": 9.1,
+  "max_power": 254.0,
+  "io_voltage": 5.0
+}

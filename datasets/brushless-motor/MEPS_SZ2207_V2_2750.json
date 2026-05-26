@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2207_V2_2750",
+  "name": "SZ2207 V2 2750",
+  "manufacturer": "MEPS",
+  "kv": 2750.0,
+  "resistance": 0.037,
+  "io": 2.2,
+  "max_current": 51.0,
+  "weight_g": 35.2,
+  "max_power": 814.0,
+  "io_voltage": 10.0
+}

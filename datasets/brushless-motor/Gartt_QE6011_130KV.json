@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_QE6011_130KV",
+  "name": "QE6011 130KV",
+  "manufacturer": "Gartt",
+  "kv": 130.0,
+  "resistance": 0.1725,
+  "io": 0.3,
+  "max_current": 28.0,
+  "weight_g": 300.2,
+  "max_power": 1320.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_3520-800",
+  "name": "Rocket 3520-800",
+  "manufacturer": "Exceed RC",
+  "kv": 800.0,
+  "resistance": 0.014,
+  "io": 2.1,
+  "max_current": 120.0,
+  "weight_g": 223.1,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

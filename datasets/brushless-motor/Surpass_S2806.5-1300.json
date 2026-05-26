@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_S2806.5-1300",
+  "name": "S2806.5-1300",
+  "manufacturer": "Surpass",
+  "kv": 1300.0,
+  "resistance": 0.08,
+  "io": 1.3,
+  "max_current": 45.0,
+  "weight_g": 55.0,
+  "max_power": 1056.0,
+  "io_voltage": 10.0
+}

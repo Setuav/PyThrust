@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2208C-1200",
+  "name": "ECO 2208C-1200",
+  "manufacturer": "Dualsky",
+  "kv": 1200.0,
+  "resistance": 0.134,
+  "io": 0.64,
+  "max_current": 15.0,
+  "weight_g": 43.9,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

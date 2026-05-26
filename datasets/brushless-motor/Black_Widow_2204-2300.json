@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_2204-2300",
+  "name": "2204-2300",
+  "manufacturer": "Black Widow",
+  "kv": 2300.0,
+  "resistance": 0.091,
+  "io": 0.73,
+  "max_current": 0.0,
+  "weight_g": 34.0,
+  "max_power": 160.0,
+  "io_voltage": 8.4
+}

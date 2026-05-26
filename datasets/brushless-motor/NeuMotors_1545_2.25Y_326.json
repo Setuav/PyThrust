@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_2.25Y_326",
+  "name": "1545/2.25Y 326",
+  "manufacturer": "NeuMotors",
+  "kv": 326.0,
+  "resistance": 0.091,
+  "io": 1.1,
+  "max_current": 43.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

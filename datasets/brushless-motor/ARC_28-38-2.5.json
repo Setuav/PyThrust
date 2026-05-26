@@ -1,0 +1,12 @@
+{
+  "id": "ARC_28-38-2.5",
+  "name": "28-38-2.5",
+  "manufacturer": "ARC",
+  "kv": 2800.0,
+  "resistance": 0.09,
+  "io": 1.2,
+  "max_current": 32.0,
+  "weight_g": 79.4,
+  "max_power": 275.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_4.75D_695",
+  "name": "1518/4.75D 695",
+  "manufacturer": "NeuMotors",
+  "kv": 695.0,
+  "resistance": 0.0542,
+  "io": 0.95,
+  "max_current": 35.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

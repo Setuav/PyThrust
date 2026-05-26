@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C10_IPE_V3_250KV",
+  "name": "M6C10 IPE V3 250KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 250.0,
+  "resistance": 0.041,
+  "io": 1.3,
+  "max_current": 63.0,
+  "weight_g": 234.2,
+  "max_power": 2992.0,
+  "io_voltage": 20.0
+}

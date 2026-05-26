@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-18M_V4_Kv190",
+  "name": "A60-18M V4 Kv190",
+  "manufacturer": "Hacker",
+  "kv": 190.0,
+  "resistance": 0.027,
+  "io": 1.8,
+  "max_current": 110.0,
+  "weight_g": 760.6,
+  "max_power": 2200.0,
+  "io_voltage": 8.4
+}

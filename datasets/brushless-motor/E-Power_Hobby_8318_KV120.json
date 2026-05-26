@@ -1,0 +1,12 @@
+{
+  "id": "E-Power_Hobby_8318_KV120",
+  "name": "8318 KV120",
+  "manufacturer": "E-Power Hobby",
+  "kv": 230.0,
+  "resistance": 0.037,
+  "io": 1.3,
+  "max_current": 64.0,
+  "weight_g": 635.6,
+  "max_power": 2870.0,
+  "io_voltage": 10.0
+}

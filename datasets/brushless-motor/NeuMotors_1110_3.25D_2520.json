@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_3.25D_2520",
+  "name": "1110/3.25D 2520",
+  "manufacturer": "NeuMotors",
+  "kv": 2520.0,
+  "resistance": 0.018,
+  "io": 1.4,
+  "max_current": 42.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

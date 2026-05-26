@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2820_KV920_3-5S",
+  "name": "X2820 KV920 3-5S",
+  "manufacturer": "SunnySky",
+  "kv": 920.0,
+  "resistance": 0.028,
+  "io": 1.1,
+  "max_current": 52.0,
+  "weight_g": 138.1,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

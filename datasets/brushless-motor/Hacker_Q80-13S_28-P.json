@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q80-13S_28-P",
+  "name": "Q80-13S 28-P",
+  "manufacturer": "Hacker",
+  "kv": 175.0,
+  "resistance": 0.029,
+  "io": 1.3,
+  "max_current": 120.0,
+  "weight_g": 610.4,
+  "max_power": 3000.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_2.25Y_2695",
+  "name": "1107/2.25Y 2695",
+  "manufacturer": "NeuMotors",
+  "kv": 2695.0,
+  "resistance": 0.019,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

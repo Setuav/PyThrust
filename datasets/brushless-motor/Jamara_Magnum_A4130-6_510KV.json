@@ -1,0 +1,12 @@
+{
+  "id": "Jamara_Magnum_A4130-6_510KV",
+  "name": "Magnum A4130-6 510KV",
+  "manufacturer": "Jamara",
+  "kv": 510.0,
+  "resistance": 0.051,
+  "io": 2.4,
+  "max_current": 70.0,
+  "weight_g": 400.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

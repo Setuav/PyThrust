@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_SE_2812-900KV",
+  "name": "SE 2812-900KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 900.0,
+  "resistance": 0.089,
+  "io": 1.82,
+  "max_current": 45.0,
+  "weight_g": 79.1,
+  "max_power": 1128.0,
+  "io_voltage": 10.0
+}

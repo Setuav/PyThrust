@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2826-0740_V3",
+  "name": "LEO 2826-0740 V3",
+  "manufacturer": "Leomotion",
+  "kv": 740.0,
+  "resistance": 0.027,
+  "io": 1.3,
+  "max_current": 40.0,
+  "weight_g": 175.2,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

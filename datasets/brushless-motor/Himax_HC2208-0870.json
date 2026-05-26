@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HC2208-0870",
+  "name": "HC2208-0870",
+  "manufacturer": "Himax",
+  "kv": 870.0,
+  "resistance": 0.88,
+  "io": 0.25,
+  "max_current": 4.5,
+  "weight_g": 24.9,
+  "max_power": 80.0,
+  "io_voltage": 10.0
+}

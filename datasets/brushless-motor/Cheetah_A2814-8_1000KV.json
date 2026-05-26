@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2814-8_1000KV",
+  "name": "A2814-8 1000KV",
+  "manufacturer": "Cheetah",
+  "kv": 1000.0,
+  "resistance": 0.072,
+  "io": 1.8,
+  "max_current": 35.0,
+  "weight_g": 103.2,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

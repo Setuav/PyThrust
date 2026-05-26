@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G15_3520-KV980",
+  "name": "G15 3520-KV980",
+  "manufacturer": "TomCat",
+  "kv": 980.0,
+  "resistance": 0.033,
+  "io": 2.2,
+  "max_current": 43.0,
+  "weight_g": 145.1,
+  "max_power": 440.0,
+  "io_voltage": 10.0
+}

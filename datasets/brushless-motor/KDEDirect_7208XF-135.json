@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_7208XF-135",
+  "name": "7208XF-135",
+  "manufacturer": "KDEDirect",
+  "kv": 135.0,
+  "resistance": 0.113,
+  "io": 0.4,
+  "max_current": 38.0,
+  "weight_g": 380.2,
+  "max_power": 2145.0,
+  "io_voltage": 10.0
+}

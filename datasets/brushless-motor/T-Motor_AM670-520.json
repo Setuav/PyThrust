@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AM670-520",
+  "name": "AM670-520",
+  "manufacturer": "T-Motor",
+  "kv": 520.0,
+  "resistance": 0.01,
+  "io": 4.2,
+  "max_current": 130.0,
+  "weight_g": 416.7,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N5045-07_KV800",
+  "name": "N5045-07 KV800",
+  "manufacturer": "EMP",
+  "kv": 800.0,
+  "resistance": 0.017,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 1210.0,
+  "io_voltage": 13.0
+}

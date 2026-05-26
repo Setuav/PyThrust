@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3025-2800",
+  "name": "L3025-2800",
+  "manufacturer": "Leomotion",
+  "kv": 2800.0,
+  "resistance": 0.016,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 132.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

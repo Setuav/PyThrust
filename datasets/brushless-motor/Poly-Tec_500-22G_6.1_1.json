@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_500-22G_6.1_1",
+  "name": "500-22G 6.1:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 2200.0,
+  "resistance": 0.0156,
+  "io": 3.1,
+  "max_current": 125.0,
+  "weight_g": 329.1,
+  "max_power": 1250.0,
+  "io_voltage": 7.4
+}

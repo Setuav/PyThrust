@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5670-7D_1010",
+  "name": "TP5670-7D 1010",
+  "manufacturer": "TP Power",
+  "kv": 1010.0,
+  "resistance": 0.0051,
+  "io": 3.5,
+  "max_current": 240.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 8.0
+}

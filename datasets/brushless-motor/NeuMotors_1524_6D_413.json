@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_6D_413",
+  "name": "1524/6D 413",
+  "manufacturer": "NeuMotors",
+  "kv": 413.0,
+  "resistance": 0.1152,
+  "io": 0.75,
+  "max_current": 28.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1540_10_2060",
+  "name": "TS-EZ1540/10 2060",
+  "manufacturer": "Tenshock",
+  "kv": 2060.0,
+  "resistance": 0.0205,
+  "io": 1.7,
+  "max_current": 65.0,
+  "weight_g": 177.2,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

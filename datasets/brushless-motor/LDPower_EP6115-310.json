@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_EP6115-310",
+  "name": "EP6115-310",
+  "manufacturer": "LDPower",
+  "kv": 310.0,
+  "resistance": 0.0312,
+  "io": 0.8,
+  "max_current": 127.0,
+  "weight_g": 324.3,
+  "max_power": 2820.0,
+  "io_voltage": 8.0
+}

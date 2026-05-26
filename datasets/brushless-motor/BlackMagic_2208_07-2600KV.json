@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2208_07-2600KV",
+  "name": "2208/07-2600KV",
+  "manufacturer": "BlackMagic",
+  "kv": 2600.0,
+  "resistance": 0.042,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 45.9,
+  "max_power": 290.0,
+  "io_voltage": 10.0
+}

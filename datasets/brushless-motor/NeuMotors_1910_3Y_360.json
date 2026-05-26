@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1910_3Y_360",
+  "name": "1910/3Y 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.088,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 283.2,
+  "max_power": 2400.0,
+  "io_voltage": 10.0
+}

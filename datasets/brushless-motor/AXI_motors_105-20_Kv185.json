@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_105-20_Kv185",
+  "name": "105-20 Kv185",
+  "manufacturer": "AXI motors",
+  "kv": 185.0,
+  "resistance": 0.0115,
+  "io": 7.6,
+  "max_current": 195.0,
+  "weight_g": 1851.2,
+  "max_power": 9000.0,
+  "io_voltage": 10.0
+}

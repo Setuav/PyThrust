@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1103-8000",
+  "name": "F1103-8000",
+  "manufacturer": "T-Motor",
+  "kv": 8000.0,
+  "resistance": 0.163,
+  "io": 0.58,
+  "max_current": 11.0,
+  "weight_g": 5.4,
+  "max_power": 107.0,
+  "io_voltage": 3.0
+}

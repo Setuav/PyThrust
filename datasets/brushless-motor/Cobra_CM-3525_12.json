@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-3525_12",
+  "name": "CM-3525/12",
+  "manufacturer": "Cobra",
+  "kv": 650.0,
+  "resistance": 0.03,
+  "io": 1.48,
+  "max_current": 52.0,
+  "weight_g": 252.9,
+  "max_power": 960.0,
+  "io_voltage": 20.0
+}

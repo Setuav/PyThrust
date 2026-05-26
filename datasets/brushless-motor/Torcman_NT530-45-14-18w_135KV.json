@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT530-45-14-18w_135KV",
+  "name": "NT530-45-14-18w 135KV",
+  "manufacturer": "Torcman",
+  "kv": 135.0,
+  "resistance": 0.038,
+  "io": 1.4,
+  "max_current": 140.0,
+  "weight_g": 1030.8,
+  "max_power": 4000.0,
+  "io_voltage": 20.0
+}

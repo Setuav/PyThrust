@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1408_2800",
+  "name": "SZ1408 2800",
+  "manufacturer": "MEPS",
+  "kv": 2800.0,
+  "resistance": 0.183,
+  "io": 0.65,
+  "max_current": 15.0,
+  "weight_g": 15.9,
+  "max_power": 249.0,
+  "io_voltage": 10.0
+}

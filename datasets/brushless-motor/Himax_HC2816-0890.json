@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HC2816-0890",
+  "name": "HC2816-0890",
+  "manufacturer": "Himax",
+  "kv": 890.0,
+  "resistance": 0.119,
+  "io": 0.8,
+  "max_current": 18.0,
+  "weight_g": 77.1,
+  "max_power": 230.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_3.5D_9360",
+  "name": "1102/3.5D 9360",
+  "manufacturer": "NeuMotors",
+  "kv": 9360.0,
+  "resistance": 0.005,
+  "io": 1.3,
+  "max_current": 31.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

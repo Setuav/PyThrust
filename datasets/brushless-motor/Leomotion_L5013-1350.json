@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5013-1350",
+  "name": "L5013-1350",
+  "manufacturer": "Leomotion",
+  "kv": 1350.0,
+  "resistance": 0.019,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 185.1,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

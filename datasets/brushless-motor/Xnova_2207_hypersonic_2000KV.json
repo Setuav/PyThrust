@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_hypersonic_2000KV",
+  "name": "2207 hypersonic 2000KV",
+  "manufacturer": "Xnova",
+  "kv": 2000.0,
+  "resistance": 0.055,
+  "io": 1.3,
+  "max_current": 37.0,
+  "weight_g": 36.0,
+  "max_power": 940.0,
+  "io_voltage": 10.0
+}

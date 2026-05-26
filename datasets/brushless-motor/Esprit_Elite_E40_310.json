@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E40_310",
+  "name": "Elite E40/310",
+  "manufacturer": "Esprit",
+  "kv": 310.0,
+  "resistance": 0.029,
+  "io": 1.1,
+  "max_current": 75.0,
+  "weight_g": 450.5,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

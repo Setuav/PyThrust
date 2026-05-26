@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3020_2.5Y_292",
+  "name": "3020/2.5Y 292",
+  "manufacturer": "NeuMotors",
+  "kv": 292.0,
+  "resistance": 0.015,
+  "io": 2.4,
+  "max_current": 292.0,
+  "weight_g": 1931.5,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

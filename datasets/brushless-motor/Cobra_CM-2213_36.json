@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2213_36",
+  "name": "CM-2213/36",
+  "manufacturer": "Cobra",
+  "kv": 700.0,
+  "resistance": 0.259,
+  "io": 0.28,
+  "max_current": 11.0,
+  "weight_g": 68.6,
+  "max_power": 120.0,
+  "io_voltage": 12.0
+}

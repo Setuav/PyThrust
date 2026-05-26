@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECOII-2807_KV1300",
+  "name": "ECOII-2807 KV1300",
+  "manufacturer": "EMAX",
+  "kv": 1300.0,
+  "resistance": 0.058,
+  "io": 1.3,
+  "max_current": 52.0,
+  "weight_g": 47.6,
+  "max_power": 1310.0,
+  "io_voltage": 10.0
+}

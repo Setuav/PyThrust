@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Purple_A2836_2-3500",
+  "name": "Purple A2836/2-3500",
+  "manufacturer": "Torcster",
+  "kv": 3500.0,
+  "resistance": 0.05,
+  "io": 1.8,
+  "max_current": 40.0,
+  "weight_g": 70.0,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

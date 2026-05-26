@@ -1,0 +1,12 @@
+{
+  "id": "FMS_2845-KV2750",
+  "name": "2845-KV2750",
+  "manufacturer": "FMS",
+  "kv": 2750.0,
+  "resistance": 0.029,
+  "io": 3.0,
+  "max_current": 30.0,
+  "weight_g": 108.0,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

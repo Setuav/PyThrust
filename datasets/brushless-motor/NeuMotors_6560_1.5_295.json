@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_1.5_295",
+  "name": "6560/1.5/295",
+  "manufacturer": "NeuMotors",
+  "kv": 295.0,
+  "resistance": 0.006,
+  "io": 3.267,
+  "max_current": 480.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

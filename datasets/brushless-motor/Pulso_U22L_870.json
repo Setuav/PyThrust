@@ -1,0 +1,12 @@
+{
+  "id": "Pulso_U22L_870",
+  "name": "U22L/870",
+  "manufacturer": "Pulso",
+  "kv": 870.0,
+  "resistance": 0.11,
+  "io": 0.55,
+  "max_current": 20.0,
+  "weight_g": 74.0,
+  "max_power": 260.0,
+  "io_voltage": 8.0
+}

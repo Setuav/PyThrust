@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_45_V2_KV700",
+  "name": "Boost 45 V2 KV700",
+  "manufacturer": "Pichler",
+  "kv": 700.0,
+  "resistance": 0.034,
+  "io": 2.7,
+  "max_current": 50.0,
+  "weight_g": 185.1,
+  "max_power": 700.0,
+  "io_voltage": 4.8
+}

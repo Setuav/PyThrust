@@ -1,0 +1,12 @@
+{
+  "id": "DYS_MR2306-2300",
+  "name": "MR2306-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 30.0,
+  "weight_g": 36.0,
+  "max_power": 446.0,
+  "io_voltage": 11.1
+}

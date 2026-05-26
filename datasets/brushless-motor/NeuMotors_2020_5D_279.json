@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_5D_279",
+  "name": "2020/5D 279",
+  "manufacturer": "NeuMotors",
+  "kv": 279.0,
+  "resistance": 0.058,
+  "io": 1.01,
+  "max_current": 29.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

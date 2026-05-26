@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Elite_400-4200",
+  "name": "Elite 400-4200",
+  "manufacturer": "Exceed RC",
+  "kv": 4200.0,
+  "resistance": 0.24,
+  "io": 1.8,
+  "max_current": 24.0,
+  "weight_g": 68.0,
+  "max_power": 225.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2208-1800",
+  "name": "BE2208-1800",
+  "manufacturer": "DYS",
+  "kv": 1800.0,
+  "resistance": 0.085,
+  "io": 0.8,
+  "max_current": 26.0,
+  "weight_g": 43.9,
+  "max_power": 289.0,
+  "io_voltage": 11.1
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_M-4215-320",
+  "name": "M-4215-320",
+  "manufacturer": "Scorpion",
+  "kv": 320.0,
+  "resistance": 0.062,
+  "io": 0.49,
+  "max_current": 30.0,
+  "weight_g": 192.8,
+  "max_power": 1110.0,
+  "io_voltage": 10.0
+}

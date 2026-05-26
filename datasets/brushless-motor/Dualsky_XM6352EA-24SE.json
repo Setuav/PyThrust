@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6352EA-24SE",
+  "name": "XM6352EA-24SE",
+  "manufacturer": "Dualsky",
+  "kv": 240.0,
+  "resistance": 0.036,
+  "io": 0.8,
+  "max_current": 77.0,
+  "weight_g": 510.3,
+  "max_power": 3419.0,
+  "io_voltage": 10.0
+}

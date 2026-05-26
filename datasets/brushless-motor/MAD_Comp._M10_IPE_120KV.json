@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M10_IPE_120KV",
+  "name": "M10 IPE 120KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 120.0,
+  "resistance": 0.047,
+  "io": 2.1,
+  "max_current": 86.0,
+  "weight_g": 634.5,
+  "max_power": 3752.0,
+  "io_voltage": 30.0
+}

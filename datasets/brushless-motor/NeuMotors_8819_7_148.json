@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8819_7_148",
+  "name": "8819/7/148",
+  "manufacturer": "NeuMotors",
+  "kv": 148.0,
+  "resistance": 0.024,
+  "io": 1.45,
+  "max_current": 139.0,
+  "weight_g": 906.6,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

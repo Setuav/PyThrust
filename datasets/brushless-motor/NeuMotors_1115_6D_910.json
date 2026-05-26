@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_6D_910",
+  "name": "1115/6D 910",
+  "manufacturer": "NeuMotors",
+  "kv": 910.0,
+  "resistance": 0.09,
+  "io": 0.8,
+  "max_current": 21.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

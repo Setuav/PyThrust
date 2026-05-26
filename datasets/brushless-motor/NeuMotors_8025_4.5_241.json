@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_4.5_241",
+  "name": "8025/4.5/241",
+  "manufacturer": "NeuMotors",
+  "kv": 241.0,
+  "resistance": 0.007,
+  "io": 1.8,
+  "max_current": 227.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

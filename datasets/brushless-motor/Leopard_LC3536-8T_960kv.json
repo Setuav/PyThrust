@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3536-8T_960kv",
+  "name": "LC3536-8T 960kv",
+  "manufacturer": "Leopard",
+  "kv": 960.0,
+  "resistance": 0.0475,
+  "io": 0.7,
+  "max_current": 35.0,
+  "weight_g": 105.2,
+  "max_power": 503.0,
+  "io_voltage": 7.4
+}

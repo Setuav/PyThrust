@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2834-9.5_V3",
+  "name": "Joker 2834-9.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 880.0,
+  "resistance": 0.093,
+  "io": 0.6,
+  "max_current": 23.0,
+  "weight_g": 72.0,
+  "max_power": 368.0,
+  "io_voltage": 10.0
+}

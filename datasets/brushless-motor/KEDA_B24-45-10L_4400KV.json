@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-10L_4400KV",
+  "name": "B24-45-10L 4400KV",
+  "manufacturer": "KEDA",
+  "kv": 4400.0,
+  "resistance": 0.0202,
+  "io": 2.3,
+  "max_current": 30.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

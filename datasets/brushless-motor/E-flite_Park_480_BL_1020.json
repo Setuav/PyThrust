@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_480_BL_1020",
+  "name": "Park 480 BL 1020",
+  "manufacturer": "E-flite",
+  "kv": 1020.0,
+  "resistance": 0.06,
+  "io": 1.1,
+  "max_current": 28.0,
+  "weight_g": 87.0,
+  "max_power": 275.0,
+  "io_voltage": 8.0
+}

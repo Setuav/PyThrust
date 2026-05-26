@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_1D_4680",
+  "name": "1117/1D 4680",
+  "manufacturer": "NeuMotors",
+  "kv": 4680.0,
+  "resistance": 0.003,
+  "io": 4.5,
+  "max_current": 125.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

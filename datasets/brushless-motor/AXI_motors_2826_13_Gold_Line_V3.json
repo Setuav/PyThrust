@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2826_13_Gold_Line_V3",
+  "name": "2826/13 Gold Line V3",
+  "manufacturer": "AXI motors",
+  "kv": 710.0,
+  "resistance": 0.037,
+  "io": 1.5,
+  "max_current": 40.0,
+  "weight_g": 177.2,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_1D_5460",
+  "name": "1115/1D 5460",
+  "manufacturer": "NeuMotors",
+  "kv": 5460.0,
+  "resistance": 0.002,
+  "io": 4.5,
+  "max_current": 127.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

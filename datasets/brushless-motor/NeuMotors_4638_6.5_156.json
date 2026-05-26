@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_6.5_156",
+  "name": "4638/6.5/156",
+  "manufacturer": "NeuMotors",
+  "kv": 156.0,
+  "resistance": 0.101,
+  "io": 0.831,
+  "max_current": 83.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

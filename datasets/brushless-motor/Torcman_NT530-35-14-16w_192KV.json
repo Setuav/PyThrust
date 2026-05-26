@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT530-35-14-16w_192KV",
+  "name": "NT530-35-14-16w 192KV",
+  "manufacturer": "Torcman",
+  "kv": 192.0,
+  "resistance": 0.021,
+  "io": 2.1,
+  "max_current": 120.0,
+  "weight_g": 830.6,
+  "max_power": 3200.0,
+  "io_voltage": 20.0
+}

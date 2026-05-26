@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2212-1450",
+  "name": "BE2212-1450",
+  "manufacturer": "DYS",
+  "kv": 1450.0,
+  "resistance": 0.067,
+  "io": 0.9,
+  "max_current": 39.0,
+  "weight_g": 66.1,
+  "max_power": 432.0,
+  "io_voltage": 11.1
+}

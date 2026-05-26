@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_3.5_204",
+  "name": "8038/3.5/204",
+  "manufacturer": "NeuMotors",
+  "kv": 204.0,
+  "resistance": 0.0058,
+  "io": 2.314,
+  "max_current": 291.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

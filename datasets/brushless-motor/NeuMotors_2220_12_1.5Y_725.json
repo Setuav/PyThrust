@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2220_12_1.5Y_725",
+  "name": "2220/12/1.5Y 725",
+  "manufacturer": "NeuMotors",
+  "kv": 725.0,
+  "resistance": 0.005,
+  "io": 1.7,
+  "max_current": 155.0,
+  "weight_g": 962.7,
+  "max_power": 6400.0,
+  "io_voltage": 10.0
+}

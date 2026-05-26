@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3656-09_KV1200",
+  "name": "B3656-09 KV1200",
+  "manufacturer": "EMP",
+  "kv": 1200.0,
+  "resistance": 0.039,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 260.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

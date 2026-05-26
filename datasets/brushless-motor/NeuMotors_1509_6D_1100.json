@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_6D_1100",
+  "name": "1509/6D 1100",
+  "manufacturer": "NeuMotors",
+  "kv": 1100.0,
+  "resistance": 0.0432,
+  "io": 0.75,
+  "max_current": 28.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

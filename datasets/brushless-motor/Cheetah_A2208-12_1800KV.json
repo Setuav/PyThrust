@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2208-12_1800KV",
+  "name": "A2208-12 1800KV",
+  "manufacturer": "Cheetah",
+  "kv": 1800.0,
+  "resistance": 0.09,
+  "io": 0.8,
+  "max_current": 16.0,
+  "weight_g": 39.1,
+  "max_power": 175.0,
+  "io_voltage": 10.0
+}

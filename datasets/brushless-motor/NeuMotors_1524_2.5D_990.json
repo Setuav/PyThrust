@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_2.5D_990",
+  "name": "1524/2.5D 990",
+  "manufacturer": "NeuMotors",
+  "kv": 990.0,
+  "resistance": 0.02,
+  "io": 1.8,
+  "max_current": 66.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

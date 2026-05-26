@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2202-1700_Typhoon",
+  "name": "LEO 2202-1700 Typhoon",
+  "manufacturer": "Leomotion",
+  "kv": 1700.0,
+  "resistance": 0.52,
+  "io": 0.2,
+  "max_current": 3.7,
+  "weight_g": 11.1,
+  "max_power": 27.0,
+  "io_voltage": 10.0
+}

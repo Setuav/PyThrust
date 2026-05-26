@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B20-30-12S_7800KV",
+  "name": "B20-30-12S 7800KV",
+  "manufacturer": "KEDA",
+  "kv": 7800.0,
+  "resistance": 0.0314,
+  "io": 2.3,
+  "max_current": 18.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 7.4
+}

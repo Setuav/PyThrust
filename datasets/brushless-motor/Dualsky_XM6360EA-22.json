@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6360EA-22",
+  "name": "XM6360EA-22",
+  "manufacturer": "Dualsky",
+  "kv": 190.0,
+  "resistance": 0.036,
+  "io": 1.0,
+  "max_current": 82.0,
+  "weight_g": 635.6,
+  "max_power": 3936.0,
+  "io_voltage": 10.0
+}

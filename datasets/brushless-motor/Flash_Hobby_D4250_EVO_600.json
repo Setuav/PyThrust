@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D4250_EVO_600",
+  "name": "D4250 EVO 600",
+  "manufacturer": "Flash Hobby",
+  "kv": 600.0,
+  "resistance": 0.032,
+  "io": 1.39,
+  "max_current": 58.0,
+  "weight_g": 209.2,
+  "max_power": 1252.0,
+  "io_voltage": 10.0
+}

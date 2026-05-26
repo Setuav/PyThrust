@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_2.25D_3640",
+  "name": "1110/2.25D 3640",
+  "manufacturer": "NeuMotors",
+  "kv": 3640.0,
+  "resistance": 0.008,
+  "io": 2.0,
+  "max_current": 61.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_3.75D_660",
+  "name": "1524/3.75D 660",
+  "manufacturer": "NeuMotors",
+  "kv": 660.0,
+  "resistance": 0.045,
+  "io": 1.2,
+  "max_current": 44.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2825-950",
+  "name": "DM2825-950",
+  "manufacturer": "Pro-Tronik",
+  "kv": 950.0,
+  "resistance": 0.022,
+  "io": 2.96,
+  "max_current": 45.0,
+  "weight_g": 175.2,
+  "max_power": 500.0,
+  "io_voltage": 8.4
+}

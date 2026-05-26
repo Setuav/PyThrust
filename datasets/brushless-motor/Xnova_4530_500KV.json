@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4530_500KV",
+  "name": "4530 500KV",
+  "manufacturer": "Xnova",
+  "kv": 500.0,
+  "resistance": 0.01,
+  "io": 1.8,
+  "max_current": 120.0,
+  "weight_g": 535.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

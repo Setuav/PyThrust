@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4006HD-8",
+  "name": "XM4006HD-8",
+  "manufacturer": "Dualsky",
+  "kv": 1000.0,
+  "resistance": 0.09,
+  "io": 1.1,
+  "max_current": 19.0,
+  "weight_g": 55.0,
+  "max_power": 208.0,
+  "io_voltage": 10.0
+}

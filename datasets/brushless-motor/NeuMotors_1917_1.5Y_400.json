@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1917_1.5Y_400",
+  "name": "1917/1.5Y 400",
+  "manufacturer": "NeuMotors",
+  "kv": 400.0,
+  "resistance": 0.032,
+  "io": 1.1,
+  "max_current": 47.0,
+  "weight_g": 453.3,
+  "max_power": 4100.0,
+  "io_voltage": 10.0
+}

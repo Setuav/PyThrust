@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5850-4D_1736",
+  "name": "TP5850-4D 1736",
+  "manufacturer": "TP Power",
+  "kv": 1736.0,
+  "resistance": 0.0016,
+  "io": 9.4,
+  "max_current": 413.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3623-6700",
+  "name": "L3623-6700",
+  "manufacturer": "Leomotion",
+  "kv": 6700.0,
+  "resistance": 0.002,
+  "io": 7.5,
+  "max_current": 0.0,
+  "weight_g": 196.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

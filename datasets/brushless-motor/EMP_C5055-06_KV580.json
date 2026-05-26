@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C5055-06_KV580",
+  "name": "C5055-06 KV580",
+  "manufacturer": "EMP",
+  "kv": 580.0,
+  "resistance": 0.02,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 346.1,
+  "max_power": 1390.0,
+  "io_voltage": 10.0
+}

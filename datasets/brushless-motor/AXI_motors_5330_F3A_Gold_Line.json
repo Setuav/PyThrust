@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5330_F3A_Gold_Line",
+  "name": "5330/F3A Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 220.0,
+  "resistance": 0.038,
+  "io": 1.3,
+  "max_current": 73.0,
+  "weight_g": 672.5,
+  "max_power": 2780.0,
+  "io_voltage": 25.0
+}

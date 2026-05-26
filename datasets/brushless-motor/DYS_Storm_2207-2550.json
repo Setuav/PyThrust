@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Storm_2207-2550",
+  "name": "Storm 2207-2550",
+  "manufacturer": "DYS",
+  "kv": 2500.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 34.0,
+  "weight_g": 34.0,
+  "max_power": 546.0,
+  "io_voltage": 12.0
+}

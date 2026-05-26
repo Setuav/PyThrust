@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-80-2E",
+  "name": "ACn 22-80-2E",
+  "manufacturer": "Mega",
+  "kv": 520.0,
+  "resistance": 0.031,
+  "io": 1.3,
+  "max_current": 100.0,
+  "weight_g": 624.5,
+  "max_power": 1900.0,
+  "io_voltage": 12.0
+}

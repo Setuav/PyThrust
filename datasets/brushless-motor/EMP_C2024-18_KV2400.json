@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2024-18_KV2400",
+  "name": "C2024-18 KV2400",
+  "manufacturer": "EMP",
+  "kv": 2400.0,
+  "resistance": 0.277,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 17.0,
+  "max_power": 90.0,
+  "io_voltage": 10.0
+}

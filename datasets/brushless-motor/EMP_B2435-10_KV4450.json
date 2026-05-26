@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2435-10_KV4450",
+  "name": "B2435-10 KV4450",
+  "manufacturer": "EMP",
+  "kv": 4450.0,
+  "resistance": 0.067,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 290.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2205_24_2200KV",
+  "name": "XC2205/24 2200KV",
+  "manufacturer": "XPower",
+  "kv": 2200.0,
+  "resistance": 0.0925,
+  "io": 0.8,
+  "max_current": 7.0,
+  "weight_g": 15.0,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_34_58",
+  "name": "4619/34/58",
+  "manufacturer": "NeuMotors",
+  "kv": 58.0,
+  "resistance": 1.45,
+  "io": 0.16,
+  "max_current": 16.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

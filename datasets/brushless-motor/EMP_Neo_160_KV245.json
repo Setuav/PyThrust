@@ -1,0 +1,12 @@
+{
+  "id": "EMP_Neo_160_KV245",
+  "name": "Neo 160 KV245",
+  "manufacturer": "EMP",
+  "kv": 245.0,
+  "resistance": 0.03,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 632.5,
+  "max_power": 2900.0,
+  "io_voltage": 15.0
+}

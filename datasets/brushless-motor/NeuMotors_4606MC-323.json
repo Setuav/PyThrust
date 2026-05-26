@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-323",
+  "name": "4606MC-323",
+  "manufacturer": "NeuMotors",
+  "kv": 323.0,
+  "resistance": 0.148,
+  "io": 0.12,
+  "max_current": 23.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

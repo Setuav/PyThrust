@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2435-12_KV4040",
+  "name": "B2435-12 KV4040",
+  "manufacturer": "EMP",
+  "kv": 4040.0,
+  "resistance": 0.093,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

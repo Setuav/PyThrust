@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Cine66_FPV-925",
+  "name": "Cine66 FPV-925",
+  "manufacturer": "T-Motor",
+  "kv": 925.0,
+  "resistance": 0.069,
+  "io": 1.05,
+  "max_current": 51.0,
+  "weight_g": 76.5,
+  "max_power": 1237.0,
+  "io_voltage": 10.0
+}

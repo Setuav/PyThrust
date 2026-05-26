@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_4030_05_410",
+  "name": "4030/05 410",
+  "manufacturer": "RedRock",
+  "kv": 410.0,
+  "resistance": 0.017,
+  "io": 1.4,
+  "max_current": 75.0,
+  "weight_g": 430.3,
+  "max_power": 1820.0,
+  "io_voltage": 10.0
+}

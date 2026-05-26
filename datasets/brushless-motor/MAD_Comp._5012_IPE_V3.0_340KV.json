@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5012_IPE_V3.0_340KV",
+  "name": "5012 IPE V3.0 340KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 340.0,
+  "resistance": 0.043,
+  "io": 1.5,
+  "max_current": 40.0,
+  "weight_g": 195.0,
+  "max_power": 924.0,
+  "io_voltage": 20.0
+}

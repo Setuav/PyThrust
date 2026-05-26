@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U15II_KV100",
+  "name": "U15II KV100",
+  "manufacturer": "T-Motor",
+  "kv": 100.0,
+  "resistance": 0.012,
+  "io": 4.5,
+  "max_current": 180.0,
+  "weight_g": 1741.2,
+  "max_power": 9942.0,
+  "io_voltage": 10.0
+}

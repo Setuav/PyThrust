@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-4D_4400",
+  "name": "TP3630-4D 4400",
+  "manufacturer": "TP Power",
+  "kv": 4400.0,
+  "resistance": 0.0022,
+  "io": 3.1,
+  "max_current": 127.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

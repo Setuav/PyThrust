@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-4025-520",
+  "name": "HKIV-4025-520",
+  "manufacturer": "Scorpion",
+  "kv": 520.0,
+  "resistance": 0.022,
+  "io": 1.81,
+  "max_current": 65.0,
+  "weight_g": 299.9,
+  "max_power": 2886.0,
+  "io_voltage": 10.0
+}

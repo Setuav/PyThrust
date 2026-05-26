@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2204_21-1800KV",
+  "name": "2204/21-1800KV",
+  "manufacturer": "BlackMagic",
+  "kv": 1800.0,
+  "resistance": 0.153,
+  "io": 0.54,
+  "max_current": 0.0,
+  "weight_g": 22.1,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_29_07-07A_750",
+  "name": "OBL 29/07-07A 750",
+  "manufacturer": "Thunder Tiger",
+  "kv": 750.0,
+  "resistance": 0.21,
+  "io": 0.25,
+  "max_current": 14.0,
+  "weight_g": 54.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

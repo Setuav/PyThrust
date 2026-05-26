@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5670-5Y_785",
+  "name": "TP5670-5Y 785",
+  "manufacturer": "TP Power",
+  "kv": 785.0,
+  "resistance": 0.0075,
+  "io": 2.6,
+  "max_current": 187.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-8XL_kv2020_6.7_1",
+  "name": "B50-8XL kv2020 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 2020.0,
+  "resistance": 0.008,
+  "io": 3.7,
+  "max_current": 91.0,
+  "weight_g": 405.4,
+  "max_power": 2500.0,
+  "io_voltage": 8.4
+}

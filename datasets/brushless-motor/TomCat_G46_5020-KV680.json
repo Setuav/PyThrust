@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G46_5020-KV680",
+  "name": "G46 5020-KV680",
+  "manufacturer": "TomCat",
+  "kv": 680.0,
+  "resistance": 0.037,
+  "io": 2.8,
+  "max_current": 58.0,
+  "weight_g": 310.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

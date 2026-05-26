@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_6.5_167",
+  "name": "8025/6.5/167",
+  "manufacturer": "NeuMotors",
+  "kv": 167.0,
+  "resistance": 0.014,
+  "io": 1.246,
+  "max_current": 157.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

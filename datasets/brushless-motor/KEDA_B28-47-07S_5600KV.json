@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B28-47-07S_5600KV",
+  "name": "B28-47-07S 5600KV",
+  "manufacturer": "KEDA",
+  "kv": 5600.0,
+  "resistance": 0.0073,
+  "io": 3.7,
+  "max_current": 60.0,
+  "weight_g": 135.2,
+  "max_power": 540.0,
+  "io_voltage": 7.4
+}

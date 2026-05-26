@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V3120_KV700",
+  "name": "V3120 KV700",
+  "manufacturer": "T-Motor",
+  "kv": 700.0,
+  "resistance": 0.04059,
+  "io": 1.35,
+  "max_current": 79.0,
+  "weight_g": 148.0,
+  "max_power": 2453.0,
+  "io_voltage": 10.0
+}

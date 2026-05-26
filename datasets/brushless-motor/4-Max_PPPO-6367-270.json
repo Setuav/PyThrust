@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPPO-6367-270",
+  "name": "PPPO-6367-270",
+  "manufacturer": "4-Max",
+  "kv": 270.0,
+  "resistance": 0.027,
+  "io": 1.7,
+  "max_current": 90.0,
+  "weight_g": 706.5,
+  "max_power": 3050.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L9019-0180",
+  "name": "L9019-0180",
+  "manufacturer": "Leomotion",
+  "kv": 176.0,
+  "resistance": 0.045,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 650.6,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

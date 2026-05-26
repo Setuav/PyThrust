@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_5684_7D",
+  "name": "SSS 5684 7D",
+  "manufacturer": "TFL Hobby",
+  "kv": 1430.0,
+  "resistance": 0.00392,
+  "io": 4.0,
+  "max_current": 222.0,
+  "weight_g": 730.6,
+  "max_power": 7500.0,
+  "io_voltage": 11.1
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2814_28_Gold_Line_V3_Aircombat",
+  "name": "2814/28 Gold Line V3 Aircombat",
+  "manufacturer": "AXI motors",
+  "kv": 620.0,
+  "resistance": 0.032,
+  "io": 2.3,
+  "max_current": 30.0,
+  "weight_g": 107.2,
+  "max_power": 590.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_3060-13_HiAmp_538KV",
+  "name": "3060-13 HiAmp 538KV",
+  "manufacturer": "Lehner",
+  "kv": 538.0,
+  "resistance": 0.01,
+  "io": 3.0,
+  "max_current": 200.0,
+  "weight_g": 1200.9,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

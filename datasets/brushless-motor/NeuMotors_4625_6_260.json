@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_6_260",
+  "name": "4625/6/260",
+  "manufacturer": "NeuMotors",
+  "kv": 260.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 90.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

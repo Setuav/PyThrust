@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B24-45-06_3350KV",
+  "name": "B24-45-06 3350KV",
+  "manufacturer": "GS-Models",
+  "kv": 3350.0,
+  "resistance": 0.0248,
+  "io": 2.0,
+  "max_current": 34.0,
+  "weight_g": 97.0,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

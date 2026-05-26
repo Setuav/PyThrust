@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Terminator_30_8",
+  "name": "Terminator 30/8",
+  "manufacturer": "Plettenberg",
+  "kv": 215.0,
+  "resistance": 0.0158,
+  "io": 3.0,
+  "max_current": 0.0,
+  "weight_g": 920.8,
+  "max_power": 4400.0,
+  "io_voltage": 10.9
+}

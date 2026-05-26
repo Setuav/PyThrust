@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-2D_8000",
+  "name": "TP3630-2D 8000",
+  "manufacturer": "TP Power",
+  "kv": 8000.0,
+  "resistance": 0.0008,
+  "io": 12.0,
+  "max_current": 240.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

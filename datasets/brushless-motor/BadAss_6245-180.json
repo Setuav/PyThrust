@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_6245-180",
+  "name": "6245-180",
+  "manufacturer": "BadAss",
+  "kv": 180.0,
+  "resistance": 0.018,
+  "io": 3.35,
+  "max_current": 120.0,
+  "weight_g": 1097.7,
+  "max_power": 5330.0,
+  "io_voltage": 22.2
+}

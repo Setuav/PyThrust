@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_4014-320",
+  "name": "4014-320",
+  "manufacturer": "MultiStar",
+  "kv": 320.0,
+  "resistance": 0.102,
+  "io": 0.7,
+  "max_current": 26.0,
+  "weight_g": 163.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

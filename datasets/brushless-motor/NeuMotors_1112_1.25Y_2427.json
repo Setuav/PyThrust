@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_1.25Y_2427",
+  "name": "1112/1.25Y 2427",
+  "manufacturer": "NeuMotors",
+  "kv": 2427.0,
+  "resistance": 0.012,
+  "io": 2.0,
+  "max_current": 57.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

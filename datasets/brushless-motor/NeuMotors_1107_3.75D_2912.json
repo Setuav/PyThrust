@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_3.75D_2912",
+  "name": "1107/3.75D 2912",
+  "manufacturer": "NeuMotors",
+  "kv": 2912.0,
+  "resistance": 0.018,
+  "io": 1.2,
+  "max_current": 29.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

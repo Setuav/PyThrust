@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-3548-900",
+  "name": "PPO-3548-900",
+  "manufacturer": "4-Max",
+  "kv": 900.0,
+  "resistance": 0.04,
+  "io": 1.5,
+  "max_current": 50.0,
+  "weight_g": 167.3,
+  "max_power": 710.0,
+  "io_voltage": 10.0
+}

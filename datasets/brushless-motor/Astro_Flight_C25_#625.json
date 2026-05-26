@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_C25_#625",
+  "name": "C25 #625*",
+  "manufacturer": "Astro Flight",
+  "kv": 971.0,
+  "resistance": 0.093,
+  "io": 2.0,
+  "max_current": 30.0,
+  "weight_g": 311.8,
+  "max_power": 936.0,
+  "io_voltage": 8.0
+}

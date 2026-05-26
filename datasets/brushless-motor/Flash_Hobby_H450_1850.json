@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_H450_1850",
+  "name": "H450 1850",
+  "manufacturer": "Flash Hobby",
+  "kv": 1850.0,
+  "resistance": 0.0382,
+  "io": 2.5,
+  "max_current": 30.0,
+  "weight_g": 94.1,
+  "max_power": 1080.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1102_18000KV",
+  "name": "Aeolus 1102 18000KV",
+  "manufacturer": "HGLRC",
+  "kv": 18000.0,
+  "resistance": 0.155,
+  "io": 1.1,
+  "max_current": 4.7,
+  "weight_g": 3.1,
+  "max_power": 20.0,
+  "io_voltage": 5.0
+}

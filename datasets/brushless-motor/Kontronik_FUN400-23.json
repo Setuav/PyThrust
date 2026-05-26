@@ -1,0 +1,12 @@
+{
+  "id": "Kontronik_FUN400-23",
+  "name": "FUN400-23",
+  "manufacturer": "Kontronik",
+  "kv": 2300.0,
+  "resistance": 0.058,
+  "io": 0.5,
+  "max_current": 30.0,
+  "weight_g": 110.0,
+  "max_power": 330.0,
+  "io_voltage": 8.0
+}

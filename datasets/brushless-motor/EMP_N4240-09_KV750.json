@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N4240-09_KV750",
+  "name": "N4240-09 KV750",
+  "manufacturer": "EMP",
+  "kv": 750.0,
+  "resistance": 0.035,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 155.1,
+  "max_power": 820.0,
+  "io_voltage": 11.0
+}

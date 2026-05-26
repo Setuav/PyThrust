@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4006_KV380",
+  "name": "MN4006 KV380",
+  "manufacturer": "T-Motor",
+  "kv": 380.0,
+  "resistance": 0.194,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 68.0,
+  "max_power": 380.0,
+  "io_voltage": 22.0
+}

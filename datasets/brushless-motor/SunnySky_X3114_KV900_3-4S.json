@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3114_KV900_3-4S",
+  "name": "X3114 KV900 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 900.0,
+  "resistance": 0.04,
+  "io": 1.3,
+  "max_current": 40.0,
+  "weight_g": 112.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-3Y_4970",
+  "name": "TP3620-3Y 4970",
+  "manufacturer": "TP Power",
+  "kv": 4970.0,
+  "resistance": 0.0051,
+  "io": 6.7,
+  "max_current": 137.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

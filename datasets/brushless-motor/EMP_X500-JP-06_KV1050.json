@@ -1,0 +1,12 @@
+{
+  "id": "EMP_X500-JP-06_KV1050",
+  "name": "X500-JP-06 KV1050",
+  "manufacturer": "EMP",
+  "kv": 1050.0,
+  "resistance": 0.05,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 188.2,
+  "max_power": 950.0,
+  "io_voltage": 10.0
+}

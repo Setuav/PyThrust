@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-14T_4143KV",
+  "name": "130L-14T 4143KV",
+  "manufacturer": "Feigao",
+  "kv": 4143.0,
+  "resistance": 0.0526,
+  "io": 1.2,
+  "max_current": 17.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN505-S_KV320",
+  "name": "MN505-S KV320",
+  "manufacturer": "T-Motor",
+  "kv": 320.0,
+  "resistance": 0.038,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 225.1,
+  "max_power": 1300.0,
+  "io_voltage": 15.0
+}

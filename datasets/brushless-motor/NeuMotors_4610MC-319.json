@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-319",
+  "name": "4610MC-319",
+  "manufacturer": "NeuMotors",
+  "kv": 319.0,
+  "resistance": 0.104,
+  "io": 0.19,
+  "max_current": 45.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

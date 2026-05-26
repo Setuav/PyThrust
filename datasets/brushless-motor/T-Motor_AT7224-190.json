@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT7224-190",
+  "name": "AT7224-190",
+  "manufacturer": "T-Motor",
+  "kv": 190.0,
+  "resistance": 0.016,
+  "io": 3.5,
+  "max_current": 135.0,
+  "weight_g": 780.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

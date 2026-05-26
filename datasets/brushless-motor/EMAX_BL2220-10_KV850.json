@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2220-10_KV850",
+  "name": "BL2220-10 KV850",
+  "manufacturer": "EMAX",
+  "kv": 850.0,
+  "resistance": 0.12,
+  "io": 1.1,
+  "max_current": 24.0,
+  "weight_g": 85.0,
+  "max_power": 239.0,
+  "io_voltage": 11.0
+}

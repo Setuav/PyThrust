@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_FX2208-9_2000kv_V2",
+  "name": "FX2208-9 2000kv V2",
+  "manufacturer": "Lumenier",
+  "kv": 2000.0,
+  "resistance": 0.165,
+  "io": 0.1,
+  "max_current": 18.0,
+  "weight_g": 45.1,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_ML4108_620KV",
+  "name": "ML4108 620KV",
+  "manufacturer": "Gartt",
+  "kv": 620.0,
+  "resistance": 0.0765,
+  "io": 0.8,
+  "max_current": 30.0,
+  "weight_g": 112.0,
+  "max_power": 465.0,
+  "io_voltage": 10.0
+}

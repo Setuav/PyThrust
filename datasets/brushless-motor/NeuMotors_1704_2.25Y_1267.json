@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_2.25Y_1267",
+  "name": "1704/2.25Y 1267",
+  "manufacturer": "NeuMotors",
+  "kv": 1267.0,
+  "resistance": 0.032,
+  "io": 1.16,
+  "max_current": 36.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

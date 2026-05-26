@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_5D_330",
+  "name": "1536/5D 330",
+  "manufacturer": "NeuMotors",
+  "kv": 330.0,
+  "resistance": 0.12,
+  "io": 0.9,
+  "max_current": 19.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

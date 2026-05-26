@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B20_26L_kv2020_4_1",
+  "name": "B20 26L kv2020 4:1",
+  "manufacturer": "Hacker",
+  "kv": 2077.0,
+  "resistance": 0.173,
+  "io": 0.41,
+  "max_current": 15.0,
+  "weight_g": 69.2,
+  "max_power": 220.0,
+  "io_voltage": 8.4
+}

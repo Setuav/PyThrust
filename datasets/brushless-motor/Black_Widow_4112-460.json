@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_4112-460",
+  "name": "4112-460",
+  "manufacturer": "Black Widow",
+  "kv": 452.0,
+  "resistance": 0.0763,
+  "io": 1.33,
+  "max_current": 0.0,
+  "weight_g": 203.3,
+  "max_power": 520.0,
+  "io_voltage": 22.2
+}

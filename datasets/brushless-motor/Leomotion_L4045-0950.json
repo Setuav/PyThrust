@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4045-0950",
+  "name": "L4045-0950",
+  "manufacturer": "Leomotion",
+  "kv": 950.0,
+  "resistance": 0.02,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 400.3,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

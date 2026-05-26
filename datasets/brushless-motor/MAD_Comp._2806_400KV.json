@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._2806_400KV",
+  "name": "2806 400KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 400.0,
+  "resistance": 0.597,
+  "io": 0.22,
+  "max_current": 7.2,
+  "weight_g": 43.9,
+  "max_power": 170.0,
+  "io_voltage": 20.0
+}

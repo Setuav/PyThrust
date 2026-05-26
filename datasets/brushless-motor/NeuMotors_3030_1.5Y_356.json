@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3030_1.5Y_356",
+  "name": "3030/1.5Y 356",
+  "manufacturer": "NeuMotors",
+  "kv": 356.0,
+  "resistance": 0.008,
+  "io": 4.0,
+  "max_current": 534.0,
+  "weight_g": 2897.3,
+  "max_power": 30000.0,
+  "io_voltage": 10.0
+}

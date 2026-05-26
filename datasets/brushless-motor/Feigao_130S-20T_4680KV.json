@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-20T_4680KV",
+  "name": "130S-20T 4680KV",
+  "manufacturer": "Feigao",
+  "kv": 4680.0,
+  "resistance": 0.0876,
+  "io": 1.1,
+  "max_current": 11.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

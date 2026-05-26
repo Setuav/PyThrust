@@ -1,0 +1,12 @@
+{
+  "id": "HET_600-22_KV3000",
+  "name": "600-22 KV3000",
+  "manufacturer": "HET",
+  "kv": 3000.0,
+  "resistance": 0.013,
+  "io": 2.6,
+  "max_current": 70.0,
+  "weight_g": 155.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

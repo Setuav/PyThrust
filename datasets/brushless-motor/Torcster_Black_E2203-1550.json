@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Black_E2203-1550",
+  "name": "Black E2203-1550",
+  "manufacturer": "Torcster",
+  "kv": 1550.0,
+  "resistance": 0.602,
+  "io": 0.4,
+  "max_current": 8.0,
+  "weight_g": 15.9,
+  "max_power": 64.0,
+  "io_voltage": 10.0
+}

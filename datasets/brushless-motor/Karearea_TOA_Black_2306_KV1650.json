@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_Black_2306_KV1650",
+  "name": "TOA Black 2306 KV1650",
+  "manufacturer": "Karearea",
+  "kv": 1650.0,
+  "resistance": 0.078,
+  "io": 0.7,
+  "max_current": 33.0,
+  "weight_g": 32.6,
+  "max_power": 730.0,
+  "io_voltage": 10.0
+}

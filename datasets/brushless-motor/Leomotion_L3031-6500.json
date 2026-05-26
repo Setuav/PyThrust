@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3031-6500",
+  "name": "L3031-6500",
+  "manufacturer": "Leomotion",
+  "kv": 6500.0,
+  "resistance": 0.002,
+  "io": 3.8,
+  "max_current": 0.0,
+  "weight_g": 155.1,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

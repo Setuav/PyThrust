@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_1D_2475",
+  "name": "1524/1D 2475",
+  "manufacturer": "NeuMotors",
+  "kv": 2475.0,
+  "resistance": 0.0032,
+  "io": 4.5,
+  "max_current": 165.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

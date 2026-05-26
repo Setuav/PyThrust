@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._2207_1800KV",
+  "name": "2207 1800KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 1800.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 28.0,
+  "weight_g": 30.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

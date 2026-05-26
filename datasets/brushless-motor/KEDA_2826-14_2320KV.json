@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2826-14_2320KV",
+  "name": "2826-14 2320KV",
+  "manufacturer": "KEDA",
+  "kv": 2320.0,
+  "resistance": 0.12,
+  "io": 1.65,
+  "max_current": 30.0,
+  "weight_g": 47.9,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

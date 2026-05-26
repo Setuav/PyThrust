@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_10_2020",
+  "name": "TS-EZ2230/10 2020",
+  "manufacturer": "Tenshock",
+  "kv": 2020.0,
+  "resistance": 0.0143,
+  "io": 2.1,
+  "max_current": 72.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

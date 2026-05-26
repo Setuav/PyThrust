@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AM20_PRO-1500",
+  "name": "AM20 PRO-1500",
+  "manufacturer": "T-Motor",
+  "kv": 1500.0,
+  "resistance": 0.63,
+  "io": 0.14,
+  "max_current": 6.0,
+  "weight_g": 9.9,
+  "max_power": 67.0,
+  "io_voltage": 10.0
+}

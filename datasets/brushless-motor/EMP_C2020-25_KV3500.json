@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2020-25_KV3500",
+  "name": "C2020-25 KV3500",
+  "manufacturer": "EMP",
+  "kv": 3500.0,
+  "resistance": 0.362,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 11.1,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

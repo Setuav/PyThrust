@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-30-2",
+  "name": "ACn 22-30-2",
+  "manufacturer": "Mega",
+  "kv": 1920.0,
+  "resistance": 0.016,
+  "io": 3.2,
+  "max_current": 70.0,
+  "weight_g": 220.3,
+  "max_power": 680.0,
+  "io_voltage": 8.4
+}

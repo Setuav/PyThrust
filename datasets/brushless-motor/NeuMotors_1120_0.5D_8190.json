@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_0.5D_8190",
+  "name": "1120/0.5D 8190",
+  "manufacturer": "NeuMotors",
+  "kv": 8190.0,
+  "resistance": 0.001,
+  "io": 9.0,
+  "max_current": 218.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

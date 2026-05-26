@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4260-9T_330kv",
+  "name": "LC4260-9T 330kv",
+  "manufacturer": "Leopard",
+  "kv": 330.0,
+  "resistance": 0.0665,
+  "io": 0.9,
+  "max_current": 38.0,
+  "weight_g": 281.2,
+  "max_power": 1868.0,
+  "io_voltage": 10.0
+}

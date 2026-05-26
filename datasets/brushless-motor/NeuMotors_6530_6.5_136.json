@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6530_6.5_136",
+  "name": "6530/6.5/136",
+  "manufacturer": "NeuMotors",
+  "kv": 136.0,
+  "resistance": 0.051,
+  "io": 0.754,
+  "max_current": 111.0,
+  "weight_g": 741.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

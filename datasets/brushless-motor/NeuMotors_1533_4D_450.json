@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_4D_450",
+  "name": "1533/4D 450",
+  "manufacturer": "NeuMotors",
+  "kv": 450.0,
+  "resistance": 0.0704,
+  "io": 1.13,
+  "max_current": 45.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

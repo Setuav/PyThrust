@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_4.25D_1553",
+  "name": "1509/4.25D 1553",
+  "manufacturer": "NeuMotors",
+  "kv": 1553.0,
+  "resistance": 0.0217,
+  "io": 1.06,
+  "max_current": 39.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

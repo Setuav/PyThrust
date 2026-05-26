@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3207_2Y_220",
+  "name": "3207/2Y 220",
+  "manufacturer": "NeuMotors",
+  "kv": 220.0,
+  "resistance": 0.024,
+  "io": 1.0,
+  "max_current": 44.0,
+  "weight_g": 679.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_X36-L_1095KV",
+  "name": "V-MAX X36-L 1095KV",
+  "manufacturer": "Dymond",
+  "kv": 1095.0,
+  "resistance": 0.042,
+  "io": 2.52,
+  "max_current": 49.0,
+  "weight_g": 202.1,
+  "max_power": 620.0,
+  "io_voltage": 9.12
+}

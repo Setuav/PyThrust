@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_1106_6000KV",
+  "name": "XRotor 1106 6000KV",
+  "manufacturer": "HobbyWing",
+  "kv": 6000.0,
+  "resistance": 0.178,
+  "io": 0.62,
+  "max_current": 0.0,
+  "weight_g": 6.2,
+  "max_power": 77.0,
+  "io_voltage": 10.0
+}

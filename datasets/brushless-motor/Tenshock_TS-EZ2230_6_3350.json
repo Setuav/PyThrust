@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_6_3350",
+  "name": "TS-EZ2230/6 3350",
+  "manufacturer": "Tenshock",
+  "kv": 3350.0,
+  "resistance": 0.0052,
+  "io": 4.2,
+  "max_current": 120.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

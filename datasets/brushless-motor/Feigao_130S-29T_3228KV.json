@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-29T_3228KV",
+  "name": "130S-29T 3228KV",
+  "manufacturer": "Feigao",
+  "kv": 3228.0,
+  "resistance": 0.1842,
+  "io": 0.38,
+  "max_current": 7.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

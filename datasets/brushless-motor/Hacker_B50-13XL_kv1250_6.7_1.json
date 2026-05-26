@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-13XL_kv1250_6.7_1",
+  "name": "B50-13XL kv1250 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1250.0,
+  "resistance": 0.021,
+  "io": 1.8,
+  "max_current": 100.0,
+  "weight_g": 405.4,
+  "max_power": 2800.0,
+  "io_voltage": 8.4
+}

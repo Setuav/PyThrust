@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_E40-S_2D_6.7_1_Kv3300",
+  "name": "E40-S 2D 6.7:1 Kv3300",
+  "manufacturer": "Hacker",
+  "kv": 3300.0,
+  "resistance": 0.01,
+  "io": 2.99,
+  "max_current": 80.0,
+  "weight_g": 208.1,
+  "max_power": 1400.0,
+  "io_voltage": 8.4
+}

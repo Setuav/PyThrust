@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F2004-3000",
+  "name": "F2004-3000",
+  "manufacturer": "T-Motor",
+  "kv": 3000.0,
+  "resistance": 0.09,
+  "io": 0.88,
+  "max_current": 30.0,
+  "weight_g": 16.4,
+  "max_power": 460.0,
+  "io_voltage": 10.0
+}

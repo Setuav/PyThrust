@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_4D_381",
+  "name": "1539/4D 381",
+  "manufacturer": "NeuMotors",
+  "kv": 381.0,
+  "resistance": 0.0832,
+  "io": 1.13,
+  "max_current": 44.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_4.25D_259",
+  "name": "2515/4.25D 259",
+  "manufacturer": "NeuMotors",
+  "kv": 259.0,
+  "resistance": 0.022,
+  "io": 1.3,
+  "max_current": 104.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

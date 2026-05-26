@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM9010HD-6",
+  "name": "XM9010HD-6",
+  "manufacturer": "Dualsky",
+  "kv": 300.0,
+  "resistance": 0.032,
+  "io": 2.5,
+  "max_current": 94.0,
+  "weight_g": 525.3,
+  "max_power": 2100.0,
+  "io_voltage": 10.0
+}

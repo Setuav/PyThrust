@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_3015-910",
+  "name": "Rocket 3015-910",
+  "manufacturer": "Exceed RC",
+  "kv": 910.0,
+  "resistance": 0.045,
+  "io": 1.0,
+  "max_current": 35.0,
+  "weight_g": 115.1,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

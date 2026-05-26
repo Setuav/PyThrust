@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G32_4320-KV830",
+  "name": "G32 4320-KV830",
+  "manufacturer": "TomCat",
+  "kv": 830.0,
+  "resistance": 0.024,
+  "io": 2.5,
+  "max_current": 60.0,
+  "weight_g": 208.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

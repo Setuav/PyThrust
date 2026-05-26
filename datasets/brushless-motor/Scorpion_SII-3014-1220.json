@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-3014-1220",
+  "name": "SII-3014-1220",
+  "manufacturer": "Scorpion",
+  "kv": 1220.0,
+  "resistance": 0.018,
+  "io": 1.64,
+  "max_current": 46.0,
+  "weight_g": 129.0,
+  "max_power": 640.0,
+  "io_voltage": 10.0
+}

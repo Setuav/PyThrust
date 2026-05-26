@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Freestyle-H_2600KV",
+  "name": "2207 Freestyle-H 2600KV",
+  "manufacturer": "Xnova",
+  "kv": 2600.0,
+  "resistance": 0.04,
+  "io": 2.5,
+  "max_current": 58.0,
+  "weight_g": 34.6,
+  "max_power": 966.0,
+  "io_voltage": 10.0
+}

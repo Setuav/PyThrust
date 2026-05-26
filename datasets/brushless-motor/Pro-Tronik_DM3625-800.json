@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM3625-800",
+  "name": "DM3625-800",
+  "manufacturer": "Pro-Tronik",
+  "kv": 800.0,
+  "resistance": 0.02,
+  "io": 3.15,
+  "max_current": 70.0,
+  "weight_g": 257.1,
+  "max_power": 850.0,
+  "io_voltage": 8.4
+}

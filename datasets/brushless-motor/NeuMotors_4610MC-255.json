@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-255",
+  "name": "4610MC-255",
+  "manufacturer": "NeuMotors",
+  "kv": 255.0,
+  "resistance": 0.162,
+  "io": 0.15,
+  "max_current": 36.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

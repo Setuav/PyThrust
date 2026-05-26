@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6352EA-20",
+  "name": "XM6352EA-20",
+  "manufacturer": "Dualsky",
+  "kv": 280.0,
+  "resistance": 0.0263,
+  "io": 1.2,
+  "max_current": 82.0,
+  "weight_g": 511.4,
+  "max_power": 2624.0,
+  "io_voltage": 10.0
+}

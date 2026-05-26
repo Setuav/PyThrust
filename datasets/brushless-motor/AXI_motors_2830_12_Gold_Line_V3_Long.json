@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2830_12_Gold_Line_V3_Long",
+  "name": "2830/12 Gold Line V3 Long",
+  "manufacturer": "AXI motors",
+  "kv": 670.0,
+  "resistance": 0.034,
+  "io": 2.5,
+  "max_current": 48.0,
+  "weight_g": 232.2,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_5.75D_192",
+  "name": "2515/5.75D 192",
+  "manufacturer": "NeuMotors",
+  "kv": 192.0,
+  "resistance": 0.04,
+  "io": 0.9,
+  "max_current": 77.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

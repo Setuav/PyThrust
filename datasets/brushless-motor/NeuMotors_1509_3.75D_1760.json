@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_3.75D_1760",
+  "name": "1509/3.75D 1760",
+  "manufacturer": "NeuMotors",
+  "kv": 1760.0,
+  "resistance": 0.017,
+  "io": 1.2,
+  "max_current": 44.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

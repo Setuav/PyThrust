@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3850EG-10",
+  "name": "XM3850EG-10",
+  "manufacturer": "Dualsky",
+  "kv": 740.0,
+  "resistance": 0.027,
+  "io": 1.5,
+  "max_current": 47.0,
+  "weight_g": 195.0,
+  "max_power": 752.0,
+  "io_voltage": 12.0
+}

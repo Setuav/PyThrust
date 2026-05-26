@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_24-33-4040",
+  "name": "AMMO 24-33-4040",
+  "manufacturer": "ElectriFly",
+  "kv": 4040.0,
+  "resistance": 0.0573,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 67.2,
+  "max_power": 200.0,
+  "io_voltage": 7.4
+}

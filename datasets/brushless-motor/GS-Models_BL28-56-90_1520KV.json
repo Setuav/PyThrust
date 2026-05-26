@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_BL28-56-90_1520KV",
+  "name": "BL28-56-90 1520KV",
+  "manufacturer": "GS-Models",
+  "kv": 1520.0,
+  "resistance": 0.0631,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 135.2,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

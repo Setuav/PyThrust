@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N5065-08_KV270",
+  "name": "N5065-08 KV270",
+  "manufacturer": "EMP",
+  "kv": 270.0,
+  "resistance": 0.03,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 430.3,
+  "max_power": 2100.0,
+  "io_voltage": 13.0
+}

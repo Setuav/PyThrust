@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E50_210",
+  "name": "Elite E50/210",
+  "manufacturer": "Esprit",
+  "kv": 210.0,
+  "resistance": 0.041,
+  "io": 1.0,
+  "max_current": 100.0,
+  "weight_g": 825.5,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

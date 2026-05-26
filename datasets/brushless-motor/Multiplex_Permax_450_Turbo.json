@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_450_Turbo",
+  "name": "Permax 450 Turbo",
+  "manufacturer": "Multiplex",
+  "kv": 2189.0,
+  "resistance": 0.138,
+  "io": 1.2,
+  "max_current": 25.0,
+  "weight_g": 138.9,
+  "max_power": 417.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT530-45-14-12w_199KV",
+  "name": "NT530-45-14-12w 199KV",
+  "manufacturer": "Torcman",
+  "kv": 199.0,
+  "resistance": 0.015,
+  "io": 2.6,
+  "max_current": 140.0,
+  "weight_g": 1030.8,
+  "max_power": 4000.0,
+  "io_voltage": 20.0
+}

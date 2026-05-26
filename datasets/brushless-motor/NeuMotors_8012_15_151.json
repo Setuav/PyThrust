@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_15_151",
+  "name": "8012/15/151",
+  "manufacturer": "NeuMotors",
+  "kv": 151.0,
+  "resistance": 0.043,
+  "io": 0.54,
+  "max_current": 68.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

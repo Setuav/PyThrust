@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_819M-9T",
+  "name": "819M-9T",
+  "manufacturer": "Astro Flight",
+  "kv": 1375.0,
+  "resistance": 0.09,
+  "io": 0.45,
+  "max_current": 25.0,
+  "weight_g": 119.1,
+  "max_power": 400.0,
+  "io_voltage": 8.4
+}

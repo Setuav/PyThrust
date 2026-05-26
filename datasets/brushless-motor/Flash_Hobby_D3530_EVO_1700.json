@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D3530_EVO_1700",
+  "name": "D3530 EVO 1700",
+  "manufacturer": "Flash Hobby",
+  "kv": 1700.0,
+  "resistance": 0.0343,
+  "io": 2.48,
+  "max_current": 45.0,
+  "weight_g": 75.1,
+  "max_power": 703.0,
+  "io_voltage": 10.0
+}

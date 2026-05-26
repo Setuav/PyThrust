@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-29T_2000KV",
+  "name": "130L-29T 2000KV",
+  "manufacturer": "Feigao",
+  "kv": 2000.0,
+  "resistance": 0.2258,
+  "io": 0.2,
+  "max_current": 8.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

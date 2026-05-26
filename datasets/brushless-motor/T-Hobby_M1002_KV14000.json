@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_M1002_KV14000",
+  "name": "M1002 KV14000",
+  "manufacturer": "T-Hobby",
+  "kv": 14000.0,
+  "resistance": 0.122,
+  "io": 1.5,
+  "max_current": 7.1,
+  "weight_g": 2.6,
+  "max_power": 76.0,
+  "io_voltage": 10.0
+}

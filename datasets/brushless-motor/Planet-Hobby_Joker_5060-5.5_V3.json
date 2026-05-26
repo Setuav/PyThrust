@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_5060-5.5_V3",
+  "name": "Joker 5060-5.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 470.0,
+  "resistance": 0.0164,
+  "io": 1.5,
+  "max_current": 90.0,
+  "weight_g": 380.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

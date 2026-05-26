@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_C40_#640",
+  "name": "C40 #640*",
+  "manufacturer": "Astro Flight",
+  "kv": 682.0,
+  "resistance": 0.121,
+  "io": 2.0,
+  "max_current": 30.0,
+  "weight_g": 368.5,
+  "max_power": 1100.0,
+  "io_voltage": 8.0
+}

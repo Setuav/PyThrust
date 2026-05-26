@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AS2304-2300",
+  "name": "AS2304-2300",
+  "manufacturer": "T-Motor",
+  "kv": 2300.0,
+  "resistance": 0.088,
+  "io": 0.75,
+  "max_current": 16.0,
+  "weight_g": 20.1,
+  "max_power": 108.0,
+  "io_voltage": 10.0
+}

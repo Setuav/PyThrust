@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-6D_1400",
+  "name": "TP4070-6D 1400",
+  "manufacturer": "TP Power",
+  "kv": 1400.0,
+  "resistance": 0.005,
+  "io": 6.6,
+  "max_current": 227.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

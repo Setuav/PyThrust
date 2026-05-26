@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_6D_233",
+  "name": "2020/6D 233",
+  "manufacturer": "NeuMotors",
+  "kv": 233.0,
+  "resistance": 0.084,
+  "io": 0.84,
+  "max_current": 7.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

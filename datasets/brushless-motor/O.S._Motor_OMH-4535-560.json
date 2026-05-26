@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMH-4535-560",
+  "name": "OMH-4535-560",
+  "manufacturer": "O.S. Motor",
+  "kv": 560.0,
+  "resistance": 0.0238,
+  "io": 1.9,
+  "max_current": 125.0,
+  "weight_g": 372.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

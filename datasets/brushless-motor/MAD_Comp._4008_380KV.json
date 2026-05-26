@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4008_380KV",
+  "name": "4008 380KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 380.0,
+  "resistance": 0.149,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 87.0,
+  "max_power": 468.0,
+  "io_voltage": 20.0
+}

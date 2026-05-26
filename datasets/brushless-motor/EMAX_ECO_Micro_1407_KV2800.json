@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECO_Micro_1407_KV2800",
+  "name": "ECO Micro 1407 KV2800",
+  "manufacturer": "EMAX",
+  "kv": 2800.0,
+  "resistance": 0.18,
+  "io": 0.7,
+  "max_current": 14.0,
+  "weight_g": 13.6,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

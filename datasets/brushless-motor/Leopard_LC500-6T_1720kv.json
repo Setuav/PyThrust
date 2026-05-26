@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC500-6T_1720kv",
+  "name": "LC500-6T 1720kv",
+  "manufacturer": "Leopard",
+  "kv": 1720.0,
+  "resistance": 0.0214,
+  "io": 3.0,
+  "max_current": 80.0,
+  "weight_g": 175.2,
+  "max_power": 1500.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4025-0890",
+  "name": "HS4025-0890",
+  "manufacturer": "Hyperion",
+  "kv": 890.0,
+  "resistance": 0.013,
+  "io": 1.8,
+  "max_current": 128.0,
+  "weight_g": 326.3,
+  "max_power": 3645.0,
+  "io_voltage": 8.4
+}

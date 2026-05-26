@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_5_87",
+  "name": "12030/5/87",
+  "manufacturer": "NeuMotors",
+  "kv": 87.0,
+  "resistance": 0.0124,
+  "io": 2.366,
+  "max_current": 242.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

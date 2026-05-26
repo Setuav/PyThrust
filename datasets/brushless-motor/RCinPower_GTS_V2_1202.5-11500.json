@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V2_1202.5-11500",
+  "name": "GTS V2 1202.5-11500",
+  "manufacturer": "RCinPower",
+  "kv": 11500.0,
+  "resistance": 0.135,
+  "io": 1.3,
+  "max_current": 12.0,
+  "weight_g": 4.0,
+  "max_power": 88.0,
+  "io_voltage": 10.0
+}

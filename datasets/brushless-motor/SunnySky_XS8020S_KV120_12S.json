@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS8020S_KV120_12S",
+  "name": "XS8020S KV120 12S",
+  "manufacturer": "SunnySky",
+  "kv": 120.0,
+  "resistance": 0.05,
+  "io": 1.8,
+  "max_current": 84.0,
+  "weight_g": 775.6,
+  "max_power": 4200.0,
+  "io_voltage": 10.0
+}

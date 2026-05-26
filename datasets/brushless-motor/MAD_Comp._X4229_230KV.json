@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._X4229_230KV",
+  "name": "X4229 230KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 230.0,
+  "resistance": 0.0425,
+  "io": 1.2,
+  "max_current": 54.0,
+  "weight_g": 397.2,
+  "max_power": 2323.0,
+  "io_voltage": 25.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1404-4600",
+  "name": "F1404-4600",
+  "manufacturer": "T-Motor",
+  "kv": 4600.0,
+  "resistance": 0.138,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 9.4,
+  "max_power": 316.0,
+  "io_voltage": 10.0
+}

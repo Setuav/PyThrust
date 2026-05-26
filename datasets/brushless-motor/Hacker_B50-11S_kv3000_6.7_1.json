@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-11S_kv3000_6.7_1",
+  "name": "B50-11S kv3000 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 3000.0,
+  "resistance": 0.012,
+  "io": 2.85,
+  "max_current": 95.0,
+  "weight_g": 283.2,
+  "max_power": 1800.0,
+  "io_voltage": 8.4
+}

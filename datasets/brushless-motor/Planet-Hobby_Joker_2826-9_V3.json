@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2826-9_V3",
+  "name": "Joker 2826-9 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1800.0,
+  "resistance": 0.068,
+  "io": 0.97,
+  "max_current": 25.0,
+  "weight_g": 47.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2306_V1_1950",
+  "name": "SZ2306 V1 1950",
+  "manufacturer": "MEPS",
+  "kv": 1950.0,
+  "resistance": 0.068,
+  "io": 1.5,
+  "max_current": 44.0,
+  "weight_g": 32.0,
+  "max_power": 1082.0,
+  "io_voltage": 10.0
+}

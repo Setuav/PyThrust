@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C18_IPE_V3_330KV",
+  "name": "M6C18 IPE V3 330KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 330.0,
+  "resistance": 0.019,
+  "io": 3.4,
+  "max_current": 96.0,
+  "weight_g": 390.4,
+  "max_power": 2161.0,
+  "io_voltage": 20.0
+}

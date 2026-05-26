@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_480-27XS",
+  "name": "480-27XS",
+  "manufacturer": "Poly-Tec",
+  "kv": 2650.0,
+  "resistance": 0.0698,
+  "io": 1.3,
+  "max_current": 65.0,
+  "weight_g": 98.1,
+  "max_power": 620.0,
+  "io_voltage": 7.4
+}

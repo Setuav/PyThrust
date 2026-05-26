@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_1Y_3640",
+  "name": "1112/1Y 3640",
+  "manufacturer": "NeuMotors",
+  "kv": 3640.0,
+  "resistance": 0.006,
+  "io": 2.5,
+  "max_current": 73.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

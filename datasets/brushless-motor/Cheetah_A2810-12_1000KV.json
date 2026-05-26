@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2810-12_1000KV",
+  "name": "A2810-12 1000KV",
+  "manufacturer": "Cheetah",
+  "kv": 1000.0,
+  "resistance": 0.13,
+  "io": 1.2,
+  "max_current": 31.0,
+  "weight_g": 78.0,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2856-06_KV2300",
+  "name": "B2856-06 KV2300",
+  "manufacturer": "EMP",
+  "kv": 2300.0,
+  "resistance": 0.027,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 855.0,
+  "io_voltage": 10.0
+}

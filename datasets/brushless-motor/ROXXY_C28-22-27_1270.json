@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-22-27_1270",
+  "name": "C28-22-27 1270",
+  "manufacturer": "ROXXY",
+  "kv": 1270.0,
+  "resistance": 0.398,
+  "io": 0.652,
+  "max_current": 11.0,
+  "weight_g": 30.1,
+  "max_power": 140.0,
+  "io_voltage": 10.5
+}

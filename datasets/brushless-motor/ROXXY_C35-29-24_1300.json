@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-29-24_1300",
+  "name": "C35-29-24 1300",
+  "manufacturer": "ROXXY",
+  "kv": 1300.0,
+  "resistance": 0.054,
+  "io": 1.76,
+  "max_current": 21.0,
+  "weight_g": 78.0,
+  "max_power": 420.0,
+  "io_voltage": 10.5
+}

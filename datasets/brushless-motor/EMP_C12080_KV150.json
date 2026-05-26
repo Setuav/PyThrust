@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C12080_KV150",
+  "name": "C12080 KV150",
+  "manufacturer": "EMP",
+  "kv": 150.0,
+  "resistance": 0.0048,
+  "io": 17.0,
+  "max_current": 0.0,
+  "weight_g": 2501.8,
+  "max_power": 11250.0,
+  "io_voltage": 40.0
+}

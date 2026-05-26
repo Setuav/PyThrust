@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E40_30-390",
+  "name": "Elite E40/30-390",
+  "manufacturer": "Esprit",
+  "kv": 390.0,
+  "resistance": 0.063,
+  "io": 1.2,
+  "max_current": 70.0,
+  "weight_g": 460.4,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

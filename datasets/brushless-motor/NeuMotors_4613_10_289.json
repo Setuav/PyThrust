@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_10_289",
+  "name": "4613/10/289",
+  "manufacturer": "NeuMotors",
+  "kv": 289.0,
+  "resistance": 0.1,
+  "io": 0.54,
+  "max_current": 54.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

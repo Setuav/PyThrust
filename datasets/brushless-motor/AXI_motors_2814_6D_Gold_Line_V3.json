@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2814_6D_Gold_Line_V3",
+  "name": "2814/6D Gold Line V3",
+  "manufacturer": "AXI motors",
+  "kv": 2850.0,
+  "resistance": 0.006,
+  "io": 4.5,
+  "max_current": 56.0,
+  "weight_g": 107.2,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

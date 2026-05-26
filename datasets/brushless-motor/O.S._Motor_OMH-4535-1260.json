@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMH-4535-1260",
+  "name": "OMH-4535-1260",
+  "manufacturer": "O.S. Motor",
+  "kv": 1260.0,
+  "resistance": 0.0136,
+  "io": 3.6,
+  "max_current": 150.0,
+  "weight_g": 344.2,
+  "max_power": 1300.0,
+  "io_voltage": 10.0
+}

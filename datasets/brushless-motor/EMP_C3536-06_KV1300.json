@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3536-06_KV1300",
+  "name": "C3536-06 KV1300",
+  "manufacturer": "EMP",
+  "kv": 1300.0,
+  "resistance": 0.042,
+  "io": 2.4,
+  "max_current": 0.0,
+  "weight_g": 110.0,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

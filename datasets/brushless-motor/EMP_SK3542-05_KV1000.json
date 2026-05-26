@@ -1,0 +1,12 @@
+{
+  "id": "EMP_SK3542-05_KV1000",
+  "name": "SK3542-05 KV1000",
+  "manufacturer": "EMP",
+  "kv": 1000.0,
+  "resistance": 0.048,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 605.0,
+  "io_voltage": 10.0
+}

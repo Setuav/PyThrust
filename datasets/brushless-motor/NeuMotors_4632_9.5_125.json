@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_9.5_125",
+  "name": "4632/9.5/125",
+  "manufacturer": "NeuMotors",
+  "kv": 125.0,
+  "resistance": 0.18,
+  "io": 0.57,
+  "max_current": 57.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

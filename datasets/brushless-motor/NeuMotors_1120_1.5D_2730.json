@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_1.5D_2730",
+  "name": "1120/1.5D 2730",
+  "manufacturer": "NeuMotors",
+  "kv": 2730.0,
+  "resistance": 0.007,
+  "io": 3.0,
+  "max_current": 73.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5660-6D_1356",
+  "name": "TP5660-6D 1356",
+  "manufacturer": "TP Power",
+  "kv": 1356.0,
+  "resistance": 0.0028,
+  "io": 4.8,
+  "max_current": 256.0,
+  "weight_g": 836.6,
+  "max_power": 10000.0,
+  "io_voltage": 8.0
+}

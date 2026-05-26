@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-7D_750",
+  "name": "TP5870-7D 750",
+  "manufacturer": "TP Power",
+  "kv": 750.0,
+  "resistance": 0.0081,
+  "io": 4.6,
+  "max_current": 283.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

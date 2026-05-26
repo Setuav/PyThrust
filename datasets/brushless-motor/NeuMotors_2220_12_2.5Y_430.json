@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2220_12_2.5Y_430",
+  "name": "2220/12/2.5Y 430",
+  "manufacturer": "NeuMotors",
+  "kv": 430.0,
+  "resistance": 0.18,
+  "io": 1.3,
+  "max_current": 92.0,
+  "weight_g": 962.7,
+  "max_power": 6400.0,
+  "io_voltage": 10.0
+}

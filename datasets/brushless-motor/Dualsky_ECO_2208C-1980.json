@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2208C-1980",
+  "name": "ECO 2208C-1980",
+  "manufacturer": "Dualsky",
+  "kv": 1980.0,
+  "resistance": 0.199,
+  "io": 0.48,
+  "max_current": 14.0,
+  "weight_g": 43.9,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

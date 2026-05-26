@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_11_206",
+  "name": "8012/11/206",
+  "manufacturer": "NeuMotors",
+  "kv": 206.0,
+  "resistance": 0.024,
+  "io": 0.736,
+  "max_current": 93.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

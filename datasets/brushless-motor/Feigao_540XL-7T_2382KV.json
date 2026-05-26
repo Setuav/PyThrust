@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-7T_2382KV",
+  "name": "540XL-7T 2382KV",
+  "manufacturer": "Feigao",
+  "kv": 2382.0,
+  "resistance": 0.0056,
+  "io": 4.5,
+  "max_current": 95.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

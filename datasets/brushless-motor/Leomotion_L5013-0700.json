@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5013-0700",
+  "name": "L5013-0700",
+  "manufacturer": "Leomotion",
+  "kv": 720.0,
+  "resistance": 0.07,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 185.1,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMH-5825-520",
+  "name": "OMH-5825-520",
+  "manufacturer": "O.S. Motor",
+  "kv": 520.0,
+  "resistance": 0.015,
+  "io": 2.0,
+  "max_current": 150.0,
+  "weight_g": 525.3,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

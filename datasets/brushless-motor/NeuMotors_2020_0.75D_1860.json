@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_0.75D_1860",
+  "name": "2020/0.75D 1860",
+  "manufacturer": "NeuMotors",
+  "kv": 1860.0,
+  "resistance": 0.001,
+  "io": 6.72,
+  "max_current": 155.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

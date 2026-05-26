@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-6530-180",
+  "name": "SII-6530-180",
+  "manufacturer": "Scorpion",
+  "kv": 180.0,
+  "resistance": 0.022,
+  "io": 1.26,
+  "max_current": 110.0,
+  "weight_g": 1043.0,
+  "max_power": 4884.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN2212_V2_KV780",
+  "name": "MN2212 V2 KV780",
+  "manufacturer": "T-Motor",
+  "kv": 780.0,
+  "resistance": 0.173,
+  "io": 0.4,
+  "max_current": 13.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

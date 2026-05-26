@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_2004_2900KV",
+  "name": "Toka 2004 2900KV",
+  "manufacturer": "Mamba",
+  "kv": 2900.0,
+  "resistance": 0.09,
+  "io": 0.9,
+  "max_current": 32.0,
+  "weight_g": 18.1,
+  "max_power": 505.0,
+  "io_voltage": 10.0
+}

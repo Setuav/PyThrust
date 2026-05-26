@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_2208_KV2150",
+  "name": "TOA 2208 KV2150",
+  "manufacturer": "Karearea",
+  "kv": 2150.0,
+  "resistance": 0.0245,
+  "io": 1.2,
+  "max_current": 52.0,
+  "weight_g": 37.4,
+  "max_power": 1139.0,
+  "io_voltage": 10.0
+}

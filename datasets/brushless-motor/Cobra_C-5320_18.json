@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-5320_18",
+  "name": "C-5320/18",
+  "manufacturer": "Cobra",
+  "kv": 370.0,
+  "resistance": 0.023,
+  "io": 2.5,
+  "max_current": 75.0,
+  "weight_g": 490.4,
+  "max_power": 2220.0,
+  "io_voltage": 20.0
+}

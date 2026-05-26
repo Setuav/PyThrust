@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_2D_698",
+  "name": "2020/2D 698",
+  "manufacturer": "NeuMotors",
+  "kv": 698.0,
+  "resistance": 0.009,
+  "io": 2.52,
+  "max_current": 116.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

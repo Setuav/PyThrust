@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4014_370KV",
+  "name": "4014 370KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 370.0,
+  "resistance": 0.116,
+  "io": 1.12,
+  "max_current": 23.0,
+  "weight_g": 142.0,
+  "max_power": 507.0,
+  "io_voltage": 20.0
+}

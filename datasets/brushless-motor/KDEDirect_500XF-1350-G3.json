@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_500XF-1350-G3",
+  "name": "500XF-1350-G3",
+  "manufacturer": "KDEDirect",
+  "kv": 1350.0,
+  "resistance": 0.006,
+  "io": 4.2,
+  "max_current": 112.0,
+  "weight_g": 300.2,
+  "max_power": 2485.0,
+  "io_voltage": 10.0
+}

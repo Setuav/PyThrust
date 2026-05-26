@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_4.25D_130",
+  "name": "2530/4.25D 130",
+  "manufacturer": "NeuMotors",
+  "kv": 130.0,
+  "resistance": 0.043,
+  "io": 1.3,
+  "max_current": 104.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

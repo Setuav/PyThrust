@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_2105Plus-2950",
+  "name": "GTS V3 2105Plus-2950",
+  "manufacturer": "RCinPower",
+  "kv": 2950.0,
+  "resistance": 0.06,
+  "io": 1.5,
+  "max_current": 39.0,
+  "weight_g": 21.0,
+  "max_power": 620.0,
+  "io_voltage": 10.0
+}

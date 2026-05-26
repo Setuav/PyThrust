@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_1704-2600",
+  "name": "1704-2600",
+  "manufacturer": "Tempest",
+  "kv": 2600.0,
+  "resistance": 0.239,
+  "io": 0.54,
+  "max_current": 9.0,
+  "weight_g": 14.7,
+  "max_power": 100.0,
+  "io_voltage": 10.0
+}

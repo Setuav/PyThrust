@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1902_3Y_1175",
+  "name": "1902/3Y 1175",
+  "manufacturer": "NeuMotors",
+  "kv": 1175.0,
+  "resistance": 0.063,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 125.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

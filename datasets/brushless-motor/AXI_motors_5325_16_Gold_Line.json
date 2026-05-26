@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5325_16_Gold_Line",
+  "name": "5325/16 Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 350.0,
+  "resistance": 0.026,
+  "io": 2.0,
+  "max_current": 86.0,
+  "weight_g": 595.3,
+  "max_power": 2650.0,
+  "io_voltage": 20.0
+}

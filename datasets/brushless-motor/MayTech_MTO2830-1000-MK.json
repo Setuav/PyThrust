@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO2830-1000-MK",
+  "name": "MTO2830-1000-MK",
+  "manufacturer": "MayTech",
+  "kv": 1000.0,
+  "resistance": 0.105,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 55.0,
+  "max_power": 215.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3536CA-9",
+  "name": "XM3536CA-9",
+  "manufacturer": "Dualsky",
+  "kv": 890.0,
+  "resistance": 0.057,
+  "io": 1.05,
+  "max_current": 30.0,
+  "weight_g": 103.2,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

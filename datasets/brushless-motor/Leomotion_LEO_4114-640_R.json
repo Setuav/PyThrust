@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4114-640_R",
+  "name": "LEO 4114-640 R",
+  "manufacturer": "Leomotion",
+  "kv": 640.0,
+  "resistance": 0.032,
+  "io": 1.59,
+  "max_current": 46.0,
+  "weight_g": 171.2,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N3530-07_KV1700",
+  "name": "N3530-07 KV1700",
+  "manufacturer": "EMP",
+  "kv": 1700.0,
+  "resistance": 0.039,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 90.2,
+  "max_power": 410.0,
+  "io_voltage": 10.0
+}

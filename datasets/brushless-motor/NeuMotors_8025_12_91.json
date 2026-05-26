@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_12_91",
+  "name": "8025/12/91",
+  "manufacturer": "NeuMotors",
+  "kv": 91.0,
+  "resistance": 0.045,
+  "io": 0.675,
+  "max_current": 85.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_4.5D_440",
+  "name": "1530/4.5D 440",
+  "manufacturer": "NeuMotors",
+  "kv": 440.0,
+  "resistance": 0.081,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

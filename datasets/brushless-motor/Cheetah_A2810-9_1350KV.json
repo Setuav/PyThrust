@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2810-9_1350KV",
+  "name": "A2810-9 1350KV",
+  "manufacturer": "Cheetah",
+  "kv": 1350.0,
+  "resistance": 0.085,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 78.0,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

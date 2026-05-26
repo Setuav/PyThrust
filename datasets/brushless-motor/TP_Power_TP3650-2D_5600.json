@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3650-2D_5600",
+  "name": "TP3650-2D 5600",
+  "manufacturer": "TP Power",
+  "kv": 5600.0,
+  "resistance": 0.001,
+  "io": 13.0,
+  "max_current": 600.0,
+  "weight_g": 370.2,
+  "max_power": 4500.0,
+  "io_voltage": 6.0
+}

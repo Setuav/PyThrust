@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1540_4_5300",
+  "name": "TS-EZ1540/4 5300",
+  "manufacturer": "Tenshock",
+  "kv": 5300.0,
+  "resistance": 0.0038,
+  "io": 5.5,
+  "max_current": 160.0,
+  "weight_g": 177.2,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

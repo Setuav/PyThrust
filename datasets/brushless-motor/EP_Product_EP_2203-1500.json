@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2203-1500",
+  "name": "EP 2203-1500",
+  "manufacturer": "EP Product",
+  "kv": 1540.0,
+  "resistance": 0.357,
+  "io": 0.36,
+  "max_current": 7.0,
+  "weight_g": 18.1,
+  "max_power": 80.0,
+  "io_voltage": 8.0
+}

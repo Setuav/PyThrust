@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_0.75D_1760",
+  "name": "1545/0.75D 1760",
+  "manufacturer": "NeuMotors",
+  "kv": 1760.0,
+  "resistance": 0.003,
+  "io": 6.0,
+  "max_current": 235.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

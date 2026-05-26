@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-8T_1038kv",
+  "name": "LC2835-8T 1038kv",
+  "manufacturer": "Leopard",
+  "kv": 1038.0,
+  "resistance": 0.0818,
+  "io": 0.7,
+  "max_current": 24.0,
+  "weight_g": 71.2,
+  "max_power": 315.0,
+  "io_voltage": 7.4
+}

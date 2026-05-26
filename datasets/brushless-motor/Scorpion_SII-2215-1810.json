@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-2215-1810",
+  "name": "SII-2215-1810",
+  "manufacturer": "Scorpion",
+  "kv": 1810.0,
+  "resistance": 0.031,
+  "io": 1.35,
+  "max_current": 25.0,
+  "weight_g": 68.6,
+  "max_power": 370.0,
+  "io_voltage": 10.0
+}

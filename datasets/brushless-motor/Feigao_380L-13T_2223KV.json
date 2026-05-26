@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-13T_2223KV",
+  "name": "380L-13T 2223KV",
+  "manufacturer": "Feigao",
+  "kv": 2223.0,
+  "resistance": 0.03,
+  "io": 1.1,
+  "max_current": 32.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

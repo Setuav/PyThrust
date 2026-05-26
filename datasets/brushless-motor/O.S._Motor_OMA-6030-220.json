@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-6030-220",
+  "name": "OMA-6030-220",
+  "manufacturer": "O.S. Motor",
+  "kv": 220.0,
+  "resistance": 0.028,
+  "io": 1.1,
+  "max_current": 90.0,
+  "weight_g": 675.3,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

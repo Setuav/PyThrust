@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N2826-08_KV1900",
+  "name": "N2826-08 KV1900",
+  "manufacturer": "EMP",
+  "kv": 1900.0,
+  "resistance": 0.065,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 51.0,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

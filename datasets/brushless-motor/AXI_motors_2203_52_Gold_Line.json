@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2203_52_Gold_Line",
+  "name": "2203/52 Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 1579.0,
+  "resistance": 0.452,
+  "io": 0.31,
+  "max_current": 8.0,
+  "weight_g": 20.1,
+  "max_power": 50.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_0.5Y_1550",
+  "name": "2020/0.5Y 1550",
+  "manufacturer": "NeuMotors",
+  "kv": 1550.0,
+  "resistance": 0.002,
+  "io": 5.6,
+  "max_current": 151.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

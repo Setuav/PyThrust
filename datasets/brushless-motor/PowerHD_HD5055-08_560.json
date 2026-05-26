@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD5055-08_560",
+  "name": "HD5055-08/560",
+  "manufacturer": "PowerHD",
+  "kv": 560.0,
+  "resistance": 0.028,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 270.2,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

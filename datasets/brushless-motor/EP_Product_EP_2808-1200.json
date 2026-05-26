@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2808-1200",
+  "name": "EP 2808-1200",
+  "manufacturer": "EP Product",
+  "kv": 1200.0,
+  "resistance": 0.072,
+  "io": 0.75,
+  "max_current": 22.0,
+  "weight_g": 80.5,
+  "max_power": 330.0,
+  "io_voltage": 8.0
+}

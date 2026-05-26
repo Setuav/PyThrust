@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2212_20_Gold_Line_V2_Long",
+  "name": "2212/20 Gold Line V2 Long",
+  "manufacturer": "AXI motors",
+  "kv": 1150.0,
+  "resistance": 0.078,
+  "io": 0.7,
+  "max_current": 18.0,
+  "weight_g": 59.5,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

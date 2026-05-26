@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_E10-36L_Kv4300",
+  "name": "E10-36L Kv4300",
+  "manufacturer": "Hacker",
+  "kv": 4300.0,
+  "resistance": 0.56,
+  "io": 0.3,
+  "max_current": 5.0,
+  "weight_g": 13.9,
+  "max_power": 45.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A10-13L",
+  "name": "A10-13L",
+  "manufacturer": "Hacker",
+  "kv": 1300.0,
+  "resistance": 0.28,
+  "io": 0.39,
+  "max_current": 9.0,
+  "weight_g": 20.1,
+  "max_power": 75.0,
+  "io_voltage": 8.4
+}

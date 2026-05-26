@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_2.75D_514",
+  "name": "1542/2.75D 514",
+  "manufacturer": "NeuMotors",
+  "kv": 514.0,
+  "resistance": 0.042,
+  "io": 1.6,
+  "max_current": 64.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

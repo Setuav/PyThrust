@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_120L-28T_5322KV",
+  "name": "120L-28T 5322KV",
+  "manufacturer": "Feigao",
+  "kv": 5322.0,
+  "resistance": 0.37,
+  "io": 0.5,
+  "max_current": 5.0,
+  "weight_g": 17.0,
+  "max_power": 70.0,
+  "io_voltage": 6.0
+}

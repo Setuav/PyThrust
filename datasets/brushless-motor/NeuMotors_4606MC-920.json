@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-920",
+  "name": "4606MC-920",
+  "manufacturer": "NeuMotors",
+  "kv": 920.0,
+  "resistance": 0.018,
+  "io": 0.35,
+  "max_current": 83.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

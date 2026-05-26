@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_5.25D_343",
+  "name": "1533/5.25D 343",
+  "manufacturer": "NeuMotors",
+  "kv": 343.0,
+  "resistance": 0.1213,
+  "io": 0.86,
+  "max_current": 34.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

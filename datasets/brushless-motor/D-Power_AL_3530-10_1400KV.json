@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_3530-10_1400KV",
+  "name": "AL 3530-10 1400KV",
+  "manufacturer": "D-Power",
+  "kv": 1400.0,
+  "resistance": 0.0553,
+  "io": 1.0,
+  "max_current": 25.0,
+  "weight_g": 75.1,
+  "max_power": 260.0,
+  "io_voltage": 8.0
+}

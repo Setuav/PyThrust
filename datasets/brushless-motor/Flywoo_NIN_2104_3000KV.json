@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_NIN_2104_3000KV",
+  "name": "NIN 2104 3000KV",
+  "manufacturer": "Flywoo",
+  "kv": 3000.0,
+  "resistance": 0.11,
+  "io": 0.9,
+  "max_current": 36.3,
+  "weight_g": 15.9,
+  "max_power": 581.0,
+  "io_voltage": 10.0
+}

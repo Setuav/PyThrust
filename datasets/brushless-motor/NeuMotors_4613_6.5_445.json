@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_6.5_445",
+  "name": "4613/6.5/445",
+  "manufacturer": "NeuMotors",
+  "kv": 445.0,
+  "resistance": 0.04,
+  "io": 0.83,
+  "max_current": 83.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA2000.4",
+  "name": "GA2000.4",
+  "manufacturer": "Dualsky",
+  "kv": 400.0,
+  "resistance": 0.0178,
+  "io": 2.1,
+  "max_current": 100.0,
+  "weight_g": 350.1,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

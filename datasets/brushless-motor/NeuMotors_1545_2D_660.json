@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_2D_660",
+  "name": "1545/2D 660",
+  "manufacturer": "NeuMotors",
+  "kv": 660.0,
+  "resistance": 0.024,
+  "io": 2.3,
+  "max_current": 88.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

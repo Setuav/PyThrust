@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-24T_1645KV",
+  "name": "380S-24T 1645KV",
+  "manufacturer": "Feigao",
+  "kv": 1645.0,
+  "resistance": 0.0848,
+  "io": 0.4,
+  "max_current": 17.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

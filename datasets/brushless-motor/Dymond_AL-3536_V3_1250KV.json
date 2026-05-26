@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-3536_V3_1250KV",
+  "name": "AL-3536 V3 1250KV",
+  "manufacturer": "Dymond",
+  "kv": 1250.0,
+  "resistance": 0.0511,
+  "io": 1.51,
+  "max_current": 35.0,
+  "weight_g": 110.0,
+  "max_power": 400.0,
+  "io_voltage": 8.2
+}

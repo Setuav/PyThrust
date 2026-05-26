@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_4.5_281",
+  "name": "6521/4.5/281",
+  "manufacturer": "NeuMotors",
+  "kv": 281.0,
+  "resistance": 0.02,
+  "io": 1.089,
+  "max_current": 160.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM1812MA-42",
+  "name": "XM1812MA-42",
+  "manufacturer": "Dualsky",
+  "kv": 2330.0,
+  "resistance": 0.64,
+  "io": 0.25,
+  "max_current": 3.5,
+  "weight_g": 11.1,
+  "max_power": 25.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_1805-2250",
+  "name": "LEO 1805-2250",
+  "manufacturer": "Leomotion",
+  "kv": 2250.0,
+  "resistance": 0.4,
+  "io": 0.25,
+  "max_current": 7.0,
+  "weight_g": 15.9,
+  "max_power": 45.0,
+  "io_voltage": 6.5
+}

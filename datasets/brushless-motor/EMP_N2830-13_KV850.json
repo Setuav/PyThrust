@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N2830-13_KV850",
+  "name": "N2830-13 KV850",
+  "manufacturer": "EMP",
+  "kv": 850.0,
+  "resistance": 0.154,
+  "io": 0.4,
+  "max_current": 0.0,
+  "weight_g": 62.1,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

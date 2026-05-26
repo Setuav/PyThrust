@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-2520-3500",
+  "name": "HK-2520-3500",
+  "manufacturer": "Scorpion",
+  "kv": 3500.0,
+  "resistance": 0.008,
+  "io": 5.8,
+  "max_current": 55.0,
+  "weight_g": 103.2,
+  "max_power": 770.0,
+  "io_voltage": 10.0
+}

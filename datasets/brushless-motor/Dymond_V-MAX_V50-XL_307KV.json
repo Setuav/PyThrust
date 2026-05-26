@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_V50-XL_307KV",
+  "name": "V-MAX V50-XL 307KV",
+  "manufacturer": "Dymond",
+  "kv": 307.0,
+  "resistance": 0.3985,
+  "io": 0.86,
+  "max_current": 60.0,
+  "weight_g": 420.4,
+  "max_power": 1300.0,
+  "io_voltage": 15.29
+}

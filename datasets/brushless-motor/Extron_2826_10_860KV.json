@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2826_10_860KV",
+  "name": "2826/10  860KV",
+  "manufacturer": "Extron",
+  "kv": 860.0,
+  "resistance": 0.0298,
+  "io": 2.8,
+  "max_current": 40.0,
+  "weight_g": 173.2,
+  "max_power": 600.0,
+  "io_voltage": 14.8
+}

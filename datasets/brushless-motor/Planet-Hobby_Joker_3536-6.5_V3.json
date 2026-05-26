@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_3536-6.5_V3",
+  "name": "Joker 3536-6.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1120.0,
+  "resistance": 0.0378,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 105.2,
+  "max_power": 432.0,
+  "io_voltage": 10.0
+}

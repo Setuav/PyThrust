@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR1507_4200kv",
+  "name": "GR1507 4200kv",
+  "manufacturer": "GEPRC",
+  "kv": 4200.0,
+  "resistance": 0.096,
+  "io": 1.25,
+  "max_current": 29.0,
+  "weight_g": 15.6,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

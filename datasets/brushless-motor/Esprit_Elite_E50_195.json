@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E50_195",
+  "name": "Elite E50/195",
+  "manufacturer": "Esprit",
+  "kv": 195.0,
+  "resistance": 0.032,
+  "io": 1.4,
+  "max_current": 140.0,
+  "weight_g": 1075.9,
+  "max_power": 6250.0,
+  "io_voltage": 10.0
+}

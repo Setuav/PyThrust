@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V3115_KV1050",
+  "name": "V3115 KV1050",
+  "manufacturer": "T-Motor",
+  "kv": 1050.0,
+  "resistance": 0.03384,
+  "io": 1.79,
+  "max_current": 84.0,
+  "weight_g": 112.8,
+  "max_power": 1903.0,
+  "io_voltage": 10.0
+}

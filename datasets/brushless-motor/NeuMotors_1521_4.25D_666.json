@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_4.25D_666",
+  "name": "1521/4.25D 666",
+  "manufacturer": "NeuMotors",
+  "kv": 666.0,
+  "resistance": 0.051,
+  "io": 1.06,
+  "max_current": 39.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

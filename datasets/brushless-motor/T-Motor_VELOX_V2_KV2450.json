@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_VELOX_V2_KV2450",
+  "name": "VELOX V2 KV2450",
+  "manufacturer": "T-Motor",
+  "kv": 2450.0,
+  "resistance": 0.041,
+  "io": 2.1,
+  "max_current": 40.0,
+  "weight_g": 33.5,
+  "max_power": 611.0,
+  "io_voltage": 10.0
+}

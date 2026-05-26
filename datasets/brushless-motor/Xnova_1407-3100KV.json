@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_1407-3100KV",
+  "name": "1407-3100KV",
+  "manufacturer": "Xnova",
+  "kv": 3100.0,
+  "resistance": 0.165,
+  "io": 0.8,
+  "max_current": 21.0,
+  "weight_g": 15.9,
+  "max_power": 310.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_2826_KV1200",
+  "name": "2826 KV1200",
+  "manufacturer": "Kavan",
+  "kv": 1200.0,
+  "resistance": 0.121,
+  "io": 0.66,
+  "max_current": 15.0,
+  "weight_g": 49.0,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

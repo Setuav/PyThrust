@@ -1,0 +1,12 @@
+{
+  "id": "HET_TX3814_KV1250",
+  "name": "TX3814 KV1250",
+  "manufacturer": "HET",
+  "kv": 1250.0,
+  "resistance": 0.0185,
+  "io": 1.4,
+  "max_current": 47.0,
+  "weight_g": 126.2,
+  "max_power": 680.0,
+  "io_voltage": 8.4
+}

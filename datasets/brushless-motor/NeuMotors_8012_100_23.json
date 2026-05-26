@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_100_23",
+  "name": "8012/100/23",
+  "manufacturer": "NeuMotors",
+  "kv": 23.0,
+  "resistance": 1.788,
+  "io": 0.081,
+  "max_current": 10.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

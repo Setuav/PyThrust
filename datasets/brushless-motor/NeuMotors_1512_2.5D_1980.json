@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_2.5D_1980",
+  "name": "1512/2.5D 1980",
+  "manufacturer": "NeuMotors",
+  "kv": 1980.0,
+  "resistance": 0.01,
+  "io": 1.8,
+  "max_current": 66.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

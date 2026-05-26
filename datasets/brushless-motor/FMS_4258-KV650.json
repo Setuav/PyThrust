@@ -1,0 +1,12 @@
+{
+  "id": "FMS_4258-KV650",
+  "name": "4258-KV650",
+  "manufacturer": "FMS",
+  "kv": 650.0,
+  "resistance": 0.024,
+  "io": 2.2,
+  "max_current": 60.0,
+  "weight_g": 265.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HiTec_2206_18_2200KV",
+  "name": "2206/18 2200KV",
+  "manufacturer": "HiTec",
+  "kv": 2200.0,
+  "resistance": 0.047,
+  "io": 0.96,
+  "max_current": 28.0,
+  "weight_g": 40.5,
+  "max_power": 200.0,
+  "io_voltage": 8.0
+}

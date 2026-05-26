@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_32-770Kv",
+  "name": "Bigfoot 32-770Kv",
+  "manufacturer": "Tacon",
+  "kv": 770.0,
+  "resistance": 0.0265,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 210.1,
+  "max_power": 700.0,
+  "io_voltage": 7.4
+}

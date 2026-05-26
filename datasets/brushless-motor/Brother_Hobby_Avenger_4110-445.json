@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_4110-445",
+  "name": "Avenger 4110-445",
+  "manufacturer": "Brother Hobby",
+  "kv": 445.0,
+  "resistance": 0.105,
+  "io": 0.62,
+  "max_current": 32.0,
+  "weight_g": 142.0,
+  "max_power": 807.0,
+  "io_voltage": 10.0
+}

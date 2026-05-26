@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_4345_KV880",
+  "name": "4345 KV880",
+  "manufacturer": "Kavan",
+  "kv": 880.0,
+  "resistance": 0.014,
+  "io": 2.0,
+  "max_current": 70.0,
+  "weight_g": 221.1,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iPower_iBM2217Q_930KV",
+  "name": "iBM2217Q 930KV",
+  "manufacturer": "iPower",
+  "kv": 930.0,
+  "resistance": 0.095,
+  "io": 0.6,
+  "max_current": 20.0,
+  "weight_g": 94.1,
+  "max_power": 290.0,
+  "io_voltage": 10.0
+}

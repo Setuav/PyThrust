@@ -1,0 +1,12 @@
+{
+  "id": "Graupner_Sp700_Race_9.6V",
+  "name": "Sp700 Race 9.6V",
+  "manufacturer": "Graupner",
+  "kv": 1875.0,
+  "resistance": 0.12,
+  "io": 3.0,
+  "max_current": 25.0,
+  "weight_g": 326.0,
+  "max_power": 978.0,
+  "io_voltage": 9.6
+}

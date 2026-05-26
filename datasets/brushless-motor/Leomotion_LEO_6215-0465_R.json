@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_6215-0465_R",
+  "name": "LEO 6215-0465 R",
+  "manufacturer": "Leomotion",
+  "kv": 465.0,
+  "resistance": 0.012,
+  "io": 2.52,
+  "max_current": 120.0,
+  "weight_g": 375.3,
+  "max_power": 2660.0,
+  "io_voltage": 10.0
+}

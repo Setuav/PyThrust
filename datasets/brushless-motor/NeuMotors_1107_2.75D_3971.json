@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_2.75D_3971",
+  "name": "1107/2.75D 3971",
+  "manufacturer": "NeuMotors",
+  "kv": 3971.0,
+  "resistance": 0.009,
+  "io": 1.6,
+  "max_current": 40.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

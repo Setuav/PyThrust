@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING2_3106_1500",
+  "name": "XING2 3106 1500",
+  "manufacturer": "iFlight",
+  "kv": 1500.0,
+  "resistance": 0.0453,
+  "io": 1.55,
+  "max_current": 78.0,
+  "weight_g": 66.1,
+  "max_power": 1858.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-1.5Y_XL_Glider_1450_6.7_1",
+  "name": "C54-1.5Y XL Glider 1450 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1450.0,
+  "resistance": 0.009,
+  "io": 3.5,
+  "max_current": 120.0,
+  "weight_g": 520.5,
+  "max_power": 3900.0,
+  "io_voltage": 37.0
+}

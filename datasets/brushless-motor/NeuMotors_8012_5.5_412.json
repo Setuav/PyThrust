@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_5.5_412",
+  "name": "8012/5.5/412",
+  "manufacturer": "NeuMotors",
+  "kv": 412.0,
+  "resistance": 0.007,
+  "io": 1.473,
+  "max_current": 185.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

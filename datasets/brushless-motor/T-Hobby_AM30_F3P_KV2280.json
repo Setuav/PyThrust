@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_AM30_F3P_KV2280",
+  "name": "AM30 F3P KV2280",
+  "manufacturer": "T-Hobby",
+  "kv": 2280.0,
+  "resistance": 0.088,
+  "io": 1.2,
+  "max_current": 16.0,
+  "weight_g": 19.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

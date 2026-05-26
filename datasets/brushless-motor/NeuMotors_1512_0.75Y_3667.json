@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_0.75Y_3667",
+  "name": "1512/0.75Y 3667",
+  "manufacturer": "NeuMotors",
+  "kv": 3667.0,
+  "resistance": 0.0027,
+  "io": 3.33,
+  "max_current": 122.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X5215_250",
+  "name": "XING X5215 250",
+  "manufacturer": "iFlight",
+  "kv": 250.0,
+  "resistance": 0.051,
+  "io": 1.43,
+  "max_current": 55.0,
+  "weight_g": 291.1,
+  "max_power": 1760.0,
+  "io_voltage": 20.0
+}

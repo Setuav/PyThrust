@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_M1002_KV22000",
+  "name": "M1002 KV22000",
+  "manufacturer": "T-Hobby",
+  "kv": 22000.0,
+  "resistance": 0.078,
+  "io": 2.3,
+  "max_current": 9.8,
+  "weight_g": 2.6,
+  "max_power": 28.0,
+  "io_voltage": 10.0
+}

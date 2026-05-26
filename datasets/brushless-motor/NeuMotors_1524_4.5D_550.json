@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_4.5D_550",
+  "name": "1524/4.5D 550",
+  "manufacturer": "NeuMotors",
+  "kv": 550.0,
+  "resistance": 0.065,
+  "io": 1.0,
+  "max_current": 37.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

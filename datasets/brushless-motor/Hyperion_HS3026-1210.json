@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS3026-1210",
+  "name": "HS3026-1210",
+  "manufacturer": "Hyperion",
+  "kv": 1210.0,
+  "resistance": 0.018,
+  "io": 1.63,
+  "max_current": 87.0,
+  "weight_g": 193.1,
+  "max_power": 1840.0,
+  "io_voltage": 10.0
+}

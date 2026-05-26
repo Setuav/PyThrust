@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B1230-17_KV4990",
+  "name": "B1230-17 KV4990",
+  "manufacturer": "EMP",
+  "kv": 4990.0,
+  "resistance": 0.732,
+  "io": 0.2,
+  "max_current": 4.0,
+  "weight_g": 18.1,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

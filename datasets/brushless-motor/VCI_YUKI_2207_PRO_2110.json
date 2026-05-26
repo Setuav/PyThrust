@@ -1,0 +1,12 @@
+{
+  "id": "VCI_YUKI_2207_PRO_2110",
+  "name": "YUKI 2207 PRO 2110",
+  "manufacturer": "VCI",
+  "kv": 2110.0,
+  "resistance": 0.054,
+  "io": 1.0,
+  "max_current": 50.0,
+  "weight_g": 32.9,
+  "max_power": 1207.0,
+  "io_voltage": 10.0
+}

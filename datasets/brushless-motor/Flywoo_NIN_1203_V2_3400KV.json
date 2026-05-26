@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_NIN_1203_V2_3400KV",
+  "name": "NIN 1203 V2 3400KV",
+  "manufacturer": "Flywoo",
+  "kv": 3400.0,
+  "resistance": 0.7,
+  "io": 0.3,
+  "max_current": 6.5,
+  "weight_g": 4.8,
+  "max_power": 96.0,
+  "io_voltage": 10.0
+}

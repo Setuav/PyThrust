@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_4130-690",
+  "name": "4130-690",
+  "manufacturer": "Tempest",
+  "kv": 690.0,
+  "resistance": 0.012,
+  "io": 3.7,
+  "max_current": 100.0,
+  "weight_g": 383.0,
+  "max_power": 2220.0,
+  "io_voltage": 10.0
+}

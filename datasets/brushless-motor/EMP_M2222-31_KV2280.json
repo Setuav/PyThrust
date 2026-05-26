@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2222-31_KV2280",
+  "name": "M2222-31 KV2280",
+  "manufacturer": "EMP",
+  "kv": 2280.0,
+  "resistance": 0.812,
+  "io": 0.6,
+  "max_current": 4.0,
+  "weight_g": 15.9,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

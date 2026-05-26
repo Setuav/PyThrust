@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2826D3-1100kV",
+  "name": "BM2826D3-1100kV",
+  "manufacturer": "Detrum",
+  "kv": 1100.0,
+  "resistance": 0.047,
+  "io": 4.8,
+  "max_current": 60.0,
+  "weight_g": 85.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

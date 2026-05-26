@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2808-1360",
+  "name": "2808-1360",
+  "manufacturer": "Tempest",
+  "kv": 1360.0,
+  "resistance": 0.064,
+  "io": 1.87,
+  "max_current": 28.0,
+  "weight_g": 77.7,
+  "max_power": 415.0,
+  "io_voltage": 10.0
+}

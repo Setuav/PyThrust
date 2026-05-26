@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2820_KV1120_2-4S",
+  "name": "A2820 KV1120 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1120.0,
+  "resistance": 0.039,
+  "io": 1.8,
+  "max_current": 48.0,
+  "weight_g": 128.1,
+  "max_power": 680.0,
+  "io_voltage": 10.0
+}

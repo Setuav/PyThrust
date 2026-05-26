@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56104_10Y",
+  "name": "SSS 56104 10Y",
+  "manufacturer": "TFL Hobby",
+  "kv": 370.0,
+  "resistance": 0.0265,
+  "io": 1.0,
+  "max_current": 95.0,
+  "weight_g": 1020.9,
+  "max_power": 11000.0,
+  "io_voltage": 11.1
+}

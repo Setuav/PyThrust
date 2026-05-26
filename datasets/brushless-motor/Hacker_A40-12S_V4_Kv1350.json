@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A40-12S_V4_Kv1350",
+  "name": "A40-12S V4 Kv1350",
+  "manufacturer": "Hacker",
+  "kv": 1350.0,
+  "resistance": 0.018,
+  "io": 1.94,
+  "max_current": 75.0,
+  "weight_g": 190.2,
+  "max_power": 900.0,
+  "io_voltage": 8.4
+}

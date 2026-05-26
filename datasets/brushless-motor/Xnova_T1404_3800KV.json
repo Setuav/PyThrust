@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_T1404_3800KV",
+  "name": "T1404 3800KV",
+  "manufacturer": "Xnova",
+  "kv": 3800.0,
+  "resistance": 0.26,
+  "io": 0.6,
+  "max_current": 9.5,
+  "weight_g": 9.9,
+  "max_power": 141.0,
+  "io_voltage": 10.0
+}

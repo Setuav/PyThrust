@@ -1,0 +1,12 @@
+{
+  "id": "Jamara_Magnum_A5330-6_260KV",
+  "name": "Magnum A5330-6 260KV",
+  "manufacturer": "Jamara",
+  "kv": 260.0,
+  "resistance": 0.052,
+  "io": 1.2,
+  "max_current": 80.0,
+  "weight_g": 596.5,
+  "max_power": 2700.0,
+  "io_voltage": 10.0
+}

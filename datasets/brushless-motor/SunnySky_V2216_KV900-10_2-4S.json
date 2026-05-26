@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V2216_KV900-10_2-4S",
+  "name": "V2216 KV900-10 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 900.0,
+  "resistance": 0.135,
+  "io": 0.4,
+  "max_current": 20.0,
+  "weight_g": 75.1,
+  "max_power": 210.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_C2826_1900KV",
+  "name": "PRO C2826 1900KV",
+  "manufacturer": "Avionic",
+  "kv": 1900.0,
+  "resistance": 0.09,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 54.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_5030-0220_V3",
+  "name": "LEO 5030-0220 V3",
+  "manufacturer": "Leomotion",
+  "kv": 220.0,
+  "resistance": 0.028,
+  "io": 1.2,
+  "max_current": 95.0,
+  "weight_g": 650.6,
+  "max_power": 3800.0,
+  "io_voltage": 10.0
+}

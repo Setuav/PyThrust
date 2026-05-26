@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_0.5D_3960",
+  "name": "1530/0.5D 3960",
+  "manufacturer": "NeuMotors",
+  "kv": 3960.0,
+  "resistance": 0.001,
+  "io": 9.0,
+  "max_current": 363.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

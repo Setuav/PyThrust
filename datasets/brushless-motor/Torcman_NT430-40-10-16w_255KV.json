@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-40-10-16w_255KV",
+  "name": "NT430-40-10-16w 255KV",
+  "manufacturer": "Torcman",
+  "kv": 255.0,
+  "resistance": 0.033,
+  "io": 2.2,
+  "max_current": 110.0,
+  "weight_g": 700.5,
+  "max_power": 2200.0,
+  "io_voltage": 12.0
+}

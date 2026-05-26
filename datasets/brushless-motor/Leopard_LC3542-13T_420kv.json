@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3542-13T_420kv",
+  "name": "LC3542-13T 420kv",
+  "manufacturer": "Leopard",
+  "kv": 420.0,
+  "resistance": 0.1671,
+  "io": 0.4,
+  "max_current": 18.0,
+  "weight_g": 135.2,
+  "max_power": 360.0,
+  "io_voltage": 7.4
+}

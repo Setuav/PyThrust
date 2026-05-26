@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C08_IPE_V3_260KV",
+  "name": "M6C08 IPE V3 260KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 260.0,
+  "resistance": 0.057,
+  "io": 1.04,
+  "max_current": 51.0,
+  "weight_g": 220.3,
+  "max_power": 1602.0,
+  "io_voltage": 20.0
+}

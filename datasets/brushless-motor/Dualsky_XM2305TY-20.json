@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2305TY-20",
+  "name": "XM2305TY-20",
+  "manufacturer": "Dualsky",
+  "kv": 2370.0,
+  "resistance": 0.0482,
+  "io": 1.05,
+  "max_current": 30.0,
+  "weight_g": 28.1,
+  "max_power": 240.0,
+  "io_voltage": 7.0
+}

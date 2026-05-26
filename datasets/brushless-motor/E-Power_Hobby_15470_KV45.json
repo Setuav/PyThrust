@@ -1,0 +1,12 @@
+{
+  "id": "E-Power_Hobby_15470_KV45",
+  "name": "15470 KV45",
+  "manufacturer": "E-Power Hobby",
+  "kv": 45.0,
+  "resistance": 0.094,
+  "io": 0.9,
+  "max_current": 120.0,
+  "weight_g": 3177.4,
+  "max_power": 35000.0,
+  "io_voltage": 20.0
+}

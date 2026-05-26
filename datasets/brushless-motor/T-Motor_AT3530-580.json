@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT3530-580",
+  "name": "AT3530-580",
+  "manufacturer": "T-Motor",
+  "kv": 580.0,
+  "resistance": 0.018,
+  "io": 1.9,
+  "max_current": 65.0,
+  "weight_g": 298.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

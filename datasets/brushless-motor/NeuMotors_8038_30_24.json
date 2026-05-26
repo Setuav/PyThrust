@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_30_24",
+  "name": "8038/30/24",
+  "manufacturer": "NeuMotors",
+  "kv": 24.0,
+  "resistance": 0.3744,
+  "io": 0.27,
+  "max_current": 34.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

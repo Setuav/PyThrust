@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE1806-1400",
+  "name": "BE1806-1400",
+  "manufacturer": "DYS",
+  "kv": 1400.0,
+  "resistance": 0.52,
+  "io": 0.3,
+  "max_current": 5.4,
+  "weight_g": 18.1,
+  "max_power": 80.0,
+  "io_voltage": 11.1
+}

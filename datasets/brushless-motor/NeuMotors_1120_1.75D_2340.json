@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_1.75D_2340",
+  "name": "1120/1.75D 2340",
+  "manufacturer": "NeuMotors",
+  "kv": 2340.0,
+  "resistance": 0.01,
+  "io": 2.6,
+  "max_current": 62.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

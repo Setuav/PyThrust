@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_16_2700",
+  "name": "TS-EZ1520/16 2700",
+  "manufacturer": "Tenshock",
+  "kv": 2700.0,
+  "resistance": 0.028,
+  "io": 1.6,
+  "max_current": 40.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

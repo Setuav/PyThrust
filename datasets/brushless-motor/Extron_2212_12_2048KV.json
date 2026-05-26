@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2212_12_2048KV",
+  "name": "2212/12 2048KV",
+  "manufacturer": "Extron",
+  "kv": 2048.0,
+  "resistance": 0.0316,
+  "io": 1.9,
+  "max_current": 27.0,
+  "weight_g": 58.1,
+  "max_power": 405.0,
+  "io_voltage": 7.4
+}

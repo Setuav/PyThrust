@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N4250-05_KV950",
+  "name": "N4250-05 KV950",
+  "manufacturer": "EMP",
+  "kv": 950.0,
+  "resistance": 0.024,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 980.0,
+  "io_voltage": 11.0
+}

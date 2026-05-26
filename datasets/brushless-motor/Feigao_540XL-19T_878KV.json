@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-19T_878KV",
+  "name": "540XL-19T 878KV",
+  "manufacturer": "Feigao",
+  "kv": 878.0,
+  "resistance": 0.0411,
+  "io": 0.7,
+  "max_current": 35.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

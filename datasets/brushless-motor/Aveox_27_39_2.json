@@ -1,0 +1,12 @@
+{
+  "id": "Aveox_27_39_2",
+  "name": "27/39/2*",
+  "manufacturer": "Aveox",
+  "kv": 1562.0,
+  "resistance": 0.028,
+  "io": 1.15,
+  "max_current": 45.0,
+  "weight_g": 161.6,
+  "max_power": 486.0,
+  "io_voltage": 8.0
+}

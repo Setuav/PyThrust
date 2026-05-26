@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_2210-1420",
+  "name": "Rocket 2210-1420",
+  "manufacturer": "Exceed RC",
+  "kv": 1420.0,
+  "resistance": 0.102,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 50.2,
+  "max_power": 160.0,
+  "io_voltage": 8.0
+}

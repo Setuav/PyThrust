@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Nipple_2015-1260",
+  "name": "Nipple 2015-1260",
+  "manufacturer": "Brother Hobby",
+  "kv": 1260.0,
+  "resistance": 0.096,
+  "io": 0.73,
+  "max_current": 31.0,
+  "weight_g": 70.0,
+  "max_power": 386.0,
+  "io_voltage": 10.0
+}

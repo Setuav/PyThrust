@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_2_357",
+  "name": "8038/2/357",
+  "manufacturer": "NeuMotors",
+  "kv": 357.0,
+  "resistance": 0.0021,
+  "io": 4.05,
+  "max_current": 510.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

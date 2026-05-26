@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2814-1300",
+  "name": "2814-1300",
+  "manufacturer": "BadAss",
+  "kv": 1300.0,
+  "resistance": 0.025,
+  "io": 1.85,
+  "max_current": 60.0,
+  "weight_g": 117.1,
+  "max_power": 890.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_5.5_217",
+  "name": "4632/5.5/217",
+  "manufacturer": "NeuMotors",
+  "kv": 217.0,
+  "resistance": 0.06,
+  "io": 0.98,
+  "max_current": 98.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_A3210_800",
+  "name": "A3210 800",
+  "manufacturer": "Flash Hobby",
+  "kv": 800.0,
+  "resistance": 0.075,
+  "io": 0.75,
+  "max_current": 48.0,
+  "weight_g": 100.1,
+  "max_power": 1195.0,
+  "io_voltage": 10.0
+}

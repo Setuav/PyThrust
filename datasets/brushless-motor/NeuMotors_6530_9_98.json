@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6530_9_98",
+  "name": "6530/9/98",
+  "manufacturer": "NeuMotors",
+  "kv": 98.0,
+  "resistance": 0.096,
+  "io": 0.544,
+  "max_current": 80.0,
+  "weight_g": 741.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

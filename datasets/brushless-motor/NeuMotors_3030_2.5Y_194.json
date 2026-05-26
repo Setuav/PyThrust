@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3030_2.5Y_194",
+  "name": "3030/2.5Y 194",
+  "manufacturer": "NeuMotors",
+  "kv": 194.0,
+  "resistance": 0.023,
+  "io": 2.4,
+  "max_current": 291.0,
+  "weight_g": 2897.3,
+  "max_power": 30000.0,
+  "io_voltage": 10.0
+}

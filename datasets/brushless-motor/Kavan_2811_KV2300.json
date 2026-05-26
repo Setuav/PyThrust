@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_2811_KV2300",
+  "name": "2811 KV2300",
+  "manufacturer": "Kavan",
+  "kv": 2300.0,
+  "resistance": 0.088,
+  "io": 0.75,
+  "max_current": 15.0,
+  "weight_g": 20.1,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

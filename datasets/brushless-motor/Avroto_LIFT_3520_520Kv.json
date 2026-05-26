@@ -1,0 +1,12 @@
+{
+  "id": "Avroto_LIFT_3520_520Kv",
+  "name": "LIFT 3520 520Kv",
+  "manufacturer": "Avroto",
+  "kv": 520.0,
+  "resistance": 0.034,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 190.2,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

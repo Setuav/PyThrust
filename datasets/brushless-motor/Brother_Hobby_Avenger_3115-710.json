@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3115-710",
+  "name": "Avenger 3115-710",
+  "manufacturer": "Brother Hobby",
+  "kv": 710.0,
+  "resistance": 0.063,
+  "io": 1.54,
+  "max_current": 62.0,
+  "weight_g": 117.1,
+  "max_power": 1550.0,
+  "io_voltage": 10.0
+}

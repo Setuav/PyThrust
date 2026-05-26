@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_9.5_46",
+  "name": "12030/9.5/46",
+  "manufacturer": "NeuMotors",
+  "kv": 46.0,
+  "resistance": 0.0428,
+  "io": 1.2453,
+  "max_current": 127.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

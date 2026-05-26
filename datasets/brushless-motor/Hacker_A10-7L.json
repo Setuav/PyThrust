@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A10-7L",
+  "name": "A10-7L",
+  "manufacturer": "Hacker",
+  "kv": 2200.0,
+  "resistance": 0.11,
+  "io": 1.1,
+  "max_current": 8.0,
+  "weight_g": 20.1,
+  "max_power": 75.0,
+  "io_voltage": 8.4
+}

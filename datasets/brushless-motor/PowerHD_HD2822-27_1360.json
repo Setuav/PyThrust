@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD2822-27_1360",
+  "name": "HD2822-27/1360",
+  "manufacturer": "PowerHD",
+  "kv": 1360.0,
+  "resistance": 0.34,
+  "io": 0.4,
+  "max_current": 7.0,
+  "weight_g": 28.9,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN1018_KV72",
+  "name": "MN1018 KV72",
+  "manufacturer": "T-Motor",
+  "kv": 72.0,
+  "resistance": 0.038,
+  "io": 1.65,
+  "max_current": 79.0,
+  "weight_g": 1020.9,
+  "max_power": 6888.0,
+  "io_voltage": 10.0
+}

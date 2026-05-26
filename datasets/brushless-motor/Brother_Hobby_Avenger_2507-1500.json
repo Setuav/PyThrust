@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_2507-1500",
+  "name": "Avenger 2507-1500",
+  "manufacturer": "Brother Hobby",
+  "kv": 1500.0,
+  "resistance": 0.06348,
+  "io": 1.09,
+  "max_current": 45.0,
+  "weight_g": 40.0,
+  "max_power": 907.0,
+  "io_voltage": 10.0
+}

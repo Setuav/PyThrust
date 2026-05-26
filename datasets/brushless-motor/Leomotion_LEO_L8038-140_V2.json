@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8038-140_V2",
+  "name": "LEO L8038-140 V2",
+  "manufacturer": "Leomotion",
+  "kv": 142.0,
+  "resistance": 0.01,
+  "io": 2.7,
+  "max_current": 0.0,
+  "weight_g": 1971.4,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

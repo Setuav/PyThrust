@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_480_7.2V",
+  "name": "Permax 480 7.2V",
+  "manufacturer": "Multiplex",
+  "kv": 2459.0,
+  "resistance": 0.312,
+  "io": 0.92,
+  "max_current": 12.0,
+  "weight_g": 93.6,
+  "max_power": 280.0,
+  "io_voltage": 7.2
+}

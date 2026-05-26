@@ -1,0 +1,12 @@
+{
+  "id": "Airtek_Apex_Pro_2836-1500",
+  "name": "Apex Pro 2836-1500",
+  "manufacturer": "Airtek",
+  "kv": 1500.0,
+  "resistance": 0.048,
+  "io": 1.7,
+  "max_current": 40.0,
+  "weight_g": 70.9,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_3630_04_600",
+  "name": "3630/04 600",
+  "manufacturer": "RedRock",
+  "kv": 600.0,
+  "resistance": 0.014,
+  "io": 1.8,
+  "max_current": 75.0,
+  "weight_g": 295.1,
+  "max_power": 1525.0,
+  "io_voltage": 10.0
+}

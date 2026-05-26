@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_3.5D_1414",
+  "name": "1512/3.5D 1414",
+  "manufacturer": "NeuMotors",
+  "kv": 1414.0,
+  "resistance": 0.02,
+  "io": 1.3,
+  "max_current": 47.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

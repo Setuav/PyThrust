@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_2.5Y_1040",
+  "name": "1117/2.5Y 1040",
+  "manufacturer": "NeuMotors",
+  "kv": 1040.0,
+  "resistance": 0.055,
+  "io": 1.0,
+  "max_current": 28.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

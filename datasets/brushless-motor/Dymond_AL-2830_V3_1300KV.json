@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-2830_V3_1300KV",
+  "name": "AL-2830 V3 1300KV",
+  "manufacturer": "Dymond",
+  "kv": 1300.0,
+  "resistance": 0.1193,
+  "io": 1.21,
+  "max_current": 16.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 8.12
+}

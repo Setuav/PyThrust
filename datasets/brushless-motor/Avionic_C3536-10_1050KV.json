@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_C3536-10_1050KV",
+  "name": "C3536-10 1050KV",
+  "manufacturer": "Avionic",
+  "kv": 1050.0,
+  "resistance": 0.058,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 110.0,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

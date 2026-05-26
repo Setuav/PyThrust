@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4255EA-12",
+  "name": "XM4255EA-12",
+  "manufacturer": "Dualsky",
+  "kv": 520.0,
+  "resistance": 0.0233,
+  "io": 1.2,
+  "max_current": 56.0,
+  "weight_g": 269.3,
+  "max_power": 1344.0,
+  "io_voltage": 10.0
+}

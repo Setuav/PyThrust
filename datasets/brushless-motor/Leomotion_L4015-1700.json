@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4015-1700",
+  "name": "L4015-1700",
+  "manufacturer": "Leomotion",
+  "kv": 1700.0,
+  "resistance": 0.029,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

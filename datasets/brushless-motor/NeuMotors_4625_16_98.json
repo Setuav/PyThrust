@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_16_98",
+  "name": "4625/16/98",
+  "manufacturer": "NeuMotors",
+  "kv": 98.0,
+  "resistance": 0.412,
+  "io": 0.34,
+  "max_current": 34.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

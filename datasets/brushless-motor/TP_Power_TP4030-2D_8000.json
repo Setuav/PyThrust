@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4030-2D_8000",
+  "name": "TP4030-2D 8000",
+  "manufacturer": "TP Power",
+  "kv": 8000.0,
+  "resistance": 0.0006,
+  "io": 12.0,
+  "max_current": 480.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2815A3-1100kV",
+  "name": "BM2815A3-1100kV",
+  "manufacturer": "Detrum",
+  "kv": 1100.0,
+  "resistance": 0.103,
+  "io": 0.7,
+  "max_current": 21.0,
+  "weight_g": 64.9,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

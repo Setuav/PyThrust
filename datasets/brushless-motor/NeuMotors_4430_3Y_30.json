@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4430_3Y_30",
+  "name": "4430/3Y 30",
+  "manufacturer": "NeuMotors",
+  "kv": 30.0,
+  "resistance": 0.117,
+  "io": 1.0,
+  "max_current": 54.0,
+  "weight_g": 4135.1,
+  "max_power": 18000.0,
+  "io_voltage": 10.0
+}

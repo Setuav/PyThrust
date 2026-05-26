@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M35_IPE_TORQ_50KV",
+  "name": "M35 IPE TORQ 50KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 50.0,
+  "resistance": 0.0465,
+  "io": 2.5,
+  "max_current": 163.0,
+  "weight_g": 1861.4,
+  "max_power": 15928.0,
+  "io_voltage": 40.0
+}

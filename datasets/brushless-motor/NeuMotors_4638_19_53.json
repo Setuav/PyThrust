@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_19_53",
+  "name": "4638/19/53",
+  "manufacturer": "NeuMotors",
+  "kv": 53.0,
+  "resistance": 0.842,
+  "io": 0.284,
+  "max_current": 28.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

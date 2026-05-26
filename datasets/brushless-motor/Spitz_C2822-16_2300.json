@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C2822-16_2300",
+  "name": "C2822-16 2300",
+  "manufacturer": "Spitz",
+  "kv": 2300.0,
+  "resistance": 0.125,
+  "io": 0.5,
+  "max_current": 18.0,
+  "weight_g": 30.1,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2217-1150",
+  "name": "EP 2217-1150",
+  "manufacturer": "EP Product",
+  "kv": 1180.0,
+  "resistance": 0.105,
+  "io": 0.75,
+  "max_current": 24.0,
+  "weight_g": 69.2,
+  "max_power": 265.0,
+  "io_voltage": 8.0
+}

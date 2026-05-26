@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RX2206-11_2350Kv",
+  "name": "RX2206-11 2350Kv",
+  "manufacturer": "Lumenier",
+  "kv": 2350.0,
+  "resistance": 0.26,
+  "io": 0.81,
+  "max_current": 32.0,
+  "weight_g": 26.6,
+  "max_power": 260.0,
+  "io_voltage": 12.6
+}

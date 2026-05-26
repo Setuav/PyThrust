@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2808_20_1366KV",
+  "name": "2808/20 1366KV",
+  "manufacturer": "Extron",
+  "kv": 1366.0,
+  "resistance": 0.052,
+  "io": 1.7,
+  "max_current": 24.0,
+  "weight_g": 81.1,
+  "max_power": 360.0,
+  "io_voltage": 11.1
+}

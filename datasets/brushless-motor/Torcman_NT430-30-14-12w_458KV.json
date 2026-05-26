@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-30-14-12w_458KV",
+  "name": "NT430-30-14-12w 458KV",
+  "manufacturer": "Torcman",
+  "kv": 458.0,
+  "resistance": 0.0175,
+  "io": 2.6,
+  "max_current": 75.0,
+  "weight_g": 470.3,
+  "max_power": 1500.0,
+  "io_voltage": 12.0
+}

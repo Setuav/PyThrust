@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1206_7500KV",
+  "name": "Toka 1206 7500KV",
+  "manufacturer": "Mamba",
+  "kv": 7500.0,
+  "resistance": 0.076,
+  "io": 0.95,
+  "max_current": 14.0,
+  "weight_g": 10.8,
+  "max_power": 114.0,
+  "io_voltage": 4.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HET_700-68_KV1500",
+  "name": "700-68 KV1500",
+  "manufacturer": "HET",
+  "kv": 1500.0,
+  "resistance": 0.0099,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 330.3,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

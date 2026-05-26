@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECO_Micro_1404_KV3700",
+  "name": "ECO Micro 1404 KV3700",
+  "manufacturer": "EMAX",
+  "kv": 3700.0,
+  "resistance": 0.265,
+  "io": 0.7,
+  "max_current": 12.0,
+  "weight_g": 8.5,
+  "max_power": 170.0,
+  "io_voltage": 10.0
+}

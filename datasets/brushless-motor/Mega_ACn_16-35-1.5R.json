@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_16-35-1.5R",
+  "name": "ACn 16-35-1.5R",
+  "manufacturer": "Mega",
+  "kv": 2700.0,
+  "resistance": 0.014,
+  "io": 3.5,
+  "max_current": 60.0,
+  "weight_g": 155.1,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

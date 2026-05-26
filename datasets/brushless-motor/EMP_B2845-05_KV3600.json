@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2845-05_KV3600",
+  "name": "B2845-05 KV3600",
+  "manufacturer": "EMP",
+  "kv": 3600.0,
+  "resistance": 0.018,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 125.0,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD2826-09_1820",
+  "name": "HD2826-09/1820",
+  "manufacturer": "PowerHD",
+  "kv": 1820.0,
+  "resistance": 0.061,
+  "io": 1.1,
+  "max_current": 22.0,
+  "weight_g": 45.1,
+  "max_power": 233.0,
+  "io_voltage": 10.0
+}

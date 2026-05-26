@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3030_3Y_155",
+  "name": "3030/3Y 155",
+  "manufacturer": "NeuMotors",
+  "kv": 155.0,
+  "resistance": 0.032,
+  "io": 2.0,
+  "max_current": 233.0,
+  "weight_g": 2897.3,
+  "max_power": 30000.0,
+  "io_voltage": 10.0
+}

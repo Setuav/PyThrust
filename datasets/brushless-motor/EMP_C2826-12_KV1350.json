@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2826-12_KV1350",
+  "name": "C2826-12 KV1350",
+  "manufacturer": "EMP",
+  "kv": 1350.0,
+  "resistance": 0.137,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 50.2,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

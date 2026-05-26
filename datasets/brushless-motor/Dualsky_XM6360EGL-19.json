@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6360EGL-19",
+  "name": "XM6360EGL-19",
+  "manufacturer": "Dualsky",
+  "kv": 220.0,
+  "resistance": 0.028,
+  "io": 1.2,
+  "max_current": 100.0,
+  "weight_g": 725.5,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

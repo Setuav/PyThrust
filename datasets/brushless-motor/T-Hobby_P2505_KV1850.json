@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_P2505_KV1850",
+  "name": "P2505 KV1850",
+  "manufacturer": "T-Hobby",
+  "kv": 1850.0,
+  "resistance": 0.069,
+  "io": 1.1,
+  "max_current": 47.0,
+  "weight_g": 30.9,
+  "max_power": 1217.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q100-7L",
+  "name": "Q100-7L",
+  "manufacturer": "Hacker",
+  "kv": 99.0,
+  "resistance": 0.0053,
+  "io": 3.16,
+  "max_current": 240.0,
+  "weight_g": 2301.7,
+  "max_power": 10200.0,
+  "io_voltage": 8.4
+}

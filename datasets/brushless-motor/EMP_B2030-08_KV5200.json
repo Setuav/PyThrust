@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2030-08_KV5200",
+  "name": "B2030-08 KV5200",
+  "manufacturer": "EMP",
+  "kv": 5200.0,
+  "resistance": 0.084,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 47.9,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

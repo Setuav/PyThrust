@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2230EG-11",
+  "name": "XM2230EG-11",
+  "manufacturer": "Dualsky",
+  "kv": 2200.0,
+  "resistance": 0.045,
+  "io": 1.7,
+  "max_current": 34.0,
+  "weight_g": 42.0,
+  "max_power": 252.0,
+  "io_voltage": 10.0
+}

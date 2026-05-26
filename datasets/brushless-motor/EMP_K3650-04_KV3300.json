@@ -1,0 +1,12 @@
+{
+  "id": "EMP_K3650-04_KV3300",
+  "name": "K3650-04 KV3300",
+  "manufacturer": "EMP",
+  "kv": 3300.0,
+  "resistance": 0.01,
+  "io": 5.0,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 1060.0,
+  "io_voltage": 10.0
+}

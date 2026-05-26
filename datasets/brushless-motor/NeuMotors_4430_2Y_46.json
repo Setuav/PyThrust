@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4430_2Y_46",
+  "name": "4430/2Y 46",
+  "manufacturer": "NeuMotors",
+  "kv": 46.0,
+  "resistance": 0.052,
+  "io": 1.5,
+  "max_current": 83.0,
+  "weight_g": 4135.1,
+  "max_power": 18000.0,
+  "io_voltage": 10.0
+}

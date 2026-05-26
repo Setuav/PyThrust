@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2203-1600",
+  "name": "DM2203-1600",
+  "manufacturer": "Pro-Tronik",
+  "kv": 1677.0,
+  "resistance": 0.342,
+  "io": 0.33,
+  "max_current": 9.0,
+  "weight_g": 17.0,
+  "max_power": 50.0,
+  "io_voltage": 8.4
+}

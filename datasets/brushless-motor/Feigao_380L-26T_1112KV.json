@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-26T_1112KV",
+  "name": "380L-26T 1112KV",
+  "manufacturer": "Feigao",
+  "kv": 1112.0,
+  "resistance": 0.12,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

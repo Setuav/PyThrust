@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4025_560KV",
+  "name": "4025 560KV",
+  "manufacturer": "Xnova",
+  "kv": 560.0,
+  "resistance": 0.019,
+  "io": 0.9,
+  "max_current": 68.0,
+  "weight_g": 384.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

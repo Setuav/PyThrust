@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2204_28",
+  "name": "CM-2204/28",
+  "manufacturer": "Cobra",
+  "kv": 2300.0,
+  "resistance": 0.084,
+  "io": 0.66,
+  "max_current": 17.0,
+  "weight_g": 24.7,
+  "max_power": 125.0,
+  "io_voltage": 8.0
+}

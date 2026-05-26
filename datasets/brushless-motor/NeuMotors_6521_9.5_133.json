@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_9.5_133",
+  "name": "6521/9.5/133",
+  "manufacturer": "NeuMotors",
+  "kv": 133.0,
+  "resistance": 0.08,
+  "io": 0.516,
+  "max_current": 76.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

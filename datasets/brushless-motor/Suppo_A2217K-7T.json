@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2217K-7T",
+  "name": "A2217K-7T",
+  "manufacturer": "Suppo",
+  "kv": 1250.0,
+  "resistance": 0.15,
+  "io": 1.3,
+  "max_current": 20.0,
+  "weight_g": 70.0,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

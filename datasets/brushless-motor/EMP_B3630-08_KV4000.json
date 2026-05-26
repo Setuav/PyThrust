@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3630-08_KV4000",
+  "name": "B3630-08 KV4000",
+  "manufacturer": "EMP",
+  "kv": 4000.0,
+  "resistance": 0.03,
+  "io": 4.0,
+  "max_current": 0.0,
+  "weight_g": 120.2,
+  "max_power": 705.0,
+  "io_voltage": 10.0
+}

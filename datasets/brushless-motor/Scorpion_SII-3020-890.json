@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-3020-890",
+  "name": "SII-3020-890",
+  "manufacturer": "Scorpion",
+  "kv": 890.0,
+  "resistance": 0.02,
+  "io": 1.42,
+  "max_current": 45.0,
+  "weight_g": 166.1,
+  "max_power": 780.0,
+  "io_voltage": 10.0
+}

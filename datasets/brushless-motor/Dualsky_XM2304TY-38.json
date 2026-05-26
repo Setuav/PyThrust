@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2304TY-38",
+  "name": "XM2304TY-38",
+  "manufacturer": "Dualsky",
+  "kv": 1600.0,
+  "resistance": 0.151,
+  "io": 0.55,
+  "max_current": 16.0,
+  "weight_g": 24.9,
+  "max_power": 196.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_G2204-2300",
+  "name": "G2204-2300",
+  "manufacturer": "RCinPower",
+  "kv": 2300.0,
+  "resistance": 0.16,
+  "io": 0.5,
+  "max_current": 23.0,
+  "weight_g": 30.1,
+  "max_power": 340.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1924_2.5Y_165",
+  "name": "1924/2.5Y 165",
+  "manufacturer": "NeuMotors",
+  "kv": 165.0,
+  "resistance": 0.114,
+  "io": 0.6,
+  "max_current": 28.0,
+  "weight_g": 623.4,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

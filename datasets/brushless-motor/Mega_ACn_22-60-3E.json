@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-60-3E",
+  "name": "ACn 22-60-3E",
+  "manufacturer": "Mega",
+  "kv": 460.0,
+  "resistance": 0.053,
+  "io": 1.1,
+  "max_current": 70.0,
+  "weight_g": 430.3,
+  "max_power": 1300.0,
+  "io_voltage": 12.0
+}

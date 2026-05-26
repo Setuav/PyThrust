@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2630-750",
+  "name": "DM2630-750",
+  "manufacturer": "Pro-Tronik",
+  "kv": 750.0,
+  "resistance": 0.044,
+  "io": 1.42,
+  "max_current": 35.0,
+  "weight_g": 171.2,
+  "max_power": 500.0,
+  "io_voltage": 8.4
+}

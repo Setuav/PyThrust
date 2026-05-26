@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_1.75Y_571",
+  "name": "1533/1.75Y 571",
+  "manufacturer": "NeuMotors",
+  "kv": 571.0,
+  "resistance": 0.0404,
+  "io": 1.43,
+  "max_current": 57.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

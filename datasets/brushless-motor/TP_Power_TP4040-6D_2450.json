@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4040-6D_2450",
+  "name": "TP4040-6D 2450",
+  "manufacturer": "TP Power",
+  "kv": 2450.0,
+  "resistance": 0.0034,
+  "io": 3.9,
+  "max_current": 290.0,
+  "weight_g": 396.3,
+  "max_power": 4200.0,
+  "io_voltage": 8.0
+}

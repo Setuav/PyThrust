@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3120_KV585_V3_6S",
+  "name": "X3120 KV585 V3 6S",
+  "manufacturer": "SunnySky",
+  "kv": 585.0,
+  "resistance": 0.044,
+  "io": 1.0,
+  "max_current": 65.0,
+  "weight_g": 159.0,
+  "max_power": 1625.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2206_Lightning_2450KV",
+  "name": "2206 Lightning 2450KV",
+  "manufacturer": "Xnova",
+  "kv": 2450.0,
+  "resistance": 0.045,
+  "io": 2.0,
+  "max_current": 42.0,
+  "weight_g": 26.9,
+  "max_power": 706.0,
+  "io_voltage": 10.0
+}

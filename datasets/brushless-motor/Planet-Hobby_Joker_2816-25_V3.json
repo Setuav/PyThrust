@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2816-25_V3",
+  "name": "Joker 2816-25 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1800.0,
+  "resistance": 0.276,
+  "io": 0.4,
+  "max_current": 10.0,
+  "weight_g": 19.0,
+  "max_power": 80.0,
+  "io_voltage": 10.0
+}

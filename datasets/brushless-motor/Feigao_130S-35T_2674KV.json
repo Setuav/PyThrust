@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-35T_2674KV",
+  "name": "130S-35T 2674KV",
+  "manufacturer": "Feigao",
+  "kv": 2674.0,
+  "resistance": 0.2683,
+  "io": 0.3,
+  "max_current": 6.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

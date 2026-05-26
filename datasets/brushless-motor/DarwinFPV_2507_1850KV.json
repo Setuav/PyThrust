@@ -1,0 +1,12 @@
+{
+  "id": "DarwinFPV_2507_1850KV",
+  "name": "2507 1850KV",
+  "manufacturer": "DarwinFPV",
+  "kv": 1850.0,
+  "resistance": 0.0464,
+  "io": 2.01,
+  "max_current": 55.0,
+  "weight_g": 45.1,
+  "max_power": 1322.0,
+  "io_voltage": 10.0
+}

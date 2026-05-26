@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Power_60_BL_470",
+  "name": "Power 60 BL 470",
+  "manufacturer": "E-flite",
+  "kv": 470.0,
+  "resistance": 0.02,
+  "io": 2.1,
+  "max_current": 80.0,
+  "weight_g": 380.2,
+  "max_power": 1800.0,
+  "io_voltage": 20.0
+}

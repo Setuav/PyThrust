@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-8D_7050",
+  "name": "TP2020-8D 7050",
+  "manufacturer": "TP Power",
+  "kv": 7050.0,
+  "resistance": 0.0212,
+  "io": 1.4,
+  "max_current": 39.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

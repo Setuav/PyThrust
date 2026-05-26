@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1408_3950",
+  "name": "SZ1408 3950",
+  "manufacturer": "MEPS",
+  "kv": 3950.0,
+  "resistance": 0.114,
+  "io": 0.8,
+  "max_current": 19.0,
+  "weight_g": 15.9,
+  "max_power": 239.0,
+  "io_voltage": 10.0
+}

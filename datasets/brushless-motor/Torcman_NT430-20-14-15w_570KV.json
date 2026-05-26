@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-20-14-15w_570KV",
+  "name": "NT430-20-14-15w 570KV",
+  "manufacturer": "Torcman",
+  "kv": 570.0,
+  "resistance": 0.017,
+  "io": 2.9,
+  "max_current": 60.0,
+  "weight_g": 375.3,
+  "max_power": 1000.0,
+  "io_voltage": 12.0
+}

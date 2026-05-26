@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_2Y_9100",
+  "name": "1102/2Y 9100",
+  "manufacturer": "NeuMotors",
+  "kv": 9100.0,
+  "resistance": 0.005,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

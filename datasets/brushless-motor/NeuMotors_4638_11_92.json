@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_11_92",
+  "name": "4638/11/92",
+  "manufacturer": "NeuMotors",
+  "kv": 92.0,
+  "resistance": 0.285,
+  "io": 0.491,
+  "max_current": 49.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

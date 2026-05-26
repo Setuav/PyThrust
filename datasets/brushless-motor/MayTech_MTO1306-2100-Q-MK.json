@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO1306-2100-Q-MK",
+  "name": "MTO1306-2100-Q-MK",
+  "manufacturer": "MayTech",
+  "kv": 2100.0,
+  "resistance": 0.105,
+  "io": 0.3,
+  "max_current": 9.0,
+  "weight_g": 13.0,
+  "max_power": 65.0,
+  "io_voltage": 7.4
+}

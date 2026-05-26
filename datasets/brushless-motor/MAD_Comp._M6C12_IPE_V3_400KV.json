@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C12_IPE_V3_400KV",
+  "name": "M6C12 IPE V3 400KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 400.0,
+  "resistance": 0.017,
+  "io": 2.5,
+  "max_current": 76.0,
+  "weight_g": 290.3,
+  "max_power": 1766.0,
+  "io_voltage": 20.0
+}

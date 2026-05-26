@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_15_32",
+  "name": "8057/15/32",
+  "manufacturer": "NeuMotors",
+  "kv": 32.0,
+  "resistance": 0.1334,
+  "io": 0.54,
+  "max_current": 68.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

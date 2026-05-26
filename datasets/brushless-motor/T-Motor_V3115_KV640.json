@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V3115_KV640",
+  "name": "V3115 KV640",
+  "manufacturer": "T-Motor",
+  "kv": 640.0,
+  "resistance": 0.06713,
+  "io": 1.1,
+  "max_current": 62.0,
+  "weight_g": 113.1,
+  "max_power": 1927.0,
+  "io_voltage": 10.0
+}

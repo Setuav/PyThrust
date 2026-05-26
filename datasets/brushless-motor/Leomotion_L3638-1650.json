@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3638-1650",
+  "name": "L3638-1650",
+  "manufacturer": "Leomotion",
+  "kv": 1650.0,
+  "resistance": 0.012,
+  "io": 2.25,
+  "max_current": 0.0,
+  "weight_g": 298.2,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

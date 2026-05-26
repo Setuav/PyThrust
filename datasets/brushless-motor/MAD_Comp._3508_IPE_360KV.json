@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._3508_IPE_360KV",
+  "name": "3508 IPE 360KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 360.0,
+  "resistance": 0.266,
+  "io": 0.37,
+  "max_current": 10.0,
+  "weight_g": 98.9,
+  "max_power": 183.0,
+  "io_voltage": 20.0
+}

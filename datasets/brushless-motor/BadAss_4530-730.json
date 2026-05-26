@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4530-730",
+  "name": "4530-730",
+  "manufacturer": "BadAss",
+  "kv": 730.0,
+  "resistance": 0.007,
+  "io": 4.94,
+  "max_current": 150.0,
+  "weight_g": 528.4,
+  "max_power": 2780.0,
+  "io_voltage": 10.0
+}

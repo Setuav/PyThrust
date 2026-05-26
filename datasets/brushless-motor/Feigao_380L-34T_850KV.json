@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-34T_850KV",
+  "name": "380L-34T 850KV",
+  "manufacturer": "Feigao",
+  "kv": 850.0,
+  "resistance": 0.2052,
+  "io": 0.2,
+  "max_current": 12.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

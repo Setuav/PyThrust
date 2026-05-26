@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2208_KV1260_2-4S",
+  "name": "X2208 KV1260 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1260.0,
+  "resistance": 0.122,
+  "io": 0.4,
+  "max_current": 15.0,
+  "weight_g": 45.9,
+  "max_power": 168.0,
+  "io_voltage": 10.0
+}

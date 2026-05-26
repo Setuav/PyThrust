@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-1535",
+  "name": "4610MC-1535",
+  "manufacturer": "NeuMotors",
+  "kv": 1535.0,
+  "resistance": 0.005,
+  "io": 0.9,
+  "max_current": 179.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3013-4550-V2",
+  "name": "L3013-4550-V2",
+  "manufacturer": "Leomotion",
+  "kv": 4550.0,
+  "resistance": 0.013,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 79.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

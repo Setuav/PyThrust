@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_4.25D_932",
+  "name": "1515/4.25D 932",
+  "manufacturer": "NeuMotors",
+  "kv": 932.0,
+  "resistance": 0.0361,
+  "io": 1.06,
+  "max_current": 31.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

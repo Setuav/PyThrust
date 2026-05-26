@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_16-7-5",
+  "name": "ACn 16-7-5",
+  "manufacturer": "Mega",
+  "kv": 3450.0,
+  "resistance": 0.048,
+  "io": 1.2,
+  "max_current": 20.0,
+  "weight_g": 47.9,
+  "max_power": 150.0,
+  "io_voltage": 8.4
+}

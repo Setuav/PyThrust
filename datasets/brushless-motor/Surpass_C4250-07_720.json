@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C4250-07_720",
+  "name": "C4250-07 720",
+  "manufacturer": "Surpass",
+  "kv": 720.0,
+  "resistance": 0.0298,
+  "io": 1.8,
+  "max_current": 56.0,
+  "weight_g": 205.3,
+  "max_power": 1120.0,
+  "io_voltage": 10.0
+}

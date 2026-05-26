@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D4245_EVO_800",
+  "name": "D4245 EVO 800",
+  "manufacturer": "Flash Hobby",
+  "kv": 800.0,
+  "resistance": 0.0304,
+  "io": 1.7,
+  "max_current": 59.0,
+  "weight_g": 174.1,
+  "max_power": 1211.0,
+  "io_voltage": 10.0
+}

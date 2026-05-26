@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56123_11Y",
+  "name": "SSS 56123 11Y",
+  "manufacturer": "TFL Hobby",
+  "kv": 250.0,
+  "resistance": 0.0473,
+  "io": 1.0,
+  "max_current": 100.0,
+  "weight_g": 1331.0,
+  "max_power": 15000.0,
+  "io_voltage": 11.1
+}

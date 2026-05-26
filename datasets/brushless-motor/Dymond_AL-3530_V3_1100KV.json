@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-3530_V3_1100KV",
+  "name": "AL-3530 V3 1100KV",
+  "manufacturer": "Dymond",
+  "kv": 1100.0,
+  "resistance": 0.0437,
+  "io": 0.69,
+  "max_current": 27.0,
+  "weight_g": 79.9,
+  "max_power": 300.0,
+  "io_voltage": 8.28
+}

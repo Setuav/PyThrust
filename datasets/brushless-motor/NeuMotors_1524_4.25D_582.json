@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_4.25D_582",
+  "name": "1524/4.25D 582",
+  "manufacturer": "NeuMotors",
+  "kv": 582.0,
+  "resistance": 0.058,
+  "io": 1.06,
+  "max_current": 39.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

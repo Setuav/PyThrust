@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_4D_619",
+  "name": "1524/4D 619",
+  "manufacturer": "NeuMotors",
+  "kv": 619.0,
+  "resistance": 0.0512,
+  "io": 1.13,
+  "max_current": 41.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

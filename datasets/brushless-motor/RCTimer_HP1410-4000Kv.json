@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_HP1410-4000Kv",
+  "name": "HP1410-4000Kv",
+  "manufacturer": "RCTimer",
+  "kv": 4000.0,
+  "resistance": 0.7,
+  "io": 0.4,
+  "max_current": 9.0,
+  "weight_g": 5.1,
+  "max_power": 63.0,
+  "io_voltage": 10.0
+}

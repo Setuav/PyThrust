@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_SmooX1507Plus_M2-2080",
+  "name": "SmooX1507Plus M2-2080",
+  "manufacturer": "RCinPower",
+  "kv": 2080.0,
+  "resistance": 0.165,
+  "io": 0.75,
+  "max_current": 19.0,
+  "weight_g": 17.0,
+  "max_power": 456.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_2.25D_733",
+  "name": "1536/2.25D 733",
+  "manufacturer": "NeuMotors",
+  "kv": 733.0,
+  "resistance": 0.0243,
+  "io": 2.0,
+  "max_current": 43.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

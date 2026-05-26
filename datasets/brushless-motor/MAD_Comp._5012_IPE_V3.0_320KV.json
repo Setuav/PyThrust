@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5012_IPE_V3.0_320KV",
+  "name": "5012 IPE V3.0 320KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 320.0,
+  "resistance": 0.049,
+  "io": 1.4,
+  "max_current": 44.0,
+  "weight_g": 189.1,
+  "max_power": 1007.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_5022-0380_V3",
+  "name": "LEO 5022-0380 V3",
+  "manufacturer": "Leomotion",
+  "kv": 380.0,
+  "resistance": 0.015,
+  "io": 1.9,
+  "max_current": 100.0,
+  "weight_g": 515.4,
+  "max_power": 2400.0,
+  "io_voltage": 10.0
+}

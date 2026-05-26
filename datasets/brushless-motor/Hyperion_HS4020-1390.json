@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4020-1390",
+  "name": "HS4020-1390",
+  "manufacturer": "Hyperion",
+  "kv": 1390.0,
+  "resistance": 0.007,
+  "io": 3.45,
+  "max_current": 120.0,
+  "weight_g": 284.3,
+  "max_power": 2550.0,
+  "io_voltage": 10.0
+}

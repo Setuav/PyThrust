@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_3508-640",
+  "name": "3508-640",
+  "manufacturer": "MultiStar",
+  "kv": 640.0,
+  "resistance": 0.12,
+  "io": 0.6,
+  "max_current": 30.0,
+  "weight_g": 98.1,
+  "max_power": 550.0,
+  "io_voltage": 11.0
+}

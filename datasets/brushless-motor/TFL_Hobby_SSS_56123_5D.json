@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56123_5D",
+  "name": "SSS 56123 5D",
+  "manufacturer": "TFL Hobby",
+  "kv": 1100.0,
+  "resistance": 0.0039,
+  "io": 7.7,
+  "max_current": 420.0,
+  "weight_g": 1331.0,
+  "max_power": 15000.0,
+  "io_voltage": 11.1
+}

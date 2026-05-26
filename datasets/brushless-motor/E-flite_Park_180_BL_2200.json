@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_180_BL_2200",
+  "name": "Park 180 BL 2200",
+  "manufacturer": "E-flite",
+  "kv": 2200.0,
+  "resistance": 0.91,
+  "io": 0.3,
+  "max_current": 3.2,
+  "weight_g": 8.5,
+  "max_power": 30.0,
+  "io_voltage": 8.0
+}

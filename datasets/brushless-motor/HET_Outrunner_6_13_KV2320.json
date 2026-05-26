@@ -1,0 +1,12 @@
+{
+  "id": "HET_Outrunner_6_13_KV2320",
+  "name": "Outrunner 6/13 KV2320",
+  "manufacturer": "HET",
+  "kv": 2320.0,
+  "resistance": 0.073,
+  "io": 0.75,
+  "max_current": 14.0,
+  "weight_g": 35.2,
+  "max_power": 140.0,
+  "io_voltage": 8.4
+}

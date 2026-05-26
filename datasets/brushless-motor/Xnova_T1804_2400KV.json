@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_T1804_2400KV",
+  "name": "T1804 2400KV",
+  "manufacturer": "Xnova",
+  "kv": 2400.0,
+  "resistance": 0.2,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 13.9,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

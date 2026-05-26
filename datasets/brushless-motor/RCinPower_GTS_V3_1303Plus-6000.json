@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_1303Plus-6000",
+  "name": "GTS V3 1303Plus-6000",
+  "manufacturer": "RCinPower",
+  "kv": 6000.0,
+  "resistance": 0.166,
+  "io": 0.7,
+  "max_current": 17.0,
+  "weight_g": 5.7,
+  "max_power": 250.0,
+  "io_voltage": 5.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-26M_EVO",
+  "name": "A20-26M EVO",
+  "manufacturer": "Hacker",
+  "kv": 1130.0,
+  "resistance": 0.117,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 42.0,
+  "max_power": 150.0,
+  "io_voltage": 8.4
+}

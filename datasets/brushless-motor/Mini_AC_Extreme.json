@@ -1,0 +1,12 @@
+{
+  "id": "Mini_AC_Extreme",
+  "name": "Extreme",
+  "manufacturer": "Mini AC",
+  "kv": 6370.0,
+  "resistance": 0.045,
+  "io": 3.9,
+  "max_current": 28.0,
+  "weight_g": 77.1,
+  "max_power": 231.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-852",
+  "name": "4610MC-852",
+  "manufacturer": "NeuMotors",
+  "kv": 852.0,
+  "resistance": 0.015,
+  "io": 0.5,
+  "max_current": 120.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

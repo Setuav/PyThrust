@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G90_5625-KV330",
+  "name": "G90 5625-KV330",
+  "manufacturer": "TomCat",
+  "kv": 330.0,
+  "resistance": 0.038,
+  "io": 1.8,
+  "max_current": 67.0,
+  "weight_g": 430.3,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W28-26_KV1900",
+  "name": "W28-26 KV1900",
+  "manufacturer": "HangLi",
+  "kv": 1900.0,
+  "resistance": 0.0606,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 41.1,
+  "max_power": 220.0,
+  "io_voltage": 7.4
+}

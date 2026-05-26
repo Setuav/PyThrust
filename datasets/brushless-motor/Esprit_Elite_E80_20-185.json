@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E80_20-185",
+  "name": "Elite E80/20-185",
+  "manufacturer": "Esprit",
+  "kv": 185.0,
+  "resistance": 0.0197,
+  "io": 5.9,
+  "max_current": 125.0,
+  "weight_g": 995.6,
+  "max_power": 5500.0,
+  "io_voltage": 30.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_EX3115-450",
+  "name": "EX3115-450",
+  "manufacturer": "RCinPower",
+  "kv": 450.0,
+  "resistance": 0.068,
+  "io": 1.1,
+  "max_current": 45.0,
+  "weight_g": 115.1,
+  "max_power": 2160.0,
+  "io_voltage": 10.0
+}

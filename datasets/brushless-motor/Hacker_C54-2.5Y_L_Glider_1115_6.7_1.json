@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-2.5Y_L_Glider_1115_6.7_1",
+  "name": "C54-2.5Y L Glider 1115 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1115.0,
+  "resistance": 0.021,
+  "io": 1.9,
+  "max_current": 90.0,
+  "weight_g": 445.4,
+  "max_power": 3500.0,
+  "io_voltage": 37.0
+}

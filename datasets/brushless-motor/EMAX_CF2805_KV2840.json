@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_CF2805_KV2840",
+  "name": "CF2805 KV2840",
+  "manufacturer": "EMAX",
+  "kv": 2840.0,
+  "resistance": 0.12,
+  "io": 2.2,
+  "max_current": 14.0,
+  "weight_g": 28.9,
+  "max_power": 121.0,
+  "io_voltage": 10.0
+}

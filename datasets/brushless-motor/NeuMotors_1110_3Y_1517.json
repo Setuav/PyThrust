@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_3Y_1517",
+  "name": "1110/3Y 1517",
+  "manufacturer": "NeuMotors",
+  "kv": 1517.0,
+  "resistance": 0.045,
+  "io": 0.8,
+  "max_current": 25.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

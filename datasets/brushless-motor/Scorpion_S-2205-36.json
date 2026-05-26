@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-2205-36",
+  "name": "S-2205-36",
+  "manufacturer": "Scorpion",
+  "kv": 1670.0,
+  "resistance": 0.164,
+  "io": 0.551,
+  "max_current": 10.0,
+  "weight_g": 32.0,
+  "max_power": 110.0,
+  "io_voltage": 11.0
+}

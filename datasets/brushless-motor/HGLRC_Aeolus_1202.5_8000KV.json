@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1202.5_8000KV",
+  "name": "Aeolus 1202.5 8000KV",
+  "manufacturer": "HGLRC",
+  "kv": 8000.0,
+  "resistance": 0.23,
+  "io": 0.9,
+  "max_current": 7.5,
+  "weight_g": 4.0,
+  "max_power": 85.0,
+  "io_voltage": 10.0
+}

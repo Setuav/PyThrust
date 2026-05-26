@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-4130_16",
+  "name": "C-4130/16",
+  "manufacturer": "Cobra",
+  "kv": 390.0,
+  "resistance": 0.032,
+  "io": 1.12,
+  "max_current": 55.0,
+  "weight_g": 396.9,
+  "max_power": 1220.0,
+  "io_voltage": 20.0
+}

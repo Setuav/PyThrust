@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_3.75D_372",
+  "name": "2020/3.75D 372",
+  "manufacturer": "NeuMotors",
+  "kv": 372.0,
+  "resistance": 0.033,
+  "io": 1.35,
+  "max_current": 65.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

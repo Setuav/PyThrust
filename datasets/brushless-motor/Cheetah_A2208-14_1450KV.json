@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2208-14_1450KV",
+  "name": "A2208-14 1450KV",
+  "manufacturer": "Cheetah",
+  "kv": 1450.0,
+  "resistance": 0.14,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 39.1,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

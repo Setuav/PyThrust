@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3548-06_KV790",
+  "name": "C3548-06 KV790",
+  "manufacturer": "EMP",
+  "kv": 790.0,
+  "resistance": 0.054,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 780.0,
+  "io_voltage": 10.0
+}

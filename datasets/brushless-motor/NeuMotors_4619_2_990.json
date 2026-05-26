@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_2_990",
+  "name": "4619/2/990",
+  "manufacturer": "NeuMotors",
+  "kv": 990.0,
+  "resistance": 0.0055,
+  "io": 2.7,
+  "max_current": 269.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

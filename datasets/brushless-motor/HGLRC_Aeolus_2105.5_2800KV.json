@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2105.5_2800KV",
+  "name": "Aeolus 2105.5 2800KV",
+  "manufacturer": "HGLRC",
+  "kv": 2800.0,
+  "resistance": 0.07,
+  "io": 1.4,
+  "max_current": 38.0,
+  "weight_g": 21.0,
+  "max_power": 603.0,
+  "io_voltage": 10.0
+}

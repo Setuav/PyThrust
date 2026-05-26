@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2826-1360",
+  "name": "2826-1360",
+  "manufacturer": "BadAss",
+  "kv": 1360.0,
+  "resistance": 0.013,
+  "io": 3.7,
+  "max_current": 95.0,
+  "weight_g": 186.0,
+  "max_power": 1410.0,
+  "io_voltage": 10.0
+}

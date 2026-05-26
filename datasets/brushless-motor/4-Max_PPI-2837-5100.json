@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-2837-5100",
+  "name": "PPI-2837-5100",
+  "manufacturer": "4-Max",
+  "kv": 5100.0,
+  "resistance": 0.025,
+  "io": 3.0,
+  "max_current": 32.0,
+  "weight_g": 96.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

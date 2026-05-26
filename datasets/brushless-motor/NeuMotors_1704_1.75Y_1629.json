@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_1.75Y_1629",
+  "name": "1704/1.75Y 1629",
+  "manufacturer": "NeuMotors",
+  "kv": 1629.0,
+  "resistance": 0.02,
+  "io": 1.49,
+  "max_current": 47.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYS_SE1806_PRO-2550",
+  "name": "SE1806 PRO-2550",
+  "manufacturer": "DYS",
+  "kv": 2550.0,
+  "resistance": 0.1,
+  "io": 0.7,
+  "max_current": 19.0,
+  "weight_g": 23.0,
+  "max_power": 313.0,
+  "io_voltage": 14.8
+}

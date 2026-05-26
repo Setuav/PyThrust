@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_2D_1100",
+  "name": "1527/2D 1100",
+  "manufacturer": "NeuMotors",
+  "kv": 1100.0,
+  "resistance": 0.0144,
+  "io": 2.25,
+  "max_current": 83.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

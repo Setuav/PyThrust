@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Lite_2200KV",
+  "name": "2207 Lite 2200KV",
+  "manufacturer": "Xnova",
+  "kv": 2200.0,
+  "resistance": 0.052,
+  "io": 1.6,
+  "max_current": 40.0,
+  "weight_g": 30.1,
+  "max_power": 744.0,
+  "io_voltage": 10.0
+}

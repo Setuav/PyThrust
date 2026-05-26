@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2812_20_1200KV",
+  "name": "XC2812/20 1200KV",
+  "manufacturer": "XPower",
+  "kv": 1200.0,
+  "resistance": 0.086,
+  "io": 0.5,
+  "max_current": 14.0,
+  "weight_g": 58.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

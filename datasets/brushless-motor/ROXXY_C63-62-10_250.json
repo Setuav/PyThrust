@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C63-62-10_250",
+  "name": "C63-62-10 250",
+  "manufacturer": "ROXXY",
+  "kv": 250.0,
+  "resistance": 0.03,
+  "io": 2.51,
+  "max_current": 80.0,
+  "weight_g": 662.5,
+  "max_power": 2600.0,
+  "io_voltage": 24.5
+}

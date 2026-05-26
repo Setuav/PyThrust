@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-32T_1116KV",
+  "name": "540S-32T 1116KV",
+  "manufacturer": "Feigao",
+  "kv": 1116.0,
+  "resistance": 0.0967,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

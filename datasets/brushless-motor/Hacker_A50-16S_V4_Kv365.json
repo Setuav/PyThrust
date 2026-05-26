@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A50-16S_V4_Kv365",
+  "name": "A50-16S V4 Kv365",
+  "manufacturer": "Hacker",
+  "kv": 365.0,
+  "resistance": 0.026,
+  "io": 1.4,
+  "max_current": 70.0,
+  "weight_g": 345.3,
+  "max_power": 1030.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO5208_340KV",
+  "name": "XTO5208 340KV",
+  "manufacturer": "X-Team",
+  "kv": 340.0,
+  "resistance": 0.078,
+  "io": 0.8,
+  "max_current": 36.0,
+  "weight_g": 175.2,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

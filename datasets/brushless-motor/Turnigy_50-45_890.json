@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_50-45_890",
+  "name": "50-45 890",
+  "manufacturer": "Turnigy",
+  "kv": 900.0,
+  "resistance": 0.06,
+  "io": 2.0,
+  "max_current": 55.0,
+  "weight_g": 260.2,
+  "max_power": 780.0,
+  "io_voltage": 5.0
+}

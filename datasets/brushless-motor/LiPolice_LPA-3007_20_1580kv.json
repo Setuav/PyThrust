@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-3007_20_1580kv",
+  "name": "LPA-3007/20 1580kv",
+  "manufacturer": "LiPolice",
+  "kv": 1580.0,
+  "resistance": 0.031,
+  "io": 2.03,
+  "max_current": 30.0,
+  "weight_g": 75.7,
+  "max_power": 320.0,
+  "io_voltage": 8.4
+}

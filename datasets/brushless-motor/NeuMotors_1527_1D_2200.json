@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_1D_2200",
+  "name": "1527/1D 2200",
+  "manufacturer": "NeuMotors",
+  "kv": 2200.0,
+  "resistance": 0.0036,
+  "io": 4.5,
+  "max_current": 165.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

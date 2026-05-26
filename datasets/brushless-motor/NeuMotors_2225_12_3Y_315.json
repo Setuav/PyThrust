@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2225_12_3Y_315",
+  "name": "2225/12/3Y 315",
+  "manufacturer": "NeuMotors",
+  "kv": 315.0,
+  "resistance": 0.03,
+  "io": 1.0,
+  "max_current": 88.0,
+  "weight_g": 1132.8,
+  "max_power": 8400.0,
+  "io_voltage": 10.0
+}

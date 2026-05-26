@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C2830-KV1000",
+  "name": "C2830-KV1000",
+  "manufacturer": "Aeolian",
+  "kv": 1000.0,
+  "resistance": 0.152,
+  "io": 0.9,
+  "max_current": 21.0,
+  "weight_g": 57.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

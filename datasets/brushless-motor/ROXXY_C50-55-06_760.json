@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C50-55-06_760",
+  "name": "C50-55-06 760",
+  "manufacturer": "ROXXY",
+  "kv": 760.0,
+  "resistance": 0.015,
+  "io": 5.83,
+  "max_current": 90.0,
+  "weight_g": 276.1,
+  "max_power": 1665.0,
+  "io_voltage": 17.5
+}

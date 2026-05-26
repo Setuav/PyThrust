@@ -1,0 +1,12 @@
+{
+  "id": "Foxy_G2_C4125-375",
+  "name": "G2 C4125-375*",
+  "manufacturer": "Foxy",
+  "kv": 375.0,
+  "resistance": 0.035,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 386.4,
+  "max_power": 1620.0,
+  "io_voltage": 10.0
+}

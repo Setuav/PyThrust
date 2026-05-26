@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_300_BL_1380",
+  "name": "Park 300 BL 1380",
+  "manufacturer": "E-flite",
+  "kv": 1380.0,
+  "resistance": 0.5,
+  "io": 0.38,
+  "max_current": 9.0,
+  "weight_g": 24.1,
+  "max_power": 85.0,
+  "io_voltage": 8.0
+}

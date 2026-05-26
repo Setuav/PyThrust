@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3520-970",
+  "name": "3520-970",
+  "manufacturer": "BadAss",
+  "kv": 970.0,
+  "resistance": 0.012,
+  "io": 2.99,
+  "max_current": 90.0,
+  "weight_g": 224.0,
+  "max_power": 1330.0,
+  "io_voltage": 10.0
+}

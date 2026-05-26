@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F60_PRO_IV-1950",
+  "name": "F60 PRO IV-1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 42.0,
+  "weight_g": 33.5,
+  "max_power": 949.0,
+  "io_voltage": 10.0
+}

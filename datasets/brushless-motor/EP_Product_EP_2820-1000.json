@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2820-1000",
+  "name": "EP 2820-1000",
+  "manufacturer": "EP Product",
+  "kv": 970.0,
+  "resistance": 0.059,
+  "io": 1.3,
+  "max_current": 40.0,
+  "weight_g": 140.0,
+  "max_power": 590.0,
+  "io_voltage": 10.0
+}

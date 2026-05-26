@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM9015HD-10",
+  "name": "XM9015HD-10",
+  "manufacturer": "Dualsky",
+  "kv": 120.0,
+  "resistance": 0.058,
+  "io": 0.9,
+  "max_current": 72.0,
+  "weight_g": 665.4,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

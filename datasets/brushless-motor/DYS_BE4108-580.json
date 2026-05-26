@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE4108-580",
+  "name": "BE4108-580",
+  "manufacturer": "DYS",
+  "kv": 580.0,
+  "resistance": 0.098,
+  "io": 0.9,
+  "max_current": 37.0,
+  "weight_g": 113.1,
+  "max_power": 821.0,
+  "io_voltage": 14.8
+}

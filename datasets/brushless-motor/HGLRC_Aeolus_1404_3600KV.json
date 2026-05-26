@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1404_3600KV",
+  "name": "Aeolus 1404 3600KV",
+  "manufacturer": "HGLRC",
+  "kv": 3600.0,
+  "resistance": 0.185,
+  "io": 0.5,
+  "max_current": 13.0,
+  "weight_g": 11.1,
+  "max_power": 194.0,
+  "io_voltage": 9.0
+}

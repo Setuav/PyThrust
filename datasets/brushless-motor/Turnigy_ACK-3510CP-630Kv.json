@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_ACK-3510CP-630Kv",
+  "name": "ACK-3510CP-630Kv*",
+  "manufacturer": "Turnigy",
+  "kv": 630.0,
+  "resistance": 0.077,
+  "io": 0.57,
+  "max_current": 22.0,
+  "weight_g": 92.1,
+  "max_power": 495.0,
+  "io_voltage": 10.0
+}

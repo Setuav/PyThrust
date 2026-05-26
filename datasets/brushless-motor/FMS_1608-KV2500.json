@@ -1,0 +1,12 @@
+{
+  "id": "FMS_1608-KV2500",
+  "name": "1608-KV2500",
+  "manufacturer": "FMS",
+  "kv": 2500.0,
+  "resistance": 0.74,
+  "io": 0.14,
+  "max_current": 4.0,
+  "weight_g": 9.1,
+  "max_power": 25.0,
+  "io_voltage": 6.0
+}

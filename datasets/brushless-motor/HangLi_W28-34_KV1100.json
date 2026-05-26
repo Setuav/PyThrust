@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W28-34_KV1100",
+  "name": "W28-34 KV1100",
+  "manufacturer": "HangLi",
+  "kv": 1100.0,
+  "resistance": 0.0661,
+  "io": 1.1,
+  "max_current": 25.0,
+  "weight_g": 64.9,
+  "max_power": 280.0,
+  "io_voltage": 7.4
+}

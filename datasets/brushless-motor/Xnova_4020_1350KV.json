@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4020_1350KV",
+  "name": "4020 1350KV",
+  "manufacturer": "Xnova",
+  "kv": 1350.0,
+  "resistance": 0.006,
+  "io": 3.3,
+  "max_current": 125.0,
+  "weight_g": 340.2,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

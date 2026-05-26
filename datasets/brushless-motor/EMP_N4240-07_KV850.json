@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N4240-07_KV850",
+  "name": "N4240-07 KV850",
+  "manufacturer": "EMP",
+  "kv": 850.0,
+  "resistance": 0.028,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 155.1,
+  "max_power": 800.0,
+  "io_voltage": 11.0
+}

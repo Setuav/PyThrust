@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U8_Lite_KV100",
+  "name": "U8 Lite KV100",
+  "manufacturer": "T-Motor",
+  "kv": 100.0,
+  "resistance": 0.175,
+  "io": 0.7,
+  "max_current": 30.0,
+  "weight_g": 238.1,
+  "max_power": 1407.0,
+  "io_voltage": 18.0
+}

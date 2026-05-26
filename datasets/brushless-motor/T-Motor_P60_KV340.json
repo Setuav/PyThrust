@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_P60_KV340",
+  "name": "P60 KV340",
+  "manufacturer": "T-Motor",
+  "kv": 340.0,
+  "resistance": 0.035,
+  "io": 2.0,
+  "max_current": 65.0,
+  "weight_g": 343.3,
+  "max_power": 1550.0,
+  "io_voltage": 10.0
+}

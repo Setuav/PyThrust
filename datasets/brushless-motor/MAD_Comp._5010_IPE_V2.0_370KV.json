@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5010_IPE_V2.0_370KV",
+  "name": "5010 IPE V2.0 370KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 370.0,
+  "resistance": 0.038,
+  "io": 1.56,
+  "max_current": 44.0,
+  "weight_g": 166.1,
+  "max_power": 1019.0,
+  "io_voltage": 20.0
+}

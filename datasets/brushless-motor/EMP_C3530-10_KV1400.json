@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3530-10_KV1400",
+  "name": "C3530-10 KV1400",
+  "manufacturer": "EMP",
+  "kv": 1400.0,
+  "resistance": 0.062,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 79.9,
+  "max_power": 430.0,
+  "io_voltage": 10.0
+}

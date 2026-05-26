@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2226-18_KV2570",
+  "name": "M2226-18 KV2570",
+  "manufacturer": "EMP",
+  "kv": 2570.0,
+  "resistance": 0.327,
+  "io": 0.8,
+  "max_current": 9.0,
+  "weight_g": 23.0,
+  "max_power": 60.0,
+  "io_voltage": 10.0
+}

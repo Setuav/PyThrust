@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_4030_06_380",
+  "name": "4030/06 380",
+  "manufacturer": "RedRock",
+  "kv": 380.0,
+  "resistance": 0.024,
+  "io": 1.3,
+  "max_current": 75.0,
+  "weight_g": 430.3,
+  "max_power": 1820.0,
+  "io_voltage": 10.0
+}

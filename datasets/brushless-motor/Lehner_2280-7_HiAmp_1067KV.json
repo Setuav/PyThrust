@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2280-7_HiAmp_1067KV",
+  "name": "2280-7 HiAmp 1067KV",
+  "manufacturer": "Lehner",
+  "kv": 1067.0,
+  "resistance": 0.006,
+  "io": 5.2,
+  "max_current": 130.0,
+  "weight_g": 800.6,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

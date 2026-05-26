@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2204-1400",
+  "name": "EP 2204-1400",
+  "manufacturer": "EP Product",
+  "kv": 1400.0,
+  "resistance": 0.3,
+  "io": 0.34,
+  "max_current": 7.5,
+  "weight_g": 24.1,
+  "max_power": 96.0,
+  "io_voltage": 8.0
+}

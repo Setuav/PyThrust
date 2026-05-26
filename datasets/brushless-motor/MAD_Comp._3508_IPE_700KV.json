@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._3508_IPE_700KV",
+  "name": "3508 IPE 700KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 700.0,
+  "resistance": 0.074,
+  "io": 0.57,
+  "max_current": 22.0,
+  "weight_g": 97.5,
+  "max_power": 332.0,
+  "io_voltage": 10.0
+}

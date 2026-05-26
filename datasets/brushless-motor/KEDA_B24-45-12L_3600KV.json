@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-12L_3600KV",
+  "name": "B24-45-12L 3600KV",
+  "manufacturer": "KEDA",
+  "kv": 3600.0,
+  "resistance": 0.0291,
+  "io": 1.7,
+  "max_current": 26.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

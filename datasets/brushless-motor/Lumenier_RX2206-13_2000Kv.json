@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RX2206-13_2000Kv",
+  "name": "RX2206-13 2000Kv",
+  "manufacturer": "Lumenier",
+  "kv": 2000.0,
+  "resistance": 0.26,
+  "io": 0.56,
+  "max_current": 32.0,
+  "weight_g": 26.6,
+  "max_power": 260.0,
+  "io_voltage": 12.6
+}

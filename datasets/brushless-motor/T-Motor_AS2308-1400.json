@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AS2308-1400",
+  "name": "AS2308-1400",
+  "manufacturer": "T-Motor",
+  "kv": 1400.0,
+  "resistance": 0.0498,
+  "io": 1.05,
+  "max_current": 30.0,
+  "weight_g": 62.9,
+  "max_power": 334.0,
+  "io_voltage": 10.0
+}

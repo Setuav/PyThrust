@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U3_KV700",
+  "name": "U3 KV700",
+  "manufacturer": "T-Motor",
+  "kv": 700.0,
+  "resistance": 0.05,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 97.0,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

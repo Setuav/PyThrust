@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2306.5_1900KV",
+  "name": "Aeolus 2306.5 1900KV",
+  "manufacturer": "HGLRC",
+  "kv": 1900.0,
+  "resistance": 0.059,
+  "io": 1.1,
+  "max_current": 48.0,
+  "weight_g": 34.3,
+  "max_power": 1145.0,
+  "io_voltage": 10.0
+}

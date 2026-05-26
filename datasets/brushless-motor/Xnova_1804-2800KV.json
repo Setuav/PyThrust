@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_1804-2800KV",
+  "name": "1804-2800KV",
+  "manufacturer": "Xnova",
+  "kv": 2800.0,
+  "resistance": 0.15,
+  "io": 1.3,
+  "max_current": 23.0,
+  "weight_g": 15.9,
+  "max_power": 343.0,
+  "io_voltage": 10.0
+}

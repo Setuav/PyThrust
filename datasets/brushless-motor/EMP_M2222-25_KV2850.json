@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2222-25_KV2850",
+  "name": "M2222-25 KV2850",
+  "manufacturer": "EMP",
+  "kv": 2850.0,
+  "resistance": 0.485,
+  "io": 0.7,
+  "max_current": 9.0,
+  "weight_g": 16.2,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

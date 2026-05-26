@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4250-9T_480kv",
+  "name": "LC4250-9T 480kv",
+  "manufacturer": "Leopard",
+  "kv": 480.0,
+  "resistance": 0.0493,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 208.1,
+  "max_power": 705.0,
+  "io_voltage": 10.0
+}

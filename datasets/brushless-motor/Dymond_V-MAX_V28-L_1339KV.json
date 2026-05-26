@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_V28-L_1339KV",
+  "name": "V-MAX V28-L 1339KV",
+  "manufacturer": "Dymond",
+  "kv": 1339.0,
+  "resistance": 0.0993,
+  "io": 0.93,
+  "max_current": 22.0,
+  "weight_g": 94.1,
+  "max_power": 300.0,
+  "io_voltage": 9.51
+}

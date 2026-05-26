@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2321-950",
+  "name": "AT2321-950",
+  "manufacturer": "T-Motor",
+  "kv": 950.0,
+  "resistance": 0.065,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 93.0,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V2_1506-3000",
+  "name": "GTS V2 1506-3000",
+  "manufacturer": "RCinPower",
+  "kv": 3000.0,
+  "resistance": 0.11,
+  "io": 1.0,
+  "max_current": 20.0,
+  "weight_g": 15.6,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

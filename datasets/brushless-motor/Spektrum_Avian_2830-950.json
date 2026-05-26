@@ -1,0 +1,12 @@
+{
+  "id": "Spektrum_Avian_2830-950",
+  "name": "Avian 2830-950",
+  "manufacturer": "Spektrum",
+  "kv": 950.0,
+  "resistance": 0.149,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 54.1,
+  "max_power": 220.0,
+  "io_voltage": 7.4
+}

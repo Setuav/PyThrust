@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4130-0250_V3",
+  "name": "LEO 4130-0250 V3",
+  "manufacturer": "Leomotion",
+  "kv": 250.0,
+  "resistance": 0.044,
+  "io": 0.64,
+  "max_current": 60.0,
+  "weight_g": 395.2,
+  "max_power": 2660.0,
+  "io_voltage": 10.0
+}

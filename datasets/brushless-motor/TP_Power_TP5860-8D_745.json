@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5860-8D_745",
+  "name": "TP5860-8D 745",
+  "manufacturer": "TP Power",
+  "kv": 745.0,
+  "resistance": 0.0062,
+  "io": 4.6,
+  "max_current": 222.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

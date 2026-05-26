@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_5.5_360",
+  "name": "4619/5.5/360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.04,
+  "io": 0.98,
+  "max_current": 98.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

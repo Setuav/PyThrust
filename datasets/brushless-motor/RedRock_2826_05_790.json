@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2826_05_790",
+  "name": "2826/05 790",
+  "manufacturer": "RedRock",
+  "kv": 790.0,
+  "resistance": 0.048,
+  "io": 2.1,
+  "max_current": 75.0,
+  "weight_g": 171.2,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

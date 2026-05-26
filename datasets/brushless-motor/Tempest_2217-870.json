@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2217-870",
+  "name": "2217-870",
+  "manufacturer": "Tempest",
+  "kv": 870.0,
+  "resistance": 0.107,
+  "io": 0.81,
+  "max_current": 24.0,
+  "weight_g": 72.0,
+  "max_power": 355.0,
+  "io_voltage": 10.0
+}

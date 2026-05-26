@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-21T_4457KV",
+  "name": "130S-21T 4457KV",
+  "manufacturer": "Feigao",
+  "kv": 4457.0,
+  "resistance": 0.0966,
+  "io": 1.0,
+  "max_current": 10.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

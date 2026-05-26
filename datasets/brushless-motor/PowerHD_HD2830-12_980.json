@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD2830-12_980",
+  "name": "HD2830-12/980",
+  "manufacturer": "PowerHD",
+  "kv": 980.0,
+  "resistance": 0.149,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 56.1,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

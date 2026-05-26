@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR1404_4500kv",
+  "name": "GR1404 4500kv",
+  "manufacturer": "GEPRC",
+  "kv": 4500.0,
+  "resistance": 0.213,
+  "io": 0.51,
+  "max_current": 13.4,
+  "weight_g": 9.9,
+  "max_power": 214.0,
+  "io_voltage": 8.0
+}

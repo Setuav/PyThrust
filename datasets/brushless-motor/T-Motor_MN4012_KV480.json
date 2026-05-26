@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4012_KV480",
+  "name": "MN4012 KV480",
+  "manufacturer": "T-Motor",
+  "kv": 480.0,
+  "resistance": 0.057,
+  "io": 1.3,
+  "max_current": 29.0,
+  "weight_g": 134.1,
+  "max_power": 870.0,
+  "io_voltage": 10.0
+}

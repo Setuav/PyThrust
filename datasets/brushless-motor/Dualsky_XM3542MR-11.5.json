@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3542MR-11.5",
+  "name": "XM3542MR-11.5",
+  "manufacturer": "Dualsky",
+  "kv": 460.0,
+  "resistance": 0.115,
+  "io": 0.4,
+  "max_current": 22.0,
+  "weight_g": 120.2,
+  "max_power": 499.0,
+  "io_voltage": 10.0
+}

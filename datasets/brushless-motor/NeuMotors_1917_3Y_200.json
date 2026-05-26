@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1917_3Y_200",
+  "name": "1917/3Y 200",
+  "manufacturer": "NeuMotors",
+  "kv": 200.0,
+  "resistance": 0.135,
+  "io": 0.3,
+  "max_current": 23.0,
+  "weight_g": 453.3,
+  "max_power": 4100.0,
+  "io_voltage": 10.0
+}

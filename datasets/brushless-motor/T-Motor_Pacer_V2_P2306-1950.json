@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Pacer_V2_P2306-1950",
+  "name": "Pacer V2 P2306-1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.063,
+  "io": 1.25,
+  "max_current": 40.0,
+  "weight_g": 28.3,
+  "max_power": 949.0,
+  "io_voltage": 10.0
+}

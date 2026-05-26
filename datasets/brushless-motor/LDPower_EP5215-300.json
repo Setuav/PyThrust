@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_EP5215-300",
+  "name": "EP5215-300",
+  "manufacturer": "LDPower",
+  "kv": 300.0,
+  "resistance": 0.09,
+  "io": 1.35,
+  "max_current": 88.0,
+  "weight_g": 264.5,
+  "max_power": 1953.0,
+  "io_voltage": 8.0
+}

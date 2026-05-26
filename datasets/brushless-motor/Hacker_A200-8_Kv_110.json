@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A200-8_Kv_110",
+  "name": "A200-8 Kv 110",
+  "manufacturer": "Hacker",
+  "kv": 110.0,
+  "resistance": 0.015,
+  "io": 3.3,
+  "max_current": 220.0,
+  "weight_g": 2592.0,
+  "max_power": 15000.0,
+  "io_voltage": 8.4
+}

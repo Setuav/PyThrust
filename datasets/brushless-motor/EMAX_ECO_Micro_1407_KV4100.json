@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECO_Micro_1407_KV4100",
+  "name": "ECO Micro 1407 KV4100",
+  "manufacturer": "EMAX",
+  "kv": 4100.0,
+  "resistance": 0.102,
+  "io": 1.1,
+  "max_current": 22.0,
+  "weight_g": 13.6,
+  "max_power": 340.0,
+  "io_voltage": 10.0
+}

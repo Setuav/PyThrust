@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D4245_EVO_700",
+  "name": "D4245 EVO 700",
+  "manufacturer": "Flash Hobby",
+  "kv": 700.0,
+  "resistance": 0.0454,
+  "io": 1.47,
+  "max_current": 56.0,
+  "weight_g": 174.1,
+  "max_power": 1013.0,
+  "io_voltage": 10.0
+}

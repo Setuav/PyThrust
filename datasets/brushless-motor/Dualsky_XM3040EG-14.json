@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3040EG-14",
+  "name": "XM3040EG-14",
+  "manufacturer": "Dualsky",
+  "kv": 860.0,
+  "resistance": 0.054,
+  "io": 0.9,
+  "max_current": 30.0,
+  "weight_g": 104.0,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

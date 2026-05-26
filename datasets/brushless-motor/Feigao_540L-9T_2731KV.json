@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-9T_2731KV",
+  "name": "540L-9T 2731KV",
+  "manufacturer": "Feigao",
+  "kv": 2731.0,
+  "resistance": 0.0097,
+  "io": 3.3,
+  "max_current": 68.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

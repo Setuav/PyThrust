@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-17T_3412KV",
+  "name": "130L-17T 3412KV",
+  "manufacturer": "Feigao",
+  "kv": 3412.0,
+  "resistance": 0.0776,
+  "io": 0.7,
+  "max_current": 14.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC5065-8T_330kv",
+  "name": "LC5065-8T 330kv",
+  "manufacturer": "Leopard",
+  "kv": 330.0,
+  "resistance": 0.0371,
+  "io": 1.7,
+  "max_current": 50.0,
+  "weight_g": 371.4,
+  "max_power": 1795.0,
+  "io_voltage": 15.0
+}

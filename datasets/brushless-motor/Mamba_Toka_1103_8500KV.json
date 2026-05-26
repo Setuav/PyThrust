@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1103_8500KV",
+  "name": "Toka 1103 8500KV",
+  "manufacturer": "Mamba",
+  "kv": 8500.0,
+  "resistance": 0.17,
+  "io": 0.42,
+  "max_current": 11.0,
+  "weight_g": 4.8,
+  "max_power": 130.0,
+  "io_voltage": 4.0
+}

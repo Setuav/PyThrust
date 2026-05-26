@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C18_IPE_V3_170KV",
+  "name": "M6C18 IPE V3 170KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 170.0,
+  "resistance": 0.048,
+  "io": 1.6,
+  "max_current": 73.0,
+  "weight_g": 380.2,
+  "max_power": 3429.0,
+  "io_voltage": 30.0
+}

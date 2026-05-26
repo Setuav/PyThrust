@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Mars-2750",
+  "name": "Mars-2750",
+  "manufacturer": "DYS",
+  "kv": 2750.0,
+  "resistance": 0.04,
+  "io": 1.3,
+  "max_current": 40.0,
+  "weight_g": 34.3,
+  "max_power": 646.0,
+  "io_voltage": 12.0
+}

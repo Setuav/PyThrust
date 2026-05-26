@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B20-30-19S_4900KV",
+  "name": "B20-30-19S 4900KV",
+  "manufacturer": "KEDA",
+  "kv": 4900.0,
+  "resistance": 0.0792,
+  "io": 1.3,
+  "max_current": 11.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 7.4
+}

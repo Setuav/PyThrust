@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_2.75Y_282",
+  "name": "2020/2.75Y 282",
+  "manufacturer": "NeuMotors",
+  "kv": 282.0,
+  "resistance": 0.053,
+  "io": 1.02,
+  "max_current": 36.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

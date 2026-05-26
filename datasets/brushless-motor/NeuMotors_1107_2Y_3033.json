@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_2Y_3033",
+  "name": "1107/2Y 3033",
+  "manufacturer": "NeuMotors",
+  "kv": 3033.0,
+  "resistance": 0.015,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

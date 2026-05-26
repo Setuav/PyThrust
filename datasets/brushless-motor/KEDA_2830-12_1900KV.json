@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2830-12_1900KV",
+  "name": "2830-12 1900KV",
+  "manufacturer": "KEDA",
+  "kv": 1945.0,
+  "resistance": 0.1,
+  "io": 1.85,
+  "max_current": 22.0,
+  "weight_g": 58.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_1810GC-1600",
+  "name": "LEO 1810GC-1600",
+  "manufacturer": "Leomotion",
+  "kv": 1600.0,
+  "resistance": 0.112,
+  "io": 0.72,
+  "max_current": 20.0,
+  "weight_g": 38.0,
+  "max_power": 225.0,
+  "io_voltage": 10.0
+}

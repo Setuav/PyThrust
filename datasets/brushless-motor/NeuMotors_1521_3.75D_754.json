@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_3.75D_754",
+  "name": "1521/3.75D 754",
+  "manufacturer": "NeuMotors",
+  "kv": 754.0,
+  "resistance": 0.0394,
+  "io": 1.2,
+  "max_current": 44.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

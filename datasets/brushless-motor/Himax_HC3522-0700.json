@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HC3522-0700",
+  "name": "HC3522-0700",
+  "manufacturer": "Himax",
+  "kv": 700.0,
+  "resistance": 0.049,
+  "io": 1.3,
+  "max_current": 40.0,
+  "weight_g": 161.9,
+  "max_power": 486.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-6XL_EVO_4.4_1",
+  "name": "A20-6XL EVO 4.4:1",
+  "manufacturer": "Hacker",
+  "kv": 2500.0,
+  "resistance": 0.02,
+  "io": 3.4,
+  "max_current": 35.0,
+  "weight_g": 130.1,
+  "max_power": 400.0,
+  "io_voltage": 8.4
+}

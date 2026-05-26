@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2830-660",
+  "name": "DM2830-660",
+  "manufacturer": "Pro-Tronik",
+  "kv": 660.0,
+  "resistance": 0.026,
+  "io": 2.02,
+  "max_current": 55.0,
+  "weight_g": 206.1,
+  "max_power": 700.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_Park370_2808-KV1070",
+  "name": "Park370 2808-KV1070",
+  "manufacturer": "TomCat",
+  "kv": 1070.0,
+  "resistance": 0.192,
+  "io": 0.7,
+  "max_current": 11.0,
+  "weight_g": 50.2,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

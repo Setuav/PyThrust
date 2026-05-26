@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_iTorque_2624-2700",
+  "name": "iTorque 2624-2700*",
+  "manufacturer": "Flyware",
+  "kv": 2700.0,
+  "resistance": 0.024,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 105.2,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

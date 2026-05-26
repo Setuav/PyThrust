@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_R1406_KV3300",
+  "name": "R1406 KV3300",
+  "manufacturer": "SunnySky",
+  "kv": 3300.0,
+  "resistance": 0.126,
+  "io": 0.6,
+  "max_current": 16.0,
+  "weight_g": 13.6,
+  "max_power": 237.0,
+  "io_voltage": 10.0
+}

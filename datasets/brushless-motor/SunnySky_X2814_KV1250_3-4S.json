@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2814_KV1250_3-4S",
+  "name": "X2814 KV1250 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1250.0,
+  "resistance": 0.025,
+  "io": 2.1,
+  "max_current": 55.0,
+  "weight_g": 108.0,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

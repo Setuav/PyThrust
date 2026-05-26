@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC3508_24_1150KV",
+  "name": "XC3508/24 1150KV",
+  "manufacturer": "XPower",
+  "kv": 1150.0,
+  "resistance": 0.019,
+  "io": 0.8,
+  "max_current": 22.0,
+  "weight_g": 79.9,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

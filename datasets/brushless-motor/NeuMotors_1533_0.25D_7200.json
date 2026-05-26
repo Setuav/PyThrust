@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_0.25D_7200",
+  "name": "1533/0.25D 7200",
+  "manufacturer": "NeuMotors",
+  "kv": 7200.0,
+  "resistance": 0.0003,
+  "io": 18.0,
+  "max_current": 720.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

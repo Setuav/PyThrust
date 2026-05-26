@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q80-11M_V2",
+  "name": "Q80-11M V2",
+  "manufacturer": "Hacker",
+  "kv": 135.0,
+  "resistance": 0.021,
+  "io": 1.0,
+  "max_current": 250.0,
+  "weight_g": 1035.9,
+  "max_power": 4500.0,
+  "io_voltage": 8.4
+}

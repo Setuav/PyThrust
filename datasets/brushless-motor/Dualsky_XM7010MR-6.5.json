@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM7010MR-6.5",
+  "name": "XM7010MR-6.5",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.044,
+  "io": 1.3,
+  "max_current": 54.0,
+  "weight_g": 270.2,
+  "max_power": 658.0,
+  "io_voltage": 10.0
+}

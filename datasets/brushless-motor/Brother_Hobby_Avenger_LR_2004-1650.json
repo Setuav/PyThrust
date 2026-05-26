@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_LR_2004-1650",
+  "name": "Avenger LR 2004-1650",
+  "manufacturer": "Brother Hobby",
+  "kv": 1650.0,
+  "resistance": 0.3274,
+  "io": 0.34,
+  "max_current": 7.3,
+  "weight_g": 17.0,
+  "max_power": 61.0,
+  "io_voltage": 10.0
+}

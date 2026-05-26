@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4030-7D_2750",
+  "name": "TP4030-7D 2750",
+  "manufacturer": "TP Power",
+  "kv": 2750.0,
+  "resistance": 0.005,
+  "io": 2.1,
+  "max_current": 165.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 8.0
+}

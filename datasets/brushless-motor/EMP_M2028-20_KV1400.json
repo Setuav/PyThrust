@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2028-20_KV1400",
+  "name": "M2028-20 KV1400",
+  "manufacturer": "EMP",
+  "kv": 1400.0,
+  "resistance": 0.573,
+  "io": 0.2,
+  "max_current": 9.0,
+  "weight_g": 22.7,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

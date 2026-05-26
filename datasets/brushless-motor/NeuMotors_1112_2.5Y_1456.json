@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_2.5Y_1456",
+  "name": "1112/2.5Y 1456",
+  "manufacturer": "NeuMotors",
+  "kv": 1456.0,
+  "resistance": 0.039,
+  "io": 1.0,
+  "max_current": 29.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

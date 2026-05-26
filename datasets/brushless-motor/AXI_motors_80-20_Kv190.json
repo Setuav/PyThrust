@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_80-20_Kv190",
+  "name": "80-20 Kv190",
+  "manufacturer": "AXI motors",
+  "kv": 190.0,
+  "resistance": 0.0197,
+  "io": 3.9,
+  "max_current": 125.0,
+  "weight_g": 930.7,
+  "max_power": 4900.0,
+  "io_voltage": 10.0
+}

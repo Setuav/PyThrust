@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4031-2750",
+  "name": "L4031-2750",
+  "manufacturer": "Leomotion",
+  "kv": 2750.0,
+  "resistance": 0.005,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

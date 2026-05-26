@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-20L_2200KV",
+  "name": "B24-45-20L 2200KV",
+  "manufacturer": "KEDA",
+  "kv": 2200.0,
+  "resistance": 0.1075,
+  "io": 0.8,
+  "max_current": 16.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

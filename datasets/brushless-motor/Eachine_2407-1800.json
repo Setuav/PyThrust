@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_2407-1800",
+  "name": "2407-1800",
+  "manufacturer": "Eachine",
+  "kv": 1800.0,
+  "resistance": 0.0572,
+  "io": 0.83,
+  "max_current": 0.0,
+  "weight_g": 41.1,
+  "max_power": 1050.0,
+  "io_voltage": 10.0
+}

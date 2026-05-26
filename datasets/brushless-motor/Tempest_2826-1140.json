@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2826-1140",
+  "name": "2826-1140",
+  "manufacturer": "Tempest",
+  "kv": 1140.0,
+  "resistance": 0.022,
+  "io": 3.4,
+  "max_current": 66.0,
+  "weight_g": 165.0,
+  "max_power": 1220.0,
+  "io_voltage": 10.0
+}

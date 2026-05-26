@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-10T_3947KV",
+  "name": "380S-10T 3947KV",
+  "manufacturer": "Feigao",
+  "kv": 3947.0,
+  "resistance": 0.0147,
+  "io": 2.1,
+  "max_current": 41.0,
+  "weight_g": 140.0,
+  "max_power": 615.0,
+  "io_voltage": 10.0
+}

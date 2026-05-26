@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_QE6016_170KV",
+  "name": "QE6016 170KV",
+  "manufacturer": "Gartt",
+  "kv": 170.0,
+  "resistance": 0.0725,
+  "io": 0.5,
+  "max_current": 38.0,
+  "weight_g": 388.1,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X5320_KV210_8S",
+  "name": "X5320 KV210 8S",
+  "manufacturer": "SunnySky",
+  "kv": 210.0,
+  "resistance": 0.05,
+  "io": 1.4,
+  "max_current": 53.0,
+  "weight_g": 480.2,
+  "max_power": 2140.0,
+  "io_voltage": 10.0
+}

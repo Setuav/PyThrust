@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_0.25Y_3667",
+  "name": "1536/0.25Y 3667",
+  "manufacturer": "NeuMotors",
+  "kv": 3667.0,
+  "resistance": 0.0009,
+  "io": 10.0,
+  "max_current": 214.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_MonsterPower_15",
+  "name": "MonsterPower 15",
+  "manufacturer": "Exceed RC",
+  "kv": 950.0,
+  "resistance": 0.03,
+  "io": 2.0,
+  "max_current": 34.0,
+  "weight_g": 170.1,
+  "max_power": 425.0,
+  "io_voltage": 8.0
+}

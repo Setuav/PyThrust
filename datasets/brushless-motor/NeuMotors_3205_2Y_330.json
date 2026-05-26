@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3205_2Y_330",
+  "name": "3205/2Y 330",
+  "manufacturer": "NeuMotors",
+  "kv": 330.0,
+  "resistance": 0.051,
+  "io": 1.0,
+  "max_current": 44.0,
+  "weight_g": 399.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

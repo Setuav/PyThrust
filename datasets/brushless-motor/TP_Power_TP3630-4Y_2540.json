@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-4Y_2540",
+  "name": "TP3630-4Y 2540",
+  "manufacturer": "TP Power",
+  "kv": 2540.0,
+  "resistance": 0.0069,
+  "io": 1.7,
+  "max_current": 78.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

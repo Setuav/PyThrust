@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-27-34_760",
+  "name": "C28-27-34 760",
+  "manufacturer": "ROXXY",
+  "kv": 760.0,
+  "resistance": 0.244,
+  "io": 0.47,
+  "max_current": 10.0,
+  "weight_g": 57.0,
+  "max_power": 170.0,
+  "io_voltage": 10.5
+}

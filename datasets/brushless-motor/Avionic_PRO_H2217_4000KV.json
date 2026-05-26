@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_H2217_4000KV",
+  "name": "PRO H2217 4000KV",
+  "manufacturer": "Avionic",
+  "kv": 4000.0,
+  "resistance": 0.09,
+  "io": 4.4,
+  "max_current": 0.0,
+  "weight_g": 76.0,
+  "max_power": 350.0,
+  "io_voltage": 7.0
+}

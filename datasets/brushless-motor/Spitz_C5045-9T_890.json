@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C5045-9T_890",
+  "name": "C5045-9T 890",
+  "manufacturer": "Spitz",
+  "kv": 890.0,
+  "resistance": 0.0215,
+  "io": 2.5,
+  "max_current": 48.0,
+  "weight_g": 195.0,
+  "max_power": 860.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1406_1Y_5500",
+  "name": "1406/1Y 5500",
+  "manufacturer": "NeuMotors",
+  "kv": 5500.0,
+  "resistance": 0.005,
+  "io": 3.5,
+  "max_current": 83.0,
+  "weight_g": 165.0,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

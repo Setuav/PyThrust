@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A7035-9_175KV",
+  "name": "A7035-9  175KV",
+  "manufacturer": "Cheetah",
+  "kv": 175.0,
+  "resistance": 0.016,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 1363.0,
+  "max_power": 6660.0,
+  "io_voltage": 10.0
+}

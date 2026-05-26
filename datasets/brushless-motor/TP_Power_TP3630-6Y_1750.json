@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-6Y_1750",
+  "name": "TP3630-6Y 1750",
+  "manufacturer": "TP Power",
+  "kv": 1750.0,
+  "resistance": 0.014,
+  "io": 1.5,
+  "max_current": 53.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

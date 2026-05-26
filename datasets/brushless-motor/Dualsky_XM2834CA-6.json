@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2834CA-6",
+  "name": "XM2834CA-6",
+  "manufacturer": "Dualsky",
+  "kv": 1460.0,
+  "resistance": 0.041,
+  "io": 1.5,
+  "max_current": 30.0,
+  "weight_g": 70.0,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

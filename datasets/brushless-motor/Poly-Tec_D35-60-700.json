@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_D35-60-700",
+  "name": "D35-60-700",
+  "manufacturer": "Poly-Tec",
+  "kv": 700.0,
+  "resistance": 0.012,
+  "io": 3.8,
+  "max_current": 75.0,
+  "weight_g": 296.3,
+  "max_power": 781.0,
+  "io_voltage": 7.4
+}

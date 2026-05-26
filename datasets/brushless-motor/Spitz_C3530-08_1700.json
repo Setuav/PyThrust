@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C3530-08_1700",
+  "name": "C3530-08 1700",
+  "manufacturer": "Spitz",
+  "kv": 1700.0,
+  "resistance": 0.041,
+  "io": 1.8,
+  "max_current": 42.0,
+  "weight_g": 78.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

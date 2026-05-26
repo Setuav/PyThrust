@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPPO-3542-1250",
+  "name": "PPPO-3542-1250",
+  "manufacturer": "4-Max",
+  "kv": 1250.0,
+  "resistance": 0.03,
+  "io": 1.9,
+  "max_current": 58.0,
+  "weight_g": 142.0,
+  "max_power": 590.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_2826-1650",
+  "name": "2826-1650",
+  "manufacturer": "Turnigy",
+  "kv": 1570.0,
+  "resistance": 0.163,
+  "io": 1.3,
+  "max_current": 16.0,
+  "weight_g": 45.1,
+  "max_power": 135.0,
+  "io_voltage": 11.0
+}

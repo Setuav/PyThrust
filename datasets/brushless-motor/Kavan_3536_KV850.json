@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3536_KV850",
+  "name": "3536 KV850",
+  "manufacturer": "Kavan",
+  "kv": 850.0,
+  "resistance": 0.043,
+  "io": 1.2,
+  "max_current": 45.0,
+  "weight_g": 108.0,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

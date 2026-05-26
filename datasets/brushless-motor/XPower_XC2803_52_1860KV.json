@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2803_52_1860KV",
+  "name": "XC2803/52 1860KV",
+  "manufacturer": "XPower",
+  "kv": 1860.0,
+  "resistance": 0.25,
+  "io": 0.3,
+  "max_current": 9.0,
+  "weight_g": 17.0,
+  "max_power": 100.0,
+  "io_voltage": 10.0
+}

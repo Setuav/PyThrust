@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Xtra_25-12",
+  "name": "Xtra 25-12",
+  "manufacturer": "Plettenberg",
+  "kv": 265.0,
+  "resistance": 0.015,
+  "io": 3.6,
+  "max_current": 0.0,
+  "weight_g": 450.5,
+  "max_power": 1900.0,
+  "io_voltage": 11.0
+}

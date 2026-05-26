@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_H700_530",
+  "name": "H700 530",
+  "manufacturer": "Flash Hobby",
+  "kv": 530.0,
+  "resistance": 0.0156,
+  "io": 1.98,
+  "max_current": 100.0,
+  "weight_g": 492.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2208-09_1900KV",
+  "name": "2208-09 1900KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1900.0,
+  "resistance": 0.063,
+  "io": 1.2,
+  "max_current": 27.0,
+  "weight_g": 45.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_1806-2342",
+  "name": "1806-2342",
+  "manufacturer": "Black Widow",
+  "kv": 2342.0,
+  "resistance": 0.1152,
+  "io": 0.65,
+  "max_current": 0.0,
+  "weight_g": 28.1,
+  "max_power": 180.0,
+  "io_voltage": 8.4
+}

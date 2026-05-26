@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q80-6L_V2",
+  "name": "Q80-6L V2",
+  "manufacturer": "Hacker",
+  "kv": 180.0,
+  "resistance": 0.009,
+  "io": 1.8,
+  "max_current": 250.0,
+  "weight_g": 1336.1,
+  "max_power": 7000.0,
+  "io_voltage": 8.4
+}

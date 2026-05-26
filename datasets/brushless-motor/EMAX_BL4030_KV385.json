@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL4030_KV385",
+  "name": "BL4030 KV385",
+  "manufacturer": "EMAX",
+  "kv": 385.0,
+  "resistance": 0.022,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 325.2,
+  "max_power": 1386.0,
+  "io_voltage": 15.0
+}

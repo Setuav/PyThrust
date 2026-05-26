@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_0.75Y_408",
+  "name": "2530/0.75Y 408",
+  "manufacturer": "NeuMotors",
+  "kv": 408.0,
+  "resistance": 0.004,
+  "io": 4.0,
+  "max_current": 326.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_4355_KV700",
+  "name": "4355 KV700",
+  "manufacturer": "Kavan",
+  "kv": 700.0,
+  "resistance": 0.0135,
+  "io": 2.45,
+  "max_current": 117.0,
+  "weight_g": 302.2,
+  "max_power": 2013.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_3520C-1020",
+  "name": "ECO 3520C-1020",
+  "manufacturer": "Dualsky",
+  "kv": 1020.0,
+  "resistance": 0.013,
+  "io": 3.43,
+  "max_current": 65.0,
+  "weight_g": 200.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

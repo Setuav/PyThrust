@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO2206-1500-MK",
+  "name": "MTO2206-1500-MK",
+  "manufacturer": "MayTech",
+  "kv": 1500.0,
+  "resistance": 0.1,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 22.4,
+  "max_power": 120.0,
+  "io_voltage": 7.4
+}

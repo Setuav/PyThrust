@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3650-05_KV2300",
+  "name": "B3650-05 KV2300",
+  "manufacturer": "EMP",
+  "kv": 2300.0,
+  "resistance": 0.019,
+  "io": 2.8,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 1080.0,
+  "io_voltage": 10.0
+}

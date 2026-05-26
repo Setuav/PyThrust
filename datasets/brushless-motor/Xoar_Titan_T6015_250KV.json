@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T6015_250KV",
+  "name": "Titan T6015 250KV",
+  "manufacturer": "Xoar",
+  "kv": 250.0,
+  "resistance": 0.054,
+  "io": 1.19,
+  "max_current": 45.0,
+  "weight_g": 278.1,
+  "max_power": 949.0,
+  "io_voltage": 10.0
+}

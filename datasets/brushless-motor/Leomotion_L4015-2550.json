@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4015-2550",
+  "name": "L4015-2550",
+  "manufacturer": "Leomotion",
+  "kv": 2550.0,
+  "resistance": 0.011,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

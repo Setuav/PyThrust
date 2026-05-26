@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B36-56-09_1230KV",
+  "name": "B36-56-09 1230KV",
+  "manufacturer": "GS-Models",
+  "kv": 1230.0,
+  "resistance": 0.0341,
+  "io": 1.8,
+  "max_current": 54.0,
+  "weight_g": 250.0,
+  "max_power": 1450.0,
+  "io_voltage": 10.0
+}

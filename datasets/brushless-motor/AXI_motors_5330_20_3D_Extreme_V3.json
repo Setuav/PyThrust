@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5330_20_3D_Extreme_V3",
+  "name": "5330/20 3D Extreme V3",
+  "manufacturer": "AXI motors",
+  "kv": 235.0,
+  "resistance": 0.045,
+  "io": 1.7,
+  "max_current": 73.0,
+  "weight_g": 690.6,
+  "max_power": 2900.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2212_KV980_V3_3-4S",
+  "name": "X2212 KV980 V3 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 980.0,
+  "resistance": 0.092,
+  "io": 0.6,
+  "max_current": 26.0,
+  "weight_g": 57.0,
+  "max_power": 385.0,
+  "io_voltage": 10.0
+}

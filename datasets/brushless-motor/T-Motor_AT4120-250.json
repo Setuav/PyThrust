@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT4120-250",
+  "name": "AT4120-250",
+  "manufacturer": "T-Motor",
+  "kv": 250.0,
+  "resistance": 0.076,
+  "io": 1.0,
+  "max_current": 45.0,
+  "weight_g": 305.3,
+  "max_power": 2100.0,
+  "io_voltage": 10.0
+}

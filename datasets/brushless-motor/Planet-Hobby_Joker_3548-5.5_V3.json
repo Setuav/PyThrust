@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_3548-5.5_V3",
+  "name": "Joker 3548-5.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 720.0,
+  "resistance": 0.0433,
+  "io": 1.1,
+  "max_current": 38.0,
+  "weight_g": 167.3,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

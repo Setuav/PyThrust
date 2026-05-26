@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_ROBO_1202.5_11500KV",
+  "name": "ROBO 1202.5 11500KV",
+  "manufacturer": "Flywoo",
+  "kv": 11500.0,
+  "resistance": 0.035,
+  "io": 0.57,
+  "max_current": 9.6,
+  "weight_g": 3.8,
+  "max_power": 68.0,
+  "io_voltage": 10.0
+}

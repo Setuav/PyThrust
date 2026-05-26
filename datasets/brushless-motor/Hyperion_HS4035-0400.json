@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4035-0400",
+  "name": "HS4035-0400",
+  "manufacturer": "Hyperion",
+  "kv": 400.0,
+  "resistance": 0.038,
+  "io": 1.38,
+  "max_current": 105.0,
+  "weight_g": 435.4,
+  "max_power": 4590.0,
+  "io_voltage": 10.0
+}

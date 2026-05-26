@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_700XF-455-G3",
+  "name": "700XF-455-G3",
+  "manufacturer": "KDEDirect",
+  "kv": 455.0,
+  "resistance": 0.01,
+  "io": 2.2,
+  "max_current": 135.0,
+  "weight_g": 660.5,
+  "max_power": 6995.0,
+  "io_voltage": 10.0
+}

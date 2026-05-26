@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M80L_KV100",
+  "name": "M80L KV100",
+  "manufacturer": "SunnySky",
+  "kv": 100.0,
+  "resistance": 0.076,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 585.4,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

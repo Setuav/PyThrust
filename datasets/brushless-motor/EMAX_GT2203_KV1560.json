@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2203_KV1560",
+  "name": "GT2203 KV1560",
+  "manufacturer": "EMAX",
+  "kv": 1560.0,
+  "resistance": 0.334,
+  "io": 0.5,
+  "max_current": 7.0,
+  "weight_g": 15.9,
+  "max_power": 54.0,
+  "io_voltage": 8.0
+}

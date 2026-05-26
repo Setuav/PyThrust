@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T6012_260KV",
+  "name": "Titan T6012 260KV",
+  "manufacturer": "Xoar",
+  "kv": 260.0,
+  "resistance": 0.056,
+  "io": 0.85,
+  "max_current": 41.0,
+  "weight_g": 240.1,
+  "max_power": 864.0,
+  "io_voltage": 10.0
+}

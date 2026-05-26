@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-10T_2458KV",
+  "name": "540L-10T 2458KV",
+  "manufacturer": "Feigao",
+  "kv": 2458.0,
+  "resistance": 0.0119,
+  "io": 2.8,
+  "max_current": 61.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

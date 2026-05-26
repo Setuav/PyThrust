@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_3220",
+  "name": "3220",
+  "manufacturer": "Astro Flight",
+  "kv": 137.0,
+  "resistance": 0.05,
+  "io": 1.0,
+  "max_current": 100.0,
+  "weight_g": 1815.2,
+  "max_power": 6000.0,
+  "io_voltage": 8.4
+}

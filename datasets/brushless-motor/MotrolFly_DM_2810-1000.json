@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2810-1000",
+  "name": "DM 2810-1000",
+  "manufacturer": "MotrolFly",
+  "kv": 1056.0,
+  "resistance": 0.0526,
+  "io": 2.0,
+  "max_current": 20.0,
+  "weight_g": 90.2,
+  "max_power": 300.0,
+  "io_voltage": 14.0
+}

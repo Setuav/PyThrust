@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_3Y_258",
+  "name": "2020/3Y 258",
+  "manufacturer": "NeuMotors",
+  "kv": 258.0,
+  "resistance": 0.063,
+  "io": 0.94,
+  "max_current": 22.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

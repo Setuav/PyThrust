@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_5.5D_1800",
+  "name": "1506/5.5D 1800",
+  "manufacturer": "NeuMotors",
+  "kv": 1800.0,
+  "resistance": 0.0242,
+  "io": 0.82,
+  "max_current": 30.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

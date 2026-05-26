@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1924_1.5Y_275",
+  "name": "1924/1.5Y 275",
+  "manufacturer": "NeuMotors",
+  "kv": 275.0,
+  "resistance": 0.035,
+  "io": 1.0,
+  "max_current": 47.0,
+  "weight_g": 623.4,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

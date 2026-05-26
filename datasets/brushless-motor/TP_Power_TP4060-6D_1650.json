@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4060-6D_1650",
+  "name": "TP4060-6D 1650",
+  "manufacturer": "TP Power",
+  "kv": 1650.0,
+  "resistance": 0.0046,
+  "io": 4.0,
+  "max_current": 207.0,
+  "weight_g": 455.0,
+  "max_power": 6200.0,
+  "io_voltage": 8.0
+}

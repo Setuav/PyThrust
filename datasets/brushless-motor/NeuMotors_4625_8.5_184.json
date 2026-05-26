@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_8.5_184",
+  "name": "4625/8.5/184",
+  "manufacturer": "NeuMotors",
+  "kv": 184.0,
+  "resistance": 0.12,
+  "io": 0.64,
+  "max_current": 63.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

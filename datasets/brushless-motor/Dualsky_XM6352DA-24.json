@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6352DA-24",
+  "name": "XM6352DA-24",
+  "manufacturer": "Dualsky",
+  "kv": 240.0,
+  "resistance": 0.036,
+  "io": 0.8,
+  "max_current": 80.0,
+  "weight_g": 490.4,
+  "max_power": 2560.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_105-30_Kv125",
+  "name": "105-30 Kv125",
+  "manufacturer": "AXI motors",
+  "kv": 125.0,
+  "resistance": 0.0161,
+  "io": 5.7,
+  "max_current": 200.0,
+  "weight_g": 2401.8,
+  "max_power": 9800.0,
+  "io_voltage": 10.0
+}

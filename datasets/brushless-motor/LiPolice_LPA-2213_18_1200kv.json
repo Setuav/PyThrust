@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-2213_18_1200kv",
+  "name": "LPA-2213/18 1200kv",
+  "manufacturer": "LiPolice",
+  "kv": 1200.0,
+  "resistance": 0.075,
+  "io": 1.13,
+  "max_current": 20.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RX1806-13_2500kv",
+  "name": "RX1806-13 2500kv",
+  "manufacturer": "Lumenier",
+  "kv": 2500.0,
+  "resistance": 0.26,
+  "io": 0.58,
+  "max_current": 26.0,
+  "weight_g": 22.1,
+  "max_power": 165.0,
+  "io_voltage": 12.6
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2208_14",
+  "name": "A2208/14",
+  "manufacturer": "Suppo",
+  "kv": 1450.0,
+  "resistance": 0.14,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 36.0,
+  "max_power": 135.0,
+  "io_voltage": 10.0
+}

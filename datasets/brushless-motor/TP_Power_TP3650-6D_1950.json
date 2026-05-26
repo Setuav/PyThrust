@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3650-6D_1950",
+  "name": "TP3650-6D 1950",
+  "manufacturer": "TP Power",
+  "kv": 1950.0,
+  "resistance": 0.0059,
+  "io": 3.5,
+  "max_current": 220.0,
+  "weight_g": 370.2,
+  "max_power": 4500.0,
+  "io_voltage": 6.0
+}

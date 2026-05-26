@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-3025-08",
+  "name": "Z-3025-08",
+  "manufacturer": "Hyperion",
+  "kv": 985.0,
+  "resistance": 0.036,
+  "io": 4.8,
+  "max_current": 65.0,
+  "weight_g": 186.0,
+  "max_power": 558.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT8030-190",
+  "name": "AT8030-190",
+  "manufacturer": "T-Motor",
+  "kv": 190.0,
+  "resistance": 0.008,
+  "io": 5.2,
+  "max_current": 165.0,
+  "weight_g": 1115.8,
+  "max_power": 6800.0,
+  "io_voltage": 10.0
+}

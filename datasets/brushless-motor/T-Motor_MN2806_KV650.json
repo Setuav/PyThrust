@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN2806_KV650",
+  "name": "MN2806 KV650",
+  "manufacturer": "T-Motor",
+  "kv": 650.0,
+  "resistance": 0.275,
+  "io": 0.2,
+  "max_current": 12.0,
+  "weight_g": 45.9,
+  "max_power": 187.0,
+  "io_voltage": 18.0
+}

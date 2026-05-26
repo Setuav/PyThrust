@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_4074_3D",
+  "name": "SSS 4074 3D",
+  "manufacturer": "TFL Hobby",
+  "kv": 2600.0,
+  "resistance": 0.0034,
+  "io": 4.0,
+  "max_current": 192.0,
+  "weight_g": 390.4,
+  "max_power": 4000.0,
+  "io_voltage": 11.1
+}

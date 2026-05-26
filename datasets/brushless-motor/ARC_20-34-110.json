@@ -1,0 +1,12 @@
+{
+  "id": "ARC_20-34-110",
+  "name": "20-34-110",
+  "manufacturer": "ARC",
+  "kv": 3100.0,
+  "resistance": 0.12,
+  "io": 0.46,
+  "max_current": 10.0,
+  "weight_g": 39.1,
+  "max_power": 117.0,
+  "io_voltage": 8.0
+}

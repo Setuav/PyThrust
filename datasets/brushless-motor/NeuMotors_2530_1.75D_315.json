@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_1.75D_315",
+  "name": "2530/1.75D 315",
+  "manufacturer": "NeuMotors",
+  "kv": 315.0,
+  "resistance": 0.007,
+  "io": 3.1,
+  "max_current": 252.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

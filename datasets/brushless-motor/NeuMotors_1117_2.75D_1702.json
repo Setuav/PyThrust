@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_2.75D_1702",
+  "name": "1117/2.75D 1702",
+  "manufacturer": "NeuMotors",
+  "kv": 1702.0,
+  "resistance": 0.022,
+  "io": 1.6,
+  "max_current": 45.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2814_16_Cyclone",
+  "name": "2814/16 Cyclone",
+  "manufacturer": "AXI motors",
+  "kv": 1035.0,
+  "resistance": 0.033,
+  "io": 1.0,
+  "max_current": 36.0,
+  "weight_g": 164.1,
+  "max_power": 335.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-19T_2078KV",
+  "name": "380S-19T 2078KV",
+  "manufacturer": "Feigao",
+  "kv": 2078.0,
+  "resistance": 0.0531,
+  "io": 0.6,
+  "max_current": 22.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

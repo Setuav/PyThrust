@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2315-1800",
+  "name": "2315-1800",
+  "manufacturer": "BadAss",
+  "kv": 1800.0,
+  "resistance": 0.027,
+  "io": 1.98,
+  "max_current": 44.0,
+  "weight_g": 75.1,
+  "max_power": 490.0,
+  "io_voltage": 10.0
+}

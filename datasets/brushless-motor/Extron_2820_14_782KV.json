@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2820_14_782KV",
+  "name": "2820/14  782KV",
+  "manufacturer": "Extron",
+  "kv": 782.0,
+  "resistance": 0.0446,
+  "io": 2.5,
+  "max_current": 31.0,
+  "weight_g": 142.6,
+  "max_power": 465.0,
+  "io_voltage": 22.2
+}

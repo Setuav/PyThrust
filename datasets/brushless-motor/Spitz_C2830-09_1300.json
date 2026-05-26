@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C2830-09_1300",
+  "name": "C2830-09 1300",
+  "manufacturer": "Spitz",
+  "kv": 1300.0,
+  "resistance": 0.085,
+  "io": 1.2,
+  "max_current": 25.0,
+  "weight_g": 57.0,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

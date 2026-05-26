@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-3Y_2600",
+  "name": "TP3640-3Y 2600",
+  "manufacturer": "TP Power",
+  "kv": 2600.0,
+  "resistance": 0.0066,
+  "io": 3.2,
+  "max_current": 127.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

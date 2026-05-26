@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_3520-980",
+  "name": "EP 3520-980",
+  "manufacturer": "EP Product",
+  "kv": 980.0,
+  "resistance": 0.037,
+  "io": 1.84,
+  "max_current": 60.0,
+  "weight_g": 210.1,
+  "max_power": 1110.0,
+  "io_voltage": 14.0
+}

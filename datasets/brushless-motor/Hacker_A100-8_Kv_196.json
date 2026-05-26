@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A100-8_Kv_196",
+  "name": "A100-8 Kv 196",
+  "manufacturer": "Hacker",
+  "kv": 196.0,
+  "resistance": 0.013,
+  "io": 4.7,
+  "max_current": 220.0,
+  "weight_g": 1801.3,
+  "max_power": 7000.0,
+  "io_voltage": 8.4
+}

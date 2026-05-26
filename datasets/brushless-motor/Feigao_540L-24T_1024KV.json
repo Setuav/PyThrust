@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-24T_1024KV",
+  "name": "540L-24T 1024KV",
+  "manufacturer": "Feigao",
+  "kv": 1024.0,
+  "resistance": 0.0688,
+  "io": 0.68,
+  "max_current": 26.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

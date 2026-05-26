@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2822-25_KV1400",
+  "name": "C2822-25 KV1400",
+  "manufacturer": "EMP",
+  "kv": 1400.0,
+  "resistance": 0.352,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 35.2,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N6364-09_KV230",
+  "name": "N6364-09 KV230",
+  "manufacturer": "EMP",
+  "kv": 230.0,
+  "resistance": 0.004,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 706.5,
+  "max_power": 2950.0,
+  "io_voltage": 15.0
+}

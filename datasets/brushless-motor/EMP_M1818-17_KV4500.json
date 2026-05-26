@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M1818-17_KV4500",
+  "name": "M1818-17 KV4500",
+  "manufacturer": "EMP",
+  "kv": 4500.0,
+  "resistance": 0.263,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 9.4,
+  "max_power": 30.0,
+  "io_voltage": 10.0
+}

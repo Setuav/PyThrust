@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_2712-1720",
+  "name": "RO-Power Torque 2712-1720",
+  "manufacturer": "Robbe",
+  "kv": 1720.0,
+  "resistance": 0.201,
+  "io": 0.35,
+  "max_current": 10.0,
+  "weight_g": 19.8,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

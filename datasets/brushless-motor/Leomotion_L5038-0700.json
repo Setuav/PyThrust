@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5038-0700",
+  "name": "L5038-0700",
+  "manufacturer": "Leomotion",
+  "kv": 684.0,
+  "resistance": 0.012,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 430.3,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

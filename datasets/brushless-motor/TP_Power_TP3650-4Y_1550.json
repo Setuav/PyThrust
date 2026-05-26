@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3650-4Y_1550",
+  "name": "TP3650-4Y 1550",
+  "manufacturer": "TP Power",
+  "kv": 1550.0,
+  "resistance": 0.0092,
+  "io": 2.5,
+  "max_current": 177.0,
+  "weight_g": 370.2,
+  "max_power": 4500.0,
+  "io_voltage": 6.0
+}

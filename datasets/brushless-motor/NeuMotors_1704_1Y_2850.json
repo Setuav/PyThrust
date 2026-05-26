@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_1Y_2850",
+  "name": "1704/1Y 2850",
+  "manufacturer": "NeuMotors",
+  "kv": 2850.0,
+  "resistance": 0.006,
+  "io": 3.36,
+  "max_current": 81.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

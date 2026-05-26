@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_15_KV1000",
+  "name": "Boost 15 KV1000",
+  "manufacturer": "Pichler",
+  "kv": 1000.0,
+  "resistance": 0.096,
+  "io": 1.1,
+  "max_current": 12.0,
+  "weight_g": 59.0,
+  "max_power": 150.0,
+  "io_voltage": 8.4
+}

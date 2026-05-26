@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_S2306.5-1800",
+  "name": "S2306.5-1800",
+  "manufacturer": "Surpass",
+  "kv": 1800.0,
+  "resistance": 0.088,
+  "io": 0.7,
+  "max_current": 48.0,
+  "weight_g": 34.0,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

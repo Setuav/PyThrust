@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_2.5Y_314",
+  "name": "1542/2.5Y 314",
+  "manufacturer": "NeuMotors",
+  "kv": 314.0,
+  "resistance": 0.105,
+  "io": 1.0,
+  "max_current": 39.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

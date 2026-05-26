@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6542_3_211",
+  "name": "6542/3/211",
+  "manufacturer": "NeuMotors",
+  "kv": 211.0,
+  "resistance": 0.016,
+  "io": 1.633,
+  "max_current": 240.0,
+  "weight_g": 968.7,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

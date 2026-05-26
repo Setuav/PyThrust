@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_4074_2.5Y",
+  "name": "SSS 4074 2.5Y",
+  "manufacturer": "TFL Hobby",
+  "kv": 1600.0,
+  "resistance": 0.0091,
+  "io": 2.0,
+  "max_current": 121.0,
+  "weight_g": 390.4,
+  "max_power": 4000.0,
+  "io_voltage": 11.1
+}

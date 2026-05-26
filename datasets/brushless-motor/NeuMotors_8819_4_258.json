@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8819_4_258",
+  "name": "8819/4/258",
+  "manufacturer": "NeuMotors",
+  "kv": 258.0,
+  "resistance": 0.009,
+  "io": 2.538,
+  "max_current": 243.0,
+  "weight_g": 906.6,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

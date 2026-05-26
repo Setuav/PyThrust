@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_80-100-A_180",
+  "name": "80-100-A 180",
+  "manufacturer": "Turnigy",
+  "kv": 180.0,
+  "resistance": 0.05,
+  "io": 3.5,
+  "max_current": 150.0,
+  "weight_g": 1570.8,
+  "max_power": 4710.0,
+  "io_voltage": 20.0
+}

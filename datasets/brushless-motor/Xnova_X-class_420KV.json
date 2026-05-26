@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_X-class_420KV",
+  "name": "X-class 420KV",
+  "manufacturer": "Xnova",
+  "kv": 420.0,
+  "resistance": 0.035,
+  "io": 2.2,
+  "max_current": 59.0,
+  "weight_g": 320.3,
+  "max_power": 2950.0,
+  "io_voltage": 10.0
+}

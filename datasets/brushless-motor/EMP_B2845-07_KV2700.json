@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2845-07_KV2700",
+  "name": "B2845-07 KV2700",
+  "manufacturer": "EMP",
+  "kv": 2700.0,
+  "resistance": 0.047,
+  "io": 1.1,
+  "max_current": 0.0,
+  "weight_g": 125.0,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AM600-525",
+  "name": "AM600-525",
+  "manufacturer": "T-Motor",
+  "kv": 525.0,
+  "resistance": 0.012,
+  "io": 3.4,
+  "max_current": 86.0,
+  "weight_g": 360.3,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

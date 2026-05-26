@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_3.5D_1886",
+  "name": "1509/3.5D 1886",
+  "manufacturer": "NeuMotors",
+  "kv": 1886.0,
+  "resistance": 0.015,
+  "io": 1.3,
+  "max_current": 47.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

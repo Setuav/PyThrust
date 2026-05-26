@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4060-4D_2450",
+  "name": "TP4060-4D 2450",
+  "manufacturer": "TP Power",
+  "kv": 2450.0,
+  "resistance": 0.0022,
+  "io": 6.1,
+  "max_current": 310.0,
+  "weight_g": 455.0,
+  "max_power": 6200.0,
+  "io_voltage": 8.0
+}

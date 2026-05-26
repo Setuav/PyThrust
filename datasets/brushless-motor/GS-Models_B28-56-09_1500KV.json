@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B28-56-09_1500KV",
+  "name": "B28-56-09 1500KV",
+  "manufacturer": "GS-Models",
+  "kv": 1500.0,
+  "resistance": 0.0524,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 170.1,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

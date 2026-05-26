@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_370_BL_1080",
+  "name": "Park 370 BL 1080",
+  "manufacturer": "E-flite",
+  "kv": 1080.0,
+  "resistance": 0.19,
+  "io": 0.7,
+  "max_current": 11.0,
+  "weight_g": 45.1,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

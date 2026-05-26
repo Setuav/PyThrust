@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2303C-V2-1470",
+  "name": "ECO 2303C-V2-1470",
+  "manufacturer": "Dualsky",
+  "kv": 1470.0,
+  "resistance": 0.377,
+  "io": 0.3,
+  "max_current": 8.0,
+  "weight_g": 19.0,
+  "max_power": 96.0,
+  "io_voltage": 10.0
+}

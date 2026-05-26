@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2834-22_870KV",
+  "name": "2834-22 870KV",
+  "manufacturer": "KEDA",
+  "kv": 870.0,
+  "resistance": 0.27,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 67.2,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

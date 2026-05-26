@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_12_130",
+  "name": "4625/12/130",
+  "manufacturer": "NeuMotors",
+  "kv": 130.0,
+  "resistance": 0.23,
+  "io": 0.45,
+  "max_current": 45.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-14T_2820KV",
+  "name": "380S-14T 2820KV",
+  "manufacturer": "Feigao",
+  "kv": 2820.0,
+  "resistance": 0.0289,
+  "io": 1.1,
+  "max_current": 29.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4035-0560",
+  "name": "HS4035-0560",
+  "manufacturer": "Hyperion",
+  "kv": 560.0,
+  "resistance": 0.012,
+  "io": 2.1,
+  "max_current": 135.0,
+  "weight_g": 444.2,
+  "max_power": 5670.0,
+  "io_voltage": 8.4
+}

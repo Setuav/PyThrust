@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_6D_184",
+  "name": "2515/6D 184",
+  "manufacturer": "NeuMotors",
+  "kv": 184.0,
+  "resistance": 0.043,
+  "io": 0.9,
+  "max_current": 73.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

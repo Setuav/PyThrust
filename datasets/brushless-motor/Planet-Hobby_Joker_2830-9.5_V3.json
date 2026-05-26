@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_2830-9.5_V3",
+  "name": "Joker 2830-9.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1150.0,
+  "resistance": 0.0908,
+  "io": 0.7,
+  "max_current": 23.0,
+  "weight_g": 58.1,
+  "max_power": 276.0,
+  "io_voltage": 10.0
+}

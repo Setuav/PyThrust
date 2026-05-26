@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Tornado_T7_4215_800",
+  "name": "Tornado T7 4215 800",
+  "manufacturer": "Brother Hobby",
+  "kv": 800.0,
+  "resistance": 0.02323,
+  "io": 3.14,
+  "max_current": 78.0,
+  "weight_g": 248.6,
+  "max_power": 1821.0,
+  "io_voltage": 10.0
+}

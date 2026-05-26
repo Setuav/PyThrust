@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_NIN_1404_V2_2750KV",
+  "name": "NIN 1404 V2 2750KV",
+  "manufacturer": "Flywoo",
+  "kv": 2750.0,
+  "resistance": 0.4,
+  "io": 0.34,
+  "max_current": 6.8,
+  "weight_g": 9.6,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

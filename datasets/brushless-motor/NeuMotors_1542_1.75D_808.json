@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_1.75D_808",
+  "name": "1542/1.75D 808",
+  "manufacturer": "NeuMotors",
+  "kv": 808.0,
+  "resistance": 0.017,
+  "io": 2.6,
+  "max_current": 101.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

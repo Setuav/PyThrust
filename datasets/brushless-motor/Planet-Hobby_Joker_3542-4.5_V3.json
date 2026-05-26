@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_3542-4.5_V3",
+  "name": "Joker 3542-4.5 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1120.0,
+  "resistance": 0.025,
+  "io": 1.8,
+  "max_current": 45.0,
+  "weight_g": 138.1,
+  "max_power": 540.0,
+  "io_voltage": 10.0
+}

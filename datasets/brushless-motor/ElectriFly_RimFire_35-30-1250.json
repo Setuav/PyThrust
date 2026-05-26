@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_RimFire_35-30-1250",
+  "name": "RimFire 35-30-1250",
+  "manufacturer": "ElectriFly",
+  "kv": 1250.0,
+  "resistance": 0.115,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 71.2,
+  "max_power": 213.0,
+  "io_voltage": 11.0
+}

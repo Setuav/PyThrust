@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-5030_20_235kv",
+  "name": "LPA-5030/20 235kv",
+  "manufacturer": "LiPolice",
+  "kv": 265.0,
+  "resistance": 0.0301,
+  "io": 1.38,
+  "max_current": 60.0,
+  "weight_g": 591.4,
+  "max_power": 2200.0,
+  "io_voltage": 8.4
+}

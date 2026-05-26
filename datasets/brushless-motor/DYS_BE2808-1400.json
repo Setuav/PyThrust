@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2808-1400",
+  "name": "BE2808-1400",
+  "manufacturer": "DYS",
+  "kv": 1400.0,
+  "resistance": 0.045,
+  "io": 1.2,
+  "max_current": 34.0,
+  "weight_g": 75.1,
+  "max_power": 629.0,
+  "io_voltage": 11.1
+}

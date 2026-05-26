@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN501-S_KV300",
+  "name": "MN501-S KV300",
+  "manufacturer": "T-Motor",
+  "kv": 300.0,
+  "resistance": 0.063,
+  "io": 1.1,
+  "max_current": 40.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 15.0
+}

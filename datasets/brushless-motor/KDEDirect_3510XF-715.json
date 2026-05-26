@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_3510XF-715",
+  "name": "3510XF-715",
+  "manufacturer": "KDEDirect",
+  "kv": 715.0,
+  "resistance": 0.054,
+  "io": 0.5,
+  "max_current": 45.0,
+  "weight_g": 120.2,
+  "max_power": 665.0,
+  "io_voltage": 10.0
+}

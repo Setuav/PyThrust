@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO3506_400KV",
+  "name": "XTO3506 400KV",
+  "manufacturer": "X-Team",
+  "kv": 400.0,
+  "resistance": 0.33,
+  "io": 0.3,
+  "max_current": 13.0,
+  "weight_g": 84.2,
+  "max_power": 315.0,
+  "io_voltage": 10.0
+}

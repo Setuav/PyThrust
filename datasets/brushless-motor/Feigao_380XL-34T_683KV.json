@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-34T_683KV",
+  "name": "380XL-34T 683KV",
+  "manufacturer": "Feigao",
+  "kv": 683.0,
+  "resistance": 0.2248,
+  "io": 0.2,
+  "max_current": 12.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

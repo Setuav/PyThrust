@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_HF450_3700KV",
+  "name": "HF450 3700KV",
+  "manufacturer": "Gartt",
+  "kv": 3700.0,
+  "resistance": 0.0185,
+  "io": 3.6,
+  "max_current": 32.0,
+  "weight_g": 75.1,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

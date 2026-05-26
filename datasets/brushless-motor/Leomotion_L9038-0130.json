@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L9038-0130",
+  "name": "L9038-0130",
+  "manufacturer": "Leomotion",
+  "kv": 133.0,
+  "resistance": 0.036,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 1191.0,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

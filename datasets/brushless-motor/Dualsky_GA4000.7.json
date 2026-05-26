@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA4000.7",
+  "name": "GA4000.7",
+  "manufacturer": "Dualsky",
+  "kv": 180.0,
+  "resistance": 0.023,
+  "io": 1.3,
+  "max_current": 100.0,
+  "weight_g": 700.5,
+  "max_power": 4300.0,
+  "io_voltage": 10.0
+}

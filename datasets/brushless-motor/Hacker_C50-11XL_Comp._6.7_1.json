@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C50-11XL_Comp._6.7_1",
+  "name": "C50-11XL Comp. 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1475.0,
+  "resistance": 0.015,
+  "io": 1.4,
+  "max_current": 100.0,
+  "weight_g": 523.3,
+  "max_power": 2700.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A4130-6_450KV",
+  "name": "A4130-6  450KV",
+  "manufacturer": "Cheetah",
+  "kv": 450.0,
+  "resistance": 0.05,
+  "io": 3.2,
+  "max_current": 70.0,
+  "weight_g": 400.3,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

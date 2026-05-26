@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC6325_12_228KV",
+  "name": "XC6325/12 228KV",
+  "manufacturer": "XPower",
+  "kv": 228.0,
+  "resistance": 0.035,
+  "io": 0.8,
+  "max_current": 80.0,
+  "weight_g": 540.3,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

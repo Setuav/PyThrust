@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECOII-2306_KV2400",
+  "name": "ECOII-2306 KV2400",
+  "manufacturer": "EMAX",
+  "kv": 2400.0,
+  "resistance": 0.047,
+  "io": 1.8,
+  "max_current": 44.0,
+  "weight_g": 30.3,
+  "max_power": 740.0,
+  "io_voltage": 10.0
+}

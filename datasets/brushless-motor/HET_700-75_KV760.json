@@ -1,0 +1,12 @@
+{
+  "id": "HET_700-75_KV760",
+  "name": "700-75 KV760",
+  "manufacturer": "HET",
+  "kv": 760.0,
+  "resistance": 0.0143,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 360.3,
+  "max_power": 3800.0,
+  "io_voltage": 10.0
+}

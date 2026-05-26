@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_1.25D_2640",
+  "name": "1518/1.25D 2640",
+  "manufacturer": "NeuMotors",
+  "kv": 2640.0,
+  "resistance": 0.004,
+  "io": 3.6,
+  "max_current": 132.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

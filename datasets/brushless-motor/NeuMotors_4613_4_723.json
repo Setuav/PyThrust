@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_4_723",
+  "name": "4613/4/723",
+  "manufacturer": "NeuMotors",
+  "kv": 723.0,
+  "resistance": 0.02,
+  "io": 1.35,
+  "max_current": 135.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

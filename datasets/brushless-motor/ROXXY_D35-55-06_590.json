@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_D35-55-06_590",
+  "name": "D35-55-06 590",
+  "manufacturer": "ROXXY",
+  "kv": 590.0,
+  "resistance": 0.059,
+  "io": 2.2,
+  "max_current": 45.0,
+  "weight_g": 175.2,
+  "max_power": 900.0,
+  "io_voltage": 11.1
+}

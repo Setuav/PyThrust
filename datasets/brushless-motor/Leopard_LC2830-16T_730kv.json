@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2830-16T_730kv",
+  "name": "LC2830-16T 730kv",
+  "manufacturer": "Leopard",
+  "kv": 730.0,
+  "resistance": 0.2775,
+  "io": 0.3,
+  "max_current": 10.0,
+  "weight_g": 57.0,
+  "max_power": 161.0,
+  "io_voltage": 7.4
+}

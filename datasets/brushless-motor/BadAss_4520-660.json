@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4520-660",
+  "name": "4520-660",
+  "manufacturer": "BadAss",
+  "kv": 660.0,
+  "resistance": 0.011,
+  "io": 3.06,
+  "max_current": 100.0,
+  "weight_g": 395.8,
+  "max_power": 1850.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_3530-9_V3",
+  "name": "Joker 3530-9 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 1430.0,
+  "resistance": 0.048,
+  "io": 1.1,
+  "max_current": 32.0,
+  "weight_g": 75.1,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

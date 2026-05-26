@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_50-05_560KV",
+  "name": "AL 50-05 560KV",
+  "manufacturer": "D-Power",
+  "kv": 560.0,
+  "resistance": 0.025,
+  "io": 2.2,
+  "max_current": 55.0,
+  "weight_g": 271.3,
+  "max_power": 950.0,
+  "io_voltage": 8.0
+}

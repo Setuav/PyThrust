@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3638-2700",
+  "name": "L3638-2700",
+  "manufacturer": "Leomotion",
+  "kv": 2700.0,
+  "resistance": 0.005,
+  "io": 4.5,
+  "max_current": 0.0,
+  "weight_g": 298.2,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

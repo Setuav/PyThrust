@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECO_Micro_1106_KV4500",
+  "name": "ECO Micro 1106 KV4500",
+  "manufacturer": "EMAX",
+  "kv": 4500.0,
+  "resistance": 0.3,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 6.8,
+  "max_power": 146.0,
+  "io_voltage": 10.0
+}

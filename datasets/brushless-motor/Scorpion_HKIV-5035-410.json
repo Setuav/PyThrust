@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-5035-410",
+  "name": "HKIV-5035-410",
+  "manufacturer": "Scorpion",
+  "kv": 410.0,
+  "resistance": 0.0132,
+  "io": 3.3,
+  "max_current": 105.0,
+  "weight_g": 749.3,
+  "max_power": 4662.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4614MR-9",
+  "name": "XM4614MR-9",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.091,
+  "io": 0.7,
+  "max_current": 28.0,
+  "weight_g": 145.1,
+  "max_power": 614.0,
+  "io_voltage": 10.0
+}

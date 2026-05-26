@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_VY2004-1700",
+  "name": "VY2004-1700",
+  "manufacturer": "Brother Hobby",
+  "kv": 1700.0,
+  "resistance": 0.3205,
+  "io": 0.57,
+  "max_current": 14.0,
+  "weight_g": 15.0,
+  "max_power": 339.0,
+  "io_voltage": 10.0
+}

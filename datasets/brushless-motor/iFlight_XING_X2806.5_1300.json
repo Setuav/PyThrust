@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X2806.5_1300",
+  "name": "XING X2806.5 1300",
+  "manufacturer": "iFlight",
+  "kv": 1300.0,
+  "resistance": 0.0723,
+  "io": 1.3,
+  "max_current": 48.0,
+  "weight_g": 50.2,
+  "max_power": 1133.0,
+  "io_voltage": 10.0
+}

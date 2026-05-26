@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1915_1Y_684",
+  "name": "1915/1Y 684",
+  "manufacturer": "NeuMotors",
+  "kv": 684.0,
+  "resistance": 0.012,
+  "io": 1.5,
+  "max_current": 70.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

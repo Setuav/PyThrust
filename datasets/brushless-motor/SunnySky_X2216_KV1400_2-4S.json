@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2216_KV1400_2-4S",
+  "name": "X2216 KV1400 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1400.0,
+  "resistance": 0.055,
+  "io": 1.3,
+  "max_current": 33.0,
+  "weight_g": 72.0,
+  "max_power": 540.0,
+  "io_voltage": 10.0
+}

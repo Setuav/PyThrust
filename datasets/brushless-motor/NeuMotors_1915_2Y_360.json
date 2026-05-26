@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1915_2Y_360",
+  "name": "1915/2Y 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.05,
+  "io": 0.6,
+  "max_current": 37.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

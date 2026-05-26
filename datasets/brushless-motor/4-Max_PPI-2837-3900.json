@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-2837-3900",
+  "name": "PPI-2837-3900",
+  "manufacturer": "4-Max",
+  "kv": 3900.0,
+  "resistance": 0.04,
+  "io": 2.0,
+  "max_current": 32.0,
+  "weight_g": 96.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

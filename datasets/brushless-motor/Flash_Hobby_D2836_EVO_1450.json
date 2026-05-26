@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D2836_EVO_1450",
+  "name": "D2836 EVO 1450",
+  "manufacturer": "Flash Hobby",
+  "kv": 1450.0,
+  "resistance": 0.0335,
+  "io": 2.24,
+  "max_current": 49.0,
+  "weight_g": 89.0,
+  "max_power": 740.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-18T_1972KV",
+  "name": "540S-18T 1972KV",
+  "manufacturer": "Feigao",
+  "kv": 1972.0,
+  "resistance": 0.0306,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

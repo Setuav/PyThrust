@@ -1,0 +1,12 @@
+{
+  "id": "KingVal_2440_4600KV",
+  "name": "2440 4600KV",
+  "manufacturer": "KingVal",
+  "kv": 4600.0,
+  "resistance": 0.0057,
+  "io": 2.6,
+  "max_current": 37.0,
+  "weight_g": 70.0,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

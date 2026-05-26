@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_8_247",
+  "name": "4619/8/247",
+  "manufacturer": "NeuMotors",
+  "kv": 247.0,
+  "resistance": 0.085,
+  "io": 0.68,
+  "max_current": 67.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

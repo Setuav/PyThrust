@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_16_142",
+  "name": "8012/16/142",
+  "manufacturer": "NeuMotors",
+  "kv": 142.0,
+  "resistance": 0.049,
+  "io": 0.506,
+  "max_current": 64.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

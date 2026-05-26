@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2838EG-11",
+  "name": "XM2838EG-11",
+  "manufacturer": "Dualsky",
+  "kv": 1100.0,
+  "resistance": 0.0435,
+  "io": 1.5,
+  "max_current": 26.0,
+  "weight_g": 88.2,
+  "max_power": 312.0,
+  "io_voltage": 10.0
+}

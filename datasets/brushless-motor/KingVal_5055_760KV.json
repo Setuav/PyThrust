@@ -1,0 +1,12 @@
+{
+  "id": "KingVal_5055_760KV",
+  "name": "5055 760KV",
+  "manufacturer": "KingVal",
+  "kv": 760.0,
+  "resistance": 0.0173,
+  "io": 2.4,
+  "max_current": 83.0,
+  "weight_g": 289.2,
+  "max_power": 1660.0,
+  "io_voltage": 10.0
+}

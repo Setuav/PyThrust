@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3045EG-10",
+  "name": "XM3045EG-10",
+  "manufacturer": "Dualsky",
+  "kv": 1000.0,
+  "resistance": 0.0342,
+  "io": 1.27,
+  "max_current": 42.0,
+  "weight_g": 120.2,
+  "max_power": 777.0,
+  "io_voltage": 10.0
+}

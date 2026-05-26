@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_2.5D_558",
+  "name": "2020/2.5D 558",
+  "manufacturer": "NeuMotors",
+  "kv": 558.0,
+  "resistance": 0.015,
+  "io": 2.06,
+  "max_current": 103.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

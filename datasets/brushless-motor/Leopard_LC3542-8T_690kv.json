@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3542-8T_690kv",
+  "name": "LC3542-8T 690kv",
+  "manufacturer": "Leopard",
+  "kv": 690.0,
+  "resistance": 0.0609,
+  "io": 0.7,
+  "max_current": 33.0,
+  "weight_g": 135.2,
+  "max_power": 710.0,
+  "io_voltage": 7.4
+}

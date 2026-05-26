@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_10_KV1400",
+  "name": "Boost 10 KV1400",
+  "manufacturer": "Pichler",
+  "kv": 1400.0,
+  "resistance": 0.086,
+  "io": 1.3,
+  "max_current": 10.0,
+  "weight_g": 49.0,
+  "max_power": 90.0,
+  "io_voltage": 8.4
+}

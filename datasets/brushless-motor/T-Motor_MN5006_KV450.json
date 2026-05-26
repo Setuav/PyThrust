@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN5006_KV450",
+  "name": "MN5006 KV450",
+  "manufacturer": "T-Motor",
+  "kv": 450.0,
+  "resistance": 0.06,
+  "io": 0.9,
+  "max_current": 26.0,
+  "weight_g": 106.0,
+  "max_power": 650.0,
+  "io_voltage": 22.0
+}

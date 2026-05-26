@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_370_BL_3600",
+  "name": "Park 370 BL 3600",
+  "manufacturer": "E-flite",
+  "kv": 3600.0,
+  "resistance": 0.29,
+  "io": 0.8,
+  "max_current": 11.0,
+  "weight_g": 47.9,
+  "max_power": 100.0,
+  "io_voltage": 10.0
+}

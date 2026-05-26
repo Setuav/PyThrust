@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3623-1800",
+  "name": "L3623-1800",
+  "manufacturer": "Leomotion",
+  "kv": 1820.0,
+  "resistance": 0.02,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 196.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-7D_2080",
+  "name": "TP3640-7D 2080",
+  "manufacturer": "TP Power",
+  "kv": 2080.0,
+  "resistance": 0.0082,
+  "io": 1.8,
+  "max_current": 100.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

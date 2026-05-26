@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C2834-12_750",
+  "name": "C2834-12 750",
+  "manufacturer": "Spitz",
+  "kv": 875.0,
+  "resistance": 0.152,
+  "io": 0.6,
+  "max_current": 19.0,
+  "weight_g": 67.2,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-4250-800",
+  "name": "PPO-4250-800",
+  "manufacturer": "4-Max",
+  "kv": 800.0,
+  "resistance": 0.027,
+  "io": 3.5,
+  "max_current": 36.0,
+  "weight_g": 195.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

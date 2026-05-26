@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-5025-375",
+  "name": "OMA-5025-375",
+  "manufacturer": "O.S. Motor",
+  "kv": 375.0,
+  "resistance": 0.0275,
+  "io": 2.0,
+  "max_current": 90.0,
+  "weight_g": 400.6,
+  "max_power": 1550.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_2809_KV1620",
+  "name": "2809 KV1620",
+  "manufacturer": "Kavan",
+  "kv": 1620.0,
+  "resistance": 0.387,
+  "io": 0.28,
+  "max_current": 9.0,
+  "weight_g": 15.0,
+  "max_power": 54.0,
+  "io_voltage": 10.0
+}

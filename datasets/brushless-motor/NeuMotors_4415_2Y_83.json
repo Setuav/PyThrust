@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4415_2Y_83",
+  "name": "4415/2Y 83",
+  "manufacturer": "NeuMotors",
+  "kv": 83.0,
+  "resistance": 0.028,
+  "io": 1.5,
+  "max_current": 125.0,
+  "weight_g": 2520.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

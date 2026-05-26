@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_2206-2150_V2",
+  "name": "2206-2150 V2",
+  "manufacturer": "MultiStar",
+  "kv": 2150.0,
+  "resistance": 0.094,
+  "io": 0.7,
+  "max_current": 10.0,
+  "weight_g": 30.1,
+  "max_power": 120.0,
+  "io_voltage": 5.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ARC_28-47-1",
+  "name": "28-47-1",
+  "manufacturer": "ARC",
+  "kv": 4250.0,
+  "resistance": 0.009,
+  "io": 2.8,
+  "max_current": 55.0,
+  "weight_g": 113.4,
+  "max_power": 500.0,
+  "io_voltage": 12.0
+}

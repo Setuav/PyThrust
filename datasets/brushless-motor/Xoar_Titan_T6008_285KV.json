@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T6008_285KV",
+  "name": "Titan T6008 285KV",
+  "manufacturer": "Xoar",
+  "kv": 285.0,
+  "resistance": 0.086,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 177.2,
+  "max_power": 637.0,
+  "io_voltage": 10.0
+}

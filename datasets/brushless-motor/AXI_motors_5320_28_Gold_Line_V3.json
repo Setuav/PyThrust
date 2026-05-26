@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5320_28_Gold_Line_V3",
+  "name": "5320/28 Gold Line V3",
+  "manufacturer": "AXI motors",
+  "kv": 249.0,
+  "resistance": 0.036,
+  "io": 1.3,
+  "max_current": 52.0,
+  "weight_g": 515.4,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

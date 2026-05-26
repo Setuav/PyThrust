@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_3_148",
+  "name": "6560/3/148",
+  "manufacturer": "NeuMotors",
+  "kv": 148.0,
+  "resistance": 0.021,
+  "io": 1.633,
+  "max_current": 240.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-2836_V3_1120KV",
+  "name": "AL-2836 V3 1120KV",
+  "manufacturer": "Dymond",
+  "kv": 1120.0,
+  "resistance": 0.1261,
+  "io": 1.16,
+  "max_current": 20.0,
+  "weight_g": 67.2,
+  "max_power": 260.0,
+  "io_voltage": 8.12
+}

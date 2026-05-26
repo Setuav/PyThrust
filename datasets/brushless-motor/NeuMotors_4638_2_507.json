@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_2_507",
+  "name": "4638/2/507",
+  "manufacturer": "NeuMotors",
+  "kv": 507.0,
+  "resistance": 0.01,
+  "io": 2.7,
+  "max_current": 269.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Suppo_A2820_6",
+  "name": "A2820/6",
+  "manufacturer": "Suppo",
+  "kv": 1000.0,
+  "resistance": 0.059,
+  "io": 2.0,
+  "max_current": 37.0,
+  "weight_g": 100.1,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

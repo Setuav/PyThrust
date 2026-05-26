@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AS2820-1250",
+  "name": "AS2820-1250",
+  "manufacturer": "T-Motor",
+  "kv": 1250.0,
+  "resistance": 0.0168,
+  "io": 3.44,
+  "max_current": 77.0,
+  "weight_g": 144.0,
+  "max_power": 1092.0,
+  "io_voltage": 10.0
+}

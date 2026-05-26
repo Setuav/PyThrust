@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2220_16_980KV",
+  "name": "2220/16 980KV",
+  "manufacturer": "Extron",
+  "kv": 980.0,
+  "resistance": 0.0712,
+  "io": 1.3,
+  "max_current": 21.0,
+  "weight_g": 85.0,
+  "max_power": 315.0,
+  "io_voltage": 11.1
+}

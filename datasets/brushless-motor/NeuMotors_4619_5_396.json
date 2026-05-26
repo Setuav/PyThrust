@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_5_396",
+  "name": "4619/5/396",
+  "manufacturer": "NeuMotors",
+  "kv": 396.0,
+  "resistance": 0.034,
+  "io": 1.08,
+  "max_current": 108.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

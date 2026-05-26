@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-5045_14_185kv",
+  "name": "LPA-5045/14 185kv",
+  "manufacturer": "LiPolice",
+  "kv": 185.0,
+  "resistance": 0.016,
+  "io": 2.2,
+  "max_current": 70.0,
+  "weight_g": 995.6,
+  "max_power": 3100.0,
+  "io_voltage": 8.4
+}

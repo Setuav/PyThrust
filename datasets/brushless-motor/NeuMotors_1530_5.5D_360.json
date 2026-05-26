@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_5.5D_360",
+  "name": "1530/5.5D 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.121,
+  "io": 0.82,
+  "max_current": 33.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

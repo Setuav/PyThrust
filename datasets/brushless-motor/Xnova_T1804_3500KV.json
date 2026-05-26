@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_T1804_3500KV",
+  "name": "T1804 3500KV",
+  "manufacturer": "Xnova",
+  "kv": 3500.0,
+  "resistance": 0.11,
+  "io": 1.2,
+  "max_current": 23.0,
+  "weight_g": 13.6,
+  "max_power": 258.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_35-12_1270KV",
+  "name": "AL 35-12 1270KV",
+  "manufacturer": "D-Power",
+  "kv": 1270.0,
+  "resistance": 0.0315,
+  "io": 1.8,
+  "max_current": 38.0,
+  "weight_g": 95.0,
+  "max_power": 330.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2306_2700KV",
+  "name": "XRotor 2306 2700KV",
+  "manufacturer": "HobbyWing",
+  "kv": 2700.0,
+  "resistance": 0.0374,
+  "io": 1.36,
+  "max_current": 41.0,
+  "weight_g": 28.1,
+  "max_power": 652.0,
+  "io_voltage": 10.0
+}

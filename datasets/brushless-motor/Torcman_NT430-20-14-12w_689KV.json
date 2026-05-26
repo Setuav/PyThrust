@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-20-14-12w_689KV",
+  "name": "NT430-20-14-12w 689KV",
+  "manufacturer": "Torcman",
+  "kv": 689.0,
+  "resistance": 0.0125,
+  "io": 3.7,
+  "max_current": 60.0,
+  "weight_g": 375.3,
+  "max_power": 1000.0,
+  "io_voltage": 12.0
+}

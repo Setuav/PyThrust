@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_0.5Y_1467",
+  "name": "1545/0.5Y 1467",
+  "manufacturer": "NeuMotors",
+  "kv": 1467.0,
+  "resistance": 0.005,
+  "io": 5.0,
+  "max_current": 196.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_4.5D_338",
+  "name": "1539/4.5D 338",
+  "manufacturer": "NeuMotors",
+  "kv": 338.0,
+  "resistance": 0.1053,
+  "io": 1.0,
+  "max_current": 39.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

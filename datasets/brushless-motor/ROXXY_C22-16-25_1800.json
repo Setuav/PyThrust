@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C22-16-25_1800",
+  "name": "C22-16-25 1800",
+  "manufacturer": "ROXXY",
+  "kv": 1800.0,
+  "resistance": 0.374,
+  "io": 0.47,
+  "max_current": 11.0,
+  "weight_g": 19.0,
+  "max_power": 80.0,
+  "io_voltage": 10.5
+}

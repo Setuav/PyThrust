@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_2315XF-965",
+  "name": "2315XF-965",
+  "manufacturer": "KDEDirect",
+  "kv": 965.0,
+  "resistance": 0.102,
+  "io": 0.5,
+  "max_current": 26.0,
+  "weight_g": 64.1,
+  "max_power": 385.0,
+  "io_voltage": 10.0
+}

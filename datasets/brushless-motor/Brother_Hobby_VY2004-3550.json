@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_VY2004-3550",
+  "name": "VY2004-3550",
+  "manufacturer": "Brother Hobby",
+  "kv": 3550.0,
+  "resistance": 0.0822,
+  "io": 1.02,
+  "max_current": 33.0,
+  "weight_g": 15.0,
+  "max_power": 514.0,
+  "io_voltage": 10.0
+}

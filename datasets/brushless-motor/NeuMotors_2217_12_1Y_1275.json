@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2217_12_1Y_1275",
+  "name": "2217/12/1Y 1275",
+  "manufacturer": "NeuMotors",
+  "kv": 1275.0,
+  "resistance": 0.002,
+  "io": 3.1,
+  "max_current": 238.0,
+  "weight_g": 818.7,
+  "max_power": 5600.0,
+  "io_voltage": 10.0
+}

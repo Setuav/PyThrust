@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_14_141",
+  "name": "4619/14/141",
+  "manufacturer": "NeuMotors",
+  "kv": 141.0,
+  "resistance": 0.25,
+  "io": 0.39,
+  "max_current": 38.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

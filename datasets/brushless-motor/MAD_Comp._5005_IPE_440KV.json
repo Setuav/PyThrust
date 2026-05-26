@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5005_IPE_440KV",
+  "name": "5005 IPE 440KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 440.0,
+  "resistance": 0.068,
+  "io": 0.9,
+  "max_current": 26.0,
+  "weight_g": 108.0,
+  "max_power": 572.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_B2810-980",
+  "name": "B2810-980",
+  "manufacturer": "Surpass",
+  "kv": 980.0,
+  "resistance": 0.071,
+  "io": 0.9,
+  "max_current": 46.0,
+  "weight_g": 70.0,
+  "max_power": 1110.0,
+  "io_voltage": 10.0
+}

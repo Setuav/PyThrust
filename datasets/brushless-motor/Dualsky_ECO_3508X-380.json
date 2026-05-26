@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_3508X-380",
+  "name": "ECO 3508X-380",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.26,
+  "io": 0.1,
+  "max_current": 12.0,
+  "weight_g": 105.2,
+  "max_power": 272.0,
+  "io_voltage": 10.0
+}

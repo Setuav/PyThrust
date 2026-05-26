@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N3548-04_KV900",
+  "name": "N3548-04 KV900",
+  "manufacturer": "EMP",
+  "kv": 900.0,
+  "resistance": 0.035,
+  "io": 2.9,
+  "max_current": 0.0,
+  "weight_g": 171.2,
+  "max_power": 830.0,
+  "io_voltage": 10.0
+}

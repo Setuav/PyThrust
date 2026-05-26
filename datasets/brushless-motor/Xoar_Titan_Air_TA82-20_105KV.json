@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_Air_TA82-20_105KV",
+  "name": "Titan Air TA82-20 105KV",
+  "manufacturer": "Xoar",
+  "kv": 105.0,
+  "resistance": 0.051,
+  "io": 1.8,
+  "max_current": 67.0,
+  "weight_g": 670.5,
+  "max_power": 3202.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_AM30_F3P_KV1450",
+  "name": "AM30 F3P KV1450",
+  "manufacturer": "T-Hobby",
+  "kv": 1450.0,
+  "resistance": 0.204,
+  "io": 0.8,
+  "max_current": 14.0,
+  "weight_g": 19.0,
+  "max_power": 172.0,
+  "io_voltage": 10.0
+}

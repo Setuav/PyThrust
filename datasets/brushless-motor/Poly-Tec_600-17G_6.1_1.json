@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_600-17G_6.1_1",
+  "name": "600-17G 6.1:1",
+  "manufacturer": "Poly-Tec",
+  "kv": 1800.0,
+  "resistance": 0.0169,
+  "io": 3.0,
+  "max_current": 125.0,
+  "weight_g": 375.3,
+  "max_power": 1500.0,
+  "io_voltage": 7.4
+}

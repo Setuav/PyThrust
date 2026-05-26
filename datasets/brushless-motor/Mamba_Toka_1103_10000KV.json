@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1103_10000KV",
+  "name": "Toka 1103 10000KV",
+  "manufacturer": "Mamba",
+  "kv": 10000.0,
+  "resistance": 0.158,
+  "io": 0.5,
+  "max_current": 8.6,
+  "weight_g": 4.8,
+  "max_power": 70.0,
+  "io_voltage": 4.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2808_09_1400",
+  "name": "2808/09 1400",
+  "manufacturer": "RedRock",
+  "kv": 1400.0,
+  "resistance": 0.058,
+  "io": 1.2,
+  "max_current": 25.0,
+  "weight_g": 90.2,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

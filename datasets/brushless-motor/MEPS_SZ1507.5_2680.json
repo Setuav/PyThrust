@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1507.5_2680",
+  "name": "SZ1507.5 2680",
+  "manufacturer": "MEPS",
+  "kv": 2680.0,
+  "resistance": 0.15,
+  "io": 0.7,
+  "max_current": 21.0,
+  "weight_g": 15.9,
+  "max_power": 528.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-7T_1160kv",
+  "name": "LC2835-7T 1160kv",
+  "manufacturer": "Leopard",
+  "kv": 1160.0,
+  "resistance": 0.0611,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 71.2,
+  "max_power": 327.0,
+  "io_voltage": 7.4
+}

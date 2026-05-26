@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO4008_380KV",
+  "name": "XTO4008 380KV",
+  "manufacturer": "X-Team",
+  "kv": 380.0,
+  "resistance": 0.131,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 105.2,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

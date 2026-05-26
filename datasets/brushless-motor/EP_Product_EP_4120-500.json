@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_4120-500",
+  "name": "EP 4120-500",
+  "manufacturer": "EP Product",
+  "kv": 540.0,
+  "resistance": 0.045,
+  "io": 1.5,
+  "max_current": 54.0,
+  "weight_g": 290.3,
+  "max_power": 1600.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-18T_3223KV",
+  "name": "130L-18T 3223KV",
+  "manufacturer": "Feigao",
+  "kv": 3223.0,
+  "resistance": 0.087,
+  "io": 0.6,
+  "max_current": 13.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

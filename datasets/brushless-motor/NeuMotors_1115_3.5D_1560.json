@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_3.5D_1560",
+  "name": "1115/3.5D 1560",
+  "manufacturer": "NeuMotors",
+  "kv": 1560.0,
+  "resistance": 0.031,
+  "io": 1.3,
+  "max_current": 36.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_HF600S_1220KV",
+  "name": "HF600S 1220KV",
+  "manufacturer": "Gartt",
+  "kv": 1220.0,
+  "resistance": 0.015,
+  "io": 3.8,
+  "max_current": 95.0,
+  "weight_g": 356.9,
+  "max_power": 2100.0,
+  "io_voltage": 10.0
+}

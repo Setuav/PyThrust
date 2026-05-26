@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C5065-KV380",
+  "name": "C5065-KV380",
+  "manufacturer": "Aeolian",
+  "kv": 380.0,
+  "resistance": 0.0286,
+  "io": 1.9,
+  "max_current": 68.0,
+  "weight_g": 375.3,
+  "max_power": 1680.0,
+  "io_voltage": 10.0
+}

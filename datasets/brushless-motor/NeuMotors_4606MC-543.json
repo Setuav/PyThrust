@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-543",
+  "name": "4606MC-543",
+  "manufacturer": "NeuMotors",
+  "kv": 543.0,
+  "resistance": 0.052,
+  "io": 0.2,
+  "max_current": 49.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

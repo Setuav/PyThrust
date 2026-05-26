@@ -1,0 +1,12 @@
+{
+  "id": "MicroDan_2505_2800KV",
+  "name": "2505 2800KV",
+  "manufacturer": "MicroDan",
+  "kv": 2810.0,
+  "resistance": 0.095,
+  "io": 2.11,
+  "max_current": 35.0,
+  "weight_g": 32.9,
+  "max_power": 140.0,
+  "io_voltage": 10.0
+}

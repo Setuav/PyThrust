@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3031-1100",
+  "name": "L3031-1100",
+  "manufacturer": "Leomotion",
+  "kv": 1100.0,
+  "resistance": 0.082,
+  "io": 0.4,
+  "max_current": 0.0,
+  "weight_g": 155.1,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

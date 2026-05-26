@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2220_12_3Y_360",
+  "name": "2220/12/3Y 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.23,
+  "io": 1.0,
+  "max_current": 77.0,
+  "weight_g": 962.7,
+  "max_power": 6400.0,
+  "io_voltage": 10.0
+}

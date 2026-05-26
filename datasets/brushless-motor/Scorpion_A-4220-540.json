@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_A-4220-540",
+  "name": "A-4220-540",
+  "manufacturer": "Scorpion",
+  "kv": 540.0,
+  "resistance": 0.0182,
+  "io": 1.54,
+  "max_current": 115.0,
+  "weight_g": 288.0,
+  "max_power": 2553.0,
+  "io_voltage": 15.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_2.25Y_1156",
+  "name": "1117/2.25Y 1156",
+  "manufacturer": "NeuMotors",
+  "kv": 1156.0,
+  "resistance": 0.044,
+  "io": 1.1,
+  "max_current": 31.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS2207Plus_V2-1860",
+  "name": "GTS2207Plus V2-1860",
+  "manufacturer": "RCinPower",
+  "kv": 1890.0,
+  "resistance": 0.055,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 32.0,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

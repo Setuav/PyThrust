@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_4010-485",
+  "name": "4010-485",
+  "manufacturer": "MultiStar",
+  "kv": 485.0,
+  "resistance": 0.085,
+  "io": 0.8,
+  "max_current": 26.0,
+  "weight_g": 128.1,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_3.75D_1747",
+  "name": "1112/3.75D 1747",
+  "manufacturer": "NeuMotors",
+  "kv": 1747.0,
+  "resistance": 0.029,
+  "io": 1.2,
+  "max_current": 35.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

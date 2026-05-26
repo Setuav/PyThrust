@@ -1,0 +1,12 @@
+{
+  "id": "HiTec_3508_30_400KV",
+  "name": "3508/30 400KV",
+  "manufacturer": "HiTec",
+  "kv": 400.0,
+  "resistance": 0.371,
+  "io": 0.35,
+  "max_current": 40.0,
+  "weight_g": 135.2,
+  "max_power": 340.0,
+  "io_voltage": 8.0
+}

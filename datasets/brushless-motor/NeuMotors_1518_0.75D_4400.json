@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_0.75D_4400",
+  "name": "1518/0.75D 4400",
+  "manufacturer": "NeuMotors",
+  "kv": 4400.0,
+  "resistance": 0.0014,
+  "io": 6.0,
+  "max_current": 220.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

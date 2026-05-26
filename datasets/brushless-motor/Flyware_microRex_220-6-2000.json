@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_microRex_220-6-2000",
+  "name": "microRex 220-6-2000*",
+  "manufacturer": "Flyware",
+  "kv": 1949.0,
+  "resistance": 0.237,
+  "io": 0.5,
+  "max_current": 12.0,
+  "weight_g": 20.1,
+  "max_power": 165.0,
+  "io_voltage": 10.0
+}

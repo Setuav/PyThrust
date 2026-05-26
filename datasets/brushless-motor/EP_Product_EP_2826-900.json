@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2826-900",
+  "name": "EP 2826-900",
+  "manufacturer": "EP Product",
+  "kv": 930.0,
+  "resistance": 0.042,
+  "io": 1.3,
+  "max_current": 45.0,
+  "weight_g": 171.2,
+  "max_power": 830.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_705_3Y_4900",
+  "name": "705/3Y 4900",
+  "manufacturer": "NeuMotors",
+  "kv": 4900.0,
+  "resistance": 0.1,
+  "io": 0.7,
+  "max_current": 11.0,
+  "weight_g": 28.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

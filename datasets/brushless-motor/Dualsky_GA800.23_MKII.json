@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA800.23_MKII",
+  "name": "GA800.23 MKII",
+  "manufacturer": "Dualsky",
+  "kv": 530.0,
+  "resistance": 0.047,
+  "io": 1.2,
+  "max_current": 41.0,
+  "weight_g": 172.1,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

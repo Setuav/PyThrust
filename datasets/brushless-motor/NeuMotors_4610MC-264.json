@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-264",
+  "name": "4610MC-264",
+  "manufacturer": "NeuMotors",
+  "kv": 264.0,
+  "resistance": 0.152,
+  "io": 0.16,
+  "max_current": 31.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

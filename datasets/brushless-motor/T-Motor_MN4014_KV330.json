@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4014_KV330",
+  "name": "MN4014 KV330",
+  "manufacturer": "T-Motor",
+  "kv": 330.0,
+  "resistance": 0.085,
+  "io": 1.1,
+  "max_current": 25.0,
+  "weight_g": 150.3,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

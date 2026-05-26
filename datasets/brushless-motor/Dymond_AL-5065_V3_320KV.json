@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-5065_V3_320KV",
+  "name": "AL-5065 V3 320KV",
+  "manufacturer": "Dymond",
+  "kv": 320.0,
+  "resistance": 0.0564,
+  "io": 1.2,
+  "max_current": 55.0,
+  "weight_g": 420.4,
+  "max_power": 1300.0,
+  "io_voltage": 13.0
+}

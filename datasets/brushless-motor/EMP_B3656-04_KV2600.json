@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3656-04_KV2600",
+  "name": "B3656-04 KV2600",
+  "manufacturer": "EMP",
+  "kv": 2600.0,
+  "resistance": 0.01,
+  "io": 5.3,
+  "max_current": 0.0,
+  "weight_g": 260.2,
+  "max_power": 1390.0,
+  "io_voltage": 10.0
+}

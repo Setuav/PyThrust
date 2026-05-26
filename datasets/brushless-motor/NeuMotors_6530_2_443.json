@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6530_2_443",
+  "name": "6530/2/443",
+  "manufacturer": "NeuMotors",
+  "kv": 443.0,
+  "resistance": 0.006,
+  "io": 2.45,
+  "max_current": 360.0,
+  "weight_g": 741.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_3D_508",
+  "name": "1539/3D 508",
+  "manufacturer": "NeuMotors",
+  "kv": 508.0,
+  "resistance": 0.047,
+  "io": 1.5,
+  "max_current": 59.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

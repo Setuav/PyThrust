@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2280-9_HiAmp_833KV",
+  "name": "2280-9 HiAmp 833KV",
+  "manufacturer": "Lehner",
+  "kv": 833.0,
+  "resistance": 0.0085,
+  "io": 3.5,
+  "max_current": 115.0,
+  "weight_g": 800.6,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_29_38-10H_3800",
+  "name": "OBL 29/38-10H 3800",
+  "manufacturer": "Thunder Tiger",
+  "kv": 3800.0,
+  "resistance": 0.025,
+  "io": 1.6,
+  "max_current": 43.0,
+  "weight_g": 68.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

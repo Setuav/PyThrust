@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G60_5030-KV420",
+  "name": "G60 5030-KV420",
+  "manufacturer": "TomCat",
+  "kv": 420.0,
+  "resistance": 0.029,
+  "io": 2.8,
+  "max_current": 72.0,
+  "weight_g": 408.2,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

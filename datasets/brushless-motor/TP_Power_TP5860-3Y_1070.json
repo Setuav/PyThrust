@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5860-3Y_1070",
+  "name": "TP5860-3Y 1070",
+  "manufacturer": "TP Power",
+  "kv": 1070.0,
+  "resistance": 0.0031,
+  "io": 7.1,
+  "max_current": 300.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

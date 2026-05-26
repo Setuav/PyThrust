@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C22-20-15_1780KV",
+  "name": "C22-20-15 1780KV",
+  "manufacturer": "GS-Models",
+  "kv": 1780.0,
+  "resistance": 0.165,
+  "io": 0.7,
+  "max_current": 12.0,
+  "weight_g": 28.1,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

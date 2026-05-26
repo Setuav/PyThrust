@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_8.5_56",
+  "name": "8057/8.5/56",
+  "manufacturer": "NeuMotors",
+  "kv": 56.0,
+  "resistance": 0.0437,
+  "io": 0.953,
+  "max_current": 120.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C4240-09_KV1020",
+  "name": "C4240-09 KV1020",
+  "manufacturer": "EMP",
+  "kv": 1020.0,
+  "resistance": 0.031,
+  "io": 3.9,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 660.0,
+  "io_voltage": 10.0
+}

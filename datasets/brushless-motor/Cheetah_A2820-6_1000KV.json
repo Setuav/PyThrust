@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2820-6_1000KV",
+  "name": "A2820-6 1000KV",
+  "manufacturer": "Cheetah",
+  "kv": 1000.0,
+  "resistance": 0.059,
+  "io": 2.0,
+  "max_current": 37.0,
+  "weight_g": 133.0,
+  "max_power": 680.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-34S_EVO",
+  "name": "A20-34S EVO",
+  "manufacturer": "Hacker",
+  "kv": 1500.0,
+  "resistance": 0.147,
+  "io": 0.75,
+  "max_current": 5.0,
+  "weight_g": 28.9,
+  "max_power": 100.0,
+  "io_voltage": 8.4
+}

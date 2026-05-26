@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2806.5_Freestyle_1900KV",
+  "name": "2806.5 Freestyle 1900KV",
+  "manufacturer": "Xnova",
+  "kv": 1900.0,
+  "resistance": 0.05,
+  "io": 1.8,
+  "max_current": 43.0,
+  "weight_g": 49.0,
+  "max_power": 948.0,
+  "io_voltage": 10.0
+}

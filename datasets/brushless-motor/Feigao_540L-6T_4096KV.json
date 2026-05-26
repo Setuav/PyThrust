@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-6T_4096KV",
+  "name": "540L-6T 4096KV",
+  "manufacturer": "Feigao",
+  "kv": 4096.0,
+  "resistance": 0.0043,
+  "io": 5.8,
+  "max_current": 102.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

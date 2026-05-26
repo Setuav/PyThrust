@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_4112-380",
+  "name": "Avenger 4112-380",
+  "manufacturer": "Brother Hobby",
+  "kv": 380.0,
+  "resistance": 0.1144,
+  "io": 0.66,
+  "max_current": 44.0,
+  "weight_g": 169.2,
+  "max_power": 1475.0,
+  "io_voltage": 10.0
+}

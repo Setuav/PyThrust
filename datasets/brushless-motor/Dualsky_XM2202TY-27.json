@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2202TY-27",
+  "name": "XM2202TY-27",
+  "manufacturer": "Dualsky",
+  "kv": 1500.0,
+  "resistance": 0.71,
+  "io": 0.14,
+  "max_current": 3.0,
+  "weight_g": 9.9,
+  "max_power": 24.0,
+  "io_voltage": 10.0
+}

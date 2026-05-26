@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3530EA-10",
+  "name": "XM3530EA-10",
+  "manufacturer": "Dualsky",
+  "kv": 1220.0,
+  "resistance": 0.044,
+  "io": 1.9,
+  "max_current": 24.0,
+  "weight_g": 74.0,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3210_2.5Y_132",
+  "name": "3210/2.5Y 132",
+  "manufacturer": "NeuMotors",
+  "kv": 132.0,
+  "resistance": 0.073,
+  "io": 0.8,
+  "max_current": 35.0,
+  "weight_g": 1007.8,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

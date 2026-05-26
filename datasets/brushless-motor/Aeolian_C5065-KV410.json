@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C5065-KV410",
+  "name": "C5065-KV410",
+  "manufacturer": "Aeolian",
+  "kv": 410.0,
+  "resistance": 0.0234,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 375.3,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

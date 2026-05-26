@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_2207_KV1980",
+  "name": "TOA 2207 KV1980",
+  "manufacturer": "Karearea",
+  "kv": 1980.0,
+  "resistance": 0.057,
+  "io": 1.1,
+  "max_current": 43.0,
+  "weight_g": 34.0,
+  "max_power": 955.0,
+  "io_voltage": 10.0
+}

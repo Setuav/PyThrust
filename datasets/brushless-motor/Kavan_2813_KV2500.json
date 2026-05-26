@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_2813_KV2500",
+  "name": "2813 KV2500",
+  "manufacturer": "Kavan",
+  "kv": 2500.0,
+  "resistance": 0.0965,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 20.1,
+  "max_power": 170.0,
+  "io_voltage": 10.0
+}

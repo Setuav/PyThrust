@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_4120-660",
+  "name": "Rocket 4120-660",
+  "manufacturer": "Exceed RC",
+  "kv": 660.0,
+  "resistance": 0.013,
+  "io": 2.2,
+  "max_current": 180.0,
+  "weight_g": 292.6,
+  "max_power": 1850.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C5065-KV270",
+  "name": "C5065-KV270",
+  "manufacturer": "Aeolian",
+  "kv": 270.0,
+  "resistance": 0.0512,
+  "io": 1.2,
+  "max_current": 42.0,
+  "weight_g": 375.3,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

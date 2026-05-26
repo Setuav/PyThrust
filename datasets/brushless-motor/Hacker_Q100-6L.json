@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q100-6L",
+  "name": "Q100-6L",
+  "manufacturer": "Hacker",
+  "kv": 114.0,
+  "resistance": 0.0072,
+  "io": 2.5,
+  "max_current": 240.0,
+  "weight_g": 2331.7,
+  "max_power": 10000.0,
+  "io_voltage": 8.4
+}

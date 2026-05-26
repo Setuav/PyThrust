@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M20_MiNi_IPE_110KV",
+  "name": "M20 MiNi IPE 110KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 110.0,
+  "resistance": 0.021,
+  "io": 3.1,
+  "max_current": 163.0,
+  "weight_g": 812.5,
+  "max_power": 7703.0,
+  "io_voltage": 20.0
+}

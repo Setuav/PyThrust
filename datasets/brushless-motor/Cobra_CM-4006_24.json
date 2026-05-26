@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-4006_24",
+  "name": "CM-4006/24",
+  "manufacturer": "Cobra",
+  "kv": 750.0,
+  "resistance": 0.062,
+  "io": 0.97,
+  "max_current": 24.0,
+  "weight_g": 92.7,
+  "max_power": 265.0,
+  "io_voltage": 12.0
+}

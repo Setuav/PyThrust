@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C10_300KV",
+  "name": "M6C10 300KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 300.0,
+  "resistance": 0.031,
+  "io": 1.5,
+  "max_current": 59.0,
+  "weight_g": 217.2,
+  "max_power": 1385.0,
+  "io_voltage": 20.0
+}

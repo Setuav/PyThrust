@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5010_IPE_V2.0_200KV",
+  "name": "5010 IPE V2.0 200KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 200.0,
+  "resistance": 0.106,
+  "io": 0.69,
+  "max_current": 22.0,
+  "weight_g": 169.2,
+  "max_power": 1029.0,
+  "io_voltage": 20.0
+}

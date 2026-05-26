@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2820_03_1450",
+  "name": "2820/03 1450",
+  "manufacturer": "RedRock",
+  "kv": 1450.0,
+  "resistance": 0.023,
+  "io": 2.3,
+  "max_current": 45.0,
+  "weight_g": 142.0,
+  "max_power": 645.0,
+  "io_voltage": 10.0
+}

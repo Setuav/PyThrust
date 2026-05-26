@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-3815-1000",
+  "name": "OMA-3815-1000",
+  "manufacturer": "O.S. Motor",
+  "kv": 1000.0,
+  "resistance": 0.0365,
+  "io": 1.1,
+  "max_current": 60.0,
+  "weight_g": 134.1,
+  "max_power": 388.0,
+  "io_voltage": 10.0
+}

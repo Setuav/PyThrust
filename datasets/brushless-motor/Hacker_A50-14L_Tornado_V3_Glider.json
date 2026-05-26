@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A50-14L_Tornado_V3_Glider",
+  "name": "A50-14L Tornado V3 Glider",
+  "manufacturer": "Hacker",
+  "kv": 400.0,
+  "resistance": 0.026,
+  "io": 1.1,
+  "max_current": 80.0,
+  "weight_g": 507.5,
+  "max_power": 4000.0,
+  "io_voltage": 8.4
+}

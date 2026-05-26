@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2820-1080",
+  "name": "2820-1080",
+  "manufacturer": "BadAss",
+  "kv": 1080.0,
+  "resistance": 0.024,
+  "io": 2.06,
+  "max_current": 65.0,
+  "weight_g": 148.0,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

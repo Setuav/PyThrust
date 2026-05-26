@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Gs3025-04",
+  "name": "Gs3025-04",
+  "manufacturer": "Hyperion",
+  "kv": 1545.0,
+  "resistance": 0.0065,
+  "io": 4.48,
+  "max_current": 140.0,
+  "weight_g": 207.2,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

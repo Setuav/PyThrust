@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO4014_330KV",
+  "name": "XTO4014 330KV",
+  "manufacturer": "X-Team",
+  "kv": 330.0,
+  "resistance": 0.104,
+  "io": 0.7,
+  "max_current": 30.0,
+  "weight_g": 166.1,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

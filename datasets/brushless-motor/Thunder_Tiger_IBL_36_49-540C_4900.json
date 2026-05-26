@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_IBL_36_49-540C_4900",
+  "name": "IBL 36/49-540C 4900",
+  "manufacturer": "Thunder Tiger",
+  "kv": 4900.0,
+  "resistance": 0.012,
+  "io": 1.9,
+  "max_current": 55.0,
+  "weight_g": 190.2,
+  "max_power": 760.0,
+  "io_voltage": 10.0
+}

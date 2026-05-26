@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_G2220-10",
+  "name": "G2220-10",
+  "manufacturer": "Hyperion",
+  "kv": 1120.0,
+  "resistance": 0.0362,
+  "io": 1.73,
+  "max_current": 45.0,
+  "weight_g": 88.2,
+  "max_power": 460.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3536_KV1150",
+  "name": "3536 KV1150",
+  "manufacturer": "Kavan",
+  "kv": 1150.0,
+  "resistance": 0.026,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 108.0,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

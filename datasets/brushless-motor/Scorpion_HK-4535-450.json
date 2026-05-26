@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HK-4535-450",
+  "name": "HK-4535-450",
+  "manufacturer": "Scorpion",
+  "kv": 450.0,
+  "resistance": 0.012,
+  "io": 1.84,
+  "max_current": 120.0,
+  "weight_g": 659.7,
+  "max_power": 6200.0,
+  "io_voltage": 10.0
+}

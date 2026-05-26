@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2856-04_KV3200",
+  "name": "B2856-04 KV3200",
+  "manufacturer": "EMP",
+  "kv": 3200.0,
+  "resistance": 0.014,
+  "io": 3.2,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 760.0,
+  "io_voltage": 10.0
+}

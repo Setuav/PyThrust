@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_6.5_348",
+  "name": "8012/6.5/348",
+  "manufacturer": "NeuMotors",
+  "kv": 348.0,
+  "resistance": 0.009,
+  "io": 1.246,
+  "max_current": 157.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

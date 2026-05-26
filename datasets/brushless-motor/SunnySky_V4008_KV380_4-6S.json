@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4008_KV380_4-6S",
+  "name": "V4008 KV380 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 380.0,
+  "resistance": 0.131,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 105.2,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

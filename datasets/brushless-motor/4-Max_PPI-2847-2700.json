@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-2847-2700",
+  "name": "PPI-2847-2700",
+  "manufacturer": "4-Max",
+  "kv": 2700.0,
+  "resistance": 0.047,
+  "io": 1.1,
+  "max_current": 24.0,
+  "weight_g": 125.0,
+  "max_power": 275.0,
+  "io_voltage": 10.0
+}

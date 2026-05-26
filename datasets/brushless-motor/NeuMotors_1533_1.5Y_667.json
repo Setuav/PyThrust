@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_1.5Y_667",
+  "name": "1533/1.5Y 667",
+  "manufacturer": "NeuMotors",
+  "kv": 667.0,
+  "resistance": 0.03,
+  "io": 1.67,
+  "max_current": 67.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

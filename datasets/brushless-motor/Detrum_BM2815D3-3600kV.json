@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2815D3-3600kV",
+  "name": "BM2815D3-3600kV",
+  "manufacturer": "Detrum",
+  "kv": 3600.0,
+  "resistance": 0.02,
+  "io": 4.3,
+  "max_current": 40.0,
+  "weight_g": 64.9,
+  "max_power": 380.0,
+  "io_voltage": 10.0
+}

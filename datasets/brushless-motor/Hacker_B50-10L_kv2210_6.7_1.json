@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B50-10L_kv2210_6.7_1",
+  "name": "B50-10L kv2210 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 2210.0,
+  "resistance": 0.011,
+  "io": 3.2,
+  "max_current": 62.0,
+  "weight_g": 347.3,
+  "max_power": 1600.0,
+  "io_voltage": 8.4
+}

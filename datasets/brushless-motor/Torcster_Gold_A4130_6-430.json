@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Gold_A4130_6-430",
+  "name": "Gold A4130/6-430",
+  "manufacturer": "Torcster",
+  "kv": 430.0,
+  "resistance": 0.018,
+  "io": 2.3,
+  "max_current": 70.0,
+  "weight_g": 380.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

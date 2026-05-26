@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Gold_A5330_11-225",
+  "name": "Gold A5330/11-225",
+  "manufacturer": "Torcster",
+  "kv": 225.0,
+  "resistance": 0.066,
+  "io": 1.2,
+  "max_current": 60.0,
+  "weight_g": 596.5,
+  "max_power": 2380.0,
+  "io_voltage": 10.0
+}

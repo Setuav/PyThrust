@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4014_IPE_400KV",
+  "name": "4014 IPE 400KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 400.0,
+  "resistance": 0.099,
+  "io": 1.25,
+  "max_current": 26.0,
+  "weight_g": 168.1,
+  "max_power": 612.0,
+  "io_voltage": 20.0
+}

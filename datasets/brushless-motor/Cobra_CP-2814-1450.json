@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CP-2814-1450",
+  "name": "CP-2814-1450",
+  "manufacturer": "Cobra",
+  "kv": 1450.0,
+  "resistance": 0.016,
+  "io": 4.08,
+  "max_current": 55.0,
+  "weight_g": 119.9,
+  "max_power": 820.0,
+  "io_voltage": 15.0
+}

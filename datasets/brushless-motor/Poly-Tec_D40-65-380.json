@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_D40-65-380",
+  "name": "D40-65-380",
+  "manufacturer": "Poly-Tec",
+  "kv": 380.0,
+  "resistance": 0.019,
+  "io": 2.9,
+  "max_current": 65.0,
+  "weight_g": 402.3,
+  "max_power": 1400.0,
+  "io_voltage": 7.4
+}

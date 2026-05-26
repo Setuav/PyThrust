@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_5010-530",
+  "name": "5010-530",
+  "manufacturer": "RCTimer",
+  "kv": 530.0,
+  "resistance": 0.127,
+  "io": 0.5,
+  "max_current": 30.0,
+  "weight_g": 79.9,
+  "max_power": 600.0,
+  "io_voltage": 11.1
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_C60P_#661",
+  "name": "C60P #661*",
+  "manufacturer": "Astro Flight",
+  "kv": 347.0,
+  "resistance": 0.103,
+  "io": 2.5,
+  "max_current": 30.0,
+  "weight_g": 623.7,
+  "max_power": 1870.0,
+  "io_voltage": 8.0
+}

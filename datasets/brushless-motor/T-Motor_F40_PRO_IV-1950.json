@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F40_PRO_IV-1950",
+  "name": "F40 PRO IV-1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.065,
+  "io": 1.3,
+  "max_current": 42.0,
+  "weight_g": 30.9,
+  "max_power": 1012.0,
+  "io_voltage": 10.0
+}

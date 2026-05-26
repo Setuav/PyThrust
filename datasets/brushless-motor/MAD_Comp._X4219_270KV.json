@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._X4219_270KV",
+  "name": "X4219 270KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 270.0,
+  "resistance": 0.05,
+  "io": 0.6,
+  "max_current": 53.0,
+  "weight_g": 284.3,
+  "max_power": 2233.0,
+  "io_voltage": 20.0
+}

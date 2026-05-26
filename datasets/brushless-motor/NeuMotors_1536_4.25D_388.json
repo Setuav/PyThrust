@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_4.25D_388",
+  "name": "1536/4.25D 388",
+  "manufacturer": "NeuMotors",
+  "kv": 388.0,
+  "resistance": 0.0867,
+  "io": 1.06,
+  "max_current": 23.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KingVal_5065_435KV",
+  "name": "5065 435KV",
+  "manufacturer": "KingVal",
+  "kv": 435.0,
+  "resistance": 0.0234,
+  "io": 1.6,
+  "max_current": 73.0,
+  "weight_g": 395.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

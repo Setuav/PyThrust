@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_3.5_566",
+  "name": "4619/3.5/566",
+  "manufacturer": "NeuMotors",
+  "kv": 566.0,
+  "resistance": 0.017,
+  "io": 1.54,
+  "max_current": 154.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS1204-5000",
+  "name": "GTS1204-5000",
+  "manufacturer": "RCinPower",
+  "kv": 5000.0,
+  "resistance": 0.125,
+  "io": 0.95,
+  "max_current": 6.0,
+  "weight_g": 6.0,
+  "max_power": 89.0,
+  "io_voltage": 10.0
+}

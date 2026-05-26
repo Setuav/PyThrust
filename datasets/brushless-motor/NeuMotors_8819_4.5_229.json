@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8819_4.5_229",
+  "name": "8819/4.5/229",
+  "manufacturer": "NeuMotors",
+  "kv": 229.0,
+  "resistance": 0.011,
+  "io": 2.256,
+  "max_current": 216.0,
+  "weight_g": 906.6,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_3510-540",
+  "name": "3510-540",
+  "manufacturer": "Black Widow",
+  "kv": 547.0,
+  "resistance": 0.1528,
+  "io": 0.65,
+  "max_current": 0.0,
+  "weight_g": 149.1,
+  "max_power": 340.0,
+  "io_voltage": 14.8
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_12_99",
+  "name": "4632/12/99",
+  "manufacturer": "NeuMotors",
+  "kv": 99.0,
+  "resistance": 0.29,
+  "io": 0.45,
+  "max_current": 45.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

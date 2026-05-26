@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_3515-740",
+  "name": "EP 3515-740",
+  "manufacturer": "EP Product",
+  "kv": 740.0,
+  "resistance": 0.044,
+  "io": 1.01,
+  "max_current": 36.0,
+  "weight_g": 178.0,
+  "max_power": 790.0,
+  "io_voltage": 14.0
+}

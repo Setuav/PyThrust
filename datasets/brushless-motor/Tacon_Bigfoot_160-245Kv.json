@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_160-245Kv",
+  "name": "Bigfoot 160-245Kv",
+  "manufacturer": "Tacon",
+  "kv": 245.0,
+  "resistance": 0.03,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 645.5,
+  "max_power": 2700.0,
+  "io_voltage": 7.4
+}

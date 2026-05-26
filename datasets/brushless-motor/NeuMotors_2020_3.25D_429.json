@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_3.25D_429",
+  "name": "2020/3.25D 429",
+  "manufacturer": "NeuMotors",
+  "kv": 429.0,
+  "resistance": 0.025,
+  "io": 1.55,
+  "max_current": 79.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

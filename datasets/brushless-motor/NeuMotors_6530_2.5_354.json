@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6530_2.5_354",
+  "name": "6530/2.5/354",
+  "manufacturer": "NeuMotors",
+  "kv": 354.0,
+  "resistance": 0.009,
+  "io": 1.96,
+  "max_current": 288.0,
+  "weight_g": 741.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

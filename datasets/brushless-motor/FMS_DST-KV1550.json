@@ -1,0 +1,12 @@
+{
+  "id": "FMS_DST-KV1550",
+  "name": "DST-KV1550",
+  "manufacturer": "FMS",
+  "kv": 1550.0,
+  "resistance": 0.046,
+  "io": 1.2,
+  "max_current": 20.0,
+  "weight_g": 64.9,
+  "max_power": 230.0,
+  "io_voltage": 10.0
+}

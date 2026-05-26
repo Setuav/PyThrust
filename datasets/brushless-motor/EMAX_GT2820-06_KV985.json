@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2820-06_KV985",
+  "name": "GT2820-06 KV985",
+  "manufacturer": "EMAX",
+  "kv": 985.0,
+  "resistance": 0.034,
+  "io": 1.6,
+  "max_current": 53.0,
+  "weight_g": 140.0,
+  "max_power": 848.0,
+  "io_voltage": 11.0
+}

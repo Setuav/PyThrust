@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_2.5_476",
+  "name": "4632/2.5/476",
+  "manufacturer": "NeuMotors",
+  "kv": 476.0,
+  "resistance": 0.0144,
+  "io": 2.16,
+  "max_current": 215.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

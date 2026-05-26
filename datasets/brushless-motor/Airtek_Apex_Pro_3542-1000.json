@@ -1,0 +1,12 @@
+{
+  "id": "Airtek_Apex_Pro_3542-1000",
+  "name": "Apex Pro 3542-1000",
+  "manufacturer": "Airtek",
+  "kv": 1000.0,
+  "resistance": 0.039,
+  "io": 1.8,
+  "max_current": 60.0,
+  "weight_g": 136.1,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

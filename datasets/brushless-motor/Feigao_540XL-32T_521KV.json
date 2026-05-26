@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-32T_521KV",
+  "name": "540XL-32T 521KV",
+  "manufacturer": "Feigao",
+  "kv": 521.0,
+  "resistance": 0.1166,
+  "io": 0.4,
+  "max_current": 21.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

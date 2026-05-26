@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2814-1650",
+  "name": "EP 2814-1650",
+  "manufacturer": "EP Product",
+  "kv": 1700.0,
+  "resistance": 0.036,
+  "io": 2.06,
+  "max_current": 48.0,
+  "weight_g": 109.1,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

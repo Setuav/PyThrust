@@ -1,0 +1,12 @@
+{
+  "id": "FMS_4258-KV550",
+  "name": "4258-KV550",
+  "manufacturer": "FMS",
+  "kv": 550.0,
+  "resistance": 0.022,
+  "io": 2.8,
+  "max_current": 70.0,
+  "weight_g": 273.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

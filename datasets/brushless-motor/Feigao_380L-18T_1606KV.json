@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-18T_1606KV",
+  "name": "380L-18T 1606KV",
+  "manufacturer": "Feigao",
+  "kv": 1606.0,
+  "resistance": 0.0575,
+  "io": 0.5,
+  "max_current": 23.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

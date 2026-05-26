@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_3610_07_850",
+  "name": "3610/07 850",
+  "manufacturer": "RedRock",
+  "kv": 850.0,
+  "resistance": 0.028,
+  "io": 1.0,
+  "max_current": 55.0,
+  "weight_g": 155.1,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

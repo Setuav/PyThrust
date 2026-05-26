@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_2.75Y_223",
+  "name": "2515/2.75Y 223",
+  "manufacturer": "NeuMotors",
+  "kv": 223.0,
+  "resistance": 0.027,
+  "io": 1.1,
+  "max_current": 89.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

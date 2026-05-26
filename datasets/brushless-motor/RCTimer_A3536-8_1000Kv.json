@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_A3536-8_1000Kv",
+  "name": "A3536-8 1000Kv",
+  "manufacturer": "RCTimer",
+  "kv": 1000.0,
+  "resistance": 0.052,
+  "io": 1.3,
+  "max_current": 12.0,
+  "weight_g": 102.1,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

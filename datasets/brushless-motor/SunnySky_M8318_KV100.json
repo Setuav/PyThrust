@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M8318_KV100",
+  "name": "M8318 KV100",
+  "manufacturer": "SunnySky",
+  "kv": 100.0,
+  "resistance": 0.054,
+  "io": 1.1,
+  "max_current": 45.0,
+  "weight_g": 323.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

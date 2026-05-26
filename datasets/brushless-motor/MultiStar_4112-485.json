@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_4112-485",
+  "name": "4112-485",
+  "manufacturer": "MultiStar",
+  "kv": 485.0,
+  "resistance": 0.09,
+  "io": 1.1,
+  "max_current": 28.0,
+  "weight_g": 147.1,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

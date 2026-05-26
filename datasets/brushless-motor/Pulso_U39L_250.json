@@ -1,0 +1,12 @@
+{
+  "id": "Pulso_U39L_250",
+  "name": "U39L/250",
+  "manufacturer": "Pulso",
+  "kv": 250.0,
+  "resistance": 0.2715,
+  "io": 0.38,
+  "max_current": 6.2,
+  "weight_g": 67.2,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

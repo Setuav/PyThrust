@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_15-950Kv",
+  "name": "Bigfoot 15-950Kv",
+  "manufacturer": "Tacon",
+  "kv": 950.0,
+  "resistance": 0.0305,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 425.0,
+  "io_voltage": 7.4
+}

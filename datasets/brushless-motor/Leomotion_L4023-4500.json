@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4023-4500",
+  "name": "L4023-4500",
+  "manufacturer": "Leomotion",
+  "kv": 4500.0,
+  "resistance": 0.004,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

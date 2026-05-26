@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2835-10T_830kv",
+  "name": "LC2835-10T 830kv",
+  "manufacturer": "Leopard",
+  "kv": 830.0,
+  "resistance": 0.1332,
+  "io": 0.7,
+  "max_current": 17.0,
+  "weight_g": 71.2,
+  "max_power": 369.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-5045_18_155kv",
+  "name": "LPA-5045/18 155kv",
+  "manufacturer": "LiPolice",
+  "kv": 155.0,
+  "resistance": 0.021,
+  "io": 1.6,
+  "max_current": 80.0,
+  "weight_g": 995.6,
+  "max_power": 2600.0,
+  "io_voltage": 8.4
+}

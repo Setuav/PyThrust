@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-12T_2408KV",
+  "name": "380L-12T 2408KV",
+  "manufacturer": "Feigao",
+  "kv": 2408.0,
+  "resistance": 0.0256,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4014_KV400_4-6S",
+  "name": "V4014 KV400 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 400.0,
+  "resistance": 0.083,
+  "io": 1.0,
+  "max_current": 35.0,
+  "weight_g": 166.1,
+  "max_power": 875.0,
+  "io_voltage": 10.0
+}

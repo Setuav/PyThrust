@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_3_338",
+  "name": "4638/3/338",
+  "manufacturer": "NeuMotors",
+  "kv": 338.0,
+  "resistance": 0.022,
+  "io": 1.8,
+  "max_current": 179.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

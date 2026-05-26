@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-2205-1900",
+  "name": "SII-2205-1900",
+  "manufacturer": "Scorpion",
+  "kv": 1948.0,
+  "resistance": 0.131,
+  "io": 0.58,
+  "max_current": 12.0,
+  "weight_g": 35.2,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

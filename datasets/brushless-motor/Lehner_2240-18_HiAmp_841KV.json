@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2240-18_HiAmp_841KV",
+  "name": "2240-18 HiAmp 841KV",
+  "manufacturer": "Lehner",
+  "kv": 841.0,
+  "resistance": 0.027,
+  "io": 1.52,
+  "max_current": 65.0,
+  "weight_g": 465.2,
+  "max_power": 1860.0,
+  "io_voltage": 10.0
+}

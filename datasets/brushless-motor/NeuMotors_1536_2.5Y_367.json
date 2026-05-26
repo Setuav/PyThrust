@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_2.5Y_367",
+  "name": "1536/2.5Y 367",
+  "manufacturer": "NeuMotors",
+  "kv": 367.0,
+  "resistance": 0.09,
+  "io": 1.0,
+  "max_current": 21.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_F2203.5_KV2850",
+  "name": "F2203.5 KV2850",
+  "manufacturer": "T-Hobby",
+  "kv": 2850.0,
+  "resistance": 0.09,
+  "io": 0.75,
+  "max_current": 32.0,
+  "weight_g": 17.0,
+  "max_power": 734.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-14T_6686KV",
+  "name": "130S-14T 6686KV",
+  "manufacturer": "Feigao",
+  "kv": 6686.0,
+  "resistance": 0.0429,
+  "io": 1.6,
+  "max_current": 15.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

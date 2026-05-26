@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_85_17",
+  "name": "8019/85/17",
+  "manufacturer": "NeuMotors",
+  "kv": 17.0,
+  "resistance": 1.746,
+  "io": 0.095,
+  "max_current": 12.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

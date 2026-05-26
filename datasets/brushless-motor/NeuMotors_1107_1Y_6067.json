@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_1Y_6067",
+  "name": "1107/1Y 6067",
+  "manufacturer": "NeuMotors",
+  "kv": 6067.0,
+  "resistance": 0.004,
+  "io": 2.5,
+  "max_current": 61.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

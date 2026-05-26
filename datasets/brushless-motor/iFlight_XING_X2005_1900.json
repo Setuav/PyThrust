@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X2005_1900",
+  "name": "XING X2005 1900",
+  "manufacturer": "iFlight",
+  "kv": 1900.0,
+  "resistance": 0.125,
+  "io": 0.63,
+  "max_current": 19.0,
+  "weight_g": 21.0,
+  "max_power": 465.0,
+  "io_voltage": 10.0
+}

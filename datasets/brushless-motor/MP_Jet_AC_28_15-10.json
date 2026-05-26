@@ -1,0 +1,12 @@
+{
+  "id": "MP_Jet_AC_28_15-10",
+  "name": "AC 28/15-10",
+  "manufacturer": "MP Jet",
+  "kv": 1600.0,
+  "resistance": 0.016,
+  "io": 2.1,
+  "max_current": 40.0,
+  "weight_g": 120.2,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

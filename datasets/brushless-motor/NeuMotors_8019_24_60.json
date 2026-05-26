@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_24_60",
+  "name": "8019/24/60",
+  "manufacturer": "NeuMotors",
+  "kv": 60.0,
+  "resistance": 0.143,
+  "io": 0.338,
+  "max_current": 42.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

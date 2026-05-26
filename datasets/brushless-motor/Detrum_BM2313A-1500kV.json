@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2313A-1500kV",
+  "name": "BM2313A-1500kV",
+  "manufacturer": "Detrum",
+  "kv": 1500.0,
+  "resistance": 0.144,
+  "io": 0.84,
+  "max_current": 18.0,
+  "weight_g": 40.0,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

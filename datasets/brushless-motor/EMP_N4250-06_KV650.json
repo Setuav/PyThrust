@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N4250-06_KV650",
+  "name": "N4250-06 KV650",
+  "manufacturer": "EMP",
+  "kv": 650.0,
+  "resistance": 0.032,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 1150.0,
+  "io_voltage": 11.0
+}

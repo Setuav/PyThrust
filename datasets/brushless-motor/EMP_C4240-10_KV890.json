@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C4240-10_KV890",
+  "name": "C4240-10 KV890",
+  "manufacturer": "EMP",
+  "kv": 890.0,
+  "resistance": 0.04,
+  "io": 2.6,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

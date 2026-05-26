@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-3007_26_1240kv",
+  "name": "LPA-3007/26 1240kv",
+  "manufacturer": "LiPolice",
+  "kv": 1240.0,
+  "resistance": 0.048,
+  "io": 1.4,
+  "max_current": 27.0,
+  "weight_g": 75.7,
+  "max_power": 260.0,
+  "io_voltage": 8.4
+}

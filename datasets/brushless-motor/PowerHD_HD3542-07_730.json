@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD3542-07_730",
+  "name": "HD3542-07/730",
+  "manufacturer": "PowerHD",
+  "kv": 730.0,
+  "resistance": 0.053,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 135.2,
+  "max_power": 620.0,
+  "io_voltage": 10.0
+}

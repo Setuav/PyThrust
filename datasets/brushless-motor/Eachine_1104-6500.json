@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_1104-6500",
+  "name": "1104-6500",
+  "manufacturer": "Eachine",
+  "kv": 6500.0,
+  "resistance": 0.09,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 5.7,
+  "max_power": 115.0,
+  "io_voltage": 4.0
+}

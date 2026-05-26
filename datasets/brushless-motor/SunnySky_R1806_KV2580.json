@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_R1806_KV2580",
+  "name": "R1806 KV2580",
+  "manufacturer": "SunnySky",
+  "kv": 2580.0,
+  "resistance": 0.08,
+  "io": 0.9,
+  "max_current": 29.0,
+  "weight_g": 21.0,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

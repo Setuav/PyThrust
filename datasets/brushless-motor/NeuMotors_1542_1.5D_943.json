@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_1.5D_943",
+  "name": "1542/1.5D 943",
+  "manufacturer": "NeuMotors",
+  "kv": 943.0,
+  "resistance": 0.013,
+  "io": 3.0,
+  "max_current": 118.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

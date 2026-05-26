@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_2.25Y_344",
+  "name": "2020/2.25Y 344",
+  "manufacturer": "NeuMotors",
+  "kv": 344.0,
+  "resistance": 0.035,
+  "io": 1.24,
+  "max_current": 57.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

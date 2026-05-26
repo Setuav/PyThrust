@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC6362-8T_270kv",
+  "name": "LC6362-8T 270kv",
+  "manufacturer": "Leopard",
+  "kv": 270.0,
+  "resistance": 0.0229,
+  "io": 2.4,
+  "max_current": 80.0,
+  "weight_g": 595.3,
+  "max_power": 2775.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3515-580",
+  "name": "3515-580",
+  "manufacturer": "BadAss",
+  "kv": 580.0,
+  "resistance": 0.041,
+  "io": 1.02,
+  "max_current": 48.0,
+  "weight_g": 190.8,
+  "max_power": 890.0,
+  "io_voltage": 10.0
+}

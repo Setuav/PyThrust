@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_4D_4095",
+  "name": "1105/4D 4095",
+  "manufacturer": "NeuMotors",
+  "kv": 4095.0,
+  "resistance": 0.013,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

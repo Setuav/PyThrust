@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_Platinum_4130SL_230KV",
+  "name": "Platinum 4130SL 230KV",
+  "manufacturer": "HobbyWing",
+  "kv": 230.0,
+  "resistance": 0.043,
+  "io": 1.4,
+  "max_current": 60.0,
+  "weight_g": 412.2,
+  "max_power": 2678.0,
+  "io_voltage": 44.4
+}

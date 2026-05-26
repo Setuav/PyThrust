@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_5010-360",
+  "name": "5010-360",
+  "manufacturer": "RCTimer",
+  "kv": 360.0,
+  "resistance": 0.193,
+  "io": 0.3,
+  "max_current": 25.0,
+  "weight_g": 92.1,
+  "max_power": 370.0,
+  "io_voltage": 11.1
+}

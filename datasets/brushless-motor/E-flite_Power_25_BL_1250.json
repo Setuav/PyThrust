@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Power_25_BL_1250",
+  "name": "Power 25 BL 1250",
+  "manufacturer": "E-flite",
+  "kv": 1250.0,
+  "resistance": 0.02,
+  "io": 2.0,
+  "max_current": 58.0,
+  "weight_g": 183.1,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

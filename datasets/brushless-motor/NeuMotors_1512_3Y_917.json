@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_3Y_917",
+  "name": "1512/3Y 917",
+  "manufacturer": "NeuMotors",
+  "kv": 917.0,
+  "resistance": 0.0432,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

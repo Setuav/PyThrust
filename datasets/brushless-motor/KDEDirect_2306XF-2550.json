@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_2306XF-2550",
+  "name": "2306XF-2550",
+  "manufacturer": "KDEDirect",
+  "kv": 2550.0,
+  "resistance": 0.044,
+  "io": 1.2,
+  "max_current": 34.0,
+  "weight_g": 28.9,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

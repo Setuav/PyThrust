@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B20_12L_kv4580_4_1",
+  "name": "B20 12L kv4580 4:1",
+  "manufacturer": "Hacker",
+  "kv": 4630.0,
+  "resistance": 0.037,
+  "io": 1.11,
+  "max_current": 25.0,
+  "weight_g": 69.2,
+  "max_power": 220.0,
+  "io_voltage": 8.4
+}

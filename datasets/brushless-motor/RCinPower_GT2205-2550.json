@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GT2205-2550",
+  "name": "GT2205-2550",
+  "manufacturer": "RCinPower",
+  "kv": 2550.0,
+  "resistance": 0.052,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 30.1,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

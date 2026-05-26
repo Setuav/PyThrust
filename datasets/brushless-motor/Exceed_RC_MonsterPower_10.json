@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_MonsterPower_10",
+  "name": "MonsterPower 10",
+  "manufacturer": "Exceed RC",
+  "kv": 1100.0,
+  "resistance": 0.04,
+  "io": 2.1,
+  "max_current": 38.0,
+  "weight_g": 140.0,
+  "max_power": 375.0,
+  "io_voltage": 8.0
+}

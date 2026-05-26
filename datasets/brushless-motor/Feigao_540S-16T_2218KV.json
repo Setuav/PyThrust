@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-16T_2218KV",
+  "name": "540S-16T 2218KV",
+  "manufacturer": "Feigao",
+  "kv": 2218.0,
+  "resistance": 0.0242,
+  "io": 1.5,
+  "max_current": 41.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT530-28-14-20w_194KV",
+  "name": "NT530-28-14-20w 194KV",
+  "manufacturer": "Torcman",
+  "kv": 194.0,
+  "resistance": 0.033,
+  "io": 1.6,
+  "max_current": 120.0,
+  "weight_g": 730.6,
+  "max_power": 3000.0,
+  "io_voltage": 12.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q80-13XS_F3A",
+  "name": "Q80-13XS F3A",
+  "manufacturer": "Hacker",
+  "kv": 225.0,
+  "resistance": 0.024,
+  "io": 1.0,
+  "max_current": 120.0,
+  "weight_g": 520.5,
+  "max_power": 2800.0,
+  "io_voltage": 8.4
+}

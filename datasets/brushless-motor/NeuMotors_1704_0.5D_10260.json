@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_0.5D_10260",
+  "name": "1704/0.5D 10260",
+  "manufacturer": "NeuMotors",
+  "kv": 10260.0,
+  "resistance": 0.001,
+  "io": 9.36,
+  "max_current": 293.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

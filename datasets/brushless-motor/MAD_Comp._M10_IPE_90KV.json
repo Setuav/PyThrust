@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M10_IPE_90KV",
+  "name": "M10 IPE 90KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 90.0,
+  "resistance": 0.08,
+  "io": 1.5,
+  "max_current": 72.0,
+  "weight_g": 614.3,
+  "max_power": 3422.0,
+  "io_voltage": 30.0
+}

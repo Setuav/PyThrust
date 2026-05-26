@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2826-1470",
+  "name": "2826-1470",
+  "manufacturer": "Tempest",
+  "kv": 1470.0,
+  "resistance": 0.017,
+  "io": 4.58,
+  "max_current": 82.0,
+  "weight_g": 169.0,
+  "max_power": 1515.0,
+  "io_voltage": 10.0
+}

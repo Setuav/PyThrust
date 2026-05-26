@@ -1,0 +1,12 @@
+{
+  "id": "Spektrum_Avian_2813-1750",
+  "name": "Avian 2813-1750",
+  "manufacturer": "Spektrum",
+  "kv": 1750.0,
+  "resistance": 0.184,
+  "io": 0.5,
+  "max_current": 12.0,
+  "weight_g": 20.1,
+  "max_power": 120.0,
+  "io_voltage": 7.4
+}

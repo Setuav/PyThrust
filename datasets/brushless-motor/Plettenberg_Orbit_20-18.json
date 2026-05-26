@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Orbit_20-18",
+  "name": "Orbit 20-18",
+  "manufacturer": "Plettenberg",
+  "kv": 640.0,
+  "resistance": 0.064,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1250.0,
+  "io_voltage": 11.0
+}

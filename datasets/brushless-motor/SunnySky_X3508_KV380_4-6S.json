@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3508_KV380_4-6S",
+  "name": "X3508 KV380 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 380.0,
+  "resistance": 0.257,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 97.0,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

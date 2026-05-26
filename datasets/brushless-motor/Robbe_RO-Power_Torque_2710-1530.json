@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_2710-1530",
+  "name": "RO-Power Torque 2710-1530",
+  "manufacturer": "Robbe",
+  "kv": 1530.0,
+  "resistance": 0.237,
+  "io": 0.24,
+  "max_current": 8.0,
+  "weight_g": 15.9,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

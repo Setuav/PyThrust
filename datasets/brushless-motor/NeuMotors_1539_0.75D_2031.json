@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_0.75D_2031",
+  "name": "1539/0.75D 2031",
+  "manufacturer": "NeuMotors",
+  "kv": 2031.0,
+  "resistance": 0.003,
+  "io": 6.0,
+  "max_current": 237.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

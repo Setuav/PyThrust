@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-20T_1229KV",
+  "name": "540L-20T 1229KV",
+  "manufacturer": "Feigao",
+  "kv": 1229.0,
+  "resistance": 0.0478,
+  "io": 0.9,
+  "max_current": 31.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

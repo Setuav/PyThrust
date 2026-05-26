@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4125_KV610_V3_5-6S",
+  "name": "X4125 KV610 V3 5-6S",
+  "manufacturer": "SunnySky",
+  "kv": 610.0,
+  "resistance": 0.0097,
+  "io": 2.5,
+  "max_current": 120.0,
+  "weight_g": 355.2,
+  "max_power": 2760.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3525_KV720_4-5S",
+  "name": "X3525 KV720 4-5S",
+  "manufacturer": "SunnySky",
+  "kv": 720.0,
+  "resistance": 0.014,
+  "io": 2.0,
+  "max_current": 81.0,
+  "weight_g": 248.1,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

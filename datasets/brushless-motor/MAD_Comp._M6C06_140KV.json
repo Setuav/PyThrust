@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C06_140KV",
+  "name": "M6C06 140KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 140.0,
+  "resistance": 0.301,
+  "io": 0.45,
+  "max_current": 21.0,
+  "weight_g": 163.0,
+  "max_power": 1010.0,
+  "io_voltage": 20.0
+}

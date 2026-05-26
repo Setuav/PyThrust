@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2814_KV1100_2-4S",
+  "name": "A2814 KV1100 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1100.0,
+  "resistance": 0.051,
+  "io": 1.5,
+  "max_current": 40.0,
+  "weight_g": 98.1,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

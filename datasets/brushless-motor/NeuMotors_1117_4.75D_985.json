@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_4.75D_985",
+  "name": "1117/4.75D 985",
+  "manufacturer": "NeuMotors",
+  "kv": 985.0,
+  "resistance": 0.066,
+  "io": 0.9,
+  "max_current": 26.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

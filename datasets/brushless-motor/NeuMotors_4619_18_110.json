@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_18_110",
+  "name": "4619/18/110",
+  "manufacturer": "NeuMotors",
+  "kv": 110.0,
+  "resistance": 0.41,
+  "io": 0.3,
+  "max_current": 30.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

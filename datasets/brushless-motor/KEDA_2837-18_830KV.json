@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2837-18_830KV",
+  "name": "2837-18 830KV",
+  "manufacturer": "KEDA",
+  "kv": 865.0,
+  "resistance": 0.22,
+  "io": 0.65,
+  "max_current": 15.0,
+  "weight_g": 81.1,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

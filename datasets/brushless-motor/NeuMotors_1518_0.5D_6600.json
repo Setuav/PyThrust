@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_0.5D_6600",
+  "name": "1518/0.5D 6600",
+  "manufacturer": "NeuMotors",
+  "kv": 6600.0,
+  "resistance": 0.0006,
+  "io": 9.0,
+  "max_current": 330.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

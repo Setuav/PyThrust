@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_4.5D_1213",
+  "name": "1115/4.5D 1213",
+  "manufacturer": "NeuMotors",
+  "kv": 1213.0,
+  "resistance": 0.051,
+  "io": 1.0,
+  "max_current": 28.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

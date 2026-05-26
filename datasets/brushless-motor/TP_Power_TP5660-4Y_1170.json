@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5660-4Y_1170",
+  "name": "TP5660-4Y 1170",
+  "manufacturer": "TP Power",
+  "kv": 1170.0,
+  "resistance": 0.0044,
+  "io": 3.9,
+  "max_current": 208.0,
+  "weight_g": 836.6,
+  "max_power": 10000.0,
+  "io_voltage": 8.0
+}

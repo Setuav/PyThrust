@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Orbit_30-12",
+  "name": "Orbit 30-12",
+  "manufacturer": "Plettenberg",
+  "kv": 650.0,
+  "resistance": 0.042,
+  "io": 2.4,
+  "max_current": 0.0,
+  "weight_g": 305.3,
+  "max_power": 1550.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_CA80-80-10_160KV",
+  "name": "CA80-80-10 160KV",
+  "manufacturer": "GS-Models",
+  "kv": 160.0,
+  "resistance": 0.0125,
+  "io": 7.2,
+  "max_current": 135.0,
+  "weight_g": 1441.0,
+  "max_power": 6500.0,
+  "io_voltage": 30.0
+}

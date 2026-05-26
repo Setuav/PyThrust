@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_MII-4010-400",
+  "name": "MII-4010-400",
+  "manufacturer": "Scorpion",
+  "kv": 400.0,
+  "resistance": 0.135,
+  "io": 0.38,
+  "max_current": 40.0,
+  "weight_g": 131.3,
+  "max_power": 1480.0,
+  "io_voltage": 10.0
+}

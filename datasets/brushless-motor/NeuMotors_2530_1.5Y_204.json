@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_1.5Y_204",
+  "name": "2530/1.5Y 204",
+  "manufacturer": "NeuMotors",
+  "kv": 204.0,
+  "resistance": 0.016,
+  "io": 2.0,
+  "max_current": 163.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-2209-26",
+  "name": "Z-2209-26",
+  "manufacturer": "Hyperion",
+  "kv": 1100.0,
+  "resistance": 0.17,
+  "io": 0.65,
+  "max_current": 11.0,
+  "weight_g": 41.7,
+  "max_power": 126.0,
+  "io_voltage": 8.0
+}

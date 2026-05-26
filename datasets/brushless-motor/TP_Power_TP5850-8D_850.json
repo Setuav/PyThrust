@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5850-8D_850",
+  "name": "TP5850-8D 850",
+  "manufacturer": "TP Power",
+  "kv": 850.0,
+  "resistance": 0.0056,
+  "io": 3.2,
+  "max_current": 210.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 10.0
+}

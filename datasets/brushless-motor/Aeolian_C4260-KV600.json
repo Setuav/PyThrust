@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C4260-KV600",
+  "name": "C4260-KV600",
+  "manufacturer": "Aeolian",
+  "kv": 600.0,
+  "resistance": 0.0291,
+  "io": 2.1,
+  "max_current": 82.0,
+  "weight_g": 270.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

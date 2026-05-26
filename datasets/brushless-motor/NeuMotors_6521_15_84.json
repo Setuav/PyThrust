@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_15_84",
+  "name": "6521/15/84",
+  "manufacturer": "NeuMotors",
+  "kv": 84.0,
+  "resistance": 0.194,
+  "io": 0.327,
+  "max_current": 48.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

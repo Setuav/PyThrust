@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_5.75D_1722",
+  "name": "1506/5.75D 1722",
+  "manufacturer": "NeuMotors",
+  "kv": 1722.0,
+  "resistance": 0.0265,
+  "io": 0.78,
+  "max_current": 29.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

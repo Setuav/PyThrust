@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-20-14-26w_332KV",
+  "name": "NT430-20-14-26w 332KV",
+  "manufacturer": "Torcman",
+  "kv": 332.0,
+  "resistance": 0.048,
+  "io": 1.1,
+  "max_current": 60.0,
+  "weight_g": 375.3,
+  "max_power": 1000.0,
+  "io_voltage": 12.0
+}

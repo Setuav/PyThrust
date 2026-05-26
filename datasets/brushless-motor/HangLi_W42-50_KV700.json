@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W42-50_KV700",
+  "name": "W42-50 KV700",
+  "manufacturer": "HangLi",
+  "kv": 700.0,
+  "resistance": 0.0209,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 195.0,
+  "max_power": 950.0,
+  "io_voltage": 7.4
+}

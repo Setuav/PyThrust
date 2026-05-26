@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_5.5D_277",
+  "name": "1539/5.5D 277",
+  "manufacturer": "NeuMotors",
+  "kv": 277.0,
+  "resistance": 0.1573,
+  "io": 0.82,
+  "max_current": 32.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

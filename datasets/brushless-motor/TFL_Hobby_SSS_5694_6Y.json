@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_5694_6Y",
+  "name": "SSS 5694 6Y",
+  "manufacturer": "TFL Hobby",
+  "kv": 780.0,
+  "resistance": 0.0082,
+  "io": 2.2,
+  "max_current": 140.0,
+  "weight_g": 870.6,
+  "max_power": 9000.0,
+  "io_voltage": 11.1
+}

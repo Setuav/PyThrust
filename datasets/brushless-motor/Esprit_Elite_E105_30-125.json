@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E105_30-125",
+  "name": "Elite E105/30-125",
+  "manufacturer": "Esprit",
+  "kv": 125.0,
+  "resistance": 0.0161,
+  "io": 5.7,
+  "max_current": 200.0,
+  "weight_g": 2401.8,
+  "max_power": 9800.0,
+  "io_voltage": 10.0
+}

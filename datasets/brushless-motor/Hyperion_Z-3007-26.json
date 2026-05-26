@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-3007-26",
+  "name": "Z-3007-26",
+  "manufacturer": "Hyperion",
+  "kv": 1228.0,
+  "resistance": 0.085,
+  "io": 1.11,
+  "max_current": 28.0,
+  "weight_g": 75.1,
+  "max_power": 150.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-12XL_Competition",
+  "name": "A20-12XL Competition",
+  "manufacturer": "Hacker",
+  "kv": 1039.0,
+  "resistance": 0.049,
+  "io": 1.34,
+  "max_current": 25.0,
+  "weight_g": 104.0,
+  "max_power": 300.0,
+  "io_voltage": 8.4
+}

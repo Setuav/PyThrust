@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2826-0920_V3",
+  "name": "LEO 2826-0920 V3",
+  "manufacturer": "Leomotion",
+  "kv": 920.0,
+  "resistance": 0.019,
+  "io": 1.9,
+  "max_current": 48.0,
+  "weight_g": 175.2,
+  "max_power": 770.0,
+  "io_voltage": 10.0
+}

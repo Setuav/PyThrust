@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2814_07-1000KV",
+  "name": "2814/07-1000KV",
+  "manufacturer": "BlackMagic",
+  "kv": 1000.0,
+  "resistance": 0.04,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 109.1,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

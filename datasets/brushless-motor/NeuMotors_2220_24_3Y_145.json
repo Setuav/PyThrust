@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2220_24_3Y_145",
+  "name": "2220/24/3Y 145",
+  "manufacturer": "NeuMotors",
+  "kv": 145.0,
+  "resistance": 0.06,
+  "io": 1.2,
+  "max_current": 31.0,
+  "weight_g": 962.7,
+  "max_power": 6400.0,
+  "io_voltage": 10.0
+}

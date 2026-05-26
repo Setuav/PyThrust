@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC6362-4T_540kv",
+  "name": "LC6362-4T 540kv",
+  "manufacturer": "Leopard",
+  "kv": 540.0,
+  "resistance": 0.0065,
+  "io": 7.4,
+  "max_current": 100.0,
+  "weight_g": 595.3,
+  "max_power": 1575.0,
+  "io_voltage": 20.0
+}

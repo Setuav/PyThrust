@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_1.25Y_1100",
+  "name": "1524/1.25Y 1100",
+  "manufacturer": "NeuMotors",
+  "kv": 1100.0,
+  "resistance": 0.015,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

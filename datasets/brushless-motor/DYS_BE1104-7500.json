@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE1104-7500",
+  "name": "BE1104-7500",
+  "manufacturer": "DYS",
+  "kv": 7500.0,
+  "resistance": 0.19,
+  "io": 0.7,
+  "max_current": 12.0,
+  "weight_g": 5.7,
+  "max_power": 161.0,
+  "io_voltage": 11.1
+}

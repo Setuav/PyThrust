@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4040-4D_3570",
+  "name": "TP4040-4D 3570",
+  "manufacturer": "TP Power",
+  "kv": 3570.0,
+  "resistance": 0.0018,
+  "io": 5.5,
+  "max_current": 280.0,
+  "weight_g": 396.3,
+  "max_power": 4200.0,
+  "io_voltage": 8.0
+}

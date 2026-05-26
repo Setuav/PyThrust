@@ -1,0 +1,12 @@
+{
+  "id": "Actro_CL-5_1000",
+  "name": "CL-5 (1000)",
+  "manufacturer": "Actro",
+  "kv": 1000.0,
+  "resistance": 0.06,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 190.2,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

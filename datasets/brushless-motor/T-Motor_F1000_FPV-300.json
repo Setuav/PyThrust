@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1000_FPV-300",
+  "name": "F1000 FPV-300",
+  "manufacturer": "T-Motor",
+  "kv": 300.0,
+  "resistance": 0.0383,
+  "io": 2.05,
+  "max_current": 99.0,
+  "weight_g": 400.3,
+  "max_power": 4548.0,
+  "io_voltage": 10.0
+}

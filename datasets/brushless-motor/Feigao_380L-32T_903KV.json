@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-32T_903KV",
+  "name": "380L-32T 903KV",
+  "manufacturer": "Feigao",
+  "kv": 903.0,
+  "resistance": 0.1818,
+  "io": 0.2,
+  "max_current": 13.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

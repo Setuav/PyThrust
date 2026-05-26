@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4112_KV320",
+  "name": "MN4112 KV320",
+  "manufacturer": "T-Motor",
+  "kv": 320.0,
+  "resistance": 0.094,
+  "io": 1.1,
+  "max_current": 40.0,
+  "weight_g": 172.1,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

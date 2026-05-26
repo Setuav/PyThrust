@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_GTX-5052_410KV",
+  "name": "GTX-5052 410KV",
+  "manufacturer": "Dymond",
+  "kv": 410.0,
+  "resistance": 0.041,
+  "io": 1.2,
+  "max_current": 57.0,
+  "weight_g": 285.2,
+  "max_power": 900.0,
+  "io_voltage": 20.0
+}

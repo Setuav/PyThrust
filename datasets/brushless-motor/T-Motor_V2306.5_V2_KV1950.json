@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V2306.5_V2_KV1950",
+  "name": "V2306.5 V2 KV1950",
+  "manufacturer": "T-Motor",
+  "kv": 1950.0,
+  "resistance": 0.067,
+  "io": 1.28,
+  "max_current": 38.0,
+  "weight_g": 29.5,
+  "max_power": 902.0,
+  "io_voltage": 10.0
+}

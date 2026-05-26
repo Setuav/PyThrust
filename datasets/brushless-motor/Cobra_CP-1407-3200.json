@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CP-1407-3200",
+  "name": "CP-1407-3200",
+  "manufacturer": "Cobra",
+  "kv": 3200.0,
+  "resistance": 0.058,
+  "io": 0.4,
+  "max_current": 14.0,
+  "weight_g": 14.5,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

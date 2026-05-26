@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-3014_16_972kv",
+  "name": "LPA-3014/16 972kv",
+  "manufacturer": "LiPolice",
+  "kv": 972.0,
+  "resistance": 0.0375,
+  "io": 1.6,
+  "max_current": 33.0,
+  "weight_g": 111.1,
+  "max_power": 350.0,
+  "io_voltage": 8.4
+}

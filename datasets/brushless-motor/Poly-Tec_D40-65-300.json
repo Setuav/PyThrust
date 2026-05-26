@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_D40-65-300",
+  "name": "D40-65-300",
+  "manufacturer": "Poly-Tec",
+  "kv": 300.0,
+  "resistance": 0.033,
+  "io": 3.01,
+  "max_current": 60.0,
+  "weight_g": 402.3,
+  "max_power": 1420.0,
+  "io_voltage": 7.4
+}

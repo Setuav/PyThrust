@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_6D_300",
+  "name": "1533/6D 300",
+  "manufacturer": "NeuMotors",
+  "kv": 300.0,
+  "resistance": 0.1584,
+  "io": 0.75,
+  "max_current": 30.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

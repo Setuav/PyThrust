@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_2D_275",
+  "name": "2530/2D 275",
+  "manufacturer": "NeuMotors",
+  "kv": 275.0,
+  "resistance": 0.01,
+  "io": 2.7,
+  "max_current": 220.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

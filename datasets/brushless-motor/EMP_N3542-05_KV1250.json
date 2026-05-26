@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N3542-05_KV1250",
+  "name": "N3542-05 KV1250",
+  "manufacturer": "EMP",
+  "kv": 1250.0,
+  "resistance": 0.034,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 530.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-17T_2088KV",
+  "name": "540S-17T 2088KV",
+  "manufacturer": "Feigao",
+  "kv": 2088.0,
+  "resistance": 0.0273,
+  "io": 1.3,
+  "max_current": 38.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

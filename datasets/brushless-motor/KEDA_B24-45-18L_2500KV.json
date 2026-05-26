@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-18L_2500KV",
+  "name": "B24-45-18L 2500KV",
+  "manufacturer": "KEDA",
+  "kv": 2500.0,
+  "resistance": 0.064,
+  "io": 0.9,
+  "max_current": 17.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

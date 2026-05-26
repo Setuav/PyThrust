@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5060EA-9",
+  "name": "XM5060EA-9",
+  "manufacturer": "Dualsky",
+  "kv": 550.0,
+  "resistance": 0.012,
+  "io": 2.1,
+  "max_current": 100.0,
+  "weight_g": 391.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

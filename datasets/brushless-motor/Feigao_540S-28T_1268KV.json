@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-28T_1268KV",
+  "name": "540S-28T 1268KV",
+  "manufacturer": "Feigao",
+  "kv": 1268.0,
+  "resistance": 0.074,
+  "io": 0.5,
+  "max_current": 23.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

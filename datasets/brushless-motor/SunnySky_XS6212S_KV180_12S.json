@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XS6212S_KV180_12S",
+  "name": "XS6212S KV180 12S",
+  "manufacturer": "SunnySky",
+  "kv": 180.0,
+  "resistance": 0.102,
+  "io": 1.5,
+  "max_current": 38.0,
+  "weight_g": 308.2,
+  "max_power": 1680.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_H2215-3100",
+  "name": "DM H2215-3100",
+  "manufacturer": "MotrolFly",
+  "kv": 3180.0,
+  "resistance": 0.0472,
+  "io": 2.3,
+  "max_current": 15.0,
+  "weight_g": 53.9,
+  "max_power": 235.0,
+  "io_voltage": 7.0
+}

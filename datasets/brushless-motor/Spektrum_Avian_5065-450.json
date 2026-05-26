@@ -1,0 +1,12 @@
+{
+  "id": "Spektrum_Avian_5065-450",
+  "name": "Avian 5065-450",
+  "manufacturer": "Spektrum",
+  "kv": 450.0,
+  "resistance": 0.0237,
+  "io": 2.0,
+  "max_current": 85.0,
+  "weight_g": 400.3,
+  "max_power": 2300.0,
+  "io_voltage": 7.4
+}

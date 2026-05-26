@@ -1,0 +1,12 @@
+{
+  "id": "HET_600-34_KV1030",
+  "name": "600-34 KV1030",
+  "manufacturer": "HET",
+  "kv": 1030.0,
+  "resistance": 0.059,
+  "io": 0.8,
+  "max_current": 50.0,
+  "weight_g": 205.3,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

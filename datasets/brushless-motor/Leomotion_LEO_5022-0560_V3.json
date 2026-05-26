@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_5022-0560_V3",
+  "name": "LEO 5022-0560 V3",
+  "manufacturer": "Leomotion",
+  "kv": 560.0,
+  "resistance": 0.008,
+  "io": 3.7,
+  "max_current": 120.0,
+  "weight_g": 515.4,
+  "max_power": 2880.0,
+  "io_voltage": 10.0
+}

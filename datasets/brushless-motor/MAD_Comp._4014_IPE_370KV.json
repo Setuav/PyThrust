@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4014_IPE_370KV",
+  "name": "4014 IPE 370KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 370.0,
+  "resistance": 0.1168,
+  "io": 0.91,
+  "max_current": 22.0,
+  "weight_g": 166.1,
+  "max_power": 507.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_LA_2005-2800KV",
+  "name": "LA 2005-2800KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 2800.0,
+  "resistance": 0.0846,
+  "io": 1.2,
+  "max_current": 26.0,
+  "weight_g": 21.0,
+  "max_power": 624.0,
+  "io_voltage": 8.0
+}

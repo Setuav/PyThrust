@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1530_6_4500",
+  "name": "TS-EZ1530/6 4500",
+  "manufacturer": "Tenshock",
+  "kv": 4500.0,
+  "resistance": 0.005,
+  "io": 4.5,
+  "max_current": 110.0,
+  "weight_g": 137.2,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F1103-11000",
+  "name": "F1103-11000",
+  "manufacturer": "T-Motor",
+  "kv": 11000.0,
+  "resistance": 0.101,
+  "io": 0.65,
+  "max_current": 14.0,
+  "weight_g": 5.1,
+  "max_power": 107.0,
+  "io_voltage": 3.0
+}

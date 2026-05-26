@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1706_1.5Y_1255",
+  "name": "1706/1.5Y 1255",
+  "manufacturer": "NeuMotors",
+  "kv": 1255.0,
+  "resistance": 0.011,
+  "io": 2.5,
+  "max_current": 43.0,
+  "weight_g": 158.2,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

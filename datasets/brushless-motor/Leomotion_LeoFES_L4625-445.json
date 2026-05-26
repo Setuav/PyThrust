@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LeoFES_L4625-445",
+  "name": "LeoFES L4625-445",
+  "manufacturer": "Leomotion",
+  "kv": 447.0,
+  "resistance": 0.022,
+  "io": 1.5,
+  "max_current": 80.0,
+  "weight_g": 380.2,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

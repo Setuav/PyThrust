@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_28-45-3600",
+  "name": "AMMO 28-45-3600",
+  "manufacturer": "ElectriFly",
+  "kv": 3600.0,
+  "resistance": 0.0189,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 133.0,
+  "max_power": 1036.0,
+  "io_voltage": 7.4
+}

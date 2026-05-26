@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_2Y_1138",
+  "name": "1120/2Y 1138",
+  "manufacturer": "NeuMotors",
+  "kv": 1138.0,
+  "resistance": 0.04,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

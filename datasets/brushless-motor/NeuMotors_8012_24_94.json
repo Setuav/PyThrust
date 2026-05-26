@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_24_94",
+  "name": "8012/24/94",
+  "manufacturer": "NeuMotors",
+  "kv": 94.0,
+  "resistance": 0.107,
+  "io": 0.338,
+  "max_current": 42.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

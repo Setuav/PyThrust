@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_35-09_920KV",
+  "name": "AL 35-09 920KV",
+  "manufacturer": "D-Power",
+  "kv": 920.0,
+  "resistance": 0.038,
+  "io": 1.5,
+  "max_current": 45.0,
+  "weight_g": 135.2,
+  "max_power": 470.0,
+  "io_voltage": 8.0
+}

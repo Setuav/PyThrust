@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AS2317-1250",
+  "name": "AS2317-1250",
+  "manufacturer": "T-Motor",
+  "kv": 1250.0,
+  "resistance": 0.0498,
+  "io": 1.68,
+  "max_current": 40.0,
+  "weight_g": 81.1,
+  "max_power": 596.0,
+  "io_voltage": 10.0
+}

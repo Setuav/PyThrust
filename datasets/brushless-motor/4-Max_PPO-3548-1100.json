@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-3548-1100",
+  "name": "PPO-3548-1100",
+  "manufacturer": "4-Max",
+  "kv": 1100.0,
+  "resistance": 0.028,
+  "io": 1.8,
+  "max_current": 60.0,
+  "weight_g": 167.3,
+  "max_power": 580.0,
+  "io_voltage": 10.0
+}

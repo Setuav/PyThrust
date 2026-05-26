@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_26_42",
+  "name": "8025/26/42",
+  "manufacturer": "NeuMotors",
+  "kv": 42.0,
+  "resistance": 0.204,
+  "io": 0.312,
+  "max_current": 39.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

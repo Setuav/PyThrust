@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC3514_14_1100KV",
+  "name": "XC3514/14 1100KV",
+  "manufacturer": "XPower",
+  "kv": 1100.0,
+  "resistance": 0.0335,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 130.1,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

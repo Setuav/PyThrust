@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2216_KV1250_2-4S",
+  "name": "X2216 KV1250 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1250.0,
+  "resistance": 0.063,
+  "io": 1.1,
+  "max_current": 28.0,
+  "weight_g": 72.0,
+  "max_power": 392.0,
+  "io_voltage": 10.0
+}

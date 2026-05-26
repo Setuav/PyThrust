@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_3508-380",
+  "name": "3508-380",
+  "manufacturer": "MultiStar",
+  "kv": 380.0,
+  "resistance": 0.215,
+  "io": 0.3,
+  "max_current": 14.0,
+  "weight_g": 102.1,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

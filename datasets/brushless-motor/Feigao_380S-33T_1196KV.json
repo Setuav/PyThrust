@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-33T_1196KV",
+  "name": "380S-33T 1196KV",
+  "manufacturer": "Feigao",
+  "kv": 1196.0,
+  "resistance": 0.1603,
+  "io": 0.2,
+  "max_current": 13.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

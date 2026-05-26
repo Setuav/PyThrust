@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_1D_9900",
+  "name": "1506/1D 9900",
+  "manufacturer": "NeuMotors",
+  "kv": 9900.0,
+  "resistance": 0.001,
+  "io": 4.5,
+  "max_current": 165.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

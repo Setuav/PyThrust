@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2205_2600KV",
+  "name": "XRotor 2205 2600KV",
+  "manufacturer": "HobbyWing",
+  "kv": 2600.0,
+  "resistance": 0.044,
+  "io": 2.1,
+  "max_current": 28.0,
+  "weight_g": 30.1,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

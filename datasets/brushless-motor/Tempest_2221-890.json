@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2221-890",
+  "name": "2221-890",
+  "manufacturer": "Tempest",
+  "kv": 890.0,
+  "resistance": 0.086,
+  "io": 1.03,
+  "max_current": 28.0,
+  "weight_g": 85.9,
+  "max_power": 415.0,
+  "io_voltage": 10.0
+}

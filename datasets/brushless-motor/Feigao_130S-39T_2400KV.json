@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-39T_2400KV",
+  "name": "130S-39T 2400KV",
+  "manufacturer": "Feigao",
+  "kv": 2400.0,
+  "resistance": 0.3331,
+  "io": 0.18,
+  "max_current": 6.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

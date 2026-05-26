@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_A-5025-215",
+  "name": "A-5025-215",
+  "manufacturer": "Scorpion",
+  "kv": 215.0,
+  "resistance": 0.0175,
+  "io": 0.99,
+  "max_current": 90.0,
+  "weight_g": 526.2,
+  "max_power": 4000.0,
+  "io_voltage": 20.0
+}

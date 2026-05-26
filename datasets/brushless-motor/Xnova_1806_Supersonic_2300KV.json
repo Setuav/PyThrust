@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_1806_Supersonic_2300KV",
+  "name": "1806 Supersonic 2300KV",
+  "manufacturer": "Xnova",
+  "kv": 2300.0,
+  "resistance": 0.12,
+  "io": 0.7,
+  "max_current": 18.0,
+  "weight_g": 21.0,
+  "max_power": 277.0,
+  "io_voltage": 10.0
+}

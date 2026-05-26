@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_VY1504.5-2650",
+  "name": "VY1504.5-2650",
+  "manufacturer": "Brother Hobby",
+  "kv": 2650.0,
+  "resistance": 0.2789,
+  "io": 0.27,
+  "max_current": 15.0,
+  "weight_g": 12.2,
+  "max_power": 232.0,
+  "io_voltage": 5.0
+}

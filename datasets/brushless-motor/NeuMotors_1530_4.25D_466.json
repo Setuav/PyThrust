@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_4.25D_466",
+  "name": "1530/4.25D 466",
+  "manufacturer": "NeuMotors",
+  "kv": 466.0,
+  "resistance": 0.0723,
+  "io": 1.06,
+  "max_current": 43.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

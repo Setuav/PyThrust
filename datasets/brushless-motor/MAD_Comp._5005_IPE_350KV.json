@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5005_IPE_350KV",
+  "name": "5005 IPE 350KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 350.0,
+  "resistance": 0.118,
+  "io": 0.7,
+  "max_current": 22.0,
+  "weight_g": 106.0,
+  "max_power": 508.0,
+  "io_voltage": 20.0
+}

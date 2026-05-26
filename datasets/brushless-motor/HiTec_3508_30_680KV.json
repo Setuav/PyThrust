@@ -1,0 +1,12 @@
+{
+  "id": "HiTec_3508_30_680KV",
+  "name": "3508/30 680KV",
+  "manufacturer": "HiTec",
+  "kv": 680.0,
+  "resistance": 0.136,
+  "io": 0.71,
+  "max_current": 40.0,
+  "weight_g": 135.2,
+  "max_power": 310.0,
+  "io_voltage": 8.0
+}

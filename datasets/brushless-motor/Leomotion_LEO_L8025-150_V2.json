@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8025-150_V2",
+  "name": "LEO L8025-150 V2",
+  "manufacturer": "Leomotion",
+  "kv": 150.0,
+  "resistance": 0.017,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 1481.0,
+  "max_power": 9400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING2_2506_1350",
+  "name": "XING2 2506 1350",
+  "manufacturer": "iFlight",
+  "kv": 1350.0,
+  "resistance": 0.08,
+  "io": 2.1,
+  "max_current": 0.0,
+  "weight_g": 39.1,
+  "max_power": 730.0,
+  "io_voltage": 10.0
+}

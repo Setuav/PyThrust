@@ -1,0 +1,12 @@
+{
+  "id": "VCI_SPARK_2207_PRO_2050",
+  "name": "SPARK 2207 PRO 2050",
+  "manufacturer": "VCI",
+  "kv": 2050.0,
+  "resistance": 0.055,
+  "io": 1.0,
+  "max_current": 47.0,
+  "weight_g": 32.9,
+  "max_power": 1137.0,
+  "io_voltage": 10.0
+}

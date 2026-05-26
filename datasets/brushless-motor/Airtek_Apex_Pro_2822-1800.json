@@ -1,0 +1,12 @@
+{
+  "id": "Airtek_Apex_Pro_2822-1800",
+  "name": "Apex Pro 2822-1800",
+  "manufacturer": "Airtek",
+  "kv": 1800.0,
+  "resistance": 0.112,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 39.7,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

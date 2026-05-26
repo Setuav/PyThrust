@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3045EG-8",
+  "name": "XM3045EG-8",
+  "manufacturer": "Dualsky",
+  "kv": 1250.0,
+  "resistance": 0.024,
+  "io": 1.75,
+  "max_current": 49.0,
+  "weight_g": 120.2,
+  "max_power": 725.0,
+  "io_voltage": 10.0
+}

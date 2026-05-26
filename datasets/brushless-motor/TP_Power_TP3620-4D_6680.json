@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-4D_6680",
+  "name": "TP3620-4D 6680",
+  "manufacturer": "TP Power",
+  "kv": 6680.0,
+  "resistance": 0.0021,
+  "io": 9.5,
+  "max_current": 183.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Kyosho_LeMans_DMC20BB",
+  "name": "LeMans DMC20BB",
+  "manufacturer": "Kyosho",
+  "kv": 4939.0,
+  "resistance": 0.054,
+  "io": 0.54,
+  "max_current": 30.0,
+  "weight_g": 178.6,
+  "max_power": 537.0,
+  "io_voltage": 8.0
+}

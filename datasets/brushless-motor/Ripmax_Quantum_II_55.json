@@ -1,0 +1,12 @@
+{
+  "id": "Ripmax_Quantum_II_55",
+  "name": "Quantum II 55",
+  "manufacturer": "Ripmax",
+  "kv": 700.0,
+  "resistance": 0.017,
+  "io": 3.5,
+  "max_current": 80.0,
+  "weight_g": 346.1,
+  "max_power": 1350.0,
+  "io_voltage": 10.0
+}

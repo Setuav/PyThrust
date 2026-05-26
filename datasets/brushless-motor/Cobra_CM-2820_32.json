@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2820_32",
+  "name": "CM-2820/32",
+  "manufacturer": "Cobra",
+  "kv": 350.0,
+  "resistance": 0.2,
+  "io": 0.33,
+  "max_current": 20.0,
+  "weight_g": 146.0,
+  "max_power": 370.0,
+  "io_voltage": 15.0
+}

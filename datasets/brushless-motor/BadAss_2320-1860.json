@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2320-1860",
+  "name": "2320-1860",
+  "manufacturer": "BadAss",
+  "kv": 1860.0,
+  "resistance": 0.02,
+  "io": 2.79,
+  "max_current": 55.0,
+  "weight_g": 92.7,
+  "max_power": 810.0,
+  "io_voltage": 10.0
+}

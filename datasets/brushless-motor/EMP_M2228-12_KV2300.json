@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2228-12_KV2300",
+  "name": "M2228-12 KV2300",
+  "manufacturer": "EMP",
+  "kv": 2300.0,
+  "resistance": 0.252,
+  "io": 0.4,
+  "max_current": 15.0,
+  "weight_g": 24.9,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

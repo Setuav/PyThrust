@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-24L_1700KV",
+  "name": "B24-45-24L 1700KV",
+  "manufacturer": "KEDA",
+  "kv": 1700.0,
+  "resistance": 0.1208,
+  "io": 0.5,
+  "max_current": 14.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

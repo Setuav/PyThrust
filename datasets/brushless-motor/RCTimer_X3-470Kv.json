@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_X3-470Kv",
+  "name": "X3-470Kv",
+  "manufacturer": "RCTimer",
+  "kv": 470.0,
+  "resistance": 0.17,
+  "io": 0.5,
+  "max_current": 25.0,
+  "weight_g": 120.2,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

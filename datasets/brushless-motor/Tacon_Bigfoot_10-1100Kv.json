@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_10-1100Kv",
+  "name": "Bigfoot 10-1100Kv",
+  "manufacturer": "Tacon",
+  "kv": 1100.0,
+  "resistance": 0.029,
+  "io": 2.7,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 375.0,
+  "io_voltage": 7.4
+}

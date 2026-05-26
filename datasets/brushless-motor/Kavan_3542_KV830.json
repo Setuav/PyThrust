@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3542_KV830",
+  "name": "3542 KV830",
+  "manufacturer": "Kavan",
+  "kv": 830.0,
+  "resistance": 0.039,
+  "io": 1.6,
+  "max_current": 45.0,
+  "weight_g": 139.2,
+  "max_power": 830.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_2.25Y_1222",
+  "name": "1512/2.25Y 1222",
+  "manufacturer": "NeuMotors",
+  "kv": 1222.0,
+  "resistance": 0.0243,
+  "io": 1.11,
+  "max_current": 41.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

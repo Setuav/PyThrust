@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_625_Cobalt",
+  "name": "625 Cobalt",
+  "manufacturer": "Astro Flight",
+  "kv": 971.0,
+  "resistance": 0.093,
+  "io": 2.5,
+  "max_current": 35.0,
+  "weight_g": 340.2,
+  "max_power": 650.0,
+  "io_voltage": 8.4
+}

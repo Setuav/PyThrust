@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2203-2100",
+  "name": "DM2203-2100",
+  "manufacturer": "Pro-Tronik",
+  "kv": 2165.0,
+  "resistance": 0.181,
+  "io": 0.69,
+  "max_current": 9.0,
+  "weight_g": 17.0,
+  "max_power": 50.0,
+  "io_voltage": 8.4
+}

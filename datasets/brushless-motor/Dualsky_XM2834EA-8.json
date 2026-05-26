@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2834EA-8",
+  "name": "XM2834EA-8",
+  "manufacturer": "Dualsky",
+  "kv": 1900.0,
+  "resistance": 0.0175,
+  "io": 2.6,
+  "max_current": 35.0,
+  "weight_g": 78.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

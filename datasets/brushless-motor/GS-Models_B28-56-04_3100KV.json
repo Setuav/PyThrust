@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B28-56-04_3100KV",
+  "name": "B28-56-04 3100KV",
+  "manufacturer": "GS-Models",
+  "kv": 3100.0,
+  "resistance": 0.0128,
+  "io": 3.8,
+  "max_current": 60.0,
+  "weight_g": 170.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

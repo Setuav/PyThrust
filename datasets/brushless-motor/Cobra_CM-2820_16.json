@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2820_16",
+  "name": "CM-2820/16",
+  "manufacturer": "Cobra",
+  "kv": 740.0,
+  "resistance": 0.074,
+  "io": 0.92,
+  "max_current": 35.0,
+  "weight_g": 146.0,
+  "max_power": 390.0,
+  "io_voltage": 15.0
+}

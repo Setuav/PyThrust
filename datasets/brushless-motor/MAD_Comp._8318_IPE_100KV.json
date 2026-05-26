@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._8318_IPE_100KV",
+  "name": "8318 IPE 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.036,
+  "io": 1.7,
+  "max_current": 68.0,
+  "weight_g": 650.6,
+  "max_power": 3224.0,
+  "io_voltage": 30.0
+}

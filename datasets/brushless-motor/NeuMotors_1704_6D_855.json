@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_6D_855",
+  "name": "1704/6D 855",
+  "manufacturer": "NeuMotors",
+  "kv": 855.0,
+  "resistance": 0.077,
+  "io": 0.78,
+  "max_current": 24.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2221EG-22",
+  "name": "XM2221EG-22",
+  "manufacturer": "Dualsky",
+  "kv": 2900.0,
+  "resistance": 0.086,
+  "io": 0.95,
+  "max_current": 17.0,
+  "weight_g": 23.0,
+  "max_power": 126.0,
+  "io_voltage": 10.0
+}

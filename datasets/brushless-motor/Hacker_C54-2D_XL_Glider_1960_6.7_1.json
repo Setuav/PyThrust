@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-2D_XL_Glider_1960_6.7_1",
+  "name": "C54-2D XL Glider 1960 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1960.0,
+  "resistance": 0.006,
+  "io": 3.5,
+  "max_current": 120.0,
+  "weight_g": 520.5,
+  "max_power": 4000.0,
+  "io_voltage": 37.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_1.5Y_2444",
+  "name": "1509/1.5Y 2444",
+  "manufacturer": "NeuMotors",
+  "kv": 2444.0,
+  "resistance": 0.0081,
+  "io": 1.7,
+  "max_current": 61.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

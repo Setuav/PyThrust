@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-42-07_810",
+  "name": "C35-42-07 810",
+  "manufacturer": "ROXXY",
+  "kv": 810.0,
+  "resistance": 0.059,
+  "io": 2.42,
+  "max_current": 45.0,
+  "weight_g": 132.1,
+  "max_power": 660.0,
+  "io_voltage": 14.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_IBL_36_61-540C_6100",
+  "name": "IBL 36/61-540C 6100",
+  "manufacturer": "Thunder Tiger",
+  "kv": 6100.0,
+  "resistance": 0.008,
+  "io": 2.3,
+  "max_current": 60.0,
+  "weight_g": 190.2,
+  "max_power": 760.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR1408_3500kv",
+  "name": "GR1408 3500kv",
+  "manufacturer": "GEPRC",
+  "kv": 3500.0,
+  "resistance": 0.098,
+  "io": 0.92,
+  "max_current": 22.0,
+  "weight_g": 5.1,
+  "max_power": 222.0,
+  "io_voltage": 10.0
+}

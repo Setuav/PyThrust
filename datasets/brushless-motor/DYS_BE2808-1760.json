@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2808-1760",
+  "name": "BE2808-1760",
+  "manufacturer": "DYS",
+  "kv": 1760.0,
+  "resistance": 0.033,
+  "io": 1.7,
+  "max_current": 36.0,
+  "weight_g": 75.1,
+  "max_power": 536.0,
+  "io_voltage": 11.1
+}

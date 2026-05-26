@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2207.5_1950KV",
+  "name": "Aeolus 2207.5 1950KV",
+  "manufacturer": "HGLRC",
+  "kv": 1950.0,
+  "resistance": 0.058,
+  "io": 1.2,
+  "max_current": 46.0,
+  "weight_g": 32.9,
+  "max_power": 1106.0,
+  "io_voltage": 10.0
+}

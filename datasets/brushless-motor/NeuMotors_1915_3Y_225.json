@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1915_3Y_225",
+  "name": "1915/3Y 225",
+  "manufacturer": "NeuMotors",
+  "kv": 225.0,
+  "resistance": 0.1,
+  "io": 0.3,
+  "max_current": 23.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

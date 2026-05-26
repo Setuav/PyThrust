@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Tornado_T10_PRO_5215_290",
+  "name": "Tornado T10 PRO 5215 290",
+  "manufacturer": "Brother Hobby",
+  "kv": 290.0,
+  "resistance": 0.06196,
+  "io": 1.15,
+  "max_current": 48.0,
+  "weight_g": 343.3,
+  "max_power": 1376.0,
+  "io_voltage": 20.0
+}

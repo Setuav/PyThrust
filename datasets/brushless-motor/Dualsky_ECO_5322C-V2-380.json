@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_5322C-V2-380",
+  "name": "ECO 5322C-V2-380",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.015,
+  "io": 1.6,
+  "max_current": 90.0,
+  "weight_g": 510.3,
+  "max_power": 2160.0,
+  "io_voltage": 10.0
+}

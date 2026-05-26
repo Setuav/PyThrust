@@ -1,0 +1,12 @@
+{
+  "id": "FMS_1811-KV3900",
+  "name": "1811-KV3900",
+  "manufacturer": "FMS",
+  "kv": 3900.0,
+  "resistance": 0.22,
+  "io": 0.5,
+  "max_current": 6.0,
+  "weight_g": 15.0,
+  "max_power": 45.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_4005",
+  "name": "4005",
+  "manufacturer": "Astro Flight",
+  "kv": 678.0,
+  "resistance": 0.125,
+  "io": 1.4,
+  "max_current": 63.0,
+  "weight_g": 771.7,
+  "max_power": 1500.0,
+  "io_voltage": 8.4
+}

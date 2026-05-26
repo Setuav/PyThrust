@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2826-940",
+  "name": "BE2826-940",
+  "manufacturer": "DYS",
+  "kv": 940.0,
+  "resistance": 0.021,
+  "io": 2.0,
+  "max_current": 25.0,
+  "weight_g": 159.0,
+  "max_power": 544.0,
+  "io_voltage": 14.8
+}

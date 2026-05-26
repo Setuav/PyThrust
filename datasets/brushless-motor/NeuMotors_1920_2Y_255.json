@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1920_2Y_255",
+  "name": "1920/2Y 255",
+  "manufacturer": "NeuMotors",
+  "kv": 255.0,
+  "resistance": 0.063,
+  "io": 0.8,
+  "max_current": 36.0,
+  "weight_g": 509.4,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

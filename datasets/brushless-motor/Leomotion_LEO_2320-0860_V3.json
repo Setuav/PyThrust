@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2320-0860_V3",
+  "name": "LEO 2320-0860 V3",
+  "manufacturer": "Leomotion",
+  "kv": 860.0,
+  "resistance": 0.054,
+  "io": 0.9,
+  "max_current": 26.0,
+  "weight_g": 90.2,
+  "max_power": 415.0,
+  "io_voltage": 10.0
+}

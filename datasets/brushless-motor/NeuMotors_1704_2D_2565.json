@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_2D_2565",
+  "name": "1704/2D 2565",
+  "manufacturer": "NeuMotors",
+  "kv": 2565.0,
+  "resistance": 0.009,
+  "io": 2.34,
+  "max_current": 73.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_2107Plus-2480",
+  "name": "GTS V3 2107Plus-2480",
+  "manufacturer": "RCinPower",
+  "kv": 2480.0,
+  "resistance": 0.048,
+  "io": 0.9,
+  "max_current": 49.0,
+  "weight_g": 28.9,
+  "max_power": 975.0,
+  "io_voltage": 10.0
+}

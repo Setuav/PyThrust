@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2814-1050",
+  "name": "AT2814-1050",
+  "manufacturer": "T-Motor",
+  "kv": 1050.0,
+  "resistance": 0.035,
+  "io": 1.5,
+  "max_current": 50.0,
+  "weight_g": 107.2,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

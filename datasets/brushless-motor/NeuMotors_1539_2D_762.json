@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_2D_762",
+  "name": "1539/2D 762",
+  "manufacturer": "NeuMotors",
+  "kv": 762.0,
+  "resistance": 0.021,
+  "io": 2.25,
+  "max_current": 89.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

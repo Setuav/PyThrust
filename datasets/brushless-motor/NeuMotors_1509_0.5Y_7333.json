@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_0.5Y_7333",
+  "name": "1509/0.5Y 7333",
+  "manufacturer": "NeuMotors",
+  "kv": 7333.0,
+  "resistance": 0.0009,
+  "io": 5.0,
+  "max_current": 183.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

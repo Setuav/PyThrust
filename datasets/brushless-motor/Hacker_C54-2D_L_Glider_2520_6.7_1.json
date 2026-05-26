@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-2D_L_Glider_2520_6.7_1",
+  "name": "C54-2D L Glider 2520 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 2520.0,
+  "resistance": 0.019,
+  "io": 2.8,
+  "max_current": 140.0,
+  "weight_g": 445.4,
+  "max_power": 3500.0,
+  "io_voltage": 37.0
+}

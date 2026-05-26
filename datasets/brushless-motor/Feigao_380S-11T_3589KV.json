@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-11T_3589KV",
+  "name": "380S-11T 3589KV",
+  "manufacturer": "Feigao",
+  "kv": 3589.0,
+  "resistance": 0.0178,
+  "io": 1.8,
+  "max_current": 37.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

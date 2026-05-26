@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G110_6320-KV285",
+  "name": "G110 6320-KV285",
+  "manufacturer": "TomCat",
+  "kv": 285.0,
+  "resistance": 0.035,
+  "io": 1.7,
+  "max_current": 68.0,
+  "weight_g": 520.5,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

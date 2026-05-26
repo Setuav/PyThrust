@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_microRex_220-3-3200",
+  "name": "microRex 220-3-3200*",
+  "manufacturer": "Flyware",
+  "kv": 3265.0,
+  "resistance": 0.3,
+  "io": 0.5,
+  "max_current": 9.5,
+  "weight_g": 11.9,
+  "max_power": 143.0,
+  "io_voltage": 10.0
+}

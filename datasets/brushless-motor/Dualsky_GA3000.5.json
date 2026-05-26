@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA3000.5",
+  "name": "GA3000.5",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.0095,
+  "io": 2.8,
+  "max_current": 130.0,
+  "weight_g": 585.4,
+  "max_power": 2900.0,
+  "io_voltage": 10.0
+}

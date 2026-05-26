@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_40_27",
+  "name": "8025/40/27",
+  "manufacturer": "NeuMotors",
+  "kv": 27.0,
+  "resistance": 0.477,
+  "io": 0.203,
+  "max_current": 26.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

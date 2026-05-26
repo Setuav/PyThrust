@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-35-10S_6900KV",
+  "name": "B24-35-10S 6900KV",
+  "manufacturer": "KEDA",
+  "kv": 6900.0,
+  "resistance": 0.015,
+  "io": 3.5,
+  "max_current": 28.0,
+  "weight_g": 68.0,
+  "max_power": 270.0,
+  "io_voltage": 7.4
+}

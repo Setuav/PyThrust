@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2826-4_1000KV",
+  "name": "A2826-4 1000KV",
+  "manufacturer": "Cheetah",
+  "kv": 1000.0,
+  "resistance": 0.028,
+  "io": 2.9,
+  "max_current": 0.0,
+  "weight_g": 175.2,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

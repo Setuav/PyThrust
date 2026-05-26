@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_1.5D_367",
+  "name": "2530/1.5D 367",
+  "manufacturer": "NeuMotors",
+  "kv": 367.0,
+  "resistance": 0.005,
+  "io": 3.6,
+  "max_current": 294.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

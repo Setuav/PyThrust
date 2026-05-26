@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO4014_400KV",
+  "name": "XTO4014 400KV",
+  "manufacturer": "X-Team",
+  "kv": 400.0,
+  "resistance": 0.083,
+  "io": 1.0,
+  "max_current": 32.0,
+  "weight_g": 166.1,
+  "max_power": 875.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD3542-06_920",
+  "name": "HD3542-06/920",
+  "manufacturer": "PowerHD",
+  "kv": 920.0,
+  "resistance": 0.039,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 135.2,
+  "max_power": 620.0,
+  "io_voltage": 10.0
+}

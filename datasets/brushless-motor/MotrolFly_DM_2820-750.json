@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2820-750",
+  "name": "DM 2820-750",
+  "manufacturer": "MotrolFly",
+  "kv": 639.0,
+  "resistance": 0.052,
+  "io": 1.87,
+  "max_current": 40.0,
+  "weight_g": 150.3,
+  "max_power": 600.0,
+  "io_voltage": 15.0
+}

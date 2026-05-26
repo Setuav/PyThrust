@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2812-06_KV1550",
+  "name": "GT2812-06 KV1550",
+  "manufacturer": "EMAX",
+  "kv": 1550.0,
+  "resistance": 0.027,
+  "io": 1.9,
+  "max_current": 43.0,
+  "weight_g": 105.2,
+  "max_power": 420.0,
+  "io_voltage": 11.0
+}

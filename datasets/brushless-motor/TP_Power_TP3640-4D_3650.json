@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-4D_3650",
+  "name": "TP3640-4D 3650",
+  "manufacturer": "TP Power",
+  "kv": 3650.0,
+  "resistance": 0.0056,
+  "io": 2.1,
+  "max_current": 175.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

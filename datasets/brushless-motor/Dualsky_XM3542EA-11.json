@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3542EA-11",
+  "name": "XM3542EA-11",
+  "manufacturer": "Dualsky",
+  "kv": 880.0,
+  "resistance": 0.0251,
+  "io": 1.5,
+  "max_current": 38.0,
+  "weight_g": 147.1,
+  "max_power": 608.0,
+  "io_voltage": 10.0
+}

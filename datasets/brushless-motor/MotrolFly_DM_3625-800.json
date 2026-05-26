@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_3625-800",
+  "name": "DM 3625-800",
+  "manufacturer": "MotrolFly",
+  "kv": 798.0,
+  "resistance": 0.0234,
+  "io": 3.32,
+  "max_current": 45.0,
+  "weight_g": 256.3,
+  "max_power": 675.0,
+  "io_voltage": 14.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_7208XF-110",
+  "name": "7208XF-110",
+  "manufacturer": "KDEDirect",
+  "kv": 110.0,
+  "resistance": 0.171,
+  "io": 0.4,
+  "max_current": 34.0,
+  "weight_g": 380.2,
+  "max_power": 2225.0,
+  "io_voltage": 10.0
+}

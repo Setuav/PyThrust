@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U7_V2.0_KV280",
+  "name": "U7 V2.0 KV280",
+  "manufacturer": "T-Motor",
+  "kv": 280.0,
+  "resistance": 0.071,
+  "io": 0.5,
+  "max_current": 35.0,
+  "weight_g": 255.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

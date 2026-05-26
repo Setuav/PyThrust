@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_6360-8_V3",
+  "name": "Joker 6360-8 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 280.0,
+  "resistance": 0.0178,
+  "io": 1.4,
+  "max_current": 100.0,
+  "weight_g": 640.4,
+  "max_power": 3200.0,
+  "io_voltage": 10.0
+}

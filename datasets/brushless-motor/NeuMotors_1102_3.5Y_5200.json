@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_3.5Y_5200",
+  "name": "1102/3.5Y 5200",
+  "manufacturer": "NeuMotors",
+  "kv": 5200.0,
+  "resistance": 0.015,
+  "io": 0.75,
+  "max_current": 17.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

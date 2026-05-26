@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M1822-20_KV2100",
+  "name": "M1822-20 KV2100",
+  "manufacturer": "EMP",
+  "kv": 2100.0,
+  "resistance": 0.453,
+  "io": 0.2,
+  "max_current": 0.0,
+  "weight_g": 13.3,
+  "max_power": 45.0,
+  "io_voltage": 10.0
+}

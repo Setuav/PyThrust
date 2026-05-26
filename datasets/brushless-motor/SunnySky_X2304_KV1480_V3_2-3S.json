@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2304_KV1480_V3_2-3S",
+  "name": "X2304 KV1480 V3 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 1480.0,
+  "resistance": 0.19,
+  "io": 0.4,
+  "max_current": 15.0,
+  "weight_g": 20.1,
+  "max_power": 130.0,
+  "io_voltage": 10.0
+}

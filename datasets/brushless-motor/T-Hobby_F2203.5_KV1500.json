@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_F2203.5_KV1500",
+  "name": "F2203.5 KV1500",
+  "manufacturer": "T-Hobby",
+  "kv": 1500.0,
+  "resistance": 0.235,
+  "io": 0.3,
+  "max_current": 20.0,
+  "weight_g": 17.0,
+  "max_power": 462.0,
+  "io_voltage": 10.0
+}

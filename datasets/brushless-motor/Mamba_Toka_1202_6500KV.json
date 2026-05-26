@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1202_6500KV",
+  "name": "Toka 1202 6500KV",
+  "manufacturer": "Mamba",
+  "kv": 6500.0,
+  "resistance": 0.382,
+  "io": 0.36,
+  "max_current": 7.3,
+  "weight_g": 4.8,
+  "max_power": 88.0,
+  "io_voltage": 5.0
+}

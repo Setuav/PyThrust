@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-16T_5850KV",
+  "name": "130S-16T 5850KV",
+  "manufacturer": "Feigao",
+  "kv": 5850.0,
+  "resistance": 0.0561,
+  "io": 1.3,
+  "max_current": 13.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CP-2210-2200",
+  "name": "CP-2210-2200",
+  "manufacturer": "Cobra",
+  "kv": 2200.0,
+  "resistance": 0.032,
+  "io": 1.7,
+  "max_current": 38.0,
+  "weight_g": 48.2,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

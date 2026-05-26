@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_Park400_2812-KV750",
+  "name": "Park400 2812-KV750",
+  "manufacturer": "TomCat",
+  "kv": 750.0,
+  "resistance": 0.243,
+  "io": 0.45,
+  "max_current": 10.0,
+  "weight_g": 62.1,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

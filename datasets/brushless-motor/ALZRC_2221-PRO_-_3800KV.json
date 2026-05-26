@@ -1,0 +1,12 @@
+{
+  "id": "ALZRC_2221-PRO_-_3800KV",
+  "name": "2221-PRO - 3800KV",
+  "manufacturer": "ALZRC",
+  "kv": 3800.0,
+  "resistance": 0.039,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 91.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

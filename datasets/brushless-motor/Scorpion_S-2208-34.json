@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-2208-34",
+  "name": "S-2208-34",
+  "manufacturer": "Scorpion",
+  "kv": 1150.0,
+  "resistance": 0.191,
+  "io": 0.471,
+  "max_current": 10.0,
+  "weight_g": 42.0,
+  "max_power": 160.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_75_10",
+  "name": "8038/75/10",
+  "manufacturer": "NeuMotors",
+  "kv": 10.0,
+  "resistance": 2.3151,
+  "io": 0.108,
+  "max_current": 14.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

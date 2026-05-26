@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Helium_2220-3500",
+  "name": "Helium 2220-3500",
+  "manufacturer": "Exceed RC",
+  "kv": 3500.0,
+  "resistance": 0.021,
+  "io": 2.2,
+  "max_current": 75.0,
+  "weight_g": 78.5,
+  "max_power": 350.0,
+  "io_voltage": 8.0
+}

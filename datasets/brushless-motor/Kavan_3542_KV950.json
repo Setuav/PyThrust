@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3542_KV950",
+  "name": "3542 KV950",
+  "manufacturer": "Kavan",
+  "kv": 950.0,
+  "resistance": 0.028,
+  "io": 2.0,
+  "max_current": 65.0,
+  "weight_g": 139.2,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

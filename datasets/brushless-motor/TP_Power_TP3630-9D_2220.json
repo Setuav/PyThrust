@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3630-9D_2220",
+  "name": "TP3630-9D 2220",
+  "manufacturer": "TP Power",
+  "kv": 2220.0,
+  "resistance": 0.01,
+  "io": 1.5,
+  "max_current": 66.0,
+  "weight_g": 252.3,
+  "max_power": 1800.0,
+  "io_voltage": 6.0
+}

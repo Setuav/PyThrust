@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4116_KV340",
+  "name": "MN4116 KV340",
+  "manufacturer": "T-Motor",
+  "kv": 340.0,
+  "resistance": 0.059,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 212.1,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

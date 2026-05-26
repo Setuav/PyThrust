@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT5220A-380",
+  "name": "AT5220A-380",
+  "manufacturer": "T-Motor",
+  "kv": 380.0,
+  "resistance": 0.011,
+  "io": 4.0,
+  "max_current": 100.0,
+  "weight_g": 465.2,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

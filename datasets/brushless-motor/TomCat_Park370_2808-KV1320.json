@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_Park370_2808-KV1320",
+  "name": "Park370 2808-KV1320",
+  "manufacturer": "TomCat",
+  "kv": 1320.0,
+  "resistance": 0.12,
+  "io": 1.0,
+  "max_current": 15.0,
+  "weight_g": 50.2,
+  "max_power": 140.0,
+  "io_voltage": 10.0
+}

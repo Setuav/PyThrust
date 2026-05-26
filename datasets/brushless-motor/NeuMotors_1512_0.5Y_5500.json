@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_0.5Y_5500",
+  "name": "1512/0.5Y 5500",
+  "manufacturer": "NeuMotors",
+  "kv": 5500.0,
+  "resistance": 0.0012,
+  "io": 5.0,
+  "max_current": 183.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

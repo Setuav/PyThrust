@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2205-1030",
+  "name": "2205-1030",
+  "manufacturer": "Tempest",
+  "kv": 1030.0,
+  "resistance": 0.326,
+  "io": 0.38,
+  "max_current": 8.0,
+  "weight_g": 36.0,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

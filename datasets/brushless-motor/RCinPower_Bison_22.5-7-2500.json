@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_Bison_22.5-7-2500",
+  "name": "Bison 22.5-7-2500",
+  "manufacturer": "RCinPower",
+  "kv": 2500.0,
+  "resistance": 0.055,
+  "io": 1.9,
+  "max_current": 35.0,
+  "weight_g": 32.9,
+  "max_power": 588.0,
+  "io_voltage": 10.0
+}

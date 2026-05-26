@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_6355-340",
+  "name": "EP 6355-340",
+  "manufacturer": "EP Product",
+  "kv": 340.0,
+  "resistance": 0.025,
+  "io": 1.5,
+  "max_current": 94.0,
+  "weight_g": 566.4,
+  "max_power": 3380.0,
+  "io_voltage": 10.0
+}

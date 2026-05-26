@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2210-09_KV1780",
+  "name": "GT2210-09 KV1780",
+  "manufacturer": "EMAX",
+  "kv": 1780.0,
+  "resistance": 0.12,
+  "io": 1.0,
+  "max_current": 18.0,
+  "weight_g": 55.0,
+  "max_power": 144.0,
+  "io_voltage": 11.0
+}

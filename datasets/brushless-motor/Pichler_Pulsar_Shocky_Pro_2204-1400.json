@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Pulsar_Shocky_Pro_2204-1400",
+  "name": "Pulsar Shocky Pro 2204-1400",
+  "manufacturer": "Pichler",
+  "kv": 1400.0,
+  "resistance": 0.2295,
+  "io": 0.35,
+  "max_current": 9.0,
+  "weight_g": 24.1,
+  "max_power": 135.0,
+  "io_voltage": 8.4
+}

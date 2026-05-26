@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-15_1100",
+  "name": "C28-15 1100",
+  "manufacturer": "ROXXY",
+  "kv": 1100.0,
+  "resistance": 0.341,
+  "io": 0.6,
+  "max_current": 7.0,
+  "weight_g": 32.9,
+  "max_power": 62.0,
+  "io_voltage": 7.4
+}

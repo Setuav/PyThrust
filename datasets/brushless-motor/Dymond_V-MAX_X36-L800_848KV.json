@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_V-MAX_X36-L800_848KV",
+  "name": "V-MAX X36-L800 848KV",
+  "manufacturer": "Dymond",
+  "kv": 848.0,
+  "resistance": 0.071,
+  "io": 1.87,
+  "max_current": 45.0,
+  "weight_g": 203.3,
+  "max_power": 620.0,
+  "io_voltage": 11.31
+}

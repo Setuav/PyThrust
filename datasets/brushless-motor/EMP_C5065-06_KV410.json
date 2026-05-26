@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C5065-06_KV410",
+  "name": "C5065-06 KV410",
+  "manufacturer": "EMP",
+  "kv": 410.0,
+  "resistance": 0.02,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 420.4,
+  "max_power": 1665.0,
+  "io_voltage": 10.0
+}

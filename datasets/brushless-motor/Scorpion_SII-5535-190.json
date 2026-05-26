@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-5535-190",
+  "name": "SII-5535-190",
+  "manufacturer": "Scorpion",
+  "kv": 190.0,
+  "resistance": 0.022,
+  "io": 1.24,
+  "max_current": 95.0,
+  "weight_g": 906.6,
+  "max_power": 3900.0,
+  "io_voltage": 10.0
+}

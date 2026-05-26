@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_5.5D_720",
+  "name": "1515/5.5D 720",
+  "manufacturer": "NeuMotors",
+  "kv": 720.0,
+  "resistance": 0.0605,
+  "io": 0.82,
+  "max_current": 24.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

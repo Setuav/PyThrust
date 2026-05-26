@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS4715-650",
+  "name": "GTS4715-650",
+  "manufacturer": "RCinPower",
+  "kv": 650.0,
+  "resistance": 0.014,
+  "io": 2.9,
+  "max_current": 100.0,
+  "weight_g": 275.3,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

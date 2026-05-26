@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4250-12T_360kv",
+  "name": "LC4250-12T 360kv",
+  "manufacturer": "Leopard",
+  "kv": 360.0,
+  "resistance": 0.0868,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 208.1,
+  "max_power": 869.0,
+  "io_voltage": 10.0
+}

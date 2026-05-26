@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C6374-170",
+  "name": "C6374-170",
+  "manufacturer": "EMP",
+  "kv": 170.0,
+  "resistance": 0.056,
+  "io": 1.4,
+  "max_current": 0.0,
+  "weight_g": 790.7,
+  "max_power": 2750.0,
+  "io_voltage": 10.0
+}

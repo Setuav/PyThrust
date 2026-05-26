@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2222_Micro_2850KV",
+  "name": "PRO M2222 Micro 2850KV",
+  "manufacturer": "Avionic",
+  "kv": 2850.0,
+  "resistance": 0.217,
+  "io": 0.5,
+  "max_current": 9.0,
+  "weight_g": 18.1,
+  "max_power": 72.0,
+  "io_voltage": 7.0
+}

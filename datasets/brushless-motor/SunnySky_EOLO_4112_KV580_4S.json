@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_EOLO_4112_KV580_4S",
+  "name": "EOLO 4112 KV580 4S",
+  "manufacturer": "SunnySky",
+  "kv": 580.0,
+  "resistance": 0.044,
+  "io": 1.1,
+  "max_current": 62.0,
+  "weight_g": 169.2,
+  "max_power": 1020.0,
+  "io_voltage": 10.0
+}

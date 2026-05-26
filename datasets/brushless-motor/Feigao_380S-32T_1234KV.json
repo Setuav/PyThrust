@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-32T_1234KV",
+  "name": "380S-32T 1234KV",
+  "manufacturer": "Feigao",
+  "kv": 1234.0,
+  "resistance": 0.1508,
+  "io": 0.28,
+  "max_current": 13.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

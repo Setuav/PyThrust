@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_280_7.2V",
+  "name": "Permax 280 7.2V",
+  "manufacturer": "Multiplex",
+  "kv": 2417.0,
+  "resistance": 0.553,
+  "io": 0.3,
+  "max_current": 4.5,
+  "weight_g": 45.4,
+  "max_power": 135.0,
+  "io_voltage": 7.2
+}

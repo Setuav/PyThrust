@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_5010-260",
+  "name": "5010-260",
+  "manufacturer": "RCTimer",
+  "kv": 260.0,
+  "resistance": 0.6,
+  "io": 0.4,
+  "max_current": 20.0,
+  "weight_g": 100.1,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3525_KV1070_3S",
+  "name": "X3525 KV1070 3S",
+  "manufacturer": "SunnySky",
+  "kv": 1070.0,
+  "resistance": 0.006,
+  "io": 3.3,
+  "max_current": 110.0,
+  "weight_g": 260.2,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

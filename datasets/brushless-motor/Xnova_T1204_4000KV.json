@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_T1204_4000KV",
+  "name": "T1204 4000KV",
+  "manufacturer": "Xnova",
+  "kv": 4000.0,
+  "resistance": 0.13,
+  "io": 0.8,
+  "max_current": 8.0,
+  "weight_g": 6.2,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

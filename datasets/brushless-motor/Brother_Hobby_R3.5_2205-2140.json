@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_R3.5_2205-2140",
+  "name": "R3.5 2205-2140",
+  "manufacturer": "Brother Hobby",
+  "kv": 2140.0,
+  "resistance": 0.087,
+  "io": 0.9,
+  "max_current": 32.0,
+  "weight_g": 26.9,
+  "max_power": 788.0,
+  "io_voltage": 10.0
+}

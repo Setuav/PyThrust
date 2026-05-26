@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_2.25Y_1630",
+  "name": "1509/2.25Y 1630",
+  "manufacturer": "NeuMotors",
+  "kv": 1630.0,
+  "resistance": 0.0182,
+  "io": 1.11,
+  "max_current": 41.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

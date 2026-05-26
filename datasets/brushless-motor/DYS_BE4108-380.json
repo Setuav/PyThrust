@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE4108-380",
+  "name": "BE4108-380",
+  "manufacturer": "DYS",
+  "kv": 380.0,
+  "resistance": 0.193,
+  "io": 0.6,
+  "max_current": 17.0,
+  "weight_g": 113.1,
+  "max_power": 381.0,
+  "io_voltage": 14.8
+}

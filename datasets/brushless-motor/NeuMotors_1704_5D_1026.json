@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_5D_1026",
+  "name": "1704/5D 1026",
+  "manufacturer": "NeuMotors",
+  "kv": 1026.0,
+  "resistance": 0.053,
+  "io": 0.94,
+  "max_current": 29.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4812_400KV",
+  "name": "4812 400KV",
+  "manufacturer": "Xnova",
+  "kv": 400.0,
+  "resistance": 0.101,
+  "io": 0.8,
+  "max_current": 30.0,
+  "weight_g": 161.0,
+  "max_power": 653.0,
+  "io_voltage": 10.0
+}

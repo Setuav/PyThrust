@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-6364_V3_270KV",
+  "name": "AL-6364 V3 270KV",
+  "manufacturer": "Dymond",
+  "kv": 270.0,
+  "resistance": 0.0301,
+  "io": 1.99,
+  "max_current": 70.0,
+  "weight_g": 645.5,
+  "max_power": 1950.0,
+  "io_voltage": 12.25
+}

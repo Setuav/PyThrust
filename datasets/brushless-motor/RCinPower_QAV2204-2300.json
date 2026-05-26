@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_QAV2204-2300",
+  "name": "QAV2204-2300",
+  "manufacturer": "RCinPower",
+  "kv": 2300.0,
+  "resistance": 0.19,
+  "io": 0.35,
+  "max_current": 16.0,
+  "weight_g": 28.1,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

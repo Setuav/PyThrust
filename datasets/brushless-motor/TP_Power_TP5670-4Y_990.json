@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5670-4Y_990",
+  "name": "TP5670-4Y 990",
+  "manufacturer": "TP Power",
+  "kv": 990.0,
+  "resistance": 0.0047,
+  "io": 3.6,
+  "max_current": 226.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 8.0
+}

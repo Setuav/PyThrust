@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_3.25D_339",
+  "name": "2515/3.25D 339",
+  "manufacturer": "NeuMotors",
+  "kv": 339.0,
+  "resistance": 0.013,
+  "io": 1.7,
+  "max_current": 136.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

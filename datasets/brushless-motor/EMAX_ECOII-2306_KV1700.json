@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECOII-2306_KV1700",
+  "name": "ECOII-2306 KV1700",
+  "manufacturer": "EMAX",
+  "kv": 1700.0,
+  "resistance": 0.074,
+  "io": 1.1,
+  "max_current": 36.0,
+  "weight_g": 30.3,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

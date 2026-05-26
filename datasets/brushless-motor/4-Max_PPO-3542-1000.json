@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-3542-1000",
+  "name": "PPO-3542-1000",
+  "manufacturer": "4-Max",
+  "kv": 1000.0,
+  "resistance": 0.053,
+  "io": 1.8,
+  "max_current": 36.0,
+  "weight_g": 127.0,
+  "max_power": 540.0,
+  "io_voltage": 10.0
+}

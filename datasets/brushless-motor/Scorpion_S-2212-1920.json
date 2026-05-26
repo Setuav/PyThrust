@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-2212-1920",
+  "name": "S-2212-1920",
+  "manufacturer": "Scorpion",
+  "kv": 2005.0,
+  "resistance": 0.039,
+  "io": 1.315,
+  "max_current": 25.0,
+  "weight_g": 56.1,
+  "max_power": 220.0,
+  "io_voltage": 11.0
+}

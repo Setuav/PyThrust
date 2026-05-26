@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_AOS_Supernova-2207-1570",
+  "name": "AOS Supernova-2207-1570",
+  "manufacturer": "RCinPower",
+  "kv": 1570.0,
+  "resistance": 0.065,
+  "io": 1.1,
+  "max_current": 44.0,
+  "weight_g": 30.9,
+  "max_power": 1414.0,
+  "io_voltage": 10.0
+}

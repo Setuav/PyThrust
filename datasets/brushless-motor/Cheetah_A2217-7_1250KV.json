@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2217-7_1250KV",
+  "name": "A2217-7 1250KV",
+  "manufacturer": "Cheetah",
+  "kv": 1250.0,
+  "resistance": 0.15,
+  "io": 1.3,
+  "max_current": 20.0,
+  "weight_g": 70.0,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

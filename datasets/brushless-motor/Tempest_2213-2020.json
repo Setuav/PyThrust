@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2213-2020",
+  "name": "2213-2020",
+  "manufacturer": "Tempest",
+  "kv": 2020.0,
+  "resistance": 0.037,
+  "io": 1.76,
+  "max_current": 42.0,
+  "weight_g": 60.1,
+  "max_power": 620.0,
+  "io_voltage": 10.0
+}

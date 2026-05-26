@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-40-10-13w_322KV",
+  "name": "NT430-40-10-13w 322KV",
+  "manufacturer": "Torcman",
+  "kv": 322.0,
+  "resistance": 0.024,
+  "io": 2.8,
+  "max_current": 110.0,
+  "weight_g": 700.5,
+  "max_power": 2200.0,
+  "io_voltage": 12.0
+}

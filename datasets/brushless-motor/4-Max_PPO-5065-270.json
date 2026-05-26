@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-5065-270",
+  "name": "PPO-5065-270",
+  "manufacturer": "4-Max",
+  "kv": 270.0,
+  "resistance": 0.042,
+  "io": 1.5,
+  "max_current": 63.0,
+  "weight_g": 410.2,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

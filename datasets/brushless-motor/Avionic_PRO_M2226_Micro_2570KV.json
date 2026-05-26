@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2226_Micro_2570KV",
+  "name": "PRO M2226 Micro 2570KV",
+  "manufacturer": "Avionic",
+  "kv": 2570.0,
+  "resistance": 0.102,
+  "io": 0.8,
+  "max_current": 13.0,
+  "weight_g": 24.9,
+  "max_power": 75.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B20_18L_kv3080_4_1",
+  "name": "B20 18L kv3080 4:1",
+  "manufacturer": "Hacker",
+  "kv": 3086.0,
+  "resistance": 0.085,
+  "io": 0.66,
+  "max_current": 17.0,
+  "weight_g": 69.2,
+  "max_power": 220.0,
+  "io_voltage": 8.4
+}

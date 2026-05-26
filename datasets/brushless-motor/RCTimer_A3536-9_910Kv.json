@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_A3536-9_910Kv",
+  "name": "A3536-9 910Kv",
+  "manufacturer": "RCTimer",
+  "kv": 910.0,
+  "resistance": 0.063,
+  "io": 1.0,
+  "max_current": 9.0,
+  "weight_g": 102.1,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

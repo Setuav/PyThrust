@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XA2810_6_2170KV",
+  "name": "XA2810/6 2170KV",
+  "manufacturer": "XPower",
+  "kv": 2170.0,
+  "resistance": 0.128,
+  "io": 0.58,
+  "max_current": 30.0,
+  "weight_g": 64.9,
+  "max_power": 260.0,
+  "io_voltage": 12.5
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-26T_945KV",
+  "name": "540L-26T 945KV",
+  "manufacturer": "Feigao",
+  "kv": 945.0,
+  "resistance": 0.0807,
+  "io": 0.5,
+  "max_current": 24.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

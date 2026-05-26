@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2802_44_1800KV",
+  "name": "XC2802/44 1800KV",
+  "manufacturer": "XPower",
+  "kv": 1800.0,
+  "resistance": 0.73,
+  "io": 0.2,
+  "max_current": 6.5,
+  "weight_g": 11.3,
+  "max_power": 65.0,
+  "io_voltage": 10.0
+}

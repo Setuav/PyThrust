@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_4D_707",
+  "name": "1521/4D 707",
+  "manufacturer": "NeuMotors",
+  "kv": 707.0,
+  "resistance": 0.045,
+  "io": 1.13,
+  "max_current": 41.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

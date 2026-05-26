@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_11_115",
+  "name": "6521/11/115",
+  "manufacturer": "NeuMotors",
+  "kv": 115.0,
+  "resistance": 0.106,
+  "io": 0.446,
+  "max_current": 65.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

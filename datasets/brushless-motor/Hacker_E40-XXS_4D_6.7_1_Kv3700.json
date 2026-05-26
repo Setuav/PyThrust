@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_E40-XXS_4D_6.7_1_Kv3700",
+  "name": "E40-XXS 4D 6.7:1 Kv3700",
+  "manufacturer": "Hacker",
+  "kv": 3700.0,
+  "resistance": 0.027,
+  "io": 1.86,
+  "max_current": 55.0,
+  "weight_g": 145.1,
+  "max_power": 800.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2834-16_1170KV",
+  "name": "2834-16 1170KV",
+  "manufacturer": "KEDA",
+  "kv": 1170.0,
+  "resistance": 0.165,
+  "io": 1.25,
+  "max_current": 25.0,
+  "weight_g": 70.0,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

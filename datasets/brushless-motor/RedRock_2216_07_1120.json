@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2216_07_1120",
+  "name": "2216/07 1120",
+  "manufacturer": "RedRock",
+  "kv": 1120.0,
+  "resistance": 0.09,
+  "io": 1.3,
+  "max_current": 20.0,
+  "weight_g": 76.0,
+  "max_power": 310.0,
+  "io_voltage": 10.0
+}

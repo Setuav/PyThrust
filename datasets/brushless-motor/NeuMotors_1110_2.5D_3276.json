@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_2.5D_3276",
+  "name": "1110/2.5D 3276",
+  "manufacturer": "NeuMotors",
+  "kv": 3576.0,
+  "resistance": 0.01,
+  "io": 1.8,
+  "max_current": 55.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

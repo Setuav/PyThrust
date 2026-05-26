@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_1.75Y_1733",
+  "name": "1115/1.75Y 1733",
+  "manufacturer": "NeuMotors",
+  "kv": 1733.0,
+  "resistance": 0.023,
+  "io": 1.4,
+  "max_current": 40.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

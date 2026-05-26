@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPPO-2831-1000",
+  "name": "PPPO-2831-1000",
+  "manufacturer": "4-Max",
+  "kv": 1000.0,
+  "resistance": 0.162,
+  "io": 0.6,
+  "max_current": 26.0,
+  "weight_g": 62.1,
+  "max_power": 205.0,
+  "io_voltage": 10.0
+}

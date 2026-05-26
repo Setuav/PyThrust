@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W28-26_KV1500",
+  "name": "W28-26 KV1500",
+  "manufacturer": "HangLi",
+  "kv": 1500.0,
+  "resistance": 0.1012,
+  "io": 0.8,
+  "max_current": 22.0,
+  "weight_g": 41.1,
+  "max_power": 160.0,
+  "io_voltage": 7.4
+}

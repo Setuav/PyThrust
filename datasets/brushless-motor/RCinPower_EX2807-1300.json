@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_EX2807-1300",
+  "name": "EX2807-1300",
+  "manufacturer": "RCinPower",
+  "kv": 1300.0,
+  "resistance": 0.062,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 47.9,
+  "max_power": 984.0,
+  "io_voltage": 10.0
+}

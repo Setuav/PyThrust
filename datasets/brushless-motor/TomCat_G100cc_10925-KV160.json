@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G100cc_10925-KV160",
+  "name": "G100cc 10925-KV160",
+  "manufacturer": "TomCat",
+  "kv": 160.0,
+  "resistance": 0.021,
+  "io": 5.0,
+  "max_current": 188.0,
+  "weight_g": 2001.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

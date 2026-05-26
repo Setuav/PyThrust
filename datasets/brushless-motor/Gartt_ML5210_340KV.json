@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_ML5210_340KV",
+  "name": "ML5210 340KV",
+  "manufacturer": "Gartt",
+  "kv": 340.0,
+  "resistance": 0.0622,
+  "io": 0.7,
+  "max_current": 40.0,
+  "weight_g": 229.9,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

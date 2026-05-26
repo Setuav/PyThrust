@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3548EA-8",
+  "name": "XM3548EA-8",
+  "manufacturer": "Dualsky",
+  "kv": 920.0,
+  "resistance": 0.019,
+  "io": 2.2,
+  "max_current": 48.0,
+  "weight_g": 177.2,
+  "max_power": 768.0,
+  "io_voltage": 10.0
+}

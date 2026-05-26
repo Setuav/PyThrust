@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._V8013_150KV",
+  "name": "V8013 150KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 150.0,
+  "resistance": 0.037,
+  "io": 2.35,
+  "max_current": 78.0,
+  "weight_g": 512.3,
+  "max_power": 3569.0,
+  "io_voltage": 30.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_SK3542-04_KV1250",
+  "name": "SK3542-04 KV1250",
+  "manufacturer": "EMP",
+  "kv": 1250.0,
+  "resistance": 0.03,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 140.0,
+  "max_power": 630.0,
+  "io_voltage": 10.0
+}

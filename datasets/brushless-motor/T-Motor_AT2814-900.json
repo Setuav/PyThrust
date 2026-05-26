@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2814-900",
+  "name": "AT2814-900",
+  "manufacturer": "T-Motor",
+  "kv": 900.0,
+  "resistance": 0.082,
+  "io": 1.2,
+  "max_current": 45.0,
+  "weight_g": 108.0,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

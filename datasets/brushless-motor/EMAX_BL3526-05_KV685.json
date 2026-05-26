@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL3526-05_KV685",
+  "name": "BL3526-05 KV685",
+  "manufacturer": "EMAX",
+  "kv": 685.0,
+  "resistance": 0.0135,
+  "io": 2.9,
+  "max_current": 55.0,
+  "weight_g": 250.0,
+  "max_power": 1302.0,
+  "io_voltage": 14.0
+}

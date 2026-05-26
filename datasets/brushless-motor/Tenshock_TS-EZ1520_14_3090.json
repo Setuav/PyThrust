@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_14_3090",
+  "name": "TS-EZ1520/14 3090",
+  "manufacturer": "Tenshock",
+  "kv": 3090.0,
+  "resistance": 0.023,
+  "io": 1.9,
+  "max_current": 45.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

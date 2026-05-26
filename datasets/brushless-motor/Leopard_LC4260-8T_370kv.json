@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4260-8T_370kv",
+  "name": "LC4260-8T 370kv",
+  "manufacturer": "Leopard",
+  "kv": 370.0,
+  "resistance": 0.0545,
+  "io": 1.1,
+  "max_current": 42.0,
+  "weight_g": 281.2,
+  "max_power": 983.0,
+  "io_voltage": 10.0
+}

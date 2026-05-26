@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_C2830-14_850KV",
+  "name": "C2830-14 850KV",
+  "manufacturer": "Avionic",
+  "kv": 850.0,
+  "resistance": 0.272,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 52.2,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

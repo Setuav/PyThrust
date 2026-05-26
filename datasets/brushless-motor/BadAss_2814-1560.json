@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2814-1560",
+  "name": "2814-1560",
+  "manufacturer": "BadAss",
+  "kv": 1560.0,
+  "resistance": 0.02,
+  "io": 2.93,
+  "max_current": 65.0,
+  "weight_g": 117.1,
+  "max_power": 960.0,
+  "io_voltage": 10.0
+}

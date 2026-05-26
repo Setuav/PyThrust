@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-1805-2250",
+  "name": "S-1805-2250",
+  "manufacturer": "Scorpion",
+  "kv": 2250.0,
+  "resistance": 0.4,
+  "io": 0.338,
+  "max_current": 7.0,
+  "weight_g": 15.9,
+  "max_power": 50.0,
+  "io_voltage": 11.0
+}

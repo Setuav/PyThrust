@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_X3-710Kv",
+  "name": "X3-710Kv",
+  "manufacturer": "RCTimer",
+  "kv": 710.0,
+  "resistance": 0.098,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 120.2,
+  "max_power": 440.0,
+  "io_voltage": 10.0
+}

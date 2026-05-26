@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A100-10_Kv_150",
+  "name": "A100-10 Kv 150",
+  "manufacturer": "Hacker",
+  "kv": 180.0,
+  "resistance": 0.02,
+  "io": 2.2,
+  "max_current": 220.0,
+  "weight_g": 1801.3,
+  "max_power": 7000.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1542_2.75Y_286",
+  "name": "1542/2.75Y 286",
+  "manufacturer": "NeuMotors",
+  "kv": 286.0,
+  "resistance": 0.127,
+  "io": 0.9,
+  "max_current": 36.0,
+  "weight_g": 907.8,
+  "max_power": 7500.0,
+  "io_voltage": 10.0
+}

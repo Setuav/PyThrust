@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A30-10XL-LN_V4",
+  "name": "A30-10XL-LN V4",
+  "manufacturer": "Hacker",
+  "kv": 900.0,
+  "resistance": 0.024,
+  "io": 1.9,
+  "max_current": 65.0,
+  "weight_g": 190.2,
+  "max_power": 650.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N5065-06_KV380",
+  "name": "N5065-06 KV380",
+  "manufacturer": "EMP",
+  "kv": 380.0,
+  "resistance": 0.024,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 430.3,
+  "max_power": 1820.0,
+  "io_voltage": 13.0
+}

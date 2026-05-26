@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5320_18_3D_Extreme",
+  "name": "5320/18 3D Extreme*",
+  "manufacturer": "AXI motors",
+  "kv": 370.0,
+  "resistance": 0.023,
+  "io": 1.3,
+  "max_current": 79.0,
+  "weight_g": 530.4,
+  "max_power": 1900.0,
+  "io_voltage": 20.0
+}

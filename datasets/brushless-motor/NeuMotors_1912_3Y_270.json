@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1912_3Y_270",
+  "name": "1912/3Y 270",
+  "manufacturer": "NeuMotors",
+  "kv": 270.0,
+  "resistance": 0.095,
+  "io": 0.5,
+  "max_current": 23.0,
+  "weight_g": 340.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

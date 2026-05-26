@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-4235-630",
+  "name": "HKII-4235-630",
+  "manufacturer": "Scorpion",
+  "kv": 630.0,
+  "resistance": 0.009,
+  "io": 3.59,
+  "max_current": 120.0,
+  "weight_g": 517.9,
+  "max_power": 5328.0,
+  "io_voltage": 10.0
+}

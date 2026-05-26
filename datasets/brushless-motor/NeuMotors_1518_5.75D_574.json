@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_5.75D_574",
+  "name": "1518/5.75D 574",
+  "manufacturer": "NeuMotors",
+  "kv": 574.0,
+  "resistance": 0.0793,
+  "io": 0.78,
+  "max_current": 29.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

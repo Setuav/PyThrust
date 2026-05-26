@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Gs3032-04",
+  "name": "Gs3032-04",
+  "manufacturer": "Hyperion",
+  "kv": 1252.0,
+  "resistance": 0.007,
+  "io": 4.58,
+  "max_current": 140.0,
+  "weight_g": 296.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

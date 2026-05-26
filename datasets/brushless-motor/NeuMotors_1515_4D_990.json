@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_4D_990",
+  "name": "1515/4D 990",
+  "manufacturer": "NeuMotors",
+  "kv": 990.0,
+  "resistance": 0.032,
+  "io": 1.13,
+  "max_current": 33.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

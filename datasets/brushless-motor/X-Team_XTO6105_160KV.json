@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO6105_160KV",
+  "name": "XTO6105 160KV",
+  "manufacturer": "X-Team",
+  "kv": 160.0,
+  "resistance": 0.271,
+  "io": 0.54,
+  "max_current": 24.0,
+  "weight_g": 160.2,
+  "max_power": 720.0,
+  "io_voltage": 22.2
+}

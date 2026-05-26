@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_1.75Y_2095",
+  "name": "1509/1.75Y 2095",
+  "manufacturer": "NeuMotors",
+  "kv": 2095.0,
+  "resistance": 0.0011,
+  "io": 1.43,
+  "max_current": 52.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

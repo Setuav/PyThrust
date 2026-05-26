@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-4Y_1090",
+  "name": "TP4070-4Y 1090",
+  "manufacturer": "TP Power",
+  "kv": 1090.0,
+  "resistance": 0.0068,
+  "io": 5.8,
+  "max_current": 182.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

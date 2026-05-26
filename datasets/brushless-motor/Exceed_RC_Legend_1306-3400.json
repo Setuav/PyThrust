@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Legend_1306-3400",
+  "name": "Legend 1306-3400",
+  "manufacturer": "Exceed RC",
+  "kv": 3200.0,
+  "resistance": 0.7,
+  "io": 0.1,
+  "max_current": 6.0,
+  "weight_g": 9.9,
+  "max_power": 45.0,
+  "io_voltage": 8.0
+}

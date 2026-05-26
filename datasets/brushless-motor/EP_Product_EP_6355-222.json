@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_6355-222",
+  "name": "EP 6355-222",
+  "manufacturer": "EP Product",
+  "kv": 222.0,
+  "resistance": 0.03,
+  "io": 1.1,
+  "max_current": 86.0,
+  "weight_g": 566.4,
+  "max_power": 3090.0,
+  "io_voltage": 10.0
+}

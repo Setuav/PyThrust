@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_2.75D_5956",
+  "name": "1105/2.75D 5956",
+  "manufacturer": "NeuMotors",
+  "kv": 5756.0,
+  "resistance": 0.006,
+  "io": 1.6,
+  "max_current": 40.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2806.5_1250KV",
+  "name": "Aeolus 2806.5 1250KV",
+  "manufacturer": "HGLRC",
+  "kv": 1250.0,
+  "resistance": 0.06,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 51.3,
+  "max_power": 838.0,
+  "io_voltage": 10.0
+}

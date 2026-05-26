@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M13_90KV",
+  "name": "M13 90KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 90.0,
+  "resistance": 0.035,
+  "io": 2.0,
+  "max_current": 88.0,
+  "weight_g": 615.5,
+  "max_power": 4189.0,
+  "io_voltage": 20.0
+}

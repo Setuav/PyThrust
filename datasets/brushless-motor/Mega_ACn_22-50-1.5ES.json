@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-50-1.5ES",
+  "name": "ACn 22-50-1.5ES",
+  "manufacturer": "Mega",
+  "kv": 1070.0,
+  "resistance": 0.017,
+  "io": 2.2,
+  "max_current": 90.0,
+  "weight_g": 340.2,
+  "max_power": 1100.0,
+  "io_voltage": 10.0
+}

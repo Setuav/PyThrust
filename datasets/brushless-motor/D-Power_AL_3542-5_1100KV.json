@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_3542-5_1100KV",
+  "name": "AL 3542-5 1100KV",
+  "manufacturer": "D-Power",
+  "kv": 1100.0,
+  "resistance": 0.026,
+  "io": 1.8,
+  "max_current": 40.0,
+  "weight_g": 135.2,
+  "max_power": 470.0,
+  "io_voltage": 8.0
+}

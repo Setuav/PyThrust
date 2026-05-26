@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Xtra_30-10_evo",
+  "name": "Xtra 30-10 evo",
+  "manufacturer": "Plettenberg",
+  "kv": 215.0,
+  "resistance": 0.1044,
+  "io": 2.35,
+  "max_current": 0.0,
+  "weight_g": 570.4,
+  "max_power": 3500.0,
+  "io_voltage": 11.0
+}

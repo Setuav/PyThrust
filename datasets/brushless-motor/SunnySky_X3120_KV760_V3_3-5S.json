@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3120_KV760_V3_3-5S",
+  "name": "X3120 KV760 V3 3-5S",
+  "manufacturer": "SunnySky",
+  "kv": 760.0,
+  "resistance": 0.028,
+  "io": 1.3,
+  "max_current": 65.0,
+  "weight_g": 157.1,
+  "max_power": 1370.0,
+  "io_voltage": 10.0
+}

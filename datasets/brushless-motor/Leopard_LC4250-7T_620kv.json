@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4250-7T_620kv",
+  "name": "LC4250-7T 620kv",
+  "manufacturer": "Leopard",
+  "kv": 620.0,
+  "resistance": 0.0312,
+  "io": 1.5,
+  "max_current": 48.0,
+  "weight_g": 208.1,
+  "max_power": 932.0,
+  "io_voltage": 10.0
+}

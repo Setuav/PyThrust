@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD3548-05_890",
+  "name": "HD3548-05/890",
+  "manufacturer": "PowerHD",
+  "kv": 890.0,
+  "resistance": 0.032,
+  "io": 1.5,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 640.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-16T_3625KV",
+  "name": "130L-16T 3625KV",
+  "manufacturer": "Feigao",
+  "kv": 3625.0,
+  "resistance": 0.0687,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

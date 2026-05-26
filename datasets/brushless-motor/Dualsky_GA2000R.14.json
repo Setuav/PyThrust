@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA2000R.14",
+  "name": "GA2000R.14",
+  "manufacturer": "Dualsky",
+  "kv": 230.0,
+  "resistance": 0.0436,
+  "io": 0.94,
+  "max_current": 68.0,
+  "weight_g": 365.1,
+  "max_power": 3264.0,
+  "io_voltage": 10.0
+}

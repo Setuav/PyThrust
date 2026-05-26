@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-1495",
+  "name": "4606MC-1495",
+  "manufacturer": "NeuMotors",
+  "kv": 1495.0,
+  "resistance": 0.007,
+  "io": 0.56,
+  "max_current": 135.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

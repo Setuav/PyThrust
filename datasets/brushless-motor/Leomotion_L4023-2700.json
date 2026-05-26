@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4023-2700",
+  "name": "L4023-2700",
+  "manufacturer": "Leomotion",
+  "kv": 2700.0,
+  "resistance": 0.0082,
+  "io": 2.5,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

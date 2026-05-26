@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Max_M7212-130",
+  "name": "Max M7212-130",
+  "manufacturer": "Brother Hobby",
+  "kv": 130.0,
+  "resistance": 0.1012,
+  "io": 0.87,
+  "max_current": 32.0,
+  "weight_g": 488.5,
+  "max_power": 1267.0,
+  "io_voltage": 20.0
+}

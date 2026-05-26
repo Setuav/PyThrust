@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C8085-06_KV250",
+  "name": "C8085-06 KV250",
+  "manufacturer": "EMP",
+  "kv": 250.0,
+  "resistance": 0.022,
+  "io": 4.0,
+  "max_current": 0.0,
+  "weight_g": 1401.0,
+  "max_power": 6150.0,
+  "io_voltage": 10.0
+}

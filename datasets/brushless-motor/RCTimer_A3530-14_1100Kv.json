@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_A3530-14_1100Kv",
+  "name": "A3530-14 1100Kv",
+  "manufacturer": "RCTimer",
+  "kv": 1100.0,
+  "resistance": 0.077,
+  "io": 1.0,
+  "max_current": 10.0,
+  "weight_g": 74.0,
+  "max_power": 315.0,
+  "io_voltage": 10.0
+}

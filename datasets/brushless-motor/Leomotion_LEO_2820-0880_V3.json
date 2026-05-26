@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2820-0880_V3",
+  "name": "LEO 2820-0880 V3",
+  "manufacturer": "Leomotion",
+  "kv": 880.0,
+  "resistance": 0.026,
+  "io": 1.4,
+  "max_current": 38.0,
+  "weight_g": 130.1,
+  "max_power": 610.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-7Y_1180",
+  "name": "TP3640-7Y 1180",
+  "manufacturer": "TP Power",
+  "kv": 1180.0,
+  "resistance": 0.0013,
+  "io": 1.1,
+  "max_current": 54.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

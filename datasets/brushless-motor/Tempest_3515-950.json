@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_3515-950",
+  "name": "3515-950",
+  "manufacturer": "Tempest",
+  "kv": 950.0,
+  "resistance": 0.027,
+  "io": 1.96,
+  "max_current": 56.0,
+  "weight_g": 167.0,
+  "max_power": 1240.0,
+  "io_voltage": 10.0
+}

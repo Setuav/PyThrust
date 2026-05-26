@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2212_KV1400_V3_3-4S",
+  "name": "X2212 KV1400 V3 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1400.0,
+  "resistance": 0.043,
+  "io": 1.0,
+  "max_current": 37.0,
+  "weight_g": 57.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

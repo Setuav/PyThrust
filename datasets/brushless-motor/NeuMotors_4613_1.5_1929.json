@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_1.5_1929",
+  "name": "4613/1.5/1929",
+  "manufacturer": "NeuMotors",
+  "kv": 1929.0,
+  "resistance": 0.003,
+  "io": 3.6,
+  "max_current": 359.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

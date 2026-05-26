@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_600XF-530-G3",
+  "name": "600XF-530-G3",
+  "manufacturer": "KDEDirect",
+  "kv": 530.0,
+  "resistance": 0.017,
+  "io": 1.2,
+  "max_current": 88.0,
+  "weight_g": 400.3,
+  "max_power": 3905.0,
+  "io_voltage": 10.0
+}

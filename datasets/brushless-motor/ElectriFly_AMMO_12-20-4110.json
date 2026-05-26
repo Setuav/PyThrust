@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_12-20-4110",
+  "name": "AMMO 12-20-4110",
+  "manufacturer": "ElectriFly",
+  "kv": 4110.0,
+  "resistance": 0.753,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 30.1,
+  "max_power": 50.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_26_76",
+  "name": "4619/26/76",
+  "manufacturer": "NeuMotors",
+  "kv": 76.0,
+  "resistance": 0.85,
+  "io": 0.21,
+  "max_current": 21.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

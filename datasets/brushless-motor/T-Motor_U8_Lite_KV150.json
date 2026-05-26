@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U8_Lite_KV150",
+  "name": "U8 Lite KV150",
+  "manufacturer": "T-Motor",
+  "kv": 150.0,
+  "resistance": 0.09,
+  "io": 1.0,
+  "max_current": 30.0,
+  "weight_g": 239.3,
+  "max_power": 1272.0,
+  "io_voltage": 18.0
+}

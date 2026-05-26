@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3615-9900",
+  "name": "L3615-9900",
+  "manufacturer": "Leomotion",
+  "kv": 9900.0,
+  "resistance": 0.002,
+  "io": 6.5,
+  "max_current": 0.0,
+  "weight_g": 165.0,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

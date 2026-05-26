@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X1408_3600",
+  "name": "XING X1408 3600",
+  "manufacturer": "iFlight",
+  "kv": 3600.0,
+  "resistance": 0.12,
+  "io": 0.9,
+  "max_current": 16.0,
+  "weight_g": 16.4,
+  "max_power": 246.0,
+  "io_voltage": 5.5
+}

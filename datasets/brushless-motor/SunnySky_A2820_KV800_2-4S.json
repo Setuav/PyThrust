@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2820_KV800_2-4S",
+  "name": "A2820 KV800 2-4S",
+  "manufacturer": "SunnySky",
+  "kv": 800.0,
+  "resistance": 0.063,
+  "io": 1.2,
+  "max_current": 35.0,
+  "weight_g": 128.1,
+  "max_power": 520.0,
+  "io_voltage": 10.0
+}

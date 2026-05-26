@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_4213XF-360",
+  "name": "4213XF-360",
+  "manufacturer": "KDEDirect",
+  "kv": 360.0,
+  "resistance": 0.081,
+  "io": 0.4,
+  "max_current": 38.0,
+  "weight_g": 175.2,
+  "max_power": 1125.0,
+  "io_voltage": 10.0
+}

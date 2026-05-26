@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5050EA-29SE",
+  "name": "XM5050EA-29SE",
+  "manufacturer": "Dualsky",
+  "kv": 250.0,
+  "resistance": 0.076,
+  "io": 0.43,
+  "max_current": 40.0,
+  "weight_g": 290.3,
+  "max_power": 1776.0,
+  "io_voltage": 10.0
+}

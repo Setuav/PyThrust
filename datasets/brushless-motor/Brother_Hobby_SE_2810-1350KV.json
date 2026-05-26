@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_SE_2810-1350KV",
+  "name": "SE 2810-1350KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 1350.0,
+  "resistance": 0.049,
+  "io": 1.82,
+  "max_current": 57.0,
+  "weight_g": 62.1,
+  "max_power": 1419.0,
+  "io_voltage": 10.0
+}

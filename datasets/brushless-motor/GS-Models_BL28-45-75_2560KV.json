@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_BL28-45-75_2560KV",
+  "name": "BL28-45-75 2560KV",
+  "manufacturer": "GS-Models",
+  "kv": 2560.0,
+  "resistance": 0.0321,
+  "io": 2.0,
+  "max_current": 51.0,
+  "weight_g": 105.2,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

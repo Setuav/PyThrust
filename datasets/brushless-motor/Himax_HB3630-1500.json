@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HB3630-1500",
+  "name": "HB3630-1500",
+  "manufacturer": "Himax",
+  "kv": 1500.0,
+  "resistance": 0.023,
+  "io": 2.4,
+  "max_current": 0.0,
+  "weight_g": 230.2,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

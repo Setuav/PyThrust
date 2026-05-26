@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2814C-V2-860",
+  "name": "ECO 2814C-V2-860",
+  "manufacturer": "Dualsky",
+  "kv": 860.0,
+  "resistance": 0.063,
+  "io": 0.8,
+  "max_current": 30.0,
+  "weight_g": 105.2,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

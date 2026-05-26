@@ -1,0 +1,12 @@
+{
+  "id": "Airtek_Apex_Pro_2826-1400",
+  "name": "Apex Pro 2826-1400",
+  "manufacturer": "Airtek",
+  "kv": 1400.0,
+  "resistance": 0.078,
+  "io": 0.9,
+  "max_current": 26.0,
+  "weight_g": 53.9,
+  "max_power": 205.0,
+  "io_voltage": 10.0
+}

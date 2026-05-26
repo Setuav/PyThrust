@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_BEE_2208M-KV1500",
+  "name": "BEE 2208M-KV1500",
+  "manufacturer": "Team Hunter RC",
+  "kv": 1500.0,
+  "resistance": 0.19,
+  "io": 0.2,
+  "max_current": 0.0,
+  "weight_g": 43.9,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_CA120-70-19_150KV",
+  "name": "CA120-70-19 150KV",
+  "manufacturer": "GS-Models",
+  "kv": 150.0,
+  "resistance": 0.0048,
+  "io": 17.0,
+  "max_current": 170.0,
+  "weight_g": 2501.8,
+  "max_power": 11250.0,
+  "io_voltage": 30.0
+}

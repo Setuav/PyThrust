@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4415_1.5Y_120",
+  "name": "4415/1.5Y 120",
+  "manufacturer": "NeuMotors",
+  "kv": 120.0,
+  "resistance": 0.016,
+  "io": 2.0,
+  "max_current": 180.0,
+  "weight_g": 2520.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

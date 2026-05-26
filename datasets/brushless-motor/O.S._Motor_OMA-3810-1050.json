@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-3810-1050",
+  "name": "OMA-3810-1050",
+  "manufacturer": "O.S. Motor",
+  "kv": 1050.0,
+  "resistance": 0.0513,
+  "io": 1.1,
+  "max_current": 50.0,
+  "weight_g": 102.1,
+  "max_power": 333.0,
+  "io_voltage": 10.0
+}

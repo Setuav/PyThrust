@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1540_6_3400",
+  "name": "TS-EZ1540/6 3400",
+  "manufacturer": "Tenshock",
+  "kv": 3400.0,
+  "resistance": 0.008,
+  "io": 3.2,
+  "max_current": 110.0,
+  "weight_g": 177.2,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-3014-1040",
+  "name": "SII-3014-1040",
+  "manufacturer": "Scorpion",
+  "kv": 1040.0,
+  "resistance": 0.026,
+  "io": 1.35,
+  "max_current": 40.0,
+  "weight_g": 129.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6350DA-10",
+  "name": "XM6350DA-10",
+  "manufacturer": "Dualsky",
+  "kv": 280.0,
+  "resistance": 0.0213,
+  "io": 1.0,
+  "max_current": 106.0,
+  "weight_g": 525.3,
+  "max_power": 3150.0,
+  "io_voltage": 10.0
+}

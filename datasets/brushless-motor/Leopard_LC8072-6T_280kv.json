@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC8072-6T_280kv",
+  "name": "LC8072-6T 280kv",
+  "manufacturer": "Leopard",
+  "kv": 280.0,
+  "resistance": 0.0095,
+  "io": 2.8,
+  "max_current": 120.0,
+  "weight_g": 1098.8,
+  "max_power": 3645.0,
+  "io_voltage": 15.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4025_670KV",
+  "name": "4025 670KV",
+  "manufacturer": "Xnova",
+  "kv": 670.0,
+  "resistance": 0.0167,
+  "io": 1.1,
+  "max_current": 80.0,
+  "weight_g": 381.3,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

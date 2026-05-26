@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE2217-1500",
+  "name": "BE2217-1500",
+  "manufacturer": "DYS",
+  "kv": 1500.0,
+  "resistance": 0.041,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 74.0,
+  "max_power": 592.0,
+  "io_voltage": 11.1
+}

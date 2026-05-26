@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6542_6_105",
+  "name": "6542/6/105",
+  "manufacturer": "NeuMotors",
+  "kv": 105.0,
+  "resistance": 0.058,
+  "io": 0.817,
+  "max_current": 120.0,
+  "weight_g": 968.7,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

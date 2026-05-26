@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4520-470",
+  "name": "4520-470",
+  "manufacturer": "BadAss",
+  "kv": 470.0,
+  "resistance": 0.02,
+  "io": 1.7,
+  "max_current": 78.0,
+  "weight_g": 393.2,
+  "max_power": 1440.0,
+  "io_voltage": 10.0
+}

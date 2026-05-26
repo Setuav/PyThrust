@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_BL-X22-23",
+  "name": "Permax BL-X22-23",
+  "manufacturer": "Multiplex",
+  "kv": 2300.0,
+  "resistance": 0.08,
+  "io": 0.85,
+  "max_current": 18.0,
+  "weight_g": 32.0,
+  "max_power": 96.0,
+  "io_voltage": 10.0
+}

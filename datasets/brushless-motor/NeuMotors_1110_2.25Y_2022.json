@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_2.25Y_2022",
+  "name": "1110/2.25Y 2022",
+  "manufacturer": "NeuMotors",
+  "kv": 2022.0,
+  "resistance": 0.025,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

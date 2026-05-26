@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_4.75D_1149",
+  "name": "1115/4.75D 1149",
+  "manufacturer": "NeuMotors",
+  "kv": 1149.0,
+  "resistance": 0.056,
+  "io": 0.9,
+  "max_current": 27.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

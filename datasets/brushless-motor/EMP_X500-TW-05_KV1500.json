@@ -1,0 +1,12 @@
+{
+  "id": "EMP_X500-TW-05_KV1500",
+  "name": "X500-TW-05 KV1500",
+  "manufacturer": "EMP",
+  "kv": 1500.0,
+  "resistance": 0.031,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 188.2,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

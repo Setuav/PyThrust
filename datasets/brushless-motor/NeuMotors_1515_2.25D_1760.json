@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_2.25D_1760",
+  "name": "1515/2.25D 1760",
+  "manufacturer": "NeuMotors",
+  "kv": 1760.0,
+  "resistance": 0.0101,
+  "io": 2.0,
+  "max_current": 59.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

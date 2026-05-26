@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_3.75D_406",
+  "name": "1539/3.75D 406",
+  "manufacturer": "NeuMotors",
+  "kv": 406.0,
+  "resistance": 0.0731,
+  "io": 1.2,
+  "max_current": 47.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

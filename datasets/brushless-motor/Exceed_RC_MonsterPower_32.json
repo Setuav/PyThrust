@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_MonsterPower_32",
+  "name": "MonsterPower 32",
+  "manufacturer": "Exceed RC",
+  "kv": 770.0,
+  "resistance": 0.027,
+  "io": 2.4,
+  "max_current": 42.0,
+  "weight_g": 210.1,
+  "max_power": 700.0,
+  "io_voltage": 8.0
+}

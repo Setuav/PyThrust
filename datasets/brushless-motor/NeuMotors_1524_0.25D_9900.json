@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_0.25D_9900",
+  "name": "1524/0.25D 9900",
+  "manufacturer": "NeuMotors",
+  "kv": 9900.0,
+  "resistance": 0.0002,
+  "io": 18.0,
+  "max_current": 660.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

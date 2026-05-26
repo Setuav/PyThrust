@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M8C08_V3_150KV",
+  "name": "M8C08 V3 150KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 150.0,
+  "resistance": 0.071,
+  "io": 1.44,
+  "max_current": 28.0,
+  "weight_g": 240.1,
+  "max_power": 661.0,
+  "io_voltage": 30.0
+}

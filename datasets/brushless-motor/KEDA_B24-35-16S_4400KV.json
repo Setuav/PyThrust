@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-35-16S_4400KV",
+  "name": "B24-35-16S 4400KV",
+  "manufacturer": "KEDA",
+  "kv": 4400.0,
+  "resistance": 0.046,
+  "io": 2.0,
+  "max_current": 17.0,
+  "weight_g": 68.0,
+  "max_power": 270.0,
+  "io_voltage": 7.4
+}

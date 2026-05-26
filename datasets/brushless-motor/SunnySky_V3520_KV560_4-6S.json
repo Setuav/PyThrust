@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V3520_KV560_4-6S",
+  "name": "V3520 KV560 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 560.0,
+  "resistance": 0.023,
+  "io": 1.1,
+  "max_current": 80.0,
+  "weight_g": 219.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

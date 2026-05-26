@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_17_74",
+  "name": "6521/17/74",
+  "manufacturer": "NeuMotors",
+  "kv": 74.0,
+  "resistance": 0.247,
+  "io": 0.288,
+  "max_current": 42.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

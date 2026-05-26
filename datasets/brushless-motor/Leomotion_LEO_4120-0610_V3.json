@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4120-0610_V3",
+  "name": "LEO 4120-0610 V3",
+  "manufacturer": "Leomotion",
+  "kv": 610.0,
+  "resistance": 0.014,
+  "io": 1.8,
+  "max_current": 70.0,
+  "weight_g": 295.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

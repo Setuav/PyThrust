@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_5D_2184",
+  "name": "1107/5D 2184",
+  "manufacturer": "NeuMotors",
+  "kv": 2184.0,
+  "resistance": 0.031,
+  "io": 0.9,
+  "max_current": 22.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

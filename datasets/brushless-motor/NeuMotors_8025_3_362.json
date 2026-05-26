@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_3_362",
+  "name": "8025/3/362",
+  "manufacturer": "NeuMotors",
+  "kv": 362.0,
+  "resistance": 0.003,
+  "io": 2.7,
+  "max_current": 340.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

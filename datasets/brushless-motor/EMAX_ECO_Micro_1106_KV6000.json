@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_ECO_Micro_1106_KV6000",
+  "name": "ECO Micro 1106 KV6000",
+  "manufacturer": "EMAX",
+  "kv": 6000.0,
+  "resistance": 0.19,
+  "io": 0.6,
+  "max_current": 12.0,
+  "weight_g": 6.8,
+  "max_power": 100.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2205-2100",
+  "name": "DM2205-2100",
+  "manufacturer": "Pro-Tronik",
+  "kv": 2100.0,
+  "resistance": 0.109,
+  "io": 1.05,
+  "max_current": 9.0,
+  "weight_g": 26.9,
+  "max_power": 90.0,
+  "io_voltage": 8.4
+}

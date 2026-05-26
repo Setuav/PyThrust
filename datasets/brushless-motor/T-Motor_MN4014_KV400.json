@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN4014_KV400",
+  "name": "MN4014 KV400",
+  "manufacturer": "T-Motor",
+  "kv": 400.0,
+  "resistance": 0.067,
+  "io": 1.3,
+  "max_current": 30.0,
+  "weight_g": 150.3,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

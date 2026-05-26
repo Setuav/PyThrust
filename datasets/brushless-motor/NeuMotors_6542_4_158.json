@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6542_4_158",
+  "name": "6542/4/158",
+  "manufacturer": "NeuMotors",
+  "kv": 158.0,
+  "resistance": 0.027,
+  "io": 1.225,
+  "max_current": 180.0,
+  "weight_g": 968.7,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

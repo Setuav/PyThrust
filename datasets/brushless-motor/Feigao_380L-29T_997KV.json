@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-29T_997KV",
+  "name": "380L-29T 997KV",
+  "manufacturer": "Feigao",
+  "kv": 997.0,
+  "resistance": 0.1493,
+  "io": 0.2,
+  "max_current": 14.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

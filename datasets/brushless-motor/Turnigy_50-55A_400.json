@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_50-55A_400",
+  "name": "50-55A 400",
+  "manufacturer": "Turnigy",
+  "kv": 500.0,
+  "resistance": 0.11,
+  "io": 2.7,
+  "max_current": 68.0,
+  "weight_g": 300.2,
+  "max_power": 900.0,
+  "io_voltage": 16.0
+}

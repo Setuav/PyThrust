@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-4035_12_375kv",
+  "name": "LPA-4035/12 375kv",
+  "manufacturer": "LiPolice",
+  "kv": 375.0,
+  "resistance": 0.0198,
+  "io": 2.35,
+  "max_current": 70.0,
+  "weight_g": 445.4,
+  "max_power": 1600.0,
+  "io_voltage": 8.4
+}

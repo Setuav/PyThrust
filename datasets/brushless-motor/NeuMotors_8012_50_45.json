@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_50_45",
+  "name": "8012/50/45",
+  "manufacturer": "NeuMotors",
+  "kv": 45.0,
+  "resistance": 0.453,
+  "io": 0.162,
+  "max_current": 20.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

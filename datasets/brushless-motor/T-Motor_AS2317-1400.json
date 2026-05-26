@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AS2317-1400",
+  "name": "AS2317-1400",
+  "manufacturer": "T-Motor",
+  "kv": 1400.0,
+  "resistance": 0.0352,
+  "io": 2.21,
+  "max_current": 48.0,
+  "weight_g": 81.1,
+  "max_power": 712.0,
+  "io_voltage": 10.0
+}

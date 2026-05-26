@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_1.25Y_978",
+  "name": "1527/1.25Y 978",
+  "manufacturer": "NeuMotors",
+  "kv": 978.0,
+  "resistance": 0.017,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

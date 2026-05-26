@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Tornado_T10_5215-500KV",
+  "name": "Tornado T10 5215-500KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 500.0,
+  "resistance": 0.01817,
+  "io": 2.3,
+  "max_current": 116.0,
+  "weight_g": 342.2,
+  "max_power": 3817.0,
+  "io_voltage": 10.0
+}

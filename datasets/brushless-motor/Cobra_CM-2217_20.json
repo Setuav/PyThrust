@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2217_20",
+  "name": "CM-2217/20",
+  "manufacturer": "Cobra",
+  "kv": 950.0,
+  "resistance": 0.125,
+  "io": 0.53,
+  "max_current": 20.0,
+  "weight_g": 76.5,
+  "max_power": 220.0,
+  "io_voltage": 12.0
+}

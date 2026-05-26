@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._8118_IPE_100KV",
+  "name": "8118 IPE 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.061,
+  "io": 1.1,
+  "max_current": 62.0,
+  "weight_g": 630.5,
+  "max_power": 2962.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-5D_1180",
+  "name": "TP5870-5D 1180",
+  "manufacturer": "TP Power",
+  "kv": 1180.0,
+  "resistance": 0.0046,
+  "io": 8.0,
+  "max_current": 430.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

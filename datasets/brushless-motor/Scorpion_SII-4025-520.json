@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-4025-520",
+  "name": "SII-4025-520",
+  "manufacturer": "Scorpion",
+  "kv": 520.0,
+  "resistance": 0.016,
+  "io": 1.4,
+  "max_current": 100.0,
+  "weight_g": 339.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_2.75D_800",
+  "name": "1527/2.75D 800",
+  "manufacturer": "NeuMotors",
+  "kv": 800.0,
+  "resistance": 0.0272,
+  "io": 1.64,
+  "max_current": 60.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

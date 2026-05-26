@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_1.25Y_1820",
+  "name": "1120/1.25Y 1820",
+  "manufacturer": "NeuMotors",
+  "kv": 1820.0,
+  "resistance": 0.016,
+  "io": 2.0,
+  "max_current": 49.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

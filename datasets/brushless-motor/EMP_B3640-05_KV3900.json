@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3640-05_KV3900",
+  "name": "B3640-05 KV3900",
+  "manufacturer": "EMP",
+  "kv": 3900.0,
+  "resistance": 0.013,
+  "io": 4.3,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 1130.0,
+  "io_voltage": 10.0
+}

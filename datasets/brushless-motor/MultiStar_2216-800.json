@@ -1,0 +1,12 @@
+{
+  "id": "MultiStar_2216-800",
+  "name": "2216-800",
+  "manufacturer": "MultiStar",
+  "kv": 800.0,
+  "resistance": 0.169,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 66.1,
+  "max_power": 222.0,
+  "io_voltage": 10.0
+}

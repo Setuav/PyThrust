@@ -1,0 +1,12 @@
+{
+  "id": "FMS_3648-KV600",
+  "name": "3648-KV600",
+  "manufacturer": "FMS",
+  "kv": 600.0,
+  "resistance": 0.037,
+  "io": 2.3,
+  "max_current": 55.0,
+  "weight_g": 195.0,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

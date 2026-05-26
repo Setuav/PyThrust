@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_M0803_II_KV25000",
+  "name": "M0803 II KV25000",
+  "manufacturer": "T-Hobby",
+  "kv": 25000.0,
+  "resistance": 0.089,
+  "io": 2.1,
+  "max_current": 9.7,
+  "weight_g": 2.6,
+  "max_power": 36.0,
+  "io_voltage": 10.0
+}

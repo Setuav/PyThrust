@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F60_PRO_IV-2550",
+  "name": "F60 PRO IV-2550",
+  "manufacturer": "T-Motor",
+  "kv": 2550.0,
+  "resistance": 0.043,
+  "io": 1.8,
+  "max_current": 41.0,
+  "weight_g": 33.5,
+  "max_power": 602.0,
+  "io_voltage": 10.0
+}

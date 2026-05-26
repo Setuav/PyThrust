@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_3.25D_554",
+  "name": "1533/3.25D 554",
+  "manufacturer": "NeuMotors",
+  "kv": 554.0,
+  "resistance": 0.0465,
+  "io": 1.4,
+  "max_current": 55.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

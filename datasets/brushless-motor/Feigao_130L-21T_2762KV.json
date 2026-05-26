@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-21T_2762KV",
+  "name": "130L-21T 2762KV",
+  "manufacturer": "Feigao",
+  "kv": 2762.0,
+  "resistance": 0.1184,
+  "io": 0.5,
+  "max_current": 11.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

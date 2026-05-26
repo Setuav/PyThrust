@@ -1,0 +1,12 @@
+{
+  "id": "Cyclon_Elite_12-790KV",
+  "name": "Elite 12-790KV",
+  "manufacturer": "Cyclon",
+  "kv": 790.0,
+  "resistance": 0.015,
+  "io": 4.2,
+  "max_current": 0.0,
+  "weight_g": 200.1,
+  "max_power": 750.0,
+  "io_voltage": 6.0
+}

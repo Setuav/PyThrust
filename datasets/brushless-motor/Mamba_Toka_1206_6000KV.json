@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1206_6000KV",
+  "name": "Toka 1206 6000KV",
+  "manufacturer": "Mamba",
+  "kv": 6000.0,
+  "resistance": 0.168,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 10.8,
+  "max_power": 174.0,
+  "io_voltage": 5.0
+}

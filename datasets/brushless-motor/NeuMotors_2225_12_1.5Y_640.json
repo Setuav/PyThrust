@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2225_12_1.5Y_640",
+  "name": "2225/12/1.5Y 640",
+  "manufacturer": "NeuMotors",
+  "kv": 640.0,
+  "resistance": 0.005,
+  "io": 1.8,
+  "max_current": 179.0,
+  "weight_g": 1132.8,
+  "max_power": 8400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_F29-35-10_4350KV",
+  "name": "F29-35-10 4350KV",
+  "manufacturer": "GS-Models",
+  "kv": 4350.0,
+  "resistance": 0.0165,
+  "io": 5.4,
+  "max_current": 95.0,
+  "weight_g": 84.2,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._X7224_190KV",
+  "name": "X7224 190KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 190.0,
+  "resistance": 0.026,
+  "io": 3.2,
+  "max_current": 109.0,
+  "weight_g": 772.5,
+  "max_power": 4842.0,
+  "io_voltage": 30.0
+}

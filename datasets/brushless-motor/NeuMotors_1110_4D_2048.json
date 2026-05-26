@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_4D_2048",
+  "name": "1110/4D 2048",
+  "manufacturer": "NeuMotors",
+  "kv": 2048.0,
+  "resistance": 0.027,
+  "io": 1.1,
+  "max_current": 34.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

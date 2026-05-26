@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-6530-150",
+  "name": "SII-6530-150",
+  "manufacturer": "Scorpion",
+  "kv": 150.0,
+  "resistance": 0.032,
+  "io": 1.15,
+  "max_current": 95.0,
+  "weight_g": 1043.0,
+  "max_power": 4220.0,
+  "io_voltage": 10.0
+}

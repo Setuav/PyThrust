@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-5Y_3200",
+  "name": "TP3620-5Y 3200",
+  "manufacturer": "TP Power",
+  "kv": 3200.0,
+  "resistance": 0.0011,
+  "io": 2.2,
+  "max_current": 86.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

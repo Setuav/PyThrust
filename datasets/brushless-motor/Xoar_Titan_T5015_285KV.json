@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T5015_285KV",
+  "name": "Titan T5015 285KV",
+  "manufacturer": "Xoar",
+  "kv": 285.0,
+  "resistance": 0.046,
+  "io": 1.1,
+  "max_current": 51.0,
+  "weight_g": 267.3,
+  "max_power": 1034.0,
+  "io_voltage": 10.0
+}

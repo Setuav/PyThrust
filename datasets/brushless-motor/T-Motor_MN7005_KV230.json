@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN7005_KV230",
+  "name": "MN7005 KV230",
+  "manufacturer": "T-Motor",
+  "kv": 230.0,
+  "resistance": 0.071,
+  "io": 0.9,
+  "max_current": 28.0,
+  "weight_g": 188.2,
+  "max_power": 700.0,
+  "io_voltage": 22.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_5D_3276",
+  "name": "1105/5D 3276",
+  "manufacturer": "NeuMotors",
+  "kv": 3276.0,
+  "resistance": 0.021,
+  "io": 0.9,
+  "max_current": 22.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

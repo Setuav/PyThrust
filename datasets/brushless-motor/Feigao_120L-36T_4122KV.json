@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_120L-36T_4122KV",
+  "name": "120L-36T 4122KV",
+  "manufacturer": "Feigao",
+  "kv": 4122.0,
+  "resistance": 0.585,
+  "io": 0.3,
+  "max_current": 4.0,
+  "weight_g": 17.0,
+  "max_power": 70.0,
+  "io_voltage": 6.0
+}

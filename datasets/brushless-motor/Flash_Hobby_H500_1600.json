@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_H500_1600",
+  "name": "H500 1600",
+  "manufacturer": "Flash Hobby",
+  "kv": 1600.0,
+  "resistance": 0.0183,
+  "io": 3.2,
+  "max_current": 80.0,
+  "weight_g": 235.3,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

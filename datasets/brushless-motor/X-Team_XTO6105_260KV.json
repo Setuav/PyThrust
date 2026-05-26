@@ -1,0 +1,12 @@
+{
+  "id": "X-Team_XTO6105_260KV",
+  "name": "XTO6105 260KV",
+  "manufacturer": "X-Team",
+  "kv": 260.0,
+  "resistance": 0.12,
+  "io": 0.66,
+  "max_current": 32.0,
+  "weight_g": 160.2,
+  "max_power": 665.0,
+  "io_voltage": 44.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2812RTR-33",
+  "name": "XM2812RTR-33",
+  "manufacturer": "Dualsky",
+  "kv": 1470.0,
+  "resistance": 0.334,
+  "io": 0.38,
+  "max_current": 7.0,
+  "weight_g": 25.8,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

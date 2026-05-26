@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-3510_20",
+  "name": "C-3510/20",
+  "manufacturer": "Cobra",
+  "kv": 1000.0,
+  "resistance": 0.04,
+  "io": 1.06,
+  "max_current": 32.0,
+  "weight_g": 140.9,
+  "max_power": 470.0,
+  "io_voltage": 14.0
+}

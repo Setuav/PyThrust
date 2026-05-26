@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2826-18_1790KV",
+  "name": "2826-18 1790KV",
+  "manufacturer": "KEDA",
+  "kv": 1840.0,
+  "resistance": 0.16,
+  "io": 1.05,
+  "max_current": 20.0,
+  "weight_g": 46.8,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

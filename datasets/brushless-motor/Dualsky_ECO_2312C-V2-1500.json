@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2312C-V2-1500",
+  "name": "ECO 2312C-V2-1500",
+  "manufacturer": "Dualsky",
+  "kv": 1500.0,
+  "resistance": 0.0464,
+  "io": 1.1,
+  "max_current": 26.0,
+  "weight_g": 58.1,
+  "max_power": 208.0,
+  "io_voltage": 10.0
+}

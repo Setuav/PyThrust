@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2310-1220",
+  "name": "2310-1220",
+  "manufacturer": "BadAss",
+  "kv": 1220.0,
+  "resistance": 0.098,
+  "io": 0.87,
+  "max_current": 22.0,
+  "weight_g": 58.1,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

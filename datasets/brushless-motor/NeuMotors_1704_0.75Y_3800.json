@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_0.75Y_3800",
+  "name": "1704/0.75Y 3800",
+  "manufacturer": "NeuMotors",
+  "kv": 3800.0,
+  "resistance": 0.004,
+  "io": 3.47,
+  "max_current": 109.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

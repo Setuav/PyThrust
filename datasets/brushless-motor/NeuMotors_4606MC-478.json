@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-478",
+  "name": "4606MC-478",
+  "manufacturer": "NeuMotors",
+  "kv": 478.0,
+  "resistance": 0.068,
+  "io": 0.18,
+  "max_current": 33.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2830CA-10",
+  "name": "XM2830CA-10",
+  "manufacturer": "Dualsky",
+  "kv": 1180.0,
+  "resistance": 0.09,
+  "io": 0.88,
+  "max_current": 19.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

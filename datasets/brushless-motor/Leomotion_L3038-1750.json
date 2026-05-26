@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3038-1750",
+  "name": "L3038-1750",
+  "manufacturer": "Leomotion",
+  "kv": 1750.0,
+  "resistance": 0.024,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 175.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

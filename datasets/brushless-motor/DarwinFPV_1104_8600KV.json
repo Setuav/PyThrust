@@ -1,0 +1,12 @@
+{
+  "id": "DarwinFPV_1104_8600KV",
+  "name": "1104 8600KV",
+  "manufacturer": "DarwinFPV",
+  "kv": 8600.0,
+  "resistance": 0.137,
+  "io": 0.6,
+  "max_current": 13.0,
+  "weight_g": 4.5,
+  "max_power": 144.0,
+  "io_voltage": 10.0
+}

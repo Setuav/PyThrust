@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_NEON_2810_1350KV",
+  "name": "NEON 2810 1350KV",
+  "manufacturer": "MEPS",
+  "kv": 1350.0,
+  "resistance": 0.046,
+  "io": 2.1,
+  "max_current": 65.0,
+  "weight_g": 67.2,
+  "max_power": 1310.0,
+  "io_voltage": 10.0
+}

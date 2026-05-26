@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_Bullet_1806-15T_2350KV",
+  "name": "Bullet 1806-15T 2350KV",
+  "manufacturer": "D-Power",
+  "kv": 2350.0,
+  "resistance": 0.154,
+  "io": 0.8,
+  "max_current": 10.0,
+  "weight_g": 20.1,
+  "max_power": 110.0,
+  "io_voltage": 7.4
+}

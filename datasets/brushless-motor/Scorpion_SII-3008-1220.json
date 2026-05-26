@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-3008-1220",
+  "name": "SII-3008-1220",
+  "manufacturer": "Scorpion",
+  "kv": 1220.0,
+  "resistance": 0.042,
+  "io": 0.97,
+  "max_current": 32.0,
+  "weight_g": 95.0,
+  "max_power": 425.0,
+  "io_voltage": 10.0
+}

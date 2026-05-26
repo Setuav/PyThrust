@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2212_KV1400_2-3S",
+  "name": "A2212 KV1400 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 1400.0,
+  "resistance": 0.065,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 50.2,
+  "max_power": 230.0,
+  "io_voltage": 10.0
+}

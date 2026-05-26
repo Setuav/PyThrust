@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4215-0320",
+  "name": "LEO 4215-0320",
+  "manufacturer": "Leomotion",
+  "kv": 320.0,
+  "resistance": 0.108,
+  "io": 0.47,
+  "max_current": 30.0,
+  "weight_g": 194.2,
+  "max_power": 1250.0,
+  "io_voltage": 10.0
+}

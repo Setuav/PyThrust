@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4410_2.5Y_94",
+  "name": "4410/2.5Y 94",
+  "manufacturer": "NeuMotors",
+  "kv": 94.0,
+  "resistance": 0.038,
+  "io": 1.2,
+  "max_current": 94.0,
+  "weight_g": 1982.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AxisFlying_2207.5-1860",
+  "name": "2207.5-1860",
+  "manufacturer": "AxisFlying",
+  "kv": 1860.0,
+  "resistance": 0.0582,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 35.7,
+  "max_power": 833.0,
+  "io_voltage": 10.0
+}

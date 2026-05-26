@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_3525-430",
+  "name": "3525-430",
+  "manufacturer": "Tempest",
+  "kv": 430.0,
+  "resistance": 0.051,
+  "io": 0.94,
+  "max_current": 44.0,
+  "weight_g": 239.0,
+  "max_power": 1300.0,
+  "io_voltage": 10.0
+}

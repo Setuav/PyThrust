@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_6230-185",
+  "name": "6230-185",
+  "manufacturer": "BadAss",
+  "kv": 185.0,
+  "resistance": 0.027,
+  "io": 2.03,
+  "max_current": 100.0,
+  "weight_g": 827.5,
+  "max_power": 4440.0,
+  "io_voltage": 22.2
+}

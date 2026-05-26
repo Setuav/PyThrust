@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2212-10_1400KV",
+  "name": "A2212-10 1400KV",
+  "manufacturer": "Cheetah",
+  "kv": 1400.0,
+  "resistance": 0.065,
+  "io": 0.7,
+  "max_current": 16.0,
+  "weight_g": 52.2,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

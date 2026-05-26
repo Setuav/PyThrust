@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V2206_KV1500_2-3S",
+  "name": "V2206 KV1500 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 1500.0,
+  "resistance": 0.29,
+  "io": 0.25,
+  "max_current": 12.0,
+  "weight_g": 24.9,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

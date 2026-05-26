@@ -1,0 +1,12 @@
+{
+  "id": "Kyosho_Atomic_Force",
+  "name": "Atomic Force",
+  "manufacturer": "Kyosho",
+  "kv": 3531.0,
+  "resistance": 0.035,
+  "io": 2.94,
+  "max_current": 30.0,
+  "weight_g": 178.6,
+  "max_power": 537.0,
+  "io_voltage": 8.0
+}

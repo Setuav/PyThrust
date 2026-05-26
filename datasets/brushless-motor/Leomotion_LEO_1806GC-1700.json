@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_1806GC-1700",
+  "name": "LEO 1806GC-1700",
+  "manufacturer": "Leomotion",
+  "kv": 1700.0,
+  "resistance": 0.197,
+  "io": 0.55,
+  "max_current": 13.0,
+  "weight_g": 28.9,
+  "max_power": 145.0,
+  "io_voltage": 10.0
+}

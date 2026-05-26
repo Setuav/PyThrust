@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_5.5_130",
+  "name": "8038/5.5/130",
+  "manufacturer": "NeuMotors",
+  "kv": 130.0,
+  "resistance": 0.0136,
+  "io": 1.473,
+  "max_current": 185.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

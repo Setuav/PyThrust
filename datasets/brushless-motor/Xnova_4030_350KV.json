@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4030_350KV",
+  "name": "4030 350KV",
+  "manufacturer": "Xnova",
+  "kv": 350.0,
+  "resistance": 0.037,
+  "io": 0.5,
+  "max_current": 56.0,
+  "weight_g": 440.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-4D_1350",
+  "name": "TP5870-4D 1350",
+  "manufacturer": "TP Power",
+  "kv": 1350.0,
+  "resistance": 0.0027,
+  "io": 10.4,
+  "max_current": 517.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

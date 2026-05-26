@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM7015MR-4.5",
+  "name": "XM7015MR-4.5",
+  "manufacturer": "Dualsky",
+  "kv": 370.0,
+  "resistance": 0.036,
+  "io": 1.8,
+  "max_current": 67.0,
+  "weight_g": 345.3,
+  "max_power": 825.0,
+  "io_voltage": 10.0
+}

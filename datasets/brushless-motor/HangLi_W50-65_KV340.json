@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W50-65_KV340",
+  "name": "W50-65 KV340",
+  "manufacturer": "HangLi",
+  "kv": 340.0,
+  "resistance": 0.0416,
+  "io": 1.2,
+  "max_current": 83.0,
+  "weight_g": 388.4,
+  "max_power": 1550.0,
+  "io_voltage": 7.4
+}

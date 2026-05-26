@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5330_18_Gold_Line",
+  "name": "5330/18 Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 255.0,
+  "resistance": 0.038,
+  "io": 1.8,
+  "max_current": 76.0,
+  "weight_g": 672.5,
+  "max_power": 2870.0,
+  "io_voltage": 25.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_Cvatar1404-2750",
+  "name": "Cvatar1404-2750",
+  "manufacturer": "Eachine",
+  "kv": 2750.0,
+  "resistance": 0.486,
+  "io": 0.2,
+  "max_current": 7.0,
+  "weight_g": 11.9,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

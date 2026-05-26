@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_18_KV1050",
+  "name": "Boost 18 KV1050",
+  "manufacturer": "Pichler",
+  "kv": 1050.0,
+  "resistance": 0.078,
+  "io": 1.0,
+  "max_current": 22.0,
+  "weight_g": 75.1,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

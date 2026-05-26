@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_BL36-60-50_2100KV",
+  "name": "BL36-60-50 2100KV",
+  "manufacturer": "GS-Models",
+  "kv": 2100.0,
+  "resistance": 0.0112,
+  "io": 6.6,
+  "max_current": 80.0,
+  "weight_g": 230.2,
+  "max_power": 1950.0,
+  "io_voltage": 10.0
+}

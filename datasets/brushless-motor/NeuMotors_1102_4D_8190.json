@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_4D_8190",
+  "name": "1102/4D 8190",
+  "manufacturer": "NeuMotors",
+  "kv": 8190.0,
+  "resistance": 0.007,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

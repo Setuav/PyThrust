@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_0.75D_6840",
+  "name": "1704/0.75D 6840",
+  "manufacturer": "NeuMotors",
+  "kv": 6840.0,
+  "resistance": 0.001,
+  "io": 6.24,
+  "max_current": 195.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1102_5D_6552",
+  "name": "1102/5D 6552",
+  "manufacturer": "NeuMotors",
+  "kv": 6552.0,
+  "resistance": 0.009,
+  "io": 0.9,
+  "max_current": 22.0,
+  "weight_g": 51.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

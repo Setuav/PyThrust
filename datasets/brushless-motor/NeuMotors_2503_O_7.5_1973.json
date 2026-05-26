@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2503_O_7.5_1973",
+  "name": "2503 O/7.5/1973",
+  "manufacturer": "NeuMotors",
+  "kv": 1973.0,
+  "resistance": 0.232,
+  "io": 0.4,
+  "max_current": 24.0,
+  "weight_g": 13.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

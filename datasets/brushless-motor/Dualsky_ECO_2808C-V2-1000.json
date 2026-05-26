@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2808C-V2-1000",
+  "name": "ECO 2808C-V2-1000",
+  "manufacturer": "Dualsky",
+  "kv": 1000.0,
+  "resistance": 0.08,
+  "io": 0.6,
+  "max_current": 25.0,
+  "weight_g": 75.1,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

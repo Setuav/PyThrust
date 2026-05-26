@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_4130_20_Gold_Line_V3_Long",
+  "name": "4130/20 Gold Line V3 Long",
+  "manufacturer": "AXI motors",
+  "kv": 305.0,
+  "resistance": 0.043,
+  "io": 1.1,
+  "max_current": 56.0,
+  "weight_g": 455.3,
+  "max_power": 1650.0,
+  "io_voltage": 10.0
+}

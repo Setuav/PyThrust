@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2820_12_909KV",
+  "name": "2820/12  909KV",
+  "manufacturer": "Extron",
+  "kv": 909.0,
+  "resistance": 0.031,
+  "io": 2.9,
+  "max_current": 35.0,
+  "weight_g": 142.6,
+  "max_power": 525.0,
+  "io_voltage": 18.5
+}

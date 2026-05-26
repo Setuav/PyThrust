@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_17_2550",
+  "name": "TS-EZ1520/17 2550",
+  "manufacturer": "Tenshock",
+  "kv": 2550.0,
+  "resistance": 0.032,
+  "io": 1.3,
+  "max_current": 37.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

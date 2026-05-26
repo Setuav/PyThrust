@@ -1,0 +1,12 @@
+{
+  "id": "Pulso_U39M_270",
+  "name": "U39M/270",
+  "manufacturer": "Pulso",
+  "kv": 270.0,
+  "resistance": 0.258,
+  "io": 0.3,
+  "max_current": 5.5,
+  "weight_g": 57.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

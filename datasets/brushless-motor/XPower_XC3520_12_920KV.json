@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC3520_12_920KV",
+  "name": "XC3520/12 920KV",
+  "manufacturer": "XPower",
+  "kv": 920.0,
+  "resistance": 0.031,
+  "io": 1.1,
+  "max_current": 35.0,
+  "weight_g": 153.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

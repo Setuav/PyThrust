@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6355DA-21",
+  "name": "XM6355DA-21",
+  "manufacturer": "Dualsky",
+  "kv": 245.0,
+  "resistance": 0.0275,
+  "io": 0.9,
+  "max_current": 92.0,
+  "weight_g": 530.4,
+  "max_power": 2944.0,
+  "io_voltage": 10.0
+}

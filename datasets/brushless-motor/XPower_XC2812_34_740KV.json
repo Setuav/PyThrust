@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2812_34_740KV",
+  "name": "XC2812/34 740KV",
+  "manufacturer": "XPower",
+  "kv": 740.0,
+  "resistance": 0.234,
+  "io": 0.3,
+  "max_current": 8.0,
+  "weight_g": 58.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

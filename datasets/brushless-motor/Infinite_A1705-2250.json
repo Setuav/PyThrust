@@ -1,0 +1,12 @@
+{
+  "id": "Infinite_A1705-2250",
+  "name": "A1705-2250",
+  "manufacturer": "Infinite",
+  "kv": 2250.0,
+  "resistance": 0.195,
+  "io": 0.95,
+  "max_current": 6.0,
+  "weight_g": 18.1,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

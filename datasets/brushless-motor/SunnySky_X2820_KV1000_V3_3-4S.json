@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2820_KV1000_V3_3-4S",
+  "name": "X2820 KV1000 V3 3-4S",
+  "manufacturer": "SunnySky",
+  "kv": 1000.0,
+  "resistance": 0.0185,
+  "io": 1.7,
+  "max_current": 70.0,
+  "weight_g": 147.1,
+  "max_power": 1036.0,
+  "io_voltage": 10.0
+}

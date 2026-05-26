@@ -1,0 +1,12 @@
+{
+  "id": "Castle_C._Vertigo_600-3538",
+  "name": "Vertigo 600-3538",
+  "manufacturer": "Castle C.",
+  "kv": 530.0,
+  "resistance": 0.021,
+  "io": 2.2,
+  "max_current": 220.0,
+  "weight_g": 422.4,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

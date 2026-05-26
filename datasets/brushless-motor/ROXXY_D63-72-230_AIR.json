@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_D63-72-230_AIR",
+  "name": "D63-72-230 AIR",
+  "manufacturer": "ROXXY",
+  "kv": 230.0,
+  "resistance": 0.022,
+  "io": 3.3,
+  "max_current": 86.0,
+  "weight_g": 695.4,
+  "max_power": 2950.0,
+  "io_voltage": 14.8
+}

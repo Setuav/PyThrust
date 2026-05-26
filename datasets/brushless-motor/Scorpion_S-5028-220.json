@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-5028-220",
+  "name": "S-5028-220",
+  "manufacturer": "Scorpion",
+  "kv": 220.0,
+  "resistance": 0.032,
+  "io": 0.98,
+  "max_current": 70.0,
+  "weight_g": 576.1,
+  "max_power": 2590.0,
+  "io_voltage": 10.0
+}

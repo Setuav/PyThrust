@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4130_KV380_V3_6S",
+  "name": "X4130 KV380 V3 6S",
+  "manufacturer": "SunnySky",
+  "kv": 380.0,
+  "resistance": 0.0209,
+  "io": 1.5,
+  "max_current": 85.0,
+  "weight_g": 389.2,
+  "max_power": 2125.0,
+  "io_voltage": 10.0
+}

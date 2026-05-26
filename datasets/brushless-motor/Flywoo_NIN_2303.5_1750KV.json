@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_NIN_2303.5_1750KV",
+  "name": "NIN 2303.5 1750KV",
+  "manufacturer": "Flywoo",
+  "kv": 1750.0,
+  "resistance": 0.173,
+  "io": 0.58,
+  "max_current": 23.3,
+  "weight_g": 21.5,
+  "max_power": 559.0,
+  "io_voltage": 10.0
+}

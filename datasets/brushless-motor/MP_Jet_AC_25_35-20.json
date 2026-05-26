@@ -1,0 +1,12 @@
+{
+  "id": "MP_Jet_AC_25_35-20",
+  "name": "AC 25/35-20",
+  "manufacturer": "MP Jet",
+  "kv": 3850.0,
+  "resistance": 0.1,
+  "io": 1.34,
+  "max_current": 25.0,
+  "weight_g": 72.0,
+  "max_power": 216.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS4020-0910",
+  "name": "HS4020-0910",
+  "manufacturer": "Hyperion",
+  "kv": 910.0,
+  "resistance": 0.015,
+  "io": 1.95,
+  "max_current": 87.0,
+  "weight_g": 284.3,
+  "max_power": 2455.0,
+  "io_voltage": 10.0
+}

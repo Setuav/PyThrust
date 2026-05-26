@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3515-710",
+  "name": "3515-710",
+  "manufacturer": "BadAss",
+  "kv": 710.0,
+  "resistance": 0.031,
+  "io": 1.3,
+  "max_current": 54.0,
+  "weight_g": 184.0,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

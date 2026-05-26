@@ -1,0 +1,12 @@
+{
+  "id": "DYS_D4215-650",
+  "name": "D4215-650",
+  "manufacturer": "DYS",
+  "kv": 650.0,
+  "resistance": 0.011,
+  "io": 0.7,
+  "max_current": 39.0,
+  "weight_g": 83.1,
+  "max_power": 865.0,
+  "io_voltage": 14.8
+}

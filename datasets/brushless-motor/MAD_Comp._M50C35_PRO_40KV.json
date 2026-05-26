@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M50C35_PRO_40KV",
+  "name": "M50C35 PRO 40KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 40.0,
+  "resistance": 0.01,
+  "io": 3.6,
+  "max_current": 217.0,
+  "weight_g": 4180.1,
+  "max_power": 20967.0,
+  "io_voltage": 20.0
+}

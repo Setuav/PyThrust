@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3530_KV570_5-6S",
+  "name": "X3530 KV570 5-6S",
+  "manufacturer": "SunnySky",
+  "kv": 570.0,
+  "resistance": 0.016,
+  "io": 2.2,
+  "max_current": 76.0,
+  "weight_g": 286.3,
+  "max_power": 1900.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_1_443",
+  "name": "6560/1/443",
+  "manufacturer": "NeuMotors",
+  "kv": 443.0,
+  "resistance": 0.003,
+  "io": 4.9,
+  "max_current": 720.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

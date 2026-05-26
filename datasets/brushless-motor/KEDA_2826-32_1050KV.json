@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2826-32_1050KV",
+  "name": "2826-32 1050KV",
+  "manufacturer": "KEDA",
+  "kv": 1050.0,
+  "resistance": 0.4,
+  "io": 0.45,
+  "max_current": 10.0,
+  "weight_g": 47.1,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

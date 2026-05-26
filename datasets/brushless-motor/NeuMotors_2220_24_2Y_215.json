@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2220_24_2Y_215",
+  "name": "2220/24/2Y 215",
+  "manufacturer": "NeuMotors",
+  "kv": 215.0,
+  "resistance": 0.044,
+  "io": 1.7,
+  "max_current": 46.0,
+  "weight_g": 962.7,
+  "max_power": 6400.0,
+  "io_voltage": 10.0
+}

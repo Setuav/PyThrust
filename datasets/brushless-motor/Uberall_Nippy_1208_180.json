@@ -1,0 +1,12 @@
+{
+  "id": "Uberall_Nippy_1208_180",
+  "name": "Nippy 1208/180",
+  "manufacturer": "Uberall",
+  "kv": 1700.0,
+  "resistance": 0.195,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 68.0,
+  "max_power": 200.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_3Y_611",
+  "name": "1518/3Y 611",
+  "manufacturer": "NeuMotors",
+  "kv": 611.0,
+  "resistance": 0.065,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-4025-850",
+  "name": "HKIV-4025-850",
+  "manufacturer": "Scorpion",
+  "kv": 850.0,
+  "resistance": 0.009,
+  "io": 3.69,
+  "max_current": 95.0,
+  "weight_g": 299.9,
+  "max_power": 2812.0,
+  "io_voltage": 10.0
+}

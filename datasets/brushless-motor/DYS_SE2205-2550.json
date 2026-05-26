@@ -1,0 +1,12 @@
+{
+  "id": "DYS_SE2205-2550",
+  "name": "SE2205-2550",
+  "manufacturer": "DYS",
+  "kv": 2550.0,
+  "resistance": 0.08,
+  "io": 0.7,
+  "max_current": 28.0,
+  "weight_g": 30.1,
+  "max_power": 412.0,
+  "io_voltage": 11.1
+}

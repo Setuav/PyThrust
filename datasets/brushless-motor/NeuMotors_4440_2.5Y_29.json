@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4440_2.5Y_29",
+  "name": "4440/2.5Y 29",
+  "manufacturer": "NeuMotors",
+  "kv": 29.0,
+  "resistance": 0.1,
+  "io": 1.2,
+  "max_current": 58.0,
+  "weight_g": 5210.9,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

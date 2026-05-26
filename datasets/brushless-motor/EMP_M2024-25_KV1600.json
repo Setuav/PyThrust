@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2024-25_KV1600",
+  "name": "M2024-25 KV1600",
+  "manufacturer": "EMP",
+  "kv": 1600.0,
+  "resistance": 0.533,
+  "io": 0.2,
+  "max_current": 9.0,
+  "weight_g": 17.6,
+  "max_power": 60.0,
+  "io_voltage": 10.0
+}

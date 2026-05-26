@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_2.75Y_308",
+  "name": "1539/2.75Y 308",
+  "manufacturer": "NeuMotors",
+  "kv": 308.0,
+  "resistance": 0.118,
+  "io": 0.91,
+  "max_current": 36.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

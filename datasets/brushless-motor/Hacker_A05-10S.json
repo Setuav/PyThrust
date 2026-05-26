@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A05-10S",
+  "name": "A05-10S",
+  "manufacturer": "Hacker",
+  "kv": 4200.0,
+  "resistance": 0.3,
+  "io": 0.5,
+  "max_current": 5.0,
+  "weight_g": 7.5,
+  "max_power": 35.0,
+  "io_voltage": 8.4
+}

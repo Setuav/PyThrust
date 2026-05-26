@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-30M_EVO",
+  "name": "A20-30M EVO",
+  "manufacturer": "Hacker",
+  "kv": 980.0,
+  "resistance": 0.174,
+  "io": 0.6,
+  "max_current": 15.0,
+  "weight_g": 42.0,
+  "max_power": 150.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-19T_1222KV",
+  "name": "380XL-19T 1222KV",
+  "manufacturer": "Feigao",
+  "kv": 1222.0,
+  "resistance": 0.0702,
+  "io": 0.5,
+  "max_current": 22.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

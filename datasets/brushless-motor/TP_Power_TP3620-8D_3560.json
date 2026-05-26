@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-8D_3560",
+  "name": "TP3620-8D 3560",
+  "manufacturer": "TP Power",
+  "kv": 3560.0,
+  "resistance": 0.0072,
+  "io": 1.8,
+  "max_current": 97.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BE1102-10000",
+  "name": "BE1102-10000",
+  "manufacturer": "DYS",
+  "kv": 10000.0,
+  "resistance": 0.35,
+  "io": 0.7,
+  "max_current": 7.7,
+  "weight_g": 3.4,
+  "max_power": 86.0,
+  "io_voltage": 11.1
+}

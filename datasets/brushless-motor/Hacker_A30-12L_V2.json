@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A30-12L_V2",
+  "name": "A30-12L V2",
+  "manufacturer": "Hacker",
+  "kv": 2800.0,
+  "resistance": 0.016,
+  "io": 2.8,
+  "max_current": 70.0,
+  "weight_g": 143.2,
+  "max_power": 550.0,
+  "io_voltage": 8.4
+}

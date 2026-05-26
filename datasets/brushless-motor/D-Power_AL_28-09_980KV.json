@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_28-09_980KV",
+  "name": "AL 28-09 980KV",
+  "manufacturer": "D-Power",
+  "kv": 980.0,
+  "resistance": 0.155,
+  "io": 0.7,
+  "max_current": 14.0,
+  "weight_g": 55.0,
+  "max_power": 220.0,
+  "io_voltage": 8.0
+}

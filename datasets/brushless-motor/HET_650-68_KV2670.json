@@ -1,0 +1,12 @@
+{
+  "id": "HET_650-68_KV2670",
+  "name": "650-68 KV2670",
+  "manufacturer": "HET",
+  "kv": 2670.0,
+  "resistance": 0.0046,
+  "io": 3.5,
+  "max_current": 120.0,
+  "weight_g": 300.2,
+  "max_power": 1900.0,
+  "io_voltage": 10.0
+}

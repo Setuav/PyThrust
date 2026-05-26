@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2826_08_1069KV",
+  "name": "2826/08 1069KV",
+  "manufacturer": "Extron",
+  "kv": 1069.0,
+  "resistance": 0.02,
+  "io": 3.9,
+  "max_current": 45.0,
+  "weight_g": 174.3,
+  "max_power": 600.0,
+  "io_voltage": 14.8
+}

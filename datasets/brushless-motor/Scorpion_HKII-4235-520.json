@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKII-4235-520",
+  "name": "HKII-4235-520",
+  "manufacturer": "Scorpion",
+  "kv": 520.0,
+  "resistance": 0.012,
+  "io": 2.3,
+  "max_current": 100.0,
+  "weight_g": 515.4,
+  "max_power": 4450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_Squid_4114M-KV400",
+  "name": "Squid 4114M-KV400",
+  "manufacturer": "Team Hunter RC",
+  "kv": 400.0,
+  "resistance": 0.064,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 154.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

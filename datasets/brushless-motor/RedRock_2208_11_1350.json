@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2208_11_1350",
+  "name": "2208/11 1350",
+  "manufacturer": "RedRock",
+  "kv": 1350.0,
+  "resistance": 0.134,
+  "io": 0.7,
+  "max_current": 15.0,
+  "weight_g": 51.0,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1710_1.5Y_760",
+  "name": "1710/1.5Y 760",
+  "manufacturer": "NeuMotors",
+  "kv": 760.0,
+  "resistance": 0.035,
+  "io": 2.5,
+  "max_current": 37.0,
+  "weight_g": 215.2,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

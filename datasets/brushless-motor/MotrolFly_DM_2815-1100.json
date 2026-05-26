@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2815-1100",
+  "name": "DM 2815-1100",
+  "manufacturer": "MotrolFly",
+  "kv": 1100.0,
+  "resistance": 0.029,
+  "io": 2.65,
+  "max_current": 38.0,
+  "weight_g": 127.0,
+  "max_power": 570.0,
+  "io_voltage": 12.0
+}

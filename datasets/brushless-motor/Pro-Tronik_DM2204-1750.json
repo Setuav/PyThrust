@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2204-1750",
+  "name": "DM2204-1750",
+  "manufacturer": "Pro-Tronik",
+  "kv": 1750.0,
+  "resistance": 0.238,
+  "io": 0.45,
+  "max_current": 9.0,
+  "weight_g": 19.3,
+  "max_power": 65.0,
+  "io_voltage": 8.4
+}

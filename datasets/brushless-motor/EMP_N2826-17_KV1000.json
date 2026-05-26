@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N2826-17_KV1000",
+  "name": "N2826-17 KV1000",
+  "manufacturer": "EMP",
+  "kv": 1000.0,
+  "resistance": 0.25,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 51.0,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

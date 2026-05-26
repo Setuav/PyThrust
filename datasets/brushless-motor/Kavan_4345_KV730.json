@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_4345_KV730",
+  "name": "4345 KV730",
+  "manufacturer": "Kavan",
+  "kv": 730.0,
+  "resistance": 0.02,
+  "io": 1.6,
+  "max_current": 70.0,
+  "weight_g": 219.1,
+  "max_power": 1300.0,
+  "io_voltage": 10.0
+}

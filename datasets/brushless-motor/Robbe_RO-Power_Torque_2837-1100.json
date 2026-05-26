@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_2837-1100",
+  "name": "RO-Power Torque 2837-1100",
+  "manufacturer": "Robbe",
+  "kv": 1100.0,
+  "resistance": 0.0964,
+  "io": 0.54,
+  "max_current": 27.0,
+  "weight_g": 88.2,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

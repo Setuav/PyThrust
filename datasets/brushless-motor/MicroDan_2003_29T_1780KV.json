@@ -1,0 +1,12 @@
+{
+  "id": "MicroDan_2003_29T_1780KV",
+  "name": "2003/29T 1780KV",
+  "manufacturer": "MicroDan",
+  "kv": 2810.0,
+  "resistance": 0.1,
+  "io": 0.6,
+  "max_current": 6.0,
+  "weight_g": 13.0,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

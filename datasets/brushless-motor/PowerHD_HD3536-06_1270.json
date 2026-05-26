@@ -1,0 +1,12 @@
+{
+  "id": "PowerHD_HD3536-06_1270",
+  "name": "HD3536-06/1270",
+  "manufacturer": "PowerHD",
+  "kv": 1270.0,
+  "resistance": 0.032,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 95.0,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

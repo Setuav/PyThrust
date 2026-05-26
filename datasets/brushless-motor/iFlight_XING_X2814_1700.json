@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X2814_1700",
+  "name": "XING X2814 1700",
+  "manufacturer": "iFlight",
+  "kv": 1700.0,
+  "resistance": 0.0302,
+  "io": 2.9,
+  "max_current": 0.0,
+  "weight_g": 88.2,
+  "max_power": 2117.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_Air_TA60-12_260KV",
+  "name": "Titan Air TA60-12 260KV",
+  "manufacturer": "Xoar",
+  "kv": 260.0,
+  "resistance": 0.0472,
+  "io": 1.5,
+  "max_current": 39.0,
+  "weight_g": 255.1,
+  "max_power": 922.0,
+  "io_voltage": 10.0
+}

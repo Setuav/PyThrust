@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C18-15-17_2900",
+  "name": "C18-15-17 2900",
+  "manufacturer": "ROXXY",
+  "kv": 2900.0,
+  "resistance": 0.342,
+  "io": 0.58,
+  "max_current": 8.0,
+  "weight_g": 13.0,
+  "max_power": 55.0,
+  "io_voltage": 10.5
+}

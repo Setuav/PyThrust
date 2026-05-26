@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2838EA-10",
+  "name": "XM2838EA-10",
+  "manufacturer": "Dualsky",
+  "kv": 1250.0,
+  "resistance": 0.0296,
+  "io": 1.5,
+  "max_current": 33.0,
+  "weight_g": 91.0,
+  "max_power": 396.0,
+  "io_voltage": 10.0
+}

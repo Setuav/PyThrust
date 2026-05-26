@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5061-0400",
+  "name": "L5061-0400",
+  "manufacturer": "Leomotion",
+  "kv": 400.0,
+  "resistance": 0.018,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 630.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

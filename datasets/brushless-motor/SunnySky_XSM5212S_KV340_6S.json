@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_XSM5212S_KV340_6S",
+  "name": "XSM5212S KV340 6S",
+  "manufacturer": "SunnySky",
+  "kv": 340.0,
+  "resistance": 0.067,
+  "io": 1.0,
+  "max_current": 47.0,
+  "weight_g": 260.2,
+  "max_power": 1032.0,
+  "io_voltage": 10.0
+}

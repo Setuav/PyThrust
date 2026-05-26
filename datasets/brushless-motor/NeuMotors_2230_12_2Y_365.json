@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2230_12_2Y_365",
+  "name": "2230/12/2Y 365",
+  "manufacturer": "NeuMotors",
+  "kv": 365.0,
+  "resistance": 0.018,
+  "io": 1.5,
+  "max_current": 122.0,
+  "weight_g": 1359.1,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

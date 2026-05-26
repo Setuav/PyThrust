@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-30-16_700",
+  "name": "C28-30-16 700",
+  "manufacturer": "ROXXY",
+  "kv": 700.0,
+  "resistance": 0.242,
+  "io": 0.49,
+  "max_current": 17.0,
+  "weight_g": 57.0,
+  "max_power": 220.0,
+  "io_voltage": 10.5
+}

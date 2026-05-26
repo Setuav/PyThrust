@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-4020-1320",
+  "name": "HKIV-4020-1320",
+  "manufacturer": "Scorpion",
+  "kv": 1320.0,
+  "resistance": 0.006,
+  "io": 5.74,
+  "max_current": 90.0,
+  "weight_g": 310.1,
+  "max_power": 1998.0,
+  "io_voltage": 10.0
+}

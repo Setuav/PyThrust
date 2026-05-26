@@ -1,0 +1,12 @@
+{
+  "id": "Pulso_U39M_300",
+  "name": "U39M/300",
+  "manufacturer": "Pulso",
+  "kv": 300.0,
+  "resistance": 0.2175,
+  "io": 0.34,
+  "max_current": 6.0,
+  "weight_g": 57.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

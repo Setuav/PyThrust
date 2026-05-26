@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2826CA-10",
+  "name": "XM2826CA-10",
+  "manufacturer": "Dualsky",
+  "kv": 1770.0,
+  "resistance": 0.064,
+  "io": 1.1,
+  "max_current": 20.0,
+  "weight_g": 43.9,
+  "max_power": 210.0,
+  "io_voltage": 10.0
+}

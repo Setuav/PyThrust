@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT350-20-14-22w_495KV",
+  "name": "NT350-20-14-22w 495KV",
+  "manufacturer": "Torcman",
+  "kv": 495.0,
+  "resistance": 0.046,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 210.1,
+  "max_power": 700.0,
+  "io_voltage": 12.0
+}

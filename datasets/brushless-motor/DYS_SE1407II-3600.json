@@ -1,0 +1,12 @@
+{
+  "id": "DYS_SE1407II-3600",
+  "name": "SE1407II-3600",
+  "manufacturer": "DYS",
+  "kv": 3600.0,
+  "resistance": 0.16,
+  "io": 0.7,
+  "max_current": 17.0,
+  "weight_g": 13.9,
+  "max_power": 256.0,
+  "io_voltage": 12.0
+}

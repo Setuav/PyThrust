@@ -1,0 +1,12 @@
+{
+  "id": "EMP_M2226-25_KV1800",
+  "name": "M2226-25 KV1800",
+  "manufacturer": "EMP",
+  "kv": 1800.0,
+  "resistance": 0.657,
+  "io": 0.5,
+  "max_current": 9.0,
+  "weight_g": 23.0,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

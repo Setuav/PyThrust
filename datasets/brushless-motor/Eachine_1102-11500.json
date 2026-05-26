@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_1102-11500",
+  "name": "1102-11500",
+  "manufacturer": "Eachine",
+  "kv": 11500.0,
+  "resistance": 0.2,
+  "io": 0.85,
+  "max_current": 0.0,
+  "weight_g": 4.0,
+  "max_power": 85.0,
+  "io_voltage": 4.0
+}

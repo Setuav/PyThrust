@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5015MR-6",
+  "name": "XM5015MR-6",
+  "manufacturer": "Dualsky",
+  "kv": 390.0,
+  "resistance": 0.058,
+  "io": 0.8,
+  "max_current": 34.0,
+  "weight_g": 150.3,
+  "max_power": 416.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_Camo_X2208_1700",
+  "name": "XING Camo X2208 1700",
+  "manufacturer": "iFlight",
+  "kv": 1700.0,
+  "resistance": 0.0603,
+  "io": 1.1,
+  "max_current": 41.0,
+  "weight_g": 37.1,
+  "max_power": 970.0,
+  "io_voltage": 10.0
+}

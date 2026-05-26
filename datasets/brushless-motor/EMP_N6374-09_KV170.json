@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N6374-09_KV170",
+  "name": "N6374-09 KV170",
+  "manufacturer": "EMP",
+  "kv": 170.0,
+  "resistance": 0.05,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 828.7,
+  "max_power": 3250.0,
+  "io_voltage": 15.0
+}

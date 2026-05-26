@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Pacer_V2_P2207-1750",
+  "name": "Pacer V2 P2207-1750",
+  "manufacturer": "T-Motor",
+  "kv": 1750.0,
+  "resistance": 0.0612,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 30.6,
+  "max_power": 794.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5010MR-7.5",
+  "name": "XM5010MR-7.5",
+  "manufacturer": "Dualsky",
+  "kv": 480.0,
+  "resistance": 0.079,
+  "io": 0.8,
+  "max_current": 28.0,
+  "weight_g": 114.0,
+  "max_power": 418.0,
+  "io_voltage": 10.0
+}

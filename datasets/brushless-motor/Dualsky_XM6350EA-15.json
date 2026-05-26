@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6350EA-15",
+  "name": "XM6350EA-15",
+  "manufacturer": "Dualsky",
+  "kv": 224.0,
+  "resistance": 0.041,
+  "io": 1.1,
+  "max_current": 55.0,
+  "weight_g": 453.3,
+  "max_power": 2040.0,
+  "io_voltage": 10.0
+}

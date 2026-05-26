@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_4.75D_294",
+  "name": "2020/4.75D 294",
+  "manufacturer": "NeuMotors",
+  "kv": 294.0,
+  "resistance": 0.053,
+  "io": 1.06,
+  "max_current": 39.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

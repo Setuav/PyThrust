@@ -1,0 +1,12 @@
+{
+  "id": "Aveox_1005_2Y",
+  "name": "1005/2Y*",
+  "manufacturer": "Aveox",
+  "kv": 6173.0,
+  "resistance": 0.018,
+  "io": 1.5,
+  "max_current": 35.0,
+  "weight_g": 87.9,
+  "max_power": 264.0,
+  "io_voltage": 8.0
+}

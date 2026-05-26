@@ -1,0 +1,12 @@
+{
+  "id": "DarwinFPV_1104_4300KV",
+  "name": "1104 4300KV",
+  "manufacturer": "DarwinFPV",
+  "kv": 4300.0,
+  "resistance": 0.47,
+  "io": 0.5,
+  "max_current": 5.2,
+  "weight_g": 6.0,
+  "max_power": 63.0,
+  "io_voltage": 12.0
+}

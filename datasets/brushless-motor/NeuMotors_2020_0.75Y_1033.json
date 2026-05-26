@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_0.75Y_1033",
+  "name": "2020/0.75Y 1033",
+  "manufacturer": "NeuMotors",
+  "kv": 1033.0,
+  "resistance": 0.004,
+  "io": 3.73,
+  "max_current": 136.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2202RTR-24",
+  "name": "XM2202RTR-24",
+  "manufacturer": "Dualsky",
+  "kv": 1700.0,
+  "resistance": 0.54,
+  "io": 0.18,
+  "max_current": 3.6,
+  "weight_g": 15.9,
+  "max_power": 25.0,
+  "io_voltage": 10.0
+}

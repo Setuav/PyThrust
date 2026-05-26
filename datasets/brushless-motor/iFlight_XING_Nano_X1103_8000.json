@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_Nano_X1103_8000",
+  "name": "XING Nano X1103 8000",
+  "manufacturer": "iFlight",
+  "kv": 8000.0,
+  "resistance": 0.394,
+  "io": 0.35,
+  "max_current": 5.5,
+  "weight_g": 3.4,
+  "max_power": 66.0,
+  "io_voltage": 3.0
+}

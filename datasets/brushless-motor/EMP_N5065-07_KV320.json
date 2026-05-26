@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N5065-07_KV320",
+  "name": "N5065-07 KV320",
+  "manufacturer": "EMP",
+  "kv": 320.0,
+  "resistance": 0.03,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 430.3,
+  "max_power": 1880.0,
+  "io_voltage": 13.0
+}

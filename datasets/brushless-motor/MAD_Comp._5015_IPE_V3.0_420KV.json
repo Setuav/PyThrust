@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5015_IPE_V3.0_420KV",
+  "name": "5015 IPE V3.0 420KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 420.0,
+  "resistance": 0.025,
+  "io": 3.0,
+  "max_current": 55.0,
+  "weight_g": 230.2,
+  "max_power": 1237.0,
+  "io_voltage": 20.0
+}

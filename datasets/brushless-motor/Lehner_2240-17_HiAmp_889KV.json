@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_2240-17_HiAmp_889KV",
+  "name": "2240-17 HiAmp 889KV",
+  "manufacturer": "Lehner",
+  "kv": 889.0,
+  "resistance": 0.022,
+  "io": 1.5,
+  "max_current": 65.0,
+  "weight_g": 465.2,
+  "max_power": 1860.0,
+  "io_voltage": 10.0
+}

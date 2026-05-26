@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_D42-60-520KV",
+  "name": "D42-60-520KV",
+  "manufacturer": "GS-Models",
+  "kv": 520.0,
+  "resistance": 0.0383,
+  "io": 3.2,
+  "max_current": 63.0,
+  "weight_g": 296.3,
+  "max_power": 1300.0,
+  "io_voltage": 7.4
+}

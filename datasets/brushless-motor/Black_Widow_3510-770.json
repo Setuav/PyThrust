@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_3510-770",
+  "name": "3510-770",
+  "manufacturer": "Black Widow",
+  "kv": 766.0,
+  "resistance": 0.0685,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 149.1,
+  "max_power": 600.0,
+  "io_voltage": 14.8
+}

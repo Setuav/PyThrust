@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B40-9S_kv4690_6.7_1",
+  "name": "B40-9S kv4690 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 4690.0,
+  "resistance": 0.013,
+  "io": 4.0,
+  "max_current": 67.0,
+  "weight_g": 194.2,
+  "max_power": 900.0,
+  "io_voltage": 8.4
+}

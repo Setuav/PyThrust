@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_4.25D_3850",
+  "name": "1105/4.25D 3850",
+  "manufacturer": "NeuMotors",
+  "kv": 3850.0,
+  "resistance": 0.015,
+  "io": 1.1,
+  "max_current": 26.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

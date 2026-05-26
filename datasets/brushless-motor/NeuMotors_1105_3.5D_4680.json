@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_3.5D_4680",
+  "name": "1105/3.5D 4680",
+  "manufacturer": "NeuMotors",
+  "kv": 4680.0,
+  "resistance": 0.01,
+  "io": 1.3,
+  "max_current": 31.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

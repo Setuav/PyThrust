@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2240_4_3830",
+  "name": "TS-EZ2240/4 3830",
+  "manufacturer": "Tenshock",
+  "kv": 3830.0,
+  "resistance": 0.0031,
+  "io": 6.5,
+  "max_current": 175.0,
+  "weight_g": 290.3,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

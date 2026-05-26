@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4014_KV330_4-6S",
+  "name": "V4014 KV330 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 330.0,
+  "resistance": 0.104,
+  "io": 0.7,
+  "max_current": 30.0,
+  "weight_g": 166.1,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

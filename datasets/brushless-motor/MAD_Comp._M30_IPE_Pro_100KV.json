@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M30_IPE_Pro_100KV",
+  "name": "M30 IPE Pro 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.017,
+  "io": 4.2,
+  "max_current": 236.0,
+  "weight_g": 1631.2,
+  "max_power": 13263.0,
+  "io_voltage": 30.0
+}

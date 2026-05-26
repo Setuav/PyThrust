@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS2305-2450",
+  "name": "GTS2305-2450",
+  "manufacturer": "RCinPower",
+  "kv": 2450.0,
+  "resistance": 0.048,
+  "io": 1.4,
+  "max_current": 40.0,
+  "weight_g": 30.1,
+  "max_power": 518.0,
+  "io_voltage": 10.0
+}

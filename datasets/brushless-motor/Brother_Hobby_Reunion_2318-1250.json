@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Reunion_2318-1250",
+  "name": "Reunion 2318-1250",
+  "manufacturer": "Brother Hobby",
+  "kv": 1250.0,
+  "resistance": 0.065,
+  "io": 1.15,
+  "max_current": 37.0,
+  "weight_g": 72.0,
+  "max_power": 454.0,
+  "io_voltage": 10.0
+}

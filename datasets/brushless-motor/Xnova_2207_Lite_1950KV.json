@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Lite_1950KV",
+  "name": "2207 Lite 1950KV",
+  "manufacturer": "Xnova",
+  "kv": 1950.0,
+  "resistance": 0.06,
+  "io": 1.5,
+  "max_current": 42.0,
+  "weight_g": 30.1,
+  "max_power": 935.0,
+  "io_voltage": 10.0
+}

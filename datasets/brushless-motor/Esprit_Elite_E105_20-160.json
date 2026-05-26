@@ -1,0 +1,12 @@
+{
+  "id": "Esprit_Elite_E105_20-160",
+  "name": "Elite E105/20-160",
+  "manufacturer": "Esprit",
+  "kv": 160.0,
+  "resistance": 0.0146,
+  "io": 5.8,
+  "max_current": 195.0,
+  "weight_g": 1851.2,
+  "max_power": 9000.0,
+  "io_voltage": 10.0
+}

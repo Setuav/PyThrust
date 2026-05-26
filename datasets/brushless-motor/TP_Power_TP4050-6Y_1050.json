@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4050-6Y_1050",
+  "name": "TP4050-6Y 1050",
+  "manufacturer": "TP Power",
+  "kv": 1050.0,
+  "resistance": 0.013,
+  "io": 1.2,
+  "max_current": 198.0,
+  "weight_g": 420.4,
+  "max_power": 5000.0,
+  "io_voltage": 8.0
+}

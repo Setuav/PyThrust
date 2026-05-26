@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_707_1Y_9625",
+  "name": "707/1Y 9625",
+  "manufacturer": "NeuMotors",
+  "kv": 9625.0,
+  "resistance": 0.013,
+  "io": 2.1,
+  "max_current": 32.0,
+  "weight_g": 40.0,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

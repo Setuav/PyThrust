@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_400_7.2V",
+  "name": "Permax 400 7.2V",
+  "manufacturer": "Multiplex",
+  "kv": 2268.0,
+  "resistance": 0.473,
+  "io": 0.7,
+  "max_current": 8.0,
+  "weight_g": 73.7,
+  "max_power": 222.0,
+  "io_voltage": 7.2
+}

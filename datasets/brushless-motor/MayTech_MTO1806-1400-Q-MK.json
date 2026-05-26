@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO1806-1400-Q-MK",
+  "name": "MTO1806-1400-Q-MK",
+  "manufacturer": "MayTech",
+  "kv": 1400.0,
+  "resistance": 0.23,
+  "io": 0.35,
+  "max_current": 0.0,
+  "weight_g": 18.4,
+  "max_power": 100.0,
+  "io_voltage": 7.4
+}

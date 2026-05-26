@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4808_480KV",
+  "name": "4808 480KV",
+  "manufacturer": "Xnova",
+  "kv": 480.0,
+  "resistance": 0.115,
+  "io": 0.7,
+  "max_current": 22.0,
+  "weight_g": 100.1,
+  "max_power": 327.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2204C-1800",
+  "name": "ECO 2204C-1800",
+  "manufacturer": "Dualsky",
+  "kv": 1800.0,
+  "resistance": 0.148,
+  "io": 0.7,
+  "max_current": 10.0,
+  "weight_g": 22.1,
+  "max_power": 95.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C80-85-10_190KV",
+  "name": "C80-85-10 190KV",
+  "manufacturer": "GS-Models",
+  "kv": 190.0,
+  "resistance": 0.0162,
+  "io": 2.9,
+  "max_current": 150.0,
+  "weight_g": 1310.9,
+  "max_power": 5750.0,
+  "io_voltage": 20.0
+}

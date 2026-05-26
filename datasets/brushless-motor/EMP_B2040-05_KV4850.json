@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2040-05_KV4850",
+  "name": "B2040-05 KV4850",
+  "manufacturer": "EMP",
+  "kv": 4850.0,
+  "resistance": 0.045,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 60.1,
+  "max_power": 355.0,
+  "io_voltage": 10.0
+}

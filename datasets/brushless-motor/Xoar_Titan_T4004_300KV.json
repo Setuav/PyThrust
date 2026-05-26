@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T4004_300KV",
+  "name": "Titan T4004 300KV",
+  "manufacturer": "Xoar",
+  "kv": 300.0,
+  "resistance": 0.455,
+  "io": 0.15,
+  "max_current": 9.0,
+  "weight_g": 52.2,
+  "max_power": 204.0,
+  "io_voltage": 10.0
+}

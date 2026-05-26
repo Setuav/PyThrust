@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_0.5D_2790",
+  "name": "2020/0.5D 2790",
+  "manufacturer": "NeuMotors",
+  "kv": 2790.0,
+  "resistance": 0.001,
+  "io": 10.08,
+  "max_current": 158.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2217-6_1500KV",
+  "name": "A2217-6 1500KV",
+  "manufacturer": "Cheetah",
+  "kv": 1500.0,
+  "resistance": 0.1,
+  "io": 1.6,
+  "max_current": 28.0,
+  "weight_g": 70.0,
+  "max_power": 315.0,
+  "io_voltage": 10.0
+}

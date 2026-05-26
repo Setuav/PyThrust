@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-30T_819KV",
+  "name": "540L-30T 819KV",
+  "manufacturer": "Feigao",
+  "kv": 819.0,
+  "resistance": 0.1075,
+  "io": 0.5,
+  "max_current": 20.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

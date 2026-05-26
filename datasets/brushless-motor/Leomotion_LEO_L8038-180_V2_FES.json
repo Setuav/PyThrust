@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_L8038-180_V2_FES",
+  "name": "LEO L8038-180 V2 FES",
+  "manufacturer": "Leomotion",
+  "kv": 180.0,
+  "resistance": 0.01,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 2131.6,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

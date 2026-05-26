@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_2Y_423",
+  "name": "1539/2Y 423",
+  "manufacturer": "NeuMotors",
+  "kv": 423.0,
+  "resistance": 0.0624,
+  "io": 1.25,
+  "max_current": 49.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

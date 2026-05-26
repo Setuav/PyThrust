@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4070-7D_1220",
+  "name": "TP4070-7D 1220",
+  "manufacturer": "TP Power",
+  "kv": 1220.0,
+  "resistance": 0.0077,
+  "io": 4.9,
+  "max_current": 197.0,
+  "weight_g": 505.5,
+  "max_power": 7600.0,
+  "io_voltage": 8.0
+}

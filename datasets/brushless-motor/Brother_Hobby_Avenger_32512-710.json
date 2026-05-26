@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_32512-710",
+  "name": "Avenger 32512-710",
+  "manufacturer": "Brother Hobby",
+  "kv": 710.0,
+  "resistance": 0.071,
+  "io": 1.7,
+  "max_current": 47.0,
+  "weight_g": 107.2,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

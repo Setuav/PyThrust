@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM2815D3-4100kV",
+  "name": "BM2815D3-4100kV",
+  "manufacturer": "Detrum",
+  "kv": 4100.0,
+  "resistance": 0.019,
+  "io": 3.9,
+  "max_current": 42.0,
+  "weight_g": 70.0,
+  "max_power": 440.0,
+  "io_voltage": 10.0
+}

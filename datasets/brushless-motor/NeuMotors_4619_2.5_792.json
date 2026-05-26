@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_2.5_792",
+  "name": "4619/2.5/792",
+  "manufacturer": "NeuMotors",
+  "kv": 792.0,
+  "resistance": 0.009,
+  "io": 2.16,
+  "max_current": 215.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

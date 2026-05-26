@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_GTX-3546_910KV",
+  "name": "GTX-3546 910KV",
+  "manufacturer": "Dymond",
+  "kv": 910.0,
+  "resistance": 0.032,
+  "io": 1.3,
+  "max_current": 45.0,
+  "weight_g": 109.1,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_400_BL_920",
+  "name": "Park 400 BL 920",
+  "manufacturer": "E-flite",
+  "kv": 920.0,
+  "resistance": 0.1,
+  "io": 0.7,
+  "max_current": 13.0,
+  "weight_g": 56.1,
+  "max_power": 140.0,
+  "io_voltage": 10.0
+}

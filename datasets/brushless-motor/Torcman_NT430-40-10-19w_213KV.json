@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-40-10-19w_213KV",
+  "name": "NT430-40-10-19w 213KV",
+  "manufacturer": "Torcman",
+  "kv": 213.0,
+  "resistance": 0.046,
+  "io": 1.6,
+  "max_current": 110.0,
+  "weight_g": 700.5,
+  "max_power": 2200.0,
+  "io_voltage": 12.0
+}

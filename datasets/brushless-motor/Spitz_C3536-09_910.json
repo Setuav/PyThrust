@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C3536-09_910",
+  "name": "C3536-09 910",
+  "manufacturer": "Spitz",
+  "kv": 910.0,
+  "resistance": 0.072,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 109.1,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

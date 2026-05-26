@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5010_IPE_V2.0_310KV",
+  "name": "5010 IPE V2.0 310KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 310.0,
+  "resistance": 0.051,
+  "io": 1.25,
+  "max_current": 47.0,
+  "weight_g": 168.1,
+  "max_power": 1019.0,
+  "io_voltage": 20.0
+}

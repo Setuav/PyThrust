@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-569",
+  "name": "4606MC-569",
+  "manufacturer": "NeuMotors",
+  "kv": 569.0,
+  "resistance": 0.048,
+  "io": 0.21,
+  "max_current": 40.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

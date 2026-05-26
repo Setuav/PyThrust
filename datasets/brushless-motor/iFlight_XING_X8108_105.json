@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X8108_105",
+  "name": "XING X8108 105",
+  "manufacturer": "iFlight",
+  "kv": 105.0,
+  "resistance": 0.186,
+  "io": 0.6,
+  "max_current": 24.0,
+  "weight_g": 228.8,
+  "max_power": 750.0,
+  "io_voltage": 22.0
+}

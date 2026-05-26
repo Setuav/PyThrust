@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_24_65",
+  "name": "4625/24/65",
+  "manufacturer": "NeuMotors",
+  "kv": 65.0,
+  "resistance": 0.92,
+  "io": 0.23,
+  "max_current": 22.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Pulsar_Micro_1510-1650",
+  "name": "Pulsar Micro 1510-1650",
+  "manufacturer": "Pichler",
+  "kv": 1650.0,
+  "resistance": 0.288,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 21.0,
+  "max_power": 45.0,
+  "io_voltage": 8.4
+}

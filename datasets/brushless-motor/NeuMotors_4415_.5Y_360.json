@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4415_.5Y_360",
+  "name": "4415/.5Y 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.002,
+  "io": 6.0,
+  "max_current": 540.0,
+  "weight_g": 2520.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

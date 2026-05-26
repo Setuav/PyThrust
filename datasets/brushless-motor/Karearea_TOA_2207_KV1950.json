@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_2207_KV1950",
+  "name": "TOA 2207 KV1950",
+  "manufacturer": "Karearea",
+  "kv": 1950.0,
+  "resistance": 0.051,
+  "io": 1.0,
+  "max_current": 55.0,
+  "weight_g": 35.4,
+  "max_power": 1430.0,
+  "io_voltage": 10.0
+}

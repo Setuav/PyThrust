@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_4D_1024",
+  "name": "1120/4D 1024",
+  "manufacturer": "NeuMotors",
+  "kv": 1024.0,
+  "resistance": 0.053,
+  "io": 1.1,
+  "max_current": 27.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

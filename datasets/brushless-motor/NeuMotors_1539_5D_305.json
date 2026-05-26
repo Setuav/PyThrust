@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_5D_305",
+  "name": "1539/5D 305",
+  "manufacturer": "NeuMotors",
+  "kv": 305.0,
+  "resistance": 0.13,
+  "io": 0.9,
+  "max_current": 36.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

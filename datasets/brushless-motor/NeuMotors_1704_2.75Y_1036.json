@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_2.75Y_1036",
+  "name": "1704/2.75Y 1036",
+  "manufacturer": "NeuMotors",
+  "kv": 1036.0,
+  "resistance": 0.048,
+  "io": 0.95,
+  "max_current": 30.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

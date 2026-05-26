@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X5212S_KV280_6S",
+  "name": "X5212S KV280 6S",
+  "manufacturer": "SunnySky",
+  "kv": 280.0,
+  "resistance": 0.074,
+  "io": 0.9,
+  "max_current": 36.0,
+  "weight_g": 260.2,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

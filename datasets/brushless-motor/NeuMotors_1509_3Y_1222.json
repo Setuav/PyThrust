@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_3Y_1222",
+  "name": "1509/3Y 1222",
+  "manufacturer": "NeuMotors",
+  "kv": 1222.0,
+  "resistance": 0.0324,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_FA2212-1400",
+  "name": "FA2212-1400",
+  "manufacturer": "LDPower",
+  "kv": 1400.0,
+  "resistance": 0.0664,
+  "io": 1.07,
+  "max_current": 29.0,
+  "weight_g": 60.1,
+  "max_power": 488.0,
+  "io_voltage": 10.0
+}

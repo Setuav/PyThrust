@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_8010-0380_F3X",
+  "name": "LEO 8010-0380 F3X",
+  "manufacturer": "Leomotion",
+  "kv": 380.0,
+  "resistance": 0.01,
+  "io": 2.8,
+  "max_current": 130.0,
+  "weight_g": 715.5,
+  "max_power": 3300.0,
+  "io_voltage": 10.0
+}

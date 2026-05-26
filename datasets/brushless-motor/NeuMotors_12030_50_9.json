@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_50_9",
+  "name": "12030/50/9",
+  "manufacturer": "NeuMotors",
+  "kv": 9.0,
+  "resistance": 1.137,
+  "io": 0.2366,
+  "max_current": 24.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

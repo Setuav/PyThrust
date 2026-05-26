@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B3640-07_KV2900",
+  "name": "B3640-07 KV2900",
+  "manufacturer": "EMP",
+  "kv": 2900.0,
+  "resistance": 0.021,
+  "io": 2.5,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 1125.0,
+  "io_voltage": 10.0
+}

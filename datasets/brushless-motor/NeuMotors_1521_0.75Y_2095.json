@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_0.75Y_2095",
+  "name": "1521/0.75Y 2095",
+  "manufacturer": "NeuMotors",
+  "kv": 2095.0,
+  "resistance": 0.005,
+  "io": 3.33,
+  "max_current": 122.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

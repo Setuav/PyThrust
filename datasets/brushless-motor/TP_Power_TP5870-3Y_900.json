@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5870-3Y_900",
+  "name": "TP5870-3Y 900",
+  "manufacturer": "TP Power",
+  "kv": 900.0,
+  "resistance": 0.0048,
+  "io": 6.2,
+  "max_current": 340.0,
+  "weight_g": 1200.9,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

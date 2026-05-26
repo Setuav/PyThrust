@@ -1,0 +1,12 @@
+{
+  "id": "Jeti_Phasor_Race_2014_6800",
+  "name": "Phasor Race 2014/6800",
+  "manufacturer": "Jeti",
+  "kv": 6800.0,
+  "resistance": 0.0054,
+  "io": 7.8,
+  "max_current": 180.0,
+  "weight_g": 220.3,
+  "max_power": 750.0,
+  "io_voltage": 8.0
+}

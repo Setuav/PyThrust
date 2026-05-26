@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4410_1Y_235",
+  "name": "4410/1Y 235",
+  "manufacturer": "NeuMotors",
+  "kv": 235.0,
+  "resistance": 0.006,
+  "io": 3.0,
+  "max_current": 235.0,
+  "weight_g": 1982.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

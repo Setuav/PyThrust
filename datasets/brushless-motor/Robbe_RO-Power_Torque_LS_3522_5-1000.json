@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_LS_3522_5-1000",
+  "name": "RO-Power Torque LS 3522/5-1000",
+  "manufacturer": "Robbe",
+  "kv": 1000.0,
+  "resistance": 0.065,
+  "io": 1.523,
+  "max_current": 49.0,
+  "weight_g": 166.4,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

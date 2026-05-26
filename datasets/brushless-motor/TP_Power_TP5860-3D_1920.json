@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5860-3D_1920",
+  "name": "TP5860-3D 1920",
+  "manufacturer": "TP Power",
+  "kv": 1920.0,
+  "resistance": 0.001,
+  "io": 13.0,
+  "max_current": 526.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 6.0
+}

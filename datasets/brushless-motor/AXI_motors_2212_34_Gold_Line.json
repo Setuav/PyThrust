@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2212_34_Gold_Line",
+  "name": "2212/34 Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 691.0,
+  "resistance": 0.292,
+  "io": 0.31,
+  "max_current": 12.0,
+  "weight_g": 56.1,
+  "max_power": 170.0,
+  "io_voltage": 8.0
+}

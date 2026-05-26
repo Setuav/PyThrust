@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_1406-3100KV",
+  "name": "1406-3100KV",
+  "manufacturer": "Xnova",
+  "kv": 3100.0,
+  "resistance": 0.18,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 13.9,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

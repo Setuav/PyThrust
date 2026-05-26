@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_5.5D_327",
+  "name": "1533/5.5D 327",
+  "manufacturer": "NeuMotors",
+  "kv": 327.0,
+  "resistance": 0.1331,
+  "io": 0.82,
+  "max_current": 33.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

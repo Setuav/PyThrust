@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_microRex_340L-800",
+  "name": "microRex 340L-800*",
+  "manufacturer": "Flyware",
+  "kv": 800.0,
+  "resistance": 0.04,
+  "io": 2.1,
+  "max_current": 56.0,
+  "weight_g": 160.2,
+  "max_power": 825.0,
+  "io_voltage": 10.0
+}

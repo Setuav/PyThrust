@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2838EG-9",
+  "name": "XM2838EG-9",
+  "manufacturer": "Dualsky",
+  "kv": 1350.0,
+  "resistance": 0.0293,
+  "io": 1.9,
+  "max_current": 30.0,
+  "weight_g": 88.2,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-2D_6600",
+  "name": "TP3640-2D 6600",
+  "manufacturer": "TP Power",
+  "kv": 6600.0,
+  "resistance": 0.00094,
+  "io": 11.2,
+  "max_current": 350.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

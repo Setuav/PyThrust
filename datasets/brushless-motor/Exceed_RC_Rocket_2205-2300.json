@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_2205-2300",
+  "name": "Rocket 2205-2300",
+  "manufacturer": "Exceed RC",
+  "kv": 2300.0,
+  "resistance": 0.105,
+  "io": 0.65,
+  "max_current": 22.0,
+  "weight_g": 33.2,
+  "max_power": 145.0,
+  "io_voltage": 8.0
+}

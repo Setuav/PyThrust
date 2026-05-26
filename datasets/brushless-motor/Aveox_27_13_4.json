@@ -1,0 +1,12 @@
+{
+  "id": "Aveox_27_13_4",
+  "name": "27/13/4*",
+  "manufacturer": "Aveox",
+  "kv": 2343.0,
+  "resistance": 0.073,
+  "io": 0.84,
+  "max_current": 23.0,
+  "weight_g": 81.1,
+  "max_power": 240.0,
+  "io_voltage": 8.0
+}

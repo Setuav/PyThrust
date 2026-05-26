@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4520-370",
+  "name": "4520-370",
+  "manufacturer": "BadAss",
+  "kv": 370.0,
+  "resistance": 0.027,
+  "io": 1.33,
+  "max_current": 65.0,
+  "weight_g": 399.2,
+  "max_power": 1440.0,
+  "io_voltage": 10.0
+}

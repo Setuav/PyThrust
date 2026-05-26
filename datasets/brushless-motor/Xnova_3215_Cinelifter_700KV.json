@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_3215_Cinelifter_700KV",
+  "name": "3215 Cinelifter 700KV",
+  "manufacturer": "Xnova",
+  "kv": 700.0,
+  "resistance": 0.056,
+  "io": 1.1,
+  "max_current": 58.0,
+  "weight_g": 125.0,
+  "max_power": 1717.0,
+  "io_voltage": 10.0
+}

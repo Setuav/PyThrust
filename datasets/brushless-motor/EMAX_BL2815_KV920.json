@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2815_KV920",
+  "name": "BL2815 KV920",
+  "manufacturer": "EMAX",
+  "kv": 920.0,
+  "resistance": 0.035,
+  "io": 2.7,
+  "max_current": 31.0,
+  "weight_g": 112.0,
+  "max_power": 391.0,
+  "io_voltage": 11.0
+}

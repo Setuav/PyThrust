@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_T4006_350KV",
+  "name": "Titan T4006 350KV",
+  "manufacturer": "Xoar",
+  "kv": 350.0,
+  "resistance": 0.21,
+  "io": 0.26,
+  "max_current": 14.0,
+  "weight_g": 66.1,
+  "max_power": 314.0,
+  "io_voltage": 10.0
+}

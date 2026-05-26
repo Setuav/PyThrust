@@ -1,0 +1,12 @@
+{
+  "id": "Actro_C-6_1170",
+  "name": "C-6 (1170)",
+  "manufacturer": "Actro",
+  "kv": 1170.0,
+  "resistance": 0.072,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 140.0,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

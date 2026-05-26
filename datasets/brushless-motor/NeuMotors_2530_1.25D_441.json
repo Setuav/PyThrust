@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_1.25D_441",
+  "name": "2530/1.25D 441",
+  "manufacturer": "NeuMotors",
+  "kv": 441.0,
+  "resistance": 0.004,
+  "io": 4.3,
+  "max_current": 353.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

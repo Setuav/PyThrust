@@ -1,0 +1,12 @@
+{
+  "id": "EMP_SK3530-09_KV1400",
+  "name": "SK3530-09 KV1400",
+  "manufacturer": "EMP",
+  "kv": 1400.0,
+  "resistance": 0.058,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 90.2,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

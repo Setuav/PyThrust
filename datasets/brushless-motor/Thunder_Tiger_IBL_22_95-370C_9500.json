@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_IBL_22_95-370C_9500",
+  "name": "IBL 22/95-370C 9500",
+  "manufacturer": "Thunder Tiger",
+  "kv": 9500.0,
+  "resistance": 0.027,
+  "io": 1.3,
+  "max_current": 20.0,
+  "weight_g": 57.0,
+  "max_power": 230.0,
+  "io_voltage": 10.0
+}

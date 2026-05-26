@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_X1104-7000",
+  "name": "X1104-7000",
+  "manufacturer": "Surpass",
+  "kv": 7000.0,
+  "resistance": 0.175,
+  "io": 0.48,
+  "max_current": 8.0,
+  "weight_g": 5.7,
+  "max_power": 50.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_4.5D_2200",
+  "name": "1506/4.5D 2200",
+  "manufacturer": "NeuMotors",
+  "kv": 2200.0,
+  "resistance": 0.0162,
+  "io": 1.0,
+  "max_current": 37.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

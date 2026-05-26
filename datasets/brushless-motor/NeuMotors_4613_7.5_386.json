@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4613_7.5_386",
+  "name": "4613/7.5/386",
+  "manufacturer": "NeuMotors",
+  "kv": 386.0,
+  "resistance": 0.06,
+  "io": 0.72,
+  "max_current": 72.0,
+  "weight_g": 209.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

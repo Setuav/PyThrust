@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_4130C-V2-290",
+  "name": "ECO 4130C-V2-290",
+  "manufacturer": "Dualsky",
+  "kv": 290.0,
+  "resistance": 0.0388,
+  "io": 0.8,
+  "max_current": 65.0,
+  "weight_g": 380.2,
+  "max_power": 2080.0,
+  "io_voltage": 10.0
+}

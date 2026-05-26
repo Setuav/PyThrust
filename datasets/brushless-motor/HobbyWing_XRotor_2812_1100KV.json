@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2812_1100KV",
+  "name": "XRotor 2812 1100KV",
+  "manufacturer": "HobbyWing",
+  "kv": 1100.0,
+  "resistance": 0.047,
+  "io": 1.88,
+  "max_current": 64.0,
+  "weight_g": 83.3,
+  "max_power": 1538.0,
+  "io_voltage": 24.0
+}

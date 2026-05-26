@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_0.25D_6092",
+  "name": "1539/0.25D 6092",
+  "manufacturer": "NeuMotors",
+  "kv": 6092.0,
+  "resistance": 0.0003,
+  "io": 18.0,
+  "max_current": 711.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

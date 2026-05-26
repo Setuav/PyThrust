@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_1.25D_1440",
+  "name": "1533/1.25D 1440",
+  "manufacturer": "NeuMotors",
+  "kv": 1440.0,
+  "resistance": 0.007,
+  "io": 3.6,
+  "max_current": 144.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

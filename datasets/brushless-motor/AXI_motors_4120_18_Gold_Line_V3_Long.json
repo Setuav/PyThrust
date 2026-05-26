@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_4120_18_Gold_Line_V3_Long",
+  "name": "4120/18 Gold Line V3 Long",
+  "manufacturer": "AXI motors",
+  "kv": 515.0,
+  "resistance": 0.021,
+  "io": 1.5,
+  "max_current": 55.0,
+  "weight_g": 355.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

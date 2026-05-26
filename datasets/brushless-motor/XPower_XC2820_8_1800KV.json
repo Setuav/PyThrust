@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2820_8_1800KV",
+  "name": "XC2820/8  1800KV",
+  "manufacturer": "XPower",
+  "kv": 1800.0,
+  "resistance": 0.0253,
+  "io": 1.9,
+  "max_current": 35.0,
+  "weight_g": 85.0,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U15L_KV43",
+  "name": "U15L KV43",
+  "manufacturer": "T-Motor",
+  "kv": 43.0,
+  "resistance": 0.017,
+  "io": 3.8,
+  "max_current": 143.0,
+  "weight_g": 1741.2,
+  "max_power": 8580.0,
+  "io_voltage": 10.0
+}

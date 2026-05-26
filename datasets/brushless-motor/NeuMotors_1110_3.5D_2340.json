@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_3.5D_2340",
+  "name": "1110/3.5D 2340",
+  "manufacturer": "NeuMotors",
+  "kv": 2340.0,
+  "resistance": 0.02,
+  "io": 1.3,
+  "max_current": 39.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

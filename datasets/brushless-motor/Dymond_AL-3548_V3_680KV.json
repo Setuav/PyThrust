@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-3548_V3_680KV",
+  "name": "AL-3548 V3 680KV",
+  "manufacturer": "Dymond",
+  "kv": 680.0,
+  "resistance": 0.0743,
+  "io": 1.15,
+  "max_current": 40.0,
+  "weight_g": 170.1,
+  "max_power": 500.0,
+  "io_voltage": 8.14
+}

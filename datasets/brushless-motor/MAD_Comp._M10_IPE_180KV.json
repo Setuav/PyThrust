@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M10_IPE_180KV",
+  "name": "M10 IPE 180KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 180.0,
+  "resistance": 0.021,
+  "io": 4.4,
+  "max_current": 99.0,
+  "weight_g": 642.4,
+  "max_power": 4714.0,
+  "io_voltage": 20.0
+}

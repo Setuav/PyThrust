@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_RB2204-13_2500Kv",
+  "name": "RB2204-13 2500Kv",
+  "manufacturer": "Lumenier",
+  "kv": 2500.0,
+  "resistance": 0.26,
+  "io": 0.58,
+  "max_current": 15.0,
+  "weight_g": 21.5,
+  "max_power": 190.0,
+  "io_voltage": 12.6
+}

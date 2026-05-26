@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR2306.5_1850kv",
+  "name": "GR2306.5 1850kv",
+  "manufacturer": "GEPRC",
+  "kv": 1850.0,
+  "resistance": 0.058,
+  "io": 1.15,
+  "max_current": 36.0,
+  "weight_g": 31.5,
+  "max_power": 850.0,
+  "io_voltage": 10.0
+}

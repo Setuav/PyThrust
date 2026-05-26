@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M20_MiNi_IPE_90KV",
+  "name": "M20 MiNi IPE 90KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 90.0,
+  "resistance": 0.034,
+  "io": 2.5,
+  "max_current": 112.0,
+  "weight_g": 812.5,
+  "max_power": 5365.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT5230A-200",
+  "name": "AT5230A-200",
+  "manufacturer": "T-Motor",
+  "kv": 200.0,
+  "resistance": 0.022,
+  "io": 2.7,
+  "max_current": 75.0,
+  "weight_g": 610.4,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

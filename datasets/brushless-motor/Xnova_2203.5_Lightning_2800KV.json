@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2203.5_Lightning_2800KV",
+  "name": "2203.5 Lightning 2800KV",
+  "manufacturer": "Xnova",
+  "kv": 2800.0,
+  "resistance": 0.07,
+  "io": 1.4,
+  "max_current": 33.0,
+  "weight_g": 19.0,
+  "max_power": 739.0,
+  "io_voltage": 10.0
+}

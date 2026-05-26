@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3038-5200",
+  "name": "L3038-5200",
+  "manufacturer": "Leomotion",
+  "kv": 5200.0,
+  "resistance": 0.003,
+  "io": 3.5,
+  "max_current": 0.0,
+  "weight_g": 175.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

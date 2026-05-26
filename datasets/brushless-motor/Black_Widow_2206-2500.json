@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_2206-2500",
+  "name": "2206-2500",
+  "manufacturer": "Black Widow",
+  "kv": 2430.0,
+  "resistance": 0.037,
+  "io": 1.11,
+  "max_current": 0.0,
+  "weight_g": 41.1,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Spitz_C3542-06_1000",
+  "name": "C3542-06 1000",
+  "manufacturer": "Spitz",
+  "kv": 1000.0,
+  "resistance": 0.039,
+  "io": 2.0,
+  "max_current": 55.0,
+  "weight_g": 132.1,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

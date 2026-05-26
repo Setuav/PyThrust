@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-30T_556KV",
+  "name": "540XL-30T 556KV",
+  "manufacturer": "Feigao",
+  "kv": 556.0,
+  "resistance": 0.1025,
+  "io": 0.4,
+  "max_current": 22.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

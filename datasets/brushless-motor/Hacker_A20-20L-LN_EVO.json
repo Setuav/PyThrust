@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-20L-LN_EVO",
+  "name": "A20-20L-LN EVO",
+  "manufacturer": "Hacker",
+  "kv": 1022.0,
+  "resistance": 0.089,
+  "io": 0.85,
+  "max_current": 25.0,
+  "weight_g": 68.0,
+  "max_power": 200.0,
+  "io_voltage": 8.4
+}

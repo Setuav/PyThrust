@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_3008-1500",
+  "name": "Avenger 3008-1500",
+  "manufacturer": "Brother Hobby",
+  "kv": 1500.0,
+  "resistance": 0.0463,
+  "io": 1.73,
+  "max_current": 45.0,
+  "weight_g": 126.2,
+  "max_power": 1132.0,
+  "io_voltage": 10.0
+}

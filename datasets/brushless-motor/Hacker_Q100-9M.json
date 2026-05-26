@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q100-9M",
+  "name": "Q100-9M",
+  "manufacturer": "Hacker",
+  "kv": 110.0,
+  "resistance": 0.0106,
+  "io": 2.0,
+  "max_current": 200.0,
+  "weight_g": 1831.4,
+  "max_power": 7100.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2820-1170",
+  "name": "2820-1170",
+  "manufacturer": "Tempest",
+  "kv": 1170.0,
+  "resistance": 0.027,
+  "io": 2.85,
+  "max_current": 58.0,
+  "weight_g": 134.9,
+  "max_power": 1070.0,
+  "io_voltage": 10.0
+}

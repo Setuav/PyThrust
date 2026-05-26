@@ -1,0 +1,12 @@
+{
+  "id": "BlackMagic_2216_10-880KV",
+  "name": "2216/10-880KV",
+  "manufacturer": "BlackMagic",
+  "kv": 880.0,
+  "resistance": 0.11,
+  "io": 0.88,
+  "max_current": 0.0,
+  "weight_g": 69.2,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

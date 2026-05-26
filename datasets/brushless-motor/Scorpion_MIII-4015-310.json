@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_MIII-4015-310",
+  "name": "MIII-4015-310",
+  "manufacturer": "Scorpion",
+  "kv": 310.0,
+  "resistance": 0.109,
+  "io": 0.51,
+  "max_current": 26.0,
+  "weight_g": 179.7,
+  "max_power": 962.0,
+  "io_voltage": 10.0
+}

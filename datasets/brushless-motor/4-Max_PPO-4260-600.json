@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-4260-600",
+  "name": "PPO-4260-600",
+  "manufacturer": "4-Max",
+  "kv": 600.0,
+  "resistance": 0.017,
+  "io": 4.7,
+  "max_current": 36.0,
+  "weight_g": 265.1,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

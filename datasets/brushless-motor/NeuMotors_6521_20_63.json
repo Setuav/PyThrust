@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_20_63",
+  "name": "6521/20/63",
+  "manufacturer": "NeuMotors",
+  "kv": 63.0,
+  "resistance": 0.339,
+  "io": 0.245,
+  "max_current": 36.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

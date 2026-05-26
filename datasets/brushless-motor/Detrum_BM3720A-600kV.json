@@ -1,0 +1,12 @@
+{
+  "id": "Detrum_BM3720A-600kV",
+  "name": "BM3720A-600kV",
+  "manufacturer": "Detrum",
+  "kv": 600.0,
+  "resistance": 0.067,
+  "io": 1.44,
+  "max_current": 50.0,
+  "weight_g": 115.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

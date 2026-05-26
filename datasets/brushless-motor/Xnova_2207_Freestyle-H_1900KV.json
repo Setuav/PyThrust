@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Freestyle-H_1900KV",
+  "name": "2207 Freestyle-H 1900KV",
+  "manufacturer": "Xnova",
+  "kv": 1900.0,
+  "resistance": 0.06,
+  "io": 1.5,
+  "max_current": 48.0,
+  "weight_g": 34.6,
+  "max_power": 1063.0,
+  "io_voltage": 10.0
+}

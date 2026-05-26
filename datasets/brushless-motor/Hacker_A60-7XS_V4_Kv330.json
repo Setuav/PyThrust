@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-7XS_V4_Kv330",
+  "name": "A60-7XS V4 Kv330",
+  "manufacturer": "Hacker",
+  "kv": 330.0,
+  "resistance": 0.02,
+  "io": 1.6,
+  "max_current": 120.0,
+  "weight_g": 455.3,
+  "max_power": 2400.0,
+  "io_voltage": 8.4
+}

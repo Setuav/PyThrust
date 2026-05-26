@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C18-20-12_2120KV",
+  "name": "C18-20-12 2120KV",
+  "manufacturer": "GS-Models",
+  "kv": 2120.0,
+  "resistance": 0.294,
+  "io": 0.7,
+  "max_current": 8.0,
+  "weight_g": 18.1,
+  "max_power": 70.0,
+  "io_voltage": 10.0
+}

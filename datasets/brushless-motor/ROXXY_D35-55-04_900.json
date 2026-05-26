@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_D35-55-04_900",
+  "name": "D35-55-04 900",
+  "manufacturer": "ROXXY",
+  "kv": 900.0,
+  "resistance": 0.026,
+  "io": 3.0,
+  "max_current": 60.0,
+  "weight_g": 175.2,
+  "max_power": 1000.0,
+  "io_voltage": 11.1
+}

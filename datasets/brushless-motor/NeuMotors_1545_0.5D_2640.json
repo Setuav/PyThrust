@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_0.5D_2640",
+  "name": "1545/0.5D 2640",
+  "manufacturer": "NeuMotors",
+  "kv": 2640.0,
+  "resistance": 0.001,
+  "io": 9.0,
+  "max_current": 352.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

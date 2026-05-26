@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_3520-560",
+  "name": "3520-560",
+  "manufacturer": "BadAss",
+  "kv": 560.0,
+  "resistance": 0.03,
+  "io": 1.45,
+  "max_current": 54.0,
+  "weight_g": 227.9,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

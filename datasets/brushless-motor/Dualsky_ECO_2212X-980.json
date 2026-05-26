@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2212X-980",
+  "name": "ECO 2212X-980",
+  "manufacturer": "Dualsky",
+  "kv": 980.0,
+  "resistance": 0.14,
+  "io": 0.4,
+  "max_current": 12.0,
+  "weight_g": 50.2,
+  "max_power": 128.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Uberall_Nippy_0808_98",
+  "name": "Nippy 0808/98",
+  "manufacturer": "Uberall",
+  "kv": 970.0,
+  "resistance": 0.255,
+  "io": 0.7,
+  "max_current": 8.0,
+  "weight_g": 39.7,
+  "max_power": 120.0,
+  "io_voltage": 8.0
+}

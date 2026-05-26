@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA1500R.5",
+  "name": "GA1500R.5",
+  "manufacturer": "Dualsky",
+  "kv": 500.0,
+  "resistance": 0.0162,
+  "io": 2.0,
+  "max_current": 70.0,
+  "weight_g": 280.1,
+  "max_power": 1700.0,
+  "io_voltage": 10.0
+}

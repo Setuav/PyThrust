@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_4114-530_R",
+  "name": "LEO 4114-530 R",
+  "manufacturer": "Leomotion",
+  "kv": 530.0,
+  "resistance": 0.047,
+  "io": 1.18,
+  "max_current": 41.0,
+  "weight_g": 171.2,
+  "max_power": 910.0,
+  "io_voltage": 10.0
+}

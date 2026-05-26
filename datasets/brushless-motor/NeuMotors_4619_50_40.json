@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_50_40",
+  "name": "4619/50/40",
+  "manufacturer": "NeuMotors",
+  "kv": 40.0,
+  "resistance": 3.12,
+  "io": 0.11,
+  "max_current": 11.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

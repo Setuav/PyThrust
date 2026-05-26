@@ -1,0 +1,12 @@
+{
+  "id": "Karearea_TOA_2306_KV2550",
+  "name": "TOA 2306 KV2550",
+  "manufacturer": "Karearea",
+  "kv": 2550.0,
+  "resistance": 0.051,
+  "io": 2.0,
+  "max_current": 51.0,
+  "weight_g": 34.0,
+  "max_power": 1660.0,
+  "io_voltage": 10.0
+}

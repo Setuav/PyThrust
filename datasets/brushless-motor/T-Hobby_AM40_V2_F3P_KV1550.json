@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_AM40_V2_F3P_KV1550",
+  "name": "AM40 V2 F3P KV1550",
+  "manufacturer": "T-Hobby",
+  "kv": 1550.0,
+  "resistance": 0.135,
+  "io": 0.62,
+  "max_current": 19.0,
+  "weight_g": 24.1,
+  "max_power": 208.0,
+  "io_voltage": 10.0
+}

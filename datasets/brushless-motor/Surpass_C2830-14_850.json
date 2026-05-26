@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C2830-14_850",
+  "name": "C2830-14 850",
+  "manufacturer": "Surpass",
+  "kv": 850.0,
+  "resistance": 0.189,
+  "io": 0.6,
+  "max_current": 19.0,
+  "weight_g": 57.0,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

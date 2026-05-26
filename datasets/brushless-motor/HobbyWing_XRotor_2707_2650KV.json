@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2707_2650KV",
+  "name": "XRotor 2707 2650KV",
+  "manufacturer": "HobbyWing",
+  "kv": 2650.0,
+  "resistance": 0.037,
+  "io": 1.4,
+  "max_current": 51.0,
+  "weight_g": 32.0,
+  "max_power": 822.0,
+  "io_voltage": 10.0
+}

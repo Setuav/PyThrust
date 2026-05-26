@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_T2204_2900KV",
+  "name": "T2204 2900KV",
+  "manufacturer": "Xnova",
+  "kv": 2900.0,
+  "resistance": 0.056,
+  "io": 1.2,
+  "max_current": 33.0,
+  "weight_g": 20.4,
+  "max_power": 488.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_56123_9D",
+  "name": "SSS 56123 9D",
+  "manufacturer": "TFL Hobby",
+  "kv": 620.0,
+  "resistance": 0.0982,
+  "io": 3.5,
+  "max_current": 210.0,
+  "weight_g": 1331.0,
+  "max_power": 15000.0,
+  "io_voltage": 11.1
+}

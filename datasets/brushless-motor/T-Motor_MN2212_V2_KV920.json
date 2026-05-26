@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN2212_V2_KV920",
+  "name": "MN2212 V2 KV920",
+  "manufacturer": "T-Motor",
+  "kv": 920.0,
+  "resistance": 0.142,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 54.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

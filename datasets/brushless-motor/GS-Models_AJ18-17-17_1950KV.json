@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ18-17-17_1950KV",
+  "name": "AJ18-17-17 1950KV",
+  "manufacturer": "GS-Models",
+  "kv": 1950.0,
+  "resistance": 0.552,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 9.9,
+  "max_power": 35.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_12030_2_217",
+  "name": "12030/2/217",
+  "manufacturer": "NeuMotors",
+  "kv": 217.0,
+  "resistance": 0.0022,
+  "io": 5.915,
+  "max_current": 605.0,
+  "weight_g": 2596.8,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

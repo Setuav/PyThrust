@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_3.5D_1466",
+  "name": "1704/3.5D 1466",
+  "manufacturer": "NeuMotors",
+  "kv": 1466.0,
+  "resistance": 0.026,
+  "io": 1.34,
+  "max_current": 42.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

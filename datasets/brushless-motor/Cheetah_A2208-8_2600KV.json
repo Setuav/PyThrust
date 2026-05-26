@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A2208-8_2600KV",
+  "name": "A2208-8 2600KV",
+  "manufacturer": "Cheetah",
+  "kv": 2600.0,
+  "resistance": 0.062,
+  "io": 1.3,
+  "max_current": 20.0,
+  "weight_g": 39.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

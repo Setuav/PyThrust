@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X1507_4200",
+  "name": "XING X1507 4200",
+  "manufacturer": "iFlight",
+  "kv": 4200.0,
+  "resistance": 0.165,
+  "io": 1.23,
+  "max_current": 22.0,
+  "weight_g": 15.9,
+  "max_power": 347.0,
+  "io_voltage": 5.5
+}

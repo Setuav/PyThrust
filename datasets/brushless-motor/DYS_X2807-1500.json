@@ -1,0 +1,12 @@
+{
+  "id": "DYS_X2807-1500",
+  "name": "X2807-1500",
+  "manufacturer": "DYS",
+  "kv": 1500.0,
+  "resistance": 0.055,
+  "io": 1.2,
+  "max_current": 63.0,
+  "weight_g": 48.8,
+  "max_power": 1300.0,
+  "io_voltage": 10.0
+}

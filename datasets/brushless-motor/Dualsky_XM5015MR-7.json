@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM5015MR-7",
+  "name": "XM5015MR-7",
+  "manufacturer": "Dualsky",
+  "kv": 340.0,
+  "resistance": 0.075,
+  "io": 0.7,
+  "max_current": 30.0,
+  "weight_g": 150.3,
+  "max_power": 375.0,
+  "io_voltage": 10.0
+}

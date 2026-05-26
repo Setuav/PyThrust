@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Freestyle-H_2450KV",
+  "name": "2207 Freestyle-H 2450KV",
+  "manufacturer": "Xnova",
+  "kv": 2450.0,
+  "resistance": 0.045,
+  "io": 2.2,
+  "max_current": 50.0,
+  "weight_g": 34.6,
+  "max_power": 832.0,
+  "io_voltage": 10.0
+}

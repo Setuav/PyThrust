@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_X1104-8700",
+  "name": "X1104-8700",
+  "manufacturer": "Surpass",
+  "kv": 8700.0,
+  "resistance": 0.122,
+  "io": 0.52,
+  "max_current": 9.0,
+  "weight_g": 5.7,
+  "max_power": 50.0,
+  "io_voltage": 8.0
+}

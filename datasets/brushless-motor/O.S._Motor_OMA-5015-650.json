@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-5015-650",
+  "name": "OMA-5015-650",
+  "manufacturer": "O.S. Motor",
+  "kv": 650.0,
+  "resistance": 0.02,
+  "io": 1.5,
+  "max_current": 80.0,
+  "weight_g": 295.1,
+  "max_power": 890.0,
+  "io_voltage": 10.0
+}

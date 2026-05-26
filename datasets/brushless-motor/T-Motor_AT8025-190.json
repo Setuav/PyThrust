@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT8025-190",
+  "name": "AT8025-190",
+  "manufacturer": "T-Motor",
+  "kv": 190.0,
+  "resistance": 0.01,
+  "io": 5.0,
+  "max_current": 135.0,
+  "weight_g": 990.8,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

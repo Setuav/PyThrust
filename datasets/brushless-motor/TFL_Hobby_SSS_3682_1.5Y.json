@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_3682_1.5Y",
+  "name": "SSS 3682 1.5Y",
+  "manufacturer": "TFL Hobby",
+  "kv": 2050.0,
+  "resistance": 0.0073,
+  "io": 2.5,
+  "max_current": 128.0,
+  "weight_g": 380.2,
+  "max_power": 3600.0,
+  "io_voltage": 11.1
+}

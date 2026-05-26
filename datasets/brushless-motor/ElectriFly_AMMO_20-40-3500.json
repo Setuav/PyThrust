@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_20-40-3500",
+  "name": "AMMO 20-40-3500",
+  "manufacturer": "ElectriFly",
+  "kv": 3500.0,
+  "resistance": 0.0829,
+  "io": 1.6,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 275.0,
+  "io_voltage": 7.4
+}

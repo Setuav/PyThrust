@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_HKIV-4035-560",
+  "name": "HKIV-4035-560",
+  "manufacturer": "Scorpion",
+  "kv": 560.0,
+  "resistance": 0.013,
+  "io": 2.81,
+  "max_current": 100.0,
+  "weight_g": 456.1,
+  "max_power": 4440.0,
+  "io_voltage": 10.0
+}

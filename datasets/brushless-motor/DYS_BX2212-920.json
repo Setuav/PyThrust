@@ -1,0 +1,12 @@
+{
+  "id": "DYS_BX2212-920",
+  "name": "BX2212-920",
+  "manufacturer": "DYS",
+  "kv": 920.0,
+  "resistance": 0.154,
+  "io": 0.3,
+  "max_current": 17.0,
+  "weight_g": 57.0,
+  "max_power": 318.0,
+  "io_voltage": 14.8
+}

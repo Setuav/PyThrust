@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_0.5Y_1692",
+  "name": "1539/0.5Y 1692",
+  "manufacturer": "NeuMotors",
+  "kv": 1692.0,
+  "resistance": 0.004,
+  "io": 5.0,
+  "max_current": 197.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

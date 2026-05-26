@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC5025_16_470KV",
+  "name": "XC5025/16 470KV",
+  "manufacturer": "XPower",
+  "kv": 470.0,
+  "resistance": 0.026,
+  "io": 1.0,
+  "max_current": 60.0,
+  "weight_g": 340.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

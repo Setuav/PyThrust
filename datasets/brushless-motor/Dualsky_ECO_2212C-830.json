@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2212C-830",
+  "name": "ECO 2212C-830",
+  "manufacturer": "Dualsky",
+  "kv": 830.0,
+  "resistance": 0.145,
+  "io": 0.57,
+  "max_current": 15.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

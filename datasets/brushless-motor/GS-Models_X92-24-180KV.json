@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_X92-24-180KV",
+  "name": "X92-24-180KV",
+  "manufacturer": "GS-Models",
+  "kv": 180.0,
+  "resistance": 0.0515,
+  "io": 0.85,
+  "max_current": 55.0,
+  "weight_g": 335.4,
+  "max_power": 1350.0,
+  "io_voltage": 10.0
+}

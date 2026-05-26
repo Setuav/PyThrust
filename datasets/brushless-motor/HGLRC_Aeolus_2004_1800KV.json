@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_2004_1800KV",
+  "name": "Aeolus 2004 1800KV",
+  "manufacturer": "HGLRC",
+  "kv": 1800.0,
+  "resistance": 0.22,
+  "io": 0.55,
+  "max_current": 12.5,
+  "weight_g": 15.9,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

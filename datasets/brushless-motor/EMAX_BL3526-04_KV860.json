@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL3526-04_KV860",
+  "name": "BL3526-04 KV860",
+  "manufacturer": "EMAX",
+  "kv": 860.0,
+  "resistance": 0.0135,
+  "io": 4.0,
+  "max_current": 62.0,
+  "weight_g": 250.0,
+  "max_power": 1302.0,
+  "io_voltage": 14.0
+}

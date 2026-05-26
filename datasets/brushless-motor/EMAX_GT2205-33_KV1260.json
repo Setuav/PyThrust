@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2205-33_KV1260",
+  "name": "GT2205-33 KV1260",
+  "manufacturer": "EMAX",
+  "kv": 1260.0,
+  "resistance": 0.31,
+  "io": 0.4,
+  "max_current": 7.0,
+  "weight_g": 23.0,
+  "max_power": 81.0,
+  "io_voltage": 11.0
+}

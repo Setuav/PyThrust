@@ -1,0 +1,12 @@
+{
+  "id": "Xoar_Titan_Air_TA60-15_250KV",
+  "name": "Titan Air TA60-15 250KV",
+  "manufacturer": "Xoar",
+  "kv": 250.0,
+  "resistance": 0.0392,
+  "io": 1.7,
+  "max_current": 49.0,
+  "weight_g": 292.3,
+  "max_power": 1176.0,
+  "io_voltage": 10.0
+}

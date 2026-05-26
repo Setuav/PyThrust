@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_1930-8_2613KV",
+  "name": "1930-8 2613KV",
+  "manufacturer": "Lehner",
+  "kv": 2613.0,
+  "resistance": 0.008,
+  "io": 1.77,
+  "max_current": 60.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

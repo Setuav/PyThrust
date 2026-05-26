@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_17_60",
+  "name": "4638/17/60",
+  "manufacturer": "NeuMotors",
+  "kv": 60.0,
+  "resistance": 0.675,
+  "io": 0.318,
+  "max_current": 32.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

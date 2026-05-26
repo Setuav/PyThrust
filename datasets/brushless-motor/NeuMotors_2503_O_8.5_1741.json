@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2503_O_8.5_1741",
+  "name": "2503 O/8.5/1741",
+  "manufacturer": "NeuMotors",
+  "kv": 1741.0,
+  "resistance": 0.29,
+  "io": 0.353,
+  "max_current": 23.0,
+  "weight_g": 13.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

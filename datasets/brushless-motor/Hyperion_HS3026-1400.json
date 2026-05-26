@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS3026-1400",
+  "name": "HS3026-1400",
+  "manufacturer": "Hyperion",
+  "kv": 1400.0,
+  "resistance": 0.01,
+  "io": 3.33,
+  "max_current": 108.0,
+  "weight_g": 199.0,
+  "max_power": 2265.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C80-75-08_230KV",
+  "name": "C80-75-08 230KV",
+  "manufacturer": "GS-Models",
+  "kv": 230.0,
+  "resistance": 0.0111,
+  "io": 3.3,
+  "max_current": 130.0,
+  "weight_g": 1050.9,
+  "max_power": 4500.0,
+  "io_voltage": 20.0
+}

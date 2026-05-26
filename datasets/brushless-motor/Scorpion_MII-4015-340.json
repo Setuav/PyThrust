@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_MII-4015-340",
+  "name": "MII-4015-340",
+  "manufacturer": "Scorpion",
+  "kv": 340.0,
+  "resistance": 0.108,
+  "io": 0.47,
+  "max_current": 34.0,
+  "weight_g": 167.5,
+  "max_power": 1258.0,
+  "io_voltage": 10.0
+}

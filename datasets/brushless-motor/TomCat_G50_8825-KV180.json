@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G50_8825-KV180",
+  "name": "G50 8825-KV180",
+  "manufacturer": "TomCat",
+  "kv": 180.0,
+  "resistance": 0.02,
+  "io": 3.8,
+  "max_current": 150.0,
+  "weight_g": 1280.8,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

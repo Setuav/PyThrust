@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2212_KV980_2-3S",
+  "name": "A2212 KV980 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 980.0,
+  "resistance": 0.123,
+  "io": 0.5,
+  "max_current": 14.5,
+  "weight_g": 50.2,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

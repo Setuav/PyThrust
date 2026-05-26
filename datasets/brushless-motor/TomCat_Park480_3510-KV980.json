@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_Park480_3510-KV980",
+  "name": "Park480 3510-KV980",
+  "manufacturer": "TomCat",
+  "kv": 980.0,
+  "resistance": 0.077,
+  "io": 1.0,
+  "max_current": 26.0,
+  "weight_g": 87.0,
+  "max_power": 360.0,
+  "io_voltage": 10.0
+}

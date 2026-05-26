@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-1806_26",
+  "name": "CM-1806/26",
+  "manufacturer": "Cobra",
+  "kv": 2800.0,
+  "resistance": 0.078,
+  "io": 0.653,
+  "max_current": 15.0,
+  "weight_g": 21.0,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

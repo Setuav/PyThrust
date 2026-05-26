@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2303C-V2-2000",
+  "name": "ECO 2303C-V2-2000",
+  "manufacturer": "Dualsky",
+  "kv": 2000.0,
+  "resistance": 0.17,
+  "io": 0.4,
+  "max_current": 12.0,
+  "weight_g": 19.0,
+  "max_power": 92.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2208-3125",
+  "name": "HS2208-3125",
+  "manufacturer": "Hyperion",
+  "kv": 3125.0,
+  "resistance": 0.081,
+  "io": 1.15,
+  "max_current": 24.0,
+  "weight_g": 39.1,
+  "max_power": 270.0,
+  "io_voltage": 10.0
+}

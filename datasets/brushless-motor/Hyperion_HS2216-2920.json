@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_HS2216-2920",
+  "name": "HS2216-2920",
+  "manufacturer": "Hyperion",
+  "kv": 2920.0,
+  "resistance": 0.04,
+  "io": 1.35,
+  "max_current": 43.0,
+  "weight_g": 64.1,
+  "max_power": 455.0,
+  "io_voltage": 10.0
+}

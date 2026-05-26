@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5660-4D_2038",
+  "name": "TP5660-4D 2038",
+  "manufacturer": "TP Power",
+  "kv": 2038.0,
+  "resistance": 0.0014,
+  "io": 9.3,
+  "max_current": 384.0,
+  "weight_g": 836.6,
+  "max_power": 10000.0,
+  "io_voltage": 8.0
+}

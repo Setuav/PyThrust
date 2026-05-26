@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_2.25D_1467",
+  "name": "1518/2.25D 1467",
+  "manufacturer": "NeuMotors",
+  "kv": 1467.0,
+  "resistance": 0.0122,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

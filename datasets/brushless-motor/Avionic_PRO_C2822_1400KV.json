@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_C2822_1400KV",
+  "name": "PRO C2822 1400KV",
+  "manufacturer": "Avionic",
+  "kv": 1400.0,
+  "resistance": 0.144,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 41.1,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

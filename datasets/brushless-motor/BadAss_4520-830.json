@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_4520-830",
+  "name": "4520-830",
+  "manufacturer": "BadAss",
+  "kv": 830.0,
+  "resistance": 0.009,
+  "io": 4.95,
+  "max_current": 110.0,
+  "weight_g": 395.8,
+  "max_power": 2040.0,
+  "io_voltage": 10.0
+}

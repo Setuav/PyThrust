@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_16_45",
+  "name": "8038/16/45",
+  "manufacturer": "NeuMotors",
+  "kv": 45.0,
+  "resistance": 0.1082,
+  "io": 0.506,
+  "max_current": 64.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

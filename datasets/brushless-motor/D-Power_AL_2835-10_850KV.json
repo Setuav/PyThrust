@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_2835-10_850KV",
+  "name": "AL 2835-10 850KV",
+  "manufacturer": "D-Power",
+  "kv": 850.0,
+  "resistance": 0.1332,
+  "io": 0.6,
+  "max_current": 16.0,
+  "weight_g": 70.0,
+  "max_power": 240.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_2826-690",
+  "name": "2826-690",
+  "manufacturer": "BadAss",
+  "kv": 690.0,
+  "resistance": 0.037,
+  "io": 1.45,
+  "max_current": 52.0,
+  "weight_g": 180.0,
+  "max_power": 770.0,
+  "io_voltage": 10.0
+}

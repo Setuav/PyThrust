@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_X1103-7800",
+  "name": "X1103-7800",
+  "manufacturer": "Surpass",
+  "kv": 7800.0,
+  "resistance": 0.368,
+  "io": 0.48,
+  "max_current": 5.0,
+  "weight_g": 4.3,
+  "max_power": 40.0,
+  "io_voltage": 8.0
+}

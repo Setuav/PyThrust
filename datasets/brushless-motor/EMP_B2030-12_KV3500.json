@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2030-12_KV3500",
+  "name": "B2030-12 KV3500",
+  "manufacturer": "EMP",
+  "kv": 3500.0,
+  "resistance": 0.17,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 47.9,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

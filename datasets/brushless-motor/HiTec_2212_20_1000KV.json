@@ -1,0 +1,12 @@
+{
+  "id": "HiTec_2212_20_1000KV",
+  "name": "2212/20 1000KV",
+  "manufacturer": "HiTec",
+  "kv": 1000.0,
+  "resistance": 0.119,
+  "io": 0.44,
+  "max_current": 30.0,
+  "weight_g": 53.6,
+  "max_power": 320.0,
+  "io_voltage": 8.0
+}

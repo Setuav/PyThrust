@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_1.5D_7280",
+  "name": "1107/1.5D 7280",
+  "manufacturer": "NeuMotors",
+  "kv": 7280.0,
+  "resistance": 0.003,
+  "io": 1.4,
+  "max_current": 73.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

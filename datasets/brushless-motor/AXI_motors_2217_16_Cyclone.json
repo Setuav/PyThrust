@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2217_16_Cyclone",
+  "name": "2217/16 Cyclone",
+  "manufacturer": "AXI motors",
+  "kv": 1050.0,
+  "resistance": 0.065,
+  "io": 0.4,
+  "max_current": 24.0,
+  "weight_g": 115.1,
+  "max_power": 245.0,
+  "io_voltage": 10.0
+}

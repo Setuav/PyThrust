@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3536-5T_1520kv",
+  "name": "LC3536-5T 1520kv",
+  "manufacturer": "Leopard",
+  "kv": 1520.0,
+  "resistance": 0.0207,
+  "io": 1.5,
+  "max_current": 55.0,
+  "weight_g": 105.2,
+  "max_power": 370.0,
+  "io_voltage": 7.4
+}

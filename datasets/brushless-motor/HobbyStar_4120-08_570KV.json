@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_4120-08_570KV",
+  "name": "4120-08 570KV",
+  "manufacturer": "HobbyStar",
+  "kv": 570.0,
+  "resistance": 0.0255,
+  "io": 1.5,
+  "max_current": 65.0,
+  "weight_g": 285.2,
+  "max_power": 1550.0,
+  "io_voltage": 10.0
+}

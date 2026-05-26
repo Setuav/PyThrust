@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-19T_4926KV",
+  "name": "130S-19T 4926KV",
+  "manufacturer": "Feigao",
+  "kv": 4926.0,
+  "resistance": 0.0791,
+  "io": 1.2,
+  "max_current": 11.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

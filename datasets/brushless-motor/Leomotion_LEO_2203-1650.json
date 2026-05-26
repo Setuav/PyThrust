@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2203-1650",
+  "name": "LEO 2203-1650",
+  "manufacturer": "Leomotion",
+  "kv": 1650.0,
+  "resistance": 0.285,
+  "io": 0.3,
+  "max_current": 5.0,
+  "weight_g": 21.0,
+  "max_power": 38.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D3536_RC_1250",
+  "name": "D3536 RC 1250",
+  "manufacturer": "Flash Hobby",
+  "kv": 1250.0,
+  "resistance": 0.0302,
+  "io": 2.15,
+  "max_current": 57.0,
+  "weight_g": 106.0,
+  "max_power": 919.0,
+  "io_voltage": 10.0
+}

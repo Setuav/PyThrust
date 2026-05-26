@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M40C30_IPE_PRO_10KV",
+  "name": "M40C30 IPE PRO 10KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 10.0,
+  "resistance": 0.387,
+  "io": 1.8,
+  "max_current": 42.0,
+  "weight_g": 3462.6,
+  "max_power": 16532.0,
+  "io_voltage": 50.0
+}

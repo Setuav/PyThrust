@@ -1,0 +1,12 @@
+{
+  "id": "TFL_Hobby_SSS_4082_2.5D",
+  "name": "SSS 4082 2.5D",
+  "manufacturer": "TFL Hobby",
+  "kv": 2600.0,
+  "resistance": 0.00192,
+  "io": 4.2,
+  "max_current": 230.0,
+  "weight_g": 490.4,
+  "max_power": 5000.0,
+  "io_voltage": 11.1
+}

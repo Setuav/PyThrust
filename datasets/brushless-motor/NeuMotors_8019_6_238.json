@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8019_6_238",
+  "name": "8019/6/238",
+  "manufacturer": "NeuMotors",
+  "kv": 238.0,
+  "resistance": 0.01,
+  "io": 1.35,
+  "max_current": 170.0,
+  "weight_g": 1217.9,
+  "max_power": 7125.0,
+  "io_voltage": 10.0
+}

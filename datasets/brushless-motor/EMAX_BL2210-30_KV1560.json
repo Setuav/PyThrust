@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2210-30_KV1560",
+  "name": "BL2210-30 KV1560",
+  "manufacturer": "EMAX",
+  "kv": 1560.0,
+  "resistance": 0.16,
+  "io": 1.4,
+  "max_current": 18.0,
+  "weight_g": 45.1,
+  "max_power": 214.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_Lite_Speed_2050KV",
+  "name": "2207 Lite Speed 2050KV",
+  "manufacturer": "Xnova",
+  "kv": 2050.0,
+  "resistance": 0.058,
+  "io": 1.3,
+  "max_current": 45.0,
+  "weight_g": 31.5,
+  "max_power": 990.0,
+  "io_voltage": 10.0
+}

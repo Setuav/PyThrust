@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8057_2.5_191",
+  "name": "8057/2.5/191",
+  "manufacturer": "NeuMotors",
+  "kv": 191.0,
+  "resistance": 0.0042,
+  "io": 3.24,
+  "max_current": 408.0,
+  "weight_g": 2656.9,
+  "max_power": 21375.0,
+  "io_voltage": 10.0
+}

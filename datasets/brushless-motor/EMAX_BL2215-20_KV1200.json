@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2215-20_KV1200",
+  "name": "BL2215-20 KV1200",
+  "manufacturer": "EMAX",
+  "kv": 1200.0,
+  "resistance": 0.088,
+  "io": 1.6,
+  "max_current": 25.0,
+  "weight_g": 59.0,
+  "max_power": 310.0,
+  "io_voltage": 11.0
+}

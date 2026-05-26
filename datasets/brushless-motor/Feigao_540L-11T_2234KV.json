@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540L-11T_2234KV",
+  "name": "540L-11T 2234KV",
+  "manufacturer": "Feigao",
+  "kv": 2234.0,
+  "resistance": 0.0145,
+  "io": 2.5,
+  "max_current": 56.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

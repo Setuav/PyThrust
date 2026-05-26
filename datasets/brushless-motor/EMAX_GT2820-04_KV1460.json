@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2820-04_KV1460",
+  "name": "GT2820-04 KV1460",
+  "manufacturer": "EMAX",
+  "kv": 1460.0,
+  "resistance": 0.024,
+  "io": 3.0,
+  "max_current": 48.0,
+  "weight_g": 140.0,
+  "max_power": 768.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1930_1Y_342",
+  "name": "1930/1Y 342",
+  "manufacturer": "NeuMotors",
+  "kv": 342.0,
+  "resistance": 0.024,
+  "io": 1.6,
+  "max_current": 68.0,
+  "weight_g": 792.7,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

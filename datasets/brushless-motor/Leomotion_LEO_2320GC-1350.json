@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2320GC-1350",
+  "name": "LEO 2320GC-1350",
+  "manufacturer": "Leomotion",
+  "kv": 1350.0,
+  "resistance": 0.029,
+  "io": 1.9,
+  "max_current": 40.0,
+  "weight_g": 104.0,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

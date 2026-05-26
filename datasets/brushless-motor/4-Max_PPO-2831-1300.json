@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-2831-1300",
+  "name": "PPO-2831-1300",
+  "manufacturer": "4-Max",
+  "kv": 1300.0,
+  "resistance": 0.112,
+  "io": 1.5,
+  "max_current": 16.0,
+  "weight_g": 58.1,
+  "max_power": 210.0,
+  "io_voltage": 10.0
+}

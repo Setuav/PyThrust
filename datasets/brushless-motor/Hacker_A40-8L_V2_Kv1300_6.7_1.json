@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A40-8L_V2_Kv1300_6.7_1",
+  "name": "A40-8L V2 Kv1300 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 630.0,
+  "resistance": 0.014,
+  "io": 2.5,
+  "max_current": 60.0,
+  "weight_g": 315.2,
+  "max_power": 1970.0,
+  "io_voltage": 8.4
+}

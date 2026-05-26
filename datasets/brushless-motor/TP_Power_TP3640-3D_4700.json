@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-3D_4700",
+  "name": "TP3640-3D 4700",
+  "manufacturer": "TP Power",
+  "kv": 4700.0,
+  "resistance": 0.0022,
+  "io": 6.4,
+  "max_current": 215.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

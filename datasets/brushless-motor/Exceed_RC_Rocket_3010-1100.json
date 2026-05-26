@@ -1,0 +1,12 @@
+{
+  "id": "Exceed_RC_Rocket_3010-1100",
+  "name": "Rocket 3010-1100",
+  "manufacturer": "Exceed RC",
+  "kv": 1100.0,
+  "resistance": 0.048,
+  "io": 0.8,
+  "max_current": 38.0,
+  "weight_g": 90.2,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

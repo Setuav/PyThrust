@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2215_12_1Y_1440",
+  "name": "2215/12/1Y 1440",
+  "manufacturer": "NeuMotors",
+  "kv": 1440.0,
+  "resistance": 0.002,
+  "io": 3.0,
+  "max_current": 240.0,
+  "weight_g": 708.5,
+  "max_power": 5000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_RotoMax_50cc_Size",
+  "name": "RotoMax 50cc Size",
+  "manufacturer": "Turnigy",
+  "kv": 172.0,
+  "resistance": 0.021,
+  "io": 1.65,
+  "max_current": 120.0,
+  "weight_g": 1080.7,
+  "max_power": 5300.0,
+  "io_voltage": 44.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_G1506-4100",
+  "name": "G1506-4100",
+  "manufacturer": "RCinPower",
+  "kv": 4100.0,
+  "resistance": 0.075,
+  "io": 1.6,
+  "max_current": 30.0,
+  "weight_g": 17.0,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

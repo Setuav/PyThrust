@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2208_17_1000",
+  "name": "2208/17 1000",
+  "manufacturer": "RedRock",
+  "kv": 1000.0,
+  "resistance": 0.25,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 51.0,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

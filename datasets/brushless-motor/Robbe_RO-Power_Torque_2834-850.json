@@ -1,0 +1,12 @@
+{
+  "id": "Robbe_RO-Power_Torque_2834-850",
+  "name": "RO-Power Torque 2834-850",
+  "manufacturer": "Robbe",
+  "kv": 850.0,
+  "resistance": 0.0894,
+  "io": 0.52,
+  "max_current": 23.0,
+  "weight_g": 72.0,
+  "max_power": 250.0,
+  "io_voltage": 10.0
+}

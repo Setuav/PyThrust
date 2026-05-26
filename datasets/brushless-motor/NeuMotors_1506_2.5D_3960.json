@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_2.5D_3960",
+  "name": "1506/2.5D 3960",
+  "manufacturer": "NeuMotors",
+  "kv": 3960.0,
+  "resistance": 0.005,
+  "io": 1.8,
+  "max_current": 66.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

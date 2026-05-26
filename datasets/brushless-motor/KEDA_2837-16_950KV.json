@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_2837-16_950KV",
+  "name": "2837-16 950KV",
+  "manufacturer": "KEDA",
+  "kv": 950.0,
+  "resistance": 0.164,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 81.1,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

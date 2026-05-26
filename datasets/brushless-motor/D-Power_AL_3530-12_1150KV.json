@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_3530-12_1150KV",
+  "name": "AL 3530-12 1150KV",
+  "manufacturer": "D-Power",
+  "kv": 1450.0,
+  "resistance": 0.0742,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 75.1,
+  "max_power": 260.0,
+  "io_voltage": 8.0
+}

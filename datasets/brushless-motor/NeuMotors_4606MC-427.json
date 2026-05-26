@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-427",
+  "name": "4606MC-427",
+  "manufacturer": "NeuMotors",
+  "kv": 427.0,
+  "resistance": 0.085,
+  "io": 0.16,
+  "max_current": 38.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

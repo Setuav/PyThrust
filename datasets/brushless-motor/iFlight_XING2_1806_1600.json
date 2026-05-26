@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING2_1806_1600",
+  "name": "XING2 1806 1600",
+  "manufacturer": "iFlight",
+  "kv": 1600.0,
+  "resistance": 0.32,
+  "io": 0.43,
+  "max_current": 14.0,
+  "weight_g": 20.1,
+  "max_power": 336.0,
+  "io_voltage": 10.0
+}

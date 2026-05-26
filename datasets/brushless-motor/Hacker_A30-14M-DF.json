@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A30-14M-DF",
+  "name": "A30-14M-DF",
+  "manufacturer": "Hacker",
+  "kv": 3500.0,
+  "resistance": 0.019,
+  "io": 3.1,
+  "max_current": 60.0,
+  "weight_g": 110.0,
+  "max_power": 500.0,
+  "io_voltage": 8.4
+}

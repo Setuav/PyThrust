@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_1408_2400KV",
+  "name": "XRotor 1408 2400KV",
+  "manufacturer": "HobbyWing",
+  "kv": 2400.0,
+  "resistance": 0.207,
+  "io": 0.47,
+  "max_current": 0.0,
+  "weight_g": 15.9,
+  "max_power": 255.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W50-55_KV650",
+  "name": "W50-55 KV650",
+  "manufacturer": "HangLi",
+  "kv": 650.0,
+  "resistance": 0.0206,
+  "io": 2.0,
+  "max_current": 80.0,
+  "weight_g": 250.0,
+  "max_power": 1330.0,
+  "io_voltage": 7.4
+}

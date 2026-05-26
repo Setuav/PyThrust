@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N2836-09_KV880",
+  "name": "N2836-09 KV880",
+  "manufacturer": "EMP",
+  "kv": 880.0,
+  "resistance": 0.098,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 76.0,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1910_1Y_1050",
+  "name": "1910/1Y 1050",
+  "manufacturer": "NeuMotors",
+  "kv": 1050.0,
+  "resistance": 0.01,
+  "io": 1.7,
+  "max_current": 72.0,
+  "weight_g": 283.2,
+  "max_power": 2400.0,
+  "io_voltage": 10.0
+}

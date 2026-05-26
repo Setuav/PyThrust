@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN5008_KV340",
+  "name": "MN5008 KV340",
+  "manufacturer": "T-Motor",
+  "kv": 340.0,
+  "resistance": 0.055,
+  "io": 0.9,
+  "max_current": 35.0,
+  "weight_g": 135.2,
+  "max_power": 760.0,
+  "io_voltage": 22.0
+}

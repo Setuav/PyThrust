@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2217-900",
+  "name": "EP 2217-900",
+  "manufacturer": "EP Product",
+  "kv": 960.0,
+  "resistance": 0.165,
+  "io": 0.55,
+  "max_current": 20.0,
+  "weight_g": 69.2,
+  "max_power": 220.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Flywoo_NIN_2104_1800KV",
+  "name": "NIN 2104 1800KV",
+  "manufacturer": "Flywoo",
+  "kv": 1800.0,
+  "resistance": 0.21,
+  "io": 0.5,
+  "max_current": 22.2,
+  "weight_g": 15.9,
+  "max_power": 533.0,
+  "io_voltage": 10.0
+}

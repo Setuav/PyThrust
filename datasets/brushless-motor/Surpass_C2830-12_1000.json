@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C2830-12_1000",
+  "name": "C2830-12 1000",
+  "manufacturer": "Surpass",
+  "kv": 1000.0,
+  "resistance": 0.152,
+  "io": 0.9,
+  "max_current": 21.0,
+  "weight_g": 57.0,
+  "max_power": 260.0,
+  "io_voltage": 10.0
+}

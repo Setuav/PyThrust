@@ -1,0 +1,12 @@
+{
+  "id": "EMP_SK2822-26_KV1200",
+  "name": "SK2822-26 KV1200",
+  "manufacturer": "EMP",
+  "kv": 1200.0,
+  "resistance": 0.366,
+  "io": 0.3,
+  "max_current": 0.0,
+  "weight_g": 38.0,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

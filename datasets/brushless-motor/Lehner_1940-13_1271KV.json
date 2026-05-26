@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_1940-13_1271KV",
+  "name": "1940-13 1271KV",
+  "manufacturer": "Lehner",
+  "kv": 1271.0,
+  "resistance": 0.024,
+  "io": 1.79,
+  "max_current": 80.0,
+  "weight_g": 290.3,
+  "max_power": 1160.0,
+  "io_voltage": 10.0
+}

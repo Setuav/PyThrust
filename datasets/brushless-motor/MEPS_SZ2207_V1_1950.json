@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2207_V1_1950",
+  "name": "SZ2207 V1 1950",
+  "manufacturer": "MEPS",
+  "kv": 1950.0,
+  "resistance": 0.066,
+  "io": 1.8,
+  "max_current": 47.0,
+  "weight_g": 34.0,
+  "max_power": 1148.0,
+  "io_voltage": 10.0
+}

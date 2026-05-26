@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-45-08_1300",
+  "name": "C35-45-08 1300",
+  "manufacturer": "ROXXY",
+  "kv": 1300.0,
+  "resistance": 0.052,
+  "io": 2.8,
+  "max_current": 53.0,
+  "weight_g": 150.3,
+  "max_power": 840.0,
+  "io_voltage": 14.0
+}

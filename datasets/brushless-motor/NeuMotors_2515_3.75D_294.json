@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2515_3.75D_294",
+  "name": "2515/3.75D 294",
+  "manufacturer": "NeuMotors",
+  "kv": 294.0,
+  "resistance": 0.017,
+  "io": 1.4,
+  "max_current": 118.0,
+  "weight_g": 897.5,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

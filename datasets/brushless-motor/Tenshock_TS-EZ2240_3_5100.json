@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2240_3_5100",
+  "name": "TS-EZ2240/3 5100",
+  "manufacturer": "Tenshock",
+  "kv": 5100.0,
+  "resistance": 0.0018,
+  "io": 9.0,
+  "max_current": 220.0,
+  "weight_g": 290.3,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

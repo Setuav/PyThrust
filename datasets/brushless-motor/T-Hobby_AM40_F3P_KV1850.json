@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_AM40_F3P_KV1850",
+  "name": "AM40 F3P KV1850",
+  "manufacturer": "T-Hobby",
+  "kv": 1850.0,
+  "resistance": 0.0782,
+  "io": 0.95,
+  "max_current": 22.0,
+  "weight_g": 23.0,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

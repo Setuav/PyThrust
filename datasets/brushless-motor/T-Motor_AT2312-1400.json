@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT2312-1400",
+  "name": "AT2312-1400",
+  "manufacturer": "T-Motor",
+  "kv": 1400.0,
+  "resistance": 0.055,
+  "io": 1.1,
+  "max_current": 30.0,
+  "weight_g": 60.1,
+  "max_power": 320.0,
+  "io_voltage": 10.0
+}

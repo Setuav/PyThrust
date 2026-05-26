@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_1303Plus-11500",
+  "name": "GTS V3 1303Plus-11500",
+  "manufacturer": "RCinPower",
+  "kv": 11500.0,
+  "resistance": 0.105,
+  "io": 1.2,
+  "max_current": 30.0,
+  "weight_g": 5.7,
+  "max_power": 223.0,
+  "io_voltage": 5.0
+}

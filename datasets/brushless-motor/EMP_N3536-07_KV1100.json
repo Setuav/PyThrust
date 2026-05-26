@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N3536-07_KV1100",
+  "name": "N3536-07 KV1100",
+  "manufacturer": "EMP",
+  "kv": 1100.0,
+  "resistance": 0.052,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 115.1,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

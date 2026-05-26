@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_1D_3300",
+  "name": "1518/1D 3300",
+  "manufacturer": "NeuMotors",
+  "kv": 3300.0,
+  "resistance": 0.0024,
+  "io": 4.5,
+  "max_current": 165.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

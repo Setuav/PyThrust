@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_19_67",
+  "name": "6521/19/67",
+  "manufacturer": "NeuMotors",
+  "kv": 67.0,
+  "resistance": 0.307,
+  "io": 0.258,
+  "max_current": 38.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

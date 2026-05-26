@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2212_18_1200KV",
+  "name": "XC2212/18 1200KV",
+  "manufacturer": "XPower",
+  "kv": 1200.0,
+  "resistance": 0.26,
+  "io": 0.3,
+  "max_current": 10.0,
+  "weight_g": 32.9,
+  "max_power": 120.0,
+  "io_voltage": 10.0
+}

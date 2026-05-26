@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-F3A-5030_7_210kv",
+  "name": "LPA-F3A-5030/7 210kv",
+  "manufacturer": "LiPolice",
+  "kv": 210.0,
+  "resistance": 0.014,
+  "io": 1.9,
+  "max_current": 90.0,
+  "weight_g": 580.3,
+  "max_power": 1800.0,
+  "io_voltage": 8.4
+}

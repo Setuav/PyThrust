@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2820-07_KV850",
+  "name": "GT2820-07 KV850",
+  "manufacturer": "EMAX",
+  "kv": 850.0,
+  "resistance": 0.043,
+  "io": 1.2,
+  "max_current": 41.0,
+  "weight_g": 140.0,
+  "max_power": 656.0,
+  "io_voltage": 11.0
+}

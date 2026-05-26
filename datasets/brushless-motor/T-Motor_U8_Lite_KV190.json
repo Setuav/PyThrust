@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U8_Lite_KV190",
+  "name": "U8 Lite KV190",
+  "manufacturer": "T-Motor",
+  "kv": 190.0,
+  "resistance": 0.05,
+  "io": 1.3,
+  "max_current": 44.0,
+  "weight_g": 243.2,
+  "max_power": 1049.0,
+  "io_voltage": 18.0
+}

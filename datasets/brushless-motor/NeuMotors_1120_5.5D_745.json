@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_5.5D_745",
+  "name": "1120/5.5D 745",
+  "manufacturer": "NeuMotors",
+  "kv": 745.0,
+  "resistance": 0.101,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

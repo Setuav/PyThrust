@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_4D_550",
+  "name": "1527/4D 550",
+  "manufacturer": "NeuMotors",
+  "kv": 550.0,
+  "resistance": 0.058,
+  "io": 1.13,
+  "max_current": 41.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

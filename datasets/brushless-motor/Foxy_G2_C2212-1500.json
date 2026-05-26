@@ -1,0 +1,12 @@
+{
+  "id": "Foxy_G2_C2212-1500",
+  "name": "G2 C2212-1500*",
+  "manufacturer": "Foxy",
+  "kv": 1500.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 69.2,
+  "max_power": 330.0,
+  "io_voltage": 10.0
+}

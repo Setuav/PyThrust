@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-8T_4436KV",
+  "name": "540S-8T 4436KV",
+  "manufacturer": "Feigao",
+  "kv": 4436.0,
+  "resistance": 0.006,
+  "io": 5.5,
+  "max_current": 81.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

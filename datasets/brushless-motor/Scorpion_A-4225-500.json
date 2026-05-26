@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_A-4225-500",
+  "name": "A-4225-500",
+  "manufacturer": "Scorpion",
+  "kv": 492.0,
+  "resistance": 0.0118,
+  "io": 1.54,
+  "max_current": 140.0,
+  "weight_g": 349.8,
+  "max_power": 3108.0,
+  "io_voltage": 15.0
+}

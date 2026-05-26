@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Nipple_3320-850",
+  "name": "Nipple 3320-850",
+  "manufacturer": "Brother Hobby",
+  "kv": 850.0,
+  "resistance": 0.033,
+  "io": 2.85,
+  "max_current": 73.0,
+  "weight_g": 196.2,
+  "max_power": 1184.0,
+  "io_voltage": 10.0
+}

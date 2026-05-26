@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6530_8.5_104",
+  "name": "6530/8.5/104",
+  "manufacturer": "NeuMotors",
+  "kv": 104.0,
+  "resistance": 0.086,
+  "io": 0.577,
+  "max_current": 85.0,
+  "weight_g": 741.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

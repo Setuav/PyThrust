@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_36-56-1800",
+  "name": "AMMO 36-56-1800",
+  "manufacturer": "ElectriFly",
+  "kv": 1800.0,
+  "resistance": 0.0169,
+  "io": 2.9,
+  "max_current": 0.0,
+  "weight_g": 283.2,
+  "max_power": 2000.0,
+  "io_voltage": 7.4
+}

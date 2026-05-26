@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8025_3.5_310",
+  "name": "8025/3.5/310",
+  "manufacturer": "NeuMotors",
+  "kv": 310.0,
+  "resistance": 0.004,
+  "io": 2.314,
+  "max_current": 291.0,
+  "weight_g": 1447.0,
+  "max_power": 9375.0,
+  "io_voltage": 10.0
+}

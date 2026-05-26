@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1527_0.25Y_4889",
+  "name": "1527/0.25Y 4889",
+  "manufacturer": "NeuMotors",
+  "kv": 4889.0,
+  "resistance": 0.0007,
+  "io": 10.0,
+  "max_current": 367.0,
+  "weight_g": 617.5,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

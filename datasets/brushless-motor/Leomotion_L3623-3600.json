@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L3623-3600",
+  "name": "L3623-3600",
+  "manufacturer": "Leomotion",
+  "kv": 3600.0,
+  "resistance": 0.01,
+  "io": 3.9,
+  "max_current": 0.0,
+  "weight_g": 196.2,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

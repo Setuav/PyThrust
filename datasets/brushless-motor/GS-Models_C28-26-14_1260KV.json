@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C28-26-14_1260KV",
+  "name": "C28-26-14 1260KV",
+  "manufacturer": "GS-Models",
+  "kv": 1260.0,
+  "resistance": 0.152,
+  "io": 0.7,
+  "max_current": 20.0,
+  "weight_g": 45.1,
+  "max_power": 220.0,
+  "io_voltage": 10.0
+}

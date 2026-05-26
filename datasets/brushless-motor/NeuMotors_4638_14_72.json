@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_14_72",
+  "name": "4638/14/72",
+  "manufacturer": "NeuMotors",
+  "kv": 72.0,
+  "resistance": 0.459,
+  "io": 0.386,
+  "max_current": 38.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

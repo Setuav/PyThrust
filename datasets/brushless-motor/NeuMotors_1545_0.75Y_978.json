@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_0.75Y_978",
+  "name": "1545/0.75Y 978",
+  "manufacturer": "NeuMotors",
+  "kv": 978.0,
+  "resistance": 0.01,
+  "io": 3.3,
+  "max_current": 130.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

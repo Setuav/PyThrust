@@ -1,0 +1,12 @@
+{
+  "id": "Jamara_Magnum_A2814-6_1410KV",
+  "name": "Magnum A2814-6 1410KV",
+  "manufacturer": "Jamara",
+  "kv": 1410.0,
+  "resistance": 0.05,
+  "io": 2.1,
+  "max_current": 40.0,
+  "weight_g": 100.1,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

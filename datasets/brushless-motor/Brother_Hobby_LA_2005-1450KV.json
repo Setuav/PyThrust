@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_LA_2005-1450KV",
+  "name": "LA 2005-1450KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 1450.0,
+  "resistance": 0.2966,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 20.4,
+  "max_power": 360.0,
+  "io_voltage": 8.0
+}

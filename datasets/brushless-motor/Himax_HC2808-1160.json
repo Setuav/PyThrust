@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HC2808-1160",
+  "name": "HC2808-1160",
+  "manufacturer": "Himax",
+  "kv": 1160.0,
+  "resistance": 0.15,
+  "io": 0.6,
+  "max_current": 15.0,
+  "weight_g": 51.9,
+  "max_power": 156.0,
+  "io_voltage": 8.0
+}

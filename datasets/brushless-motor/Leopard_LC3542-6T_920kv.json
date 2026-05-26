@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC3542-6T_920kv",
+  "name": "LC3542-6T 920kv",
+  "manufacturer": "Leopard",
+  "kv": 920.0,
+  "resistance": 0.0365,
+  "io": 1.1,
+  "max_current": 42.0,
+  "weight_g": 135.2,
+  "max_power": 722.0,
+  "io_voltage": 7.4
+}

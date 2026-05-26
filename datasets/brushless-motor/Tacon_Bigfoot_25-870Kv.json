@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_25-870Kv",
+  "name": "Bigfoot 25-870Kv",
+  "manufacturer": "Tacon",
+  "kv": 870.0,
+  "resistance": 0.0338,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 550.0,
+  "io_voltage": 7.4
+}

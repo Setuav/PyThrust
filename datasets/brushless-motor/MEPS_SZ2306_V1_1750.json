@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ2306_V1_1750",
+  "name": "SZ2306 V1 1750",
+  "manufacturer": "MEPS",
+  "kv": 1750.0,
+  "resistance": 0.072,
+  "io": 1.3,
+  "max_current": 37.0,
+  "weight_g": 32.0,
+  "max_power": 911.0,
+  "io_voltage": 10.0
+}

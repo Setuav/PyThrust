@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5860-6D_970",
+  "name": "TP5860-6D 970",
+  "manufacturer": "TP Power",
+  "kv": 970.0,
+  "resistance": 0.0035,
+  "io": 7.3,
+  "max_current": 283.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

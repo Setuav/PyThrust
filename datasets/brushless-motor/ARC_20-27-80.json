@@ -1,0 +1,12 @@
+{
+  "id": "ARC_20-27-80",
+  "name": "20-27-80",
+  "manufacturer": "ARC",
+  "kv": 4500.0,
+  "resistance": 0.1,
+  "io": 0.57,
+  "max_current": 12.0,
+  "weight_g": 29.2,
+  "max_power": 87.0,
+  "io_voltage": 8.0
+}

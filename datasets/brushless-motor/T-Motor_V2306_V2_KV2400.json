@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V2306_V2_KV2400",
+  "name": "V2306 V2 KV2400",
+  "manufacturer": "T-Motor",
+  "kv": 2400.0,
+  "resistance": 0.049,
+  "io": 1.85,
+  "max_current": 34.0,
+  "weight_g": 28.3,
+  "max_power": 494.0,
+  "io_voltage": 10.0
+}

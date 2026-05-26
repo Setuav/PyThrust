@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1521_1Y_1571",
+  "name": "1521/1Y 1571",
+  "manufacturer": "NeuMotors",
+  "kv": 1571.0,
+  "resistance": 0.0084,
+  "io": 2.5,
+  "max_current": 92.0,
+  "weight_g": 478.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

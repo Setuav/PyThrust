@@ -1,0 +1,12 @@
+{
+  "id": "Gartt_HF450L_1800KV",
+  "name": "HF450L 1800KV",
+  "manufacturer": "Gartt",
+  "kv": 1800.0,
+  "resistance": 0.0648,
+  "io": 1.3,
+  "max_current": 28.0,
+  "weight_g": 89.9,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

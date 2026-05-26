@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1512_4D_1238",
+  "name": "1512/4D 1238",
+  "manufacturer": "NeuMotors",
+  "kv": 1238.0,
+  "resistance": 0.026,
+  "io": 1.13,
+  "max_current": 41.0,
+  "weight_g": 280.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM9010MR-10HD",
+  "name": "XM9010MR-10HD",
+  "manufacturer": "Dualsky",
+  "kv": 185.0,
+  "resistance": 0.065,
+  "io": 1.3,
+  "max_current": 57.0,
+  "weight_g": 325.2,
+  "max_power": 2540.0,
+  "io_voltage": 10.0
+}

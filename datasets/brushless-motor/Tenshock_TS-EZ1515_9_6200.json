@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1515_9_6200",
+  "name": "TS-EZ1515/9 6200",
+  "manufacturer": "Tenshock",
+  "kv": 6200.0,
+  "resistance": 0.0071,
+  "io": 3.4,
+  "max_current": 70.0,
+  "weight_g": 83.1,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

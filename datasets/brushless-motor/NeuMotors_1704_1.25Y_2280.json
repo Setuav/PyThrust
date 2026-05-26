@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1704_1.25Y_2280",
+  "name": "1704/1.25Y 2280",
+  "manufacturer": "NeuMotors",
+  "kv": 2280.0,
+  "resistance": 0.01,
+  "io": 4.2,
+  "max_current": 65.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

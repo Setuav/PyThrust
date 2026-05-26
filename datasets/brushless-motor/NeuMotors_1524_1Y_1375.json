@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_1Y_1375",
+  "name": "1524/1Y 1375",
+  "manufacturer": "NeuMotors",
+  "kv": 1375.0,
+  "resistance": 0.0095,
+  "io": 2.5,
+  "max_current": 92.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

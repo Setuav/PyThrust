@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_280_BB",
+  "name": "Permax 280 BB",
+  "manufacturer": "Multiplex",
+  "kv": 4464.0,
+  "resistance": 0.429,
+  "io": 0.7,
+  "max_current": 8.0,
+  "weight_g": 53.9,
+  "max_power": 160.0,
+  "io_voltage": 8.0
+}

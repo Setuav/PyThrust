@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_Squid_2206M-KV2000",
+  "name": "Squid 2206M-KV2000",
+  "manufacturer": "Team Hunter RC",
+  "kv": 2000.0,
+  "resistance": 0.185,
+  "io": 0.6,
+  "max_current": 13.0,
+  "weight_g": 30.1,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hyperion_Z-3019-10",
+  "name": "Z-3019-10",
+  "manufacturer": "Hyperion",
+  "kv": 1230.0,
+  "resistance": 0.031,
+  "io": 2.42,
+  "max_current": 46.0,
+  "weight_g": 142.0,
+  "max_power": 426.0,
+  "io_voltage": 8.0
+}

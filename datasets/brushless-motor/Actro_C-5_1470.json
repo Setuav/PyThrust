@@ -1,0 +1,12 @@
+{
+  "id": "Actro_C-5_1470",
+  "name": "C-5 (1470)",
+  "manufacturer": "Actro",
+  "kv": 1470.0,
+  "resistance": 0.051,
+  "io": 1.1,
+  "max_current": 25.0,
+  "weight_g": 140.0,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

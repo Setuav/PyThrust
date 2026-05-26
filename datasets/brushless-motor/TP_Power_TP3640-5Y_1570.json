@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3640-5Y_1570",
+  "name": "TP3640-5Y 1570",
+  "manufacturer": "TP Power",
+  "kv": 1570.0,
+  "resistance": 0.0011,
+  "io": 1.7,
+  "max_current": 75.0,
+  "weight_g": 308.2,
+  "max_power": 2800.0,
+  "io_voltage": 6.0
+}

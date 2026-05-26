@@ -1,0 +1,12 @@
+{
+  "id": "Lehner_1720-12_3256KV",
+  "name": "1720-12 3256KV",
+  "manufacturer": "Lehner",
+  "kv": 3256.0,
+  "resistance": 0.023,
+  "io": 2.4,
+  "max_current": 70.0,
+  "weight_g": 170.1,
+  "max_power": 680.0,
+  "io_voltage": 14.4
+}

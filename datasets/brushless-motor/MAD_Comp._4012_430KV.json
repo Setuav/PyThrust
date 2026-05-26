@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._4012_430KV",
+  "name": "4012 430KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 430.0,
+  "resistance": 0.0862,
+  "io": 1.25,
+  "max_current": 23.0,
+  "weight_g": 142.0,
+  "max_power": 540.0,
+  "io_voltage": 20.0
+}

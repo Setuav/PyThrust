@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_1106_7500KV",
+  "name": "XRotor 1106 7500KV",
+  "manufacturer": "HobbyWing",
+  "kv": 7500.0,
+  "resistance": 0.123,
+  "io": 0.86,
+  "max_current": 0.0,
+  "weight_g": 6.2,
+  "max_power": 51.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-8M_V4_Glider",
+  "name": "A60-8M V4 Glider",
+  "manufacturer": "Hacker",
+  "kv": 180.0,
+  "resistance": 0.03,
+  "io": 1.5,
+  "max_current": 110.0,
+  "weight_g": 751.5,
+  "max_power": 2800.0,
+  "io_voltage": 8.4
+}

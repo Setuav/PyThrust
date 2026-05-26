@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_3520-07_720KV",
+  "name": "3520-07 720KV",
+  "manufacturer": "HobbyStar",
+  "kv": 720.0,
+  "resistance": 0.0298,
+  "io": 1.8,
+  "max_current": 56.0,
+  "weight_g": 205.3,
+  "max_power": 1120.0,
+  "io_voltage": 10.0
+}

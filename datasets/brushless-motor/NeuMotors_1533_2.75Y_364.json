@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_2.75Y_364",
+  "name": "1533/2.75Y 364",
+  "manufacturer": "NeuMotors",
+  "kv": 364.0,
+  "resistance": 0.1,
+  "io": 0.91,
+  "max_current": 36.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

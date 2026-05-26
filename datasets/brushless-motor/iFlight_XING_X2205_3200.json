@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X2205_3200",
+  "name": "XING X2205 3200",
+  "manufacturer": "iFlight",
+  "kv": 3200.0,
+  "resistance": 0.0506,
+  "io": 2.0,
+  "max_current": 33.0,
+  "weight_g": 26.9,
+  "max_power": 548.0,
+  "io_voltage": 10.0
+}

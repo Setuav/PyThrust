@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C12_280KV",
+  "name": "M6C12 280KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 280.0,
+  "resistance": 0.031,
+  "io": 1.53,
+  "max_current": 59.0,
+  "weight_g": 256.3,
+  "max_power": 1365.0,
+  "io_voltage": 20.0
+}

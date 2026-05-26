@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M5308_KV450_6S",
+  "name": "M5308 KV450 6S",
+  "manufacturer": "SunnySky",
+  "kv": 450.0,
+  "resistance": 0.077,
+  "io": 1.0,
+  "max_current": 40.0,
+  "weight_g": 195.0,
+  "max_power": 570.0,
+  "io_voltage": 10.0
+}

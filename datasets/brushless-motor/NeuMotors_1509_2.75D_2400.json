@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_2.75D_2400",
+  "name": "1509/2.75D 2400",
+  "manufacturer": "NeuMotors",
+  "kv": 2400.0,
+  "resistance": 0.0091,
+  "io": 1.64,
+  "max_current": 60.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

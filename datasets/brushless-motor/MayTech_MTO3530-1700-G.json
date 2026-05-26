@@ -1,0 +1,12 @@
+{
+  "id": "MayTech_MTO3530-1700-G",
+  "name": "MTO3530-1700-G",
+  "manufacturer": "MayTech",
+  "kv": 1700.0,
+  "resistance": 0.033,
+  "io": 1.7,
+  "max_current": 33.0,
+  "weight_g": 73.1,
+  "max_power": 480.0,
+  "io_voltage": 7.4
+}

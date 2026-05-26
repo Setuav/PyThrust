@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-31T_1152KV",
+  "name": "540S-31T 1152KV",
+  "manufacturer": "Feigao",
+  "kv": 1152.0,
+  "resistance": 0.0908,
+  "io": 0.5,
+  "max_current": 21.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

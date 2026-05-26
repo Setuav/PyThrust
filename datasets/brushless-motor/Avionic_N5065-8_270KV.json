@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_N5065-8_270KV",
+  "name": "N5065-8 270KV",
+  "manufacturer": "Avionic",
+  "kv": 270.0,
+  "resistance": 0.038,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 430.3,
+  "max_power": 2100.0,
+  "io_voltage": 10.0
+}

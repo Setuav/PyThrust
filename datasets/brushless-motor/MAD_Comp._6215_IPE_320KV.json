@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._6215_IPE_320KV",
+  "name": "6215 IPE 320KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 320.0,
+  "resistance": 0.02,
+  "io": 2.1,
+  "max_current": 73.0,
+  "weight_g": 370.2,
+  "max_power": 1660.0,
+  "io_voltage": 15.0
+}

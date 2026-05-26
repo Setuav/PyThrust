@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380XL-10T_2322KV",
+  "name": "380XL-10T 2322KV",
+  "manufacturer": "Feigao",
+  "kv": 2322.0,
+  "resistance": 0.0194,
+  "io": 1.6,
+  "max_current": 42.0,
+  "weight_g": 220.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1902_1.5Y_2800",
+  "name": "1902/1.5Y 2800",
+  "manufacturer": "NeuMotors",
+  "kv": 2800.0,
+  "resistance": 0.012,
+  "io": 1.7,
+  "max_current": 48.0,
+  "weight_g": 125.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

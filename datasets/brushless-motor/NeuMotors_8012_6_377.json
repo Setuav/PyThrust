@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_6_377",
+  "name": "8012/6/377",
+  "manufacturer": "NeuMotors",
+  "kv": 377.0,
+  "resistance": 0.008,
+  "io": 1.35,
+  "max_current": 170.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

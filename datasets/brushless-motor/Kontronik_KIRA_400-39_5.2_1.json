@@ -1,0 +1,12 @@
+{
+  "id": "Kontronik_KIRA_400-39_5.2_1",
+  "name": "KIRA 400-39 5.2:1",
+  "manufacturer": "Kontronik",
+  "kv": 3900.0,
+  "resistance": 0.017,
+  "io": 1.9,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

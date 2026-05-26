@@ -1,0 +1,12 @@
+{
+  "id": "Himax_HA2825-2300",
+  "name": "HA2825-2300",
+  "manufacturer": "Himax",
+  "kv": 2300.0,
+  "resistance": 0.078,
+  "io": 0.47,
+  "max_current": 0.0,
+  "weight_g": 138.1,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

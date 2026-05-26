@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4023-1250",
+  "name": "L4023-1250",
+  "manufacturer": "Leomotion",
+  "kv": 1250.0,
+  "resistance": 0.024,
+  "io": 0.9,
+  "max_current": 0.0,
+  "weight_g": 215.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4040-3D_4590",
+  "name": "TP4040-3D 4590",
+  "manufacturer": "TP Power",
+  "kv": 4590.0,
+  "resistance": 0.0015,
+  "io": 7.8,
+  "max_current": 350.0,
+  "weight_g": 396.3,
+  "max_power": 4200.0,
+  "io_voltage": 8.0
+}

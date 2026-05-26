@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-5020_26_255kv",
+  "name": "LPA-5020/26 255kv",
+  "manufacturer": "LiPolice",
+  "kv": 255.0,
+  "resistance": 0.0375,
+  "io": 1.2,
+  "max_current": 55.0,
+  "weight_g": 442.3,
+  "max_power": 1600.0,
+  "io_voltage": 8.4
+}

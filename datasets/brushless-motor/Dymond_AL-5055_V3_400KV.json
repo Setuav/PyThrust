@@ -1,0 +1,12 @@
+{
+  "id": "Dymond_AL-5055_V3_400KV",
+  "name": "AL-5055 V3 400KV",
+  "manufacturer": "Dymond",
+  "kv": 400.0,
+  "resistance": 0.0282,
+  "io": 1.28,
+  "max_current": 55.0,
+  "weight_g": 310.1,
+  "max_power": 950.0,
+  "io_voltage": 15.16
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_V4006_KV320_4-6S",
+  "name": "V4006 KV320 4-6S",
+  "manufacturer": "SunnySky",
+  "kv": 320.0,
+  "resistance": 0.23,
+  "io": 0.3,
+  "max_current": 15.0,
+  "weight_g": 68.0,
+  "max_power": 375.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4638_4.5_225",
+  "name": "4638/4.5/225",
+  "manufacturer": "NeuMotors",
+  "kv": 225.0,
+  "resistance": 0.049,
+  "io": 1.2,
+  "max_current": 120.0,
+  "weight_g": 453.3,
+  "max_power": 5300.0,
+  "io_voltage": 10.0
+}

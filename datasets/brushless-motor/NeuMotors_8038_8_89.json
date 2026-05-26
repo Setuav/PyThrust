@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8038_8_89",
+  "name": "8038/8/89",
+  "manufacturer": "NeuMotors",
+  "kv": 89.0,
+  "resistance": 0.0279,
+  "io": 1.013,
+  "max_current": 128.0,
+  "weight_g": 1968.0,
+  "max_power": 14250.0,
+  "io_voltage": 10.0
+}

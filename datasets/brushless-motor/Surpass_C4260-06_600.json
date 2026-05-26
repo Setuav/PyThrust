@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_C4260-06_600",
+  "name": "C4260-06 600",
+  "manufacturer": "Surpass",
+  "kv": 600.0,
+  "resistance": 0.0291,
+  "io": 2.1,
+  "max_current": 75.0,
+  "weight_g": 275.3,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_3610_09_750",
+  "name": "3610/09 750",
+  "manufacturer": "RedRock",
+  "kv": 750.0,
+  "resistance": 0.035,
+  "io": 0.8,
+  "max_current": 55.0,
+  "weight_g": 155.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

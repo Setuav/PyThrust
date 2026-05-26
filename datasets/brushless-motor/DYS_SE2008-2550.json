@@ -1,0 +1,12 @@
+{
+  "id": "DYS_SE2008-2550",
+  "name": "SE2008-2550",
+  "manufacturer": "DYS",
+  "kv": 2550.0,
+  "resistance": 0.04,
+  "io": 1.5,
+  "max_current": 27.0,
+  "weight_g": 30.1,
+  "max_power": 435.0,
+  "io_voltage": 16.0
+}

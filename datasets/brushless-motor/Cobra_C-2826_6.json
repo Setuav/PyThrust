@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_C-2826_6",
+  "name": "C-2826/6",
+  "manufacturer": "Cobra",
+  "kv": 1470.0,
+  "resistance": 0.018,
+  "io": 3.0,
+  "max_current": 65.0,
+  "weight_g": 170.9,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

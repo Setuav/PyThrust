@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-747",
+  "name": "4606MC-747",
+  "manufacturer": "NeuMotors",
+  "kv": 747.0,
+  "resistance": 0.028,
+  "io": 0.28,
+  "max_current": 67.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

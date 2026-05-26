@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2810_Freestyle_1400KV",
+  "name": "2810 Freestyle 1400KV",
+  "manufacturer": "Xnova",
+  "kv": 1400.0,
+  "resistance": 0.048,
+  "io": 1.8,
+  "max_current": 65.0,
+  "weight_g": 69.2,
+  "max_power": 1443.0,
+  "io_voltage": 10.0
+}

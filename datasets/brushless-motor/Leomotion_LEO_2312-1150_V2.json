@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2312-1150_V2",
+  "name": "LEO 2312-1150 V2",
+  "manufacturer": "Leomotion",
+  "kv": 1150.0,
+  "resistance": 0.091,
+  "io": 0.7,
+  "max_current": 23.0,
+  "weight_g": 58.1,
+  "max_power": 275.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2217_12_1522KV",
+  "name": "2217/12 1522KV",
+  "manufacturer": "Extron",
+  "kv": 1522.0,
+  "resistance": 0.0358,
+  "io": 2.0,
+  "max_current": 27.0,
+  "weight_g": 73.7,
+  "max_power": 405.0,
+  "io_voltage": 11.1
+}

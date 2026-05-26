@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2208-2010",
+  "name": "2208-2010",
+  "manufacturer": "Tempest",
+  "kv": 2010.0,
+  "resistance": 0.075,
+  "io": 1.09,
+  "max_current": 22.0,
+  "weight_g": 45.1,
+  "max_power": 325.0,
+  "io_voltage": 10.0
+}

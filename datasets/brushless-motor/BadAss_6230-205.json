@@ -1,0 +1,12 @@
+{
+  "id": "BadAss_6230-205",
+  "name": "6230-205",
+  "manufacturer": "BadAss",
+  "kv": 205.0,
+  "resistance": 0.022,
+  "io": 2.77,
+  "max_current": 110.0,
+  "weight_g": 827.5,
+  "max_power": 4880.0,
+  "io_voltage": 22.2
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3020_4Y_165",
+  "name": "3020/4Y 165",
+  "manufacturer": "NeuMotors",
+  "kv": 165.0,
+  "resistance": 0.041,
+  "io": 1.5,
+  "max_current": 165.0,
+  "weight_g": 1931.5,
+  "max_power": 20000.0,
+  "io_voltage": 10.0
+}

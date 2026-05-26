@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA6000.9S",
+  "name": "GA6000.9S",
+  "manufacturer": "Dualsky",
+  "kv": 160.0,
+  "resistance": 0.0171,
+  "io": 1.8,
+  "max_current": 130.0,
+  "weight_g": 1020.9,
+  "max_power": 5100.0,
+  "io_voltage": 10.0
+}

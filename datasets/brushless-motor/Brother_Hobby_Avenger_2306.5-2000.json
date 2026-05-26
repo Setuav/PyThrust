@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_Avenger_2306.5-2000",
+  "name": "Avenger 2306.5-2000",
+  "manufacturer": "Brother Hobby",
+  "kv": 2000.0,
+  "resistance": 0.0574,
+  "io": 1.15,
+  "max_current": 53.0,
+  "weight_g": 34.0,
+  "max_power": 1254.0,
+  "io_voltage": 10.0
+}

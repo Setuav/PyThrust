@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C28-26-09_1900",
+  "name": "C28-26-09 1900",
+  "manufacturer": "ROXXY",
+  "kv": 1900.0,
+  "resistance": 0.067,
+  "io": 1.47,
+  "max_current": 27.0,
+  "weight_g": 45.1,
+  "max_power": 250.0,
+  "io_voltage": 10.5
+}

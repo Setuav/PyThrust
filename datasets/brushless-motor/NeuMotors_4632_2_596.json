@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4632_2_596",
+  "name": "4632/2/596",
+  "manufacturer": "NeuMotors",
+  "kv": 596.0,
+  "resistance": 0.0092,
+  "io": 2.7,
+  "max_current": 269.0,
+  "weight_g": 424.4,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

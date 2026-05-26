@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-26T_3600KV",
+  "name": "130S-26T 3600KV",
+  "manufacturer": "Feigao",
+  "kv": 3600.0,
+  "resistance": 0.148,
+  "io": 0.58,
+  "max_current": 8.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

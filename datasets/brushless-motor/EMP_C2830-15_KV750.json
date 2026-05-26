@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C2830-15_KV750",
+  "name": "C2830-15 KV750",
+  "manufacturer": "EMP",
+  "kv": 750.0,
+  "resistance": 0.352,
+  "io": 0.5,
+  "max_current": 0.0,
+  "weight_g": 60.1,
+  "max_power": 225.0,
+  "io_voltage": 10.0
+}

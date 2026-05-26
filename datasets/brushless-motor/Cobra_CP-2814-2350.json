@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CP-2814-2350",
+  "name": "CP-2814-2350",
+  "manufacturer": "Cobra",
+  "kv": 2350.0,
+  "resistance": 0.01,
+  "io": 4.63,
+  "max_current": 90.0,
+  "weight_g": 119.9,
+  "max_power": 990.0,
+  "io_voltage": 10.0
+}

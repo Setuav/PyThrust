@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_D4260_EVO_800",
+  "name": "D4260 EVO 800",
+  "manufacturer": "Flash Hobby",
+  "kv": 800.0,
+  "resistance": 0.0212,
+  "io": 2.45,
+  "max_current": 65.0,
+  "weight_g": 286.3,
+  "max_power": 1354.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-6D_9250",
+  "name": "TP2020-6D 9250",
+  "manufacturer": "TP Power",
+  "kv": 9250.0,
+  "resistance": 0.0106,
+  "io": 2.5,
+  "max_current": 51.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 9.0
+}

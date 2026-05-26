@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_C54-2Y_L_Acro_1425_6.7_1",
+  "name": "C54-2Y L Acro 1425 6.7:1",
+  "manufacturer": "Hacker",
+  "kv": 1425.0,
+  "resistance": 0.014,
+  "io": 1.3,
+  "max_current": 90.0,
+  "weight_g": 445.4,
+  "max_power": 3500.0,
+  "io_voltage": 37.0
+}

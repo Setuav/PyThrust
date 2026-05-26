@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1409_2Y_1820",
+  "name": "1409/2Y 1820",
+  "manufacturer": "NeuMotors",
+  "kv": 1820.0,
+  "resistance": 0.02,
+  "io": 1.5,
+  "max_current": 42.0,
+  "weight_g": 218.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

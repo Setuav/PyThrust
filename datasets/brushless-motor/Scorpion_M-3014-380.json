@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_M-3014-380",
+  "name": "M-3014-380",
+  "manufacturer": "Scorpion",
+  "kv": 380.0,
+  "resistance": 0.228,
+  "io": 0.27,
+  "max_current": 15.0,
+  "weight_g": 114.8,
+  "max_power": 333.0,
+  "io_voltage": 10.0
+}

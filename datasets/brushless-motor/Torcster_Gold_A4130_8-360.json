@@ -1,0 +1,12 @@
+{
+  "id": "Torcster_Gold_A4130_8-360",
+  "name": "Gold A4130/8-360",
+  "manufacturer": "Torcster",
+  "kv": 360.0,
+  "resistance": 0.063,
+  "io": 1.5,
+  "max_current": 60.0,
+  "weight_g": 400.3,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Park_400_BL_740",
+  "name": "Park 400 BL 740",
+  "manufacturer": "E-flite",
+  "kv": 740.0,
+  "resistance": 0.26,
+  "io": 0.55,
+  "max_current": 10.0,
+  "weight_g": 56.1,
+  "max_power": 100.0,
+  "io_voltage": 10.0
+}

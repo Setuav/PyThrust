@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPO-2827-1000",
+  "name": "PPO-2827-1000",
+  "manufacturer": "4-Max",
+  "kv": 1000.0,
+  "resistance": 0.262,
+  "io": 0.5,
+  "max_current": 14.0,
+  "weight_g": 50.2,
+  "max_power": 140.0,
+  "io_voltage": 10.0
+}

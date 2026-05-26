@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2205_hypersonic_2300KV",
+  "name": "2205 hypersonic 2300KV",
+  "manufacturer": "Xnova",
+  "kv": 2300.0,
+  "resistance": 0.06,
+  "io": 1.3,
+  "max_current": 36.0,
+  "weight_g": 30.1,
+  "max_power": 595.0,
+  "io_voltage": 10.0
+}

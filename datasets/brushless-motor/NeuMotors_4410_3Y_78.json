@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4410_3Y_78",
+  "name": "4410/3Y 78",
+  "manufacturer": "NeuMotors",
+  "kv": 78.0,
+  "resistance": 0.054,
+  "io": 1.0,
+  "max_current": 78.0,
+  "weight_g": 1982.5,
+  "max_power": 10000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KEDA_B24-45-30L_1400KV",
+  "name": "B24-45-30L 1400KV",
+  "manufacturer": "KEDA",
+  "kv": 1400.0,
+  "resistance": 0.1926,
+  "io": 0.3,
+  "max_current": 11.0,
+  "weight_g": 98.1,
+  "max_power": 390.0,
+  "io_voltage": 7.4
+}

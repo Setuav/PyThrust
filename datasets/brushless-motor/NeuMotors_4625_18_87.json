@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_18_87",
+  "name": "4625/18/87",
+  "manufacturer": "NeuMotors",
+  "kv": 87.0,
+  "resistance": 0.52,
+  "io": 0.3,
+  "max_current": 30.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

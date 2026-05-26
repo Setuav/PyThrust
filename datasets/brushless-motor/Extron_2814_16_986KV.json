@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2814_16_986KV",
+  "name": "2814/16 986KV",
+  "manufacturer": "Extron",
+  "kv": 986.0,
+  "resistance": 0.0432,
+  "io": 2.7,
+  "max_current": 28.0,
+  "weight_g": 111.4,
+  "max_power": 420.0,
+  "io_voltage": 14.8
+}

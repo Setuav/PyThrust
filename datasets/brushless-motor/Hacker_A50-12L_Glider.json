@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A50-12L_Glider",
+  "name": "A50-12L Glider",
+  "manufacturer": "Hacker",
+  "kv": 355.0,
+  "resistance": 0.021,
+  "io": 1.5,
+  "max_current": 70.0,
+  "weight_g": 503.5,
+  "max_power": 1650.0,
+  "io_voltage": 8.4
+}

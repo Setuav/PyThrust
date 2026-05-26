@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5670-3Y_1270",
+  "name": "TP5670-3Y 1270",
+  "manufacturer": "TP Power",
+  "kv": 1270.0,
+  "resistance": 0.0029,
+  "io": 5.3,
+  "max_current": 300.0,
+  "weight_g": 962.7,
+  "max_power": 12000.0,
+  "io_voltage": 8.0
+}

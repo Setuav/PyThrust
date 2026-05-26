@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_22-35-1.5ER",
+  "name": "ACn 22-35-1.5ER",
+  "manufacturer": "Mega",
+  "kv": 1680.0,
+  "resistance": 0.0122,
+  "io": 2.8,
+  "max_current": 90.0,
+  "weight_g": 245.2,
+  "max_power": 750.0,
+  "io_voltage": 10.0
+}

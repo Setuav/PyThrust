@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N6354-13_KV250",
+  "name": "N6354-13 KV250",
+  "manufacturer": "EMP",
+  "kv": 250.0,
+  "resistance": 0.053,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 558.5,
+  "max_power": 2450.0,
+  "io_voltage": 15.0
+}

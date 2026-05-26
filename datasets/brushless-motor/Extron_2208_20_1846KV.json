@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2208_20_1846KV",
+  "name": "2208/20 1846KV",
+  "manufacturer": "Extron",
+  "kv": 1846.0,
+  "resistance": 0.0581,
+  "io": 1.0,
+  "max_current": 19.0,
+  "weight_g": 45.4,
+  "max_power": 285.0,
+  "io_voltage": 7.4
+}

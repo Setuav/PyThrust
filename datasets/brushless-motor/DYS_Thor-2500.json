@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Thor-2500",
+  "name": "Thor-2500",
+  "manufacturer": "DYS",
+  "kv": 2500.0,
+  "resistance": 0.04,
+  "io": 1.8,
+  "max_current": 46.0,
+  "weight_g": 37.4,
+  "max_power": 739.0,
+  "io_voltage": 12.0
+}

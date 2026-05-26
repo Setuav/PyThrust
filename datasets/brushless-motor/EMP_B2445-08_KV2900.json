@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2445-08_KV2900",
+  "name": "B2445-08 KV2900",
+  "manufacturer": "EMP",
+  "kv": 2900.0,
+  "resistance": 0.055,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 90.2,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

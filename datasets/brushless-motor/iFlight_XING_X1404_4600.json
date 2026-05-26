@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X1404_4600",
+  "name": "XING X1404 4600",
+  "manufacturer": "iFlight",
+  "kv": 4600.0,
+  "resistance": 0.175,
+  "io": 0.55,
+  "max_current": 12.0,
+  "weight_g": 9.9,
+  "max_power": 193.0,
+  "io_voltage": 5.5
+}

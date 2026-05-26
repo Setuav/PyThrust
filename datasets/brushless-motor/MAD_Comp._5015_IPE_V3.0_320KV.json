@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._5015_IPE_V3.0_320KV",
+  "name": "5015 IPE V3.0 320KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 320.0,
+  "resistance": 0.037,
+  "io": 2.2,
+  "max_current": 63.0,
+  "weight_g": 226.2,
+  "max_power": 1456.0,
+  "io_voltage": 20.0
+}

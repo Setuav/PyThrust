@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_1.5Y_517",
+  "name": "2020/1.5Y 517",
+  "manufacturer": "NeuMotors",
+  "kv": 517.0,
+  "resistance": 0.016,
+  "io": 1.87,
+  "max_current": 100.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

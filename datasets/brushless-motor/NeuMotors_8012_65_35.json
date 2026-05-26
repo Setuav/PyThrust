@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_65_35",
+  "name": "8012/65/35",
+  "manufacturer": "NeuMotors",
+  "kv": 35.0,
+  "resistance": 0.76,
+  "io": 0.125,
+  "max_current": 16.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_49_08-50H_770",
+  "name": "OBL 49/08-50H 770",
+  "manufacturer": "Thunder Tiger",
+  "kv": 770.0,
+  "resistance": 0.0184,
+  "io": 2.3,
+  "max_current": 80.0,
+  "weight_g": 355.2,
+  "max_power": 1420.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2203-2300",
+  "name": "EP 2203-2300",
+  "manufacturer": "EP Product",
+  "kv": 2300.0,
+  "resistance": 0.153,
+  "io": 0.56,
+  "max_current": 10.0,
+  "weight_g": 18.1,
+  "max_power": 75.0,
+  "io_voltage": 8.0
+}

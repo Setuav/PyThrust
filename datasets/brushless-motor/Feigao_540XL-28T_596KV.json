@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-28T_596KV",
+  "name": "540XL-28T 596KV",
+  "manufacturer": "Feigao",
+  "kv": 596.0,
+  "resistance": 0.0893,
+  "io": 0.4,
+  "max_current": 24.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

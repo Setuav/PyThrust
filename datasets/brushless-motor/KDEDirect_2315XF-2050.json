@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_2315XF-2050",
+  "name": "2315XF-2050",
+  "manufacturer": "KDEDirect",
+  "kv": 2050.0,
+  "resistance": 0.034,
+  "io": 1.3,
+  "max_current": 44.0,
+  "weight_g": 64.1,
+  "max_power": 766.0,
+  "io_voltage": 10.0
+}

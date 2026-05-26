@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-2213_20_1080kv",
+  "name": "LPA-2213/20 1080kv",
+  "manufacturer": "LiPolice",
+  "kv": 1080.0,
+  "resistance": 0.093,
+  "io": 0.95,
+  "max_current": 17.0,
+  "weight_g": 55.0,
+  "max_power": 180.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M17_IPE_V1.1_100KV",
+  "name": "M17 IPE V1.1 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.0275,
+  "io": 3.1,
+  "max_current": 135.0,
+  "weight_g": 857.6,
+  "max_power": 7520.0,
+  "io_voltage": 30.0
+}

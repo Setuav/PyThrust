@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_LEO_2820GC-0970",
+  "name": "LEO 2820GC-0970",
+  "manufacturer": "Leomotion",
+  "kv": 970.0,
+  "resistance": 0.021,
+  "io": 1.9,
+  "max_current": 45.0,
+  "weight_g": 161.0,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

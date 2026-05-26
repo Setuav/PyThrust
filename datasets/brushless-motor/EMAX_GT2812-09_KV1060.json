@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2812-09_KV1060",
+  "name": "GT2812-09 KV1060",
+  "manufacturer": "EMAX",
+  "kv": 1060.0,
+  "resistance": 0.087,
+  "io": 1.0,
+  "max_current": 34.0,
+  "weight_g": 105.2,
+  "max_power": 408.0,
+  "io_voltage": 11.0
+}

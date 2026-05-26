@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130S-22T_4255KV",
+  "name": "130S-22T 4255KV",
+  "manufacturer": "Feigao",
+  "kv": 4255.0,
+  "resistance": 0.106,
+  "io": 0.8,
+  "max_current": 10.0,
+  "weight_g": 50.2,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

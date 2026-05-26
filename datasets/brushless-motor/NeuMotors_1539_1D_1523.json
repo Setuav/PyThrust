@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_1D_1523",
+  "name": "1539/1D 1523",
+  "manufacturer": "NeuMotors",
+  "kv": 1523.0,
+  "resistance": 0.0052,
+  "io": 4.5,
+  "max_current": 178.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

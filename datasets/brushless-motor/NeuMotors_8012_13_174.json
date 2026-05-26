@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_13_174",
+  "name": "8012/13/174",
+  "manufacturer": "NeuMotors",
+  "kv": 174.0,
+  "resistance": 0.033,
+  "io": 0.623,
+  "max_current": 78.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KDA_20-34S",
+  "name": "20-34S",
+  "manufacturer": "KDA",
+  "kv": 1850.0,
+  "resistance": 0.33,
+  "io": 0.72,
+  "max_current": 9.0,
+  "weight_g": 30.1,
+  "max_power": 90.0,
+  "io_voltage": 11.0
+}

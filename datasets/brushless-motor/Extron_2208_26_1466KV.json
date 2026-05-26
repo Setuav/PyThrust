@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2208_26_1466KV",
+  "name": "2208/26 1466KV",
+  "manufacturer": "Extron",
+  "kv": 1466.0,
+  "resistance": 0.112,
+  "io": 0.8,
+  "max_current": 15.0,
+  "weight_g": 43.1,
+  "max_power": 225.0,
+  "io_voltage": 11.1
+}

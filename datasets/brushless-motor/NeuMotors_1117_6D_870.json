@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_6D_870",
+  "name": "1117/6D 870",
+  "manufacturer": "NeuMotors",
+  "kv": 870.0,
+  "resistance": 0.105,
+  "io": 0.8,
+  "max_current": 21.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

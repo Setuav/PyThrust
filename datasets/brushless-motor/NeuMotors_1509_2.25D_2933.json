@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1509_2.25D_2933",
+  "name": "1509/2.25D 2933",
+  "manufacturer": "NeuMotors",
+  "kv": 2933.0,
+  "resistance": 0.0061,
+  "io": 2.0,
+  "max_current": 73.0,
+  "weight_g": 212.1,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

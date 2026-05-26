@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_28-35-2200",
+  "name": "AMMO 28-35-2200",
+  "manufacturer": "ElectriFly",
+  "kv": 2200.0,
+  "resistance": 0.0965,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 94.1,
+  "max_power": 590.0,
+  "io_voltage": 7.4
+}

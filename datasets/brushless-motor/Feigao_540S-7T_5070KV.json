@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-7T_5070KV",
+  "name": "540S-7T 5070KV",
+  "manufacturer": "Feigao",
+  "kv": 5070.0,
+  "resistance": 0.0046,
+  "io": 6.0,
+  "max_current": 93.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

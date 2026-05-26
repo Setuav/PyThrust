@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2808_Freestyle_1350KV",
+  "name": "2808 Freestyle 1350KV",
+  "manufacturer": "Xnova",
+  "kv": 1350.0,
+  "resistance": 0.056,
+  "io": 1.3,
+  "max_current": 46.0,
+  "weight_g": 57.0,
+  "max_power": 1023.0,
+  "io_voltage": 10.0
+}

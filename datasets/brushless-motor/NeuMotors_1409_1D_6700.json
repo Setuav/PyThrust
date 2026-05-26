@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1409_1D_6700",
+  "name": "1409/1D 6700",
+  "manufacturer": "NeuMotors",
+  "kv": 6700.0,
+  "resistance": 0.002,
+  "io": 7.5,
+  "max_current": 156.0,
+  "weight_g": 218.3,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

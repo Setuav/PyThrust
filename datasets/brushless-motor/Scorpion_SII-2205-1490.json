@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_SII-2205-1490",
+  "name": "SII-2205-1490",
+  "manufacturer": "Scorpion",
+  "kv": 1490.0,
+  "resistance": 0.188,
+  "io": 0.42,
+  "max_current": 10.0,
+  "weight_g": 35.4,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}

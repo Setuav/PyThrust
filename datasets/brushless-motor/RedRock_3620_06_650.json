@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_3620_06_650",
+  "name": "3620/06 650",
+  "manufacturer": "RedRock",
+  "kv": 650.0,
+  "resistance": 0.032,
+  "io": 1.2,
+  "max_current": 55.0,
+  "weight_g": 230.2,
+  "max_power": 1150.0,
+  "io_voltage": 10.0
+}

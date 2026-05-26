@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_U8II_Pro_KV100",
+  "name": "U8II Pro KV100",
+  "manufacturer": "T-Motor",
+  "kv": 100.0,
+  "resistance": 0.141,
+  "io": 1.0,
+  "max_current": 31.0,
+  "weight_g": 287.2,
+  "max_power": 1450.0,
+  "io_voltage": 10.0
+}

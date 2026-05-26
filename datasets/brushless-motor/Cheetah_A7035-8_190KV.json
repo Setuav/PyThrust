@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A7035-8_190KV",
+  "name": "A7035-8  190KV",
+  "manufacturer": "Cheetah",
+  "kv": 190.0,
+  "resistance": 0.013,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 1225.8,
+  "max_power": 6660.0,
+  "io_voltage": 10.0
+}

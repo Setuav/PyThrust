@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_BEE_1806M-KV2300",
+  "name": "BEE 1806M-KV2300",
+  "manufacturer": "Team Hunter RC",
+  "kv": 2300.0,
+  "resistance": 0.118,
+  "io": 0.35,
+  "max_current": 0.0,
+  "weight_g": 20.1,
+  "max_power": 135.0,
+  "io_voltage": 10.0
+}

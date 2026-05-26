@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_1.5D_4368",
+  "name": "1112/1.5D 4368",
+  "manufacturer": "NeuMotors",
+  "kv": 4368.0,
+  "resistance": 0.005,
+  "io": 3.0,
+  "max_current": 87.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

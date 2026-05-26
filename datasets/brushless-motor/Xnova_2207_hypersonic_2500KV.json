@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_2207_hypersonic_2500KV",
+  "name": "2207 hypersonic 2500KV",
+  "manufacturer": "Xnova",
+  "kv": 2500.0,
+  "resistance": 0.04,
+  "io": 1.8,
+  "max_current": 44.0,
+  "weight_g": 36.0,
+  "max_power": 739.0,
+  "io_voltage": 10.0
+}

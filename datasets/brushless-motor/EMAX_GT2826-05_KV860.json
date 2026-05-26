@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_GT2826-05_KV860",
+  "name": "GT2826-05 KV860",
+  "manufacturer": "EMAX",
+  "kv": 860.0,
+  "resistance": 0.03,
+  "io": 1.8,
+  "max_current": 62.0,
+  "weight_g": 175.2,
+  "max_power": 992.0,
+  "io_voltage": 11.0
+}

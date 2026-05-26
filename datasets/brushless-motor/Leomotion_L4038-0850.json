@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4038-0850",
+  "name": "L4038-0850",
+  "manufacturer": "Leomotion",
+  "kv": 850.0,
+  "resistance": 0.023,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 340.2,
+  "max_power": 2500.0,
+  "io_voltage": 10.0
+}

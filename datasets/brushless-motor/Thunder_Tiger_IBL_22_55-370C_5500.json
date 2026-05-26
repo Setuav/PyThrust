@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_IBL_22_55-370C_5500",
+  "name": "IBL 22/55-370C 5500",
+  "manufacturer": "Thunder Tiger",
+  "kv": 5500.0,
+  "resistance": 0.086,
+  "io": 0.7,
+  "max_current": 13.0,
+  "weight_g": 57.0,
+  "max_power": 230.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_D50-65-10_290",
+  "name": "D50-65-10 290",
+  "manufacturer": "ROXXY",
+  "kv": 290.0,
+  "resistance": 0.036,
+  "io": 2.3,
+  "max_current": 70.0,
+  "weight_g": 405.4,
+  "max_power": 2050.0,
+  "io_voltage": 14.8
+}

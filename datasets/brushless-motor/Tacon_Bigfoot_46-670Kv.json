@@ -1,0 +1,12 @@
+{
+  "id": "Tacon_Bigfoot_46-670Kv",
+  "name": "Bigfoot 46-670Kv",
+  "manufacturer": "Tacon",
+  "kv": 670.0,
+  "resistance": 0.0155,
+  "io": 2.0,
+  "max_current": 0.0,
+  "weight_g": 310.1,
+  "max_power": 800.0,
+  "io_voltage": 7.4
+}

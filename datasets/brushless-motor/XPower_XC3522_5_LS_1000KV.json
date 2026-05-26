@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC3522_5_LS_1000KV",
+  "name": "XC3522/5 LS 1000KV",
+  "manufacturer": "XPower",
+  "kv": 1000.0,
+  "resistance": 0.028,
+  "io": 1.4,
+  "max_current": 50.0,
+  "weight_g": 165.0,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

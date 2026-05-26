@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_1704-1480",
+  "name": "1704-1480",
+  "manufacturer": "Tempest",
+  "kv": 1480.0,
+  "resistance": 0.64,
+  "io": 0.24,
+  "max_current": 5.0,
+  "weight_g": 14.7,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_Q150-6M_V2",
+  "name": "Q150-6M V2",
+  "manufacturer": "Hacker",
+  "kv": 87.0,
+  "resistance": 0.0078,
+  "io": 2.8,
+  "max_current": 240.0,
+  "weight_g": 2381.6,
+  "max_power": 12000.0,
+  "io_voltage": 8.4
+}

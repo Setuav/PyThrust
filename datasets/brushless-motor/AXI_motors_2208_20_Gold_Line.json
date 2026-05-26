@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_2208_20_Gold_Line",
+  "name": "2208/20 Gold Line*",
+  "manufacturer": "AXI motors",
+  "kv": 1863.0,
+  "resistance": 0.143,
+  "io": 1.05,
+  "max_current": 18.0,
+  "weight_g": 43.7,
+  "max_power": 130.0,
+  "io_voltage": 8.0
+}

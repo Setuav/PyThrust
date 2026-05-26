@@ -1,0 +1,12 @@
+{
+  "id": "Astro_Flight_840M-4T",
+  "name": "840M-4T",
+  "manufacturer": "Astro Flight",
+  "kv": 1360.0,
+  "resistance": 0.043,
+  "io": 1.2,
+  "max_current": 60.0,
+  "weight_g": 246.6,
+  "max_power": 1000.0,
+  "io_voltage": 8.4
+}

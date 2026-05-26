@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_P2505_FPV-1850",
+  "name": "P2505 FPV-1850",
+  "manufacturer": "T-Motor",
+  "kv": 1850.0,
+  "resistance": 0.069,
+  "io": 1.1,
+  "max_current": 47.0,
+  "weight_g": 31.2,
+  "max_power": 1217.0,
+  "io_voltage": 10.0
+}

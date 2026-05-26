@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M1818_Micro_4500KV",
+  "name": "PRO M1818 Micro 4500KV",
+  "manufacturer": "Avionic",
+  "kv": 4500.0,
+  "resistance": 0.24,
+  "io": 0.6,
+  "max_current": 7.3,
+  "weight_g": 9.9,
+  "max_power": 40.0,
+  "io_voltage": 7.0
+}

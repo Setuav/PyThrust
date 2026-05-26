@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_1Y_733",
+  "name": "1545/1Y 733",
+  "manufacturer": "NeuMotors",
+  "kv": 733.0,
+  "resistance": 0.018,
+  "io": 2.5,
+  "max_current": 98.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

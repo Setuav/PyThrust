@@ -1,0 +1,12 @@
+{
+  "id": "T-Hobby_P2406_V4_KV2060",
+  "name": "P2406 V4 KV2060",
+  "manufacturer": "T-Hobby",
+  "kv": 2060.0,
+  "resistance": 0.045,
+  "io": 1.9,
+  "max_current": 48.0,
+  "weight_g": 36.0,
+  "max_power": 1116.0,
+  "io_voltage": 10.0
+}

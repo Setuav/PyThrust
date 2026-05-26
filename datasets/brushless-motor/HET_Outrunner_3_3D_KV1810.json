@@ -1,0 +1,12 @@
+{
+  "id": "HET_Outrunner_3_3D_KV1810",
+  "name": "Outrunner 3/3D KV1810",
+  "manufacturer": "HET",
+  "kv": 1810.0,
+  "resistance": 0.22,
+  "io": 0.4,
+  "max_current": 10.0,
+  "weight_g": 24.1,
+  "max_power": 72.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2808-10_1400KV",
+  "name": "2808-10 1400KV",
+  "manufacturer": "HobbyStar",
+  "kv": 1400.0,
+  "resistance": 0.059,
+  "io": 1.2,
+  "max_current": 35.0,
+  "weight_g": 72.0,
+  "max_power": 350.0,
+  "io_voltage": 10.0
+}

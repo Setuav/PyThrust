@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC5055-7T_550kv",
+  "name": "LC5055-7T 550kv",
+  "manufacturer": "Leopard",
+  "kv": 550.0,
+  "resistance": 0.0215,
+  "io": 2.8,
+  "max_current": 72.0,
+  "weight_g": 280.1,
+  "max_power": 1776.0,
+  "io_voltage": 15.0
+}

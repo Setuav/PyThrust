@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C6374-200",
+  "name": "C6374-200",
+  "manufacturer": "EMP",
+  "kv": 200.0,
+  "resistance": 0.037,
+  "io": 2.3,
+  "max_current": 0.0,
+  "weight_g": 790.7,
+  "max_power": 1820.0,
+  "io_voltage": 10.0
+}

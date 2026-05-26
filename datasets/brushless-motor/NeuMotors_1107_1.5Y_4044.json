@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1107_1.5Y_4044",
+  "name": "1107/1.5Y 4044",
+  "manufacturer": "NeuMotors",
+  "kv": 4044.0,
+  "resistance": 0.008,
+  "io": 1.7,
+  "max_current": 40.0,
+  "weight_g": 90.7,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

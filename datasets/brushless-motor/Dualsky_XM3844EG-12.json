@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3844EG-12",
+  "name": "XM3844EG-12",
+  "manufacturer": "Dualsky",
+  "kv": 810.0,
+  "resistance": 0.0305,
+  "io": 1.2,
+  "max_current": 40.0,
+  "weight_g": 161.0,
+  "max_power": 640.0,
+  "io_voltage": 10.0
+}

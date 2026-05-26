@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_4110-560",
+  "name": "4110-560",
+  "manufacturer": "Black Widow",
+  "kv": 563.0,
+  "resistance": 0.0644,
+  "io": 1.47,
+  "max_current": 0.0,
+  "weight_g": 188.2,
+  "max_power": 430.0,
+  "io_voltage": 22.2
+}

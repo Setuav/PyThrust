@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2210-1080",
+  "name": "DM 2210-1080",
+  "manufacturer": "MotrolFly",
+  "kv": 993.0,
+  "resistance": 0.172,
+  "io": 0.51,
+  "max_current": 15.0,
+  "weight_g": 43.1,
+  "max_power": 155.0,
+  "io_voltage": 7.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RedRock_2814_05_1400",
+  "name": "2814/05 1400",
+  "manufacturer": "RedRock",
+  "kv": 1400.0,
+  "resistance": 0.037,
+  "io": 1.9,
+  "max_current": 25.0,
+  "weight_g": 115.1,
+  "max_power": 550.0,
+  "io_voltage": 10.0
+}

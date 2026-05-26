@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-9T_3211KV",
+  "name": "380L-9T 3211KV",
+  "manufacturer": "Feigao",
+  "kv": 3211.0,
+  "resistance": 0.0144,
+  "io": 1.7,
+  "max_current": 46.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

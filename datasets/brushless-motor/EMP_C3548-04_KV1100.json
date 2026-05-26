@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C3548-04_KV1100",
+  "name": "C3548-04 KV1100",
+  "manufacturer": "EMP",
+  "kv": 1100.0,
+  "resistance": 0.028,
+  "io": 1.8,
+  "max_current": 0.0,
+  "weight_g": 170.1,
+  "max_power": 740.0,
+  "io_voltage": 10.0
+}

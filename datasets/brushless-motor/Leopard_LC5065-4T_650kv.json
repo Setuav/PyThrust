@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC5065-4T_650kv",
+  "name": "LC5065-4T 650kv",
+  "manufacturer": "Leopard",
+  "kv": 650.0,
+  "resistance": 0.0105,
+  "io": 5.2,
+  "max_current": 80.0,
+  "weight_g": 371.4,
+  "max_power": 1312.0,
+  "io_voltage": 15.0
+}

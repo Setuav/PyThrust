@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_4120-06_760KV",
+  "name": "4120-06 760KV",
+  "manufacturer": "HobbyStar",
+  "kv": 760.0,
+  "resistance": 0.0173,
+  "io": 2.4,
+  "max_current": 83.0,
+  "weight_g": 285.2,
+  "max_power": 1650.0,
+  "io_voltage": 10.0
+}

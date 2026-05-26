@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_28-13_1360KV",
+  "name": "AL 28-13 1360KV",
+  "manufacturer": "D-Power",
+  "kv": 1360.0,
+  "resistance": 0.35,
+  "io": 0.4,
+  "max_current": 7.0,
+  "weight_g": 28.9,
+  "max_power": 110.0,
+  "io_voltage": 8.0
+}

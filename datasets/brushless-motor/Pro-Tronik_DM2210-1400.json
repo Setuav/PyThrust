@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2210-1400",
+  "name": "DM2210-1400",
+  "manufacturer": "Pro-Tronik",
+  "kv": 1400.0,
+  "resistance": 0.0866,
+  "io": 0.88,
+  "max_current": 14.0,
+  "weight_g": 43.1,
+  "max_power": 120.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM4010HD-6.5",
+  "name": "XM4010HD-6.5",
+  "manufacturer": "Dualsky",
+  "kv": 720.0,
+  "resistance": 0.081,
+  "io": 1.0,
+  "max_current": 22.0,
+  "weight_g": 76.0,
+  "max_power": 329.0,
+  "io_voltage": 10.0
+}

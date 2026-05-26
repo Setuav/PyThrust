@@ -1,0 +1,12 @@
+{
+  "id": "GEPRC_GR1106_4500kv",
+  "name": "GR1106 4500kv",
+  "manufacturer": "GEPRC",
+  "kv": 4500.0,
+  "resistance": 0.266,
+  "io": 0.6,
+  "max_current": 9.6,
+  "weight_g": 7.1,
+  "max_power": 153.0,
+  "io_voltage": 7.4
+}

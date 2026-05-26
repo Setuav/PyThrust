@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_5.5D_993",
+  "name": "1115/5.5D 993",
+  "manufacturer": "NeuMotors",
+  "kv": 993.0,
+  "resistance": 0.076,
+  "io": 0.8,
+  "max_current": 23.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

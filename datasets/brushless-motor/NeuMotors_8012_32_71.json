@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_32_71",
+  "name": "8012/32/71",
+  "manufacturer": "NeuMotors",
+  "kv": 71.0,
+  "resistance": 0.188,
+  "io": 0.253,
+  "max_current": 32.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

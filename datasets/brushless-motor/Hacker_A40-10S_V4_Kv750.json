@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A40-10S_V4_Kv750",
+  "name": "A40-10S V4 Kv750",
+  "manufacturer": "Hacker",
+  "kv": 750.0,
+  "resistance": 0.014,
+  "io": 2.54,
+  "max_current": 55.0,
+  "weight_g": 198.2,
+  "max_power": 900.0,
+  "io_voltage": 8.4
+}

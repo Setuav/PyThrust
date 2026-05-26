@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1518_2.25Y_815",
+  "name": "1518/2.25Y 815",
+  "manufacturer": "NeuMotors",
+  "kv": 815.0,
+  "resistance": 0.0365,
+  "io": 1.11,
+  "max_current": 41.0,
+  "weight_g": 410.2,
+  "max_power": 3000.0,
+  "io_voltage": 10.0
+}

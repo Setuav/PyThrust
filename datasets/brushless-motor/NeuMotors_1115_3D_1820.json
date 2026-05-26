@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_3D_1820",
+  "name": "1115/3D 1820",
+  "manufacturer": "NeuMotors",
+  "kv": 1820.0,
+  "resistance": 0.022,
+  "io": 1.5,
+  "max_current": 42.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

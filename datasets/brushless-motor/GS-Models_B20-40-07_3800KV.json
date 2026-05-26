@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B20-40-07_3800KV",
+  "name": "B20-40-07 3800KV",
+  "manufacturer": "GS-Models",
+  "kv": 3800.0,
+  "resistance": 0.081,
+  "io": 1.4,
+  "max_current": 22.0,
+  "weight_g": 60.1,
+  "max_power": 370.0,
+  "io_voltage": 10.0
+}

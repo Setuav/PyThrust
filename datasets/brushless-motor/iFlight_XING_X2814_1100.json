@@ -1,0 +1,12 @@
+{
+  "id": "iFlight_XING_X2814_1100",
+  "name": "XING X2814 1100",
+  "manufacturer": "iFlight",
+  "kv": 1100.0,
+  "resistance": 0.0486,
+  "io": 2.05,
+  "max_current": 44.0,
+  "weight_g": 93.0,
+  "max_power": 816.0,
+  "io_voltage": 10.0
+}

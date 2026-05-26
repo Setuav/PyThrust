@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-16L-Glider",
+  "name": "A60-16L-Glider",
+  "manufacturer": "Hacker",
+  "kv": 168.0,
+  "resistance": 0.018,
+  "io": 1.8,
+  "max_current": 120.0,
+  "weight_g": 938.7,
+  "max_power": 3000.0,
+  "io_voltage": 8.4
+}

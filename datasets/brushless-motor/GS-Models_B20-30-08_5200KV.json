@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B20-30-08_5200KV",
+  "name": "B20-30-08 5200KV",
+  "manufacturer": "GS-Models",
+  "kv": 5200.0,
+  "resistance": 0.076,
+  "io": 1.4,
+  "max_current": 24.0,
+  "weight_g": 47.9,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

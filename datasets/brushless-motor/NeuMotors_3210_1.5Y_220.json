@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_3210_1.5Y_220",
+  "name": "3210/1.5Y 220",
+  "manufacturer": "NeuMotors",
+  "kv": 220.0,
+  "resistance": 0.026,
+  "io": 1.3,
+  "max_current": 59.0,
+  "weight_g": 1007.8,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1506_4.25D_2329",
+  "name": "1506/4.25D 2329",
+  "manufacturer": "NeuMotors",
+  "kv": 2329.0,
+  "resistance": 0.0145,
+  "io": 1.06,
+  "max_current": 39.0,
+  "weight_g": 170.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

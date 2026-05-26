@@ -1,0 +1,12 @@
+{
+  "id": "Foxy_G2_C3520-880",
+  "name": "G2 C3520-880*",
+  "manufacturer": "Foxy",
+  "kv": 880.0,
+  "resistance": 0.025,
+  "io": 1.5,
+  "max_current": 60.0,
+  "weight_g": 205.3,
+  "max_power": 880.0,
+  "io_voltage": 10.0
+}

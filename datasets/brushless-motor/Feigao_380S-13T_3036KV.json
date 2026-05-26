@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-13T_3036KV",
+  "name": "380S-13T 3036KV",
+  "manufacturer": "Feigao",
+  "kv": 3036.0,
+  "resistance": 0.0249,
+  "io": 1.2,
+  "max_current": 32.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

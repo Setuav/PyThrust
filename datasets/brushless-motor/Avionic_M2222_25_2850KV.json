@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_M2222_25_2850KV",
+  "name": "M2222/25 2850KV",
+  "manufacturer": "Avionic",
+  "kv": 2850.0,
+  "resistance": 0.485,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 17.0,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-12D_4720",
+  "name": "TP2020-12D 4720",
+  "manufacturer": "TP Power",
+  "kv": 4720.0,
+  "resistance": 0.041,
+  "io": 0.8,
+  "max_current": 26.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-22L_Competition",
+  "name": "A20-22L Competition",
+  "manufacturer": "Hacker",
+  "kv": 924.0,
+  "resistance": 0.117,
+  "io": 0.67,
+  "max_current": 15.0,
+  "weight_g": 81.1,
+  "max_power": 240.0,
+  "io_voltage": 8.4
+}

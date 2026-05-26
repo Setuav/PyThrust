@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1112_4.25D_1542",
+  "name": "1112/4.25D 1542",
+  "manufacturer": "NeuMotors",
+  "kv": 1542.0,
+  "resistance": 0.038,
+  "io": 1.1,
+  "max_current": 31.0,
+  "weight_g": 133.0,
+  "max_power": 1200.0,
+  "io_voltage": 10.0
+}

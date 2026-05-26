@@ -1,0 +1,12 @@
+{
+  "id": "Mega_ACn_16-40-1.5S",
+  "name": "ACn 16-40-1.5S",
+  "manufacturer": "Mega",
+  "kv": 1915.0,
+  "resistance": 0.012,
+  "io": 2.8,
+  "max_current": 60.0,
+  "weight_g": 162.2,
+  "max_power": 500.0,
+  "io_voltage": 10.0
+}

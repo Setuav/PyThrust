@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Power_90_BL_325",
+  "name": "Power 90 BL 325",
+  "manufacturer": "E-flite",
+  "kv": 325.0,
+  "resistance": 0.02,
+  "io": 2.0,
+  "max_current": 65.0,
+  "weight_g": 450.5,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

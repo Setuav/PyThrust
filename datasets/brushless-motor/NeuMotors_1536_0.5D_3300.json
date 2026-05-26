@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1536_0.5D_3300",
+  "name": "1536/0.5D 3300",
+  "manufacturer": "NeuMotors",
+  "kv": 3300.0,
+  "resistance": 0.0012,
+  "io": 9.0,
+  "max_current": 193.0,
+  "weight_g": 773.7,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

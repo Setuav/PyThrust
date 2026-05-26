@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C08_IPE_V3_180KV",
+  "name": "M6C08 IPE V3 180KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 180.0,
+  "resistance": 0.119,
+  "io": 0.51,
+  "max_current": 34.0,
+  "weight_g": 221.1,
+  "max_power": 1485.0,
+  "io_voltage": 20.0
+}

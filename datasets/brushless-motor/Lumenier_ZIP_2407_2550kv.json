@@ -1,0 +1,12 @@
+{
+  "id": "Lumenier_ZIP_2407_2550kv",
+  "name": "ZIP 2407 2550kv",
+  "manufacturer": "Lumenier",
+  "kv": 2550.0,
+  "resistance": 0.18,
+  "io": 1.2,
+  "max_current": 45.0,
+  "weight_g": 36.0,
+  "max_power": 560.0,
+  "io_voltage": 12.6
+}

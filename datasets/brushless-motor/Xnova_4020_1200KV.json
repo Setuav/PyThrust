@@ -1,0 +1,12 @@
+{
+  "id": "Xnova_4020_1200KV",
+  "name": "4020 1200KV",
+  "manufacturer": "Xnova",
+  "kv": 1200.0,
+  "resistance": 0.008,
+  "io": 2.1,
+  "max_current": 105.0,
+  "weight_g": 348.1,
+  "max_power": 2900.0,
+  "io_voltage": 10.0
+}

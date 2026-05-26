@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2020_4.5D_310",
+  "name": "2020/4.5D 310",
+  "manufacturer": "NeuMotors",
+  "kv": 310.0,
+  "resistance": 0.047,
+  "io": 1.12,
+  "max_current": 43.0,
+  "weight_g": 660.5,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

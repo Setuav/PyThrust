@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_3508-610",
+  "name": "3508-610",
+  "manufacturer": "Black Widow",
+  "kv": 588.0,
+  "resistance": 0.2012,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 135.2,
+  "max_power": 280.0,
+  "io_voltage": 14.8
+}

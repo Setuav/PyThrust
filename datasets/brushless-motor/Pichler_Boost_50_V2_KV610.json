@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_50_V2_KV610",
+  "name": "Boost 50 V2 KV610",
+  "manufacturer": "Pichler",
+  "kv": 610.0,
+  "resistance": 0.0145,
+  "io": 2.3,
+  "max_current": 55.0,
+  "weight_g": 295.1,
+  "max_power": 1000.0,
+  "io_voltage": 8.4
+}

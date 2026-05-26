@@ -1,0 +1,12 @@
+{
+  "id": "Scorpion_S-2503-1960",
+  "name": "S-2503-1960",
+  "manufacturer": "Scorpion",
+  "kv": 1960.0,
+  "resistance": 0.135,
+  "io": 0.833,
+  "max_current": 11.0,
+  "weight_g": 20.1,
+  "max_power": 70.0,
+  "io_voltage": 11.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1515_0.75D_5280",
+  "name": "1515/0.75D 5280",
+  "manufacturer": "NeuMotors",
+  "kv": 5280.0,
+  "resistance": 0.0011,
+  "io": 6.0,
+  "max_current": 176.0,
+  "weight_g": 340.2,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

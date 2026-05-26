@@ -1,0 +1,12 @@
+{
+  "id": "D-Power_AL_3530-8_1750KV",
+  "name": "AL 3530-8 1750KV",
+  "manufacturer": "D-Power",
+  "kv": 1750.0,
+  "resistance": 0.0368,
+  "io": 1.5,
+  "max_current": 30.0,
+  "weight_g": 72.0,
+  "max_power": 250.0,
+  "io_voltage": 8.0
+}

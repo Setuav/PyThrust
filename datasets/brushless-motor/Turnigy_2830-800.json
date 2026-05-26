@@ -1,0 +1,12 @@
+{
+  "id": "Turnigy_2830-800",
+  "name": "2830-800",
+  "manufacturer": "Turnigy",
+  "kv": 960.0,
+  "resistance": 0.245,
+  "io": 0.86,
+  "max_current": 14.0,
+  "weight_g": 57.0,
+  "max_power": 170.0,
+  "io_voltage": 12.0
+}

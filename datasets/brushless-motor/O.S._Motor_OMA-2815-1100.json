@@ -1,0 +1,12 @@
+{
+  "id": "O.S._Motor_OMA-2815-1100",
+  "name": "OMA-2815-1100",
+  "manufacturer": "O.S. Motor",
+  "kv": 1100.0,
+  "resistance": 0.069,
+  "io": 0.7,
+  "max_current": 25.0,
+  "weight_g": 66.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

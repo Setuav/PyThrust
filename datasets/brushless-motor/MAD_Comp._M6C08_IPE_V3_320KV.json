@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._M6C08_IPE_V3_320KV",
+  "name": "M6C08 IPE V3 320KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 320.0,
+  "resistance": 0.037,
+  "io": 1.37,
+  "max_current": 64.0,
+  "weight_g": 224.2,
+  "max_power": 1495.0,
+  "io_voltage": 20.0
+}

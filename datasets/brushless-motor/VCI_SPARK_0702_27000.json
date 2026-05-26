@@ -1,0 +1,12 @@
+{
+  "id": "VCI_SPARK_0702_27000",
+  "name": "SPARK 0702 27000",
+  "manufacturer": "VCI",
+  "kv": 27000.0,
+  "resistance": 0.29,
+  "io": 0.6,
+  "max_current": 4.0,
+  "weight_g": 1.5,
+  "max_power": 16.0,
+  "io_voltage": 3.0
+}

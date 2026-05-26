@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V2207_V2_KV1750",
+  "name": "V2207 V2 KV1750",
+  "manufacturer": "T-Motor",
+  "kv": 1750.0,
+  "resistance": 0.0612,
+  "io": 1.2,
+  "max_current": 36.0,
+  "weight_g": 30.6,
+  "max_power": 794.0,
+  "io_voltage": 10.0
+}

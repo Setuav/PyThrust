@@ -1,0 +1,12 @@
+{
+  "id": "DarwinFPV_1507_2400KV",
+  "name": "1507 2400KV",
+  "manufacturer": "DarwinFPV",
+  "kv": 2400.0,
+  "resistance": 0.1935,
+  "io": 0.45,
+  "max_current": 30.0,
+  "weight_g": 17.9,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

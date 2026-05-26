@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Orbit_25-16",
+  "name": "Orbit 25-16",
+  "manufacturer": "Plettenberg",
+  "kv": 590.0,
+  "resistance": 0.062,
+  "io": 1.7,
+  "max_current": 0.0,
+  "weight_g": 250.0,
+  "max_power": 1450.0,
+  "io_voltage": 11.0
+}

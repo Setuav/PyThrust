@@ -1,0 +1,12 @@
+{
+  "id": "Aeolian_C2822-KV1400",
+  "name": "C2822-KV1400",
+  "manufacturer": "Aeolian",
+  "kv": 1400.0,
+  "resistance": 0.307,
+  "io": 0.5,
+  "max_current": 13.0,
+  "weight_g": 30.1,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

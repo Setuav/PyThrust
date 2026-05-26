@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2306C-V2-2300",
+  "name": "ECO 2306C-V2-2300",
+  "manufacturer": "Dualsky",
+  "kv": 2300.0,
+  "resistance": 0.0612,
+  "io": 1.1,
+  "max_current": 23.0,
+  "weight_g": 30.1,
+  "max_power": 180.0,
+  "io_voltage": 10.0
+}

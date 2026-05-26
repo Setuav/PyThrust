@@ -1,0 +1,12 @@
+{
+  "id": "Poly-Tec_D35-60-420",
+  "name": "D35-60-420",
+  "manufacturer": "Poly-Tec",
+  "kv": 420.0,
+  "resistance": 0.0511,
+  "io": 2.4,
+  "max_current": 85.0,
+  "weight_g": 296.3,
+  "max_power": 1650.0,
+  "io_voltage": 7.4
+}

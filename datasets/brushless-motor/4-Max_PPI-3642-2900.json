@@ -1,0 +1,12 @@
+{
+  "id": "4-Max_PPI-3642-2900",
+  "name": "PPI-3642-2900",
+  "manufacturer": "4-Max",
+  "kv": 2900.0,
+  "resistance": 0.021,
+  "io": 2.5,
+  "max_current": 36.0,
+  "weight_g": 170.1,
+  "max_power": 375.0,
+  "io_voltage": 10.0
+}

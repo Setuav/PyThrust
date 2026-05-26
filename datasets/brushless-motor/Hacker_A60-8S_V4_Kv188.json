@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A60-8S_V4_Kv188",
+  "name": "A60-8S V4 Kv188",
+  "manufacturer": "Hacker",
+  "kv": 188.0,
+  "resistance": 0.031,
+  "io": 1.1,
+  "max_current": 110.0,
+  "weight_g": 595.3,
+  "max_power": 2400.0,
+  "io_voltage": 8.4
+}

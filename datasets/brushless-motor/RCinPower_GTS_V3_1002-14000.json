@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_GTS_V3_1002-14000",
+  "name": "GTS V3 1002-14000",
+  "manufacturer": "RCinPower",
+  "kv": 14000.0,
+  "resistance": 0.175,
+  "io": 0.8,
+  "max_current": 9.0,
+  "weight_g": 2.6,
+  "max_power": 67.0,
+  "io_voltage": 5.0
+}

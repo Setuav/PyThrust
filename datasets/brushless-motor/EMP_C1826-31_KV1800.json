@@ -1,0 +1,12 @@
+{
+  "id": "EMP_C1826-31_KV1800",
+  "name": "C1826-31 KV1800",
+  "manufacturer": "EMP",
+  "kv": 1800.0,
+  "resistance": 0.422,
+  "io": 0.2,
+  "max_current": 0.0,
+  "weight_g": 18.1,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

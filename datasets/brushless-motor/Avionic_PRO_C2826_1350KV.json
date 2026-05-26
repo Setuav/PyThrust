@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_C2826_1350KV",
+  "name": "PRO C2826 1350KV",
+  "manufacturer": "Avionic",
+  "kv": 1350.0,
+  "resistance": 0.125,
+  "io": 0.7,
+  "max_current": 0.0,
+  "weight_g": 54.1,
+  "max_power": 190.0,
+  "io_voltage": 10.0
+}

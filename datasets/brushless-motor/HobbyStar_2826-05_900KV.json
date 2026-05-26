@@ -1,0 +1,12 @@
+{
+  "id": "HobbyStar_2826-05_900KV",
+  "name": "2826-05 900KV",
+  "manufacturer": "HobbyStar",
+  "kv": 900.0,
+  "resistance": 0.033,
+  "io": 2.2,
+  "max_current": 60.0,
+  "weight_g": 157.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP2020-9D_6280",
+  "name": "TP2020-9D 6280",
+  "manufacturer": "TP Power",
+  "kv": 6280.0,
+  "resistance": 0.0259,
+  "io": 1.3,
+  "max_current": 35.0,
+  "weight_g": 55.8,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

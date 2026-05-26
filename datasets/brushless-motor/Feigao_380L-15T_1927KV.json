@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-15T_1927KV",
+  "name": "380L-15T 1927KV",
+  "manufacturer": "Feigao",
+  "kv": 1927.0,
+  "resistance": 0.0399,
+  "io": 0.7,
+  "max_current": 27.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

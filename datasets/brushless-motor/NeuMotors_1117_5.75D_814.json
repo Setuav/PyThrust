@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1117_5.75D_814",
+  "name": "1117/5.75D 814",
+  "manufacturer": "NeuMotors",
+  "kv": 814.0,
+  "resistance": 0.096,
+  "io": 0.8,
+  "max_current": 22.0,
+  "weight_g": 164.1,
+  "max_power": 1600.0,
+  "io_voltage": 10.0
+}

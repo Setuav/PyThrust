@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1120_4.25D_964",
+  "name": "1120/4.25D 964",
+  "manufacturer": "NeuMotors",
+  "kv": 964.0,
+  "resistance": 0.06,
+  "io": 1.1,
+  "max_current": 26.0,
+  "weight_g": 198.2,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

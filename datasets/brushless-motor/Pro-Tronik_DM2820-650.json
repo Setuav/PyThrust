@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM2820-650",
+  "name": "DM2820-650",
+  "manufacturer": "Pro-Tronik",
+  "kv": 650.0,
+  "resistance": 0.052,
+  "io": 1.15,
+  "max_current": 40.0,
+  "weight_g": 150.3,
+  "max_power": 400.0,
+  "io_voltage": 8.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_E10-26L_Kv6100",
+  "name": "E10-26L Kv6100",
+  "manufacturer": "Hacker",
+  "kv": 6100.0,
+  "resistance": 0.285,
+  "io": 0.6,
+  "max_current": 5.0,
+  "weight_g": 13.9,
+  "max_power": 45.0,
+  "io_voltage": 8.4
+}

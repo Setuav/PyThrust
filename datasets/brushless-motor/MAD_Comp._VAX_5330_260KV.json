@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._VAX_5330_260KV",
+  "name": "VAX 5330 260KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 260.0,
+  "resistance": 0.021,
+  "io": 1.6,
+  "max_current": 97.0,
+  "weight_g": 564.4,
+  "max_power": 4377.0,
+  "io_voltage": 20.0
+}

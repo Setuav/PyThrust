@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1524_3Y_458",
+  "name": "1524/3Y 458",
+  "manufacturer": "NeuMotors",
+  "kv": 458.0,
+  "resistance": 0.0864,
+  "io": 0.83,
+  "max_current": 31.0,
+  "weight_g": 549.4,
+  "max_power": 4000.0,
+  "io_voltage": 10.0
+}

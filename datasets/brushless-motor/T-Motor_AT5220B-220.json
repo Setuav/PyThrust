@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_AT5220B-220",
+  "name": "AT5220B-220",
+  "manufacturer": "T-Motor",
+  "kv": 220.0,
+  "resistance": 0.036,
+  "io": 1.8,
+  "max_current": 70.0,
+  "weight_g": 450.5,
+  "max_power": 2700.0,
+  "io_voltage": 10.0
+}

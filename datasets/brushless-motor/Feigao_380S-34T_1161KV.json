@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-34T_1161KV",
+  "name": "380S-34T 1161KV",
+  "manufacturer": "Feigao",
+  "kv": 1161.0,
+  "resistance": 0.1702,
+  "io": 0.2,
+  "max_current": 12.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

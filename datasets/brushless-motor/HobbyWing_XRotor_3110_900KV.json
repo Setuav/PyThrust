@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_3110_900KV",
+  "name": "XRotor 3110 900KV",
+  "manufacturer": "HobbyWing",
+  "kv": 900.0,
+  "resistance": 0.059,
+  "io": 2.2,
+  "max_current": 63.0,
+  "weight_g": 89.0,
+  "max_power": 1500.0,
+  "io_voltage": 24.0
+}

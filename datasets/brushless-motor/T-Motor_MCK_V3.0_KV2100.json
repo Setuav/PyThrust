@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MCK_V3.0_KV2100",
+  "name": "MCK V3.0 KV2100",
+  "manufacturer": "T-Motor",
+  "kv": 2100.0,
+  "resistance": 0.057,
+  "io": 1.4,
+  "max_current": 42.0,
+  "weight_g": 32.6,
+  "max_power": 980.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M2028_Micro_2300KV",
+  "name": "PRO M2028 Micro 2300KV",
+  "manufacturer": "Avionic",
+  "kv": 2300.0,
+  "resistance": 0.109,
+  "io": 0.6,
+  "max_current": 9.8,
+  "weight_g": 26.9,
+  "max_power": 108.0,
+  "io_voltage": 7.0
+}

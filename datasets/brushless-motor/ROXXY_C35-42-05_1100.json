@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-42-05_1100",
+  "name": "C35-42-05 1100",
+  "manufacturer": "ROXXY",
+  "kv": 1100.0,
+  "resistance": 0.028,
+  "io": 4.05,
+  "max_current": 65.0,
+  "weight_g": 132.1,
+  "max_power": 850.0,
+  "io_voltage": 14.0
+}

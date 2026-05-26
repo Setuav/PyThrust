@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_2203.5_1650KV",
+  "name": "Toka 2203.5 1650KV",
+  "manufacturer": "Mamba",
+  "kv": 1650.0,
+  "resistance": 0.232,
+  "io": 0.3,
+  "max_current": 16.0,
+  "weight_g": 20.7,
+  "max_power": 381.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-2814_24",
+  "name": "CM-2814/24",
+  "manufacturer": "Cobra",
+  "kv": 700.0,
+  "resistance": 0.095,
+  "io": 0.55,
+  "max_current": 23.0,
+  "weight_g": 115.9,
+  "max_power": 255.0,
+  "io_voltage": 12.0
+}

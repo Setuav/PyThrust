@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540XL-14T_1191KV",
+  "name": "540XL-14T 1191KV",
+  "manufacturer": "Feigao",
+  "kv": 1191.0,
+  "resistance": 0.0223,
+  "io": 1.2,
+  "max_current": 47.0,
+  "weight_g": 376.2,
+  "max_power": 1500.0,
+  "io_voltage": 10.0
+}

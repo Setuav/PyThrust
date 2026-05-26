@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6560_4.5_98",
+  "name": "6560/4.5/98",
+  "manufacturer": "NeuMotors",
+  "kv": 98.0,
+  "resistance": 0.045,
+  "io": 1.089,
+  "max_current": 160.0,
+  "weight_g": 1302.9,
+  "max_power": 14000.0,
+  "io_voltage": 10.0
+}

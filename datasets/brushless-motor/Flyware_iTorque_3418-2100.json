@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_iTorque_3418-2100",
+  "name": "iTorque 3418-2100*",
+  "manufacturer": "Flyware",
+  "kv": 2100.0,
+  "resistance": 0.012,
+  "io": 2.2,
+  "max_current": 0.0,
+  "weight_g": 133.0,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

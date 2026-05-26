@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_24-45-3790",
+  "name": "AMMO 24-45-3790",
+  "manufacturer": "ElectriFly",
+  "kv": 3790.0,
+  "resistance": 0.0221,
+  "io": 2.6,
+  "max_current": 0.0,
+  "weight_g": 101.2,
+  "max_power": 550.0,
+  "io_voltage": 7.4
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-10T_2829KV",
+  "name": "380L-10T 2829KV",
+  "manufacturer": "Feigao",
+  "kv": 2829.0,
+  "resistance": 0.0178,
+  "io": 1.4,
+  "max_current": 41.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

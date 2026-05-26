@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP5680-5D_1150",
+  "name": "TP5680-5D 1150",
+  "manufacturer": "TP Power",
+  "kv": 1150.0,
+  "resistance": 0.00284,
+  "io": 8.8,
+  "max_current": 336.0,
+  "weight_g": 1100.8,
+  "max_power": 15000.0,
+  "io_voltage": 8.0
+}

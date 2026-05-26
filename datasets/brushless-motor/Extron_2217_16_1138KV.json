@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2217_16_1138KV",
+  "name": "2217/16 1138KV",
+  "manufacturer": "Extron",
+  "kv": 1138.0,
+  "resistance": 0.0626,
+  "io": 1.3,
+  "max_current": 21.0,
+  "weight_g": 73.7,
+  "max_power": 315.0,
+  "io_voltage": 14.8
+}

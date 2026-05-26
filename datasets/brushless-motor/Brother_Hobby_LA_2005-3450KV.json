@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_LA_2005-3450KV",
+  "name": "LA 2005-3450KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 3450.0,
+  "resistance": 0.0676,
+  "io": 1.5,
+  "max_current": 23.0,
+  "weight_g": 21.0,
+  "max_power": 367.0,
+  "io_voltage": 8.0
+}

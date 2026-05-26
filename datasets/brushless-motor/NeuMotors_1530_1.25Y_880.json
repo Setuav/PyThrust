@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1530_1.25Y_880",
+  "name": "1530/1.25Y 880",
+  "manufacturer": "NeuMotors",
+  "kv": 880.0,
+  "resistance": 0.019,
+  "io": 2.0,
+  "max_current": 81.0,
+  "weight_g": 693.4,
+  "max_power": 5500.0,
+  "io_voltage": 10.0
+}

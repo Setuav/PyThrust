@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Freestyle_XL",
+  "name": "Freestyle XL",
+  "manufacturer": "Plettenberg",
+  "kv": 942.0,
+  "resistance": 0.095,
+  "io": 1.05,
+  "max_current": 15.0,
+  "weight_g": 141.7,
+  "max_power": 425.0,
+  "io_voltage": 8.0
+}

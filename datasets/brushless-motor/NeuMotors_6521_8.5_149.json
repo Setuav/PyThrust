@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_6521_8.5_149",
+  "name": "6521/8.5/149",
+  "manufacturer": "NeuMotors",
+  "kv": 149.0,
+  "resistance": 0.065,
+  "io": 0.577,
+  "max_current": 85.0,
+  "weight_g": 577.5,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

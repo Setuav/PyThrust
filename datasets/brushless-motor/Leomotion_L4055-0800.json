@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L4055-0800",
+  "name": "L4055-0800",
+  "manufacturer": "Leomotion",
+  "kv": 780.0,
+  "resistance": 0.025,
+  "io": 1.0,
+  "max_current": 0.0,
+  "weight_g": 480.2,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

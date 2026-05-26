@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1412_1.5Y_1850",
+  "name": "1412/1.5Y 1850",
+  "manufacturer": "NeuMotors",
+  "kv": 1850.0,
+  "resistance": 0.008,
+  "io": 2.0,
+  "max_current": 59.0,
+  "weight_g": 257.7,
+  "max_power": 1900.0,
+  "io_voltage": 10.0
+}

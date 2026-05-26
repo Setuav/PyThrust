@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Six-Series_BL_2000",
+  "name": "Six-Series BL 2000",
+  "manufacturer": "E-flite",
+  "kv": 2000.0,
+  "resistance": 0.06,
+  "io": 1.76,
+  "max_current": 32.0,
+  "weight_g": 79.9,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

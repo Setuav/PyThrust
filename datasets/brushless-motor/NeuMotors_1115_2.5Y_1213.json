@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1115_2.5Y_1213",
+  "name": "1115/2.5Y 1213",
+  "manufacturer": "NeuMotors",
+  "kv": 1213.0,
+  "resistance": 0.047,
+  "io": 1.0,
+  "max_current": 28.0,
+  "weight_g": 164.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

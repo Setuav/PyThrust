@@ -1,0 +1,12 @@
+{
+  "id": "HangLi_W35-42_KV1100",
+  "name": "W35-42 KV1100",
+  "manufacturer": "HangLi",
+  "kv": 1100.0,
+  "resistance": 0.0228,
+  "io": 2.3,
+  "max_current": 43.0,
+  "weight_g": 132.1,
+  "max_power": 540.0,
+  "io_voltage": 7.4
+}

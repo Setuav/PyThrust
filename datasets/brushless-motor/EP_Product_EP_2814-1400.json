@@ -1,0 +1,12 @@
+{
+  "id": "EP_Product_EP_2814-1400",
+  "name": "EP 2814-1400",
+  "manufacturer": "EP Product",
+  "kv": 1390.0,
+  "resistance": 0.045,
+  "io": 1.44,
+  "max_current": 40.0,
+  "weight_g": 109.1,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

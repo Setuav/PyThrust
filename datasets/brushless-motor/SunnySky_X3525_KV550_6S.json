@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X3525_KV550_6S",
+  "name": "X3525 KV550 6S",
+  "manufacturer": "SunnySky",
+  "kv": 550.0,
+  "resistance": 0.0209,
+  "io": 1.3,
+  "max_current": 88.0,
+  "weight_g": 252.3,
+  "max_power": 2200.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM3542CA-5",
+  "name": "XM3542CA-5",
+  "manufacturer": "Dualsky",
+  "kv": 1120.0,
+  "resistance": 0.027,
+  "io": 2.11,
+  "max_current": 38.0,
+  "weight_g": 137.2,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_5215XF-220",
+  "name": "5215XF-220",
+  "manufacturer": "KDEDirect",
+  "kv": 220.0,
+  "resistance": 0.078,
+  "io": 0.5,
+  "max_current": 44.0,
+  "weight_g": 305.3,
+  "max_power": 1955.0,
+  "io_voltage": 10.0
+}

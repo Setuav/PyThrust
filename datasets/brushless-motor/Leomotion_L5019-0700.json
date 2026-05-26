@@ -1,0 +1,12 @@
+{
+  "id": "Leomotion_L5019-0700",
+  "name": "L5019-0700",
+  "manufacturer": "Leomotion",
+  "kv": 675.0,
+  "resistance": 0.03,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 240.1,
+  "max_power": 1800.0,
+  "io_voltage": 10.0
+}

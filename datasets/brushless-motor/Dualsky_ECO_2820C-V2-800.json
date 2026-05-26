@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_ECO_2820C-V2-800",
+  "name": "ECO 2820C-V2-800",
+  "manufacturer": "Dualsky",
+  "kv": 800.0,
+  "resistance": 0.046,
+  "io": 0.9,
+  "max_current": 34.0,
+  "weight_g": 138.1,
+  "max_power": 540.0,
+  "io_voltage": 10.0
+}

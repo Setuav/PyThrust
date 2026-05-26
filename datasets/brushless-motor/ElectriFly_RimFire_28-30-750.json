@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_RimFire_28-30-750",
+  "name": "RimFire 28-30-750",
+  "manufacturer": "ElectriFly",
+  "kv": 740.0,
+  "resistance": 0.185,
+  "io": 0.6,
+  "max_current": 10.0,
+  "weight_g": 54.1,
+  "max_power": 162.0,
+  "io_voltage": 7.4
+}

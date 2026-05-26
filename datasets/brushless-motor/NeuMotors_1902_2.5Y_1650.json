@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1902_2.5Y_1650",
+  "name": "1902/2.5Y 1650",
+  "manufacturer": "NeuMotors",
+  "kv": 1650.0,
+  "resistance": 0.032,
+  "io": 1.0,
+  "max_current": 28.0,
+  "weight_g": 125.0,
+  "max_power": 600.0,
+  "io_voltage": 10.0
+}

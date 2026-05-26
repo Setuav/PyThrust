@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1303.5_2500KV",
+  "name": "Aeolus 1303.5 2500KV",
+  "manufacturer": "HGLRC",
+  "kv": 2500.0,
+  "resistance": 0.26,
+  "io": 0.9,
+  "max_current": 4.4,
+  "weight_g": 6.5,
+  "max_power": 98.0,
+  "io_voltage": 10.0
+}

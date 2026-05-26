@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1804_2450",
+  "name": "SZ1804 2450",
+  "manufacturer": "MEPS",
+  "kv": 2450.0,
+  "resistance": 0.195,
+  "io": 0.8,
+  "max_current": 19.0,
+  "weight_g": 15.0,
+  "max_power": 476.0,
+  "io_voltage": 10.0
+}

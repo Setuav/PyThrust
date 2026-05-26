@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_5.75D_2849",
+  "name": "1105/5.75D 2849",
+  "manufacturer": "NeuMotors",
+  "kv": 2849.0,
+  "resistance": 0.028,
+  "io": 0.8,
+  "max_current": 19.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

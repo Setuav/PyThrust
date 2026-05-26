@@ -1,0 +1,12 @@
+{
+  "id": "Quantum_QT-4115-1200",
+  "name": "QT-4115-1200*",
+  "manufacturer": "Quantum",
+  "kv": 1200.0,
+  "resistance": 0.015,
+  "io": 2.6,
+  "max_current": 75.0,
+  "weight_g": 240.1,
+  "max_power": 2000.0,
+  "io_voltage": 10.0
+}

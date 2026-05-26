@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_D50-65-08_330",
+  "name": "D50-65-08 330",
+  "manufacturer": "ROXXY",
+  "kv": 330.0,
+  "resistance": 0.026,
+  "io": 2.5,
+  "max_current": 75.0,
+  "weight_g": 405.4,
+  "max_power": 2100.0,
+  "io_voltage": 14.8
+}

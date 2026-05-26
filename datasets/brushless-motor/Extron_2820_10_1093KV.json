@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2820_10_1093KV",
+  "name": "2820/10 1093KV",
+  "manufacturer": "Extron",
+  "kv": 1093.0,
+  "resistance": 0.0263,
+  "io": 3.5,
+  "max_current": 40.0,
+  "weight_g": 142.6,
+  "max_power": 600.0,
+  "io_voltage": 14.8
+}

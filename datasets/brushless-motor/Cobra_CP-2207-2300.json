@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CP-2207-2300",
+  "name": "CP-2207-2300",
+  "manufacturer": "Cobra",
+  "kv": 2300.0,
+  "resistance": 0.034,
+  "io": 1.74,
+  "max_current": 30.0,
+  "weight_g": 35.7,
+  "max_power": 450.0,
+  "io_voltage": 14.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Flyware_microRex_340-1400",
+  "name": "microRex 340-1400*",
+  "manufacturer": "Flyware",
+  "kv": 1470.0,
+  "resistance": 0.031,
+  "io": 2.2,
+  "max_current": 65.0,
+  "weight_g": 133.0,
+  "max_power": 975.0,
+  "io_voltage": 10.0
+}

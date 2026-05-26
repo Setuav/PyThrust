@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1917_2Y_300",
+  "name": "1917/2Y 300",
+  "manufacturer": "NeuMotors",
+  "kv": 300.0,
+  "resistance": 0.06,
+  "io": 0.6,
+  "max_current": 35.0,
+  "weight_g": 453.3,
+  "max_power": 4100.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-29T_1361KV",
+  "name": "380S-29T 1361KV",
+  "manufacturer": "Feigao",
+  "kv": 1361.0,
+  "resistance": 0.1238,
+  "io": 0.3,
+  "max_current": 14.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

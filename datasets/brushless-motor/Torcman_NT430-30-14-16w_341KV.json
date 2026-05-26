@@ -1,0 +1,12 @@
+{
+  "id": "Torcman_NT430-30-14-16w_341KV",
+  "name": "NT430-30-14-16w 341KV",
+  "manufacturer": "Torcman",
+  "kv": 341.0,
+  "resistance": 0.024,
+  "io": 1.7,
+  "max_current": 75.0,
+  "weight_g": 470.3,
+  "max_power": 1500.0,
+  "io_voltage": 12.0
+}

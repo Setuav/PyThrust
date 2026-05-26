@@ -1,0 +1,12 @@
+{
+  "id": "RCTimer_A2836-9_880Kv",
+  "name": "A2836-9 880Kv",
+  "manufacturer": "RCTimer",
+  "kv": 880.0,
+  "resistance": 0.107,
+  "io": 0.8,
+  "max_current": 0.0,
+  "weight_g": 70.0,
+  "max_power": 160.0,
+  "io_voltage": 10.0
+}

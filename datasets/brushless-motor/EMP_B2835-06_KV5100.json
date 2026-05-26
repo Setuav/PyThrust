@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2835-06_KV5100",
+  "name": "B2835-06 KV5100",
+  "manufacturer": "EMP",
+  "kv": 5100.0,
+  "resistance": 0.025,
+  "io": 3.0,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 700.0,
+  "io_voltage": 10.0
+}

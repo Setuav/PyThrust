@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2445-06_KV3790",
+  "name": "B2445-06 KV3790",
+  "manufacturer": "EMP",
+  "kv": 3790.0,
+  "resistance": 0.031,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 90.2,
+  "max_power": 450.0,
+  "io_voltage": 10.0
+}

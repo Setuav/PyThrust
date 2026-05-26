@@ -1,0 +1,12 @@
+{
+  "id": "Brother_Hobby_SE_2807-1300KV",
+  "name": "SE 2807-1300KV",
+  "manufacturer": "Brother Hobby",
+  "kv": 1300.0,
+  "resistance": 0.08,
+  "io": 1.02,
+  "max_current": 42.0,
+  "weight_g": 47.9,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

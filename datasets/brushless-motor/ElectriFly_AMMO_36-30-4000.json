@@ -1,0 +1,12 @@
+{
+  "id": "ElectriFly_AMMO_36-30-4000",
+  "name": "AMMO 36-30-4000",
+  "manufacturer": "ElectriFly",
+  "kv": 4000.0,
+  "resistance": 0.0299,
+  "io": 4.3,
+  "max_current": 0.0,
+  "weight_g": 138.1,
+  "max_power": 685.0,
+  "io_voltage": 7.4
+}

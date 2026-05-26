@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_AJ18-15-3300KV",
+  "name": "AJ18-15-3300KV",
+  "manufacturer": "GS-Models",
+  "kv": 3300.0,
+  "resistance": 0.365,
+  "io": 0.5,
+  "max_current": 6.8,
+  "weight_g": 12.5,
+  "max_power": 50.0,
+  "io_voltage": 10.0
+}

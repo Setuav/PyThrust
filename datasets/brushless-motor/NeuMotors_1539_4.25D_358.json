@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1539_4.25D_358",
+  "name": "1539/4.25D 358",
+  "manufacturer": "NeuMotors",
+  "kv": 358.0,
+  "resistance": 0.094,
+  "io": 1.06,
+  "max_current": 42.0,
+  "weight_g": 895.6,
+  "max_power": 7000.0,
+  "io_voltage": 10.0
+}

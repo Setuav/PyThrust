@@ -1,0 +1,12 @@
+{
+  "id": "XPower_XC2808_34_1060KV",
+  "name": "XC2808/34 1060KV",
+  "manufacturer": "XPower",
+  "kv": 1060.0,
+  "resistance": 0.195,
+  "io": 0.3,
+  "max_current": 8.0,
+  "weight_g": 45.9,
+  "max_power": 150.0,
+  "io_voltage": 10.0
+}

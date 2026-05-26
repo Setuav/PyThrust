@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_3.75D_4368",
+  "name": "1105/3.75D 4368",
+  "manufacturer": "NeuMotors",
+  "kv": 4368.0,
+  "resistance": 0.012,
+  "io": 1.2,
+  "max_current": 29.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

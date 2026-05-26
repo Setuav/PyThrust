@@ -1,0 +1,12 @@
+{
+  "id": "EMP_SK3536-08_KV910",
+  "name": "SK3536-08 KV910",
+  "manufacturer": "EMP",
+  "kv": 910.0,
+  "resistance": 0.075,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 115.1,
+  "max_power": 470.0,
+  "io_voltage": 10.0
+}

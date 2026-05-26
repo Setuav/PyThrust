@@ -1,0 +1,12 @@
+{
+  "id": "Extron_2814_20_793KV",
+  "name": "2814/20 793KV",
+  "manufacturer": "Extron",
+  "kv": 793.0,
+  "resistance": 0.0695,
+  "io": 1.8,
+  "max_current": 24.0,
+  "weight_g": 109.7,
+  "max_power": 360.0,
+  "io_voltage": 18.5
+}

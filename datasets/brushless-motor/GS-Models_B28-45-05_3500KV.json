@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_B28-45-05_3500KV",
+  "name": "B28-45-05 3500KV",
+  "manufacturer": "GS-Models",
+  "kv": 3500.0,
+  "resistance": 0.0189,
+  "io": 3.0,
+  "max_current": 47.0,
+  "weight_g": 135.2,
+  "max_power": 810.0,
+  "io_voltage": 10.0
+}

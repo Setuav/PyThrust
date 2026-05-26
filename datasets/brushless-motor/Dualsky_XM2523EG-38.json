@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM2523EG-38",
+  "name": "XM2523EG-38",
+  "manufacturer": "Dualsky",
+  "kv": 1700.0,
+  "resistance": 0.197,
+  "io": 0.55,
+  "max_current": 13.0,
+  "weight_g": 28.6,
+  "max_power": 144.0,
+  "io_voltage": 10.0
+}

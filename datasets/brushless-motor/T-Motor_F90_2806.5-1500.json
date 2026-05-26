@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F90_2806.5-1500",
+  "name": "F90 2806.5-1500",
+  "manufacturer": "T-Motor",
+  "kv": 1500.0,
+  "resistance": 0.062,
+  "io": 1.2,
+  "max_current": 47.0,
+  "weight_g": 46.8,
+  "max_power": 1089.0,
+  "io_voltage": 10.0
+}

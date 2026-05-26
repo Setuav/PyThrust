@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_2.25D_7280",
+  "name": "1105/2.25D 7280",
+  "manufacturer": "NeuMotors",
+  "kv": 7280.0,
+  "resistance": 0.004,
+  "io": 2.0,
+  "max_current": 49.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

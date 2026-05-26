@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-451",
+  "name": "4610MC-451",
+  "manufacturer": "NeuMotors",
+  "kv": 451.0,
+  "resistance": 0.052,
+  "io": 0.26,
+  "max_current": 63.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

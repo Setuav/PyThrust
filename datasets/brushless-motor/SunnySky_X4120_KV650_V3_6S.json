@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X4120_KV650_V3_6S",
+  "name": "X4120 KV650 V3 6S",
+  "manufacturer": "SunnySky",
+  "kv": 650.0,
+  "resistance": 0.0112,
+  "io": 2.1,
+  "max_current": 100.0,
+  "weight_g": 292.3,
+  "max_power": 2750.0,
+  "io_voltage": 10.0
+}

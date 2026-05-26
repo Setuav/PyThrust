@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4606MC-398",
+  "name": "4606MC-398",
+  "manufacturer": "NeuMotors",
+  "kv": 398.0,
+  "resistance": 0.097,
+  "io": 0.15,
+  "max_current": 30.0,
+  "weight_g": 93.0,
+  "max_power": 840.0,
+  "io_voltage": 10.0
+}

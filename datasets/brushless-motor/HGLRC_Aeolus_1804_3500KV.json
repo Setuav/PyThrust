@@ -1,0 +1,12 @@
+{
+  "id": "HGLRC_Aeolus_1804_3500KV",
+  "name": "Aeolus 1804 3500KV",
+  "manufacturer": "HGLRC",
+  "kv": 3500.0,
+  "resistance": 0.116,
+  "io": 1.0,
+  "max_current": 26.0,
+  "weight_g": 12.8,
+  "max_power": 410.0,
+  "io_voltage": 10.0
+}

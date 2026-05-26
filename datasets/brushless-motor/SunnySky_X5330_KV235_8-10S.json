@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X5330_KV235_8-10S",
+  "name": "X5330 KV235 8-10S",
+  "manufacturer": "SunnySky",
+  "kv": 235.0,
+  "resistance": 0.024,
+  "io": 2.0,
+  "max_current": 78.0,
+  "weight_g": 646.4,
+  "max_power": 2730.0,
+  "io_voltage": 10.0
+}

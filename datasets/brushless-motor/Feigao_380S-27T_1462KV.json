@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-27T_1462KV",
+  "name": "380S-27T 1462KV",
+  "manufacturer": "Feigao",
+  "kv": 1462.0,
+  "resistance": 0.1073,
+  "io": 0.3,
+  "max_current": 15.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

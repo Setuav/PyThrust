@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1545_1.5Y_489",
+  "name": "1545/1.5Y 489",
+  "manufacturer": "NeuMotors",
+  "kv": 489.0,
+  "resistance": 0.041,
+  "io": 1.7,
+  "max_current": 65.0,
+  "weight_g": 956.5,
+  "max_power": 8000.0,
+  "io_voltage": 10.0
+}

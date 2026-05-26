@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_29_14-07A_1430",
+  "name": "OBL 29/14-07A 1430",
+  "manufacturer": "Thunder Tiger",
+  "kv": 1430.0,
+  "resistance": 0.11,
+  "io": 0.7,
+  "max_current": 17.0,
+  "weight_g": 54.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

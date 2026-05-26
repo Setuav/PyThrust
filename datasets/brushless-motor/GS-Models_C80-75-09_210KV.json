@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C80-75-09_210KV",
+  "name": "C80-75-09 210KV",
+  "manufacturer": "GS-Models",
+  "kv": 210.0,
+  "resistance": 0.0131,
+  "io": 2.2,
+  "max_current": 120.0,
+  "weight_g": 1050.9,
+  "max_power": 4200.0,
+  "io_voltage": 20.0
+}

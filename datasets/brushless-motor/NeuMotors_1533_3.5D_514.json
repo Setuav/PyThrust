@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_3.5D_514",
+  "name": "1533/3.5D 514",
+  "manufacturer": "NeuMotors",
+  "kv": 514.0,
+  "resistance": 0.054,
+  "io": 1.3,
+  "max_current": 51.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

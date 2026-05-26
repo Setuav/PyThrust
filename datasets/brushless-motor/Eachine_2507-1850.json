@@ -1,0 +1,12 @@
+{
+  "id": "Eachine_2507-1850",
+  "name": "2507-1850",
+  "manufacturer": "Eachine",
+  "kv": 1850.0,
+  "resistance": 0.0398,
+  "io": 1.42,
+  "max_current": 0.0,
+  "weight_g": 45.9,
+  "max_power": 1080.0,
+  "io_voltage": 10.0
+}

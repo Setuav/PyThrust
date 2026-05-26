@@ -1,0 +1,12 @@
+{
+  "id": "Flash_Hobby_A3112_900",
+  "name": "A3112 900",
+  "manufacturer": "Flash Hobby",
+  "kv": 900.0,
+  "resistance": 0.058,
+  "io": 0.98,
+  "max_current": 62.0,
+  "weight_g": 103.2,
+  "max_power": 1545.0,
+  "io_voltage": 10.0
+}

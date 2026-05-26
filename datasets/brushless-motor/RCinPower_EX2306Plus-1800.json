@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_EX2306Plus-1800",
+  "name": "EX2306Plus-1800",
+  "manufacturer": "RCinPower",
+  "kv": 1800.0,
+  "resistance": 0.078,
+  "io": 1.15,
+  "max_current": 40.0,
+  "weight_g": 34.0,
+  "max_power": 900.0,
+  "io_voltage": 10.0
+}

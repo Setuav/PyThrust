@@ -1,0 +1,12 @@
+{
+  "id": "Black_Widow_2208-2100",
+  "name": "2208-2100",
+  "manufacturer": "Black Widow",
+  "kv": 2120.0,
+  "resistance": 0.0403,
+  "io": 1.1,
+  "max_current": 0.0,
+  "weight_g": 43.1,
+  "max_power": 220.0,
+  "io_voltage": 8.4
+}

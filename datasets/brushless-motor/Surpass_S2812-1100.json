@@ -1,0 +1,12 @@
+{
+  "id": "Surpass_S2812-1100",
+  "name": "S2812-1100",
+  "manufacturer": "Surpass",
+  "kv": 1100.0,
+  "resistance": 0.059,
+  "io": 1.3,
+  "max_current": 66.0,
+  "weight_g": 78.0,
+  "max_power": 1650.0,
+  "io_voltage": 10.0
+}

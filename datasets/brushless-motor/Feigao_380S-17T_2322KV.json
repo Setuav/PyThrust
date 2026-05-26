@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380S-17T_2322KV",
+  "name": "380S-17T 2322KV",
+  "manufacturer": "Feigao",
+  "kv": 2322.0,
+  "resistance": 0.0425,
+  "io": 0.8,
+  "max_current": 24.0,
+  "weight_g": 140.0,
+  "max_power": 560.0,
+  "io_voltage": 10.0
+}

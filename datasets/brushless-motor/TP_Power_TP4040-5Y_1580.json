@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4040-5Y_1580",
+  "name": "TP4040-5Y 1580",
+  "manufacturer": "TP Power",
+  "kv": 1580.0,
+  "resistance": 0.0097,
+  "io": 2.0,
+  "max_current": 127.0,
+  "weight_g": 396.3,
+  "max_power": 4200.0,
+  "io_voltage": 8.0
+}

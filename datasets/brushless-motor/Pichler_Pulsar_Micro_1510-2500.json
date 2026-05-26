@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Pulsar_Micro_1510-2500",
+  "name": "Pulsar Micro 1510-2500",
+  "manufacturer": "Pichler",
+  "kv": 2500.0,
+  "resistance": 0.1325,
+  "io": 0.6,
+  "max_current": 0.0,
+  "weight_g": 21.0,
+  "max_power": 45.0,
+  "io_voltage": 8.4
+}

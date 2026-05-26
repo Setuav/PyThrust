@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_130L-40T_1450KV",
+  "name": "130L-40T 1450KV",
+  "manufacturer": "Feigao",
+  "kv": 1450.0,
+  "resistance": 0.4296,
+  "io": 0.1,
+  "max_current": 6.0,
+  "weight_g": 60.1,
+  "max_power": 240.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LDPower_FA2208-1300",
+  "name": "FA2208-1300",
+  "manufacturer": "LDPower",
+  "kv": 1300.0,
+  "resistance": 0.0928,
+  "io": 0.6,
+  "max_current": 25.0,
+  "weight_g": 47.9,
+  "max_power": 370.0,
+  "io_voltage": 10.0
+}

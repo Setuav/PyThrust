@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_1704-2050",
+  "name": "1704-2050",
+  "manufacturer": "Tempest",
+  "kv": 2050.0,
+  "resistance": 0.325,
+  "io": 0.34,
+  "max_current": 7.5,
+  "weight_g": 14.7,
+  "max_power": 85.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FMS_2408-KV1700",
+  "name": "2408-KV1700",
+  "manufacturer": "FMS",
+  "kv": 1700.0,
+  "resistance": 0.072,
+  "io": 1.0,
+  "max_current": 35.0,
+  "weight_g": 55.0,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

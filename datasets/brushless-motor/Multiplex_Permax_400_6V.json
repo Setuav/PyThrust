@@ -1,0 +1,12 @@
+{
+  "id": "Multiplex_Permax_400_6V",
+  "name": "Permax 400 6V",
+  "manufacturer": "Multiplex",
+  "kv": 2946.0,
+  "resistance": 0.357,
+  "io": 0.73,
+  "max_current": 7.0,
+  "weight_g": 73.7,
+  "max_power": 222.0,
+  "io_voltage": 6.0
+}

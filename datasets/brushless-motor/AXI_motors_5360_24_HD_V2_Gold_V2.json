@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5360_24_HD_V2_Gold_V2",
+  "name": "5360/24 HD V2 Gold V2",
+  "manufacturer": "AXI motors",
+  "kv": 95.0,
+  "resistance": 0.063,
+  "io": 1.8,
+  "max_current": 65.0,
+  "weight_g": 1270.9,
+  "max_power": 3120.0,
+  "io_voltage": 10.0
+}

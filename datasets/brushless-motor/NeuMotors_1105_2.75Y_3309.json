@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1105_2.75Y_3309",
+  "name": "1105/2.75Y 3309",
+  "manufacturer": "NeuMotors",
+  "kv": 3309.0,
+  "resistance": 0.019,
+  "io": 0.9,
+  "max_current": 22.0,
+  "weight_g": 64.9,
+  "max_power": 400.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_D63-70-250KV",
+  "name": "D63-70-250KV",
+  "manufacturer": "GS-Models",
+  "kv": 250.0,
+  "resistance": 0.0261,
+  "io": 3.0,
+  "max_current": 85.0,
+  "weight_g": 667.6,
+  "max_power": 2800.0,
+  "io_voltage": 7.4
+}

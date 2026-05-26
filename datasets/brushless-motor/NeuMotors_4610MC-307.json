@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4610MC-307",
+  "name": "4610MC-307",
+  "manufacturer": "NeuMotors",
+  "kv": 307.0,
+  "resistance": 0.113,
+  "io": 0.18,
+  "max_current": 36.0,
+  "weight_g": 130.1,
+  "max_power": 1400.0,
+  "io_voltage": 10.0
+}

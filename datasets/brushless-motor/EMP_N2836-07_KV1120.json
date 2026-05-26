@@ -1,0 +1,12 @@
+{
+  "id": "EMP_N2836-07_KV1120",
+  "name": "N2836-07 KV1120",
+  "manufacturer": "EMP",
+  "kv": 1120.0,
+  "resistance": 0.09,
+  "io": 1.3,
+  "max_current": 0.0,
+  "weight_g": 76.0,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

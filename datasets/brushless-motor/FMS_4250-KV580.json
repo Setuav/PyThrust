@@ -1,0 +1,12 @@
+{
+  "id": "FMS_4250-KV580",
+  "name": "4250-KV580",
+  "manufacturer": "FMS",
+  "kv": 580.0,
+  "resistance": 0.026,
+  "io": 2.0,
+  "max_current": 56.0,
+  "weight_g": 255.1,
+  "max_power": 860.0,
+  "io_voltage": 10.0
+}

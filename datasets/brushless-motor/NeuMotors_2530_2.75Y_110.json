@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2530_2.75Y_110",
+  "name": "2530/2.75Y 110",
+  "manufacturer": "NeuMotors",
+  "kv": 110.0,
+  "resistance": 0.054,
+  "io": 1.1,
+  "max_current": 89.0,
+  "weight_g": 1747.2,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

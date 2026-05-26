@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_1Y_1000",
+  "name": "1533/1Y 1000",
+  "manufacturer": "NeuMotors",
+  "kv": 1000.0,
+  "resistance": 0.0132,
+  "io": 2.5,
+  "max_current": 100.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

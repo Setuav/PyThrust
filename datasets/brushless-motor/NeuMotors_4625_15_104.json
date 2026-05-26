@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4625_15_104",
+  "name": "4625/15/104",
+  "manufacturer": "NeuMotors",
+  "kv": 104.0,
+  "resistance": 0.36,
+  "io": 0.362,
+  "max_current": 36.0,
+  "weight_g": 368.3,
+  "max_power": 3500.0,
+  "io_voltage": 10.0
+}

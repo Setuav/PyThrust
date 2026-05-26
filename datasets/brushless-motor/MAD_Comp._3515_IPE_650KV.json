@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._3515_IPE_650KV",
+  "name": "3515 IPE 650KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 650.0,
+  "resistance": 0.055,
+  "io": 1.28,
+  "max_current": 39.0,
+  "weight_g": 152.2,
+  "max_power": 911.0,
+  "io_voltage": 20.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "HobbyWing_XRotor_2807_1300KV",
+  "name": "XRotor 2807 1300KV",
+  "manufacturer": "HobbyWing",
+  "kv": 1300.0,
+  "resistance": 0.054,
+  "io": 2.0,
+  "max_current": 57.0,
+  "weight_g": 59.0,
+  "max_power": 1361.0,
+  "io_voltage": 24.0
+}

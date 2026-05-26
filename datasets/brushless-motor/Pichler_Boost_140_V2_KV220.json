@@ -1,0 +1,12 @@
+{
+  "id": "Pichler_Boost_140_V2_KV220",
+  "name": "Boost 140 V2 KV220",
+  "manufacturer": "Pichler",
+  "kv": 220.0,
+  "resistance": 0.027,
+  "io": 2.1,
+  "max_current": 85.0,
+  "weight_g": 660.5,
+  "max_power": 2250.0,
+  "io_voltage": 8.4
+}

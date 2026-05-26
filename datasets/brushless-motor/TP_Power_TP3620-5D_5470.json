@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP3620-5D_5470",
+  "name": "TP3620-5D 5470",
+  "manufacturer": "TP Power",
+  "kv": 5470.0,
+  "resistance": 0.0038,
+  "io": 6.5,
+  "max_current": 150.0,
+  "weight_g": 175.2,
+  "max_power": 1650.0,
+  "io_voltage": 6.0
+}

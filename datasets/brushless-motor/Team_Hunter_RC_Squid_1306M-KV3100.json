@@ -1,0 +1,12 @@
+{
+  "id": "Team_Hunter_RC_Squid_1306M-KV3100",
+  "name": "Squid 1306M-KV3100",
+  "manufacturer": "Team Hunter RC",
+  "kv": 3100.0,
+  "resistance": 0.105,
+  "io": 0.5,
+  "max_current": 6.5,
+  "weight_g": 11.1,
+  "max_power": 55.0,
+  "io_voltage": 10.0
+}

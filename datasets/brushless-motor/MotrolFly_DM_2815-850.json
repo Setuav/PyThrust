@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2815-850",
+  "name": "DM 2815-850",
+  "manufacturer": "MotrolFly",
+  "kv": 863.0,
+  "resistance": 0.05,
+  "io": 2.25,
+  "max_current": 32.0,
+  "weight_g": 127.0,
+  "max_power": 480.0,
+  "io_voltage": 16.0
+}

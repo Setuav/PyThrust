@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_5.5D_1489",
+  "name": "1110/5.5D 1489",
+  "manufacturer": "NeuMotors",
+  "kv": 1489.0,
+  "resistance": 0.05,
+  "io": 0.8,
+  "max_current": 25.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

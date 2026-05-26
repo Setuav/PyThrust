@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1515_15_3770",
+  "name": "TS-EZ1515/15 3770",
+  "manufacturer": "Tenshock",
+  "kv": 3770.0,
+  "resistance": 0.0167,
+  "io": 1.8,
+  "max_current": 42.0,
+  "weight_g": 83.1,
+  "max_power": 480.0,
+  "io_voltage": 10.0
+}

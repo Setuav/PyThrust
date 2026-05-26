@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A5330-9_260KV",
+  "name": "A5330-9  260KV",
+  "manufacturer": "Cheetah",
+  "kv": 260.0,
+  "resistance": 0.052,
+  "io": 1.2,
+  "max_current": 80.0,
+  "weight_g": 654.6,
+  "max_power": 2800.0,
+  "io_voltage": 10.0
+}

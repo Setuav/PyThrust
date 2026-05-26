@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_V505_KV260",
+  "name": "V505 KV260",
+  "manufacturer": "T-Motor",
+  "kv": 260.0,
+  "resistance": 0.058,
+  "io": 1.5,
+  "max_current": 52.0,
+  "weight_g": 215.2,
+  "max_power": 2500.0,
+  "io_voltage": 18.0
+}

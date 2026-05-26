@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_F0803_FPV-22000",
+  "name": "F0803 FPV-22000",
+  "manufacturer": "T-Motor",
+  "kv": 22000.0,
+  "resistance": 0.122,
+  "io": 0.65,
+  "max_current": 5.5,
+  "weight_g": 2.3,
+  "max_power": 23.0,
+  "io_voltage": 10.0
+}

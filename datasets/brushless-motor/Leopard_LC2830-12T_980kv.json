@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC2830-12T_980kv",
+  "name": "LC2830-12T 980kv",
+  "manufacturer": "Leopard",
+  "kv": 980.0,
+  "resistance": 0.1575,
+  "io": 0.5,
+  "max_current": 15.0,
+  "weight_g": 57.0,
+  "max_power": 244.0,
+  "io_voltage": 7.4
+}

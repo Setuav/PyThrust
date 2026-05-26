@@ -1,0 +1,12 @@
+{
+  "id": "Plettenberg_Predator_evo_30_6",
+  "name": "Predator evo 30/6",
+  "manufacturer": "Plettenberg",
+  "kv": 166.0,
+  "resistance": 0.015,
+  "io": 4.1,
+  "max_current": 0.0,
+  "weight_g": 1666.1,
+  "max_power": 9800.0,
+  "io_voltage": 11.5
+}

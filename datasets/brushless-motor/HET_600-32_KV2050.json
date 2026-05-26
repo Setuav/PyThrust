@@ -1,0 +1,12 @@
+{
+  "id": "HET_600-32_KV2050",
+  "name": "600-32 KV2050",
+  "manufacturer": "HET",
+  "kv": 2050.0,
+  "resistance": 0.016,
+  "io": 2.0,
+  "max_current": 70.0,
+  "weight_g": 205.3,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

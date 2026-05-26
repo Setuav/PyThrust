@@ -1,0 +1,12 @@
+{
+  "id": "Leopard_LC4250-4.5T_960kv",
+  "name": "LC4250-4.5T 960kv",
+  "manufacturer": "Leopard",
+  "kv": 960.0,
+  "resistance": 0.0155,
+  "io": 2.8,
+  "max_current": 75.0,
+  "weight_g": 208.1,
+  "max_power": 823.0,
+  "io_voltage": 10.0
+}

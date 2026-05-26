@@ -1,0 +1,12 @@
+{
+  "id": "MEPS_SZ1604_2850",
+  "name": "SZ1604 2850",
+  "manufacturer": "MEPS",
+  "kv": 2850.0,
+  "resistance": 0.252,
+  "io": 0.6,
+  "max_current": 15.0,
+  "weight_g": 11.9,
+  "max_power": 196.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._8116_100KV",
+  "name": "8116 100KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 100.0,
+  "resistance": 0.08,
+  "io": 0.9,
+  "max_current": 38.0,
+  "weight_g": 460.4,
+  "max_power": 1822.0,
+  "io_voltage": 20.0
+}

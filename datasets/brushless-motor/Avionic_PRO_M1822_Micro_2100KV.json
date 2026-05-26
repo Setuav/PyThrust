@@ -1,0 +1,12 @@
+{
+  "id": "Avionic_PRO_M1822_Micro_2100KV",
+  "name": "PRO M1822 Micro 2100KV",
+  "manufacturer": "Avionic",
+  "kv": 2100.0,
+  "resistance": 0.334,
+  "io": 0.4,
+  "max_current": 7.3,
+  "weight_g": 15.9,
+  "max_power": 64.0,
+  "io_voltage": 7.0
+}

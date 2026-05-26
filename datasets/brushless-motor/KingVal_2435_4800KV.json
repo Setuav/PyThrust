@@ -1,0 +1,12 @@
+{
+  "id": "KingVal_2435_4800KV",
+  "name": "2435 4800KV",
+  "manufacturer": "KingVal",
+  "kv": 4800.0,
+  "resistance": 0.0057,
+  "io": 2.0,
+  "max_current": 24.0,
+  "weight_g": 57.0,
+  "max_power": 300.0,
+  "io_voltage": 10.0
+}

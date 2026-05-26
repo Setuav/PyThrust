@@ -1,0 +1,12 @@
+{
+  "id": "AXI_motors_5325_24_Gold_Line_V3",
+  "name": "5325/24 Gold Line V3",
+  "manufacturer": "AXI motors",
+  "kv": 232.0,
+  "resistance": 0.03,
+  "io": 1.6,
+  "max_current": 76.0,
+  "weight_g": 595.3,
+  "max_power": 2850.0,
+  "io_voltage": 10.0
+}

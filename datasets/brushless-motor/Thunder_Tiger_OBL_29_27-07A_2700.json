@@ -1,0 +1,12 @@
+{
+  "id": "Thunder_Tiger_OBL_29_27-07A_2700",
+  "name": "OBL 29/27-07A 2700",
+  "manufacturer": "Thunder Tiger",
+  "kv": 2700.0,
+  "resistance": 0.045,
+  "io": 1.5,
+  "max_current": 32.0,
+  "weight_g": 54.1,
+  "max_power": 200.0,
+  "io_voltage": 10.0
+}

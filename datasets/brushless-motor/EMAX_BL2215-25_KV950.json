@@ -1,0 +1,12 @@
+{
+  "id": "EMAX_BL2215-25_KV950",
+  "name": "BL2215-25 KV950",
+  "manufacturer": "EMAX",
+  "kv": 950.0,
+  "resistance": 0.13,
+  "io": 1.2,
+  "max_current": 17.0,
+  "weight_g": 59.0,
+  "max_power": 210.0,
+  "io_voltage": 11.0
+}

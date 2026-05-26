@@ -1,0 +1,12 @@
+{
+  "id": "ROXXY_C35-45-10_1150",
+  "name": "C35-45-10 1150",
+  "manufacturer": "ROXXY",
+  "kv": 1150.0,
+  "resistance": 0.028,
+  "io": 3.6,
+  "max_current": 42.0,
+  "weight_g": 150.3,
+  "max_power": 850.0,
+  "io_voltage": 14.0
+}

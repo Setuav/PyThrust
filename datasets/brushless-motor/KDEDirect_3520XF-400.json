@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_3520XF-400",
+  "name": "3520XF-400",
+  "manufacturer": "KDEDirect",
+  "kv": 400.0,
+  "resistance": 0.078,
+  "io": 0.3,
+  "max_current": 45.0,
+  "weight_g": 190.2,
+  "max_power": 1335.0,
+  "io_voltage": 10.0
+}

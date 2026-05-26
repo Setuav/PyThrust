@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4619_32_62",
+  "name": "4619/32/62",
+  "manufacturer": "NeuMotors",
+  "kv": 62.0,
+  "resistance": 1.28,
+  "io": 0.17,
+  "max_current": 17.0,
+  "weight_g": 272.2,
+  "max_power": 2670.0,
+  "io_voltage": 10.0
+}

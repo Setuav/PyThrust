@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2217_12_2.5Y_510",
+  "name": "2217/12/2.5Y 510",
+  "manufacturer": "NeuMotors",
+  "kv": 510.0,
+  "resistance": 0.015,
+  "io": 1.3,
+  "max_current": 95.0,
+  "weight_g": 818.7,
+  "max_power": 5600.0,
+  "io_voltage": 10.0
+}

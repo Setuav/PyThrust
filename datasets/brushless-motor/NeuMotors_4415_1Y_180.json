@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_4415_1Y_180",
+  "name": "4415/1Y 180",
+  "manufacturer": "NeuMotors",
+  "kv": 180.0,
+  "resistance": 0.007,
+  "io": 3.0,
+  "max_current": 270.0,
+  "weight_g": 2520.8,
+  "max_power": 15000.0,
+  "io_voltage": 10.0
+}

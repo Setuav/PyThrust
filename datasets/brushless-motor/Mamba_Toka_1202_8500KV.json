@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1202_8500KV",
+  "name": "Toka 1202 8500KV",
+  "manufacturer": "Mamba",
+  "kv": 8500.0,
+  "resistance": 0.226,
+  "io": 0.48,
+  "max_current": 6.0,
+  "weight_g": 5.1,
+  "max_power": 50.0,
+  "io_voltage": 4.0
+}

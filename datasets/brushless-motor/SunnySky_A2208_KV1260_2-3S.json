@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_A2208_KV1260_2-3S",
+  "name": "A2208 KV1260 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 1260.0,
+  "resistance": 0.125,
+  "io": 0.3,
+  "max_current": 13.0,
+  "weight_g": 39.1,
+  "max_power": 140.0,
+  "io_voltage": 10.0
+}

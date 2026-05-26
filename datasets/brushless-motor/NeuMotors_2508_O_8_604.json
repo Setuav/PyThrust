@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2508_O_8_604",
+  "name": "2508 O/8/604",
+  "manufacturer": "NeuMotors",
+  "kv": 604.0,
+  "resistance": 0.507,
+  "io": 0.375,
+  "max_current": 24.0,
+  "weight_g": 32.9,
+  "max_power": 125.0,
+  "io_voltage": 10.0
+}

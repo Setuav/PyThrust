@@ -1,0 +1,12 @@
+{
+  "id": "EMP_B2435-08_KV4880",
+  "name": "B2435-08 KV4880",
+  "manufacturer": "EMP",
+  "kv": 4880.0,
+  "resistance": 0.045,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 64.9,
+  "max_power": 280.0,
+  "io_voltage": 10.0
+}

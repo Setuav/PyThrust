@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1924_3Y_136",
+  "name": "1924/3Y 136",
+  "manufacturer": "NeuMotors",
+  "kv": 136.0,
+  "resistance": 0.165,
+  "io": 0.5,
+  "max_current": 23.0,
+  "weight_g": 623.4,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

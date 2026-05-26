@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_GA8000.8",
+  "name": "GA8000.8",
+  "manufacturer": "Dualsky",
+  "kv": 160.0,
+  "resistance": 0.0132,
+  "io": 2.35,
+  "max_current": 180.0,
+  "weight_g": 1140.8,
+  "max_power": 5700.0,
+  "io_voltage": 10.0
+}

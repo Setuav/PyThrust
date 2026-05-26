@@ -1,0 +1,12 @@
+{
+  "id": "RCinPower_SmooX1507Plus-2680",
+  "name": "SmooX1507Plus-2680",
+  "manufacturer": "RCinPower",
+  "kv": 2680.0,
+  "resistance": 0.113,
+  "io": 0.9,
+  "max_current": 19.0,
+  "weight_g": 17.0,
+  "max_power": 420.0,
+  "io_voltage": 10.0
+}

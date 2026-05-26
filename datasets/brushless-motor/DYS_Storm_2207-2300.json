@@ -1,0 +1,12 @@
+{
+  "id": "DYS_Storm_2207-2300",
+  "name": "Storm 2207-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.04,
+  "io": 1.2,
+  "max_current": 29.0,
+  "weight_g": 34.0,
+  "max_power": 469.0,
+  "io_voltage": 12.0
+}

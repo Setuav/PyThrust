@@ -1,0 +1,12 @@
+{
+  "id": "Kavan_3548_KV500",
+  "name": "3548 KV500",
+  "manufacturer": "Kavan",
+  "kv": 500.0,
+  "resistance": 0.0675,
+  "io": 1.25,
+  "max_current": 26.0,
+  "weight_g": 173.2,
+  "max_power": 578.0,
+  "io_voltage": 10.0
+}

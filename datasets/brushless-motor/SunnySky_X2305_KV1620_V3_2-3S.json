@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_X2305_KV1620_V3_2-3S",
+  "name": "X2305 KV1620 V3 2-3S",
+  "manufacturer": "SunnySky",
+  "kv": 1620.0,
+  "resistance": 0.085,
+  "io": 0.6,
+  "max_current": 23.0,
+  "weight_g": 24.9,
+  "max_power": 235.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "E-flite_Power_15_BL_950",
+  "name": "Power 15 BL 950",
+  "manufacturer": "E-flite",
+  "kv": 950.0,
+  "resistance": 0.03,
+  "io": 2.0,
+  "max_current": 42.0,
+  "weight_g": 152.2,
+  "max_power": 425.0,
+  "io_voltage": 10.0
+}

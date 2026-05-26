@@ -1,0 +1,12 @@
+{
+  "id": "Pulso_U22M_1030",
+  "name": "U22M/1030",
+  "manufacturer": "Pulso",
+  "kv": 1030.0,
+  "resistance": 0.189,
+  "io": 0.48,
+  "max_current": 13.0,
+  "weight_g": 58.1,
+  "max_power": 200.0,
+  "io_voltage": 8.0
+}

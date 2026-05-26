@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._V8010_150KV",
+  "name": "V8010 150KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 150.0,
+  "resistance": 0.038,
+  "io": 1.65,
+  "max_current": 94.0,
+  "weight_g": 413.3,
+  "max_power": 4423.0,
+  "io_voltage": 20.0
+}

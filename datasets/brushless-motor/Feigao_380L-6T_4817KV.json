@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_380L-6T_4817KV",
+  "name": "380L-6T 4817KV",
+  "manufacturer": "Feigao",
+  "kv": 4817.0,
+  "resistance": 0.0064,
+  "io": 3.3,
+  "max_current": 69.0,
+  "weight_g": 180.0,
+  "max_power": 720.0,
+  "io_voltage": 10.0
+}

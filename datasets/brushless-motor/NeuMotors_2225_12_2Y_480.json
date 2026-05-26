@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_2225_12_2Y_480",
+  "name": "2225/12/2Y 480",
+  "manufacturer": "NeuMotors",
+  "kv": 480.0,
+  "resistance": 0.016,
+  "io": 1.5,
+  "max_current": 134.0,
+  "weight_g": 1132.8,
+  "max_power": 8400.0,
+  "io_voltage": 10.0
+}

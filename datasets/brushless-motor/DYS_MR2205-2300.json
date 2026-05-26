@@ -1,0 +1,12 @@
+{
+  "id": "DYS_MR2205-2300",
+  "name": "MR2205-2300",
+  "manufacturer": "DYS",
+  "kv": 2300.0,
+  "resistance": 0.012,
+  "io": 0.9,
+  "max_current": 24.0,
+  "weight_g": 28.1,
+  "max_power": 357.0,
+  "io_voltage": 11.1
+}

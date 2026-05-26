@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1110_4.25D_1927",
+  "name": "1110/4.25D 1927",
+  "manufacturer": "NeuMotors",
+  "kv": 1927.0,
+  "resistance": 0.03,
+  "io": 1.1,
+  "max_current": 32.0,
+  "weight_g": 113.1,
+  "max_power": 800.0,
+  "io_voltage": 10.0
+}

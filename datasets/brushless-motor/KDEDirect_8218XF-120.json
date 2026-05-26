@@ -1,0 +1,12 @@
+{
+  "id": "KDEDirect_8218XF-120",
+  "name": "8218XF-120",
+  "manufacturer": "KDEDirect",
+  "kv": 120.0,
+  "resistance": 0.042,
+  "io": 0.8,
+  "max_current": 110.0,
+  "weight_g": 760.6,
+  "max_power": 5695.0,
+  "io_voltage": 10.0
+}

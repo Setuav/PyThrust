@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1408_4100KV",
+  "name": "Toka 1408 4100KV",
+  "manufacturer": "Mamba",
+  "kv": 4100.0,
+  "resistance": 0.085,
+  "io": 0.8,
+  "max_current": 20.0,
+  "weight_g": 18.1,
+  "max_power": 376.0,
+  "io_voltage": 10.0
+}

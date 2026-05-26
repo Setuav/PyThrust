@@ -1,0 +1,12 @@
+{
+  "id": "Planet-Hobby_Joker_6360-10_V3",
+  "name": "Joker 6360-10 V3",
+  "manufacturer": "Planet-Hobby",
+  "kv": 225.0,
+  "resistance": 0.0362,
+  "io": 1.0,
+  "max_current": 90.0,
+  "weight_g": 640.4,
+  "max_power": 3600.0,
+  "io_voltage": 10.0
+}

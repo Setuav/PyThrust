@@ -1,0 +1,12 @@
+{
+  "id": "Feigao_540S-29T_1224KV",
+  "name": "540S-29T 1224KV",
+  "manufacturer": "Feigao",
+  "kv": 1224.0,
+  "resistance": 0.0794,
+  "io": 0.5,
+  "max_current": 22.0,
+  "weight_g": 230.2,
+  "max_power": 920.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MAD_Comp._V8015_IPE_180KV",
+  "name": "V8015 IPE 180KV",
+  "manufacturer": "MAD Comp.",
+  "kv": 180.0,
+  "resistance": 0.033,
+  "io": 2.85,
+  "max_current": 111.0,
+  "weight_g": 625.4,
+  "max_power": 3388.0,
+  "io_voltage": 20.0
+}

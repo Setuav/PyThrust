@@ -1,0 +1,12 @@
+{
+  "id": "Dualsky_XM6360EA-11",
+  "name": "XM6360EA-11",
+  "manufacturer": "Dualsky",
+  "kv": 380.0,
+  "resistance": 0.0098,
+  "io": 2.6,
+  "max_current": 130.0,
+  "weight_g": 650.6,
+  "max_power": 3120.0,
+  "io_voltage": 10.0
+}

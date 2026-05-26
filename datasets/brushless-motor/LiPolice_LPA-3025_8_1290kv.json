@@ -1,0 +1,12 @@
+{
+  "id": "LiPolice_LPA-3025_8_1290kv",
+  "name": "LPA-3025/8 1290kv",
+  "manufacturer": "LiPolice",
+  "kv": 1290.0,
+  "resistance": 0.0145,
+  "io": 3.2,
+  "max_current": 45.0,
+  "weight_g": 181.2,
+  "max_power": 600.0,
+  "io_voltage": 8.4
+}

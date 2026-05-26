@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_1533_5D_360",
+  "name": "1533/5D 360",
+  "manufacturer": "NeuMotors",
+  "kv": 360.0,
+  "resistance": 0.11,
+  "io": 0.9,
+  "max_current": 36.0,
+  "weight_g": 773.7,
+  "max_power": 6000.0,
+  "io_voltage": 10.0
+}

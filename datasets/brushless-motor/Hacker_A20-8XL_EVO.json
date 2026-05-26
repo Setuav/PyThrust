@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_A20-8XL_EVO",
+  "name": "A20-8XL EVO",
+  "manufacturer": "Hacker",
+  "kv": 1500.0,
+  "resistance": 0.026,
+  "io": 2.6,
+  "max_current": 35.0,
+  "weight_g": 78.0,
+  "max_power": 300.0,
+  "io_voltage": 8.4
+}

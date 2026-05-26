@@ -1,0 +1,12 @@
+{
+  "id": "Cheetah_A5345-7_200KV",
+  "name": "A5345-7  200KV",
+  "manufacturer": "Cheetah",
+  "kv": 200.0,
+  "resistance": 0.044,
+  "io": 1.2,
+  "max_current": 0.0,
+  "weight_g": 726.6,
+  "max_power": 3995.0,
+  "io_voltage": 10.0
+}

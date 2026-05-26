@@ -1,0 +1,12 @@
+{
+  "id": "MotrolFly_DM_2205-2800",
+  "name": "DM 2205-2800",
+  "manufacturer": "MotrolFly",
+  "kv": 2840.0,
+  "resistance": 0.095,
+  "io": 0.85,
+  "max_current": 22.0,
+  "weight_g": 28.1,
+  "max_power": 200.0,
+  "io_voltage": 7.0
+}

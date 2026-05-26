@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_MN3110_KV780",
+  "name": "MN3110 KV780",
+  "manufacturer": "T-Motor",
+  "kv": 780.0,
+  "resistance": 0.071,
+  "io": 0.4,
+  "max_current": 26.0,
+  "weight_g": 79.9,
+  "max_power": 481.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "NeuMotors_8012_18_126",
+  "name": "8012/18/126",
+  "manufacturer": "NeuMotors",
+  "kv": 126.0,
+  "resistance": 0.061,
+  "io": 0.45,
+  "max_current": 57.0,
+  "weight_g": 688.6,
+  "max_power": 4500.0,
+  "io_voltage": 10.0
+}

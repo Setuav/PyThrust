@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ1520_9_4750",
+  "name": "TS-EZ1520/9 4750",
+  "manufacturer": "Tenshock",
+  "kv": 4750.0,
+  "resistance": 0.0097,
+  "io": 4.5,
+  "max_current": 70.0,
+  "weight_g": 103.2,
+  "max_power": 650.0,
+  "io_voltage": 10.0
+}

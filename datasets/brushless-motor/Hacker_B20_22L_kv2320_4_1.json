@@ -1,0 +1,12 @@
+{
+  "id": "Hacker_B20_22L_kv2320_4_1",
+  "name": "B20 22L kv2320 4:1",
+  "manufacturer": "Hacker",
+  "kv": 2455.0,
+  "resistance": 0.125,
+  "io": 0.51,
+  "max_current": 15.0,
+  "weight_g": 69.2,
+  "max_power": 220.0,
+  "io_voltage": 8.4
+}

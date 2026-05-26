@@ -1,0 +1,12 @@
+{
+  "id": "T-Motor_Cine66_FPV-1155",
+  "name": "Cine66 FPV-1155",
+  "manufacturer": "T-Motor",
+  "kv": 1155.0,
+  "resistance": 0.047,
+  "io": 1.41,
+  "max_current": 55.0,
+  "weight_g": 76.8,
+  "max_power": 1320.0,
+  "io_voltage": 10.0
+}

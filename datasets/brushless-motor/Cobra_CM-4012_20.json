@@ -1,0 +1,12 @@
+{
+  "id": "Cobra_CM-4012_20",
+  "name": "CM-4012/20",
+  "manufacturer": "Cobra",
+  "kv": 450.0,
+  "resistance": 0.057,
+  "io": 1.04,
+  "max_current": 30.0,
+  "weight_g": 140.9,
+  "max_power": 560.0,
+  "io_voltage": 21.0
+}

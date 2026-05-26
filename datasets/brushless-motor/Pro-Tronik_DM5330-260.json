@@ -1,0 +1,12 @@
+{
+  "id": "Pro-Tronik_DM5330-260",
+  "name": "DM5330-260",
+  "manufacturer": "Pro-Tronik",
+  "kv": 260.0,
+  "resistance": 0.02,
+  "io": 1.37,
+  "max_current": 70.0,
+  "weight_g": 700.5,
+  "max_power": 2000.0,
+  "io_voltage": 8.4
+}

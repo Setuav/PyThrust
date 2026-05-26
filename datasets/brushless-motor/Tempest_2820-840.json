@@ -1,0 +1,12 @@
+{
+  "id": "Tempest_2820-840",
+  "name": "2820-840",
+  "manufacturer": "Tempest",
+  "kv": 840.0,
+  "resistance": 0.045,
+  "io": 1.82,
+  "max_current": 45.0,
+  "weight_g": 136.1,
+  "max_power": 1000.0,
+  "io_voltage": 10.0
+}

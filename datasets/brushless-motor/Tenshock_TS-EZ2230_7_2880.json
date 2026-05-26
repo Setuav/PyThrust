@@ -1,0 +1,12 @@
+{
+  "id": "Tenshock_TS-EZ2230_7_2880",
+  "name": "TS-EZ2230/7 2880",
+  "manufacturer": "Tenshock",
+  "kv": 2880.0,
+  "resistance": 0.007,
+  "io": 3.5,
+  "max_current": 100.0,
+  "weight_g": 228.2,
+  "max_power": 1750.0,
+  "io_voltage": 10.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_CA120-80-12_140KV",
+  "name": "CA120-80-12 140KV",
+  "manufacturer": "GS-Models",
+  "kv": 140.0,
+  "resistance": 0.0053,
+  "io": 18.0,
+  "max_current": 210.0,
+  "weight_g": 2781.9,
+  "max_power": 15000.0,
+  "io_voltage": 30.0
+}

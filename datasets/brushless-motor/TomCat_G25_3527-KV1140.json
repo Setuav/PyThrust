@@ -1,0 +1,12 @@
+{
+  "id": "TomCat_G25_3527-KV1140",
+  "name": "G25 3527-KV1140",
+  "manufacturer": "TomCat",
+  "kv": 1140.0,
+  "resistance": 0.016,
+  "io": 3.2,
+  "max_current": 48.0,
+  "weight_g": 180.0,
+  "max_power": 860.0,
+  "io_voltage": 10.0
+}

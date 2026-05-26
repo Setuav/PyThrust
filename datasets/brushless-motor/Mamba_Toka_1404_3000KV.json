@@ -1,0 +1,12 @@
+{
+  "id": "Mamba_Toka_1404_3000KV",
+  "name": "Toka 1404 3000KV",
+  "manufacturer": "Mamba",
+  "kv": 3000.0,
+  "resistance": 0.31,
+  "io": 0.3,
+  "max_current": 12.0,
+  "weight_g": 11.9,
+  "max_power": 287.0,
+  "io_voltage": 10.0
+}

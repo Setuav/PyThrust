@@ -1,0 +1,12 @@
+{
+  "id": "TP_Power_TP4030-8D_2450",
+  "name": "TP4030-8D 2450",
+  "manufacturer": "TP Power",
+  "kv": 2450.0,
+  "resistance": 0.0057,
+  "io": 1.7,
+  "max_current": 136.0,
+  "weight_g": 396.3,
+  "max_power": 3600.0,
+  "io_voltage": 8.0
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SunnySky_M6212_KV180",
+  "name": "M6212 KV180",
+  "manufacturer": "SunnySky",
+  "kv": 180.0,
+  "resistance": 0.102,
+  "io": 1.5,
+  "max_current": 42.0,
+  "weight_g": 323.2,
+  "max_power": 1880.0,
+  "io_voltage": 10.0
+}

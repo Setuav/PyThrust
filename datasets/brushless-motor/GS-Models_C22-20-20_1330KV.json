@@ -1,0 +1,12 @@
+{
+  "id": "GS-Models_C22-20-20_1330KV",
+  "name": "C22-20-20 1330KV",
+  "manufacturer": "GS-Models",
+  "kv": 1330.0,
+  "resistance": 0.257,
+  "io": 0.4,
+  "max_current": 10.0,
+  "weight_g": 28.1,
+  "max_power": 110.0,
+  "io_voltage": 10.0
+}
