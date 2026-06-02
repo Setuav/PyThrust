@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythrust"
+dynamic = ["version"]
+description = "Electric propulsion system co-design, analysis, and optimization framework for UAVs."
+readme = "README.md"
+authors = [
+    { name = "Hüseyin Karakaya" }
+]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Aviation",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+plot = [
+    "matplotlib>=3.4",
+]
+pybamm = [
+    "pybamm>=26.0",
+]
+openmdao = [
+    "openmdao>=3.20.0",
+]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "pythrust.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pythrust*"]
