@@ -1,4 +1,4 @@
-![PyThrust Banner](docs/images/PyThrust_banner.png)
+![PyThrust Banner](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/PyThrust_banner.png)
 
 # PyThrust
 
@@ -8,21 +8,21 @@ PyThrust is an open-source framework for electric propulsion system analysis, co
 
 | 1. Propulsion Co-Design Optimization | 2. Propulsion Calibration & Auto-Tuning |
 | :---: | :---: |
-| ![Propulsion Co-Design Optimization](docs/images/optimize_and_plot_results.png) | ![Propulsion Calibration & Auto-Tuning Results](docs/images/calibration_results.png) |
+| ![Propulsion Co-Design Optimization](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/optimize_and_plot_results.png) | ![Propulsion Calibration & Auto-Tuning Results](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/calibration_results.png) |
 | **3. Propeller Aerodynamic Coefficients** | **4. Hover Efficiency Heatmap** |
-| ![Propeller Aerodynamic Coefficients](docs/images/propeller_coefficients.png) | ![Hover Efficiency Heatmap](docs/images/efficiency_heatmap.png) |
+| ![Propeller Aerodynamic Coefficients](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/propeller_coefficients.png) | ![Hover Efficiency Heatmap](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/efficiency_heatmap.png) |
 
 ### 5. PyBaMM Electrochemical Battery Simulation (Dynamic Load)
-![PyBaMM Electrochemical Battery Simulation](docs/images/pybamm_mission_results.png)
+![PyBaMM Electrochemical Battery Simulation](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/pybamm_mission_results.png)
 
 ## Documentation
 
-Please see the [docs/](docs/) folder for design specifications, core mathematical model descriptions, and database details.
+Please see the [docs/](https://github.com/Setuav/PyThrust/tree/main/docs) folder for design specifications, core mathematical model descriptions, and database details.
 
 ## License
 
-PyThrust is licensed under the Apache License, Version 2.0 (the "License"). See [LICENSE](LICENSE) for the full license.
+PyThrust is licensed under the Apache License, Version 2.0 (the "License"). See [LICENSE](https://github.com/Setuav/PyThrust/blob/main/LICENSE) for the full license.
 
 ## Copyright
 
-Copyright (c) 2026 Hüseyin Karakaya. All rights reserved.
+Copyright (c) 2026 Setuav. All rights reserved.
