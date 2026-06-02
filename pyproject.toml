@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pythrust"
+name = "setuav-pythrust"
 dynamic = ["version"]
 description = "Electric propulsion system co-design, analysis, and optimization framework for UAVs."
 readme = "README.md"
@@ -18,7 +18,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Topic :: Scientific/Engineering :: Aviation",
+    "Topic :: Scientific/Engineering",
 ]
 requires-python = ">=3.10"
 dependencies = [
