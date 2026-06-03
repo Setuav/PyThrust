@@ -171,3 +171,53 @@ def test_estimate_j_max(test_setup):
     empty_meta = PropellerMetadata("empty", "A", "B", 10.0, 5.0, 2, "csv")
     empty_entry = PropellerEntry(metadata=empty_meta, data_by_rpm={})
     assert PropulsionSolver._estimate_j_max(empty_entry) == 0.6
+
+
+def test_solver_efficiencies(test_setup):
+    motor, battery, system, propeller, prop_entry = test_setup
+    # Configure higher rpm_min to prevent rpm_min J from exceeding j_max and returning inf
+    solver = PropulsionSolver(SolverConfig(rpm_min=2000.0))
+
+    # 1. Static case (airspeed = 0)
+    op_static = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=0.0,
+        throttle=0.8
+    )
+    assert op_static.is_feasible is True
+    assert op_static.propeller_efficiency == 0.0
+    assert op_static.system_efficiency == 0.0
+    assert 0.0 < op_static.motor_efficiency < 1.0
+
+    # 2. Dynamic case (airspeed = 5.0 m/s)
+    op_dynamic = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=5.0,
+        throttle=0.8
+    )
+    assert op_dynamic.is_feasible is True
+    # Efficiencies should be positive and physically reasonable
+    assert 0.0 < op_dynamic.propeller_efficiency < 1.0
+    assert 0.0 < op_dynamic.motor_efficiency < 1.0
+    assert 0.0 < op_dynamic.system_efficiency < 1.0
+    
+    # System efficiency should be propeller_eff * motor_eff * battery_discharge_eff approximately
+    # Since battery discharge efficiency is 0.98 and sys resistance is small:
+    # eta_sys = (T * V) / P_battery. eta_motor = P_shaft / P_motor. eta_prop = (T * V) / P_shaft.
+    # P_battery = (P_motor + I^2 * R_sys) / eta_batt_discharge.
+    # Let's verify mathematically:
+    expected_sys = op_dynamic.propeller_efficiency * op_dynamic.motor_efficiency
+    # Since there are small electrical line losses (R_sys = 0.015) and battery efficiency (0.98),
+    # actual system efficiency will be slightly lower than expected_sys.
+    assert op_dynamic.system_efficiency <= expected_sys + 1e-5
+

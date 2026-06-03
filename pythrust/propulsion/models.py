@@ -119,3 +119,6 @@ class OperatingPoint:
     motor_voltage_v: float
     is_feasible: bool
     infeasible_reason: Optional[str] = None
+    propeller_efficiency: float = 0.0
+    motor_efficiency: float = 0.0
+    system_efficiency: float = 0.0
