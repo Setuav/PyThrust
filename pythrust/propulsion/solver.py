@@ -179,6 +179,22 @@ class PropulsionSolver:
         motor_power_w = motor_voltage_v * current_a
         battery_power_w = (motor_power_w + (current_a ** 2) * system.resistance_ohm) / max(1e-6, battery.discharge_efficiency)
 
+        # Efficiency calculations
+        if shaft_power_w > 0.0:
+            propeller_efficiency = (thrust_n * airspeed_mps) / shaft_power_w
+        else:
+            propeller_efficiency = 0.0
+
+        if motor_power_w > 0.0:
+            motor_efficiency = shaft_power_w / motor_power_w
+        else:
+            motor_efficiency = 0.0
+
+        if battery_power_w > 0.0:
+            system_efficiency = (thrust_n * airspeed_mps) / battery_power_w
+        else:
+            system_efficiency = 0.0
+
         feasible = True
         reason = None
         if current_a > motor.current_max_a:
@@ -202,6 +218,9 @@ class PropulsionSolver:
             motor_voltage_v=float(motor_voltage_v),
             is_feasible=feasible,
             infeasible_reason=reason,
+            propeller_efficiency=float(propeller_efficiency),
+            motor_efficiency=float(motor_efficiency),
+            system_efficiency=float(system_efficiency),
         )
 
     def _build_infeasible_point(
@@ -240,6 +259,9 @@ class PropulsionSolver:
             motor_voltage_v=point.motor_voltage_v,
             is_feasible=False,
             infeasible_reason=reason,
+            propeller_efficiency=point.propeller_efficiency,
+            motor_efficiency=point.motor_efficiency,
+            system_efficiency=point.system_efficiency,
         )
 
     @staticmethod

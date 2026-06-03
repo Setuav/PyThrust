@@ -12,3 +12,8 @@ venv/
 
 .antigravitycli/
 scratch/
+
+# Test and Coverage
+.coverage
+.pytest_cache/
+htmlcov/

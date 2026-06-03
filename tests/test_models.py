@@ -102,8 +102,34 @@ def test_operating_point():
         battery_power_w=310.0,
         motor_current_a=25.0,
         motor_voltage_v=12.0,
-        is_feasible=True
+        is_feasible=True,
+        propeller_efficiency=0.65,
+        motor_efficiency=0.83,
+        system_efficiency=0.5395
     )
     assert op.rpm == 8000.0
     assert op.is_feasible is True
     assert op.infeasible_reason is None
+    assert op.propeller_efficiency == 0.65
+    assert op.motor_efficiency == 0.83
+    assert op.system_efficiency == 0.5395
+
+    # Test default values
+    op_default = OperatingPoint(
+        rpm=8000.0,
+        advance_ratio=0.4,
+        ct=0.08,
+        cp=0.04,
+        thrust_n=15.0,
+        torque_nm=0.3,
+        shaft_power_w=250.0,
+        motor_power_w=300.0,
+        battery_power_w=310.0,
+        motor_current_a=25.0,
+        motor_voltage_v=12.0,
+        is_feasible=True
+    )
+    assert op_default.propeller_efficiency == 0.0
+    assert op_default.motor_efficiency == 0.0
+    assert op_default.system_efficiency == 0.0
+
