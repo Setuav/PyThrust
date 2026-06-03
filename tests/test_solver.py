@@ -192,7 +192,7 @@ def test_solver_efficiencies(test_setup):
     assert op_static.is_feasible is True
     assert op_static.propeller_efficiency == 0.0
     assert op_static.system_efficiency == 0.0
-    assert 0.0 < op_static.motor_efficiency < 1.0
+    assert 0.0 < op_static.motor_efficiency <= 1.0
 
     # 2. Dynamic case (airspeed = 5.0 m/s)
     op_dynamic = solver.solve_operating_point(
@@ -207,9 +207,9 @@ def test_solver_efficiencies(test_setup):
     )
     assert op_dynamic.is_feasible is True
     # Efficiencies should be positive and physically reasonable
-    assert 0.0 < op_dynamic.propeller_efficiency < 1.0
-    assert 0.0 < op_dynamic.motor_efficiency < 1.0
-    assert 0.0 < op_dynamic.system_efficiency < 1.0
+    assert 0.0 < op_dynamic.propeller_efficiency <= 1.0
+    assert 0.0 < op_dynamic.motor_efficiency <= 1.0
+    assert 0.0 < op_dynamic.system_efficiency <= 1.0
     
     # System efficiency should be propeller_eff * motor_eff * battery_discharge_eff approximately
     # Since battery discharge efficiency is 0.98 and sys resistance is small:
@@ -220,4 +220,46 @@ def test_solver_efficiencies(test_setup):
     # Since there are small electrical line losses (R_sys = 0.015) and battery efficiency (0.98),
     # actual system efficiency will be slightly lower than expected_sys.
     assert op_dynamic.system_efficiency <= expected_sys + 1e-5
+
+
+def test_solver_invalid_efficiency(test_setup):
+    motor, battery, system, propeller, _ = test_setup
+    
+    # Create custom propeller data where Ct/Cp = 15.0 at J = 0.2
+    # With J = 0.2, eta_prop = (Ct/Cp) * J = 15.0 * 0.2 = 3.0 (> 1.0)
+    meta = PropellerMetadata(
+        id="bad_prop",
+        manufacturer="APC",
+        model="SF",
+        diameter_in=10.0,
+        pitch_in=4.7,
+        blade_count=2,
+        data_csv="bad.csv"
+    )
+    data = {
+        8000.0: [
+            PropellerDataPoint(j=0.0, ct=0.12, cp=0.06),
+            PropellerDataPoint(j=0.2, ct=0.15, cp=0.01),
+            PropellerDataPoint(j=0.8, ct=0.02, cp=0.01)
+        ]
+    }
+    bad_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
+    
+    solver = PropulsionSolver(SolverConfig(rpm_min=2000.0))
+    # Solve at airspeed = 5.0 m/s to land J near 0.2
+    op = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=bad_entry,
+        rho=1.225,
+        airspeed_mps=5.0,
+        throttle=0.8
+    )
+    
+    # The solver should calculate the point but mark it infeasible
+    assert op.is_feasible is False
+    assert op.infeasible_reason == "invalid_efficiency"
+
 

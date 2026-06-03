@@ -17,6 +17,7 @@ from scipy.optimize import least_squares
 
 from pythrust.propellers.database import PropellerEntry
 from .models import BatterySpec, MotorSpec, PropellerSpec, SystemSpec
+from .solver import evaluate_propulsion_state
 
 
 @dataclass(frozen=True)
@@ -144,18 +145,13 @@ class PropulsionCalibrator:
             )
 
         current_scale = max(p.current_a for p in valid)
-        kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
-
         def _motor_state(rpm: float):
-            n = max(rpm / 60.0, 1e-6)
-            j = airspeed_mps / (n * propeller.diameter_m) if propeller.diameter_m > 0 else 0.0
-            ct, cp = prop_entry.get_coefficients(rpm, j)
+            res = evaluate_propulsion_state(motor, propeller, prop_entry, rho, airspeed_mps, rpm)
+            ct, cp, j, torque_nm, i_motor, v_back = res
             if cp <= 0.0 or ct < 0.0 or j < 0.0:
                 return None
-            torque_nm = cp * rho * (n ** 2) * (propeller.diameter_m ** 5) / (2.0 * math.pi)
-            i_motor = torque_nm / kt + motor.get_no_load_current(rpm)
-            v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
             v_m = v_back + i_motor * motor.get_winding_resistance(i_motor)
+            n = max(rpm / 60.0, 1e-6)
             thrust_g = ct * rho * (n ** 2) * (propeller.diameter_m ** 4) * 1000.0 / 9.80665
             return i_motor, v_m, thrust_g
 

@@ -24,6 +24,29 @@ class SolverConfig:
     max_iter: int = 100
 
 
+def evaluate_propulsion_state(
+    motor: MotorSpec,
+    propeller: PropellerSpec,
+    prop_entry: PropellerEntry,
+    rho: float,
+    airspeed_mps: float,
+    rpm: float,
+) -> tuple[float, float, float, float, float, float]:
+    """Calculate aerodynamic and motor electrical states at a given RPM."""
+    n = max(rpm / 60.0, 1e-6)
+    j = airspeed_mps / (n * propeller.diameter_m) if propeller.diameter_m > 0 else 0.0
+    ct, cp = prop_entry.get_coefficients(rpm, j)
+
+    torque_nm = cp * rho * (n**2) * (propeller.diameter_m**5) / (2.0 * math.pi)
+    kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
+    current_a = torque_nm / kt + motor.get_no_load_current(rpm)
+
+    # Back-EMF with magnetic lag: V_back = (omega * (1 + tau*omega)) / Kv
+    v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
+
+    return ct, cp, j, torque_nm, current_a, v_back
+
+
 class PropulsionSolver:
     """Solve equilibrium RPM for a given operating condition."""
 
@@ -139,18 +162,7 @@ class PropulsionSolver:
         airspeed_mps: float,
         rpm: float,
     ) -> tuple[float, float, float, float, float, float]:
-        n = max(rpm / 60.0, 1e-6)
-        j = airspeed_mps / (n * propeller.diameter_m) if propeller.diameter_m > 0 else 0.0
-        ct, cp = prop_entry.get_coefficients(rpm, j)
-
-        torque_nm = cp * rho * (n**2) * (propeller.diameter_m**5) / (2.0 * math.pi)
-        kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
-        current_a = torque_nm / kt + motor.get_no_load_current(rpm)
-        
-        # Back-EMF with magnetic lag: V_back = (omega * (1 + tau*omega)) / Kv
-        v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
-
-        return ct, cp, j, torque_nm, current_a, v_back
+        return evaluate_propulsion_state(motor, propeller, prop_entry, rho, airspeed_mps, rpm)
 
     def _build_point(
         self,
@@ -203,6 +215,11 @@ class PropulsionSolver:
         if ct < 0.0 or cp < 0.0 or j < 0.0:
             feasible = False
             reason = "invalid_coefficients"
+        if (propeller_efficiency > 1.0001 or propeller_efficiency < 0.0 or
+            motor_efficiency > 1.0001 or motor_efficiency < 0.0 or
+            system_efficiency > 1.0001 or system_efficiency < 0.0):
+            feasible = False
+            reason = "invalid_efficiency"
 
         return OperatingPoint(
             rpm=float(rpm),
