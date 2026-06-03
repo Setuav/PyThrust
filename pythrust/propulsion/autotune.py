@@ -144,7 +144,7 @@ class PropulsionCalibrator:
             )
 
         current_scale = max(p.current_a for p in valid)
-        kt = 60.0 / (2.0 * math.pi * motor.kv_rpm_per_v)
+        kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
 
         def _motor_state(rpm: float):
             n = max(rpm / 60.0, 1e-6)
@@ -153,9 +153,9 @@ class PropulsionCalibrator:
             if cp <= 0.0 or ct < 0.0 or j < 0.0:
                 return None
             torque_nm = cp * rho * (n ** 2) * (propeller.diameter_m ** 5) / (2.0 * math.pi)
-            i_motor = torque_nm / kt + motor.no_load_current_a
-            v_back = rpm / motor.kv_rpm_per_v
-            v_m = v_back + i_motor * motor.resistance_ohm
+            i_motor = torque_nm / kt + motor.get_no_load_current(rpm)
+            v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
+            v_m = v_back + i_motor * motor.get_winding_resistance(i_motor)
             thrust_g = ct * rho * (n ** 2) * (propeller.diameter_m ** 4) * 1000.0 / 9.80665
             return i_motor, v_m, thrust_g
 
@@ -168,7 +168,7 @@ class PropulsionCalibrator:
                     res.append(1.0)
                     continue
                 i_motor, v_m, _ = state
-                i_bat_pred = (v_m * i_motor + (i_motor ** 2) * r_sys) / battery.voltage_v
+                i_bat_pred = (v_m * i_motor + (i_motor ** 2) * r_sys) / (battery.voltage_v * max(1e-6, battery.discharge_efficiency))
                 res.append((i_bat_pred - pt.current_a) / current_scale)
             return res
 
@@ -194,7 +194,7 @@ class PropulsionCalibrator:
                 continue
             i_motor, v_m, thrust_pred_g = state
             thrust_errs.append(thrust_pred_g - pt.thrust_g)
-            i_bat_pred = (v_m * i_motor + (i_motor ** 2) * r_sys_fit) / battery.voltage_v
+            i_bat_pred = (v_m * i_motor + (i_motor ** 2) * r_sys_fit) / (battery.voltage_v * max(1e-6, battery.discharge_efficiency))
             current_errs.append(i_bat_pred - pt.current_a)
 
         rmse_thrust = (
