@@ -12,9 +12,6 @@ PyThrust is an open-source framework for electric propulsion system analysis, co
 | **3. Propeller Aerodynamic Coefficients** | **4. Hover Efficiency Heatmap** |
 | ![Propeller Aerodynamic Coefficients](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/propeller_coefficients.png) | ![Hover Efficiency Heatmap](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/efficiency_heatmap.png) |
 
-### 5. PyBaMM Electrochemical Battery Simulation (Dynamic Load)
-![PyBaMM Electrochemical Battery Simulation](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/pybamm_mission_results.png)
-
 ## Documentation
 
 Please see the [docs/](https://github.com/Setuav/PyThrust/tree/main/docs) folder for design specifications, core mathematical model descriptions, and database details.

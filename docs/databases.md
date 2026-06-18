@@ -38,7 +38,7 @@ rpm,speed_mps,advance_ratio,efficiency,thrust_coeff,power_coeff,power_w,torque_n
 
 ## 2) Brushless Motor Database (`data/motors/`)
 
-The motor database is a directory of individual JSON files representing fırçasız (brushless) motors.
+The motor database is a directory of individual JSON files representing brushless motors.
 
 ### Motor Spec format (`*.json`)
 ```json

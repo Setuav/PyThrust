@@ -10,38 +10,130 @@ The `PropulsionCalibrator` identifies a single lumped parameter, `system.resista
 
 ## Physical Loss Model
 
-### Voltage Balance
+### Symbols
 
-At a given `throttle` and battery voltage $V_{\text{bat}}$, the ideal average voltage applied by PWM switching is $V_{\text{applied}} = \text{throttle} \times V_{\text{bat}}$.
+| Symbol | Meaning |
+|---|---|
+| $K_v$ | Motor speed constant from the datasheet |
+| $R_m$ | Motor winding resistance from the datasheet |
+| $I_0$ | Motor no-load current from the datasheet |
+| $R_{\text{system}}$ | Lumped resistance being calibrated |
+| $V_{\text{bat}}$ | Battery voltage during the test |
+| $V_{\text{applied}}$ | Average voltage commanded by throttle |
+| $V_{\text{back}}$ | Motor back-EMF voltage |
+| $V_m$ | Motor terminal voltage |
+| $I_{\text{motor}}$ | Motor winding current predicted from propeller torque |
+| $I_{\text{bat,pred}}$ | Predicted battery current |
+| $\tau$ | Propeller shaft torque from the aerodynamic database |
 
-The voltage actually reaching the motor terminals is reduced by transmission voltage drops:
-$$V_{\text{motor}} = V_{\text{applied}} - I_{\text{motor}} R_{\text{system}}$$
+### Step 1: Applied Voltage
 
-Equating this to the motor's internal back-EMF voltage balance ($V_{\text{motor}} = V_{\text{back}} + I_{\text{motor}} R_m$):
-$$\text{throttle} \times V_{\text{bat}} = V_{\text{back}} + I_{\text{motor}} (R_m + R_{\text{system}})$$
+At a given throttle and battery voltage, the ideal average voltage applied by PWM switching is:
 
-where
-$$V_{\text{back}} = \frac{\text{RPM}}{K_v}, \qquad I_{\text{motor}} = \frac{\tau}{K_t} + I_0, \qquad K_t = \frac{60}{2\pi K_v}$$
+$$
+V_{\text{applied}} =
+\text{throttle} \cdot V_{\text{bat}}
+$$
 
-$\tau$ is the propeller shaft torque determined from the aerodynamic database at the measured RPM.
+Some of this voltage is lost before it reaches the motor because the battery, ESC, wires, and connectors all have finite resistance.
 
-### Power Balance & Battery Current
+### Step 2: Motor State at the Measured RPM
 
-The electrical power drawn from the battery is the sum of motor power and transmission conduction losses ($I_{\text{motor}}^2 R_{\text{system}}$):
-$$P_{\text{battery}} = V_{\text{motor}} I_{\text{motor}} + I_{\text{motor}}^2 R_{\text{system}} = V_{\text{back}} I_{\text{motor}} + I_{\text{motor}}^2 (R_m + R_{\text{system}})$$
+For each measured RPM, PyThrust first evaluates the propeller torque from the propeller database. That torque determines the motor current needed to spin the propeller:
 
-Thus, the predicted battery DC current is:
-$$I_{\text{bat\_pred}}(R_{\text{system}}) = \frac{V_m I_{\text{motor}} + I_{\text{motor}}^2 R_{\text{system}}}{V_{\text{bat}}}$$
+$$
+K_t = \frac{60}{2 \pi K_v}
+$$
 
-where $V_m = V_{\text{back}} + I_{\text{motor}} R_m$ is the motor terminal voltage.
+$$
+I_{\text{motor}} =
+\frac{\tau}{K_t} + I_0
+$$
+
+The motor back-EMF voltage is:
+
+$$
+V_{\text{back}} =
+\frac{\text{RPM}}{K_v}
+$$
+
+The motor terminal voltage is then:
+
+$$
+V_m =
+V_{\text{back}} + I_{\text{motor}} R_m
+$$
+
+### Step 3: Add System Losses
+
+The calibrated resistance is added outside the motor winding resistance:
+
+$$
+V_{\text{applied}} =
+V_{\text{back}}
++ I_{\text{motor}} R_m
++ I_{\text{motor}} R_{\text{system}}
+$$
+
+Equivalently:
+
+$$
+V_{\text{applied}} =
+V_{\text{back}}
++ I_{\text{motor}} (R_m + R_{\text{system}})
+$$
+
+This is the voltage-balance view of the same physical loss model.
+
+### Step 4: Predict Battery Current
+
+The battery must supply both motor electrical power and the extra conduction loss in the system resistance:
+
+$$
+P_{\text{battery}} =
+V_m I_{\text{motor}}
++ I_{\text{motor}}^2 R_{\text{system}}
+$$
+
+The predicted battery current for a candidate resistance value is:
+
+$$
+I_{\text{bat,pred}}(R_{\text{system}}) =
+\frac{
+  V_m I_{\text{motor}}
+  + I_{\text{motor}}^2 R_{\text{system}}
+}{
+  V_{\text{bat}}
+}
+$$
+
+Here, $R_{\text{system}}$ is the only unknown parameter being fitted.
 
 ---
 
 ## Identification Procedure
 
-Given **N** test points $\{(RPM_i, T_i, I_i)\}$ from a thrust stand, the calibrator solves the least-squares problem:
+Given **N** test points from a thrust stand, each point contains:
 
-$$\hat{R}_{\text{system}} = \arg\min_{R \in [0.0,\, 1.0]} \sum_{i=1}^N \left[ \frac{I^{\text{pred}}_i(R) - I^{\text{meas}}_i}{I_{\max}} \right]^2$$
+$$
+(\text{RPM}_i,\ T_i,\ I_{\text{bat,meas},i})
+$$
+
+The calibrator chooses the system resistance that minimizes the normalized current error:
+
+$$
+\hat{R}_{\text{system}} =
+\arg\min_{R \in [0.0,\, 1.0]}
+\sum_{i=1}^{N}
+\left(
+  \frac{
+    I_{\text{bat,pred},i}(R)
+    - I_{\text{bat,meas},i}
+  }{
+    I_{\max}
+  }
+\right)^2
+$$
 
 This is a linear optimization problem in $R_{\text{system}}$ and is solved using `scipy.optimize.least_squares` with bound constraints to prevent non-physical negative resistance.
 

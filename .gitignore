@@ -10,6 +10,7 @@ venv/
 # output folders
 *_out/
 build/
+site/
 .antigravitycli/
 scratch/
 

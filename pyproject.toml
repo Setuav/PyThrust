@@ -30,14 +30,15 @@ dependencies = [
 plot = [
     "matplotlib>=3.4",
 ]
-pybamm = [
-    "pybamm>=25.0",
-]
 openmdao = [
     "openmdao>=3.20.0",
 ]
 dev = [
     "pytest>=7.0",
+]
+docs = [
+    "mkdocs-material>=9.5",
+    "pymdown-extensions>=10.0",
 ]
 
 [tool.setuptools.dynamic]

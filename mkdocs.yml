@@ -1,0 +1,76 @@
+site_name: PyThrust
+site_description: Electric propulsion system co-design, analysis, and optimization framework for UAVs
+site_author: Hüseyin Karakaya
+repo_url: https://github.com/Setuav/PyThrust
+repo_name: Setuav/PyThrust
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: images/setuav_logo.png
+  favicon: images/setuav_logo.png
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - User Guide:
+      - Home: index.md
+      - Getting Started: getting_started.md
+      - Propulsion Solver: usage.md
+      - Motor Calibration: motor_calibration.md
+      - Examples: examples.md
+  - Reference:
+      - API Reference: api_reference.md
+      - Mathematical Model: theory.md
+      - Component Databases: databases.md
+  - Developer Guide:
+      - Development & Testing: development.md
