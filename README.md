@@ -14,7 +14,18 @@ PyThrust is an open-source framework for electric propulsion system analysis, co
 
 ## Documentation
 
-Please see the [docs/](https://github.com/Setuav/PyThrust/tree/main/docs) folder for design specifications, core mathematical model descriptions, and database details.
+The full documentation is available at:
+
+**https://setuav.github.io/PyThrust/**
+
+Key sections:
+
+- [Getting Started](https://setuav.github.io/PyThrust/getting_started/)
+- [Propulsion Solver](https://setuav.github.io/PyThrust/usage/)
+- [Motor Calibration](https://setuav.github.io/PyThrust/motor_calibration/)
+- [Examples](https://setuav.github.io/PyThrust/examples/)
+- [Mathematical Model](https://setuav.github.io/PyThrust/theory/)
+- [Component Databases](https://setuav.github.io/PyThrust/databases/)
 
 ## License
 
