@@ -1,5 +1,6 @@
 import math
 import pytest
+from pythrust.battery import BatteryState, RateMapBattery
 from pythrust.propellers.database import (
     PropellerMetadata,
     PropellerDataPoint,
@@ -109,6 +110,122 @@ def test_solver_successful_solve(test_setup):
     v_motor = op.motor_voltage_v
     i_sys = op.motor_current_a
     assert math.isclose(v_motor + i_sys * system.resistance_ohm, v_applied, rel_tol=1e-3)
+
+
+def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
+    motor, battery, system, propeller, prop_entry = test_setup
+    solver = PropulsionSolver()
+    state = BatteryState(soc=0.5)
+    rate_map = RateMapBattery(
+        name="flat voltage",
+        capacity_ah=4.2,
+        cutoff_voltage_v=2.5,
+        charge_voltage_v=4.2,
+        max_current_a=1000.0,
+        series=3,
+        parallel=1,
+        dod=[0.0, 1.0],
+        ocv_v=[battery.voltage_v / 3.0, battery.voltage_v / 3.0],
+        resistance_ohm=[1e-12, 1e-12],
+    )
+
+    fixed_op = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=0.0,
+        throttle=0.8,
+    )
+    rate_map_op = solver.solve_operating_point(
+        motor=motor,
+        battery=rate_map,
+        battery_state=state,
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=0.0,
+        throttle=0.8,
+    )
+
+    assert rate_map_op.is_feasible is True
+    assert math.isclose(rate_map_op.rpm, fixed_op.rpm, rel_tol=1e-6)
+
+
+def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
+    motor, _, system, propeller, prop_entry = test_setup
+    solver = PropulsionSolver()
+    battery = RateMapBattery(
+        name="soc-sensitive voltage",
+        capacity_ah=4.2,
+        cutoff_voltage_v=2.5,
+        charge_voltage_v=4.2,
+        max_current_a=1000.0,
+        series=3,
+        parallel=2,
+        dod=[0.0, 1.0],
+        ocv_v=[4.1, 3.4],
+        resistance_ohm=[0.01, 0.03],
+    )
+
+    high_soc = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        battery_state=BatteryState(soc=1.0),
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=0.0,
+        throttle=0.8,
+    )
+    low_soc = solver.solve_operating_point(
+        motor=motor,
+        battery=battery,
+        battery_state=BatteryState(soc=0.2),
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=0.0,
+        throttle=0.8,
+    )
+
+    assert high_soc.is_feasible is True
+    assert low_soc.is_feasible is True
+    assert high_soc.rpm > low_soc.rpm
+
+
+def test_solver_rate_map_requires_battery_state(test_setup):
+    motor, _, system, propeller, prop_entry = test_setup
+    solver = PropulsionSolver()
+    battery = RateMapBattery(
+        name="requires state",
+        capacity_ah=4.2,
+        cutoff_voltage_v=2.5,
+        charge_voltage_v=4.2,
+        max_current_a=1000.0,
+        series=3,
+        parallel=1,
+        dod=[0.0, 1.0],
+        ocv_v=[4.1, 3.4],
+        resistance_ohm=[0.01, 0.03],
+    )
+
+    with pytest.raises(ValueError, match="battery_state"):
+        solver.solve_operating_point(
+            motor=motor,
+            battery=battery,
+            system=system,
+            propeller=propeller,
+            prop_entry=prop_entry,
+            rho=1.225,
+            airspeed_mps=0.0,
+            throttle=0.8,
+        )
 
 
 def test_solver_current_limit_exceeded(test_setup):
@@ -261,5 +378,4 @@ def test_solver_invalid_efficiency(test_setup):
     # The solver should calculate the point but mark it infeasible
     assert op.is_feasible is False
     assert op.infeasible_reason == "invalid_efficiency"
-
 
