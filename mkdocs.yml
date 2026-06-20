@@ -70,7 +70,7 @@ nav:
       - Examples: examples.md
   - Reference:
       - API Reference: api_reference.md
-      - Mathematical Model: theory.md
+      - Propulsion and Battery Theory: theory.md
       - Battery Model: battery_model.md
       - Component Databases: databases.md
   - Developer Guide:

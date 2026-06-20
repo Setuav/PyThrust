@@ -48,9 +48,9 @@ The core workflow is:
 ```python
 from pathlib import Path
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     PropulsionSolver,
@@ -67,7 +67,7 @@ motor = MotorSpec(
     no_load_current_a=1.3,
     current_max_a=65.0,
 )
-battery = BatterySpec(voltage_v=14.8)
+battery = FixedVoltageBattery(voltage_v=14.8)
 system = SystemSpec(resistance_ohm=0.05)
 propeller = PropellerSpec(diameter_m=0.3302, blade_count=2)
 

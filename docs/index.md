@@ -35,6 +35,6 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 * [**Motor Calibration**](motor_calibration.md): Fit system resistance from manufacturer or thrust-stand data.
 * [**Examples**](examples.md): Runnable scripts for calibration, motor selection, and OpenMDAO optimization.
 * [**API Reference**](api_reference.md): Main classes, database loaders, calibration objects, and OpenMDAO wrapper.
-* [**Mathematical Model**](theory.md): Propeller, motor, electrical loss, and coupled equilibrium equations.
+* [**Propulsion and Battery Theory**](theory.md): Propeller, motor, battery, electrical loss, and coupled equilibrium equations.
 * [**Component Databases**](databases.md): Propeller CSV/JSON and motor catalog formats.
 * [**Development & Testing**](development.md): Local setup, tests, examples, and documentation build commands.

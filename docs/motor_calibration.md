@@ -181,11 +181,12 @@ The calibration outcome returns residuals and $R^2$ values to evaluate propeller
 ## Usage
 
 ```python
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propulsion.autotune import ManufacturerTestPoint, PropulsionCalibrator
-from pythrust.propulsion import MotorSpec, BatterySpec, SystemSpec, PropellerSpec
+from pythrust.propulsion import MotorSpec, SystemSpec, PropellerSpec
 
 motor = MotorSpec(kv_rpm_per_v=860, resistance_ohm=0.0258, no_load_current_a=1.3, current_max_a=65)
-battery = BatterySpec(voltage_v=14.8)
+battery = FixedVoltageBattery(voltage_v=14.8)
 system = SystemSpec(resistance_ohm=0.05) # starting guess
 propeller = PropellerSpec(diameter_m=0.3302)
 
