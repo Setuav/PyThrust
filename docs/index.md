@@ -8,15 +8,29 @@ PyThrust combines empirical propeller data, brushless motor models, battery/syst
 
 ---
 
-## Why PyThrust?
+## Core Capabilities
 
 Electric UAV propulsion design usually crosses several domains: aerodynamics, motor electrical behavior, battery loading, component catalogs, and mission constraints. PyThrust keeps those pieces in one workflow:
 
-* **Coupled operating-point solver:** Solve equilibrium RPM, thrust, torque, current, power, and efficiency for a motor, propeller, battery, and flight condition.
-* **Catalog-backed selection:** Query real brushless motor and propeller datasets instead of optimizing against abstract components only.
-* **Calibration tools:** Fit lumped system resistance from test-stand data to account for ESC, battery, wiring, and connector losses.
-* **Optimization-ready components:** Use the propulsion solver inside OpenMDAO for multidisciplinary design optimization studies.
-* **Optimization-ready examples:** Generate plots for design sweeps, calibration quality, propeller coefficients, and hover efficiency maps.
+<div class="grid cards" markdown>
+
+-   **Operating-point solver**
+
+    Solve equilibrium RPM, thrust, torque, current, voltage, power, and efficiency for a coupled motor-propeller-battery system.
+
+-   **Catalog-backed selection**
+
+    Query empirical propeller data and brushless motor records instead of sizing only against abstract component assumptions.
+
+-   **Battery-aware analysis**
+
+    Use fixed-voltage batteries for quick studies or rate-map batteries when voltage sag and state of charge matter.
+
+-   **Calibration and optimization**
+
+    Fit lumped system resistance from test data and use the solver inside OpenMDAO co-design workflows.
+
+</div>
 
 ---
 
@@ -28,13 +42,44 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 | **Empirical Propeller Database** | **Hover Efficiency Map** |
 | ![Empirical propeller database](images/propeller_coefficients.png) | ![Hover efficiency map](images/efficiency_heatmap.png) |
 
-## Key Documentation Sections
+## Explore the Docs
 
-* [**Getting Started**](getting_started.md): Installation, optional extras, and a first operating-point solve.
-* [**Propulsion Solver**](usage.md): Solver configuration, feasibility rules, and usage examples.
-* [**Motor Calibration**](motor_calibration.md): Fit system resistance from manufacturer or thrust-stand data.
-* [**Examples**](examples.md): Runnable scripts for calibration, motor selection, and OpenMDAO optimization.
-* [**API Reference**](api_reference.md): Main classes, database loaders, calibration objects, and OpenMDAO wrapper.
-* [**Propulsion and Battery Theory**](theory.md): Propeller, motor, battery, electrical loss, and coupled equilibrium equations.
-* [**Component Databases**](databases.md): Propeller CSV/JSON and motor catalog formats.
-* [**Development & Testing**](development.md): Local setup, tests, examples, and documentation build commands.
+<div class="grid cards" markdown>
+
+-   **Getting Started**
+
+    Install PyThrust, add optional extras, and run the first operating-point solve.
+
+    [Open guide](getting_started.md)
+
+-   **Propulsion Solver**
+
+    Review solver inputs, equations, feasibility rules, result fields, and usage examples.
+
+    [Open guide](usage.md)
+
+-   **Battery Model**
+
+    Understand fixed-voltage and rate-map batteries, JSON datasets, and solver integration.
+
+    [Open reference](battery_model.md)
+
+-   **Examples**
+
+    Run calibration, motor selection, battery, and OpenMDAO workflows from the repository.
+
+    [Open examples](examples.md)
+
+-   **Theory**
+
+    Trace the propeller, motor, electrical loss, and battery equations used by the solver.
+
+    [Open theory](theory.md)
+
+-   **API Reference**
+
+    Find the main classes, database loaders, calibration objects, and OpenMDAO wrapper.
+
+    [Open API](api_reference.md)
+
+</div>

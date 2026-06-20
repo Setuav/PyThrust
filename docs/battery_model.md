@@ -14,6 +14,9 @@ inspired by Robert A. McDonald's
 `bat-perf` model and the paper "Battery Knockdown Factors for Conceptual
 Design".
 
+!!! abstract "Model scope"
+    PyThrust uses a compact equivalent-circuit battery model for sizing and optimization. It is intended to capture voltage sag and usable energy trends without introducing electrochemical simulation inputs.
+
 ## Goals
 
 The model is intended to:
@@ -129,18 +132,29 @@ below cutoff.
 
 Use explicit names for the two battery fidelities:
 
-```python
-from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
+=== "Fixed voltage"
 
-battery = FixedVoltageBattery(voltage_v=14.8)
+    ```python
+    from pythrust.battery import FixedVoltageBattery
 
-state = BatteryState(soc=1.0)
-battery = RateMapBattery.from_json(
-    "data/batteries/example_liion_cell.json",
-    series=4,
-    parallel=2,
-)
-```
+    battery = FixedVoltageBattery(voltage_v=14.8)
+    ```
+
+=== "Rate map"
+
+    ```python
+    from pythrust.battery import BatteryState, RateMapBattery
+
+    state = BatteryState(soc=1.0)
+    battery = RateMapBattery.from_json(
+        "data/batteries/example_liion_cell.json",
+        series=4,
+        parallel=2,
+    )
+    ```
+
+!!! tip "Choosing a battery model"
+    Use `FixedVoltageBattery` for early propulsion sizing and simple examples. Use `RateMapBattery` when load-dependent voltage, C-rate limits, or state of charge affect the result.
 
 `BatterySpec` is too general once multiple battery models exist. It remains as
 a compatibility alias:

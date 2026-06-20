@@ -2,9 +2,11 @@
 
 This guide describes how PyThrust solves a motor-propeller operating point and how to interpret the result.
 
-The solver answers one core question:
+!!! question "Core solver question"
+    Given a motor, propeller, battery, throttle, and airspeed, what shaft RPM makes the electrical motor model and propeller aerodynamic load agree?
 
-> Given a motor, propeller, battery, throttle, and airspeed, what shaft RPM makes the electrical motor model and propeller aerodynamic load agree?
+!!! abstract "Use this page when"
+    You are wiring the solver into an analysis script, checking why a point is infeasible, or confirming how battery voltage enters the RPM root solve.
 
 ---
 
@@ -48,6 +50,25 @@ The operating-point solver combines five inputs:
 ---
 
 ## What the Solver Does
+
+```mermaid
+flowchart LR
+    motor["MotorSpec"]:::motorStyle
+    prop["PropellerSpec + PropellerEntry"]:::propStyle
+    battery["FixedVoltageBattery or RateMapBattery"]:::batteryStyle
+    system["SystemSpec"]
+    flight["rho, airspeed, throttle"]
+    solver["PropulsionSolver"]
+    point["OperatingPoint"]
+
+    motor --> solver
+    prop --> solver
+    battery --> solver
+    system --> solver
+    flight --> solver
+    solver --> point
+    point --> outputs["RPM, thrust, current, voltage, efficiency"]
+```
 
 ### Step 1: Evaluate the propeller at a candidate RPM
 
@@ -146,6 +167,9 @@ $$
 For `FixedVoltageBattery`, `V_pack` is the configured pack voltage. For
 `RateMapBattery`, `V_pack` is evaluated from the current battery state and the
 current implied by the candidate RPM:
+
+!!! note "Rate-map batteries are state dependent"
+    A `RateMapBattery` solve needs a `BatteryState` because terminal voltage depends on both depth of discharge and current.
 
 $$
 V_{\text{pack}} = V_{\text{pack}}(x, I)
