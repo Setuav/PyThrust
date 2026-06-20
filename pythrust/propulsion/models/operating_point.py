@@ -26,3 +26,7 @@ class OperatingPoint:
     propeller_efficiency: float = 0.0
     motor_efficiency: float = 0.0
     system_efficiency: float = 0.0
+    battery_voltage_v: float = 0.0
+    battery_current_a: float = 0.0
+    battery_c_rate: float = 0.0
+    battery_efficiency: float = 1.0

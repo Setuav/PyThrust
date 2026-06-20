@@ -81,6 +81,10 @@ class PropulsionSolver:
                 motor_voltage_v=0.0,
                 is_feasible=False,
                 infeasible_reason="throttle<=0",
+                battery_voltage_v=self._battery_voltage(battery, 0.0, battery_state),
+                battery_current_a=0.0,
+                battery_c_rate=0.0,
+                battery_efficiency=self._battery_efficiency(battery, None),
             )
 
         self._validate_battery_state(battery, battery_state)
@@ -97,8 +101,8 @@ class PropulsionSolver:
             if cp <= 0.0 or ct < 0.0 or j < 0.0:
                 return float("inf")
             v_motor = v_back + current_a * motor.get_winding_resistance(current_a)
-            battery_current_a = throttle * current_a
-            battery_voltage_v = self._battery_voltage(battery, battery_current_a, battery_state)
+            battery_current_for_voltage_a = throttle * current_a
+            battery_voltage_v = self._battery_voltage(battery, battery_current_for_voltage_a, battery_state)
             v_applied = throttle * battery_voltage_v
             return v_motor + current_a * system.resistance_ohm - v_applied
 
@@ -209,8 +213,21 @@ class PropulsionSolver:
             motor_power_w=motor_power_w,
             system=system,
         )
-        battery_current_a = throttle * current_a
-        battery_point = self._battery_point(battery, battery_current_a, battery_state)
+        battery_current_for_voltage_a = throttle * current_a
+        battery_point = self._battery_point(battery, battery_current_for_voltage_a, battery_state)
+        battery_voltage_v = self._battery_voltage_from_point(
+            battery,
+            battery_current_for_voltage_a,
+            battery_state,
+            battery_point,
+        )
+        battery_current_a = self._battery_current_from_point_or_power(
+            battery_power_w,
+            battery_voltage_v,
+            battery_point,
+        )
+        battery_c_rate = battery_point.c_rate if battery_point is not None else 0.0
+        battery_efficiency = self._battery_efficiency(battery, battery_point)
 
         # Efficiency calculations
         if shaft_power_w > 0.0:
@@ -262,6 +279,10 @@ class PropulsionSolver:
             propeller_efficiency=float(propeller_efficiency),
             motor_efficiency=float(motor_efficiency),
             system_efficiency=float(system_efficiency),
+            battery_voltage_v=float(battery_voltage_v),
+            battery_current_a=float(battery_current_a),
+            battery_c_rate=float(battery_c_rate),
+            battery_efficiency=float(battery_efficiency),
         )
 
     def _build_infeasible_point(
@@ -307,6 +328,10 @@ class PropulsionSolver:
             propeller_efficiency=point.propeller_efficiency,
             motor_efficiency=point.motor_efficiency,
             system_efficiency=point.system_efficiency,
+            battery_voltage_v=point.battery_voltage_v,
+            battery_current_a=point.battery_current_a,
+            battery_c_rate=point.battery_c_rate,
+            battery_efficiency=point.battery_efficiency,
         )
 
     @staticmethod
@@ -324,6 +349,27 @@ class PropulsionSolver:
         if point is not None:
             return point.terminal_voltage_v
         return float(battery.terminal_voltage(current_a=current_a, state=state))
+
+    def _battery_voltage_from_point(
+        self,
+        battery: BatterySpec,
+        current_a: float,
+        state: BatteryState | None,
+        point: BatteryPoint | None,
+    ) -> float:
+        if point is not None:
+            return point.terminal_voltage_v
+        return self._battery_voltage(battery, current_a, state)
+
+    @staticmethod
+    def _battery_current_from_point_or_power(
+        battery_power_w: float,
+        battery_voltage_v: float,
+        point: BatteryPoint | None,
+    ) -> float:
+        if point is not None:
+            return point.current_a
+        return battery_power_w / max(1e-6, battery_voltage_v)
 
     @staticmethod
     def _battery_point(
@@ -347,6 +393,15 @@ class PropulsionSolver:
         power_w = motor_power_w + (current_a**2) * system.resistance_ohm
         discharge_efficiency = getattr(battery, "discharge_efficiency", 1.0)
         return power_w / max(1e-6, discharge_efficiency)
+
+    @staticmethod
+    def _battery_efficiency(
+        battery: BatterySpec,
+        point: BatteryPoint | None,
+    ) -> float:
+        if point is not None:
+            return point.efficiency
+        return float(getattr(battery, "discharge_efficiency", 1.0))
 
     @staticmethod
     def _estimate_j_max(prop_entry: PropellerEntry) -> float:
