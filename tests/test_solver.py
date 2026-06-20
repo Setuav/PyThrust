@@ -76,6 +76,10 @@ def test_solver_zero_throttle(test_setup):
     assert op.rpm == 0.0
     assert op.is_feasible is False
     assert op.infeasible_reason == "throttle<=0"
+    assert op.battery_voltage_v == battery.voltage_v
+    assert op.battery_current_a == 0.0
+    assert op.battery_c_rate == 0.0
+    assert op.battery_efficiency == battery.discharge_efficiency
 
 
 def test_solver_successful_solve(test_setup):
@@ -110,6 +114,10 @@ def test_solver_successful_solve(test_setup):
     v_motor = op.motor_voltage_v
     i_sys = op.motor_current_a
     assert math.isclose(v_motor + i_sys * system.resistance_ohm, v_applied, rel_tol=1e-3)
+    assert math.isclose(op.battery_voltage_v, battery.voltage_v)
+    assert math.isclose(op.battery_current_a, op.battery_power_w / battery.voltage_v)
+    assert op.battery_c_rate == 0.0
+    assert op.battery_efficiency == battery.discharge_efficiency
 
 
 def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
@@ -153,6 +161,10 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
 
     assert rate_map_op.is_feasible is True
     assert math.isclose(rate_map_op.rpm, fixed_op.rpm, rel_tol=1e-6)
+    assert math.isclose(rate_map_op.battery_voltage_v, battery.voltage_v, rel_tol=1e-6)
+    assert math.isclose(rate_map_op.battery_current_a, 0.8 * rate_map_op.motor_current_a, rel_tol=1e-6)
+    assert rate_map_op.battery_c_rate > 0.0
+    assert math.isclose(rate_map_op.battery_efficiency, 1.0, rel_tol=1e-9)
 
 
 def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
@@ -197,6 +209,13 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
     assert high_soc.is_feasible is True
     assert low_soc.is_feasible is True
     assert high_soc.rpm > low_soc.rpm
+    assert high_soc.battery_voltage_v > low_soc.battery_voltage_v
+    assert high_soc.battery_current_a > 0.0
+    assert low_soc.battery_current_a > 0.0
+    assert high_soc.battery_c_rate > 0.0
+    assert low_soc.battery_c_rate > 0.0
+    assert 0.0 < high_soc.battery_efficiency <= 1.0
+    assert 0.0 < low_soc.battery_efficiency <= 1.0
 
 
 def test_solver_rate_map_requires_battery_state(test_setup):
@@ -378,4 +397,3 @@ def test_solver_invalid_efficiency(test_setup):
     # The solver should calculate the point but mark it infeasible
     assert op.is_feasible is False
     assert op.infeasible_reason == "invalid_efficiency"
-

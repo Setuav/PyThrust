@@ -96,7 +96,7 @@ class PropulsionComponent(om.ExplicitComponent):
         outputs['rpm'] = op.rpm
         outputs['thrust_n'] = op.thrust_n
         outputs['torque_nm'] = op.torque_nm
-        outputs['battery_current_a'] = op.battery_power_w / max(1e-6, battery.voltage_v)
+        outputs['battery_current_a'] = op.battery_current_a
         outputs['battery_power_w'] = op.battery_power_w
         outputs['motor_current_a'] = op.motor_current_a
         outputs['motor_voltage_v'] = op.motor_voltage_v
