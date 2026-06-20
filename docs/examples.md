@@ -60,7 +60,7 @@ The output reports:
 See [Motor Calibration](motor_calibration.md) for the calibration model and
 equations.
 
-![Calibration results](images/calibration_results.png)
+![System resistance calibration](images/calibration_results.png)
 
 ## Rate-Map Battery Point States
 
@@ -97,8 +97,8 @@ PYTHONPATH=. python examples/rate_map_battery_mission.py
 
 This example couples `RateMapBattery` to `PropulsionSolver` over a short
 segment schedule. Each segment solves the propulsion operating point using the
-current battery state, reports pack voltage/current/C-rate, then advances state
-of charge from the solved battery current.
+current battery state, reports pack current and voltage, then advances state of
+charge from the solved battery current.
 
 It demonstrates:
 
@@ -106,8 +106,10 @@ It demonstrates:
 |---|---|
 | Load cell data | Use `data/batteries/example_liion_cell.json` with explicit series and parallel counts |
 | Solve segment | Pass `battery_state` into `solve_operating_point(...)` |
-| Read outputs | Inspect `battery_voltage_v`, `battery_current_a`, and `battery_c_rate` on `OperatingPoint` |
+| Read outputs | Inspect `battery_voltage_v` and `battery_current_a` on `OperatingPoint` |
 | Advance state | Use `step_current(...)` to update SoC for the next segment |
+
+![Rate-map battery mission simulation](images/rate_map_battery_mission.png)
 
 ## Motor Selection
 
@@ -160,10 +162,10 @@ The plot shows:
 
 | Panel | Shows |
 |---|---|
-| Power and propeller size vs motor Kv | Hover battery power and optimized propeller diameter |
-| Throttle and RPM vs motor Kv | Optimized throttle setting and shaft speed |
+| Power and propeller sizing | Hover battery power and optimized propeller diameter |
+| Control setting and shaft speed | Optimized throttle setting and shaft speed |
 
-![Propulsion co-design optimization](images/optimize_and_plot_results.png)
+![OpenMDAO hover co-design](images/optimize_and_plot_results.png)
 
 See [Propulsion Solver](usage.md) for the operating-point solver used inside
 the OpenMDAO component.

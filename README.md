@@ -1,4 +1,4 @@
-![PyThrust Banner](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/PyThrust_banner.png)
+![PyThrust Banner](docs/images/PyThrust_banner.png)
 
 [![CI/CD Pipeline](https://github.com/Setuav/PyThrust/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Setuav/PyThrust/actions/workflows/ci-cd.yml)
 [![Docs](https://github.com/Setuav/PyThrust/actions/workflows/docs.yml/badge.svg)](https://github.com/Setuav/PyThrust/actions/workflows/docs.yml)
@@ -11,13 +11,13 @@
 
 PyThrust is an open-source framework for electric propulsion system analysis, co-design, and parameter optimization in UAV applications. It can be used for multidisciplinary design optimization (MDO) within OpenMDAO. It includes steady-state performance solvers, auto-tuning calibration tools to fit manufacturer test data, and database search tools to map theoretical designs onto real-world brushless motor and propeller catalogs.
 
-## Design and Analysis Visualization
+## Feature Visuals
 
-| 1. Propulsion Co-Design Optimization | 2. Propulsion Calibration & Auto-Tuning |
+| System Resistance Calibration | OpenMDAO Hover Co-Design |
 | :---: | :---: |
-| ![Propulsion Co-Design Optimization](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/optimize_and_plot_results.png) | ![Propulsion Calibration & Auto-Tuning Results](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/calibration_results.png) |
-| **3. Propeller Aerodynamic Coefficients** | **4. Hover Efficiency Heatmap** |
-| ![Propeller Aerodynamic Coefficients](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/propeller_coefficients.png) | ![Hover Efficiency Heatmap](https://raw.githubusercontent.com/Setuav/PyThrust/main/docs/images/efficiency_heatmap.png) |
+| ![System Resistance Calibration](docs/images/calibration_results.png) | ![OpenMDAO Hover Co-Design](docs/images/optimize_and_plot_results.png) |
+| **Empirical Propeller Database** | **Hover Efficiency Map** |
+| ![Empirical Propeller Database](docs/images/propeller_coefficients.png) | ![Hover Efficiency Map](docs/images/efficiency_heatmap.png) |
 
 ## Documentation
 

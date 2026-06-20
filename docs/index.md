@@ -20,13 +20,13 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 ---
 
-## Design and Analysis Visualization
+## Feature Visuals
 
-| Propulsion Co-Design Optimization | Propulsion Calibration & Auto-Tuning |
+| System Resistance Calibration | OpenMDAO Hover Co-Design |
 | :---: | :---: |
-| ![Propulsion co-design optimization](images/optimize_and_plot_results.png) | ![Propulsion calibration and auto-tuning results](images/calibration_results.png) |
-| **Propeller Aerodynamic Coefficients** | **Hover Efficiency Heatmap** |
-| ![Propeller aerodynamic coefficients](images/propeller_coefficients.png) | ![Hover efficiency heatmap](images/efficiency_heatmap.png) |
+| ![System resistance calibration](images/calibration_results.png) | ![OpenMDAO hover co-design](images/optimize_and_plot_results.png) |
+| **Empirical Propeller Database** | **Hover Efficiency Map** |
+| ![Empirical propeller database](images/propeller_coefficients.png) | ![Hover efficiency map](images/efficiency_heatmap.png) |
 
 ## Key Documentation Sections
 

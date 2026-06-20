@@ -23,6 +23,19 @@ from pythrust.openmdao import PropulsionComponent
 from pythrust.propellers import PropellerDatabase
 
 
+COLORS = {
+    "blue": "#2563eb",
+    "green": "#059669",
+    "orange": "#d97706",
+    "purple": "#7c3aed",
+    "red": "#dc2626",
+    "muted": "#6b7280",
+}
+
+FIGSIZE = (9.6, 5.4)
+DPI = 170
+
+
 def main():
     # 1. Load propeller aerodynamic data.
     db = PropellerDatabase()
@@ -133,44 +146,69 @@ def main():
         optimal_rpms.append(rpm)
 
     # 4. Plot optimization trends.
-    fig, (ax1, ax3) = plt.subplots(1, 2, figsize=(12, 5))
+    plt.rcParams.update(
+        {
+            "figure.facecolor": "white",
+            "axes.facecolor": "white",
+            "axes.edgecolor": "#374151",
+            "grid.color": "#d1d5db",
+            "font.size": 10,
+            "axes.titlesize": 12,
+            "figure.titlesize": 15,
+        }
+    )
+    fig, (ax1, ax3) = plt.subplots(1, 2, figsize=FIGSIZE)
 
     # Left plot: Power and Diameter vs Motor Kv
     ax1.grid(True)
-    ax1.set_xlabel('Motor Kv (RPM/V)')
-    ax1.set_ylabel('Hover Battery Power (W)', color='C0')
-    ax1.plot(kv_sweep, power_draws, color='C0', marker='o', label='Power (W)')
-    ax1.tick_params(axis='y', labelcolor='C0')
+    ax1.set_xlabel("Motor Kv [RPM/V]")
+    ax1.set_ylabel("Hover battery power [W]", color=COLORS["blue"])
+    ax1.plot(kv_sweep, power_draws, color=COLORS["blue"], marker="o", linewidth=2.1, label="power")
+    ax1.tick_params(axis="y", labelcolor=COLORS["blue"])
     
     # Highlight the global optimum found in step 2
-    ax1.plot(opt_kv, opt_power, marker='*', color='red', markersize=12, label='Global Optimum')
+    ax1.plot(opt_kv, opt_power, marker="*", color=COLORS["red"], markersize=13, label="best point")
 
     ax2 = ax1.twinx()
-    ax2.set_ylabel('Optimal Propeller Diameter (in)', color='C1')
-    ax2.plot(kv_sweep, optimal_diameters, color='C1', marker='s', linestyle='--', label='Diameter (in)')
-    ax2.tick_params(axis='y', labelcolor='C1')
+    ax2.set_ylabel("Optimized propeller diameter [in]", color=COLORS["orange"])
+    ax2.plot(kv_sweep, optimal_diameters, color=COLORS["orange"], marker="s", linestyle="--", linewidth=2.0, label="diameter")
+    ax2.tick_params(axis="y", labelcolor=COLORS["orange"])
 
-    ax1.set_title('Power and Propeller Size vs Motor Kv')
+    ax1.set_title("Power and propeller sizing")
 
     # Right plot: Throttle and RPM vs Motor Kv
     ax3.grid(True)
-    ax3.set_xlabel('Motor Kv (RPM/V)')
-    ax3.set_ylabel('Hover Throttle (%)', color='C2')
-    ax3.plot(kv_sweep, optimal_throttles, color='C2', marker='^', label='Throttle (%)')
-    ax3.tick_params(axis='y', labelcolor='C2')
+    ax3.set_xlabel("Motor Kv [RPM/V]")
+    ax3.set_ylabel("Hover throttle [%]", color=COLORS["green"])
+    ax3.plot(kv_sweep, optimal_throttles, color=COLORS["green"], marker="^", linewidth=2.1, label="throttle")
+    ax3.tick_params(axis="y", labelcolor=COLORS["green"])
 
     ax4 = ax3.twinx()
-    ax4.set_ylabel('Hover RPM', color='C4')
-    ax4.plot(kv_sweep, optimal_rpms, color='C4', marker='d', linestyle='--', label='RPM')
-    ax4.tick_params(axis='y', labelcolor='C4')
+    ax4.set_ylabel("Hover shaft speed [RPM]", color=COLORS["purple"])
+    ax4.plot(kv_sweep, optimal_rpms, color=COLORS["purple"], marker="d", linestyle="--", linewidth=2.0, label="RPM")
+    ax4.tick_params(axis="y", labelcolor=COLORS["purple"])
 
-    ax3.set_title('Throttle and RPM vs Motor Kv')
+    ax3.set_title("Control setting and shaft speed")
 
-    fig.suptitle('Propulsion Co-Design Optimization', fontsize=14)
-    plt.tight_layout()
+    fig.suptitle("OpenMDAO Hover Co-Design", fontweight="bold")
+    fig.text(
+        0.5,
+        0.92,
+        "Optimize motor Kv, propeller diameter, and throttle for 500 g hover",
+        ha="center",
+        color=COLORS["muted"],
+        fontsize=10,
+    )
+    fig.subplots_adjust(
+        left=0.09,
+        right=0.90,
+        bottom=0.17,
+        top=0.78,
+        wspace=0.48,
+    )
     
     output_image = Path("docs/images/optimize_and_plot_results.png")
-    plt.savefig(output_image, bbox_inches="tight")
+    plt.savefig(output_image, dpi=DPI)
     print(f"\nSaved default style plot to: {output_image.resolve()}")
     
 if __name__ == "__main__":

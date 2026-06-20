@@ -53,16 +53,11 @@ def main():
     total_time_s = 0.0
 
     print("Rate-map battery mission")
-    print(f"Cell dataset : {battery_dataset}")
-    print(f"Pack topology: series={battery.series}, parallel={battery.parallel}")
-    print(f"Initial state: SoC={state.soc:.3f}, DOD={state.dod:.3f}")
+    print(f"Pack: {battery.name}, {battery.series}S{battery.parallel}P")
+    print(f"Initial SoC: {state.soc * 100.0:.1f}%")
     print()
 
-    header = (
-        f"{'Segment':<10}{'t [s]':>7}{'SoC in':>9}{'Throttle':>10}"
-        f"{'RPM':>9}{'Thrust [N]':>12}{'Vpack':>9}{'Ipack':>9}"
-        f"{'C-rate':>9}{'SoC out':>10}"
-    )
+    header = f"{'Segment':<10}{'min':>6}{'thr':>7}{'SoC':>17}{'I [A]':>9}{'V [V]':>9}"
     print(header)
     print("-" * len(header))
 
@@ -94,22 +89,16 @@ def main():
 
         print(
             f"{segment['name']:<10}"
-            f"{segment['duration_s']:>7.0f}"
-            f"{state.soc:>9.3f}"
-            f"{segment['throttle']:>10.2f}"
-            f"{op.rpm:>9.0f}"
-            f"{op.thrust_n:>12.2f}"
-            f"{op.battery_voltage_v:>9.2f}"
+            f"{segment['duration_s'] / 60.0:>6.1f}"
+            f"{segment['throttle'] * 100.0:>6.0f}%"
+            f"{state.soc * 100.0:>7.1f}% -> {next_state.soc * 100.0:>5.1f}%"
             f"{op.battery_current_a:>9.2f}"
-            f"{op.battery_c_rate:>9.2f}"
-            f"{next_state.soc:>10.3f}"
+            f"{op.battery_voltage_v:>9.2f}"
         )
         state = next_state
 
     print()
-    print(f"Mission time : {total_time_s / 60.0:.1f} min")
-    print(f"Energy used  : {total_energy_wh:.1f} Wh")
-    print(f"Final state  : SoC={state.soc:.3f}, DOD={state.dod:.3f}")
+    print(f"Summary: {total_time_s / 60.0:.1f} min, {total_energy_wh:.1f} Wh, final SoC {state.soc * 100.0:.1f}%")
 
 
 if __name__ == "__main__":

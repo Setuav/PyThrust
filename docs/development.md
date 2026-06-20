@@ -33,6 +33,13 @@ See [Examples](examples.md) for a user-facing walkthrough of each script.
 
 Generated plots are written under `docs/images/` and are used by the documentation site.
 
+Regenerate the README and documentation feature visuals:
+
+```bash
+PYTHONPATH=. python scripts/generate_readme_plots.py
+PYTHONPATH=. python examples/openmdao_hover_optimization.py
+```
+
 ## Documentation Site
 
 PyThrust uses MkDocs Material for a clean, searchable static documentation site.
