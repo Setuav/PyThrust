@@ -1,12 +1,10 @@
 import math
 import pytest
-from pythrust.propulsion.models import (
-    MotorSpec,
-    BatterySpec,
-    SystemSpec,
-    PropellerSpec,
-    OperatingPoint
-)
+from pythrust.propulsion.models.battery import BatterySpec
+from pythrust.propulsion.models.motor import MotorSpec
+from pythrust.propulsion.models.operating_point import OperatingPoint
+from pythrust.propulsion.models.propeller import PropellerSpec
+from pythrust.propulsion.models.system import SystemSpec
 
 
 def test_motor_spec_no_load_current():
@@ -132,4 +130,3 @@ def test_operating_point():
     assert op_default.propeller_efficiency == 0.0
     assert op_default.motor_efficiency == 0.0
     assert op_default.system_efficiency == 0.0
-
