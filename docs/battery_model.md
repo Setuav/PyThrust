@@ -1,22 +1,22 @@
 # Battery Model
 
-Status: draft design note for issue #3.
+Status: implemented model note for issue #3.
 
-PyThrust currently models the battery as a fixed pack voltage with a scalar
-discharge efficiency. That is useful for quick propulsion sizing, but it hides
-two effects that matter for electric aircraft performance studies:
+PyThrust supports a fixed-voltage battery model and a lightweight rate-map
+battery model. The fixed-voltage path is useful for quick propulsion sizing,
+but it hides two effects that matter for electric aircraft performance studies:
 
 - The terminal voltage drops with load.
 - The usable energy depends on discharge rate and state of charge.
 
-This page defines the planned battery-model direction before implementation.
-The target is a lightweight rate-map model inspired by Robert A. McDonald's
+This page defines the rate-map model now implemented in PyThrust. The model is
+inspired by Robert A. McDonald's
 `bat-perf` model and the paper "Battery Knockdown Factors for Conceptual
 Design".
 
 ## Goals
 
-The model should:
+The model is intended to:
 
 - Stay fast enough for sizing sweeps, optimizers, and OpenMDAO workflows.
 - Use manufacturer-accessible data such as capacity, voltage limits, current
@@ -26,7 +26,7 @@ The model should:
 - Preserve a simple fixed-voltage battery path for examples and low-fidelity
   studies.
 
-The model should not try to replace electrochemical simulation tools. PyThrust
+The model does not try to replace electrochemical simulation tools. PyThrust
 does not need electrode-level parameters, diffusion constants, thermal cell
 models, or PyBaMM-style electrochemistry for this feature.
 
@@ -121,11 +121,11 @@ $$
 P_{max}(x) = \frac{OCV(x)^2}{4R(x)}
 $$
 
-The implementation should report infeasible states when requested power exceeds
-this limit, when current exceeds the configured limit, or when terminal voltage
-falls below cutoff.
+The implementation reports infeasible states when requested power exceeds this
+limit, when current exceeds the configured limit, or when terminal voltage falls
+below cutoff.
 
-## Planned Python API
+## Python API
 
 Use explicit names for the two battery fidelities:
 
@@ -142,21 +142,26 @@ battery = RateMapBattery.from_json(
 )
 ```
 
-`BatterySpec` is too general once multiple battery models exist. The planned
-transition is:
+`BatterySpec` is too general once multiple battery models exist. It remains as
+a compatibility alias:
 
 ```python
 BatterySpec = FixedVoltageBattery
 ```
 
-The alias keeps old examples working during the first implementation pass, but
-new code and documentation should use `FixedVoltageBattery`.
+The alias keeps old code working during the transition, but new code and
+documentation should use `FixedVoltageBattery`.
 
-The initial common behavior should be small:
+The common battery behavior is intentionally small:
 
 ```python
 voltage = battery.terminal_voltage(current_a=current, state=state)
 power = battery.terminal_power(current_a=current, state=state)
+```
+
+`RateMapBattery` also supports state advancement:
+
+```python
 next_state = battery.step_power(power_w=power, dt_s=dt, state=state)
 ```
 
@@ -190,7 +195,7 @@ dataset:
 battery = RateMapBattery.from_json(cell_path, series=4, parallel=2)
 ```
 
-The first implementation can interpolate `OCV(dod)` and `R(dod)` directly. A
+The current implementation interpolates `OCV(dod)` and `R(dod)` directly. A
 later calibration utility can derive these curves from manufacturer C-rate
 discharge maps. Manufacturer discharge curves are usually terminal voltage
 under load, so real datasets should document how `OCV(dod)` and `R(dod)` were
@@ -198,7 +203,7 @@ derived.
 
 ## Solver Integration
 
-The current propulsion solver assumes:
+The propulsion solver starts from the PWM voltage relation:
 
 $$
 V_{applied} = throttle \times V_{pack}
@@ -223,25 +228,24 @@ $$
 This keeps the propeller/motor equilibrium as a one-dimensional root solve
 because current remains a function of RPM through the propeller torque demand.
 
-For mission simulation, the solver should evaluate each time step with the
-current state, compute pack current/power, then advance DOD:
+For mission simulation, evaluate each time step with the current state, compute
+pack current/power, then advance DOD:
 
 $$
 x_{next} = x + \frac{I_{cell}}{Q_{cell}} \Delta t
 $$
 
-## Implementation Order
+## Implementation Status
 
-1. Add `pythrust/battery/` with `FixedVoltageBattery`, `RateMapBattery`, and
-   `BatteryState`.
-2. Add fixture data and unit tests for point states: current, C-rate, voltage,
-   power, and infeasible power.
-3. Rename internal uses of `BatterySpec` to `FixedVoltageBattery`, leaving a
-   compatibility alias.
-4. Integrate dynamic pack voltage into `PropulsionSolver`.
-5. Add a rate-map battery mission example after solver integration.
-6. Update user docs, API reference, and theory docs after the implementation
-   stabilizes.
+The initial implementation includes:
+
+- `pythrust.battery.FixedVoltageBattery`
+- `pythrust.battery.RateMapBattery`
+- `pythrust.battery.BatteryState` and `BatteryPoint`
+- JSON cell datasets with explicit series and parallel counts at load time
+- Solver integration through `solve_operating_point(..., battery_state=...)`
+- `OperatingPoint` battery outputs for voltage, current, C-rate, and efficiency
+- A runnable rate-map mission example
 
 ## References
 

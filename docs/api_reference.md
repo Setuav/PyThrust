@@ -18,14 +18,31 @@ This page summarizes the main public classes and helpers. For implementation det
 
 Use `get_no_load_current(rpm)` and `get_winding_resistance(current_a)` when evaluating speed-dependent or current-dependent motor behavior.
 
-## Battery, System, and Propeller Specs
+## Battery Models
+
+PyThrust exposes battery models from `pythrust.battery`:
 
 | Class | Purpose |
 |---|---|
-| `BatterySpec` | Pack voltage and discharge efficiency |
+| `FixedVoltageBattery` | Historical fixed pack-voltage model with scalar discharge efficiency |
+| `RateMapBattery` | Equivalent-circuit model using cell OCV and resistance curves |
+| `BatteryState` | State of charge/depth of discharge passed to dynamic battery models |
+| `BatteryPoint` | Evaluated terminal voltage, current, power, C-rate, efficiency, and feasibility |
+
+`BatterySpec` remains available from `pythrust.propulsion` as a compatibility
+alias for `FixedVoltageBattery`. New code should import `FixedVoltageBattery`
+or `RateMapBattery` directly.
+
+`RateMapBattery.from_json(path, series=..., parallel=...)` loads one cell
+dataset and applies the requested pack topology at runtime.
+
+## System and Propeller Specs
+
+| Class | Purpose |
+|---|---|
 | `SystemSpec` | Lumped electrical resistance for battery, ESC, wires, and connectors |
 | `PropellerSpec` | Propeller geometry passed to the solver |
-| `OperatingPoint` | Solved RPM, thrust, torque, power, current, voltage, efficiency, and feasibility state |
+| `OperatingPoint` | Solved RPM, thrust, torque, motor/battery current, voltage, efficiency, and feasibility state |
 
 ## Propulsion Solver
 
@@ -35,6 +52,7 @@ Use `get_no_load_current(rpm)` and `get_winding_resistance(current_a)` when eval
 point = solver.solve_operating_point(
     motor=motor,
     battery=battery,
+    battery_state=state,  # required for RateMapBattery
     system=system,
     propeller=propeller,
     prop_entry=prop_entry,
@@ -43,6 +61,9 @@ point = solver.solve_operating_point(
     throttle=0.7,
 )
 ```
+
+`battery_state` may be omitted for `FixedVoltageBattery`. It is required for
+dynamic battery models such as `RateMapBattery`.
 
 `SolverConfig` controls numerical behavior:
 
@@ -53,6 +74,17 @@ point = solver.solve_operating_point(
 | `eps_rpm` | `1e-8` | RPM convergence tolerance |
 | `eps_v` | `1e-8` | Voltage residual tolerance |
 | `max_iter` | `100` | Maximum root-finder iterations |
+
+`OperatingPoint` includes propulsion outputs such as `rpm`, `thrust_n`,
+`torque_nm`, `motor_current_a`, and `motor_voltage_v`, plus battery outputs:
+
+| Field | Description |
+|---|---|
+| `battery_power_w` | Battery-side power draw |
+| `battery_voltage_v` | Battery terminal pack voltage |
+| `battery_current_a` | Battery DC current draw |
+| `battery_c_rate` | Cell C-rate for rate-map batteries, or `0.0` for fixed-voltage batteries |
+| `battery_efficiency` | Battery model discharge efficiency at the solved point |
 
 ## Propeller Database
 
@@ -129,4 +161,4 @@ system = result.to_system_spec()
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.
 
-Inputs include motor parameters, battery voltage, system resistance, propeller diameter, throttle, density, and airspeed. Outputs include RPM, thrust, torque, battery current, battery power, motor current, motor voltage, and feasibility.
+Inputs include motor parameters, fixed battery voltage, system resistance, propeller diameter, throttle, density, and airspeed. Outputs include RPM, thrust, torque, battery current, battery power, motor current, motor voltage, and feasibility.

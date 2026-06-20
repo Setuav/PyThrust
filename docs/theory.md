@@ -1,4 +1,4 @@
-# Propulsion System Mathematical Model
+# Propulsion and Battery Model Theory
 
 This document defines the core mathematical model for the electric propulsion system (propeller + brushless motor + battery/ESC).
 
@@ -23,6 +23,9 @@ This document defines the core mathematical model for the electric propulsion sy
 | $R_{\text{system}}$ | Lumped transmission system resistance | $\Omega$ |
 | $V_m$ | Motor terminal voltage | $\text{V}$ |
 | $V_{\text{back}}$ | Back-EMF voltage | $\text{V}$ |
+| $V_{\text{pack}}$ | Battery terminal pack voltage | $\text{V}$ |
+| $x$ | Battery depth of discharge | Dimensionless |
+| $N_s, N_p$ | Pack cells in series and parallel | Dimensionless |
 
 ---
 
@@ -74,7 +77,39 @@ where $\tau$ is the magnetic lag time constant (set to $0$ for first-order model
 
 ---
 
-## 4) System Electrical Resistance & Power Chain
+## 4) Battery Model
+
+The fixed-voltage battery model uses a constant terminal pack voltage:
+
+$$
+V_{\text{pack}} = V_{\text{nominal}}
+$$
+
+The rate-map battery model uses a cell open-circuit voltage curve and a cell
+resistance curve indexed by depth of discharge:
+
+$$
+V_{\text{cell}}(x, I_{\text{cell}}) =
+OCV(x) - R(x)I_{\text{cell}}
+$$
+
+For a pack topology:
+
+$$
+V_{\text{pack}} = N_s V_{\text{cell}}
+$$
+
+$$
+I_{\text{cell}} = \frac{I_{\text{pack}}}{N_p}
+$$
+
+During mission stepping, state advances by charge conservation:
+
+$$
+x_{\text{next}} = x + \frac{I_{\text{cell}}}{Q_{\text{cell}}}\Delta t
+$$
+
+## 5) System Electrical Resistance & Power Chain
 
 The voltage drops across ESC MOSFETs, battery internal resistance, cables, and connectors are modeled as a lumped transmission system resistance ($R_{\text{system}}$):
 
@@ -88,14 +123,23 @@ $$
 P_{\text{battery}} = \frac{V_m I + I^2 R_{\text{system}}}{\eta_{\text{discharge}}}
 $$
 
+For `RateMapBattery`, the equivalent-circuit terminal voltage already captures
+the cell-level voltage sag from the battery curves. `R_system` should still be
+used for wiring, ESC, connector, or other losses outside the battery model.
+
 ---
 
-## 5) Coupled Equilibrium Condition
+## 6) Coupled Equilibrium Condition
 
 For a given throttle setting and airspeed, the equilibrium shaft speed (RPM) is the solution of the coupled electrical and aerodynamic torque equilibrium equation:
 
 $$
-F(\text{RPM}) = \text{throttle} \times V_{\text{pack}} - \Big( V_{\text{back}}(\text{RPM}) + I(\text{RPM}) (R + R_{\text{system}}) \Big) = 0
+F(\text{RPM}) =
+V_{\text{back}}(\text{RPM})
++ I(\text{RPM})R
++ I(\text{RPM})R_{\text{system}}
+- \text{throttle} \times V_{\text{pack}}(x, I(\text{RPM}))
+= 0
 $$
 
 A root-finding method (e.g., Brent's method) solves $F(\text{RPM}) = 0$ for RPM. Once the equilibrium RPM is determined, $T, Q, P_{\text{shaft}}, I$, and efficiency parameters are calculated.
@@ -111,3 +155,7 @@ A root-finding method (e.g., Brent's method) solves $F(\text{RPM}) = 0$ for RPM.
 2. **Second-Order DC Electric Motor Model**  
    Mark Drela, MIT Aero & Astro, March 2006  
    [PDF Link](https://web.mit.edu/drela/Public/web/qprop/motor2_theory.pdf)
+
+3. **Battery Knockdown Factors for Conceptual Design**  
+   Robert A. McDonald, AIAA Aviation Forum, 2024  
+   DOI: `10.2514/6.2024-3903`

@@ -15,7 +15,7 @@ The operating-point solver combines five inputs:
 | Input | Class or value | Purpose |
 |---|---|---|
 | Motor | `MotorSpec` | Kv, winding resistance, no-load current, current limit, optional higher-order loss terms |
-| Battery | `BatterySpec` | Pack voltage and discharge efficiency |
+| Battery | `FixedVoltageBattery` or `RateMapBattery` | Fixed pack voltage or state-dependent pack voltage from cell curves |
 | System | `SystemSpec` | Lumped resistance for ESC, battery internal resistance, wiring, and connectors |
 | Propeller | `PropellerSpec` + `PropellerEntry` | Geometry plus empirical aerodynamic coefficients |
 | Flight condition | `rho`, `airspeed_mps`, `throttle` | Air density, freestream speed, and commanded voltage fraction |
@@ -43,6 +43,7 @@ The operating-point solver combines five inputs:
 | $V_{\text{back}}$ | Motor back-EMF voltage |
 | $V_m$ | Motor terminal voltage |
 | $V_{\text{pack}}$ | Battery pack voltage |
+| $x$ | Battery depth of discharge |
 
 ---
 
@@ -129,7 +130,7 @@ $$
 | `resistance_quadratic` | Adds current-dependent winding resistance |
 | `iron_loss_exponent` | Scales no-load current with RPM using a power law |
 
-When these fields are left at their defaults, the model reduces to the simpler first-order motor equations above. See [Mathematical Model](theory.md) for the full equations and Drela references.
+When these fields are left at their defaults, the model reduces to the simpler first-order motor equations above. See [Propulsion and Battery Theory](theory.md) for the full equations and Drela references.
 
 ---
 
@@ -140,6 +141,14 @@ The throttle command defines the average voltage available from the battery:
 $$
 V_{\text{applied}} =
 \text{throttle} \cdot V_{\text{pack}}
+$$
+
+For `FixedVoltageBattery`, `V_pack` is the configured pack voltage. For
+`RateMapBattery`, `V_pack` is evaluated from the current battery state and the
+current implied by the candidate RPM:
+
+$$
+V_{\text{pack}} = V_{\text{pack}}(x, I)
 $$
 
 The solver searches for the RPM where the motor voltage demand plus system voltage drop equals the applied voltage:
@@ -168,7 +177,7 @@ Before solving, PyThrust builds a search interval:
 | Bound | How it is chosen |
 |---|---|
 | Lower RPM | At least `SolverConfig.rpm_min`; raised if airspeed and propeller `J` range require a higher RPM |
-| Upper RPM | Estimated from `motor.kv_rpm_per_v * battery.voltage_v * throttle`, then expanded by `rpm_max_margin` |
+| Upper RPM | Estimated from `motor.kv_rpm_per_v * battery.terminal_voltage(0 A) * throttle`, then expanded by `rpm_max_margin` |
 
 If the residual does not change sign inside the bracket, the point is returned as infeasible with reason `no_bracket`.
 
@@ -202,6 +211,10 @@ The numerical behavior of the root finder is controlled by `SolverConfig`:
 | `shaft_power_w` | Mechanical shaft power |
 | `motor_power_w` | Electrical power at motor terminals |
 | `battery_power_w` | Battery-side power including system losses |
+| `battery_voltage_v` | Battery terminal pack voltage at the solved point |
+| `battery_current_a` | Battery DC current draw at the solved point |
+| `battery_c_rate` | Cell C-rate for rate-map batteries, or `0.0` for fixed-voltage batteries |
+| `battery_efficiency` | Discharge efficiency from the active battery model |
 | `motor_current_a` | Motor winding current |
 | `motor_voltage_v` | Motor terminal voltage |
 | `propeller_efficiency` | Propulsive efficiency based on thrust power |
@@ -222,6 +235,10 @@ An operating point is marked as infeasible when one of these checks fails:
 | `no_bracket` | The RPM search interval does not contain a valid voltage-balance root |
 | `no_convergence` | The root finder did not converge |
 | `current_limit` | `motor_current_a` exceeds `current_max_a` |
+| `battery_current_limit` | Rate-map battery current exceeds the configured cell current limit |
+| `battery_voltage_cutoff` | Rate-map battery terminal cell voltage falls below cutoff |
+| `battery_voltage_limit` | Rate-map battery terminal cell voltage exceeds the configured charge voltage |
+| `battery_state_limit` | Rate-map battery state is outside the valid range |
 | `invalid_coefficients` | Propeller coefficient lookup produced non-physical values |
 | `invalid_efficiency` | Computed efficiency is outside the physically expected range |
 
@@ -234,9 +251,9 @@ Here is a complete example showing how to load a propeller dataset, define speci
 ```python
 from pathlib import Path
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     PropulsionSolver,
@@ -254,7 +271,7 @@ motor = MotorSpec(
     current_max_a=65.0,
 )
 
-battery = BatterySpec(
+battery = FixedVoltageBattery(
     voltage_v=14.8,
     discharge_efficiency=1.0,
 )
@@ -277,7 +294,35 @@ point = solver.solve_operating_point(
 print(f"RPM             : {point.rpm:.1f}")
 print(f"Thrust          : {point.thrust_n:.2f} N")
 print(f"Motor Current   : {point.motor_current_a:.2f} A")
+print(f"Battery Voltage : {point.battery_voltage_v:.2f} V")
+print(f"Battery Current : {point.battery_current_a:.2f} A")
 print(f"Battery Power   : {point.battery_power_w:.1f} W")
 print(f"Feasible        : {point.is_feasible}")
 print(f"Reason          : {point.infeasible_reason}")
+```
+
+For a rate-map battery, load a cell dataset, create an explicit battery state,
+and pass that state into the solver:
+
+```python
+from pythrust.battery import BatteryState, RateMapBattery
+
+battery = RateMapBattery.from_json(
+    "data/batteries/example_liion_cell.json",
+    series=4,
+    parallel=2,
+)
+state = BatteryState(soc=0.85)
+
+point = solver.solve_operating_point(
+    motor=motor,
+    battery=battery,
+    battery_state=state,
+    system=system,
+    propeller=propeller,
+    prop_entry=prop_entry,
+    rho=1.225,
+    airspeed_mps=10.0,
+    throttle=0.6,
+)
 ```

@@ -31,7 +31,7 @@ Key sections:
 - [Propulsion Solver](https://setuav.github.io/PyThrust/usage/)
 - [Motor Calibration](https://setuav.github.io/PyThrust/motor_calibration/)
 - [Examples](https://setuav.github.io/PyThrust/examples/)
-- [Mathematical Model](https://setuav.github.io/PyThrust/theory/)
+- [Propulsion and Battery Theory](https://setuav.github.io/PyThrust/theory/)
 - [Component Databases](https://setuav.github.io/PyThrust/databases/)
 
 ## License
