@@ -1,0 +1,15 @@
+{
+  "name": "Example Li-ion Cell",
+  "source": "Synthetic example data for PyThrust tests and examples",
+  "cell": {
+    "capacity_ah": 4.2,
+    "cutoff_voltage_v": 2.5,
+    "charge_voltage_v": 4.2,
+    "max_current_a": 20.0
+  },
+  "curves": {
+    "dod": [0.0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0],
+    "ocv_v": [4.20, 4.08, 3.98, 3.83, 3.70, 3.48, 3.20],
+    "resistance_ohm": [0.020, 0.021, 0.022, 0.026, 0.031, 0.039, 0.055]
+  }
+}

@@ -135,7 +135,11 @@ from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
 battery = FixedVoltageBattery(voltage_v=14.8)
 
 state = BatteryState(soc=1.0)
-cell = RateMapBattery.from_json("data/batteries/molicel_p45b.json")
+battery = RateMapBattery.from_json(
+    "data/batteries/example_liion_cell.json",
+    series=4,
+    parallel=2,
+)
 ```
 
 `BatterySpec` is too general once multiple battery models exist. The planned
@@ -161,34 +165,36 @@ For the rate-map model, it evaluates the cell/pack equivalent circuit.
 
 ## Dataset Shape
 
-The first JSON format should represent data in physical units and avoid hiding
-pack topology in fitted constants:
+The JSON dataset describes one cell. Pack topology is passed when loading the
+dataset:
 
 ```json
 {
-  "name": "Example cell",
-  "source": "manufacturer datasheet or derived fit",
+  "name": "Example Li-ion Cell",
+  "source": "Synthetic example data for PyThrust tests and examples",
   "cell": {
     "capacity_ah": 4.2,
     "cutoff_voltage_v": 2.5,
     "charge_voltage_v": 4.2,
-    "max_current_a": 45.0
-  },
-  "pack": {
-    "series": 4,
-    "parallel": 1
+    "max_current_a": 20.0
   },
   "curves": {
-    "dod": [0.0, 0.1, 0.2],
-    "ocv_v": [4.19, 4.05, 3.95],
-    "resistance_ohm": [0.016, 0.015, 0.015]
+    "dod": [0.0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0],
+    "ocv_v": [4.20, 4.08, 3.98, 3.83, 3.70, 3.48, 3.20],
+    "resistance_ohm": [0.020, 0.021, 0.022, 0.026, 0.031, 0.039, 0.055]
   }
 }
 ```
 
+```python
+battery = RateMapBattery.from_json(cell_path, series=4, parallel=2)
+```
+
 The first implementation can interpolate `OCV(dod)` and `R(dod)` directly. A
 later calibration utility can derive these curves from manufacturer C-rate
-discharge maps.
+discharge maps. Manufacturer discharge curves are usually terminal voltage
+under load, so real datasets should document how `OCV(dod)` and `R(dod)` were
+derived.
 
 ## Solver Integration
 

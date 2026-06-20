@@ -56,23 +56,28 @@ class RateMapBattery:
         object.__setattr__(self, "resistance_ohm", resistance_ohm)
 
     @classmethod
-    def from_json(cls, path: str | Path) -> "RateMapBattery":
-        """Load a rate-map battery dataset from JSON."""
+    def from_json(
+        cls,
+        path: str | Path,
+        *,
+        series: int = 1,
+        parallel: int = 1,
+    ) -> "RateMapBattery":
+        """Load a cell dataset and apply pack series/parallel topology."""
         with Path(path).open("r", encoding="utf-8") as f:
             data = json.load(f)
 
         cell = data["cell"]
-        pack = data.get("pack", {})
         curves = data["curves"]
         return cls(
-            name=data.get("name", "Rate-map battery"),
+            name=data.get("name", "Rate-map cell"),
             source=data.get("source"),
             capacity_ah=cell["capacity_ah"],
             cutoff_voltage_v=cell["cutoff_voltage_v"],
             charge_voltage_v=cell["charge_voltage_v"],
             max_current_a=cell["max_current_a"],
-            series=pack.get("series", 1),
-            parallel=pack.get("parallel", 1),
+            series=series,
+            parallel=parallel,
             dod=curves["dod"],
             ocv_v=curves["ocv_v"],
             resistance_ohm=curves["resistance_ohm"],

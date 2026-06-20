@@ -1,10 +1,14 @@
 import json
 import math
+from pathlib import Path
 
 import pytest
 
 from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
 from pythrust.propulsion.models import BatterySpec
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 @pytest.fixture
@@ -95,7 +99,6 @@ def test_rate_map_loads_from_json(tmp_path):
                     "charge_voltage_v": 4.2,
                     "max_current_a": 20.0,
                 },
-                "pack": {"series": 4, "parallel": 2},
                 "curves": {
                     "dod": [0.0, 0.5, 1.0],
                     "ocv_v": [4.2, 3.8, 3.2],
@@ -106,9 +109,23 @@ def test_rate_map_loads_from_json(tmp_path):
         encoding="utf-8",
     )
 
-    battery = RateMapBattery.from_json(path)
+    battery = RateMapBattery.from_json(path, series=4, parallel=2)
 
     assert battery.name == "JSON pack"
     assert battery.source == "test"
     assert battery.series == 4
     assert battery.parallel == 2
+
+
+def test_rate_map_loads_example_cell_dataset():
+    path = PROJECT_ROOT / "data" / "batteries" / "example_liion_cell.json"
+
+    battery = RateMapBattery.from_json(path, series=4, parallel=2)
+    point = battery.state_at_current(state=BatteryState(soc=0.5), current_a=8.4)
+
+    assert battery.name == "Example Li-ion Cell"
+    assert battery.series == 4
+    assert battery.parallel == 2
+    assert battery.capacity_ah == 4.2
+    assert point.is_feasible is True
+    assert math.isclose(point.cell_current_a, 4.2)
