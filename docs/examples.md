@@ -17,6 +17,7 @@ PYTHONPATH=. python examples/<example_name>.py
 |---|---|
 | `calibrate_system_resistance.py` | Core PyThrust dependencies |
 | `rate_map_battery_point_states.py` | Core PyThrust dependencies |
+| `rate_map_battery_mission.py` | Core PyThrust dependencies |
 | `select_motor_from_database.py` | `openmdao` |
 | `openmdao_hover_optimization.py` | `openmdao`, `matplotlib` |
 
@@ -85,6 +86,28 @@ It demonstrates:
 
 This example is intentionally independent from the propulsion solver. It
 validates the battery model surface before mission or solver integration.
+
+## Rate-Map Battery Mission
+
+Script:
+
+```bash
+PYTHONPATH=. python examples/rate_map_battery_mission.py
+```
+
+This example couples `RateMapBattery` to `PropulsionSolver` over a short
+segment schedule. Each segment solves the propulsion operating point using the
+current battery state, reports pack voltage/current/C-rate, then advances state
+of charge from the solved battery current.
+
+It demonstrates:
+
+| Step | Meaning |
+|---|---|
+| Load cell data | Use `data/batteries/example_liion_cell.json` with explicit series and parallel counts |
+| Solve segment | Pass `battery_state` into `solve_operating_point(...)` |
+| Read outputs | Inspect `battery_voltage_v`, `battery_current_a`, and `battery_c_rate` on `OperatingPoint` |
+| Advance state | Use `step_current(...)` to update SoC for the next segment |
 
 ## Motor Selection
 
