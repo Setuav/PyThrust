@@ -1,47 +1,47 @@
-"""Example: calibrate system resistance from a manufacturer thrust/current table.
+"""Calibrate system resistance from a manufacturer thrust/current table.
 
 This example demonstrates how to use PropulsionCalibrator to identify the
-system resistance parameter (lumped ESC, cable, and battery resistance) so that
-PyThrust's model matches the manufacturer's performance data.
+system resistance parameter so PyThrust's fixed-voltage propulsion model
+matches the manufacturer's performance data.
 
 Usage::
 
-    python examples/calibrate_from_datasheet.py
+    PYTHONPATH=. python examples/calibrate_system_resistance.py
 """
 
 import math
 from pathlib import Path
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     SystemSpec,
 )
 from pythrust.propulsion.autotune import ManufacturerTestPoint, PropulsionCalibrator
 
-# ── 1. Motor parameters — taken directly from the manufacturer datasheet ──────
+# 1. Motor parameters taken directly from the manufacturer datasheet.
 motor = MotorSpec(
     kv_rpm_per_v=860.0,        # RPM/V
-    resistance_ohm=0.0258,     # Ω  (terminal resistance)
-    no_load_current_a=1.3,     # A  (idle current at rated voltage)
-    current_max_a=65.0,        # A  (continuous current limit)
+    resistance_ohm=0.0258,     # Ohm, terminal resistance
+    no_load_current_a=1.3,     # A, idle current at rated voltage
+    current_max_a=65.0,        # A, continuous current limit
 )
 
-# ── 2. Battery and propeller specs ────────────────────────────────────────────
-battery  = BatterySpec(voltage_v=14.8)           # 4S LiPo at nominal voltage
-system   = SystemSpec(resistance_ohm=0.05)       # initial guess (will be fitted)
-propeller = PropellerSpec(diameter_m=0.3302)     # 13-inch propeller
+# 2. Fixed-voltage battery, initial system resistance, and propeller geometry.
+battery = FixedVoltageBattery(voltage_v=14.8)   # 4S LiPo at nominal voltage
+system = SystemSpec(resistance_ohm=0.05)        # initial guess, fitted below
+propeller = PropellerSpec(diameter_m=0.3302)    # 13-inch propeller
 
-# ── 3. Load propeller aerodynamic data ────────────────────────────────────────
+# 3. Load propeller aerodynamic data.
 db = PropellerDatabase()
 db.load(Path("data/propellers/apc_202602"), strict=False)
 prop_entry = db.get("APC_13x6.5E")
 if prop_entry is None:
     raise SystemExit("Propeller 'APC_13x6.5E' not found in dataset.")
 
-# ── 4. Manufacturer test table (RPM, Thrust in grams, Battery Current in Amps) ─
+# 4. Manufacturer test table: RPM, thrust in grams, and battery current in amps.
 RAW_TABLE = [
     {"rpm": 3897, "thrust_g": 500, "current_a": 3.9},
     {"rpm": 4804, "thrust_g": 750, "current_a": 6.7},
@@ -64,30 +64,30 @@ points = [
     for row in RAW_TABLE
 ]
 
-# ── 5. Calibrate ──────────────────────────────────────────────────────────────
+# 5. Calibrate the lumped system resistance.
 calibrator = PropulsionCalibrator()
 result = calibrator.calibrate(
     points, motor, battery, system, propeller, prop_entry, rho=1.225
 )
 
-print("─── Calibration Result ──────────────────────────────────────")
+print("--- Calibration Result --------------------------------------")
 print(f"  System resistance : {result.system_resistance_ohm:.5f} ohm")
 print(f"  Thrust RMSE       : {result.rmse_thrust_g:.1f} g")
 print(f"  Current RMSE      : {result.rmse_current_a:.2f} A")
-print(f"  R² (thrust)       : {result.r_squared_thrust:.4f}")
+print(f"  R^2 (thrust)      : {result.r_squared_thrust:.4f}")
 print(f"  Converged         : {result.converged}")
 print(f"  Points used       : {result.n_points}")
 for w in result.warnings:
-    print(f"  ⚠  {w}")
+    print(f"  WARNING: {w}")
 print()
 
-# ── 6. Validate: compare predictions against the table at each RPM ────────────
+# 6. Validate by comparing predictions against the table at each RPM.
 system_calibrated = result.to_system_spec()
 kt = 60.0 / (2.0 * math.pi * motor.kv_rpm_per_v)
 
 header = f"{'RPM':>6}  {'Thrust Pred':>12}  {'Thrust Meas':>12}  {'Thrust Err':>11}  {'Current Pred':>13}  {'Current Meas':>13}  {'Current Err':>11}"
 print(header)
-print("─" * len(header))
+print("-" * len(header))
 for pt in points:
     n = pt.rpm / 60.0
     ct, cp = prop_entry.get_coefficients(pt.rpm, 0.0)

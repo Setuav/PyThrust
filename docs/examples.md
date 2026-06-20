@@ -1,22 +1,24 @@
 # Examples
 
-PyThrust includes runnable examples that show the main workflows: solving against catalog data, calibrating losses from measurements, and using OpenMDAO for propulsion co-design.
+PyThrust includes runnable examples that show the main workflows: solving and
+calibrating propulsion models, inspecting rate-map battery behavior, and using
+OpenMDAO for hover co-design.
 
-Run examples from the repository root so relative `data/` and `docs/images/` paths resolve correctly.
+Run examples from the repository root so relative `data/` and `docs/images/`
+paths resolve correctly.
 
 ```bash
 PYTHONPATH=. python examples/<example_name>.py
 ```
 
----
-
 ## Requirements
 
 | Example | Extra dependencies |
 |---|---|
-| `calibrate_from_datasheet.py` | Core PyThrust dependencies |
-| `select_motor.py` | `openmdao` |
-| `optimize_and_plot_propulsion.py` | `openmdao`, `matplotlib` |
+| `calibrate_system_resistance.py` | Core PyThrust dependencies |
+| `rate_map_battery_point_states.py` | Core PyThrust dependencies |
+| `select_motor_from_database.py` | `openmdao` |
+| `openmdao_hover_optimization.py` | `openmdao`, `matplotlib` |
 
 Install the full example environment:
 
@@ -24,17 +26,16 @@ Install the full example environment:
 pip install -e .[plot,openmdao]
 ```
 
----
-
-## Datasheet Calibration
+## System Resistance Calibration
 
 Script:
 
 ```bash
-PYTHONPATH=. python examples/calibrate_from_datasheet.py
+PYTHONPATH=. python examples/calibrate_system_resistance.py
 ```
 
-This example identifies the lumped system resistance for a motor, propeller, battery, ESC, and wiring setup.
+This example identifies the lumped system resistance for a motor, propeller,
+fixed-voltage battery, ESC, and wiring setup.
 
 It uses:
 
@@ -42,7 +43,7 @@ It uses:
 |---|---|
 | Motor | Datasheet Kv, resistance, no-load current, and current limit |
 | Propeller | `APC_13x6.5E` from `data/propellers/apc_202602` |
-| Battery | 4S nominal voltage, `14.8 V` |
+| Battery | Fixed 4S nominal voltage, `14.8 V` |
 | Test table | RPM, thrust in grams, and battery current in amps |
 
 The output reports:
@@ -55,18 +56,42 @@ The output reports:
 | Thrust R2 | Fit quality for the aerodynamic thrust prediction |
 | Per-point table | Predicted vs measured thrust/current for each RPM row |
 
-See [Motor Calibration](motor_calibration.md) for the calibration model and equations.
+See [Motor Calibration](motor_calibration.md) for the calibration model and
+equations.
 
 ![Calibration results](images/calibration_results.png)
 
----
+## Rate-Map Battery Point States
+
+Script:
+
+```bash
+PYTHONPATH=. python examples/rate_map_battery_point_states.py
+```
+
+This example loads `data/batteries/example_liion_cell.json`, applies a `4S2P`
+pack topology, and evaluates the same state of charge under several requests.
+
+It demonstrates:
+
+| Query | Meaning |
+|---|---|
+| `state_at_current` | Terminal voltage and power at a requested pack current |
+| `state_at_c_rate` | Current/voltage behavior at a requested cell C-rate |
+| `state_at_voltage` | Current required to hold a requested pack voltage |
+| `state_at_power` | Current and voltage for a requested pack power |
+| `state_at_load_resistance` | Battery behavior under a resistive load |
+| Infeasible power | How the model reports a power limit |
+
+This example is intentionally independent from the propulsion solver. It
+validates the battery model surface before mission or solver integration.
 
 ## Motor Selection
 
 Script:
 
 ```bash
-PYTHONPATH=. python examples/select_motor.py
+PYTHONPATH=. python examples/select_motor_from_database.py
 ```
 
 This example combines theoretical co-design with real motor database lookup.
@@ -74,36 +99,27 @@ This example combines theoretical co-design with real motor database lookup.
 Workflow:
 
 1. Load `APC_13x6.5E` propeller data.
-2. Use OpenMDAO to find an efficient theoretical motor/propeller/throttle combination for hover.
+2. Use OpenMDAO to find an efficient theoretical motor/propeller/throttle
+   combination for hover.
 3. Load the brushless motor database from `data/motors`.
 4. Search real motors near the optimized Kv and current requirement.
 5. Print the top candidates sorted by winding resistance and weight.
 
 The optimization target is a hover thrust of `4.903 N`, approximately `500 gf`.
 
-Typical output includes:
+See [Component Databases](databases.md) for motor catalog format and query
+helpers.
 
-| Output | Meaning |
-|---|---|
-| Target Kv | Ideal speed constant from the theoretical optimization |
-| Target diameter | Optimized propeller diameter |
-| Target hover current | Current at the optimized hover point |
-| Minimum hover power | Battery power objective value |
-| Top motor matches | Closest catalog motors with Kv, resistance, weight, and current limit |
-
-See [Component Databases](databases.md) for motor catalog format and query helpers.
-
----
-
-## Propulsion Optimization and Plotting
+## OpenMDAO Hover Optimization
 
 Script:
 
 ```bash
-PYTHONPATH=. python examples/optimize_and_plot_propulsion.py
+PYTHONPATH=. python examples/openmdao_hover_optimization.py
 ```
 
-This example demonstrates OpenMDAO-based propulsion co-design and a parametric Kv sweep.
+This example demonstrates OpenMDAO-based propulsion co-design and a parametric
+Kv sweep.
 
 It performs three stages:
 
@@ -126,4 +142,5 @@ The plot shows:
 
 ![Propulsion co-design optimization](images/optimize_and_plot_results.png)
 
-See [Propulsion Solver](usage.md) for the operating-point solver used inside the OpenMDAO component.
+See [Propulsion Solver](usage.md) for the operating-point solver used inside
+the OpenMDAO component.

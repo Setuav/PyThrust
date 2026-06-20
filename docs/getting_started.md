@@ -92,9 +92,10 @@ print(point.is_feasible)
 ## Run the Examples
 
 ```bash
-PYTHONPATH=. python examples/select_motor.py
-PYTHONPATH=. python examples/calibrate_from_datasheet.py
-PYTHONPATH=. python examples/optimize_and_plot_propulsion.py
+PYTHONPATH=. python examples/calibrate_system_resistance.py
+PYTHONPATH=. python examples/rate_map_battery_point_states.py
+PYTHONPATH=. python examples/select_motor_from_database.py
+PYTHONPATH=. python examples/openmdao_hover_optimization.py
 ```
 
 The plotting and OpenMDAO examples require the optional dependencies shown above.

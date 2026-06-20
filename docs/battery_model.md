@@ -239,7 +239,7 @@ $$
 3. Rename internal uses of `BatterySpec` to `FixedVoltageBattery`, leaving a
    compatibility alias.
 4. Integrate dynamic pack voltage into `PropulsionSolver`.
-5. Replace the PyBaMM mission example with a rate-map battery mission example.
+5. Add a rate-map battery mission example after solver integration.
 6. Update user docs, API reference, and theory docs after the implementation
    stabilizes.
 
