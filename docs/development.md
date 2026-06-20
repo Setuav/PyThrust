@@ -24,6 +24,7 @@ The CI workflow runs the test suite on Python 3.10, 3.11, and 3.12.
 ```bash
 PYTHONPATH=. python examples/calibrate_system_resistance.py
 PYTHONPATH=. python examples/rate_map_battery_point_states.py
+PYTHONPATH=. python examples/rate_map_battery_mission.py
 PYTHONPATH=. python examples/select_motor_from_database.py
 PYTHONPATH=. python examples/openmdao_hover_optimization.py
 ```
