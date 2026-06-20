@@ -1,18 +1,7 @@
-"""Battery model data structures."""
+"""Compatibility battery model exports for propulsion."""
 
-from __future__ import annotations
+from pythrust.battery import FixedVoltageBattery
 
-from dataclasses import dataclass
+BatterySpec = FixedVoltageBattery
 
-
-@dataclass(frozen=True)
-class BatterySpec:
-    """Battery pack parameters.
-
-    Units:
-    - voltage_v: V
-    - discharge_efficiency: 0-1
-    """
-
-    voltage_v: float
-    discharge_efficiency: float = 1.0
+__all__ = ["BatterySpec"]
