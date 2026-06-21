@@ -1,0 +1,1776 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Electric propulsion system co-design, analysis, and optimization framework for UAVs">
+      
+      
+        <meta name="author" content="Hüseyin Karakaya">
+      
+      
+      
+        <link rel="prev" href="../getting_started/">
+      
+      
+        <link rel="next" href="../motor_calibration/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/setuav_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Propulsion Solver - PyThrust</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#propulsion-solver-user-api-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PyThrust" class="md-header__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../images/setuav_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PyThrust
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Propulsion Solver
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../api_reference/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../development/" class="md-tabs__link">
+          
+  
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PyThrust" class="md-nav__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../images/setuav_logo.png" alt="logo">
+
+    </a>
+    PyThrust
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion Solver
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion Solver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solver-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symbols
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-solver-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the Solver Does
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What the Solver Does">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-evaluate-the-propeller-at-a-candidate-rpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Evaluate the propeller at a candidate RPM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-evaluate-the-motor-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Evaluate the motor state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drela-qprop-motor-model-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drela / QPROP Motor Model Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equilibrium-rpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equilibrium RPM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpm-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPM Bracket
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solver-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result Fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feasibility-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feasibility Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motor_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motor Calibration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion and Battery Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../battery_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Battery Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Component Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solver-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Inputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symbols
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-solver-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the Solver Does
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What the Solver Does">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-evaluate-the-propeller-at-a-candidate-rpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Evaluate the propeller at a candidate RPM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-evaluate-the-motor-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Evaluate the motor state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drela-qprop-motor-model-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drela / QPROP Motor Model Notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equilibrium-rpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equilibrium RPM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpm-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPM Bracket
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solver-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result Fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feasibility-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feasibility Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="propulsion-solver-user-api-guide">Propulsion Solver User &amp; API Guide</h1>
+<p>This guide describes how PyThrust solves a motor-propeller operating point and how to interpret the result.</p>
+<div class="admonition question">
+<p class="admonition-title">Core solver question</p>
+<p>Given a motor, propeller, battery, throttle, and airspeed, what shaft RPM makes the electrical motor model and propeller aerodynamic load agree?</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Use this page when</p>
+<p>You are wiring the solver into an analysis script, checking why a point is infeasible, or confirming how battery voltage enters the RPM root solve.</p>
+</div>
+<hr />
+<h2 id="solver-inputs">Solver Inputs</h2>
+<p>The operating-point solver combines five inputs:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Class or value</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor</td>
+<td><code>MotorSpec</code></td>
+<td>Kv, winding resistance, no-load current, current limit, optional higher-order loss terms</td>
+</tr>
+<tr>
+<td>Battery</td>
+<td><code>FixedVoltageBattery</code> or <code>RateMapBattery</code></td>
+<td>Fixed pack voltage or state-dependent pack voltage from cell curves</td>
+</tr>
+<tr>
+<td>System</td>
+<td><code>SystemSpec</code></td>
+<td>Lumped resistance for ESC, battery internal resistance, wiring, and connectors</td>
+</tr>
+<tr>
+<td>Propeller</td>
+<td><code>PropellerSpec</code> + <code>PropellerEntry</code></td>
+<td>Geometry plus empirical aerodynamic coefficients</td>
+</tr>
+<tr>
+<td>Flight condition</td>
+<td><code>rho</code>, <code>airspeed_mps</code>, <code>throttle</code></td>
+<td>Air density, freestream speed, and commanded voltage fraction</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="symbols">Symbols</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\text{RPM}\)</span></td>
+<td>Propeller shaft speed being solved</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n\)</span></td>
+<td>Shaft speed in revolutions per second</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(V\)</span></td>
+<td>Flight airspeed</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(D\)</span></td>
+<td>Propeller diameter</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(J\)</span></td>
+<td>Propeller advance ratio</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(C_t\)</span>, <span class="arithmatex">\(C_p\)</span></td>
+<td>Propeller thrust and power coefficients</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T\)</span></td>
+<td>Thrust</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Q\)</span></td>
+<td>Propeller shaft torque</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(K_v\)</span></td>
+<td>Motor speed constant</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(K_t\)</span></td>
+<td>Motor torque constant</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(I\)</span></td>
+<td>Motor winding current</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(I_0\)</span></td>
+<td>No-load current</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_m\)</span></td>
+<td>Motor winding resistance</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{\text{system}}\)</span></td>
+<td>Lumped system resistance</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(V_{\text{back}}\)</span></td>
+<td>Motor back-EMF voltage</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(V_m\)</span></td>
+<td>Motor terminal voltage</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(V_{\text{pack}}\)</span></td>
+<td>Battery pack voltage</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x\)</span></td>
+<td>Battery depth of discharge</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="what-the-solver-does">What the Solver Does</h2>
+<pre class="mermaid"><code>flowchart LR
+    motor["MotorSpec"]:::motorStyle
+    prop["PropellerSpec + PropellerEntry"]:::propStyle
+    battery["FixedVoltageBattery or RateMapBattery"]:::batteryStyle
+    system["SystemSpec"]
+    flight["rho, airspeed, throttle"]
+    solver["PropulsionSolver"]
+    point["OperatingPoint"]
+
+    motor --&gt; solver
+    prop --&gt; solver
+    battery --&gt; solver
+    system --&gt; solver
+    flight --&gt; solver
+    solver --&gt; point
+    point --&gt; outputs["RPM, thrust, current, voltage, efficiency"]</code></pre>
+<h3 id="step-1-evaluate-the-propeller-at-a-candidate-rpm">Step 1: Evaluate the propeller at a candidate RPM</h3>
+<p>For each candidate RPM, PyThrust converts shaft speed to revolutions per second:</p>
+<div class="arithmatex">\[
+n = \frac{\text{RPM}}{60}
+\]</div>
+<p>Then it calculates the propeller advance ratio:</p>
+<div class="arithmatex">\[
+J = \frac{V}{nD}
+\]</div>
+<p>The propeller database returns empirical coefficients at that RPM and advance ratio:</p>
+<div class="arithmatex">\[
+C_t = C_t(\text{RPM}, J)
+\]</div>
+<div class="arithmatex">\[
+C_p = C_p(\text{RPM}, J)
+\]</div>
+<p>From those coefficients, PyThrust computes thrust, torque, and shaft power:</p>
+<div class="arithmatex">\[
+T = C_t \rho n^2 D^4
+\]</div>
+<div class="arithmatex">\[
+Q = \frac{C_p \rho n^2 D^5}{2\pi}
+\]</div>
+<div class="arithmatex">\[
+P_{\text{shaft}} = C_p \rho n^3 D^5
+\]</div>
+<h3 id="step-2-evaluate-the-motor-state">Step 2: Evaluate the motor state</h3>
+<p>By default, PyThrust uses a first-order brushless DC motor model. The torque constant is:</p>
+<div class="arithmatex">\[
+K_t =
+\frac{30}{\pi K_v}
+\]</div>
+<p>The motor current needed to drive the propeller torque is:</p>
+<div class="arithmatex">\[
+I =
+\frac{Q}{K_t} + I_0
+\]</div>
+<p>The back-EMF voltage is:</p>
+<div class="arithmatex">\[
+V_{\text{back}} =
+\frac{\text{RPM}}{K_v}
+\]</div>
+<p>The motor terminal voltage is:</p>
+<div class="arithmatex">\[
+V_m =
+V_{\text{back}} + I R_m
+\]</div>
+<h3 id="drela-qprop-motor-model-notes">Drela / QPROP Motor Model Notes</h3>
+<p><code>MotorSpec</code> also includes optional parameters inspired by Mark Drela's QPROP motor models:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>torque_constant_kv_ratio</code></td>
+<td>Adjusts the relation between speed constant and torque constant</td>
+</tr>
+<tr>
+<td><code>magnetic_lag_tau</code></td>
+<td>Adds magnetic lag to the back-EMF relation</td>
+</tr>
+<tr>
+<td><code>no_load_current_linear</code></td>
+<td>Adds a linear speed term to no-load current</td>
+</tr>
+<tr>
+<td><code>no_load_current_quadratic</code></td>
+<td>Adds a quadratic speed term to no-load current</td>
+</tr>
+<tr>
+<td><code>resistance_quadratic</code></td>
+<td>Adds current-dependent winding resistance</td>
+</tr>
+<tr>
+<td><code>iron_loss_exponent</code></td>
+<td>Scales no-load current with RPM using a power law</td>
+</tr>
+</tbody>
+</table>
+<p>When these fields are left at their defaults, the model reduces to the simpler first-order motor equations above. See <a href="../theory/">Propulsion and Battery Theory</a> for the full equations and Drela references.</p>
+<hr />
+<h2 id="equilibrium-rpm">Equilibrium RPM</h2>
+<p>The throttle command defines the average voltage available from the battery:</p>
+<div class="arithmatex">\[
+V_{\text{applied}} =
+\text{throttle} \cdot V_{\text{pack}}
+\]</div>
+<p>For <code>FixedVoltageBattery</code>, <code>V_pack</code> is the configured pack voltage. For
+<code>RateMapBattery</code>, <code>V_pack</code> is evaluated from the current battery state and the
+current implied by the candidate RPM:</p>
+<div class="admonition note">
+<p class="admonition-title">Rate-map batteries are state dependent</p>
+<p>A <code>RateMapBattery</code> solve needs a <code>BatteryState</code> because terminal voltage depends on both depth of discharge and current.</p>
+</div>
+<div class="arithmatex">\[
+V_{\text{pack}} = V_{\text{pack}}(x, I)
+\]</div>
+<p>The solver searches for the RPM where the motor voltage demand plus system voltage drop equals the applied voltage:</p>
+<div class="arithmatex">\[
+g(\text{RPM}) =
+V_m(\text{RPM})
++ I(\text{RPM}) R_{\text{system}}
+- V_{\text{applied}}
+\]</div>
+<p>The equilibrium point is:</p>
+<div class="arithmatex">\[
+g(\text{RPM}) = 0
+\]</div>
+<p>PyThrust solves this scalar root-finding problem with Brent's method through <code>scipy.optimize.root_scalar</code>.</p>
+<hr />
+<h2 id="rpm-bracket">RPM Bracket</h2>
+<p>Before solving, PyThrust builds a search interval:</p>
+<table>
+<thead>
+<tr>
+<th>Bound</th>
+<th>How it is chosen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lower RPM</td>
+<td>At least <code>SolverConfig.rpm_min</code>; raised if airspeed and propeller <code>J</code> range require a higher RPM</td>
+</tr>
+<tr>
+<td>Upper RPM</td>
+<td>Estimated from <code>motor.kv_rpm_per_v * battery.terminal_voltage(0 A) * throttle</code>, then expanded by <code>rpm_max_margin</code></td>
+</tr>
+</tbody>
+</table>
+<p>If the residual does not change sign inside the bracket, the point is returned as infeasible with reason <code>no_bracket</code>.</p>
+<hr />
+<h2 id="solver-configuration">Solver Configuration</h2>
+<p>The numerical behavior of the root finder is controlled by <code>SolverConfig</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: right;">Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rpm_min</code></td>
+<td><code>float</code></td>
+<td style="text-align: right;"><code>100.0</code></td>
+<td>Lower bound limit for RPM</td>
+</tr>
+<tr>
+<td><code>rpm_max_margin</code></td>
+<td><code>float</code></td>
+<td style="text-align: right;"><code>1.1</code></td>
+<td>Safety scaling factor applied to the upper RPM estimate</td>
+</tr>
+<tr>
+<td><code>eps_rpm</code></td>
+<td><code>float</code></td>
+<td style="text-align: right;"><code>1e-8</code></td>
+<td>Convergence tolerance for shaft speed</td>
+</tr>
+<tr>
+<td><code>eps_v</code></td>
+<td><code>float</code></td>
+<td style="text-align: right;"><code>1e-8</code></td>
+<td>Voltage residual tolerance</td>
+</tr>
+<tr>
+<td><code>max_iter</code></td>
+<td><code>int</code></td>
+<td style="text-align: right;"><code>100</code></td>
+<td>Maximum root-finder iterations</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="result-fields">Result Fields</h2>
+<p><code>solve_operating_point(...)</code> returns an <code>OperatingPoint</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rpm</code></td>
+<td>Solved shaft speed</td>
+</tr>
+<tr>
+<td><code>advance_ratio</code></td>
+<td>Propeller advance ratio at the solved point</td>
+</tr>
+<tr>
+<td><code>ct</code>, <code>cp</code></td>
+<td>Interpolated thrust and power coefficients</td>
+</tr>
+<tr>
+<td><code>thrust_n</code></td>
+<td>Thrust force</td>
+</tr>
+<tr>
+<td><code>torque_nm</code></td>
+<td>Propeller shaft torque</td>
+</tr>
+<tr>
+<td><code>shaft_power_w</code></td>
+<td>Mechanical shaft power</td>
+</tr>
+<tr>
+<td><code>motor_power_w</code></td>
+<td>Electrical power at motor terminals</td>
+</tr>
+<tr>
+<td><code>battery_power_w</code></td>
+<td>Battery-side power including system losses</td>
+</tr>
+<tr>
+<td><code>battery_voltage_v</code></td>
+<td>Battery terminal pack voltage at the solved point</td>
+</tr>
+<tr>
+<td><code>battery_current_a</code></td>
+<td>Battery DC current draw at the solved point</td>
+</tr>
+<tr>
+<td><code>battery_c_rate</code></td>
+<td>Cell C-rate for rate-map batteries, or <code>0.0</code> for fixed-voltage batteries</td>
+</tr>
+<tr>
+<td><code>battery_efficiency</code></td>
+<td>Discharge efficiency from the active battery model</td>
+</tr>
+<tr>
+<td><code>motor_current_a</code></td>
+<td>Motor winding current</td>
+</tr>
+<tr>
+<td><code>motor_voltage_v</code></td>
+<td>Motor terminal voltage</td>
+</tr>
+<tr>
+<td><code>propeller_efficiency</code></td>
+<td>Propulsive efficiency based on thrust power</td>
+</tr>
+<tr>
+<td><code>motor_efficiency</code></td>
+<td>Shaft power divided by motor electrical power</td>
+</tr>
+<tr>
+<td><code>system_efficiency</code></td>
+<td>Thrust power divided by battery power</td>
+</tr>
+<tr>
+<td><code>is_feasible</code></td>
+<td>Whether the point passed feasibility checks</td>
+</tr>
+<tr>
+<td><code>infeasible_reason</code></td>
+<td>Reason string when <code>is_feasible</code> is false</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="feasibility-rules">Feasibility Rules</h2>
+<p>An operating point is marked as infeasible when one of these checks fails:</p>
+<table>
+<thead>
+<tr>
+<th>Reason</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>throttle&lt;=0</code></td>
+<td>No positive throttle command</td>
+</tr>
+<tr>
+<td><code>no_bracket</code></td>
+<td>The RPM search interval does not contain a valid voltage-balance root</td>
+</tr>
+<tr>
+<td><code>no_convergence</code></td>
+<td>The root finder did not converge</td>
+</tr>
+<tr>
+<td><code>current_limit</code></td>
+<td><code>motor_current_a</code> exceeds <code>current_max_a</code></td>
+</tr>
+<tr>
+<td><code>battery_current_limit</code></td>
+<td>Rate-map battery current exceeds the configured cell current limit</td>
+</tr>
+<tr>
+<td><code>battery_voltage_cutoff</code></td>
+<td>Rate-map battery terminal cell voltage falls below cutoff</td>
+</tr>
+<tr>
+<td><code>battery_voltage_limit</code></td>
+<td>Rate-map battery terminal cell voltage exceeds the configured charge voltage</td>
+</tr>
+<tr>
+<td><code>battery_state_limit</code></td>
+<td>Rate-map battery state is outside the valid range</td>
+</tr>
+<tr>
+<td><code>invalid_coefficients</code></td>
+<td>Propeller coefficient lookup produced non-physical values</td>
+</tr>
+<tr>
+<td><code>invalid_efficiency</code></td>
+<td>Computed efficiency is outside the physically expected range</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="example-usage">Example Usage</h2>
+<p>Here is a complete example showing how to load a propeller dataset, define specifications, and solve for an operating point:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.battery</span><span class="w"> </span><span class="kn">import</span> <span class="n">FixedVoltageBattery</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propellers</span><span class="w"> </span><span class="kn">import</span> <span class="n">PropellerDatabase</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propulsion</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">MotorSpec</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">PropellerSpec</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">PropulsionSolver</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">SystemSpec</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">db</span> <span class="o">=</span> <span class="n">PropellerDatabase</span><span class="p">()</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">db</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data/propellers/apc_202602&quot;</span><span class="p">),</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">prop_entry</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;APC_13x6.5E&quot;</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">motor</span> <span class="o">=</span> <span class="n">MotorSpec</span><span class="p">(</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">kv_rpm_per_v</span><span class="o">=</span><span class="mf">860.0</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="n">resistance_ohm</span><span class="o">=</span><span class="mf">0.0258</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="n">no_load_current_a</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">current_max_a</span><span class="o">=</span><span class="mf">65.0</span><span class="p">,</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">)</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">FixedVoltageBattery</span><span class="p">(</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="n">voltage_v</span><span class="o">=</span><span class="mf">14.8</span><span class="p">,</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n">discharge_efficiency</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="n">system</span> <span class="o">=</span> <span class="n">SystemSpec</span><span class="p">(</span><span class="n">resistance_ohm</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="n">propeller</span> <span class="o">=</span> <span class="n">PropellerSpec</span><span class="p">(</span><span class="n">diameter_m</span><span class="o">=</span><span class="mf">0.3302</span><span class="p">,</span> <span class="n">blade_count</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="n">solver</span> <span class="o">=</span> <span class="n">PropulsionSolver</span><span class="p">()</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="n">point</span> <span class="o">=</span> <span class="n">solver</span><span class="o">.</span><span class="n">solve_operating_point</span><span class="p">(</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    <span class="n">motor</span><span class="o">=</span><span class="n">motor</span><span class="p">,</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    <span class="n">battery</span><span class="o">=</span><span class="n">battery</span><span class="p">,</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>    <span class="n">system</span><span class="o">=</span><span class="n">system</span><span class="p">,</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="n">propeller</span><span class="o">=</span><span class="n">propeller</span><span class="p">,</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="n">prop_entry</span><span class="o">=</span><span class="n">prop_entry</span><span class="p">,</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="n">rho</span><span class="o">=</span><span class="mf">1.225</span><span class="p">,</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    <span class="n">airspeed_mps</span><span class="o">=</span><span class="mf">15.0</span><span class="p">,</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>    <span class="n">throttle</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="p">)</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RPM             : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">rpm</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Thrust          : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">thrust_n</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> N&quot;</span><span class="p">)</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Motor Current   : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">motor_current_a</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> A&quot;</span><span class="p">)</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Battery Voltage : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">battery_voltage_v</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> V&quot;</span><span class="p">)</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Battery Current : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">battery_current_a</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> A&quot;</span><span class="p">)</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Battery Power   : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">battery_power_w</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> W&quot;</span><span class="p">)</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Feasible        : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">is_feasible</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reason          : </span><span class="si">{</span><span class="n">point</span><span class="o">.</span><span class="n">infeasible_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>For a rate-map battery, load a cell dataset, create an explicit battery state,
+and pass that state into the solver:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.battery</span><span class="w"> </span><span class="kn">import</span> <span class="n">BatteryState</span><span class="p">,</span> <span class="n">RateMapBattery</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">RateMapBattery</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="s2">&quot;data/batteries/example_liion_cell.json&quot;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">series</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">parallel</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">state</span> <span class="o">=</span> <span class="n">BatteryState</span><span class="p">(</span><span class="n">soc</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">point</span> <span class="o">=</span> <span class="n">solver</span><span class="o">.</span><span class="n">solve_operating_point</span><span class="p">(</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">motor</span><span class="o">=</span><span class="n">motor</span><span class="p">,</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">battery</span><span class="o">=</span><span class="n">battery</span><span class="p">,</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">battery_state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">system</span><span class="o">=</span><span class="n">system</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">propeller</span><span class="o">=</span><span class="n">propeller</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">prop_entry</span><span class="o">=</span><span class="n">prop_entry</span><span class="p">,</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="n">rho</span><span class="o">=</span><span class="mf">1.225</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">airspeed_mps</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="n">throttle</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">)</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

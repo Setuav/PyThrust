@@ -1,0 +1,1565 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Electric propulsion system co-design, analysis, and optimization framework for UAVs">
+      
+      
+        <meta name="author" content="Hüseyin Karakaya">
+      
+      
+      
+        <link rel="prev" href="../theory/">
+      
+      
+        <link rel="next" href="../databases/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/setuav_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Battery Model - PyThrust</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#battery-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PyThrust" class="md-header__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../images/setuav_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PyThrust
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Battery Model
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../api_reference/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../development/" class="md-tabs__link">
+          
+  
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PyThrust" class="md-nav__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../images/setuav_logo.png" alt="logo">
+
+    </a>
+    PyThrust
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion Solver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motor_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motor Calibration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion and Battery Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Battery Model
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Battery Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Equations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-perf-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        bat-perf Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset Shape
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solver-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Component Databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Equations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-perf-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        bat-perf Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset Shape
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solver-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="battery-model">Battery Model</h1>
+<p>PyThrust supports a fixed-voltage battery model and a lightweight rate-map
+battery model. The fixed-voltage path is useful for quick propulsion sizing,
+but it hides two effects that matter for electric aircraft performance studies:</p>
+<ul>
+<li>The terminal voltage drops with load.</li>
+<li>The usable energy depends on discharge rate and state of charge.</li>
+</ul>
+<p>This page defines the rate-map model now implemented in PyThrust. The model is
+inspired by Robert A. McDonald's
+<code>bat-perf</code> model and the paper "Battery Knockdown Factors for Conceptual
+Design".</p>
+<div class="admonition abstract">
+<p class="admonition-title">Model scope</p>
+<p>PyThrust uses a compact equivalent-circuit battery model for sizing and optimization. It is intended to capture voltage sag and usable energy trends without introducing electrochemical simulation inputs.</p>
+</div>
+<h2 id="goals">Goals</h2>
+<p>The model is intended to:</p>
+<ul>
+<li>Stay fast enough for sizing sweeps, optimizers, and OpenMDAO workflows.</li>
+<li>Use manufacturer-accessible data such as capacity, voltage limits, current
+  limits, discharge curves, and C-rate maps.</li>
+<li>Support point-performance analysis at a specified state of charge.</li>
+<li>Support mission integration by advancing battery state through time.</li>
+<li>Preserve a simple fixed-voltage battery path for examples and low-fidelity
+  studies.</li>
+</ul>
+<p>The model does not try to replace electrochemical simulation tools. PyThrust
+does not need electrode-level parameters, diffusion constants, thermal cell
+models, or PyBaMM-style electrochemistry for this feature.</p>
+<h2 id="core-equations">Core Equations</h2>
+<p>The paper treats battery state with two governing equations: conservation of
+charge and an algebraic terminal-voltage equation.</p>
+<p>Depth of discharge is:</p>
+<div class="arithmatex">\[
+x = 1 - z
+\]</div>
+<p>where <span class="arithmatex">\(z\)</span> is state of charge. With discharge current <span class="arithmatex">\(I\)</span> taken as positive,
+charge conservation is:</p>
+<div class="arithmatex">\[
+\frac{dx}{dt} = \frac{I}{Q}
+\]</div>
+<p>where <span class="arithmatex">\(Q\)</span> is rated cell capacity in ampere-seconds.</p>
+<p>The static equivalent circuit is an open-circuit voltage source in series with
+an internal resistance:</p>
+<div class="arithmatex">\[
+V(x, I) = OCV(x) - R(x)I
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(V\)</span> is terminal cell voltage.</li>
+<li><span class="arithmatex">\(OCV(x)\)</span> is open-circuit cell voltage as a function of depth of discharge.</li>
+<li><span class="arithmatex">\(R(x)\)</span> is effective cell resistance as a function of depth of discharge.</li>
+<li><span class="arithmatex">\(I\)</span> is cell current, positive during discharge.</li>
+</ul>
+<p>For a pack with cells in series and parallel:</p>
+<div class="arithmatex">\[
+V_{pack} = N_s V_{cell}
+\]</div>
+<div class="arithmatex">\[
+I_{cell} = \frac{I_{pack}}{N_p}
+\]</div>
+<div class="arithmatex">\[
+Q_{pack} = N_p Q_{cell}
+\]</div>
+<h2 id="bat-perf-mapping">bat-perf Mapping</h2>
+<p>The <code>bat-perf</code> MATLAB model uses the same core variables:</p>
+<table>
+<thead>
+<tr>
+<th>PyThrust concept</th>
+<th>bat-perf name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dod</code></td>
+<td><code>dod</code></td>
+<td>Depth of discharge, from 0 to 1</td>
+</tr>
+<tr>
+<td><code>capacity_as</code></td>
+<td><code>Qmax</code></td>
+<td>Cell capacity in ampere-seconds</td>
+</tr>
+<tr>
+<td><code>rated_current_a</code></td>
+<td><code>irated</code></td>
+<td>1C current</td>
+</tr>
+<tr>
+<td><code>ocv(dod)</code></td>
+<td><code>OCVfun(dod)</code></td>
+<td>Open-circuit cell voltage</td>
+</tr>
+<tr>
+<td><code>resistance(dod)</code></td>
+<td><code>Rssfun(dod)</code></td>
+<td>Steady-state internal resistance</td>
+</tr>
+<tr>
+<td><code>cutoff_voltage_v</code></td>
+<td><code>Vcutoff</code></td>
+<td>Minimum terminal cell voltage</td>
+</tr>
+<tr>
+<td><code>charge_voltage_v</code></td>
+<td><code>Vcharge</code></td>
+<td>Maximum terminal cell voltage</td>
+</tr>
+</tbody>
+</table>
+<p>The most important point-state functions are:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>bat-perf function</th>
+<th>Equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specified current</td>
+<td><code>cellStateI</code></td>
+<td><span class="arithmatex">\(V = OCV - RI\)</span></td>
+</tr>
+<tr>
+<td>Specified C-rate</td>
+<td><code>cellStateC</code></td>
+<td><span class="arithmatex">\(I = C Q_{Ah}\)</span>, then <span class="arithmatex">\(V = OCV - RI\)</span></td>
+</tr>
+<tr>
+<td>Specified voltage</td>
+<td><code>cellStateV</code></td>
+<td><span class="arithmatex">\(I = (OCV - V) / R\)</span></td>
+</tr>
+<tr>
+<td>Specified power</td>
+<td><code>cellStateP</code></td>
+<td>solve <span class="arithmatex">\(P = I(OCV - RI)\)</span></td>
+</tr>
+<tr>
+<td>Specified load resistance</td>
+<td><code>cellStateR</code></td>
+<td><span class="arithmatex">\(I = OCV / (R + R_{load})\)</span></td>
+</tr>
+<tr>
+<td>Specified internal loss</td>
+<td><code>cellStatePloss</code></td>
+<td>solve <span class="arithmatex">\(P_{loss} = I^2R\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For specified power, the current is obtained from the quadratic:</p>
+<div class="arithmatex">\[
+RI^2 - OCV I + P = 0
+\]</div>
+<p>using the lower-current discharge root:</p>
+<div class="arithmatex">\[
+I = \frac{OCV - \sqrt{OCV^2 - 4RP}}{2R}
+\]</div>
+<p>The maximum deliverable power at a given DOD occurs when the discriminant is
+zero:</p>
+<div class="arithmatex">\[
+P_{max}(x) = \frac{OCV(x)^2}{4R(x)}
+\]</div>
+<p>The implementation reports infeasible states when requested power exceeds this
+limit, when current exceeds the configured limit, or when terminal voltage falls
+below cutoff.</p>
+<h2 id="integration-modes">Integration Modes</h2>
+<p><code>RateMapBattery</code> can integrate battery state through time or to a target depth
+of discharge. All integration methods return <code>BatteryIntegrationResult</code>, which
+contains the final state, sampled histories, delivered energy, consumed charge,
+feasibility, and stop reason.</p>
+<table>
+<thead>
+<tr>
+<th>PyThrust method</th>
+<th>bat-perf analogue</th>
+<th>Load held constant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>integrate_current(...)</code></td>
+<td><code>cellIntIt</code></td>
+<td>Pack current</td>
+</tr>
+<tr>
+<td><code>integrate_c_rate(...)</code></td>
+<td><code>cellIntCt</code></td>
+<td>Cell C-rate</td>
+</tr>
+<tr>
+<td><code>integrate_power(...)</code></td>
+<td><code>cellIntPt</code></td>
+<td>Pack terminal power</td>
+</tr>
+<tr>
+<td><code>integrate_voltage(...)</code></td>
+<td><code>cellIntVt</code></td>
+<td>Pack terminal voltage</td>
+</tr>
+<tr>
+<td><code>integrate_load_resistance(...)</code></td>
+<td><code>cellIntRt</code></td>
+<td>Pack load resistance</td>
+</tr>
+<tr>
+<td><code>integrate_power_loss(...)</code></td>
+<td><code>cellIntPlosst</code></td>
+<td>Pack internal loss power</td>
+</tr>
+</tbody>
+</table>
+<p>The target-DOD variants stop at a requested final DOD instead of a requested
+duration:</p>
+<table>
+<thead>
+<tr>
+<th>PyThrust method</th>
+<th>bat-perf analogue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>integrate_current_to_dod(...)</code></td>
+<td><code>cellIntIdod</code></td>
+</tr>
+<tr>
+<td><code>integrate_c_rate_to_dod(...)</code></td>
+<td><code>cellIntCdod</code></td>
+</tr>
+<tr>
+<td><code>integrate_power_to_dod(...)</code></td>
+<td><code>cellIntPdod</code></td>
+</tr>
+<tr>
+<td><code>integrate_voltage_to_dod(...)</code></td>
+<td><code>cellIntVdod</code></td>
+</tr>
+<tr>
+<td><code>integrate_load_resistance_to_dod(...)</code></td>
+<td><code>cellIntRdod</code></td>
+</tr>
+<tr>
+<td><code>integrate_power_loss_to_dod(...)</code></td>
+<td><code>cellIntPlossdod</code></td>
+</tr>
+</tbody>
+</table>
+<p>Additional helpers cover inverse and segmented calculations:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dod_at_voltage_power(...)</code></td>
+<td>Find the DOD where a requested voltage and power coincide</td>
+</tr>
+<tr>
+<td><code>dod_at_power_voltage(...)</code></td>
+<td>Equivalent solve from the constant-power state equation</td>
+</tr>
+<tr>
+<td><code>integrate_power_profile(...)</code></td>
+<td>Integrate consecutive constant-power mission segments</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Numerical method</p>
+<p>Time and target-DOD integrations use SciPy's adaptive <code>solve_ivp</code>
+integrator with <code>max_step_s</code> as the maximum time step for time-domain
+solves. Stop events detect current limits, voltage limits, cutoff voltage,
+and DOD exhaustion. This is closer to the <code>ode45</code> workflow used by
+<code>bat-perf</code> than fixed-step Coulomb counting.</p>
+</div>
+<p>Example:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.battery</span><span class="w"> </span><span class="kn">import</span> <span class="n">BatteryState</span><span class="p">,</span> <span class="n">RateMapBattery</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">RateMapBattery</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="s2">&quot;data/batteries/example_liion_cell.json&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">series</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">parallel</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">state</span> <span class="o">=</span> <span class="n">BatteryState</span><span class="p">(</span><span class="n">soc</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">result</span> <span class="o">=</span> <span class="n">battery</span><span class="o">.</span><span class="n">integrate_power</span><span class="p">(</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">power_w</span><span class="o">=</span><span class="mf">180.0</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">dt_s</span><span class="o">=</span><span class="mf">300.0</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">max_step_s</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">delivered_energy_wh</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">final_state</span><span class="o">.</span><span class="n">dod</span><span class="p">)</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stop_reason</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="python-api">Python API</h2>
+<p>Use explicit names for the two battery fidelities:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Fixed voltage</label><label for="__tabbed_1_2">Rate map</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.battery</span><span class="w"> </span><span class="kn">import</span> <span class="n">FixedVoltageBattery</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">FixedVoltageBattery</span><span class="p">(</span><span class="n">voltage_v</span><span class="o">=</span><span class="mf">14.8</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.battery</span><span class="w"> </span><span class="kn">import</span> <span class="n">BatteryState</span><span class="p">,</span> <span class="n">RateMapBattery</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">state</span> <span class="o">=</span> <span class="n">BatteryState</span><span class="p">(</span><span class="n">soc</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">RateMapBattery</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s2">&quot;data/batteries/example_liion_cell.json&quot;</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">series</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">parallel</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Choosing a battery model</p>
+<p>Use <code>FixedVoltageBattery</code> for early propulsion sizing and simple examples. Use <code>RateMapBattery</code> when load-dependent voltage, C-rate limits, or state of charge affect the result.</p>
+</div>
+<p><code>BatterySpec</code> is too general once multiple battery models exist. It remains as
+a compatibility alias:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">BatterySpec</span> <span class="o">=</span> <span class="n">FixedVoltageBattery</span>
+</span></code></pre></div>
+<p>The alias keeps old code working during the transition, but new code and
+documentation should use <code>FixedVoltageBattery</code>.</p>
+<p>The common battery behavior is intentionally small:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">voltage</span> <span class="o">=</span> <span class="n">battery</span><span class="o">.</span><span class="n">terminal_voltage</span><span class="p">(</span><span class="n">current_a</span><span class="o">=</span><span class="n">current</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">power</span> <span class="o">=</span> <span class="n">battery</span><span class="o">.</span><span class="n">terminal_power</span><span class="p">(</span><span class="n">current_a</span><span class="o">=</span><span class="n">current</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>RateMapBattery</code> also supports state advancement and endurance integration:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">next_state</span> <span class="o">=</span> <span class="n">battery</span><span class="o">.</span><span class="n">step_power</span><span class="p">(</span><span class="n">power_w</span><span class="o">=</span><span class="n">power</span><span class="p">,</span> <span class="n">dt_s</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">battery</span><span class="o">.</span><span class="n">integrate_power</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">,</span> <span class="n">power_w</span><span class="o">=</span><span class="n">power</span><span class="p">,</span> <span class="n">dt_s</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+</span></code></pre></div>
+<p>For the fixed-voltage model, <code>terminal_voltage</code> returns the configured voltage.
+For the rate-map model, it evaluates the cell/pack equivalent circuit.</p>
+<h2 id="dataset-shape">Dataset Shape</h2>
+<p>The JSON dataset describes one cell. Pack topology is passed when loading the
+dataset:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example Li-ion Cell&quot;</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Synthetic example data for PyThrust tests and examples&quot;</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">&quot;cell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">&quot;capacity_ah&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.2</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">&quot;cutoff_voltage_v&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nt">&quot;charge_voltage_v&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.2</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nt">&quot;max_current_a&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">20.0</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="nt">&quot;curves&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nt">&quot;dod&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="mf">0.4</span><span class="p">,</span><span class="w"> </span><span class="mf">0.6</span><span class="p">,</span><span class="w"> </span><span class="mf">0.8</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">],</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nt">&quot;ocv_v&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">4.20</span><span class="p">,</span><span class="w"> </span><span class="mf">4.08</span><span class="p">,</span><span class="w"> </span><span class="mf">3.98</span><span class="p">,</span><span class="w"> </span><span class="mf">3.83</span><span class="p">,</span><span class="w"> </span><span class="mf">3.70</span><span class="p">,</span><span class="w"> </span><span class="mf">3.48</span><span class="p">,</span><span class="w"> </span><span class="mf">3.20</span><span class="p">],</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="nt">&quot;resistance_ohm&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.020</span><span class="p">,</span><span class="w"> </span><span class="mf">0.021</span><span class="p">,</span><span class="w"> </span><span class="mf">0.022</span><span class="p">,</span><span class="w"> </span><span class="mf">0.026</span><span class="p">,</span><span class="w"> </span><span class="mf">0.031</span><span class="p">,</span><span class="w"> </span><span class="mf">0.039</span><span class="p">,</span><span class="w"> </span><span class="mf">0.055</span><span class="p">]</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">battery</span> <span class="o">=</span> <span class="n">RateMapBattery</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="n">cell_path</span><span class="p">,</span> <span class="n">series</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">parallel</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The current implementation interpolates <code>OCV(dod)</code> and <code>R(dod)</code> directly.
+Manufacturer discharge curves are usually terminal voltage under load, so real
+datasets should document how <code>OCV(dod)</code> and <code>R(dod)</code> were derived.</p>
+<h2 id="solver-integration">Solver Integration</h2>
+<p>The propulsion solver starts from the PWM voltage relation:</p>
+<div class="arithmatex">\[
+V_{applied} = throttle \times V_{pack}
+\]</div>
+<p>For a rate-map battery, <code>V_pack</code> depends on current and state:</p>
+<div class="arithmatex">\[
+V_{applied} = throttle \times V_{pack}(x, I)
+\]</div>
+<p>The root equation therefore becomes:</p>
+<div class="arithmatex">\[
+F(RPM) =
+V_{back}(RPM)
++ I(RPM)R_{motor}
++ I(RPM)R_{system}
+- throttle \times V_{pack}(x, I(RPM))
+\]</div>
+<p>This keeps the propeller/motor equilibrium as a one-dimensional root solve
+because current remains a function of RPM through the propeller torque demand.</p>
+<p>For mission simulation, evaluate each segment with the current state, compute
+pack current/power, then advance DOD:</p>
+<div class="arithmatex">\[
+x_{next} = x + \frac{I_{cell}}{Q_{cell}} \Delta t
+\]</div>
+<h2 id="feature-summary">Feature Summary</h2>
+<p>The battery package provides:</p>
+<ul>
+<li><code>pythrust.battery.FixedVoltageBattery</code></li>
+<li><code>pythrust.battery.RateMapBattery</code></li>
+<li><code>pythrust.battery.BatteryState</code> and <code>BatteryPoint</code></li>
+<li>JSON cell datasets with explicit series and parallel counts at load time</li>
+<li>Solver integration through <code>solve_operating_point(..., battery_state=...)</code></li>
+<li><code>OperatingPoint</code> battery outputs for voltage, current, C-rate, and efficiency</li>
+<li>SciPy-based integration for current, C-rate, power, voltage, resistance, and
+  internal power-loss modes</li>
+<li>Target-DOD integration, energy knockdown helpers, and power-profile
+  integration</li>
+<li>A runnable rate-map mission example</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>Robert A. McDonald, "Battery Knockdown Factors for Conceptual Design",
+  AIAA Aviation Forum, 2024, DOI: <code>10.2514/6.2024-3903</code>.</li>
+<li><code>ramcdona/bat-perf</code>: <a href="https://github.com/ramcdona/bat-perf">https://github.com/ramcdona/bat-perf</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
