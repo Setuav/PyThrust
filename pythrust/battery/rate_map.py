@@ -591,7 +591,12 @@ class RateMapBattery:
 
     @staticmethod
     def _clip_dod(dod: float) -> float:
-        return min(1.0, max(0.0, float(dod)))
+        clipped = min(1.0, max(0.0, float(dod)))
+        if math.isclose(clipped, 0.0, rel_tol=0.0, abs_tol=1e-12):
+            return 0.0
+        if math.isclose(clipped, 1.0, rel_tol=0.0, abs_tol=1e-12):
+            return 1.0
+        return clipped
 
     def _reversible_energy_wh(self, dod_initial: float, dod_final: float, *, samples: int) -> float:
         dod_values = np.linspace(dod_initial, dod_final, samples)
