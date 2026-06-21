@@ -4,7 +4,12 @@ from pathlib import Path
 
 import pytest
 
-from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
+from pythrust.battery import (
+    BatteryIntegrationResult,
+    BatteryState,
+    FixedVoltageBattery,
+    RateMapBattery,
+)
 from pythrust.propulsion.models import BatterySpec
 
 
@@ -52,6 +57,47 @@ def test_battery_state_rejects_non_finite_soc(soc):
 def test_battery_state_rejects_non_finite_dod(dod):
     with pytest.raises(ValueError, match="dod"):
         BatteryState.from_dod(dod)
+
+
+def test_battery_integration_result_normalizes_histories():
+    final_state = BatteryState(soc=0.9)
+    result = BatteryIntegrationResult(
+        final_state=final_state,
+        time_s=[0, 10],
+        dod=[0.0, 0.1],
+        voltage_v=[16.0, 15.8],
+        current_a=[8.0, 8.0],
+        c_rate=[1.0, 1.0],
+        power_w=[128.0, 126.4],
+        efficiency=[0.95, 0.94],
+        delivered_energy_wh=0.35,
+        consumed_charge_ah=0.022,
+        is_feasible=True,
+        stop_reason="duration_complete",
+    )
+
+    assert result.final_state is final_state
+    assert result.time_s == (0.0, 10.0)
+    assert result.dod == (0.0, 0.1)
+    assert result.stop_reason == "duration_complete"
+
+
+def test_battery_integration_result_rejects_mismatched_histories():
+    with pytest.raises(ValueError, match="same length"):
+        BatteryIntegrationResult(
+            final_state=BatteryState(soc=0.9),
+            time_s=[0.0, 10.0],
+            dod=[0.0],
+            voltage_v=[16.0, 15.8],
+            current_a=[8.0, 8.0],
+            c_rate=[1.0, 1.0],
+            power_w=[128.0, 126.4],
+            efficiency=[0.95, 0.94],
+            delivered_energy_wh=0.35,
+            consumed_charge_ah=0.022,
+            is_feasible=True,
+            stop_reason="duration_complete",
+        )
 
 
 def test_rate_map_state_at_current(rate_map_battery):

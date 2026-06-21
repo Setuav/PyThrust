@@ -2,9 +2,10 @@
 
 from .fixed import FixedVoltageBattery
 from .rate_map import RateMapBattery
-from .state import BatteryPoint, BatteryState
+from .state import BatteryIntegrationResult, BatteryPoint, BatteryState
 
 __all__ = [
+    "BatteryIntegrationResult",
     "BatteryPoint",
     "BatteryState",
     "FixedVoltageBattery",
