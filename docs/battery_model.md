@@ -314,9 +314,9 @@ $$
 x_{next} = x + \frac{I_{cell}}{Q_{cell}} \Delta t
 $$
 
-## Implementation Status
+## Feature Summary
 
-The implementation includes:
+The battery package provides:
 
 - `pythrust.battery.FixedVoltageBattery`
 - `pythrust.battery.RateMapBattery`
