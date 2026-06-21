@@ -593,10 +593,6 @@ class RateMapBattery:
     def _clip_dod(dod: float) -> float:
         return min(1.0, max(0.0, float(dod)))
 
-    @staticmethod
-    def _trapezoid(left: float, right: float, width: float) -> float:
-        return 0.5 * (left + right) * width
-
     def _reversible_energy_wh(self, dod_initial: float, dod_final: float, *, samples: int) -> float:
         dod_values = np.linspace(dod_initial, dod_final, samples)
         ocv_values = np.array([self.ocv(float(dod)) for dod in dod_values])
@@ -740,6 +736,8 @@ class RateMapBattery:
                 stop_reason="zero_discharge_current",
             )
 
+        max_dod_step = max_step_s * initial_point.cell_current_a / self.capacity_as
+
         def rhs(dod: float, _values: np.ndarray) -> list[float]:
             state_at_dod = BatteryState.from_dod(self._clip_dod(dod))
             point = point_function(state_at_dod)
@@ -757,7 +755,7 @@ class RateMapBattery:
             (state.dod, dod_final),
             [0.0, 0.0, 0.0],
             events=events,
-            max_step=min(0.01, dod_final - state.dod),
+            max_step=min(max_dod_step, dod_final - state.dod),
             rtol=1e-9,
             atol=1e-11,
         )
@@ -867,7 +865,7 @@ class RateMapBattery:
             "voltage_limit": self.charge_voltage_v - point.cell_voltage_v,
             "dod_limit": 1.0 - state.dod,
         }
-        return min(margins, key=lambda name: abs(margins[name]))
+        return min(margins, key=lambda name: margins[name])
 
     @staticmethod
     def _validate_integration_inputs(load: float, dt_s: float, max_step_s: float, load_name: str) -> None:
@@ -886,91 +884,6 @@ class RateMapBattery:
             raise ValueError("dod values must be between 0 and 1")
         if dod_final <= dod_initial:
             raise ValueError("dod_final must be greater than dod_initial")
-
-    def _advance_state_for_current(self, state: BatteryState, current_a: float, dt_s: float) -> BatteryState:
-        cell_current_a = current_a / self.parallel
-        dod_next = state.dod + cell_current_a * dt_s / self.capacity_as
-        return BatteryState.from_dod(self._clip_dod(dod_next))
-
-    def _time_to_dod_limit(self, state: BatteryState, current_a: float) -> float:
-        cell_current_a = current_a / self.parallel
-        if cell_current_a <= 0.0:
-            return math.inf
-        return max(0.0, (1.0 - state.dod) * self.capacity_as / cell_current_a)
-
-    def _find_current_integration_boundary(
-        self,
-        state: BatteryState,
-        current_a: float,
-        step_s: float,
-    ) -> tuple[float, BatteryState, BatteryPoint]:
-        low_s = 0.0
-        high_s = step_s
-        boundary_state = state
-        boundary_point = self.state_at_current(state=state, current_a=current_a)
-
-        for _ in range(40):
-            mid_s = 0.5 * (low_s + high_s)
-            mid_state = self._advance_state_for_current(state, current_a, mid_s)
-            mid_point = self.state_at_current(state=mid_state, current_a=current_a)
-            if mid_point.is_feasible:
-                low_s = mid_s
-                boundary_state = mid_state
-                boundary_point = mid_point
-            else:
-                high_s = mid_s
-
-        return low_s, boundary_state, boundary_point
-
-    def _find_power_integration_boundary(
-        self,
-        state: BatteryState,
-        current_a: float,
-        power_w: float,
-        step_s: float,
-    ) -> tuple[float, BatteryState, BatteryPoint]:
-        low_s = 0.0
-        high_s = step_s
-        boundary_state = state
-        boundary_point = self.state_at_power(state=state, power_w=power_w)
-
-        for _ in range(40):
-            mid_s = 0.5 * (low_s + high_s)
-            mid_state = self._advance_state_for_current(state, current_a, mid_s)
-            mid_point = self.state_at_power(state=mid_state, power_w=power_w)
-            if mid_point.is_feasible:
-                low_s = mid_s
-                boundary_state = mid_state
-                boundary_point = mid_point
-            else:
-                high_s = mid_s
-
-        return low_s, boundary_state, boundary_point
-
-    def _find_integration_boundary(
-        self,
-        state: BatteryState,
-        current_a: float,
-        step_s: float,
-        point_function: Callable[[BatteryState], BatteryPoint],
-    ) -> tuple[float, BatteryState, BatteryPoint]:
-        low_s = 0.0
-        high_s = step_s
-        boundary_state = state
-        boundary_point = point_function(state)
-
-        for _ in range(40):
-            mid_s = 0.5 * (low_s + high_s)
-            mid_state = self._advance_state_for_current(state, current_a, mid_s)
-            mid_point = point_function(mid_state)
-            if mid_point.is_feasible:
-                low_s = mid_s
-                boundary_state = mid_state
-                boundary_point = mid_point
-            else:
-                high_s = mid_s
-
-        return low_s, boundary_state, boundary_point
 
     @staticmethod
     def _initial_integration_histories(state: BatteryState, point: BatteryPoint) -> dict[str, list[float]]:
