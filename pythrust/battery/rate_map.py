@@ -225,20 +225,15 @@ class RateMapBattery:
         pack_voltage_v = cell_voltage_v * self.series
         c_rate = cell_current_a / self.rated_current_a
         efficiency = cell_voltage_v / ocv_v if ocv_v > 0.0 else 0.0
-        feasible = True
         reason = None
 
         if cell_current_a > self.max_current_a:
-            feasible = False
             reason = "current_limit"
-        if cell_voltage_v < self.cutoff_voltage_v:
-            feasible = False
+        if reason is None and cell_voltage_v < self.cutoff_voltage_v:
             reason = "voltage_cutoff"
-        if cell_voltage_v > self.charge_voltage_v:
-            feasible = False
+        if reason is None and cell_voltage_v > self.charge_voltage_v:
             reason = "voltage_limit"
-        if state.dod < 0.0 or state.dod > 1.0:
-            feasible = False
+        if reason is None and (state.dod < 0.0 or state.dod > 1.0):
             reason = "state_limit"
 
         return BatteryPoint(
@@ -251,7 +246,7 @@ class RateMapBattery:
             efficiency=float(efficiency),
             ocv_v=float(ocv_v),
             resistance_ohm=float(resistance_ohm),
-            is_feasible=feasible,
+            is_feasible=reason is None,
             infeasible_reason=reason,
         )
 

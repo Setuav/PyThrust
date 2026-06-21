@@ -397,3 +397,47 @@ def test_solver_invalid_efficiency(test_setup):
     # The solver should calculate the point but mark it infeasible
     assert op.is_feasible is False
     assert op.infeasible_reason == "invalid_efficiency"
+
+
+def test_solver_preserves_first_infeasible_reason(test_setup):
+    motor, battery, system, propeller, _ = test_setup
+    low_limit_motor = MotorSpec(
+        kv_rpm_per_v=motor.kv_rpm_per_v,
+        resistance_ohm=motor.resistance_ohm,
+        no_load_current_a=motor.no_load_current_a,
+        current_max_a=0.01,
+    )
+    meta = PropellerMetadata(
+        id="bad_prop",
+        manufacturer="APC",
+        model="SF",
+        diameter_in=10.0,
+        pitch_in=4.7,
+        blade_count=2,
+        data_csv="bad.csv",
+    )
+    data = {
+        6000.0: [
+            PropellerDataPoint(j=0.0, ct=0.12, cp=0.06),
+            PropellerDataPoint(j=0.2, ct=0.15, cp=0.01),
+            PropellerDataPoint(j=0.8, ct=0.02, cp=0.01),
+        ]
+    }
+    bad_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
+    solver = PropulsionSolver()
+    rpm = 5.0 / (0.2 * propeller.diameter_m) * 60.0
+
+    op = solver._build_point(
+        motor=low_limit_motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=bad_entry,
+        rho=1.225,
+        airspeed_mps=5.0,
+        rpm=rpm,
+        throttle=0.8,
+    )
+
+    assert op.is_feasible is False
+    assert op.infeasible_reason == "current_limit"

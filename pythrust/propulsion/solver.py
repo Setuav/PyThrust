@@ -245,21 +245,18 @@ class PropulsionSolver:
         else:
             system_efficiency = 0.0
 
-        feasible = True
         reason = None
         if current_a > motor.current_max_a:
-            feasible = False
             reason = "current_limit"
-        if battery_point is not None and not battery_point.is_feasible:
-            feasible = False
+        if reason is None and battery_point is not None and not battery_point.is_feasible:
             reason = f"battery_{battery_point.infeasible_reason}"
-        if ct < 0.0 or cp < 0.0 or j < 0.0:
-            feasible = False
+        if reason is None and (ct < 0.0 or cp < 0.0 or j < 0.0):
             reason = "invalid_coefficients"
-        if (propeller_efficiency > 1.0001 or propeller_efficiency < 0.0 or
+        if reason is None and (
+            propeller_efficiency > 1.0001 or propeller_efficiency < 0.0 or
             motor_efficiency > 1.0001 or motor_efficiency < 0.0 or
-            system_efficiency > 1.0001 or system_efficiency < 0.0):
-            feasible = False
+            system_efficiency > 1.0001 or system_efficiency < 0.0
+        ):
             reason = "invalid_efficiency"
 
         return OperatingPoint(
@@ -274,7 +271,7 @@ class PropulsionSolver:
             battery_power_w=float(battery_power_w),
             motor_current_a=float(current_a),
             motor_voltage_v=float(motor_voltage_v),
-            is_feasible=feasible,
+            is_feasible=reason is None,
             infeasible_reason=reason,
             propeller_efficiency=float(propeller_efficiency),
             motor_efficiency=float(motor_efficiency),

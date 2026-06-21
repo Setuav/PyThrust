@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import math
 from typing import Optional
 
 
@@ -13,13 +14,13 @@ class BatteryState:
     soc: float = 1.0
 
     def __post_init__(self) -> None:
-        if self.soc < 0.0 or self.soc > 1.0:
+        if not math.isfinite(self.soc) or self.soc < 0.0 or self.soc > 1.0:
             raise ValueError("soc must be between 0 and 1")
 
     @classmethod
     def from_dod(cls, dod: float) -> "BatteryState":
         """Build a battery state from depth of discharge."""
-        if dod < 0.0 or dod > 1.0:
+        if not math.isfinite(dod) or dod < 0.0 or dod > 1.0:
             raise ValueError("dod must be between 0 and 1")
         return cls(soc=1.0 - dod)
 

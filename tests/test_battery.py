@@ -42,6 +42,18 @@ def test_battery_state_dod_round_trip():
     assert state.dod == 0.25
 
 
+@pytest.mark.parametrize("soc", [math.nan, math.inf, -math.inf])
+def test_battery_state_rejects_non_finite_soc(soc):
+    with pytest.raises(ValueError, match="soc"):
+        BatteryState(soc=soc)
+
+
+@pytest.mark.parametrize("dod", [math.nan, math.inf, -math.inf])
+def test_battery_state_rejects_non_finite_dod(dod):
+    with pytest.raises(ValueError, match="dod"):
+        BatteryState.from_dod(dod)
+
+
 def test_rate_map_state_at_current(rate_map_battery):
     state = BatteryState(soc=0.5)
     point = rate_map_battery.state_at_current(state=state, current_a=8.0)
@@ -76,6 +88,16 @@ def test_rate_map_reports_infeasible_power(rate_map_battery):
 
     assert point.is_feasible is False
     assert point.infeasible_reason == "power_limit"
+
+
+def test_rate_map_preserves_first_infeasible_reason(rate_map_battery):
+    state = BatteryState(soc=0.5)
+    point = rate_map_battery.state_at_current(state=state, current_a=1000.0)
+
+    assert point.is_feasible is False
+    assert point.cell_current_a > rate_map_battery.max_current_a
+    assert point.cell_voltage_v < rate_map_battery.cutoff_voltage_v
+    assert point.infeasible_reason == "current_limit"
 
 
 def test_rate_map_step_current(rate_map_battery):
