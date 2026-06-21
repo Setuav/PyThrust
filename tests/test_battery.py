@@ -270,6 +270,121 @@ def test_rate_map_integrate_current_rejects_invalid_inputs(rate_map_battery, kwa
         rate_map_battery.integrate_current(**params)
 
 
+def test_rate_map_integrates_constant_power(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=1.0),
+        power_w=100.0,
+        dt_s=600.0,
+        max_step_s=10.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.final_state.dod > 0.0
+    assert result.time_s[0] == 0.0
+    assert result.time_s[-1] == 600.0
+    assert math.isclose(result.delivered_energy_wh, 100.0 * 600.0 / 3600.0)
+    assert result.consumed_charge_ah > 0.0
+    assert result.current_a[-1] > result.current_a[0]
+    assert result.voltage_v[-1] < result.voltage_v[0]
+
+
+def test_rate_map_integrates_zero_power_without_changing_state(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=0.8),
+        power_w=0.0,
+        dt_s=120.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.time_s == (0.0, 120.0)
+    assert all(math.isclose(dod, 0.2) for dod in result.dod)
+    assert result.consumed_charge_ah == 0.0
+    assert result.delivered_energy_wh == 0.0
+
+
+def test_rate_map_integrates_zero_power_duration_without_extra_sample(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=0.8),
+        power_w=100.0,
+        dt_s=0.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.time_s == (0.0,)
+    assert math.isclose(result.dod[0], 0.2)
+
+
+def test_rate_map_integrates_power_until_voltage_cutoff(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=1.0),
+        power_w=300.0,
+        dt_s=20000.0,
+        max_step_s=20.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "voltage_cutoff"
+    assert result.time_s[-1] < 20000.0
+    assert math.isclose(result.voltage_v[-1] / rate_map_battery.series, rate_map_battery.cutoff_voltage_v)
+    assert math.isclose(result.delivered_energy_wh, 300.0 * result.time_s[-1] / 3600.0)
+
+
+def test_rate_map_integrates_power_until_dod_limit(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=1.0),
+        power_w=120.0,
+        dt_s=20000.0,
+        max_step_s=20.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "dod_limit"
+    assert result.final_state.dod == 1.0
+    assert result.voltage_v[-1] / rate_map_battery.series > rate_map_battery.cutoff_voltage_v
+    assert math.isclose(result.delivered_energy_wh, 120.0 * result.time_s[-1] / 3600.0)
+
+
+def test_rate_map_integrates_power_reports_initial_power_limit(rate_map_battery):
+    result = rate_map_battery.integrate_power(
+        state=BatteryState(soc=0.5),
+        power_w=2000.0,
+        dt_s=60.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "power_limit"
+    assert result.time_s == (0.0,)
+    assert result.consumed_charge_ah == 0.0
+    assert result.delivered_energy_wh == 0.0
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"power_w": -1.0}, "power_w"),
+        ({"power_w": math.nan}, "power_w"),
+        ({"dt_s": -1.0}, "dt_s"),
+        ({"dt_s": math.inf}, "dt_s"),
+        ({"max_step_s": 0.0}, "max_step_s"),
+        ({"max_step_s": math.nan}, "max_step_s"),
+    ],
+)
+def test_rate_map_integrate_power_rejects_invalid_inputs(rate_map_battery, kwargs, message):
+    params = {
+        "state": BatteryState(soc=1.0),
+        "power_w": 100.0,
+        "dt_s": 10.0,
+        "max_step_s": 1.0,
+    }
+    params.update(kwargs)
+
+    with pytest.raises(ValueError, match=message):
+        rate_map_battery.integrate_power(**params)
+
+
 def test_rate_map_loads_from_json(tmp_path):
     path = tmp_path / "battery.json"
     path.write_text(
