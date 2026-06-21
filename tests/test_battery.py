@@ -128,6 +128,27 @@ def test_rate_map_state_at_power(rate_map_battery):
     assert math.isclose(point.power_w, 100.0, rel_tol=1e-12)
 
 
+def test_rate_map_state_at_power_loss(rate_map_battery):
+    state = BatteryState(soc=0.5)
+    point = rate_map_battery.state_at_power_loss(state=state, power_loss_w=7.68)
+
+    internal_loss_w = (
+        point.cell_current_a**2
+        * point.resistance_ohm
+        * rate_map_battery.series
+        * rate_map_battery.parallel
+    )
+
+    assert point.is_feasible is True
+    assert math.isclose(internal_loss_w, 7.68)
+
+
+@pytest.mark.parametrize("power_loss_w", [-1.0, math.nan])
+def test_rate_map_state_at_power_loss_rejects_invalid_inputs(rate_map_battery, power_loss_w):
+    with pytest.raises(ValueError, match="power_loss_w"):
+        rate_map_battery.state_at_power_loss(state=BatteryState(soc=0.5), power_loss_w=power_loss_w)
+
+
 def test_rate_map_reports_infeasible_power(rate_map_battery):
     state = BatteryState(soc=0.5)
     point = rate_map_battery.state_at_power(state=state, power_w=2000.0)
@@ -172,6 +193,25 @@ def test_rate_map_integrates_constant_current(rate_map_battery):
     assert result.time_s[0] == 0.0
     assert result.time_s[-1] == 1800.0
     assert result.dod[-1] == result.final_state.dod
+
+
+def test_rate_map_integrates_constant_c_rate_like_current(rate_map_battery):
+    c_rate = rate_map_battery.integrate_c_rate(
+        state=BatteryState(soc=1.0),
+        c_rate=1.0,
+        dt_s=600.0,
+        max_step_s=60.0,
+    )
+    current = rate_map_battery.integrate_current(
+        state=BatteryState(soc=1.0),
+        current_a=rate_map_battery.rated_current_a * rate_map_battery.parallel,
+        dt_s=600.0,
+        max_step_s=60.0,
+    )
+
+    assert c_rate.final_state == current.final_state
+    assert c_rate.delivered_energy_wh == current.delivered_energy_wh
+    assert c_rate.consumed_charge_ah == current.consumed_charge_ah
 
 
 def test_rate_map_integrates_zero_current_without_changing_state(rate_map_battery):
@@ -383,6 +423,169 @@ def test_rate_map_integrate_power_rejects_invalid_inputs(rate_map_battery, kwarg
 
     with pytest.raises(ValueError, match=message):
         rate_map_battery.integrate_power(**params)
+
+
+def test_rate_map_integrates_constant_voltage(rate_map_battery):
+    result = rate_map_battery.integrate_voltage(
+        state=BatteryState(soc=0.5),
+        voltage_v=14.8,
+        dt_s=120.0,
+        max_step_s=10.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.final_state.dod > 0.5
+    assert all(math.isclose(voltage, 14.8) for voltage in result.voltage_v)
+
+
+def test_rate_map_integrates_constant_load_resistance(rate_map_battery):
+    result = rate_map_battery.integrate_load_resistance(
+        state=BatteryState(soc=1.0),
+        resistance_ohm=1.5,
+        dt_s=120.0,
+        max_step_s=10.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.final_state.dod > 0.0
+    assert result.current_a[-1] > 0.0
+    assert math.isclose(result.power_w[-1], result.voltage_v[-1] * result.current_a[-1])
+
+
+def test_rate_map_integrates_constant_power_loss(rate_map_battery):
+    result = rate_map_battery.integrate_power_loss(
+        state=BatteryState(soc=1.0),
+        power_loss_w=4.0,
+        dt_s=120.0,
+        max_step_s=10.0,
+    )
+
+    point_loss_w = (
+        (result.current_a[-1] / rate_map_battery.parallel) ** 2
+        * rate_map_battery.resistance(result.final_state.dod)
+        * rate_map_battery.series
+        * rate_map_battery.parallel
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.final_state.dod > 0.0
+    assert math.isclose(point_loss_w, 4.0)
+
+
+@pytest.mark.parametrize(
+    ("method_name", "kwargs", "message"),
+    [
+        ("integrate_voltage", {"voltage_v": -1.0, "dt_s": 10.0}, "voltage_v"),
+        ("integrate_load_resistance", {"resistance_ohm": 0.0, "dt_s": 10.0}, "resistance_ohm"),
+        ("integrate_power_loss", {"power_loss_w": math.nan, "dt_s": 10.0}, "power_loss_w"),
+    ],
+)
+def test_rate_map_extended_integrators_reject_invalid_inputs(
+    rate_map_battery,
+    method_name,
+    kwargs,
+    message,
+):
+    method = getattr(rate_map_battery, method_name)
+
+    with pytest.raises(ValueError, match=message):
+        method(state=BatteryState(soc=1.0), **kwargs)
+
+
+def test_rate_map_integrates_current_to_target_dod(rate_map_battery):
+    result = rate_map_battery.integrate_current_to_dod(
+        state=BatteryState(soc=1.0),
+        current_a=8.4,
+        dod_final=0.5,
+        max_step_s=60.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "dod_target"
+    assert math.isclose(result.final_state.dod, 0.5)
+    assert math.isclose(result.time_s[-1], 1800.0)
+    assert math.isclose(result.consumed_charge_ah, 4.2)
+
+
+def test_rate_map_integrates_power_to_target_dod(rate_map_battery):
+    result = rate_map_battery.integrate_power_to_dod(
+        state=BatteryState(soc=1.0),
+        power_w=100.0,
+        dod_final=0.3,
+        max_step_s=10.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "dod_target"
+    assert math.isclose(result.final_state.dod, 0.3, abs_tol=1e-10)
+    assert math.isclose(result.delivered_energy_wh, 100.0 * result.time_s[-1] / 3600.0)
+
+
+@pytest.mark.parametrize("dod_final", [0.0, -0.1, 1.1, math.nan])
+def test_rate_map_integrate_to_dod_rejects_invalid_target(rate_map_battery, dod_final):
+    with pytest.raises(ValueError, match="dod_final"):
+        rate_map_battery.integrate_current_to_dod(
+            state=BatteryState(soc=1.0),
+            current_a=8.4,
+            dod_final=dod_final,
+        )
+
+
+def test_rate_map_solves_dod_at_voltage_power(rate_map_battery):
+    state = BatteryState.from_dod(0.5)
+    point = rate_map_battery.state_at_power(state=state, power_w=100.0)
+
+    dod_from_voltage = rate_map_battery.dod_at_voltage_power(
+        voltage_v=point.terminal_voltage_v,
+        power_w=point.power_w,
+    )
+    dod_from_power = rate_map_battery.dod_at_power_voltage(
+        power_w=point.power_w,
+        voltage_v=point.terminal_voltage_v,
+    )
+
+    assert math.isclose(dod_from_voltage, 0.5, abs_tol=1e-10)
+    assert math.isclose(dod_from_power, 0.5, abs_tol=1e-10)
+
+
+def test_rate_map_integrates_power_profile(rate_map_battery):
+    result = rate_map_battery.integrate_power_profile(
+        state=BatteryState(soc=1.0),
+        power_w=[100.0, 60.0],
+        durations_s=[120.0, 180.0],
+        max_step_s=10.0,
+    )
+    first = rate_map_battery.integrate_power(
+        state=BatteryState(soc=1.0),
+        power_w=100.0,
+        dt_s=120.0,
+        max_step_s=10.0,
+    )
+    second = rate_map_battery.integrate_power(
+        state=first.final_state,
+        power_w=60.0,
+        dt_s=180.0,
+        max_step_s=10.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert math.isclose(result.time_s[-1], 300.0)
+    assert result.final_state == second.final_state
+    assert math.isclose(result.delivered_energy_wh, first.delivered_energy_wh + second.delivered_energy_wh)
+    assert math.isclose(result.consumed_charge_ah, first.consumed_charge_ah + second.consumed_charge_ah)
+
+
+def test_rate_map_integrate_power_profile_rejects_mismatched_segments(rate_map_battery):
+    with pytest.raises(ValueError, match="same length"):
+        rate_map_battery.integrate_power_profile(
+            state=BatteryState(soc=1.0),
+            power_w=[100.0, 60.0],
+            durations_s=[120.0],
+        )
 
 
 def test_rate_map_dod_energy_knockdown(rate_map_battery):
