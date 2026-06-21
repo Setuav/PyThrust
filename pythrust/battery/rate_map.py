@@ -438,6 +438,40 @@ class RateMapBattery:
             stop_reason="duration_complete",
         )
 
+    def energy_knockdown_dod(
+        self,
+        dod_initial: float,
+        dod_final: float,
+        *,
+        samples: int = 1001,
+    ) -> float:
+        """Return reversible energy fraction available over a DOD interval."""
+        self._validate_dod_interval(dod_initial, dod_final)
+        if samples < 2:
+            raise ValueError("samples must be at least 2")
+
+        total_energy_wh = self._reversible_energy_wh(0.0, 1.0, samples=samples)
+        interval_energy_wh = self._reversible_energy_wh(dod_initial, dod_final, samples=samples)
+        return interval_energy_wh / total_energy_wh
+
+    def energy_knockdown_c_rate(
+        self,
+        c_rate: float,
+        *,
+        max_step_s: float = 1.0,
+    ) -> float:
+        """Return usable-energy fraction at C-rate relative to reversible energy."""
+        if not math.isfinite(c_rate) or c_rate < 0.0:
+            raise ValueError("c_rate must be finite and non-negative")
+        if not math.isfinite(max_step_s) or max_step_s <= 0.0:
+            raise ValueError("max_step_s must be finite and positive")
+        if c_rate == 0.0:
+            return 1.0
+
+        energy_wh = self._usable_energy_at_c_rate(c_rate, max_step_s=max_step_s)
+        reversible_energy_wh = self._reversible_energy_wh(0.0, 1.0, samples=1001)
+        return energy_wh / reversible_energy_wh
+
     def _point_from_cell_state(
         self,
         state: BatteryState,
@@ -483,6 +517,23 @@ class RateMapBattery:
     def _trapezoid(left: float, right: float, width: float) -> float:
         return 0.5 * (left + right) * width
 
+    def _reversible_energy_wh(self, dod_initial: float, dod_final: float, *, samples: int) -> float:
+        dod_values = np.linspace(dod_initial, dod_final, samples)
+        ocv_values = np.array([self.ocv(float(dod)) for dod in dod_values])
+        cell_energy_wh = float(np.trapezoid(ocv_values, dod_values)) * self.capacity_ah
+        return cell_energy_wh * self.series * self.parallel
+
+    def _usable_energy_at_c_rate(self, c_rate: float, *, max_step_s: float) -> float:
+        current_a = c_rate * self.rated_current_a * self.parallel
+        duration_s = self.capacity_as / (self.rated_current_a * c_rate) if c_rate > 0.0 else 0.0
+        result = self.integrate_current(
+            state=BatteryState(soc=1.0),
+            current_a=current_a,
+            dt_s=duration_s,
+            max_step_s=max_step_s,
+        )
+        return result.delivered_energy_wh
+
     @staticmethod
     def _validate_integration_inputs(load: float, dt_s: float, max_step_s: float, load_name: str) -> None:
         if not math.isfinite(load) or load < 0.0:
@@ -491,6 +542,15 @@ class RateMapBattery:
             raise ValueError("dt_s must be finite and non-negative")
         if not math.isfinite(max_step_s) or max_step_s <= 0.0:
             raise ValueError("max_step_s must be finite and positive")
+
+    @staticmethod
+    def _validate_dod_interval(dod_initial: float, dod_final: float) -> None:
+        if not math.isfinite(dod_initial) or not math.isfinite(dod_final):
+            raise ValueError("dod values must be finite")
+        if dod_initial < 0.0 or dod_initial > 1.0 or dod_final < 0.0 or dod_final > 1.0:
+            raise ValueError("dod values must be between 0 and 1")
+        if dod_final <= dod_initial:
+            raise ValueError("dod_final must be greater than dod_initial")
 
     def _advance_state_for_current(self, state: BatteryState, current_a: float, dt_s: float) -> BatteryState:
         cell_current_a = current_a / self.parallel

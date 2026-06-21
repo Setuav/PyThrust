@@ -385,6 +385,63 @@ def test_rate_map_integrate_power_rejects_invalid_inputs(rate_map_battery, kwarg
         rate_map_battery.integrate_power(**params)
 
 
+def test_rate_map_dod_energy_knockdown(rate_map_battery):
+    full = rate_map_battery.energy_knockdown_dod(0.0, 1.0)
+    first_half = rate_map_battery.energy_knockdown_dod(0.0, 0.5)
+
+    assert math.isclose(full, 1.0)
+    assert math.isclose(first_half, 2.0 / 3.75)
+
+
+@pytest.mark.parametrize(
+    ("dod_initial", "dod_final"),
+    [
+        (-0.1, 0.5),
+        (0.5, 1.1),
+        (0.5, 0.5),
+        (0.8, 0.2),
+        (math.nan, 0.5),
+    ],
+)
+def test_rate_map_dod_energy_knockdown_rejects_invalid_inputs(
+    rate_map_battery,
+    dod_initial,
+    dod_final,
+):
+    with pytest.raises(ValueError, match="dod"):
+        rate_map_battery.energy_knockdown_dod(dod_initial, dod_final)
+
+
+def test_rate_map_c_rate_energy_knockdown(rate_map_battery):
+    zero_c = rate_map_battery.energy_knockdown_c_rate(0.0)
+    half_c = rate_map_battery.energy_knockdown_c_rate(0.5, max_step_s=60.0)
+    one_c = rate_map_battery.energy_knockdown_c_rate(1.0, max_step_s=60.0)
+
+    assert zero_c == 1.0
+    assert 0.0 < one_c < half_c < zero_c
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"c_rate": -1.0}, "c_rate"),
+        ({"c_rate": math.nan}, "c_rate"),
+        ({"max_step_s": 0.0}, "max_step_s"),
+        ({"max_step_s": math.inf}, "max_step_s"),
+    ],
+)
+def test_rate_map_c_rate_energy_knockdown_rejects_invalid_inputs(
+    rate_map_battery,
+    kwargs,
+    message,
+):
+    params = {"c_rate": 1.0, "max_step_s": 60.0}
+    params.update(kwargs)
+
+    with pytest.raises(ValueError, match=message):
+        rate_map_battery.energy_knockdown_c_rate(**params)
+
+
 def test_rate_map_loads_from_json(tmp_path):
     path = tmp_path / "battery.json"
     path.write_text(
