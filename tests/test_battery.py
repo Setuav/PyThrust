@@ -154,6 +154,122 @@ def test_rate_map_step_current(rate_map_battery):
     assert math.isclose(next_state.soc, 0.5)
 
 
+def test_rate_map_integrates_constant_current(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=1.0),
+        current_a=8.4,
+        dt_s=1800.0,
+        max_step_s=60.0,
+    )
+
+    expected_energy_wh = ((16.464 + 14.696) / 2.0) * 8.4 * 0.5
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert math.isclose(result.final_state.dod, 0.5)
+    assert math.isclose(result.consumed_charge_ah, 4.2)
+    assert math.isclose(result.delivered_energy_wh, expected_energy_wh)
+    assert result.time_s[0] == 0.0
+    assert result.time_s[-1] == 1800.0
+    assert result.dod[-1] == result.final_state.dod
+
+
+def test_rate_map_integrates_zero_current_without_changing_state(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=0.8),
+        current_a=0.0,
+        dt_s=120.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.time_s == (0.0, 120.0)
+    assert all(math.isclose(dod, 0.2) for dod in result.dod)
+    assert result.consumed_charge_ah == 0.0
+    assert result.delivered_energy_wh == 0.0
+
+
+def test_rate_map_integrates_zero_duration_without_extra_sample(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=0.8),
+        current_a=8.0,
+        dt_s=0.0,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert result.time_s == (0.0,)
+    assert math.isclose(result.dod[0], 0.2)
+
+
+def test_rate_map_integrates_current_until_voltage_cutoff(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=1.0),
+        current_a=36.0,
+        dt_s=1200.0,
+        max_step_s=60.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "voltage_cutoff"
+    assert result.time_s[-1] < 1200.0
+    assert math.isclose(result.voltage_v[-1] / rate_map_battery.series, rate_map_battery.cutoff_voltage_v)
+    assert result.final_state.dod < 1.0
+
+
+def test_rate_map_integrates_current_until_dod_limit(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=1.0),
+        current_a=1.0,
+        dt_s=40000.0,
+        max_step_s=5000.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "dod_limit"
+    assert result.final_state.dod == 1.0
+    assert math.isclose(result.time_s[-1], 30240.0)
+    assert math.isclose(result.consumed_charge_ah, 8.4)
+
+
+def test_rate_map_integrates_current_reports_initial_infeasible_state(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState(soc=0.5),
+        current_a=1000.0,
+        dt_s=60.0,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "current_limit"
+    assert result.time_s == (0.0,)
+    assert result.consumed_charge_ah == 0.0
+    assert result.delivered_energy_wh == 0.0
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"current_a": -1.0}, "current_a"),
+        ({"current_a": math.nan}, "current_a"),
+        ({"dt_s": -1.0}, "dt_s"),
+        ({"dt_s": math.inf}, "dt_s"),
+        ({"max_step_s": 0.0}, "max_step_s"),
+        ({"max_step_s": math.nan}, "max_step_s"),
+    ],
+)
+def test_rate_map_integrate_current_rejects_invalid_inputs(rate_map_battery, kwargs, message):
+    params = {
+        "state": BatteryState(soc=1.0),
+        "current_a": 1.0,
+        "dt_s": 10.0,
+        "max_step_s": 1.0,
+    }
+    params.update(kwargs)
+
+    with pytest.raises(ValueError, match=message):
+        rate_map_battery.integrate_current(**params)
+
+
 def test_rate_map_loads_from_json(tmp_path):
     path = tmp_path / "battery.json"
     path.write_text(
