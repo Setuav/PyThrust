@@ -1,7 +1,7 @@
 """Simulate a simple mission with a rate-map battery.
 
 This example couples RateMapBattery to PropulsionSolver. Each segment solves
-the propulsion operating point from the current battery state, then advances
+the propulsion operating point from the current battery state, then integrates
 state of charge using the solved battery current.
 
 Usage::
@@ -83,13 +83,14 @@ def main():
             reason = op.infeasible_reason or "unknown"
             raise SystemExit(f"Mission segment '{segment['name']}' is infeasible: {reason}")
 
-        next_state = battery.step_current(
+        battery_result = battery.integrate_current(
             state=state,
             current_a=op.battery_current_a,
             dt_s=segment["duration_s"],
         )
+        next_state = battery_result.final_state
 
-        total_energy_wh += op.battery_power_w * segment["duration_s"] / 3600.0
+        total_energy_wh += battery_result.delivered_energy_wh
         total_time_s += segment["duration_s"]
 
         print(

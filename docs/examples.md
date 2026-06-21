@@ -82,6 +82,7 @@ It demonstrates:
 | `state_at_voltage` | Current required to hold a requested pack voltage |
 | `state_at_power` | Current and voltage for a requested pack power |
 | `state_at_load_resistance` | Battery behavior under a resistive load |
+| `state_at_power_loss` | Battery behavior for a requested internal loss power |
 | Infeasible power | How the model reports a power limit |
 
 This example is intentionally independent from the propulsion solver. It
@@ -97,8 +98,8 @@ PYTHONPATH=. python examples/rate_map_battery_mission.py
 
 This example couples `RateMapBattery` to `PropulsionSolver` over a short
 segment schedule. Each segment solves the propulsion operating point using the
-current battery state, reports pack current and voltage, then advances state of
-charge from the solved battery current.
+current battery state, reports pack current and voltage, then integrates state
+of charge from the solved battery current.
 
 It demonstrates:
 
@@ -107,7 +108,7 @@ It demonstrates:
 | Load cell data | Use `data/batteries/example_liion_cell.json` with explicit series and parallel counts |
 | Solve segment | Pass `battery_state` into `solve_operating_point(...)` |
 | Read outputs | Inspect `battery_voltage_v` and `battery_current_a` on `OperatingPoint` |
-| Advance state | Use `step_current(...)` to update SoC for the next segment |
+| Advance state | Use `integrate_current(...)` to update SoC and delivered energy for the next segment |
 
 ![Rate-map battery mission simulation](images/rate_map_battery_mission.png)
 

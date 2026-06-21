@@ -1,8 +1,8 @@
 """Evaluate rate-map battery point states.
 
 This example loads a cell-level rate-map dataset, applies a 4S2P pack topology,
-and evaluates the same battery state under current, C-rate, voltage, power, and
-load-resistance requests.
+and evaluates the same battery state under current, C-rate, voltage, power,
+load-resistance, and internal-loss requests.
 
 Usage::
 
@@ -51,6 +51,7 @@ def main():
     print_point("voltage 14 V", battery.state_at_voltage(state=state, voltage_v=14.0))
     print_point("power 180 W", battery.state_at_power(state=state, power_w=180.0))
     print_point("load 1.5 ohm", battery.state_at_load_resistance(state=state, resistance_ohm=1.5))
+    print_point("loss 8 W", battery.state_at_power_loss(state=state, power_loss_w=8.0))
     print_point("too much power", battery.state_at_power(state=state, power_w=3000.0))
 
     next_state = battery.step_current(state=state, current_a=12.0, dt_s=60.0)

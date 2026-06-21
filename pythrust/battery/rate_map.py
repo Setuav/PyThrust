@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Callable, Sequence
 
 import numpy as np
+from scipy.integrate import solve_ivp
 
 from .state import BatteryIntegrationResult, BatteryPoint, BatteryState
 
@@ -234,106 +235,11 @@ class RateMapBattery:
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack current."""
         self._validate_integration_inputs(current_a, dt_s, max_step_s, "current_a")
-
-        elapsed_s = 0.0
-        current_state = state
-        current_point = self.state_at_current(state=current_state, current_a=current_a)
-        histories = self._initial_integration_histories(current_state, current_point)
-        delivered_energy_wh = 0.0
-        consumed_charge_ah = 0.0
-
-        if not current_point.is_feasible:
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=False,
-                stop_reason=current_point.infeasible_reason or "infeasible_state",
-            )
-        if dt_s == 0.0:
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=True,
-                stop_reason="duration_complete",
-            )
-        if current_a == 0.0:
-            self._append_integration_sample(histories, dt_s, current_state, current_point)
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=True,
-                stop_reason="duration_complete",
-            )
-
-        while elapsed_s < dt_s:
-            step_s = min(max_step_s, dt_s - elapsed_s)
-            time_to_dod_limit_s = self._time_to_dod_limit(current_state, current_a)
-            reaches_dod_limit = time_to_dod_limit_s <= step_s
-            if reaches_dod_limit:
-                step_s = time_to_dod_limit_s
-            if step_s <= 0.0:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
-
-            next_state = self._advance_state_for_current(current_state, current_a, step_s)
-            next_point = self.state_at_current(state=next_state, current_a=current_a)
-
-            if not next_point.is_feasible:
-                reason = next_point.infeasible_reason or "infeasible_state"
-                step_s, next_state, next_point = self._find_current_integration_boundary(
-                    current_state,
-                    current_a,
-                    step_s,
-                )
-                delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-                consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-                elapsed_s += step_s
-                self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-                return self._integration_result(
-                    final_state=next_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason=reason,
-                )
-
-            delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-            consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-            elapsed_s += step_s
-            self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-            current_state = next_state
-            current_point = next_point
-
-            if reaches_dod_limit and elapsed_s < dt_s:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
-
-        return self._integration_result(
-            final_state=current_state,
-            histories=histories,
-            delivered_energy_wh=delivered_energy_wh,
-            consumed_charge_ah=consumed_charge_ah,
-            is_feasible=True,
-            stop_reason="duration_complete",
+        return self._integrate_with_point_function(
+            state=state,
+            dt_s=dt_s,
+            max_step_s=max_step_s,
+            point_function=lambda current_state: self.state_at_current(current_state, current_a),
         )
 
     def integrate_c_rate(
@@ -364,107 +270,11 @@ class RateMapBattery:
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack power draw."""
         self._validate_integration_inputs(power_w, dt_s, max_step_s, "power_w")
-
-        elapsed_s = 0.0
-        current_state = state
-        current_point = self.state_at_power(state=current_state, power_w=power_w)
-        histories = self._initial_integration_histories(current_state, current_point)
-        delivered_energy_wh = 0.0
-        consumed_charge_ah = 0.0
-
-        if not current_point.is_feasible:
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=False,
-                stop_reason=current_point.infeasible_reason or "infeasible_state",
-            )
-        if dt_s == 0.0:
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=True,
-                stop_reason="duration_complete",
-            )
-        if power_w == 0.0:
-            self._append_integration_sample(histories, dt_s, current_state, current_point)
-            return self._integration_result(
-                final_state=current_state,
-                histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
-                is_feasible=True,
-                stop_reason="duration_complete",
-            )
-
-        while elapsed_s < dt_s:
-            step_s = min(max_step_s, dt_s - elapsed_s)
-            time_to_dod_limit_s = self._time_to_dod_limit(current_state, current_point.current_a)
-            reaches_dod_limit = time_to_dod_limit_s <= step_s
-            if reaches_dod_limit:
-                step_s = time_to_dod_limit_s
-            if step_s <= 0.0:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
-
-            next_state = self._advance_state_for_current(current_state, current_point.current_a, step_s)
-            next_point = self.state_at_power(state=next_state, power_w=power_w)
-
-            if not next_point.is_feasible:
-                reason = next_point.infeasible_reason or "infeasible_state"
-                step_s, next_state, next_point = self._find_power_integration_boundary(
-                    current_state,
-                    current_point.current_a,
-                    power_w,
-                    step_s,
-                )
-                delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-                consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-                elapsed_s += step_s
-                self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-                return self._integration_result(
-                    final_state=next_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason=reason,
-                )
-
-            delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-            consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-            elapsed_s += step_s
-            self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-            current_state = next_state
-            current_point = next_point
-
-            if reaches_dod_limit and elapsed_s < dt_s:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
-
-        return self._integration_result(
-            final_state=current_state,
-            histories=histories,
-            delivered_energy_wh=delivered_energy_wh,
-            consumed_charge_ah=consumed_charge_ah,
-            is_feasible=True,
-            stop_reason="duration_complete",
+        return self._integrate_with_point_function(
+            state=state,
+            dt_s=dt_s,
+            max_step_s=max_step_s,
+            point_function=lambda current_state: self.state_at_power(current_state, power_w),
         )
 
     def integrate_voltage(
@@ -811,106 +621,89 @@ class RateMapBattery:
         max_step_s: float,
         point_function: Callable[[BatteryState], BatteryPoint],
     ) -> BatteryIntegrationResult:
-        elapsed_s = 0.0
-        current_state = state
-        current_point = point_function(current_state)
-        histories = self._initial_integration_histories(current_state, current_point)
-        delivered_energy_wh = 0.0
-        consumed_charge_ah = 0.0
+        initial_point = point_function(state)
+        histories = self._initial_integration_histories(state, initial_point)
 
-        if not current_point.is_feasible:
+        if not initial_point.is_feasible:
             return self._integration_result(
-                final_state=current_state,
+                final_state=state,
                 histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
+                delivered_energy_wh=0.0,
+                consumed_charge_ah=0.0,
                 is_feasible=False,
-                stop_reason=current_point.infeasible_reason or "infeasible_state",
+                stop_reason=initial_point.infeasible_reason or "infeasible_state",
             )
         if dt_s == 0.0:
             return self._integration_result(
-                final_state=current_state,
+                final_state=state,
                 histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
+                delivered_energy_wh=0.0,
+                consumed_charge_ah=0.0,
                 is_feasible=True,
                 stop_reason="duration_complete",
             )
-        if current_point.current_a == 0.0:
-            self._append_integration_sample(histories, dt_s, current_state, current_point)
+        if initial_point.current_a == 0.0:
+            self._append_integration_sample(histories, dt_s, state, initial_point)
             return self._integration_result(
-                final_state=current_state,
+                final_state=state,
                 histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
+                delivered_energy_wh=0.0,
+                consumed_charge_ah=0.0,
                 is_feasible=True,
                 stop_reason="duration_complete",
             )
 
-        while elapsed_s < dt_s:
-            step_s = min(max_step_s, dt_s - elapsed_s)
-            time_to_dod_limit_s = self._time_to_dod_limit(current_state, current_point.current_a)
-            reaches_dod_limit = time_to_dod_limit_s <= step_s
-            if reaches_dod_limit:
-                step_s = time_to_dod_limit_s
-            if step_s <= 0.0:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
+        def rhs(_time_s: float, values: np.ndarray) -> list[float]:
+            state_at_t = BatteryState.from_dod(self._clip_dod(float(values[0])))
+            point = point_function(state_at_t)
+            return [
+                point.cell_current_a / self.capacity_as,
+                point.power_w / 3600.0,
+                point.current_a / 3600.0,
+            ]
 
-            next_state = self._advance_state_for_current(current_state, current_point.current_a, step_s)
-            next_point = point_function(next_state)
+        events = self._time_integration_events(point_function)
+        solution = solve_ivp(
+            rhs,
+            (0.0, dt_s),
+            [state.dod, 0.0, 0.0],
+            events=events,
+            max_step=max_step_s,
+            rtol=1e-9,
+            atol=1e-11,
+        )
+        if not solution.success:
+            raise RuntimeError(solution.message)
 
-            if not next_point.is_feasible:
-                reason = next_point.infeasible_reason or "infeasible_state"
-                step_s, next_state, next_point = self._find_integration_boundary(
-                    current_state,
-                    current_point.current_a,
-                    step_s,
-                    point_function,
-                )
-                delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-                consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-                elapsed_s += step_s
-                self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-                return self._integration_result(
-                    final_state=next_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason=reason,
-                )
+        histories = {
+            "time_s": [],
+            "dod": [],
+            "voltage_v": [],
+            "current_a": [],
+            "c_rate": [],
+            "power_w": [],
+            "efficiency": [],
+        }
+        for time_s, dod in zip(solution.t, solution.y[0]):
+            sample_state = BatteryState.from_dod(self._clip_dod(float(dod)))
+            sample_point = point_function(sample_state)
+            self._append_integration_sample(histories, float(time_s), sample_state, sample_point)
 
-            delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-            consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-            elapsed_s += step_s
-            self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-            current_state = next_state
-            current_point = next_point
-
-            if reaches_dod_limit and elapsed_s < dt_s:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="dod_limit",
-                )
+        final_state = BatteryState.from_dod(self._clip_dod(float(solution.y[0, -1])))
+        final_point = point_function(final_state)
+        stop_reason = "duration_complete"
+        is_feasible = True
+        if solution.t[-1] < dt_s - 1e-9:
+            stop_reason = self._stop_reason(final_state, final_point)
+            is_feasible = False
 
         return self._integration_result(
-            final_state=current_state,
+            final_state=final_state,
             histories=histories,
-            delivered_energy_wh=delivered_energy_wh,
-            consumed_charge_ah=consumed_charge_ah,
-            is_feasible=True,
-            stop_reason="duration_complete",
+            delivered_energy_wh=float(solution.y[1, -1]),
+            consumed_charge_ah=float(solution.y[2, -1]),
+            is_feasible=is_feasible,
+            stop_reason=stop_reason,
         )
 
     def _integrate_to_dod(
@@ -925,133 +718,81 @@ class RateMapBattery:
         if dod_final <= state.dod:
             raise ValueError("dod_final must be greater than the initial DOD")
 
-        elapsed_s = 0.0
-        current_state = state
-        current_point = point_function(current_state)
-        histories = self._initial_integration_histories(current_state, current_point)
-        delivered_energy_wh = 0.0
-        consumed_charge_ah = 0.0
+        initial_point = point_function(state)
+        histories = self._initial_integration_histories(state, initial_point)
 
-        if not current_point.is_feasible:
+        if not initial_point.is_feasible:
             return self._integration_result(
-                final_state=current_state,
+                final_state=state,
                 histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
+                delivered_energy_wh=0.0,
+                consumed_charge_ah=0.0,
                 is_feasible=False,
-                stop_reason=current_point.infeasible_reason or "infeasible_state",
+                stop_reason=initial_point.infeasible_reason or "infeasible_state",
             )
-        if current_point.current_a <= 0.0:
+        if initial_point.current_a <= 0.0:
             return self._integration_result(
-                final_state=current_state,
+                final_state=state,
                 histories=histories,
-                delivered_energy_wh=delivered_energy_wh,
-                consumed_charge_ah=consumed_charge_ah,
+                delivered_energy_wh=0.0,
+                consumed_charge_ah=0.0,
                 is_feasible=False,
                 stop_reason="zero_discharge_current",
             )
 
-        while current_state.dod < dod_final:
-            cell_current_a = current_point.current_a / self.parallel
-            if cell_current_a <= 0.0:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="zero_discharge_current",
-                )
+        def rhs(dod: float, _values: np.ndarray) -> list[float]:
+            state_at_dod = BatteryState.from_dod(self._clip_dod(dod))
+            point = point_function(state_at_dod)
+            if point.cell_current_a <= 0.0:
+                return [0.0, 0.0, 0.0]
+            return [
+                self.capacity_as / point.cell_current_a,
+                point.terminal_voltage_v * self.capacity_ah * self.parallel,
+                self.capacity_ah * self.parallel,
+            ]
 
-            time_to_target_s = (dod_final - current_state.dod) * self.capacity_as / cell_current_a
-            step_s = min(max_step_s, time_to_target_s)
-            if step_s <= 0.0:
-                final_state = BatteryState.from_dod(dod_final)
-                final_point = point_function(final_state)
-                self._append_integration_sample(histories, elapsed_s, final_state, final_point)
-                return self._integration_result(
-                    final_state=final_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=True,
-                    stop_reason="dod_target",
-                )
+        events = self._dod_integration_events(point_function)
+        solution = solve_ivp(
+            rhs,
+            (state.dod, dod_final),
+            [0.0, 0.0, 0.0],
+            events=events,
+            max_step=min(0.01, dod_final - state.dod),
+            rtol=1e-9,
+            atol=1e-11,
+        )
+        if not solution.success:
+            raise RuntimeError(solution.message)
 
-            reaches_target = time_to_target_s <= max_step_s
-            next_state = BatteryState.from_dod(dod_final) if reaches_target else self._advance_state_for_current(
-                current_state,
-                current_point.current_a,
-                step_s,
-            )
-            next_point = point_function(next_state)
+        histories = {
+            "time_s": [],
+            "dod": [],
+            "voltage_v": [],
+            "current_a": [],
+            "c_rate": [],
+            "power_w": [],
+            "efficiency": [],
+        }
+        for dod, time_s in zip(solution.t, solution.y[0]):
+            sample_state = BatteryState.from_dod(self._clip_dod(float(dod)))
+            sample_point = point_function(sample_state)
+            self._append_integration_sample(histories, float(time_s), sample_state, sample_point)
 
-            if not next_point.is_feasible:
-                reason = next_point.infeasible_reason or "infeasible_state"
-                step_s, next_state, next_point = self._find_integration_boundary(
-                    current_state,
-                    current_point.current_a,
-                    step_s,
-                    point_function,
-                )
-                delivered_energy_wh += self._trapezoid(current_point.power_w, next_point.power_w, step_s) / 3600.0
-                consumed_charge_ah += self._trapezoid(current_point.current_a, next_point.current_a, step_s) / 3600.0
-                elapsed_s += step_s
-                self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-                return self._integration_result(
-                    final_state=next_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason=reason,
-                )
-
-            dod_width = next_state.dod - current_state.dod
-            next_cell_current_a = next_point.current_a / self.parallel
-            if next_cell_current_a <= 0.0:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason="zero_discharge_current",
-                )
-
-            elapsed_s += self._trapezoid(
-                self.capacity_as / cell_current_a,
-                self.capacity_as / next_cell_current_a,
-                dod_width,
-            )
-            delivered_energy_wh += (
-                self._trapezoid(current_point.terminal_voltage_v, next_point.terminal_voltage_v, dod_width)
-                * self.capacity_ah
-                * self.parallel
-            )
-            consumed_charge_ah += self.capacity_ah * self.parallel * dod_width
-            self._append_integration_sample(histories, elapsed_s, next_state, next_point)
-
-            if reaches_target:
-                return self._integration_result(
-                    final_state=next_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=True,
-                    stop_reason="dod_target",
-                )
-
-            current_state = next_state
-            current_point = next_point
+        final_state = BatteryState.from_dod(self._clip_dod(float(solution.t[-1])))
+        final_point = point_function(final_state)
+        stop_reason = "dod_target"
+        is_feasible = True
+        if solution.t[-1] < dod_final - 1e-10:
+            stop_reason = self._stop_reason(final_state, final_point)
+            is_feasible = False
 
         return self._integration_result(
-            final_state=current_state,
+            final_state=final_state,
             histories=histories,
-            delivered_energy_wh=delivered_energy_wh,
-            consumed_charge_ah=consumed_charge_ah,
-            is_feasible=True,
-            stop_reason="dod_target",
+            delivered_energy_wh=float(solution.y[1, -1]),
+            consumed_charge_ah=float(solution.y[2, -1]),
+            is_feasible=is_feasible,
+            stop_reason=stop_reason,
         )
 
     def _solve_dod(self, residual: Callable[[float], float]) -> float:
@@ -1080,6 +821,53 @@ class RateMapBattery:
                 low_value = mid_value
 
         return 0.5 * (low + high)
+
+    def _time_integration_events(
+        self,
+        point_function: Callable[[BatteryState], BatteryPoint],
+    ) -> list[Callable[[float, np.ndarray], float]]:
+        def event(_time_s: float, values: np.ndarray) -> float:
+            dod = float(values[0])
+            state = BatteryState.from_dod(self._clip_dod(dod))
+            point = point_function(state)
+            return self._feasibility_margin(dod, point)
+
+        event.terminal = True  # type: ignore[attr-defined]
+        event.direction = -1  # type: ignore[attr-defined]
+        return [event]
+
+    def _dod_integration_events(
+        self,
+        point_function: Callable[[BatteryState], BatteryPoint],
+    ) -> list[Callable[[float, np.ndarray], float]]:
+        def event(dod: float, _values: np.ndarray) -> float:
+            state = BatteryState.from_dod(self._clip_dod(dod))
+            point = point_function(state)
+            return self._feasibility_margin(dod, point)
+
+        event.terminal = True  # type: ignore[attr-defined]
+        event.direction = -1  # type: ignore[attr-defined]
+        return [event]
+
+    def _feasibility_margin(self, dod: float, point: BatteryPoint) -> float:
+        return min(
+            self.max_current_a - point.cell_current_a,
+            point.cell_voltage_v - self.cutoff_voltage_v,
+            self.charge_voltage_v - point.cell_voltage_v,
+            1.0 - dod,
+        )
+
+    def _stop_reason(self, state: BatteryState, point: BatteryPoint) -> str:
+        if not point.is_feasible:
+            return point.infeasible_reason or "infeasible_state"
+
+        margins = {
+            "current_limit": self.max_current_a - point.cell_current_a,
+            "voltage_cutoff": point.cell_voltage_v - self.cutoff_voltage_v,
+            "voltage_limit": self.charge_voltage_v - point.cell_voltage_v,
+            "dod_limit": 1.0 - state.dod,
+        }
+        return min(margins, key=lambda name: abs(margins[name]))
 
     @staticmethod
     def _validate_integration_inputs(load: float, dt_s: float, max_step_s: float, load_name: str) -> None:

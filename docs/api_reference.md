@@ -36,6 +36,38 @@ or `RateMapBattery` directly.
 `RateMapBattery.from_json(path, series=..., parallel=...)` loads one cell
 dataset and applies the requested pack topology at runtime.
 
+Main `RateMapBattery` point-state helpers:
+
+| Method | Description |
+|---|---|
+| `state_at_current(state, current_a)` | Evaluate voltage, power, C-rate, efficiency, and feasibility at pack current |
+| `state_at_c_rate(state, c_rate)` | Evaluate the state at cell C-rate |
+| `state_at_voltage(state, voltage_v)` | Evaluate current required to hold pack terminal voltage |
+| `state_at_power(state, power_w)` | Evaluate current and voltage at pack terminal power |
+| `state_at_load_resistance(state, resistance_ohm)` | Evaluate a resistive load |
+| `state_at_power_loss(state, power_loss_w)` | Evaluate a requested pack internal loss power |
+
+Main `RateMapBattery` integration helpers:
+
+| Method | Description |
+|---|---|
+| `integrate_current(...)` | Integrate over time at constant pack current |
+| `integrate_c_rate(...)` | Integrate over time at constant cell C-rate |
+| `integrate_power(...)` | Integrate over time at constant pack terminal power |
+| `integrate_voltage(...)` | Integrate over time at constant pack terminal voltage |
+| `integrate_load_resistance(...)` | Integrate over time at constant pack load resistance |
+| `integrate_power_loss(...)` | Integrate over time at constant pack internal loss power |
+| `integrate_current_to_dod(...)` | Integrate constant current until target DOD |
+| `integrate_c_rate_to_dod(...)` | Integrate constant C-rate until target DOD |
+| `integrate_power_to_dod(...)` | Integrate constant power until target DOD |
+| `integrate_voltage_to_dod(...)` | Integrate constant voltage until target DOD |
+| `integrate_load_resistance_to_dod(...)` | Integrate constant load resistance until target DOD |
+| `integrate_power_loss_to_dod(...)` | Integrate constant internal loss power until target DOD |
+| `integrate_power_profile(...)` | Integrate consecutive constant-power mission segments |
+
+`BatteryIntegrationResult` reports final state, sampled histories, delivered
+energy, consumed charge, feasibility, and stop reason.
+
 ## System and Propeller Specs
 
 | Class | Purpose |

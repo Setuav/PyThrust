@@ -1,7 +1,5 @@
 # Battery Model
 
-Status: implemented model note for issue #3.
-
 PyThrust supports a fixed-voltage battery model and a lightweight rate-map
 battery model. The fixed-voltage path is useful for quick propulsion sizing,
 but it hides two effects that matter for electric aircraft performance studies:
@@ -104,6 +102,7 @@ The most important point-state functions are:
 | Specified voltage | `cellStateV` | $I = (OCV - V) / R$ |
 | Specified power | `cellStateP` | solve $P = I(OCV - RI)$ |
 | Specified load resistance | `cellStateR` | $I = OCV / (R + R_{load})$ |
+| Specified internal loss | `cellStatePloss` | solve $P_{loss} = I^2R$ |
 
 For specified power, the current is obtained from the quadratic:
 
@@ -127,6 +126,73 @@ $$
 The implementation reports infeasible states when requested power exceeds this
 limit, when current exceeds the configured limit, or when terminal voltage falls
 below cutoff.
+
+## Integration Modes
+
+`RateMapBattery` can integrate battery state through time or to a target depth
+of discharge. All integration methods return `BatteryIntegrationResult`, which
+contains the final state, sampled histories, delivered energy, consumed charge,
+feasibility, and stop reason.
+
+| PyThrust method | bat-perf analogue | Load held constant |
+|---|---|---|
+| `integrate_current(...)` | `cellIntIt` | Pack current |
+| `integrate_c_rate(...)` | `cellIntCt` | Cell C-rate |
+| `integrate_power(...)` | `cellIntPt` | Pack terminal power |
+| `integrate_voltage(...)` | `cellIntVt` | Pack terminal voltage |
+| `integrate_load_resistance(...)` | `cellIntRt` | Pack load resistance |
+| `integrate_power_loss(...)` | `cellIntPlosst` | Pack internal loss power |
+
+The target-DOD variants stop at a requested final DOD instead of a requested
+duration:
+
+| PyThrust method | bat-perf analogue |
+|---|---|
+| `integrate_current_to_dod(...)` | `cellIntIdod` |
+| `integrate_c_rate_to_dod(...)` | `cellIntCdod` |
+| `integrate_power_to_dod(...)` | `cellIntPdod` |
+| `integrate_voltage_to_dod(...)` | `cellIntVdod` |
+| `integrate_load_resistance_to_dod(...)` | `cellIntRdod` |
+| `integrate_power_loss_to_dod(...)` | `cellIntPlossdod` |
+
+Additional helpers cover inverse and segmented calculations:
+
+| Method | Purpose |
+|---|---|
+| `dod_at_voltage_power(...)` | Find the DOD where a requested voltage and power coincide |
+| `dod_at_power_voltage(...)` | Equivalent solve from the constant-power state equation |
+| `integrate_power_profile(...)` | Integrate consecutive constant-power mission segments |
+
+!!! note "Numerical method"
+    Time and target-DOD integrations use SciPy's adaptive `solve_ivp`
+    integrator with `max_step_s` as the maximum time step for time-domain
+    solves. Stop events detect current limits, voltage limits, cutoff voltage,
+    and DOD exhaustion. This is closer to the `ode45` workflow used by
+    `bat-perf` than fixed-step Coulomb counting.
+
+Example:
+
+```python
+from pythrust.battery import BatteryState, RateMapBattery
+
+battery = RateMapBattery.from_json(
+    "data/batteries/example_liion_cell.json",
+    series=4,
+    parallel=2,
+)
+state = BatteryState(soc=1.0)
+
+result = battery.integrate_power(
+    state=state,
+    power_w=180.0,
+    dt_s=300.0,
+    max_step_s=1.0,
+)
+
+print(result.delivered_energy_wh)
+print(result.final_state.dod)
+print(result.stop_reason)
+```
 
 ## Python API
 
@@ -173,10 +239,11 @@ voltage = battery.terminal_voltage(current_a=current, state=state)
 power = battery.terminal_power(current_a=current, state=state)
 ```
 
-`RateMapBattery` also supports state advancement:
+`RateMapBattery` also supports state advancement and endurance integration:
 
 ```python
 next_state = battery.step_power(power_w=power, dt_s=dt, state=state)
+result = battery.integrate_power(state=state, power_w=power, dt_s=dt)
 ```
 
 For the fixed-voltage model, `terminal_voltage` returns the configured voltage.
@@ -209,11 +276,9 @@ dataset:
 battery = RateMapBattery.from_json(cell_path, series=4, parallel=2)
 ```
 
-The current implementation interpolates `OCV(dod)` and `R(dod)` directly. A
-later calibration utility can derive these curves from manufacturer C-rate
-discharge maps. Manufacturer discharge curves are usually terminal voltage
-under load, so real datasets should document how `OCV(dod)` and `R(dod)` were
-derived.
+The current implementation interpolates `OCV(dod)` and `R(dod)` directly.
+Manufacturer discharge curves are usually terminal voltage under load, so real
+datasets should document how `OCV(dod)` and `R(dod)` were derived.
 
 ## Solver Integration
 
@@ -242,7 +307,7 @@ $$
 This keeps the propeller/motor equilibrium as a one-dimensional root solve
 because current remains a function of RPM through the propeller torque demand.
 
-For mission simulation, evaluate each time step with the current state, compute
+For mission simulation, evaluate each segment with the current state, compute
 pack current/power, then advance DOD:
 
 $$
@@ -251,7 +316,7 @@ $$
 
 ## Implementation Status
 
-The initial implementation includes:
+The implementation includes:
 
 - `pythrust.battery.FixedVoltageBattery`
 - `pythrust.battery.RateMapBattery`
@@ -259,6 +324,10 @@ The initial implementation includes:
 - JSON cell datasets with explicit series and parallel counts at load time
 - Solver integration through `solve_operating_point(..., battery_state=...)`
 - `OperatingPoint` battery outputs for voltage, current, C-rate, and efficiency
+- SciPy-based integration for current, C-rate, power, voltage, resistance, and
+  internal power-loss modes
+- Target-DOD integration, energy knockdown helpers, and power-profile
+  integration
 - A runnable rate-map mission example
 
 ## References
