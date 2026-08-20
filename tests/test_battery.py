@@ -677,7 +677,7 @@ def test_rate_map_loads_from_json(tmp_path):
 
 
 def test_rate_map_loads_example_cell_dataset():
-    path = PROJECT_ROOT / "data" / "batteries" / "example_liion_cell.json"
+    path = PROJECT_ROOT / "pythrust" / "data" / "batteries" / "example_liion_cell.json"
 
     battery = RateMapBattery.from_json(path, series=4, parallel=2)
     point = battery.state_at_current(state=BatteryState(soc=0.5), current_a=8.4)
