@@ -49,4 +49,4 @@ where = ["."]
 include = ["pythrust*"]
 
 [tool.setuptools.package-data]
-pythrust = ["data/**/*.json"]
+pythrust = ["data/**/*.json", "data/**/*.csv"]
