@@ -30,7 +30,7 @@ from pythrust.propulsion.autotune import (
 # Fixtures
 # ---------------------------------------------------------------------------
 
-_DATASET_DIR = Path(__file__).parent.parent / "data" / "propellers" / "apc_202602"
+_DATASET_DIR = Path(__file__).parent.parent / "pythrust" / "data" / "propellers" / "apc_202602"
 _PROP_ID = "APC_13x6.5E"
 
 

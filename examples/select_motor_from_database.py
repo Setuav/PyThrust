@@ -74,7 +74,7 @@ def main():
     print(f"  Min Hover Power     : {opt_power:.2f} W")
 
     # 3. Load motor database and find catalog candidates near the optimum.
-    motors_db_path = Path(__file__).resolve().parent.parent / "data" / "motors"
+    motors_db_path = Path(__file__).resolve().parent.parent / "pythrust" / "data" / "motors"
     db_motors = MotorDatabase()
     if not db_motors.load(motors_db_path):
         print(f"\nError: Motor database not found at {motors_db_path}")

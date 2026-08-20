@@ -1,0 +1,15 @@
+numpy>=1.20
+scipy>=1.7
+
+[dev]
+pytest>=7.0
+
+[docs]
+mkdocs-material>=9.5
+pymdown-extensions>=10.0
+
+[openmdao]
+openmdao>=3.20.0
+
+[plot]
+matplotlib>=3.4
