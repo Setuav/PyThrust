@@ -47,3 +47,6 @@ version = {attr = "pythrust.__version__"}
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pythrust*"]
+
+[tool.setuptools.package-data]
+pythrust = ["data/**/*.json"]
