@@ -57,5 +57,9 @@ jobs:
       run: |
         python -m build
 
+    - name: Verify wheel package contents
+      run: |
+        python -c 'import pathlib, zipfile; wheel = next(pathlib.Path("dist").glob("*.whl")); names = zipfile.ZipFile(wheel).namelist(); assert any(name.startswith("pythrust/battery/") and name.endswith(".py") for name in names), "pythrust.battery package missing from wheel"'
+
     - name: Publish package to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
