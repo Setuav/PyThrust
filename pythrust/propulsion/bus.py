@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Optional, Sequence
+from typing import Callable, Optional, Sequence
 
 from scipy.optimize import brentq
 
@@ -17,6 +17,8 @@ from .solver import PropulsionSolver
 _SAG_SEARCH_FRACTIONS = (0.98, 0.95, 0.9, 0.8, 0.65, 0.5, 0.35, 0.2)
 """Bus voltages, as fractions of the open-circuit voltage, searched for the root."""
 _UNSOLVED = ("no_bracket", "no_convergence")
+_BOUNDARY_TOLERANCE = 1e-6
+"""Relative width to which the voltage where a unit loses its operating point is bisected."""
 
 
 @dataclass(frozen=True)
@@ -31,7 +33,13 @@ class PropulsionUnit:
 
 @dataclass(frozen=True)
 class BusOperatingPoint:
-    """Operating point of every unit on a bus and of the network feeding it."""
+    """Operating point of every unit on a bus and of the network feeding it.
+
+    An infeasible point need not balance the network: when a unit has no
+    operating point, or the network cannot supply the units' current at any
+    voltage they run at, ``voltage_v`` is the voltage the search stopped at and
+    ``network`` is the network at the units' current there.
+    """
 
     voltage_v: float
     current_a: float
@@ -98,41 +106,75 @@ class BusSolver:
             current_a = sum(point.battery_current_a for point in points)
             return voltage_v - (ocv_v - resistance_ohm * current_a)
 
-        # The residual rises with the voltage, so the solution lies between the
-        # open-circuit voltage and the first lower voltage where it turns negative.
-        # The search steps down rather than starting near zero volts, where the
-        # units have no operating point.
+        # The residual rises with the voltage, so the bus voltage lies between the
+        # open-circuit voltage and the first lower voltage where the residual turns
+        # negative. The search steps down from the open-circuit voltage, because the
+        # units lose their operating point as the voltage falls.
         upper_v = ocv_v
-        if residual(unit_points(upper_v), upper_v) <= 0.0:
-            voltage_v = upper_v
-        else:
-            lower_v: Optional[float] = None
-            for fraction in _SAG_SEARCH_FRACTIONS:
-                candidate_v = fraction * ocv_v
+        upper_points = unit_points(upper_v)
+        if _unsolved(upper_points) or residual(upper_points, upper_v) <= 0.0:
+            return _bus_point(network, state, upper_v, upper_points)
+        lower_v: Optional[float] = None
+        for fraction in _SAG_SEARCH_FRACTIONS:
+            candidate_v = fraction * ocv_v
+            points = unit_points(candidate_v)
+            if _unsolved(points):
+                candidate_v = _lowest_solved_voltage(unit_points, candidate_v, upper_v)
                 points = unit_points(candidate_v)
-                if any(point.infeasible_reason in _UNSOLVED for point in points):
-                    break
-                if residual(points, candidate_v) < 0.0:
-                    lower_v = candidate_v
-                    break
-                upper_v = candidate_v
-            if lower_v is None:
-                raise ValueError(
-                    "the battery network cannot hold the units' load: no bus voltage "
-                    f"between {upper_v:.3g} V and its sag limit balances the current"
-                )
-            voltage_v = float(
-                brentq(
-                    lambda v: residual(unit_points(v), v),
-                    lower_v,
-                    upper_v,
-                    xtol=1e-9,
-                    rtol=1e-12,
-                )
+                if residual(points, candidate_v) > 0.0:
+                    return _bus_point(network, state, candidate_v, points, overloaded=True)
+                lower_v = candidate_v
+                break
+            if residual(points, candidate_v) < 0.0:
+                lower_v = candidate_v
+                break
+            upper_v, upper_points = candidate_v, points
+        if lower_v is None:
+            return _bus_point(network, state, upper_v, upper_points, overloaded=True)
+        voltage_v = float(
+            brentq(
+                lambda v: residual(unit_points(v), v),
+                lower_v,
+                upper_v,
+                xtol=1e-9,
+                rtol=1e-12,
             )
-        points = unit_points(voltage_v)
-        current_a = sum(point.battery_current_a for point in points)
-        network_point = network.state_at_current(state, current_a)
+        )
+        return _bus_point(network, state, voltage_v, unit_points(voltage_v))
+
+
+def _unsolved(points: Sequence[OperatingPoint]) -> bool:
+    """Whether a unit has no operating point at the voltage it was solved for."""
+    return any(point.infeasible_reason in _UNSOLVED for point in points)
+
+
+def _lowest_solved_voltage(
+    unit_points: Callable[[float], tuple[OperatingPoint, ...]],
+    unsolved_v: float,
+    solved_v: float,
+) -> float:
+    """Bisect for the lowest voltage above ``unsolved_v`` at which every unit has an operating point."""
+    while solved_v - unsolved_v > _BOUNDARY_TOLERANCE * solved_v:
+        middle_v = 0.5 * (unsolved_v + solved_v)
+        if _unsolved(unit_points(middle_v)):
+            unsolved_v = middle_v
+        else:
+            solved_v = middle_v
+    return solved_v
+
+
+def _bus_point(
+    network: BatteryNetwork,
+    state: NetworkState,
+    voltage_v: float,
+    points: tuple[OperatingPoint, ...],
+    *,
+    overloaded: bool = False,
+) -> BusOperatingPoint:
+    current_a = sum(point.battery_current_a for point in points)
+    network_point = network.state_at_current(state, current_a)
+    reason = "bus_overload" if overloaded else None
+    if reason is None:
         reason = next(
             (
                 f"unit_{index}_{point.infeasible_reason}"
@@ -141,13 +183,13 @@ class BusSolver:
             ),
             None,
         )
-        if reason is None and not network_point.is_feasible:
-            reason = f"network_{network_point.infeasible_reason}"
-        return BusOperatingPoint(
-            voltage_v=float(voltage_v),
-            current_a=float(current_a),
-            units=points,
-            network=network_point,
-            is_feasible=reason is None,
-            infeasible_reason=reason,
-        )
+    if reason is None and not network_point.is_feasible:
+        reason = f"network_{network_point.infeasible_reason}"
+    return BusOperatingPoint(
+        voltage_v=float(voltage_v),
+        current_a=float(current_a),
+        units=points,
+        network=network_point,
+        is_feasible=reason is None,
+        infeasible_reason=reason,
+    )
