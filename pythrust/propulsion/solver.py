@@ -275,6 +275,8 @@ class PropulsionSolver:
         reason = None
         if current_a > motor.current_max_a:
             reason = "current_limit"
+        if reason is None and system.max_current_a is not None and current_a > system.max_current_a:
+            reason = "esc_current_limit"
         if reason is None and battery_point is not None and not battery_point.is_feasible:
             reason = f"battery_{battery_point.infeasible_reason}"
         if reason is None and (ct < 0.0 or cp < 0.0 or j < 0.0):
