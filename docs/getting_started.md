@@ -46,8 +46,7 @@ The core workflow is:
 3. Solve the operating point for an airspeed and throttle.
 
 ```python
-from pathlib import Path
-
+from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
@@ -58,7 +57,7 @@ from pythrust.propulsion import (
 )
 
 prop_db = PropellerDatabase()
-prop_db.load(Path("data/propellers/apc_202602"), strict=False)
+prop_db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
 prop_entry = prop_db.get("APC_13x6.5E")
 
 motor = MotorSpec(

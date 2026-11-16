@@ -273,8 +273,7 @@ An operating point is marked as infeasible when one of these checks fails:
 Here is a complete example showing how to load a propeller dataset, define specifications, and solve for an operating point:
 
 ```python
-from pathlib import Path
-
+from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
@@ -285,7 +284,7 @@ from pythrust.propulsion import (
 )
 
 db = PropellerDatabase()
-db.load(Path("data/propellers/apc_202602"), strict=False)
+db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
 prop_entry = db.get("APC_13x6.5E")
 
 motor = MotorSpec(
@@ -329,10 +328,11 @@ For a rate-map battery, load a cell dataset, create an explicit battery state,
 and pass that state into the solver:
 
 ```python
+from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 
 battery = RateMapBattery.from_json(
-    "data/batteries/example_liion_cell.json",
+    dataset_dir() / "batteries" / "example_liion_cell.json",
     series=4,
     parallel=2,
 )

@@ -62,11 +62,11 @@ The motor database is a directory of individual JSON files representing brushles
 
 ### Loading Propeller Database
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.propellers import PropellerDatabase
 
 db = PropellerDatabase()
-db.load(Path("data/propellers/apc_202602"))
+db.load(dataset_dir() / "propellers" / "apc_202602")
 
 # Get propeller by ID
 prop_entry = db.get("APC_13x6.5E")
@@ -74,11 +74,11 @@ prop_entry = db.get("APC_13x6.5E")
 
 ### Loading Motor Database
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.motors import MotorDatabase
 
 db = MotorDatabase()
-db.load(Path("data/motors"))
+db.load(dataset_dir() / "motors")
 
 # Get motor by ID
 motor_entry = db.get("SunnySky_X2826_KV550")

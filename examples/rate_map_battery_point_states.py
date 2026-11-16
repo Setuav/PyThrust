@@ -16,6 +16,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 
 
@@ -34,7 +35,7 @@ def print_point(label, point):
 
 
 def main():
-    dataset = Path("data/batteries/example_liion_cell.json")
+    dataset = dataset_dir() / "batteries" / "example_liion_cell.json"
     battery = RateMapBattery.from_json(dataset, series=4, parallel=2)
     state = BatteryState(soc=0.60)
 

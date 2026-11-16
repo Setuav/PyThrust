@@ -122,11 +122,11 @@ dynamic battery models such as `RateMapBattery`.
 `PropellerDatabase` loads JSON metadata and CSV performance tables:
 
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.propellers import PropellerDatabase
 
 db = PropellerDatabase()
-db.load(Path("data/propellers/apc_202602"), strict=False)
+db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
 entry = db.get("APC_13x6.5E")
 ct, cp = entry.get_coefficients(rpm=5000.0, advance_ratio=0.4)
 ```
@@ -147,11 +147,11 @@ Main helpers:
 `MotorDatabase` loads brushless motor JSON files and converts catalog entries into solver specs:
 
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.motors import MotorDatabase
 
 db = MotorDatabase()
-db.load(Path("data/motors"))
+db.load(dataset_dir() / "motors")
 motor_entry = db.get("SunnySky_X2826_KV550")
 motor = motor_entry.to_spec()
 ```

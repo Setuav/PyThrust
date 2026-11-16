@@ -224,10 +224,11 @@ would need more than a full charge stops with `stop_reason == "dod_limit"`.
 Example:
 
 ```python
+from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 
 battery = RateMapBattery.from_json(
-    "data/batteries/example_liion_cell.json",
+    dataset_dir() / "batteries" / "example_liion_cell.json",
     series=4,
     parallel=2,
 )
@@ -260,11 +261,12 @@ Use explicit names for the two battery fidelities:
 === "Rate map"
 
     ```python
+    from pythrust import dataset_dir
     from pythrust.battery import BatteryState, RateMapBattery
 
     state = BatteryState(soc=1.0)
     battery = RateMapBattery.from_json(
-        "data/batteries/example_liion_cell.json",
+        dataset_dir() / "batteries" / "example_liion_cell.json",
         series=4,
         parallel=2,
     )
