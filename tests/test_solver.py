@@ -292,6 +292,36 @@ def test_solver_no_bracket(test_setup):
     assert op.infeasible_reason == "no_bracket"
 
 
+def test_solver_brackets_above_windmilling_data(test_setup):
+    """Propeller data ending in the windmilling region must not hide a valid root."""
+    motor, battery, system, propeller, _ = test_setup
+    points = [
+        PropellerDataPoint(j=0.0, ct=0.11, cp=0.055),
+        PropellerDataPoint(j=0.4, ct=0.08, cp=0.045),
+        PropellerDataPoint(j=0.8, ct=0.02, cp=0.02),
+        PropellerDataPoint(j=1.0, ct=-0.02, cp=-0.005),
+    ]
+    meta = PropellerMetadata("windmill", "A", "B", 10.0, 4.7, 2, "csv")
+    prop_entry = PropellerEntry(
+        metadata=meta, data_by_rpm={1000.0: list(points), 8000.0: list(points)}
+    )
+
+    op = PropulsionSolver().solve_operating_point(
+        motor=motor,
+        battery=battery,
+        system=system,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=1.225,
+        airspeed_mps=20.0,
+        throttle=1.0,
+    )
+
+    assert op.is_feasible is True
+    assert 0.0 < op.advance_ratio < 0.8
+    assert op.thrust_n > 0.0
+
+
 def test_estimate_j_max(test_setup):
     _, _, _, _, prop_entry = test_setup
     

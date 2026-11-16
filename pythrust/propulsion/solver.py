@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Optional
 
@@ -115,6 +116,9 @@ class PropulsionSolver:
         rpm_max = max(rpm_max, rpm_min * 1.2) * self.config.rpm_max_margin
 
         g_min = g(rpm_min)
+        if not math.isfinite(g_min):
+            rpm_min = self._lowest_valid_rpm(g, rpm_min, rpm_max)
+            g_min = g(rpm_min)
         g_max = g(rpm_max)
 
         if not (math.isfinite(g_min) and math.isfinite(g_max)) or g_min * g_max > 0:
@@ -168,6 +172,29 @@ class PropulsionSolver:
             battery_state=battery_state,
             throttle=throttle,
         )
+
+    @staticmethod
+    def _lowest_valid_rpm(g: Callable[[float], float], rpm_low: float, rpm_high: float) -> float:
+        """Return the lowest RPM in ``[rpm_low, rpm_high]`` where ``g`` is finite.
+
+        The bracket starts at the propeller data's largest advance ratio, where the
+        coefficients can already describe a windmilling propeller. The coefficients
+        become valid as the RPM rises, so the search moves the bracket's lower end
+        onto the first valid RPM. ``g(rpm_low)`` is not finite; the method returns
+        ``rpm_high`` when no sample is valid.
+        """
+        samples = [rpm_low + (rpm_high - rpm_low) * index / 32 for index in range(33)]
+        valid = next((index for index, rpm in enumerate(samples) if math.isfinite(g(rpm))), None)
+        if valid is None:
+            return rpm_high
+        invalid_rpm, valid_rpm = samples[valid - 1], samples[valid]
+        for _ in range(40):
+            mid = 0.5 * (invalid_rpm + valid_rpm)
+            if math.isfinite(g(mid)):
+                valid_rpm = mid
+            else:
+                invalid_rpm = mid
+        return valid_rpm
 
     def _evaluate_state(
         self,
