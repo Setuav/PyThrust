@@ -192,6 +192,28 @@ Additional helpers cover inverse and segmented calculations:
 | `dod_at_power_voltage(...)` | Equivalent solve from the constant-power state equation |
 | `integrate_power_profile(...)` | Integrate consecutive constant-power mission segments |
 
+### Reverse integration
+
+Every time-domain integrator and `integrate_power_profile(...)` accept
+`reverse=True`, the analogue of `bat-perf`'s `rev = -1`. The given state is the
+state at the end of the interval and the pack is integrated backward from it,
+so a mission can be planned from a required landing reserve:
+
+```python
+landing = BatteryState(soc=0.2)
+mission = battery.integrate_power_profile(
+    state=landing,
+    power_w=[400.0, 180.0, 250.0],
+    durations_s=[60.0, 1200.0, 120.0],
+    reverse=True,
+)
+print(mission.initial_state.soc)  # charge needed at take-off
+```
+
+Histories always run forward in time: `final_state` is the given state and
+`initial_state` is the state the interval starts from. A reverse integration that
+would need more than a full charge stops with `stop_reason == "dod_limit"`.
+
 !!! note "Numerical method"
     Time and target-DOD integrations use SciPy's adaptive `solve_ivp`
     integrator with `max_step_s` as the maximum time step for time-domain

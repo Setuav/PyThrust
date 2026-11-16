@@ -21,6 +21,11 @@ class RateMapBattery:
     ``resistance_factor`` and ``capacity_factor`` describe pack ageing: they scale
     the cell resistance curve (power fade) and the cell charge capacity (capacity
     fade). The rated 1C current stays the dataset's nominal capacity.
+
+    Time-domain integrators accept ``reverse=True``: the given state is then the
+    state at the end of the interval and the pack is integrated backward from it.
+    Histories always run forward in time, ``final_state`` is the given state and
+    ``initial_state`` is the state the interval starts from.
     """
 
     name: str
@@ -247,6 +252,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack current."""
         self._validate_integration_inputs(current_a, dt_s, max_step_s, "current_a")
@@ -254,6 +260,7 @@ class RateMapBattery:
             state=state,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
             point_function=lambda current_state: self.state_at_current(current_state, current_a),
         )
 
@@ -264,6 +271,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant cell C-rate."""
         if not math.isfinite(c_rate) or c_rate < 0.0:
@@ -273,6 +281,7 @@ class RateMapBattery:
             current_a=c_rate * self.rated_current_a * self.parallel,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
         )
 
     def integrate_power(
@@ -282,6 +291,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack power draw."""
         self._validate_integration_inputs(power_w, dt_s, max_step_s, "power_w")
@@ -289,6 +299,7 @@ class RateMapBattery:
             state=state,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
             point_function=lambda current_state: self.state_at_power(current_state, power_w),
         )
 
@@ -299,6 +310,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack terminal voltage."""
         self._validate_integration_inputs(voltage_v, dt_s, max_step_s, "voltage_v")
@@ -306,6 +318,7 @@ class RateMapBattery:
             state=state,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
             point_function=lambda current_state: self.state_at_voltage(current_state, voltage_v),
         )
 
@@ -316,6 +329,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack load resistance."""
         if not math.isfinite(resistance_ohm) or resistance_ohm <= 0.0:
@@ -325,6 +339,7 @@ class RateMapBattery:
             state=state,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
             point_function=lambda current_state: self.state_at_load_resistance(current_state, resistance_ohm),
         )
 
@@ -335,6 +350,7 @@ class RateMapBattery:
         dt_s: float,
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         """Integrate battery state under constant pack internal power loss."""
         self._validate_integration_inputs(power_loss_w, dt_s, max_step_s, "power_loss_w")
@@ -342,6 +358,7 @@ class RateMapBattery:
             state=state,
             dt_s=dt_s,
             max_step_s=max_step_s,
+            reverse=reverse,
             point_function=lambda current_state: self.state_at_power_loss(current_state, power_loss_w),
         )
 
@@ -473,8 +490,14 @@ class RateMapBattery:
         durations_s: Sequence[float],
         *,
         max_step_s: float = 1.0,
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
-        """Integrate consecutive constant-power segments into one time history."""
+        """Integrate consecutive constant-power segments into one time history.
+
+        With ``reverse=True``, ``state`` is the state at the end of the profile and
+        the segments are integrated backward from it; the history still runs
+        forward in time and ``initial_state`` is the state the profile starts from.
+        """
         if len(power_w) != len(durations_s):
             raise ValueError("power_w and durations_s must have the same length")
         if len(power_w) == 0:
@@ -490,47 +513,35 @@ class RateMapBattery:
         if not math.isfinite(max_step_s) or max_step_s <= 0.0:
             raise ValueError("max_step_s must be finite and positive")
 
-        histories: dict[str, list[float]] | None = None
+        segments = list(zip(power_w, durations_s))
+        results: list[BatteryIntegrationResult] = []
         current_state = state
-        elapsed_s = 0.0
-        delivered_energy_wh = 0.0
-        consumed_charge_ah = 0.0
-
-        for power, duration_s in zip(power_w, durations_s):
+        for power, duration_s in reversed(segments) if reverse else segments:
             result = self.integrate_power(
                 state=current_state,
                 power_w=power,
                 dt_s=duration_s,
                 max_step_s=max_step_s,
+                reverse=reverse,
             )
-            if histories is None:
-                histories = {name: list(values) for name, values in self._histories_from_result(result).items()}
-            else:
-                self._extend_profile_histories(histories, result, elapsed_s)
-
-            elapsed_s = histories["time_s"][-1]
-            delivered_energy_wh += result.delivered_energy_wh
-            consumed_charge_ah += result.consumed_charge_ah
-            current_state = result.final_state
+            results.append(result)
+            current_state = result.initial_state if reverse else result.final_state
             if not result.is_feasible:
-                return self._integration_result(
-                    final_state=current_state,
-                    histories=histories,
-                    delivered_energy_wh=delivered_energy_wh,
-                    consumed_charge_ah=consumed_charge_ah,
-                    is_feasible=False,
-                    stop_reason=result.stop_reason,
-                )
+                break
+        if reverse:
+            results.reverse()
 
-        if histories is None:
-            raise RuntimeError("integration profile did not produce histories")
+        histories = {name: list(values) for name, values in self._histories_from_result(results[0]).items()}
+        for result in results[1:]:
+            self._extend_profile_histories(histories, result, histories["time_s"][-1])
+        infeasible = next((result for result in results if not result.is_feasible), None)
         return self._integration_result(
-            final_state=current_state,
+            final_state=results[-1].final_state,
             histories=histories,
-            delivered_energy_wh=delivered_energy_wh,
-            consumed_charge_ah=consumed_charge_ah,
-            is_feasible=True,
-            stop_reason="duration_complete",
+            delivered_energy_wh=sum(result.delivered_energy_wh for result in results),
+            consumed_charge_ah=sum(result.consumed_charge_ah for result in results),
+            is_feasible=infeasible is None,
+            stop_reason=infeasible.stop_reason if infeasible is not None else "duration_complete",
         )
 
     def energy_knockdown_dod(
@@ -636,6 +647,7 @@ class RateMapBattery:
         dt_s: float,
         max_step_s: float,
         point_function: Callable[[BatteryState], BatteryPoint],
+        reverse: bool = False,
     ) -> BatteryIntegrationResult:
         initial_point = point_function(state)
         histories = self._initial_integration_histories(state, initial_point)
@@ -669,16 +681,18 @@ class RateMapBattery:
                 stop_reason="duration_complete",
             )
 
+        dod_direction = -1.0 if reverse else 1.0
+
         def rhs(_time_s: float, values: np.ndarray) -> list[float]:
             state_at_t = BatteryState.from_dod(self._clip_dod(float(values[0])))
             point = point_function(state_at_t)
             return [
-                point.cell_current_a / self.capacity_as,
+                dod_direction * point.cell_current_a / self.capacity_as,
                 point.power_w / 3600.0,
                 point.current_a / 3600.0,
             ]
 
-        events = self._time_integration_events(point_function)
+        events = self._time_integration_events(point_function, reverse=reverse)
         solution = solve_ivp(
             rhs,
             (0.0, dt_s),
@@ -705,13 +719,18 @@ class RateMapBattery:
             sample_point = point_function(sample_state)
             self._append_integration_sample(histories, float(time_s), sample_state, sample_point)
 
-        final_state = BatteryState.from_dod(self._clip_dod(float(solution.y[0, -1])))
-        final_point = point_function(final_state)
+        last_state = BatteryState.from_dod(self._clip_dod(float(solution.y[0, -1])))
+        last_point = point_function(last_state)
         stop_reason = "duration_complete"
         is_feasible = True
         if solution.t[-1] < dt_s - 1e-9:
-            stop_reason = self._stop_reason(final_state, final_point)
+            stop_reason = self._stop_reason(last_state, last_point, reverse=reverse)
             is_feasible = False
+
+        final_state = last_state
+        if reverse:
+            final_state = state
+            histories = self._reverse_histories(histories)
 
         return self._integration_result(
             final_state=final_state,
@@ -844,12 +863,14 @@ class RateMapBattery:
     def _time_integration_events(
         self,
         point_function: Callable[[BatteryState], BatteryPoint],
+        *,
+        reverse: bool,
     ) -> list[Callable[[float, np.ndarray], float]]:
         def event(_time_s: float, values: np.ndarray) -> float:
             dod = float(values[0])
             state = BatteryState.from_dod(self._clip_dod(dod))
             point = point_function(state)
-            return self._feasibility_margin(dod, point)
+            return self._feasibility_margin(dod, point, reverse=reverse)
 
         event.terminal = True  # type: ignore[attr-defined]
         event.direction = -1  # type: ignore[attr-defined]
@@ -868,15 +889,15 @@ class RateMapBattery:
         event.direction = -1  # type: ignore[attr-defined]
         return [event]
 
-    def _feasibility_margin(self, dod: float, point: BatteryPoint) -> float:
+    def _feasibility_margin(self, dod: float, point: BatteryPoint, *, reverse: bool = False) -> float:
         return min(
             self.max_current_a - point.cell_current_a,
             point.cell_voltage_v - self.cutoff_voltage_v,
             self.charge_voltage_v - point.cell_voltage_v,
-            1.0 - dod,
+            dod if reverse else 1.0 - dod,
         )
 
-    def _stop_reason(self, state: BatteryState, point: BatteryPoint) -> str:
+    def _stop_reason(self, state: BatteryState, point: BatteryPoint, *, reverse: bool = False) -> str:
         if not point.is_feasible:
             return point.infeasible_reason or "infeasible_state"
 
@@ -884,7 +905,7 @@ class RateMapBattery:
             "current_limit": self.max_current_a - point.cell_current_a,
             "voltage_cutoff": point.cell_voltage_v - self.cutoff_voltage_v,
             "voltage_limit": self.charge_voltage_v - point.cell_voltage_v,
-            "dod_limit": 1.0 - state.dod,
+            "dod_limit": state.dod if reverse else 1.0 - state.dod,
         }
         return min(margins, key=lambda name: margins[name])
 
@@ -956,6 +977,14 @@ class RateMapBattery:
             is_feasible=is_feasible,
             stop_reason=stop_reason,
         )
+
+    @staticmethod
+    def _reverse_histories(histories: dict[str, list[float]]) -> dict[str, list[float]]:
+        """Reorder histories integrated backward in time so they run forward."""
+        end_time_s = histories["time_s"][-1]
+        reordered = {name: list(reversed(values)) for name, values in histories.items()}
+        reordered["time_s"] = [end_time_s - time_s for time_s in reordered["time_s"]]
+        return reordered
 
     @staticmethod
     def _histories_from_result(result: BatteryIntegrationResult) -> dict[str, Sequence[float]]:

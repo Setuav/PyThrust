@@ -645,6 +645,81 @@ def test_rate_map_c_rate_energy_knockdown_rejects_invalid_inputs(
         rate_map_battery.energy_knockdown_c_rate(**params)
 
 
+def test_rate_map_reverse_current_integration_finds_start_state(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState.from_dod(0.5),
+        current_a=8.4,
+        dt_s=900.0,
+        max_step_s=10.0,
+        reverse=True,
+    )
+
+    assert result.is_feasible is True
+    assert result.stop_reason == "duration_complete"
+    assert math.isclose(result.final_state.dod, 0.5)
+    assert math.isclose(result.initial_state.dod, 0.25, abs_tol=1e-9)
+    assert result.time_s[0] == 0.0
+    assert math.isclose(result.time_s[-1], 900.0)
+    assert all(b > a for a, b in zip(result.time_s, result.time_s[1:]))
+    assert all(b > a for a, b in zip(result.dod, result.dod[1:]))
+    assert math.isclose(result.consumed_charge_ah, 8.4 * 900.0 / 3600.0)
+
+
+def test_rate_map_reverse_power_integration_matches_forward(rate_map_battery):
+    end_state = BatteryState.from_dod(0.6)
+    backward = rate_map_battery.integrate_power(
+        state=end_state, power_w=200.0, dt_s=1200.0, max_step_s=5.0, reverse=True
+    )
+    forward = rate_map_battery.integrate_power(
+        state=backward.initial_state, power_w=200.0, dt_s=1200.0, max_step_s=5.0
+    )
+
+    assert backward.is_feasible is True
+    assert math.isclose(forward.final_state.dod, end_state.dod, abs_tol=1e-6)
+    assert math.isclose(forward.delivered_energy_wh, backward.delivered_energy_wh, rel_tol=1e-6)
+
+
+def test_rate_map_reverse_integration_stops_at_full_charge(rate_map_battery):
+    result = rate_map_battery.integrate_current(
+        state=BatteryState.from_dod(0.1),
+        current_a=8.4,
+        dt_s=900.0,
+        max_step_s=10.0,
+        reverse=True,
+    )
+
+    assert result.is_feasible is False
+    assert result.stop_reason == "dod_limit"
+    assert math.isclose(result.initial_state.dod, 0.0, abs_tol=1e-9)
+    assert math.isclose(result.final_state.dod, 0.1)
+    assert math.isclose(result.time_s[-1], 0.1 * 3600.0, rel_tol=1e-6)
+
+
+def test_rate_map_reverse_power_profile_ends_at_given_state(rate_map_battery):
+    end_state = BatteryState.from_dod(0.7)
+    backward = rate_map_battery.integrate_power_profile(
+        state=end_state,
+        power_w=[250.0, 120.0],
+        durations_s=[300.0, 600.0],
+        max_step_s=5.0,
+        reverse=True,
+    )
+    forward = rate_map_battery.integrate_power_profile(
+        state=backward.initial_state,
+        power_w=[250.0, 120.0],
+        durations_s=[300.0, 600.0],
+        max_step_s=5.0,
+    )
+
+    assert backward.is_feasible is True
+    assert backward.final_state is end_state
+    assert math.isclose(backward.time_s[-1], 900.0)
+    assert all(b >= a for a, b in zip(backward.time_s, backward.time_s[1:]))
+    assert math.isclose(forward.final_state.dod, end_state.dod, abs_tol=1e-6)
+    assert math.isclose(backward.power_w[0], 250.0, rel_tol=1e-9)
+    assert math.isclose(backward.power_w[-1], 120.0, rel_tol=1e-9)
+
+
 def _aged(battery, *, resistance_factor=1.0, capacity_factor=1.0):
     return RateMapBattery(
         name=battery.name,
