@@ -6,9 +6,9 @@ from pathlib import Path
 import pytest
 import openmdao.api as om
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     PropulsionSolver,
@@ -39,7 +39,7 @@ def test_propulsion_component_runs(prop_entry):
         no_load_current_a=1.3,
         current_max_a=65.0,
     )
-    battery = BatterySpec(voltage_v=14.8)
+    battery = FixedVoltageBattery(voltage_v=14.8)
     system = SystemSpec(resistance_ohm=0.095)
     propeller = PropellerSpec(diameter_m=0.3302)
     

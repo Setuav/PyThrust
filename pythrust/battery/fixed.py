@@ -9,10 +9,7 @@ from .state import BatteryState
 
 @dataclass(frozen=True)
 class FixedVoltageBattery:
-    """Battery model with constant pack voltage.
-
-    This is the historical PyThrust battery model under a more explicit name.
-    """
+    """Battery model with constant pack voltage and scalar discharge efficiency."""
 
     voltage_v: float
     discharge_efficiency: float = 1.0

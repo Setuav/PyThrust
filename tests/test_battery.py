@@ -10,7 +10,6 @@ from pythrust.battery import (
     FixedVoltageBattery,
     RateMapBattery,
 )
-from pythrust.propulsion.models import BatterySpec
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -32,10 +31,9 @@ def rate_map_battery():
     )
 
 
-def test_fixed_voltage_battery_replaces_battery_spec():
+def test_fixed_voltage_battery_terminal_values():
     battery = FixedVoltageBattery(voltage_v=14.8, discharge_efficiency=0.95)
 
-    assert BatterySpec is FixedVoltageBattery
     assert battery.terminal_voltage(current_a=10.0) == 14.8
     assert math.isclose(battery.terminal_power(current_a=10.0), 14.8 * 10.0 / 0.95)
 

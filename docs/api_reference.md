@@ -24,14 +24,13 @@ PyThrust exposes battery models from `pythrust.battery`:
 
 | Class | Purpose |
 |---|---|
-| `FixedVoltageBattery` | Historical fixed pack-voltage model with scalar discharge efficiency |
+| `FixedVoltageBattery` | Fixed pack-voltage model with scalar discharge efficiency |
 | `RateMapBattery` | Equivalent-circuit model using cell OCV and resistance curves |
 | `BatteryState` | State of charge/depth of discharge passed to dynamic battery models |
 | `BatteryPoint` | Evaluated terminal voltage, current, power, C-rate, efficiency, and feasibility |
 
-`BatterySpec` remains available from `pythrust.propulsion` as a compatibility
-alias for `FixedVoltageBattery`. New code should import `FixedVoltageBattery`
-or `RateMapBattery` directly.
+`Battery` is the union of the two models and is the battery type accepted by
+`PropulsionSolver`.
 
 `RateMapBattery.from_json(path, series=..., parallel=...)` loads one cell
 dataset and applies the requested pack topology at runtime.

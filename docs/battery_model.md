@@ -273,16 +273,6 @@ Use explicit names for the two battery fidelities:
 !!! tip "Choosing a battery model"
     Use `FixedVoltageBattery` for early propulsion sizing and simple examples. Use `RateMapBattery` when load-dependent voltage, C-rate limits, or state of charge affect the result.
 
-`BatterySpec` is too general once multiple battery models exist. It remains as
-a compatibility alias:
-
-```python
-BatterySpec = FixedVoltageBattery
-```
-
-The alias keeps old code working during the transition, but new code and
-documentation should use `FixedVoltageBattery`.
-
 The common battery behavior is intentionally small:
 
 ```python

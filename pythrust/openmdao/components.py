@@ -5,9 +5,9 @@ from __future__ import annotations
 import math
 import openmdao.api as om
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers.database import PropellerEntry
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     PropulsionSolver,
@@ -55,14 +55,14 @@ class PropulsionComponent(om.ExplicitComponent):
         # Declare derivatives using finite-difference
         self.declare_partials(of='*', wrt='*', method='fd')
 
-    def _get_specs(self, inputs: om.Vector) -> tuple[MotorSpec, BatterySpec, SystemSpec, PropellerSpec]:
+    def _get_specs(self, inputs: om.Vector) -> tuple[MotorSpec, FixedVoltageBattery, SystemSpec, PropellerSpec]:
         motor = MotorSpec(
             kv_rpm_per_v=float(inputs['kv_rpm_per_v'][0]),
             resistance_ohm=float(inputs['resistance_ohm'][0]),
             no_load_current_a=float(inputs['no_load_current_a'][0]),
             current_max_a=float(inputs['current_max_a'][0]),
         )
-        battery = BatterySpec(
+        battery = FixedVoltageBattery(
             voltage_v=float(inputs['voltage_v'][0]),
             discharge_efficiency=float(inputs['discharge_efficiency'][0]),
         )
