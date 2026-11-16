@@ -28,6 +28,8 @@ PyThrust exposes battery models from `pythrust.battery`:
 | `RateMapBattery` | Equivalent-circuit model using cell OCV and resistance curves |
 | `BatteryState` | State of charge/depth of discharge passed to dynamic battery models |
 | `BatteryPoint` | Evaluated terminal voltage, current, power, C-rate, efficiency, and feasibility |
+| `BatteryNetwork` | Rate-map packs wired as parallel strings of series-connected packs |
+| `NetworkState` / `NetworkPoint` | Per-pack states and the network's terminal and per-pack electrical state |
 
 `Battery` is the union of the two models and is the battery type accepted by
 `PropulsionSolver`.
@@ -71,7 +73,7 @@ energy, consumed charge, feasibility, and stop reason.
 
 | Class | Purpose |
 |---|---|
-| `SystemSpec` | Lumped electrical resistance for battery, ESC, wires, and connectors |
+| `SystemSpec` | Lumped resistance of the ESC, wires and connectors, and the ESC's optional motor-side current limit |
 | `PropellerSpec` | Propeller geometry passed to the solver |
 | `OperatingPoint` | Solved RPM, thrust, torque, motor/battery current, voltage, efficiency, and feasibility state |
 
@@ -116,6 +118,29 @@ dynamic battery models such as `RateMapBattery`.
 | `battery_current_a` | Battery DC current draw |
 | `battery_c_rate` | Cell C-rate for rate-map batteries, or `0.0` for fixed-voltage batteries |
 | `battery_efficiency` | Battery model discharge efficiency at the solved point |
+
+## Bus Solver
+
+`BusSolver` solves several propulsion units that share one `BatteryNetwork`,
+each at its own throttle. A `PropulsionUnit` holds a motor, its propeller and
+its `SystemSpec`. The bus voltage sags with the units' total current:
+
+```python
+from pythrust.propulsion import BusSolver, PropulsionUnit
+
+bus = BusSolver().solve(
+    network,
+    network.full_state(),
+    units=[left_unit, right_unit],
+    throttles=[0.7, 0.7],
+    rho=1.225,
+    airspeed_mps=15.0,
+)
+bus.voltage_v, bus.current_a, bus.thrust_n, bus.units, bus.network.packs
+```
+
+A unit at zero throttle draws no current. The point is infeasible when a unit
+exceeds its motor or ESC current limit or a pack leaves its operating limits.
 
 ## Propeller Database
 
