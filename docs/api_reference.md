@@ -24,14 +24,13 @@ PyThrust exposes battery models from `pythrust.battery`:
 
 | Class | Purpose |
 |---|---|
-| `FixedVoltageBattery` | Historical fixed pack-voltage model with scalar discharge efficiency |
+| `FixedVoltageBattery` | Fixed pack-voltage model with scalar discharge efficiency |
 | `RateMapBattery` | Equivalent-circuit model using cell OCV and resistance curves |
 | `BatteryState` | State of charge/depth of discharge passed to dynamic battery models |
 | `BatteryPoint` | Evaluated terminal voltage, current, power, C-rate, efficiency, and feasibility |
 
-`BatterySpec` remains available from `pythrust.propulsion` as a compatibility
-alias for `FixedVoltageBattery`. New code should import `FixedVoltageBattery`
-or `RateMapBattery` directly.
+`Battery` is the union of the two models and is the battery type accepted by
+`PropulsionSolver`.
 
 `RateMapBattery.from_json(path, series=..., parallel=...)` loads one cell
 dataset and applies the requested pack topology at runtime.
@@ -123,11 +122,11 @@ dynamic battery models such as `RateMapBattery`.
 `PropellerDatabase` loads JSON metadata and CSV performance tables:
 
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.propellers import PropellerDatabase
 
 db = PropellerDatabase()
-db.load(Path("data/propellers/apc_202602"), strict=False)
+db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
 entry = db.get("APC_13x6.5E")
 ct, cp = entry.get_coefficients(rpm=5000.0, advance_ratio=0.4)
 ```
@@ -148,11 +147,11 @@ Main helpers:
 `MotorDatabase` loads brushless motor JSON files and converts catalog entries into solver specs:
 
 ```python
-from pathlib import Path
+from pythrust import dataset_dir
 from pythrust.motors import MotorDatabase
 
 db = MotorDatabase()
-db.load(Path("data/motors"))
+db.load(dataset_dir() / "motors")
 motor_entry = db.get("SunnySky_X2826_KV550")
 motor = motor_entry.to_spec()
 ```

@@ -1,6 +1,6 @@
 import math
 import pytest
-from pythrust.propulsion.models.battery import BatterySpec
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propulsion.models.motor import MotorSpec
 from pythrust.propulsion.models.operating_point import OperatingPoint
 from pythrust.propulsion.models.propeller import PropellerSpec
@@ -74,7 +74,7 @@ def test_motor_spec_winding_resistance():
 
 
 def test_other_specs():
-    battery = BatterySpec(voltage_v=11.1, discharge_efficiency=0.98)
+    battery = FixedVoltageBattery(voltage_v=11.1, discharge_efficiency=0.98)
     assert battery.voltage_v == 11.1
     assert battery.discharge_efficiency == 0.98
 

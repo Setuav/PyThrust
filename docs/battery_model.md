@@ -92,6 +92,8 @@ The `bat-perf` MATLAB model uses the same core variables:
 | `resistance(dod)` | `Rssfun(dod)` | Steady-state internal resistance |
 | `cutoff_voltage_v` | `Vcutoff` | Minimum terminal cell voltage |
 | `charge_voltage_v` | `Vcharge` | Maximum terminal cell voltage |
+| `resistance_factor` | `kR_parm` | Resistance growth (power fade) factor |
+| `capacity_factor` | `kQ_parm` | Capacity fade factor |
 
 The most important point-state functions are:
 
@@ -126,6 +128,33 @@ $$
 The implementation reports infeasible states when requested power exceeds this
 limit, when current exceeds the configured limit, or when terminal voltage falls
 below cutoff.
+
+## Ageing
+
+Pack ageing is described by two factors applied to the cell curves, as in
+`bat-perf`:
+
+$$
+R(x) = k_R \, R_{data}(x)
+$$
+
+$$
+Q = k_Q \, Q_{rated}
+$$
+
+`resistance_factor` ($k_R$) models power fade and `capacity_factor` ($k_Q$)
+models capacity fade. Both default to 1 for a new pack. The 1C current and
+reported C-rates stay based on the rated capacity.
+
+```python
+battery = RateMapBattery.from_json(
+    cell_path,
+    series=4,
+    parallel=2,
+    resistance_factor=1.3,
+    capacity_factor=0.85,
+)
+```
 
 ## Integration Modes
 
@@ -163,6 +192,28 @@ Additional helpers cover inverse and segmented calculations:
 | `dod_at_power_voltage(...)` | Equivalent solve from the constant-power state equation |
 | `integrate_power_profile(...)` | Integrate consecutive constant-power mission segments |
 
+### Reverse integration
+
+Every time-domain integrator and `integrate_power_profile(...)` accept
+`reverse=True`, the analogue of `bat-perf`'s `rev = -1`. The given state is the
+state at the end of the interval and the pack is integrated backward from it,
+so a mission can be planned from a required landing reserve:
+
+```python
+landing = BatteryState(soc=0.2)
+mission = battery.integrate_power_profile(
+    state=landing,
+    power_w=[400.0, 180.0, 250.0],
+    durations_s=[60.0, 1200.0, 120.0],
+    reverse=True,
+)
+print(mission.initial_state.soc)  # charge needed at take-off
+```
+
+Histories always run forward in time: `final_state` is the given state and
+`initial_state` is the state the interval starts from. A reverse integration that
+would need more than a full charge stops with `stop_reason == "dod_limit"`.
+
 !!! note "Numerical method"
     Time and target-DOD integrations use SciPy's adaptive `solve_ivp`
     integrator with `max_step_s` as the maximum time step for time-domain
@@ -173,10 +224,11 @@ Additional helpers cover inverse and segmented calculations:
 Example:
 
 ```python
+from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 
 battery = RateMapBattery.from_json(
-    "data/batteries/example_liion_cell.json",
+    dataset_dir() / "batteries" / "example_liion_cell.json",
     series=4,
     parallel=2,
 )
@@ -209,11 +261,12 @@ Use explicit names for the two battery fidelities:
 === "Rate map"
 
     ```python
+    from pythrust import dataset_dir
     from pythrust.battery import BatteryState, RateMapBattery
 
     state = BatteryState(soc=1.0)
     battery = RateMapBattery.from_json(
-        "data/batteries/example_liion_cell.json",
+        dataset_dir() / "batteries" / "example_liion_cell.json",
         series=4,
         parallel=2,
     )
@@ -221,16 +274,6 @@ Use explicit names for the two battery fidelities:
 
 !!! tip "Choosing a battery model"
     Use `FixedVoltageBattery` for early propulsion sizing and simple examples. Use `RateMapBattery` when load-dependent voltage, C-rate limits, or state of charge affect the result.
-
-`BatterySpec` is too general once multiple battery models exist. It remains as
-a compatibility alias:
-
-```python
-BatterySpec = FixedVoltageBattery
-```
-
-The alias keeps old code working during the transition, but new code and
-documentation should use `FixedVoltageBattery`.
 
 The common battery behavior is intentionally small:
 

@@ -12,9 +12,9 @@ from pathlib import Path
 
 import pytest
 
+from pythrust.battery import FixedVoltageBattery
 from pythrust.propellers.database import PropellerDatabase
 from pythrust.propulsion import (
-    BatterySpec,
     MotorSpec,
     PropellerSpec,
     SystemSpec,
@@ -57,7 +57,7 @@ def base_motor():
 
 @pytest.fixture(scope="module")
 def base_battery():
-    return BatterySpec(voltage_v=14.8)
+    return FixedVoltageBattery(voltage_v=14.8)
 
 
 @pytest.fixture(scope="module")
@@ -72,7 +72,7 @@ def base_propeller():
 
 def _make_synthetic_table(
     motor: MotorSpec,
-    battery: BatterySpec,
+    battery: FixedVoltageBattery,
     system: SystemSpec,
     propeller: PropellerSpec,
     prop_entry,
@@ -299,7 +299,7 @@ class TestSecondOrderMotor:
             no_load_current_linear=0.001,
             resistance_quadratic=1e-5,
         )
-        battery = BatterySpec(voltage_v=14.8)
+        battery = FixedVoltageBattery(voltage_v=14.8)
         system = SystemSpec(resistance_ohm=0.05)
         propeller = PropellerSpec(diameter_m=0.3302)
         solver = PropulsionSolver()

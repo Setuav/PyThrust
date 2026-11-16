@@ -2,7 +2,6 @@
 
 from .models import (  # noqa: F401
     MotorSpec,
-    BatterySpec,
     SystemSpec,
     PropellerSpec,
     OperatingPoint,

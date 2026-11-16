@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import openmdao.api as om
 
+from pythrust import dataset_dir
 from pythrust.openmdao import PropulsionComponent
 from pythrust.propellers import PropellerDatabase
 
@@ -43,7 +44,7 @@ DPI = 170
 def main():
     # 1. Load propeller aerodynamic data.
     db = PropellerDatabase()
-    db.load(Path("data/propellers/apc_202602"), strict=False)
+    db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
     prop_entry = db.get("APC_13x6.5E")
     if prop_entry is None:
         print("Error: Propeller 'APC_13x6.5E' not found.")

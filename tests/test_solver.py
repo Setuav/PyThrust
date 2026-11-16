@@ -1,6 +1,6 @@
 import math
 import pytest
-from pythrust.battery import BatteryState, RateMapBattery
+from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
 from pythrust.propellers.database import (
     PropellerMetadata,
     PropellerDataPoint,
@@ -8,7 +8,6 @@ from pythrust.propellers.database import (
 )
 from pythrust.propulsion.models import (
     MotorSpec,
-    BatterySpec,
     SystemSpec,
     PropellerSpec,
     OperatingPoint
@@ -26,7 +25,7 @@ def test_setup():
         torque_constant_kv_ratio=1.0,
         magnetic_lag_tau=0.0001
     )
-    battery = BatterySpec(voltage_v=11.1, discharge_efficiency=0.98)
+    battery = FixedVoltageBattery(voltage_v=11.1, discharge_efficiency=0.98)
     system = SystemSpec(resistance_ohm=0.015)
     propeller = PropellerSpec(diameter_m=0.254, blade_count=2, pitch_m=0.114)
     

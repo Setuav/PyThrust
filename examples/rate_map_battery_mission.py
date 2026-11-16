@@ -16,6 +16,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 from pythrust.propellers import PropellerDatabase
 from pythrust.propulsion import MotorSpec, PropellerSpec, PropulsionSolver, SystemSpec
@@ -31,7 +32,7 @@ MISSION_SEGMENTS = [
 
 def load_propeller():
     db = PropellerDatabase()
-    db.load(Path("data/propellers/apc_202602"), strict=False)
+    db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
     prop_entry = db.get("APC_13x6.5E")
     if prop_entry is None:
         raise SystemExit("Propeller 'APC_13x6.5E' not found in dataset.")
@@ -39,7 +40,7 @@ def load_propeller():
 
 
 def main():
-    battery_dataset = Path("data/batteries/example_liion_cell.json")
+    battery_dataset = dataset_dir() / "batteries" / "example_liion_cell.json"
     battery = RateMapBattery.from_json(battery_dataset, series=4, parallel=2)
     state = BatteryState(soc=0.95)
 

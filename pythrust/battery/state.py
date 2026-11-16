@@ -89,6 +89,11 @@ class BatteryIntegrationResult:
         for name, values in histories.items():
             object.__setattr__(self, name, values)
 
+    @property
+    def initial_state(self) -> BatteryState:
+        """Battery state at the first history sample."""
+        return BatteryState.from_dod(self.dod[0])
+
 
 def _as_float_tuple(values: Sequence[float]) -> tuple[float, ...]:
     result = tuple(float(value) for value in values)

@@ -16,7 +16,8 @@ from typing import List, Optional
 from scipy.optimize import least_squares
 
 from pythrust.propellers.database import PropellerEntry
-from .models import BatterySpec, MotorSpec, PropellerSpec, SystemSpec
+from pythrust.battery import Battery
+from .models import MotorSpec, PropellerSpec, SystemSpec
 from .solver import evaluate_propulsion_state
 
 
@@ -88,7 +89,7 @@ class PropulsionCalibrator:
         self,
         test_points: List[ManufacturerTestPoint],
         motor: MotorSpec,
-        battery: BatterySpec,
+        battery: Battery,
         system: SystemSpec,
         propeller: PropellerSpec,
         prop_entry: PropellerEntry,

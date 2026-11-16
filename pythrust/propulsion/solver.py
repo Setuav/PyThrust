@@ -9,9 +9,9 @@ import math
 
 from scipy.optimize import root_scalar
 
-from pythrust.battery import BatteryPoint, BatteryState
+from pythrust.battery import Battery, BatteryPoint, BatteryState, FixedVoltageBattery
 from pythrust.propellers.database import PropellerEntry
-from .models import BatterySpec, MotorSpec, OperatingPoint, PropellerSpec, SystemSpec
+from .models import MotorSpec, OperatingPoint, PropellerSpec, SystemSpec
 
 
 @dataclass(frozen=True)
@@ -57,7 +57,7 @@ class PropulsionSolver:
     def solve_operating_point(
         self,
         motor: MotorSpec,
-        battery: BatterySpec,
+        battery: Battery,
         system: SystemSpec,
         propeller: PropellerSpec,
         prop_entry: PropellerEntry,
@@ -183,7 +183,7 @@ class PropulsionSolver:
     def _build_point(
         self,
         motor: MotorSpec,
-        battery: BatterySpec,
+        battery: Battery,
         system: SystemSpec,
         propeller: PropellerSpec,
         prop_entry: PropellerEntry,
@@ -285,7 +285,7 @@ class PropulsionSolver:
     def _build_infeasible_point(
         self,
         motor: MotorSpec,
-        battery: BatterySpec,
+        battery: Battery,
         system: SystemSpec,
         propeller: PropellerSpec,
         prop_entry: PropellerEntry,
@@ -332,13 +332,13 @@ class PropulsionSolver:
         )
 
     @staticmethod
-    def _validate_battery_state(battery: BatterySpec, state: BatteryState | None) -> None:
-        if state is None and not hasattr(battery, "voltage_v"):
+    def _validate_battery_state(battery: Battery, state: BatteryState | None) -> None:
+        if state is None and not isinstance(battery, FixedVoltageBattery):
             raise ValueError("battery_state is required for dynamic battery models")
 
     def _battery_voltage(
         self,
-        battery: BatterySpec,
+        battery: Battery,
         current_a: float,
         state: BatteryState | None,
     ) -> float:
@@ -349,7 +349,7 @@ class PropulsionSolver:
 
     def _battery_voltage_from_point(
         self,
-        battery: BatterySpec,
+        battery: Battery,
         current_a: float,
         state: BatteryState | None,
         point: BatteryPoint | None,
@@ -370,35 +370,38 @@ class PropulsionSolver:
 
     @staticmethod
     def _battery_point(
-        battery: BatterySpec,
+        battery: Battery,
         current_a: float,
         state: BatteryState | None,
     ) -> BatteryPoint | None:
-        if hasattr(battery, "state_at_current"):
-            if state is None:
-                raise ValueError("battery_state is required for dynamic battery models")
-            return battery.state_at_current(state=state, current_a=current_a)
-        return None
+        if isinstance(battery, FixedVoltageBattery):
+            return None
+        if state is None:
+            raise ValueError("battery_state is required for dynamic battery models")
+        return battery.state_at_current(state=state, current_a=current_a)
 
     @staticmethod
     def _battery_power(
-        battery: BatterySpec,
+        battery: Battery,
         current_a: float,
         motor_power_w: float,
         system: SystemSpec,
     ) -> float:
         power_w = motor_power_w + (current_a**2) * system.resistance_ohm
-        discharge_efficiency = getattr(battery, "discharge_efficiency", 1.0)
-        return power_w / max(1e-6, discharge_efficiency)
+        if isinstance(battery, FixedVoltageBattery):
+            return power_w / max(1e-6, battery.discharge_efficiency)
+        return power_w
 
     @staticmethod
     def _battery_efficiency(
-        battery: BatterySpec,
+        battery: Battery,
         point: BatteryPoint | None,
     ) -> float:
         if point is not None:
             return point.efficiency
-        return float(getattr(battery, "discharge_efficiency", 1.0))
+        if isinstance(battery, FixedVoltageBattery):
+            return battery.discharge_efficiency
+        return 1.0
 
     @staticmethod
     def _estimate_j_max(prop_entry: PropellerEntry) -> float:
