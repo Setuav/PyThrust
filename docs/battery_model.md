@@ -357,6 +357,47 @@ $$
 x_{next} = x + \frac{I_{cell}}{Q_{cell}} \Delta t
 $$
 
+## Battery Networks
+
+`BatteryNetwork` wires several rate-map packs as parallel strings of
+series-connected packs. Each pack keeps its own state of charge, so a network
+state is a `NetworkState` with one `BatteryState` per pack, in
+`BatteryNetwork.packs` order.
+
+At a state, string $s$ is a Thevenin source whose open-circuit voltage and
+resistance are the sums over its packs:
+
+$$
+V_{oc,s} = \sum_{k \in s} N_{s,k} V_{oc,k}(x_k), \qquad
+R_s = \sum_{k \in s} \frac{N_{s,k}}{N_{p,k}} R_k(x_k)
+$$
+
+The strings share the terminal voltage, so the network is again a Thevenin
+source:
+
+$$
+R = \Big(\sum_s \frac{1}{R_s}\Big)^{-1}, \qquad
+V_{oc} = R \sum_s \frac{V_{oc,s}}{R_s}, \qquad
+V = V_{oc} - R\,I
+$$
+
+and string $s$ carries $I_s = (V_{oc,s} - V)/R_s$. Strings at different states
+of charge share the load unevenly, and at rest the fuller string charges the
+emptier one. Parallel strings must have matching charge and cut-off voltages.
+
+```python
+from pythrust.battery import BatteryNetwork
+
+network = BatteryNetwork.parallel(pack_a, pack_b)  # or .series(...), .single(...)
+state = network.full_state()
+point = network.state_at_power(state, power_w=400.0)
+run = network.integrate_power_to_soc(state, power_w=400.0, final_soc=0.2)
+```
+
+`integrate_power_to_soc` drains every pack with its own share of the current
+and stops when the first pack reaches `final_soc`, a pack reaches its cut-off
+voltage or current limit, or the network can no longer deliver the power.
+
 ## Feature Summary
 
 The battery package provides:
@@ -364,6 +405,7 @@ The battery package provides:
 - `pythrust.battery.FixedVoltageBattery`
 - `pythrust.battery.RateMapBattery`
 - `pythrust.battery.BatteryState` and `BatteryPoint`
+- `pythrust.battery.BatteryNetwork` for packs in series and parallel
 - JSON cell datasets with explicit series and parallel counts at load time
 - Solver integration through `solve_operating_point(..., battery_state=...)`
 - `OperatingPoint` battery outputs for voltage, current, C-rate, and efficiency
