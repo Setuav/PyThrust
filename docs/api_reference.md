@@ -140,7 +140,10 @@ bus.voltage_v, bus.current_a, bus.thrust_n, bus.units, bus.network.packs
 ```
 
 A unit at zero throttle draws no current. The point is infeasible when a unit
-exceeds its motor or ESC current limit or a pack leaves its operating limits.
+exceeds its motor or ESC current limit, a pack leaves its operating limits, a unit
+has no operating point (its reason is prefixed with `unit_<index>_`), or the
+network cannot supply the units' current at any voltage they run at
+(`bus_overload`). An infeasible point need not balance the network.
 
 ## Propeller Database
 

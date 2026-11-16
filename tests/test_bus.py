@@ -131,3 +131,48 @@ def test_bus_needs_a_throttle_per_unit(unit, pack):
     network = BatteryNetwork.single(pack)
     with pytest.raises(ValueError, match="2 throttles for 1 units"):
         BusSolver().solve(network, network.full_state(), [unit], [0.5, 0.5], rho=1.225, airspeed_mps=5.0)
+
+
+def _pack_with_cell_resistance(resistance_ohm):
+    return RateMapBattery(
+        name="3S pack",
+        capacity_ah=4.2,
+        cutoff_voltage_v=3.0,
+        charge_voltage_v=4.2,
+        max_current_a=60.0,
+        series=3,
+        parallel=1,
+        dod=[0.0, 1.0],
+        ocv_v=[4.1, 3.5],
+        resistance_ohm=[resistance_ohm, resistance_ohm],
+    )
+
+
+def test_windmilling_unit_gives_an_infeasible_point(unit, pack):
+    network = BatteryNetwork.single(pack)
+    bus = BusSolver().solve(network, network.full_state(), [unit], [0.05], rho=1.225, airspeed_mps=20.0)
+
+    assert not bus.is_feasible
+    assert bus.infeasible_reason == "unit_0_no_bracket"
+    assert bus.voltage_v == network.thevenin(network.full_state())[0]
+
+
+def test_network_that_cannot_hold_the_load_gives_an_infeasible_point(unit):
+    network = BatteryNetwork.single(_pack_with_cell_resistance(5.0))
+    bus = BusSolver().solve(network, network.full_state(), [unit], [1.0], rho=1.225, airspeed_mps=0.0)
+
+    assert not bus.is_feasible
+    assert bus.infeasible_reason == "bus_overload"
+
+
+def test_bus_balances_above_the_voltage_where_a_unit_stops(unit):
+    # At this throttle and airspeed the unit has no operating point a little below
+    # the bus voltage, so the sag search reaches a voltage where the unit stops
+    # before the residual turns negative.
+    network = BatteryNetwork.single(_pack_with_cell_resistance(0.6))
+    state = network.full_state()
+    bus = BusSolver().solve(network, state, [unit], [0.32], rho=1.225, airspeed_mps=10.0)
+
+    ocv_v, resistance_ohm = network.thevenin(state)
+    assert bus.units[0].infeasible_reason not in ("no_bracket", "no_convergence")
+    assert math.isclose(bus.voltage_v, ocv_v - resistance_ohm * bus.current_a, rel_tol=1e-9)
