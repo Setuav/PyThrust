@@ -92,6 +92,8 @@ The `bat-perf` MATLAB model uses the same core variables:
 | `resistance(dod)` | `Rssfun(dod)` | Steady-state internal resistance |
 | `cutoff_voltage_v` | `Vcutoff` | Minimum terminal cell voltage |
 | `charge_voltage_v` | `Vcharge` | Maximum terminal cell voltage |
+| `resistance_factor` | `kR_parm` | Resistance growth (power fade) factor |
+| `capacity_factor` | `kQ_parm` | Capacity fade factor |
 
 The most important point-state functions are:
 
@@ -126,6 +128,33 @@ $$
 The implementation reports infeasible states when requested power exceeds this
 limit, when current exceeds the configured limit, or when terminal voltage falls
 below cutoff.
+
+## Ageing
+
+Pack ageing is described by two factors applied to the cell curves, as in
+`bat-perf`:
+
+$$
+R(x) = k_R \, R_{data}(x)
+$$
+
+$$
+Q = k_Q \, Q_{rated}
+$$
+
+`resistance_factor` ($k_R$) models power fade and `capacity_factor` ($k_Q$)
+models capacity fade. Both default to 1 for a new pack. The 1C current and
+reported C-rates stay based on the rated capacity.
+
+```python
+battery = RateMapBattery.from_json(
+    cell_path,
+    series=4,
+    parallel=2,
+    resistance_factor=1.3,
+    capacity_factor=0.85,
+)
+```
 
 ## Integration Modes
 

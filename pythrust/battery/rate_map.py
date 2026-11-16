@@ -16,7 +16,12 @@ from .state import BatteryIntegrationResult, BatteryPoint, BatteryState
 
 @dataclass(frozen=True)
 class RateMapBattery:
-    """Equivalent-circuit battery model driven by OCV and resistance curves."""
+    """Equivalent-circuit battery model driven by OCV and resistance curves.
+
+    ``resistance_factor`` and ``capacity_factor`` describe pack ageing: they scale
+    the cell resistance curve (power fade) and the cell charge capacity (capacity
+    fade). The rated 1C current stays the dataset's nominal capacity.
+    """
 
     name: str
     capacity_ah: float
@@ -29,6 +34,8 @@ class RateMapBattery:
     ocv_v: Sequence[float]
     resistance_ohm: Sequence[float]
     source: str | None = None
+    resistance_factor: float = 1.0
+    capacity_factor: float = 1.0
 
     def __post_init__(self) -> None:
         dod = tuple(float(v) for v in self.dod)
@@ -51,6 +58,10 @@ class RateMapBattery:
             raise ValueError("max_current_a must be positive")
         if self.series <= 0 or self.parallel <= 0:
             raise ValueError("series and parallel counts must be positive")
+        if not math.isfinite(self.resistance_factor) or self.resistance_factor <= 0.0:
+            raise ValueError("resistance_factor must be finite and positive")
+        if not math.isfinite(self.capacity_factor) or self.capacity_factor <= 0.0:
+            raise ValueError("capacity_factor must be finite and positive")
 
         object.__setattr__(self, "dod", dod)
         object.__setattr__(self, "ocv_v", ocv_v)
@@ -63,8 +74,10 @@ class RateMapBattery:
         *,
         series: int = 1,
         parallel: int = 1,
+        resistance_factor: float = 1.0,
+        capacity_factor: float = 1.0,
     ) -> "RateMapBattery":
-        """Load a cell dataset and apply pack series/parallel topology."""
+        """Load a cell dataset and apply pack topology and ageing factors."""
         with Path(path).open("r", encoding="utf-8") as f:
             data = json.load(f)
 
@@ -82,16 +95,18 @@ class RateMapBattery:
             dod=curves["dod"],
             ocv_v=curves["ocv_v"],
             resistance_ohm=curves["resistance_ohm"],
+            resistance_factor=resistance_factor,
+            capacity_factor=capacity_factor,
         )
 
     @property
     def capacity_as(self) -> float:
-        """Cell capacity in ampere-seconds."""
-        return self.capacity_ah * 3600.0
+        """Cell charge capacity after capacity fade, in ampere-seconds."""
+        return self.capacity_factor * self.capacity_ah * 3600.0
 
     @property
     def rated_current_a(self) -> float:
-        """Cell 1C current in amps."""
+        """Cell 1C current in amps, based on the nominal capacity."""
         return self.capacity_ah
 
     def ocv(self, dod: float) -> float:
@@ -99,8 +114,8 @@ class RateMapBattery:
         return float(np.interp(self._clip_dod(dod), self.dod, self.ocv_v))
 
     def resistance(self, dod: float) -> float:
-        """Interpolate cell resistance at depth of discharge."""
-        return float(np.interp(self._clip_dod(dod), self.dod, self.resistance_ohm))
+        """Interpolate cell resistance at depth of discharge, including power fade."""
+        return self.resistance_factor * float(np.interp(self._clip_dod(dod), self.dod, self.resistance_ohm))
 
     def terminal_voltage(self, current_a: float, state: BatteryState) -> float:
         """Return pack terminal voltage at pack current and battery state."""
@@ -601,7 +616,7 @@ class RateMapBattery:
     def _reversible_energy_wh(self, dod_initial: float, dod_final: float, *, samples: int) -> float:
         dod_values = np.linspace(dod_initial, dod_final, samples)
         ocv_values = np.array([self.ocv(float(dod)) for dod in dod_values])
-        cell_energy_wh = float(np.trapezoid(ocv_values, dod_values)) * self.capacity_ah
+        cell_energy_wh = float(np.trapezoid(ocv_values, dod_values)) * self.capacity_as / 3600.0
         return cell_energy_wh * self.series * self.parallel
 
     def _usable_energy_at_c_rate(self, c_rate: float, *, max_step_s: float) -> float:
@@ -748,10 +763,11 @@ class RateMapBattery:
             point = point_function(state_at_dod)
             if point.cell_current_a <= 0.0:
                 return [0.0, 0.0, 0.0]
+            pack_capacity_ah = self.capacity_as / 3600.0 * self.parallel
             return [
                 self.capacity_as / point.cell_current_a,
-                point.terminal_voltage_v * self.capacity_ah * self.parallel,
-                self.capacity_ah * self.parallel,
+                point.terminal_voltage_v * pack_capacity_ah,
+                pack_capacity_ah,
             ]
 
         events = self._dod_integration_events(point_function)

@@ -645,6 +645,58 @@ def test_rate_map_c_rate_energy_knockdown_rejects_invalid_inputs(
         rate_map_battery.energy_knockdown_c_rate(**params)
 
 
+def _aged(battery, *, resistance_factor=1.0, capacity_factor=1.0):
+    return RateMapBattery(
+        name=battery.name,
+        capacity_ah=battery.capacity_ah,
+        cutoff_voltage_v=battery.cutoff_voltage_v,
+        charge_voltage_v=battery.charge_voltage_v,
+        max_current_a=battery.max_current_a,
+        series=battery.series,
+        parallel=battery.parallel,
+        dod=battery.dod,
+        ocv_v=battery.ocv_v,
+        resistance_ohm=battery.resistance_ohm,
+        resistance_factor=resistance_factor,
+        capacity_factor=capacity_factor,
+    )
+
+
+def test_rate_map_resistance_factor_scales_voltage_sag(rate_map_battery):
+    aged = _aged(rate_map_battery, resistance_factor=1.5)
+    point = aged.state_at_current(state=BatteryState(soc=0.5), current_a=8.0)
+
+    assert math.isclose(aged.resistance(0.5), 1.5 * 0.03)
+    assert math.isclose(point.cell_voltage_v, 3.8 - 1.5 * 0.03 * 4.0)
+    assert math.isclose(point.c_rate, 4.0 / 4.2)
+
+
+def test_rate_map_capacity_factor_reduces_charge_and_energy(rate_map_battery):
+    aged = _aged(rate_map_battery, capacity_factor=0.8)
+    fresh_result = rate_map_battery.integrate_current_to_dod(
+        state=BatteryState(soc=1.0), current_a=8.4, dod_final=0.5, max_step_s=60.0
+    )
+    aged_result = aged.integrate_current_to_dod(
+        state=BatteryState(soc=1.0), current_a=8.4, dod_final=0.5, max_step_s=60.0
+    )
+
+    assert math.isclose(aged.capacity_as, 0.8 * 4.2 * 3600.0)
+    assert math.isclose(aged.rated_current_a, 4.2)
+    assert math.isclose(aged_result.time_s[-1], 0.8 * fresh_result.time_s[-1])
+    assert math.isclose(aged_result.consumed_charge_ah, 0.8 * fresh_result.consumed_charge_ah)
+    assert math.isclose(
+        aged_result.delivered_energy_wh, 0.8 * fresh_result.delivered_energy_wh, rel_tol=1e-6
+    )
+    assert math.isclose(aged.energy_knockdown_dod(0.0, 0.5), rate_map_battery.energy_knockdown_dod(0.0, 0.5))
+
+
+@pytest.mark.parametrize("factor", ["resistance_factor", "capacity_factor"])
+@pytest.mark.parametrize("value", [0.0, -1.0, math.nan, math.inf])
+def test_rate_map_rejects_invalid_ageing_factors(rate_map_battery, factor, value):
+    with pytest.raises(ValueError, match=factor):
+        _aged(rate_map_battery, **{factor: value})
+
+
 def test_rate_map_loads_from_json(tmp_path):
     path = tmp_path / "battery.json"
     path.write_text(
@@ -668,12 +720,16 @@ def test_rate_map_loads_from_json(tmp_path):
         encoding="utf-8",
     )
 
-    battery = RateMapBattery.from_json(path, series=4, parallel=2)
+    battery = RateMapBattery.from_json(
+        path, series=4, parallel=2, resistance_factor=1.2, capacity_factor=0.9
+    )
 
     assert battery.name == "JSON pack"
     assert battery.source == "test"
     assert battery.series == 4
     assert battery.parallel == 2
+    assert battery.resistance_factor == 1.2
+    assert battery.capacity_factor == 0.9
 
 
 def test_rate_map_loads_example_cell_dataset():
