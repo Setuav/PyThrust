@@ -20,6 +20,8 @@ This page summarizes the main public classes and helpers. For implementation det
 
 Use `get_no_load_current(rpm)` and `get_winding_resistance(current_a)` when evaluating speed-dependent or current-dependent motor behavior.
 
+`pythrust.io.read_qprop_motor(path, current_max_a=math.inf)` reads a QPROP motor file into a `MotorSpec`; see [Data Files](data_files.md).
+
 ## Battery Models
 
 PyThrust exposes battery models from `pythrust.battery`:

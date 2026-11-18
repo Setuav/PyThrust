@@ -82,6 +82,36 @@ and uses `R` as written, so a file that gives `R` with `Rfac` other than 1 or
 Without `R`, or with the radii in metres, the two agree. `R` must not be less
 than the last station's radius.
 
+## Motors: QPROP Files
+
+A QPROP motor file gives a name, the motor type, then one parameter per line.
+`pythrust.io.read_qprop_motor` reads one into a `MotorSpec`:
+
+```python
+from pythrust.io import read_qprop_motor
+
+motor = read_qprop_motor("motor.txt", current_max_a=40.0)
+```
+
+| Type | Parameters, one per line | `MotorSpec` fields |
+|---|---|---|
+| 1 | `R Io Kv` | first-order model |
+| 2 | `R0 Io0 Kv Kq tau Io1 Io2 R2`; at least the first three | second-order model |
+
+Kv and Kq are in rpm/V. `torque_constant_kv_ratio` is `Kq / Kv`, and a zero
+`Kq` means `Kq = Kv`. `Io1` (A s) and `Io2` (A s^2) multiply the shaft speed in
+rad/s and its square, and `R2` (ohm/A^2) the current squared. Type 2
+parameters left out are zero.
+
+QPROP files carry no current limit; `current_max_a` sets it and defaults to
+infinity. QPROP reads only the first number on each line, so a line with
+more than one number raises `ValueError` rather than shifting the
+parameters. Motor types other than 1 and 2 are rejected.
+
+With the same propeller and motor files, `PropulsionSolver` and a
+`BladeElementPropeller` give the RPM, thrust, torque and current that QPROP
+1.22 gives at a set voltage, to the digits QPROP prints.
+
 ## Motors: Datasheet Values
 
 Write the motor constants into a `MotorSpec`:

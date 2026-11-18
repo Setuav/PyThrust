@@ -2,7 +2,8 @@ import math
 
 import pytest
 
-from pythrust.io import read_qprop_propeller
+from pythrust.io import read_qprop_motor, read_qprop_propeller
+from pythrust.motor import MotorSpec
 from pythrust.propeller import BladeGeometry, BladeSection
 
 INCH = 0.0254
@@ -133,3 +134,72 @@ def test_blade_geometry_requires_matching_station_lists():
 def test_rejects_a_tip_radius_inside_the_last_station(tmp_path):
     with pytest.raises(ValueError, match="tip radius"):
         read_qprop_propeller(_write(tmp_path, PROPELLER.replace(" 2   4.0 ", " 2   3.5 ")))
+
+
+MOTOR_TYPE_2 = """\
+Test motor            ! name
+
+ 2                    ! motor type
+ 0.08                 ! R0   (Ohm)
+ 0.6                  ! Io0  (A)
+ 1000.0               ! Kv   (rpm/V)
+ 1050.0               ! Kq   (rpm/V)
+ 2e-5                 ! tau  (s)
+ 1.5e-4               ! Io1  (A s)
+ 3e-7                 ! Io2  (A s^2)
+ 0.002                ! R2   (Ohm/A^2)
+"""
+
+
+def _write_motor(tmp_path, text):
+    path = tmp_path / "motor.txt"
+    path.write_text(text)
+    return path
+
+
+def test_reads_a_second_order_motor(tmp_path):
+    motor = read_qprop_motor(_write_motor(tmp_path, MOTOR_TYPE_2), current_max_a=30.0)
+
+    assert motor == MotorSpec(
+        kv_rpm_per_v=1000.0,
+        resistance_ohm=0.08,
+        no_load_current_a=0.6,
+        current_max_a=30.0,
+        torque_constant_kv_ratio=1.05,
+        magnetic_lag_tau=2e-5,
+        no_load_current_linear=1.5e-4,
+        no_load_current_quadratic=3e-7,
+        resistance_quadratic=0.002,
+    )
+
+
+def test_reads_a_first_order_motor_without_a_current_limit(tmp_path):
+    motor = read_qprop_motor(_write_motor(tmp_path, "Speed motor\n 1\n 0.31\n 0.77\n 2760.0\n"))
+
+    assert motor == MotorSpec(kv_rpm_per_v=2760.0, resistance_ohm=0.31, no_load_current_a=0.77, current_max_a=math.inf)
+
+
+def test_missing_second_order_parameters_default_and_zero_kq_means_kv(tmp_path):
+    text = "m\n 2\n 0.08\n 0.6\n 1000.0\n 0.0\n 2e-5\n"
+
+    motor = read_qprop_motor(_write_motor(tmp_path, text))
+
+    assert motor.torque_constant_kv_ratio == 1.0
+    assert motor.magnetic_lag_tau == 2e-5
+    assert motor.no_load_current_linear == motor.no_load_current_quadratic == motor.resistance_quadratic == 0.0
+
+
+@pytest.mark.parametrize(
+    "text, message",
+    [
+        ("m\n 3\n 0.1\n 0.5\n 900\n", "motor type 3 is not 1 or 2"),
+        ("m\n 1\n 0.1\n 0.5\n", "takes 3 to 3 parameters, got 2"),
+        ("m\n 1\n 0.1\n 0.5\n 900\n 950\n", "takes 3 to 3 parameters, got 4"),
+        ("m\n 2\n 0.08  0.6  1000.0\n", "one parameter per line"),
+        ("m\n 1\n 0.1\n abc\n 900\n", "'abc' is not a number"),
+        ("m\n", "too few lines"),
+    ],
+)
+def test_rejects_malformed_motor_files(tmp_path, text, message):
+    with pytest.raises(ValueError, match=message):
+        read_qprop_motor(_write_motor(tmp_path, text))

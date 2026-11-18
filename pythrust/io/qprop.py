@@ -1,4 +1,4 @@
-"""Reader for QPROP propeller files.
+"""Readers for QPROP propeller and motor files.
 
 The format is described in Mark Drela's QPROP user guide,
 https://web.mit.edu/drela/Public/web/qprop/qprop_doc.txt.
@@ -11,12 +11,15 @@ from dataclasses import fields, replace
 from pathlib import Path
 from typing import List, Tuple, Union
 
+from pythrust.motor import MotorSpec
 from pythrust.propeller.blade import BladeGeometry, BladeSection
 
 _HEADER_TOKENS = (2, 2, 4, 2, 3, 3)
 """Token counts of the lines after the blade line: CL0 CL_a, CLmin CLmax,
 CD0 CD2u CD2l CLCD0, REref REexp, Rfac Cfac Bfac, Radd Cadd Badd."""
 _SECTION_FIELDS = tuple(field.name for field in fields(BladeSection))
+_MOTOR_PARAMETERS = {1: 3, 2: 8}
+"""Number of parameters of each QPROP motor type."""
 
 
 def read_qprop_propeller(path: Union[str, Path]) -> BladeGeometry:
@@ -87,6 +90,56 @@ def read_qprop_propeller(path: Union[str, Path]) -> BladeGeometry:
         raise ValueError(f"{path.name}: {error}") from error
 
 
+def read_qprop_motor(path: Union[str, Path], current_max_a: float = math.inf) -> MotorSpec:
+    """Read a QPROP motor file into a MotorSpec.
+
+    The file gives a name, the motor type, then one parameter per line.
+    Type 1 gives ``R Io Kv``; type 2 gives ``R0 Io0 Kv Kq tau Io1 Io2 R2``, of
+    which at least the first three, the rest defaulting to zero. A zero ``Kq``
+    means ``Kq = Kv``. Kv and Kq are in rpm/V, ``Io1`` in A s and ``Io2`` in
+    A s^2, against the shaft speed in rad/s.
+
+    QPROP files carry no current limit; ``current_max_a`` sets it.
+
+    Raises ``ValueError`` naming the line of a malformed file, for a motor
+    type other than 1 or 2, or for a line with more than one number: QPROP
+    reads only the first number of each line.
+    """
+    path = Path(path)
+    lines = _content_lines(path)
+    if len(lines) < 2:
+        raise ValueError(f"{path.name}: too few lines for a QPROP motor file")
+
+    type_line, type_tokens = lines[1]
+    if len(type_tokens) != 1:
+        raise ValueError(f"{path.name}:{type_line}: expected the motor type alone on its line")
+    motor_type = _integer(path, type_line, type_tokens[0], "motor type")
+    if motor_type not in _MOTOR_PARAMETERS:
+        raise ValueError(f"{path.name}:{type_line}: motor type {motor_type} is not 1 or 2")
+
+    values = []
+    for number, tokens in lines[2:]:
+        if len(tokens) != 1:
+            raise ValueError(f"{path.name}:{number}: expected one parameter per line, got {len(tokens)} values")
+        values.append(_number(path, number, tokens[0]))
+    expected = _MOTOR_PARAMETERS[motor_type]
+    if not 3 <= len(values) <= expected:
+        raise ValueError(f"{path.name}: motor type {motor_type} takes 3 to {expected} parameters, got {len(values)}")
+
+    resistance, no_load, kv, kq, tau, io1, io2, r2 = values + [0.0] * (8 - len(values))
+    return MotorSpec(
+        kv_rpm_per_v=kv,
+        resistance_ohm=resistance,
+        no_load_current_a=no_load,
+        current_max_a=current_max_a,
+        torque_constant_kv_ratio=1.0 if kq == 0.0 else kq / kv,
+        magnetic_lag_tau=tau,
+        no_load_current_linear=io1,
+        no_load_current_quadratic=io2,
+        resistance_quadratic=r2,
+    )
+
+
 def _content_lines(path: Path) -> List[Tuple[int, List[str]]]:
     """Return the line number and tokens of each line that is not blank or a comment."""
     content = []
@@ -108,8 +161,8 @@ def _number(path: Path, line: int, token: str) -> float:
     return value
 
 
-def _integer(path: Path, line: int, token: str) -> int:
+def _integer(path: Path, line: int, token: str, what: str = "blade count") -> int:
     value = _number(path, line, token)
     if value != int(value) or value < 1:
-        raise ValueError(f"{path.name}:{line}: blade count {token!r} is not a positive integer")
+        raise ValueError(f"{path.name}:{line}: {what} {token!r} is not a positive integer")
     return int(value)
