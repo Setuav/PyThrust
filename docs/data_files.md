@@ -75,6 +75,13 @@ are skipped, and text after `!` is ignored.
 `CL_a` is read per radian. The QPROP guide does not state its unit; its example
 value of 5.8 is a lift slope per radian.
 
+The tip radius `R` on line 2 is scaled like the station radii, as the QPROP
+guide states. QPROP 1.22 itself applies `Rfac` and `Radd` only to the stations
+and uses `R` as written, so a file that gives `R` with `Rfac` other than 1 or
+`Radd` other than 0 gives different tip losses in QPROP and in PyThrust.
+Without `R`, or with the radii in metres, the two agree. `R` must not be less
+than the last station's radius.
+
 ## Motors: Datasheet Values
 
 Write the motor constants into a `MotorSpec`:

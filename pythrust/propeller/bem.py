@@ -18,9 +18,11 @@ from numpy.typing import ArrayLike
 from .blade import BladeSection
 from .section import section_coefficients
 
-_GRID_POINTS = 400
+_GRID_POINTS = 64
 """Samples of psi per station used to bracket the root."""
-_BISECTIONS = 80
+_MAX_ITERATIONS = 60
+_PSI_TOLERANCE = 1e-14
+"""Width of the final bracket on psi, rad."""
 _EDGE = 1e-9
 """Fraction of the psi range kept clear of its ends, where Wa or Wt is zero."""
 
@@ -123,17 +125,25 @@ def solve_stations(
     rows = np.arange(r.size)
     converged = np.isfinite(distance[rows, pick])
 
-    lower = grid[rows, pick]
-    upper = grid[rows, pick + 1]
-    f_lower = residual[rows, pick]
-    for _ in range(_BISECTIONS):
-        middle = 0.5 * (lower + upper)
-        f_middle = flow(middle, r, chord, beta, section, ua, ut, u)[0]
-        same = np.signbit(f_middle) == np.signbit(f_lower)
-        lower = np.where(same, middle, lower)
-        f_lower = np.where(same, f_middle, f_lower)
-        upper = np.where(same, upper, middle)
-    psi = np.where(converged, 0.5 * (lower + upper), np.nan)
+    # Illinois regula falsi inside the bracket: b is the latest estimate and
+    # the root stays between a and b.
+    a = grid[rows, pick]
+    b = grid[rows, pick + 1]
+    fa = residual[rows, pick]
+    fb = residual[rows, pick + 1]
+    for _ in range(_MAX_ITERATIONS):
+        active = converged & (np.abs(b - a) > _PSI_TOLERANCE) & (fb != 0.0)
+        if not active.any():
+            break
+        c = np.where(active, (a * fb - b * fa) / (fb - fa), b)
+        fc = flow(c, r, chord, beta, section, ua, ut, u)[0]
+        crossed = np.signbit(fc) != np.signbit(fb)
+        a, fa = (
+            np.where(active & crossed, b, a),
+            np.where(active & crossed, fb, np.where(active, 0.5 * fa, fa)),
+        )
+        b, fb = np.where(active, c, b), np.where(active, fc, fb)
+    psi = np.where(converged, b, np.nan)
 
     _, wa, wt, alpha, cl, cd, reynolds, mach, gamma = flow(psi, r, chord, beta, section, ua, ut, u)
     return StationSolution(

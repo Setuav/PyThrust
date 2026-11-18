@@ -57,3 +57,5 @@ class BladeGeometry:
             raise ValueError("r_m, chord_m, blade_angle_rad and sections must have the same length")
         if any(inner >= outer for inner, outer in zip(self.r_m, self.r_m[1:])):
             raise ValueError("station radii must increase from root to tip")
+        if self.radius_m < self.r_m[-1]:
+            raise ValueError("the tip radius must not be less than the last station radius")

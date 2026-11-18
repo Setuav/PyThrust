@@ -1,0 +1,20 @@
+PyThrust test 10x5 propeller   ! own design, not a real product
+
+ 2                             ! Nblades (tip radius: last station)
+
+ 0.45   5.9                    ! CL0     CL_a
+-0.35   1.15                   ! CLmin   CLmax
+ 0.025  0.045  0.018  0.45     ! CD0  CD2u  CD2l  CLCD0
+ 80000  -0.6                   ! REref  REexp
+
+ 0.0254  0.0254  1.0           ! Rfac  Cfac  Bfac
+ 0.0     0.0     0.0           ! Radd  Cadd  Badd
+
+#  r(in)  chord(in)  beta(deg)
+   0.9    0.80    32.0
+   1.5    0.95    25.0
+   2.2    1.05    19.0
+   3.0    0.98    14.5
+   3.8    0.82    11.5
+   4.5    0.60     9.5
+   4.9    0.35     8.6

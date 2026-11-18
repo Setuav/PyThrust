@@ -207,6 +207,38 @@ stalled section's lift falls off as `cl_max * cos(alpha - cl0 / cl_alpha_per_rad
 `2 sin^2(alpha - alpha_cd0)`, with `alpha_cd0 = (cl_at_cd0 - cl0) / cl_alpha_per_rad`,
 does not scale with the Reynolds number.
 
+### Blade-Element Propeller
+
+`BladeElementPropeller(geometry, mu=1.78e-5, speed_of_sound=340.0, stations=25)`
+is a `PropellerModel` computed from a `BladeGeometry` with QPROP's
+blade-element/vortex formulation:
+
+```python
+from pythrust.io import read_qprop_propeller
+from pythrust.propeller import BladeElementPropeller
+
+propeller = BladeElementPropeller(read_qprop_propeller("prop.txt"))
+thrust_n, torque_nm = propeller.thrust_torque(rho=1.225, airspeed_mps=10.0, rpm=8000.0)
+```
+
+| Member | Description |
+|---|---|
+| `geometry` | The `BladeGeometry` |
+| `mu`, `speed_of_sound` | Air viscosity in kg/(m s) and speed of sound in m/s; the defaults are QPROP's |
+| `diameter_m` | Twice the tip radius |
+| `max_advance_ratio` | Advance ratio at which the section at 75% radius has zero lift, an estimate of zero thrust |
+| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and torque in N m; zero for both at zero RPM or where a station has no solution |
+
+The blade is analysed at `stations` points, the midpoints of equal intervals
+from the first to the last station of the geometry. Chord, blade angle and
+section parameters there come from a cubic spline through the geometry's
+stations with zero third derivative in the end intervals, as in QPROP. Thrust
+and torque match QPROP 1.22 to the four digits it prints.
+
+At a station with more than one solution, the model takes the one nearest the
+flow without induced velocity. QPROP can pick another one at a stalled
+station of a windmilling blade, and its thrust and torque then differ.
+
 ## OpenMDAO
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.

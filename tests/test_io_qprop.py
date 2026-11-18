@@ -128,3 +128,8 @@ def test_rejects_a_file_with_one_station(tmp_path):
 def test_blade_geometry_requires_matching_station_lists():
     with pytest.raises(ValueError, match="same length"):
         BladeGeometry(2, 0.1, (0.02, 0.1), (0.01,), (0.3, 0.1), (DEFAULT_SECTION,) * 2)
+
+
+def test_rejects_a_tip_radius_inside_the_last_station(tmp_path):
+    with pytest.raises(ValueError, match="tip radius"):
+        read_qprop_propeller(_write(tmp_path, PROPELLER.replace(" 2   4.0 ", " 2   3.5 ")))
