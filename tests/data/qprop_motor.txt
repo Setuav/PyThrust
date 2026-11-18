@@ -1,0 +1,11 @@
+PyThrust test motor   ! own design, not a real product
+
+ 2           ! type
+ 0.08        ! R0
+ 0.6         ! Io0
+ 1000.0      ! Kv
+ 1050.0      ! Kq
+ 2e-5        ! tau
+ 1.5e-4      ! Io1
+ 3e-7        ! Io2
+ 0.002       ! R2
