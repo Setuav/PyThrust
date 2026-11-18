@@ -49,7 +49,7 @@ class PropulsionComponent(om.ExplicitComponent):
         self.add_input('voltage_v', val=14.8, desc='Battery pack voltage [V]')
         self.add_input('discharge_efficiency', val=1.0, desc='Battery discharge efficiency')
 
-        self.add_input('resistance_system_ohm', val=0.095, desc='Lumped system transmission resistance [ohm]')
+        self.add_input('resistance_system_ohm', val=0.03, desc='Lumped system transmission resistance [ohm]')
         self.add_input('diameter_m', val=0.3302, desc='Propeller diameter [m]')
         self.add_input('throttle', val=0.7, desc='Throttle fraction [0, 1]')
 

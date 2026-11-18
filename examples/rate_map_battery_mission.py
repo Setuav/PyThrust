@@ -55,7 +55,7 @@ def main():
     state = BatteryState(soc=0.95)
 
     motor = load_motor()
-    system = SystemSpec(resistance_ohm=0.095)
+    system = SystemSpec(resistance_ohm=0.015)  # ESC and wiring; the battery model has its own resistance
     prop_entry = load_propeller()
     propeller = PropellerSpec(diameter_m=prop_entry.diameter_m)
     solver = PropulsionSolver()
