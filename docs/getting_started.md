@@ -48,17 +48,16 @@ The core workflow is:
 ```python
 from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase, TablePropeller
 from pythrust.propulsion import (
     MotorSpec,
-    PropellerSpec,
     PropulsionSolver,
     SystemSpec,
 )
 
 prop_db = PropellerDatabase()
 prop_db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-prop_entry = prop_db.get("APC_13x6.5E")
+propeller = TablePropeller(prop_db.get("APC_13x6.5E"))
 
 motor = MotorSpec(
     kv_rpm_per_v=860.0,
@@ -68,7 +67,6 @@ motor = MotorSpec(
 )
 battery = FixedVoltageBattery(voltage_v=14.8)
 system = SystemSpec(resistance_ohm=0.05)
-propeller = PropellerSpec(diameter_m=0.3302, blade_count=2)
 
 solver = PropulsionSolver()
 point = solver.solve_operating_point(
@@ -76,7 +74,6 @@ point = solver.solve_operating_point(
     battery=battery,
     system=system,
     propeller=propeller,
-    prop_entry=prop_entry,
     rho=1.225,
     airspeed_mps=15.0,
     throttle=0.7,

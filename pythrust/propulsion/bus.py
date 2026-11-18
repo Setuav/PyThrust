@@ -9,9 +9,9 @@ from scipy.optimize import brentq
 
 from pythrust.battery import FixedVoltageBattery
 from pythrust.battery.network import BatteryNetwork, NetworkPoint, NetworkState
-from pythrust.propellers.database import PropellerEntry
+from pythrust.propeller.model import PropellerModel
 
-from .models import MotorSpec, OperatingPoint, PropellerSpec, SystemSpec
+from .models import MotorSpec, OperatingPoint, SystemSpec
 from .solver import PropulsionSolver
 
 _SAG_SEARCH_FRACTIONS = (0.98, 0.95, 0.9, 0.8, 0.65, 0.5, 0.35, 0.2)
@@ -26,8 +26,7 @@ class PropulsionUnit:
     """Motor, propeller and speed controller driven from a battery network."""
 
     motor: MotorSpec
-    propeller: PropellerSpec
-    prop_entry: PropellerEntry
+    propeller: PropellerModel
     system: SystemSpec = SystemSpec()
 
 
@@ -94,7 +93,6 @@ class BusSolver:
                     battery=battery,
                     system=unit.system,
                     propeller=unit.propeller,
-                    prop_entry=unit.prop_entry,
                     rho=rho,
                     airspeed_mps=airspeed_mps,
                     throttle=throttle,

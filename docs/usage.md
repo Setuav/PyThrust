@@ -19,7 +19,7 @@ The operating-point solver combines five inputs:
 | Motor | `MotorSpec` | Kv, winding resistance, no-load current, current limit, optional higher-order loss terms |
 | Battery | `FixedVoltageBattery` or `RateMapBattery` | Fixed pack voltage or state-dependent pack voltage from cell curves |
 | System | `SystemSpec` | Lumped resistance for ESC, battery internal resistance, wiring, and connectors |
-| Propeller | `PropellerSpec` + `PropellerEntry` | Geometry plus empirical aerodynamic coefficients |
+| Propeller | A `PropellerModel`, such as `TablePropeller` | Thrust and torque at a given density, airspeed and RPM |
 | Flight condition | `rho`, `airspeed_mps`, `throttle` | Air density, freestream speed, and commanded voltage fraction |
 
 ---
@@ -54,7 +54,7 @@ The operating-point solver combines five inputs:
 ```mermaid
 flowchart LR
     motor["MotorSpec"]:::motorStyle
-    prop["PropellerSpec + PropellerEntry"]:::propStyle
+    prop["PropellerModel"]:::propStyle
     battery["FixedVoltageBattery or RateMapBattery"]:::batteryStyle
     system["SystemSpec"]
     flight["rho, airspeed, throttle"]
@@ -274,17 +274,16 @@ Here is a complete example showing how to load a propeller dataset, define speci
 ```python
 from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase, TablePropeller
 from pythrust.propulsion import (
     MotorSpec,
-    PropellerSpec,
     PropulsionSolver,
     SystemSpec,
 )
 
 db = PropellerDatabase()
 db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-prop_entry = db.get("APC_13x6.5E")
+propeller = TablePropeller(db.get("APC_13x6.5E"))
 
 motor = MotorSpec(
     kv_rpm_per_v=860.0,
@@ -299,7 +298,6 @@ battery = FixedVoltageBattery(
 )
 
 system = SystemSpec(resistance_ohm=0.05)
-propeller = PropellerSpec(diameter_m=0.3302, blade_count=2)
 
 solver = PropulsionSolver()
 point = solver.solve_operating_point(
@@ -307,7 +305,6 @@ point = solver.solve_operating_point(
     battery=battery,
     system=system,
     propeller=propeller,
-    prop_entry=prop_entry,
     rho=1.225,
     airspeed_mps=15.0,
     throttle=0.7,
@@ -343,7 +340,6 @@ point = solver.solve_operating_point(
     battery_state=state,
     system=system,
     propeller=propeller,
-    prop_entry=prop_entry,
     rho=1.225,
     airspeed_mps=10.0,
     throttle=0.6,

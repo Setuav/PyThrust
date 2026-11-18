@@ -2,7 +2,7 @@ import json
 import math
 import pytest
 from pathlib import Path
-from pythrust.propellers.database import (
+from pythrust.propeller.database import (
     PropellerDatabase,
     PropellerMetadata,
     PropellerDataPoint,

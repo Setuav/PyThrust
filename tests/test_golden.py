@@ -12,11 +12,10 @@ import pytest
 from pythrust import dataset_dir
 from pythrust.battery import BatteryNetwork, BatteryState, FixedVoltageBattery, RateMapBattery
 from pythrust.motors import MotorDatabase
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase, TablePropeller
 from pythrust.propulsion import (
     BusSolver,
     MotorSpec,
-    PropellerSpec,
     PropulsionSolver,
     PropulsionUnit,
     SystemSpec,
@@ -447,8 +446,7 @@ def solve_case(name, prop_entry, catalog_motor):
         motor=motor or catalog_motor,
         battery=battery,
         system=system,
-        propeller=PropellerSpec(diameter_m=diameter_m or prop_entry.diameter_m),
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry, diameter_m=diameter_m),
         rho=1.225,
         airspeed_mps=airspeed_mps,
         throttle=throttle,
@@ -461,14 +459,12 @@ def solve_bus(prop_entry, catalog_motor):
     units = [
         PropulsionUnit(
             motor=catalog_motor,
-            propeller=PropellerSpec(diameter_m=prop_entry.diameter_m),
-            prop_entry=prop_entry,
+            propeller=TablePropeller(prop_entry),
             system=SystemSpec(0.015),
         ),
         PropulsionUnit(
             motor=SECOND_ORDER_MOTOR,
-            propeller=PropellerSpec(diameter_m=0.28),
-            prop_entry=prop_entry,
+            propeller=TablePropeller(prop_entry, diameter_m=0.28),
             system=SystemSpec(0.02),
         ),
     ]
