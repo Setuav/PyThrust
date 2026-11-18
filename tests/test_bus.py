@@ -3,9 +3,9 @@ import math
 import pytest
 
 from pythrust.battery import BatteryNetwork, BatteryState, RateMapBattery
-from pythrust.propellers.database import PropellerDataPoint, PropellerEntry, PropellerMetadata
+from pythrust.propeller import PropellerDataPoint, PropellerEntry, PropellerMetadata, TablePropeller
 from pythrust.propulsion import BusSolver, PropulsionSolver, PropulsionUnit
-from pythrust.propulsion.models import MotorSpec, PropellerSpec, SystemSpec
+from pythrust.propulsion.models import MotorSpec, SystemSpec
 
 
 @pytest.fixture
@@ -41,8 +41,7 @@ def unit():
     }
     return PropulsionUnit(
         motor=motor,
-        propeller=PropellerSpec(diameter_m=0.254, blade_count=2, pitch_m=0.114),
-        prop_entry=PropellerEntry(metadata=meta, data_by_rpm=data),
+        propeller=TablePropeller(PropellerEntry(metadata=meta, data_by_rpm=data)),
         system=SystemSpec(resistance_ohm=0.015),
     )
 
@@ -73,7 +72,6 @@ def test_single_unit_bus_matches_the_unit_solver(unit, pack):
         battery=pack,
         system=unit.system,
         propeller=unit.propeller,
-        prop_entry=unit.prop_entry,
         rho=1.225,
         airspeed_mps=10.0,
         throttle=0.7,
@@ -117,7 +115,6 @@ def test_speed_controller_limit_marks_the_unit_infeasible(unit, pack):
     limited = PropulsionUnit(
         motor=unit.motor,
         propeller=unit.propeller,
-        prop_entry=unit.prop_entry,
         system=SystemSpec(resistance_ohm=0.015, max_current_a=1.0),
     )
     network = BatteryNetwork.single(pack)

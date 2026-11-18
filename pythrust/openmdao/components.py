@@ -6,10 +6,9 @@ import math
 import openmdao.api as om
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propellers.database import PropellerEntry
+from pythrust.propeller import PropellerEntry, TablePropeller
 from pythrust.propulsion import (
     MotorSpec,
-    PropellerSpec,
     PropulsionSolver,
     SystemSpec,
 )
@@ -69,7 +68,7 @@ class PropulsionComponent(om.ExplicitComponent):
         # Declare derivatives using finite-difference
         self.declare_partials(of='*', wrt='*', method='fd')
 
-    def _get_specs(self, inputs: om.Vector) -> tuple[MotorSpec, FixedVoltageBattery, SystemSpec, PropellerSpec]:
+    def _get_specs(self, inputs: om.Vector) -> tuple[MotorSpec, FixedVoltageBattery, SystemSpec, TablePropeller]:
         motor = MotorSpec(
             kv_rpm_per_v=float(inputs['kv_rpm_per_v'][0]),
             resistance_ohm=float(inputs['resistance_ohm'][0]),
@@ -83,14 +82,14 @@ class PropulsionComponent(om.ExplicitComponent):
         system = SystemSpec(
             resistance_ohm=float(inputs['resistance_system_ohm'][0]),
         )
-        propeller = PropellerSpec(
+        propeller = TablePropeller(
+            self.options['prop_entry'],
             diameter_m=float(inputs['diameter_m'][0]),
         )
         return motor, battery, system, propeller
 
     def compute(self, inputs: om.Vector, outputs: om.Vector) -> None:
         motor, battery, system, propeller = self._get_specs(inputs)
-        prop_entry = self.options['prop_entry']
         throttle = float(inputs['throttle'][0])
         rho = float(inputs['rho'][0])
         airspeed_mps = float(inputs['airspeed_mps'][0])
@@ -101,7 +100,6 @@ class PropulsionComponent(om.ExplicitComponent):
             battery=battery,
             system=system,
             propeller=propeller,
-            prop_entry=prop_entry,
             rho=rho,
             airspeed_mps=airspeed_mps,
             throttle=throttle,

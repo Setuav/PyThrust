@@ -3,7 +3,6 @@ import pytest
 from pythrust.battery import FixedVoltageBattery
 from pythrust.propulsion.models.motor import MotorSpec
 from pythrust.propulsion.models.operating_point import OperatingPoint
-from pythrust.propulsion.models.propeller import PropellerSpec
 from pythrust.propulsion.models.system import SystemSpec
 
 
@@ -67,11 +66,6 @@ def test_other_specs():
 
     system = SystemSpec(resistance_ohm=0.015)
     assert system.resistance_ohm == 0.015
-
-    propeller = PropellerSpec(diameter_m=0.254, blade_count=3, pitch_m=0.114)
-    assert propeller.diameter_m == 0.254
-    assert propeller.blade_count == 3
-    assert propeller.pitch_m == 0.114
 
 
 def test_operating_point():

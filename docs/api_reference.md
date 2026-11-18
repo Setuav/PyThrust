@@ -71,12 +71,11 @@ Main `RateMapBattery` integration helpers:
 `BatteryIntegrationResult` reports final state, sampled histories, delivered
 energy, consumed charge, feasibility, and stop reason.
 
-## System and Propeller Specs
+## System Spec and Operating Point
 
 | Class | Purpose |
 |---|---|
 | `SystemSpec` | Lumped resistance of the ESC, wires and connectors, and the ESC's optional motor-side current limit |
-| `PropellerSpec` | Propeller geometry passed to the solver |
 | `OperatingPoint` | Solved RPM, thrust, torque, motor/battery current, voltage, efficiency, and feasibility state |
 
 ## Propulsion Solver
@@ -90,7 +89,6 @@ point = solver.solve_operating_point(
     battery_state=state,  # required for RateMapBattery
     system=system,
     propeller=propeller,
-    prop_entry=prop_entry,
     rho=1.225,
     airspeed_mps=15.0,
     throttle=0.7,
@@ -147,13 +145,37 @@ has no operating point (its reason is prefixed with `unit_<index>_`), or the
 network cannot supply the units' current at any voltage they run at
 (`bus_overload`). An infeasible point need not balance the network.
 
+## Propeller Models
+
+The solver takes any object that satisfies `pythrust.propeller.PropellerModel`:
+
+| Member | Description |
+|---|---|
+| `diameter_m` | Propeller diameter in metres |
+| `max_advance_ratio` | Advance ratio up to which the model is expected to give thrust; the RPM search starts there |
+| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and shaft torque in N m; zero torque where the model has no data |
+
+`TablePropeller` is the model for tabulated coefficients. It interpolates a
+`PropellerEntry` from the database:
+
+```python
+from pythrust.propeller import TablePropeller
+
+propeller = TablePropeller(entry)
+thrust_n, torque_nm = propeller.thrust_torque(rho=1.225, airspeed_mps=10.0, rpm=6000.0)
+```
+
+`TablePropeller(entry, diameter_m=0.30)` scales the tabulated propeller to
+another diameter with its coefficients unchanged: a geometrically similar
+propeller, without the Reynolds number effects of the size change.
+
 ## Propeller Database
 
 `PropellerDatabase` loads JSON metadata and CSV performance tables:
 
 ```python
 from pythrust import dataset_dir
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase
 
 db = PropellerDatabase()
 db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)

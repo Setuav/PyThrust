@@ -1,15 +1,15 @@
 import math
 import pytest
 from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
-from pythrust.propellers.database import (
+from pythrust.propeller.database import (
     PropellerMetadata,
     PropellerDataPoint,
     PropellerEntry
 )
+from pythrust.propeller import TablePropeller
 from pythrust.propulsion.models import (
     MotorSpec,
     SystemSpec,
-    PropellerSpec,
     OperatingPoint
 )
 from pythrust.propulsion.solver import PropulsionSolver, SolverConfig
@@ -27,8 +27,6 @@ def test_setup():
     )
     battery = FixedVoltageBattery(voltage_v=11.1, discharge_efficiency=0.98)
     system = SystemSpec(resistance_ohm=0.015)
-    propeller = PropellerSpec(diameter_m=0.254, blade_count=2, pitch_m=0.114)
-    
     meta = PropellerMetadata(
         id="apc_10x4.7",
         manufacturer="APC",
@@ -53,6 +51,7 @@ def test_setup():
     }
     
     prop_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
+    propeller = TablePropeller(prop_entry)
     
     return motor, battery, system, propeller, prop_entry
 
@@ -65,8 +64,7 @@ def test_solver_zero_throttle(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.0
@@ -90,8 +88,7 @@ def test_solver_successful_solve(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8
@@ -140,8 +137,7 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -151,8 +147,7 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
         battery=rate_map,
         battery_state=state,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -187,8 +182,7 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
         battery=battery,
         battery_state=BatteryState(soc=1.0),
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -198,8 +192,7 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
         battery=battery,
         battery_state=BatteryState(soc=0.2),
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -238,8 +231,7 @@ def test_solver_rate_map_requires_battery_state(test_setup):
             motor=motor,
             battery=battery,
             system=system,
-            propeller=propeller,
-            prop_entry=prop_entry,
+            propeller=TablePropeller(prop_entry),
             rho=1.225,
             airspeed_mps=0.0,
             throttle=0.8,
@@ -261,8 +253,7 @@ def test_solver_current_limit_exceeded(test_setup):
         motor=low_limit_motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.9
@@ -281,8 +272,7 @@ def test_solver_no_bracket(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=100.0,  # Unrealistic high speed
         throttle=0.1         # Very low throttle
@@ -310,8 +300,7 @@ def test_solver_brackets_above_windmilling_data(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=20.0,
         throttle=1.0,
@@ -322,7 +311,7 @@ def test_solver_brackets_above_windmilling_data(test_setup):
     assert op.thrust_n > 0.0
 
 
-def test_estimate_j_max(test_setup):
+def test_table_propeller_max_advance_ratio(test_setup):
     _, _, _, _, prop_entry = test_setup
     
     # 1. Standard estimation
@@ -330,12 +319,12 @@ def test_estimate_j_max(test_setup):
     # List of j_maxes is [0.8, 0.8]. Sorted.
     # len is 2. start = 2 // 4 = 0.
     # Should return j_maxes[0] = 0.8
-    assert PropulsionSolver._estimate_j_max(prop_entry) == 0.8
+    assert TablePropeller(prop_entry).max_advance_ratio == 0.8
     
     # 2. Empty data_by_rpm
     empty_meta = PropellerMetadata("empty", "A", "B", 10.0, 5.0, 2, "csv")
     empty_entry = PropellerEntry(metadata=empty_meta, data_by_rpm={})
-    assert PropulsionSolver._estimate_j_max(empty_entry) == 0.6
+    assert TablePropeller(empty_entry).max_advance_ratio == 0.6
 
 
 def test_solver_efficiencies(test_setup):
@@ -348,8 +337,7 @@ def test_solver_efficiencies(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8
@@ -364,8 +352,7 @@ def test_solver_efficiencies(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=5.0,
         throttle=0.8
@@ -416,8 +403,7 @@ def test_solver_invalid_efficiency(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=bad_entry,
+        propeller=TablePropeller(bad_entry),
         rho=1.225,
         airspeed_mps=5.0,
         throttle=0.8
@@ -460,8 +446,7 @@ def test_solver_preserves_first_infeasible_reason(test_setup):
         motor=low_limit_motor,
         battery=battery,
         system=system,
-        propeller=propeller,
-        prop_entry=bad_entry,
+        propeller=TablePropeller(bad_entry),
         rho=1.225,
         airspeed_mps=5.0,
         rpm=rpm,

@@ -72,7 +72,7 @@ model, whose no-load current does not depend on speed.
 ### Loading Propeller Database
 ```python
 from pythrust import dataset_dir
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase
 
 db = PropellerDatabase()
 db.load(dataset_dir() / "propellers" / "apc_202602")

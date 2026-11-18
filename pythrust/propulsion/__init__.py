@@ -3,7 +3,6 @@
 from .models import (  # noqa: F401
     MotorSpec,
     SystemSpec,
-    PropellerSpec,
     OperatingPoint,
 )
 from .solver import PropulsionSolver, SolverConfig  # noqa: F401

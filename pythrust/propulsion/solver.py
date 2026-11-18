@@ -11,8 +11,8 @@ import math
 from scipy.optimize import root_scalar
 
 from pythrust.battery import Battery, BatteryPoint, BatteryState, FixedVoltageBattery
-from pythrust.propellers.database import PropellerEntry
-from .models import MotorSpec, OperatingPoint, PropellerSpec, SystemSpec
+from pythrust.propeller.model import PropellerModel
+from .models import MotorSpec, OperatingPoint, SystemSpec
 
 
 @dataclass(frozen=True)
@@ -28,25 +28,26 @@ class SolverConfig:
 
 def evaluate_propulsion_state(
     motor: MotorSpec,
-    propeller: PropellerSpec,
-    prop_entry: PropellerEntry,
+    propeller: PropellerModel,
     rho: float,
     airspeed_mps: float,
     rpm: float,
-) -> tuple[float, float, float, float, float, float]:
-    """Calculate aerodynamic and motor electrical states at a given RPM."""
+) -> tuple[float, float, float, float, float]:
+    """Calculate propeller loads and motor electrical states at a given RPM.
+
+    Returns thrust, torque, advance ratio, motor current and back-EMF.
+    """
     n = max(rpm / 60.0, 1e-6)
     j = airspeed_mps / (n * propeller.diameter_m) if propeller.diameter_m > 0 else 0.0
-    ct, cp = prop_entry.get_coefficients(rpm, j)
+    thrust_n, torque_nm = propeller.thrust_torque(rho, airspeed_mps, rpm)
 
-    torque_nm = cp * rho * (n**2) * (propeller.diameter_m**5) / (2.0 * math.pi)
     kt = 30.0 / (math.pi * motor.kv_rpm_per_v * motor.torque_constant_kv_ratio)
     current_a = torque_nm / kt + motor.get_no_load_current(rpm)
 
     # Back-EMF with magnetic lag: V_back = (omega * (1 + tau*omega)) / Kv
     v_back = (rpm / motor.kv_rpm_per_v) * (1.0 + motor.magnetic_lag_tau * rpm * (math.pi / 30.0))
 
-    return ct, cp, j, torque_nm, current_a, v_back
+    return thrust_n, torque_nm, j, current_a, v_back
 
 
 class PropulsionSolver:
@@ -60,8 +61,7 @@ class PropulsionSolver:
         motor: MotorSpec,
         battery: Battery,
         system: SystemSpec,
-        propeller: PropellerSpec,
-        prop_entry: PropellerEntry,
+        propeller: PropellerModel,
         rho: float,
         airspeed_mps: float,
         throttle: float,
@@ -91,15 +91,14 @@ class PropulsionSolver:
         self._validate_battery_state(battery, battery_state)
 
         def g(rpm: float) -> float:
-            ct, cp, j, torque_nm, current_a, v_back = self._evaluate_state(
+            thrust_n, torque_nm, j, current_a, v_back = self._evaluate_state(
                 motor,
                 propeller,
-                prop_entry,
                 rho,
                 airspeed_mps,
                 rpm,
             )
-            if cp <= 0.0 or ct < 0.0 or j < 0.0:
+            if torque_nm <= 0.0 or thrust_n < 0.0 or j < 0.0:
                 return float("inf")
             v_motor = v_back + current_a * motor.get_winding_resistance(current_a)
             battery_current_for_voltage_a = throttle * current_a
@@ -109,8 +108,7 @@ class PropulsionSolver:
 
         rpm_min = max(self.config.rpm_min, 1.0)
         if airspeed_mps > 0.0 and propeller.diameter_m > 0.0:
-            j_max = self._estimate_j_max(prop_entry)
-            rpm_min = max(rpm_min, airspeed_mps / (j_max * propeller.diameter_m) * 60.0)
+            rpm_min = max(rpm_min, airspeed_mps / (propeller.max_advance_ratio * propeller.diameter_m) * 60.0)
 
         rpm_max = motor.kv_rpm_per_v * self._battery_voltage(battery, 0.0, battery_state) * throttle
         rpm_max = max(rpm_max, rpm_min * 1.2) * self.config.rpm_max_margin
@@ -127,7 +125,6 @@ class PropulsionSolver:
                 battery,
                 system,
                 propeller,
-                prop_entry,
                 rho,
                 airspeed_mps,
                 rpm_min if abs(g_min) < abs(g_max) else rpm_max,
@@ -151,7 +148,6 @@ class PropulsionSolver:
                 battery,
                 system,
                 propeller,
-                prop_entry,
                 rho,
                 airspeed_mps,
                 result.root,
@@ -165,7 +161,6 @@ class PropulsionSolver:
             battery,
             system,
             propeller,
-            prop_entry,
             rho,
             airspeed_mps,
             result.root,
@@ -199,39 +194,41 @@ class PropulsionSolver:
     def _evaluate_state(
         self,
         motor: MotorSpec,
-        propeller: PropellerSpec,
-        prop_entry: PropellerEntry,
+        propeller: PropellerModel,
         rho: float,
         airspeed_mps: float,
         rpm: float,
-    ) -> tuple[float, float, float, float, float, float]:
-        return evaluate_propulsion_state(motor, propeller, prop_entry, rho, airspeed_mps, rpm)
+    ) -> tuple[float, float, float, float, float]:
+        return evaluate_propulsion_state(motor, propeller, rho, airspeed_mps, rpm)
 
     def _build_point(
         self,
         motor: MotorSpec,
         battery: Battery,
         system: SystemSpec,
-        propeller: PropellerSpec,
-        prop_entry: PropellerEntry,
+        propeller: PropellerModel,
         rho: float,
         airspeed_mps: float,
         rpm: float,
         battery_state: BatteryState | None = None,
         throttle: float = 1.0,
     ) -> OperatingPoint:
-        ct, cp, j, torque_nm, current_a, v_back = self._evaluate_state(
+        thrust_n, torque_nm, j, current_a, v_back = self._evaluate_state(
             motor,
             propeller,
-            prop_entry,
             rho,
             airspeed_mps,
             rpm,
         )
 
         n = max(rpm / 60.0, 1e-6)
-        thrust_n = ct * rho * (n**2) * (propeller.diameter_m**4)
-        shaft_power_w = cp * rho * (n**3) * (propeller.diameter_m**5)
+        shaft_power_w = torque_nm * 2.0 * math.pi * n
+        dynamic_force_n = rho * (n**2) * (propeller.diameter_m**4)
+        if dynamic_force_n > 0.0:
+            ct = thrust_n / dynamic_force_n
+            cp = 2.0 * math.pi * torque_nm / (dynamic_force_n * propeller.diameter_m)
+        else:
+            ct = cp = 0.0
         motor_voltage_v = v_back + current_a * motor.get_winding_resistance(current_a)
         motor_power_w = motor_voltage_v * current_a
         battery_power_w = self._battery_power(
@@ -316,8 +313,7 @@ class PropulsionSolver:
         motor: MotorSpec,
         battery: Battery,
         system: SystemSpec,
-        propeller: PropellerSpec,
-        prop_entry: PropellerEntry,
+        propeller: PropellerModel,
         rho: float,
         airspeed_mps: float,
         rpm: float,
@@ -330,7 +326,6 @@ class PropulsionSolver:
             battery,
             system,
             propeller,
-            prop_entry,
             rho,
             airspeed_mps,
             rpm,
@@ -431,20 +426,3 @@ class PropulsionSolver:
         if isinstance(battery, FixedVoltageBattery):
             return battery.discharge_efficiency
         return 1.0
-
-    @staticmethod
-    def _estimate_j_max(prop_entry: PropellerEntry) -> float:
-        j_maxes = []
-        for points in prop_entry.data_by_rpm.values():
-            if not points:
-                continue
-            j_maxes.append(points[-1].j)
-
-        if not j_maxes:
-            return 0.6
-
-        j_maxes.sort()
-        start = len(j_maxes) // 4
-        if start >= len(j_maxes):
-            start = len(j_maxes) - 1
-        return j_maxes[start]

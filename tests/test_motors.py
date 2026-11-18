@@ -4,8 +4,8 @@ from pathlib import Path
 import pytest
 from pythrust.battery import FixedVoltageBattery
 from pythrust.motors import MotorDatabase
-from pythrust.propellers import PropellerDatabase
-from pythrust.propulsion import PropellerSpec, PropulsionSolver, SystemSpec
+from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.propulsion import PropulsionSolver, SystemSpec
 
 
 def test_motor_database():
@@ -104,8 +104,7 @@ def test_motor_without_max_current_is_not_current_limited(tmp_path):
         motor=entry.to_spec(),
         battery=FixedVoltageBattery(voltage_v=14.8),
         system=SystemSpec(),
-        propeller=PropellerSpec(diameter_m=prop_entry.diameter_m),
-        prop_entry=prop_entry,
+        propeller=TablePropeller(prop_entry),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.5,

@@ -7,10 +7,9 @@ import pytest
 import openmdao.api as om
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propellers import PropellerDatabase
+from pythrust.propeller import PropellerDatabase, TablePropeller
 from pythrust.propulsion import (
     MotorSpec,
-    PropellerSpec,
     PropulsionSolver,
     SystemSpec,
 )
@@ -41,7 +40,7 @@ def test_propulsion_component_runs(prop_entry):
     )
     battery = FixedVoltageBattery(voltage_v=14.8)
     system = SystemSpec(resistance_ohm=0.095)
-    propeller = PropellerSpec(diameter_m=0.3302)
+    propeller = TablePropeller(prop_entry, diameter_m=0.3302)
     
     solver = PropulsionSolver()
     op_ref = solver.solve_operating_point(
@@ -49,7 +48,6 @@ def test_propulsion_component_runs(prop_entry):
         battery=battery,
         system=system,
         propeller=propeller,
-        prop_entry=prop_entry,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.7,

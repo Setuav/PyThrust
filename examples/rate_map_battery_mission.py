@@ -19,8 +19,8 @@ if str(PROJECT_ROOT) not in sys.path:
 from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
 from pythrust.motors import MotorDatabase
-from pythrust.propellers import PropellerDatabase
-from pythrust.propulsion import PropellerSpec, PropulsionSolver, SystemSpec
+from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.propulsion import PropulsionSolver, SystemSpec
 
 
 MISSION_SEGMENTS = [
@@ -37,7 +37,7 @@ def load_propeller():
     prop_entry = db.get("APC_13x6.5E")
     if prop_entry is None:
         raise SystemExit("Propeller 'APC_13x6.5E' not found in dataset.")
-    return prop_entry
+    return TablePropeller(prop_entry)
 
 
 def load_motor():
@@ -56,8 +56,7 @@ def main():
 
     motor = load_motor()
     system = SystemSpec(resistance_ohm=0.015)  # ESC and wiring; the battery model has its own resistance
-    prop_entry = load_propeller()
-    propeller = PropellerSpec(diameter_m=prop_entry.diameter_m)
+    propeller = load_propeller()
     solver = PropulsionSolver()
 
     total_energy_wh = 0.0
@@ -79,7 +78,6 @@ def main():
             battery_state=state,
             system=system,
             propeller=propeller,
-            prop_entry=prop_entry,
             rho=1.225,
             airspeed_mps=segment["airspeed_mps"],
             throttle=segment["throttle"],
