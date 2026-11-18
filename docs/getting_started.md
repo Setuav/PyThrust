@@ -41,23 +41,21 @@ pip install -e .[plot,openmdao,dev,docs]
 
 The core workflow is:
 
-1. Load a propeller aerodynamic dataset.
+1. Download an APC propeller performance file, here `PER3_13x65E.dat` from
+   <https://www.apcprop.com/files/PER3_13x65E.dat>. See [Data Files](data_files.md).
 2. Define motor, battery, system, and propeller specifications.
 3. Solve the operating point for an airspeed and throttle.
 
 ```python
-from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.io import read_apc
+from pythrust.motor import MotorSpec
 from pythrust.propulsion import (
-    MotorSpec,
     PropulsionSolver,
     SystemSpec,
 )
 
-prop_db = PropellerDatabase()
-prop_db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-propeller = TablePropeller(prop_db.get("APC_13x6.5E"))
+propeller = read_apc("PER3_13x65E.dat")
 
 motor = MotorSpec(
     kv_rpm_per_v=860.0,
@@ -90,7 +88,6 @@ print(point.is_feasible)
 ```bash
 PYTHONPATH=. python examples/rate_map_battery_point_states.py
 PYTHONPATH=. python examples/rate_map_battery_mission.py
-PYTHONPATH=. python examples/select_motor_from_database.py
 ```
 
 See [Examples](examples.md) for the purpose, inputs, and outputs of each script.

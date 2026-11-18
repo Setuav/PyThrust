@@ -7,30 +7,23 @@ import pytest
 import openmdao.api as om
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.io import read_apc
+from pythrust.motor import MotorSpec
 from pythrust.propulsion import (
-    MotorSpec,
     PropulsionSolver,
     SystemSpec,
 )
 from pythrust.openmdao import PropulsionComponent
 
-_DATASET_DIR = Path(__file__).parent.parent / "pythrust" / "data" / "propellers" / "apc_202602"
-_PROP_ID = "APC_13x6.5E"
+_APC_FILE = Path(__file__).parent / "data" / "PER3_13x65E.dat"
 
 
 @pytest.fixture(scope="module")
-def prop_entry():
-    db = PropellerDatabase()
-    if not db.load(_DATASET_DIR, strict=False):
-        pytest.skip(f"Propeller dataset not found at {_DATASET_DIR}")
-    entry = db.get(_PROP_ID)
-    if entry is None:
-        pytest.skip(f"{_PROP_ID} not found in dataset")
-    return entry
+def propeller():
+    return read_apc(_APC_FILE)
 
 
-def test_propulsion_component_runs(prop_entry):
+def test_propulsion_component_runs(propeller):
     # 1. Run the raw solver as ground truth
     motor = MotorSpec(
         kv_rpm_per_v=860.0,
@@ -40,14 +33,13 @@ def test_propulsion_component_runs(prop_entry):
     )
     battery = FixedVoltageBattery(voltage_v=14.8)
     system = SystemSpec(resistance_ohm=0.095)
-    propeller = TablePropeller(prop_entry, diameter_m=0.3302)
     
     solver = PropulsionSolver()
     op_ref = solver.solve_operating_point(
         motor=motor,
         battery=battery,
         system=system,
-        propeller=propeller,
+        propeller=propeller.scaled(0.3302),
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.7,
@@ -58,7 +50,7 @@ def test_propulsion_component_runs(prop_entry):
     prob = om.Problem()
     model = prob.model
 
-    comp = PropulsionComponent(prop_entry=prop_entry)
+    comp = PropulsionComponent(propeller=propeller)
     model.add_subsystem('prop', comp, promotes=['*'])
 
     prob.setup()

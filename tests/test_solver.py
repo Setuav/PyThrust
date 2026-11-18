@@ -1,14 +1,9 @@
 import math
 import pytest
 from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
-from pythrust.propeller.database import (
-    PropellerMetadata,
-    PropellerDataPoint,
-    PropellerEntry
-)
-from pythrust.propeller import TablePropeller
+from pythrust.motor import MotorSpec
+from pythrust.propeller import PropellerDataPoint, TablePropeller
 from pythrust.propulsion.models import (
-    MotorSpec,
     SystemSpec,
     OperatingPoint
 )
@@ -27,15 +22,6 @@ def test_setup():
     )
     battery = FixedVoltageBattery(voltage_v=11.1, discharge_efficiency=0.98)
     system = SystemSpec(resistance_ohm=0.015)
-    meta = PropellerMetadata(
-        id="apc_10x4.7",
-        manufacturer="APC",
-        model="SF",
-        diameter_in=10.0,
-        pitch_in=4.7,
-        blade_count=2,
-        data_csv="apc_10x4.7.csv"
-    )
     
     data = {
         1000.0: [
@@ -50,21 +36,20 @@ def test_setup():
         ]
     }
     
-    prop_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
-    propeller = TablePropeller(prop_entry)
+    propeller = TablePropeller(diameter_m=0.254, data_by_rpm=data)
     
-    return motor, battery, system, propeller, prop_entry
+    return motor, battery, system, propeller
 
 
 def test_solver_zero_throttle(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     solver = PropulsionSolver()
     
     op = solver.solve_operating_point(
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.0
@@ -80,7 +65,7 @@ def test_solver_zero_throttle(test_setup):
 
 
 def test_solver_successful_solve(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     solver = PropulsionSolver()
     
     # Use static thrust (airspeed = 0.0) to avoid numeric edge issues on J
@@ -88,7 +73,7 @@ def test_solver_successful_solve(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8
@@ -117,7 +102,7 @@ def test_solver_successful_solve(test_setup):
 
 
 def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     solver = PropulsionSolver()
     state = BatteryState(soc=0.5)
     rate_map = RateMapBattery(
@@ -137,7 +122,7 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -147,7 +132,7 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
         battery=rate_map,
         battery_state=state,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -162,7 +147,7 @@ def test_solver_rate_map_matches_fixed_voltage_when_voltage_is_flat(test_setup):
 
 
 def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
-    motor, _, system, propeller, prop_entry = test_setup
+    motor, _, system, propeller = test_setup
     solver = PropulsionSolver()
     battery = RateMapBattery(
         name="soc-sensitive voltage",
@@ -182,7 +167,7 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
         battery=battery,
         battery_state=BatteryState(soc=1.0),
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -192,7 +177,7 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
         battery=battery,
         battery_state=BatteryState(soc=0.2),
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8,
@@ -211,7 +196,7 @@ def test_solver_rate_map_voltage_changes_with_state_of_charge(test_setup):
 
 
 def test_solver_rate_map_requires_battery_state(test_setup):
-    motor, _, system, propeller, prop_entry = test_setup
+    motor, _, system, propeller = test_setup
     solver = PropulsionSolver()
     battery = RateMapBattery(
         name="requires state",
@@ -231,7 +216,7 @@ def test_solver_rate_map_requires_battery_state(test_setup):
             motor=motor,
             battery=battery,
             system=system,
-            propeller=TablePropeller(prop_entry),
+            propeller=propeller,
             rho=1.225,
             airspeed_mps=0.0,
             throttle=0.8,
@@ -239,7 +224,7 @@ def test_solver_rate_map_requires_battery_state(test_setup):
 
 
 def test_solver_current_limit_exceeded(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     # Create a motor with a very low current limit to force current_limit infeasibility
     low_limit_motor = MotorSpec(
         kv_rpm_per_v=motor.kv_rpm_per_v,
@@ -253,7 +238,7 @@ def test_solver_current_limit_exceeded(test_setup):
         motor=low_limit_motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.9
@@ -264,7 +249,7 @@ def test_solver_current_limit_exceeded(test_setup):
 
 
 def test_solver_no_bracket(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     # Set high airspeed, so at low RPM the advance ratio is huge (past J_max)
     # causing cp <= 0 and evaluate_state returning inf, or v_motor > v_applied.
     solver = PropulsionSolver()
@@ -272,7 +257,7 @@ def test_solver_no_bracket(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=100.0,  # Unrealistic high speed
         throttle=0.1         # Very low throttle
@@ -284,23 +269,20 @@ def test_solver_no_bracket(test_setup):
 
 def test_solver_brackets_above_windmilling_data(test_setup):
     """Propeller data ending in the windmilling region must not hide a valid root."""
-    motor, battery, system, propeller, _ = test_setup
+    motor, battery, system, _ = test_setup
     points = [
         PropellerDataPoint(j=0.0, ct=0.11, cp=0.055),
         PropellerDataPoint(j=0.4, ct=0.08, cp=0.045),
         PropellerDataPoint(j=0.8, ct=0.02, cp=0.02),
         PropellerDataPoint(j=1.0, ct=-0.02, cp=-0.005),
     ]
-    meta = PropellerMetadata("windmill", "A", "B", 10.0, 4.7, 2, "csv")
-    prop_entry = PropellerEntry(
-        metadata=meta, data_by_rpm={1000.0: list(points), 8000.0: list(points)}
-    )
+    windmilling = TablePropeller(diameter_m=0.254, data_by_rpm={1000.0: list(points), 8000.0: list(points)})
 
     op = PropulsionSolver().solve_operating_point(
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=windmilling,
         rho=1.225,
         airspeed_mps=20.0,
         throttle=1.0,
@@ -312,23 +294,21 @@ def test_solver_brackets_above_windmilling_data(test_setup):
 
 
 def test_table_propeller_max_advance_ratio(test_setup):
-    _, _, _, _, prop_entry = test_setup
+    _, _, _, propeller = test_setup
     
     # 1. Standard estimation
     # j_max values from data: 0.8 at 1000.0 RPM, 0.8 at 8000.0 RPM.
     # List of j_maxes is [0.8, 0.8]. Sorted.
     # len is 2. start = 2 // 4 = 0.
     # Should return j_maxes[0] = 0.8
-    assert TablePropeller(prop_entry).max_advance_ratio == 0.8
+    assert propeller.max_advance_ratio == 0.8
     
     # 2. Empty data_by_rpm
-    empty_meta = PropellerMetadata("empty", "A", "B", 10.0, 5.0, 2, "csv")
-    empty_entry = PropellerEntry(metadata=empty_meta, data_by_rpm={})
-    assert TablePropeller(empty_entry).max_advance_ratio == 0.6
+    assert TablePropeller(diameter_m=0.254, data_by_rpm={}).max_advance_ratio == 0.6
 
 
 def test_solver_efficiencies(test_setup):
-    motor, battery, system, propeller, prop_entry = test_setup
+    motor, battery, system, propeller = test_setup
     # Configure higher rpm_min to prevent rpm_min J from exceeding j_max and returning inf
     solver = PropulsionSolver(SolverConfig(rpm_min=2000.0))
 
@@ -337,7 +317,7 @@ def test_solver_efficiencies(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=0.0,
         throttle=0.8
@@ -352,7 +332,7 @@ def test_solver_efficiencies(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry),
+        propeller=propeller,
         rho=1.225,
         airspeed_mps=5.0,
         throttle=0.8
@@ -375,19 +355,10 @@ def test_solver_efficiencies(test_setup):
 
 
 def test_solver_invalid_efficiency(test_setup):
-    motor, battery, system, propeller, _ = test_setup
+    motor, battery, system, propeller = test_setup
     
     # Create custom propeller data where Ct/Cp = 15.0 at J = 0.2
     # With J = 0.2, eta_prop = (Ct/Cp) * J = 15.0 * 0.2 = 3.0 (> 1.0)
-    meta = PropellerMetadata(
-        id="bad_prop",
-        manufacturer="APC",
-        model="SF",
-        diameter_in=10.0,
-        pitch_in=4.7,
-        blade_count=2,
-        data_csv="bad.csv"
-    )
     data = {
         8000.0: [
             PropellerDataPoint(j=0.0, ct=0.12, cp=0.06),
@@ -395,7 +366,7 @@ def test_solver_invalid_efficiency(test_setup):
             PropellerDataPoint(j=0.8, ct=0.02, cp=0.01)
         ]
     }
-    bad_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
+    bad_propeller = TablePropeller(diameter_m=0.254, data_by_rpm=data)
     
     solver = PropulsionSolver(SolverConfig(rpm_min=2000.0))
     # Solve at airspeed = 5.0 m/s to land J near 0.2
@@ -403,7 +374,7 @@ def test_solver_invalid_efficiency(test_setup):
         motor=motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(bad_entry),
+        propeller=bad_propeller,
         rho=1.225,
         airspeed_mps=5.0,
         throttle=0.8
@@ -415,21 +386,12 @@ def test_solver_invalid_efficiency(test_setup):
 
 
 def test_solver_preserves_first_infeasible_reason(test_setup):
-    motor, battery, system, propeller, _ = test_setup
+    motor, battery, system, propeller = test_setup
     low_limit_motor = MotorSpec(
         kv_rpm_per_v=motor.kv_rpm_per_v,
         resistance_ohm=motor.resistance_ohm,
         no_load_current_a=motor.no_load_current_a,
         current_max_a=0.01,
-    )
-    meta = PropellerMetadata(
-        id="bad_prop",
-        manufacturer="APC",
-        model="SF",
-        diameter_in=10.0,
-        pitch_in=4.7,
-        blade_count=2,
-        data_csv="bad.csv",
     )
     data = {
         6000.0: [
@@ -438,7 +400,7 @@ def test_solver_preserves_first_infeasible_reason(test_setup):
             PropellerDataPoint(j=0.8, ct=0.02, cp=0.01),
         ]
     }
-    bad_entry = PropellerEntry(metadata=meta, data_by_rpm=data)
+    bad_propeller = TablePropeller(diameter_m=0.254, data_by_rpm=data)
     solver = PropulsionSolver()
     rpm = 5.0 / (0.2 * propeller.diameter_m) * 60.0
 
@@ -446,7 +408,7 @@ def test_solver_preserves_first_infeasible_reason(test_setup):
         motor=low_limit_motor,
         battery=battery,
         system=system,
-        propeller=TablePropeller(bad_entry),
+        propeller=bad_propeller,
         rho=1.225,
         airspeed_mps=5.0,
         rpm=rpm,

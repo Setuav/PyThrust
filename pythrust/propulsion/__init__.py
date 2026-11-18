@@ -1,7 +1,6 @@
 """Propulsion solver models and utilities."""
 
 from .models import (  # noqa: F401
-    MotorSpec,
     SystemSpec,
     OperatingPoint,
 )

@@ -9,9 +9,10 @@ from scipy.optimize import brentq
 
 from pythrust.battery import FixedVoltageBattery
 from pythrust.battery.network import BatteryNetwork, NetworkPoint, NetworkState
+from pythrust.motor import MotorSpec
 from pythrust.propeller.model import PropellerModel
 
-from .models import MotorSpec, OperatingPoint, SystemSpec
+from .models import OperatingPoint, SystemSpec
 from .solver import PropulsionSolver
 
 _SAG_SEARCH_FRACTIONS = (0.98, 0.95, 0.9, 0.8, 0.65, 0.5, 0.35, 0.2)

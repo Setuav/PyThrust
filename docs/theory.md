@@ -31,7 +31,7 @@ This document defines the core mathematical model for the electric propulsion sy
 
 ## 2) Propeller Aerodynamics
 
-Propeller coefficients $C_t(J, \text{RPM})$ and $C_p(J, \text{RPM})$ are loaded from an empirical database and evaluated using bilinear interpolation.
+Propeller coefficients $C_t(J, \text{RPM})$ and $C_p(J, \text{RPM})$ are tabulated, for example read from an APC performance file, and evaluated using bilinear interpolation.
 
 ### Aerodynamic Equations
 
@@ -86,9 +86,9 @@ constant.
 
 With the second-order terms at their defaults ($K_Q = K_V$, $I_{01} = I_{02} = 0$,
 $R_2 = 0$, $\tau = 0$) this is the first-order model [1]: constant resistance and
-constant no-load current. Catalog motors use the first-order model, because the
-catalog gives only $K_v$, $R_0$ and $I_{00}$; their `io_voltage` records the
-voltage at which the no-load current was measured.
+constant no-load current. A motor from a datasheet uses the first-order model,
+because the datasheet gives only $K_v$, $R_0$ and $I_{00}$, the last measured at a
+stated voltage.
 
 | Symbol | `MotorSpec` field |
 |---|---|

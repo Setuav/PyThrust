@@ -44,10 +44,11 @@ Operating instructions for coding agents. Keep this file short and concrete.
   - Lint / Typecheck: none configured
   - Docs: `mkdocs build --strict`
   - Examples: `PYTHONPATH=. python examples/<script>.py`
-- **Layout:** Source: `pythrust/` | Tests: `tests/` | Docs: `docs/` | Examples: `examples/` | Tools: `scripts/`
+- **Layout:** Source: `pythrust/` | Tests: `tests/` | Docs: `docs/` | Examples: `examples/` | Test data: `tests/data/`
 - **Conventions:**
   - Conventional Commits: `feat(scope):`, `fix(scope):`, `refactor!:` with a `BREAKING CHANGE:` footer for API breaks.
   - Work on `feat/...` or `fix/...` branches and merge to `main` through a pull request; never commit to `main` directly.
+  - Pull request titles use the same Conventional Commits format. Squash-merge, so the commit on `main` carries the PR title, not `Merge pull request #...`.
   - Release: bump `__version__` in `pythrust/__init__.py` in a separate `chore(release): bump version to X.Y.Z` commit. Publishing a GitHub release uploads to PyPI.
   - SI units, with the unit as a field-name suffix (`resistance_ohm`, `diameter_m`, `kv_rpm_per_v`).
   - Solvers return an infeasible `OperatingPoint` with `infeasible_reason`; they do not raise for infeasible operating points.
