@@ -197,6 +197,16 @@ See [Data Files](data_files.md) for what `read_apc` takes from the file.
 `CD = (cd0 + cd2 * (CL - cl_at_cd0)^2) * (Re / reynolds_ref)^reynolds_exp`, with
 `cd2_upper` above `cl_at_cd0` and `cd2_lower` below it.
 
+`section_coefficients(section, alpha_rad, reynolds, mach)` evaluates that
+model on scalars or NumPy arrays and returns `(CL, CD)`. It reproduces QPROP
+1.22: the linear lift carries the Prandtl-Glauert factor `1 / sqrt(1 - M^2)`,
+and the section stalls where that corrected lift passes `cl_max` or `cl_min`.
+Two details are not in the QPROP guide and were measured from QPROP's output: a
+stalled section's lift falls off as `cl_max * cos(alpha - cl0 / cl_alpha_per_rad)`
+(`cl_min` on the negative side), and its added stall drag
+`2 sin^2(alpha - alpha_cd0)`, with `alpha_cd0 = (cl_at_cd0 - cl0) / cl_alpha_per_rad`,
+does not scale with the Reynolds number.
+
 ## OpenMDAO
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.
