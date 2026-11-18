@@ -36,6 +36,45 @@ power. A file without a size in its first line, or without data rows, raises
 APC computes these tables with its own blade-element software; they are not
 wind-tunnel measurements.
 
+## Propellers: QPROP Files
+
+A QPROP propeller file describes the blade itself: chord and blade angle at
+radial stations, and the airfoil's lift and drag parameters. The format is
+defined in the [QPROP user guide](https://web.mit.edu/drela/Public/web/qprop/qprop_doc.txt).
+`pythrust.io.read_qprop_propeller` reads one into a `BladeGeometry` in SI units:
+
+```python
+from pythrust.io import read_qprop_propeller
+
+blade = read_qprop_propeller("prop.txt")
+print(blade.blade_count, blade.radius_m)
+print(blade.r_m, blade.chord_m, blade.blade_angle_rad)
+print(blade.sections[0].cl_alpha_per_rad)
+```
+
+The file holds, in order:
+
+| Line | Content |
+|---|---|
+| 1 | Name |
+| 2 | `Nblades [R]`; without `R`, the last station's radius is the tip radius |
+| 3 | `CL0 CL_a` |
+| 4 | `CLmin CLmax` |
+| 5 | `CD0 CD2u CD2l CLCD0` |
+| 6 | `REref REexp` |
+| 7 | `Rfac Cfac Bfac` |
+| 8 | `Radd Cadd Badd` |
+| 9 on | `r chord beta`, one station per line from root to tip |
+
+Radii and chords become `value * fac + add` in metres, and the blade angle
+`beta * Bfac + Badd` in degrees, converted to radians. A station line may
+append its own `CL0 CL_a CLmin CLmax CD0 CD2u CD2l CLCD0 REref REexp`; values it
+leaves out take those of lines 3 to 6. Lines starting with `#` and blank lines
+are skipped, and text after `!` is ignored.
+
+`CL_a` is read per radian. The QPROP guide does not state its unit; its example
+value of 5.8 is a lift slope per radian.
+
 ## Motors: Datasheet Values
 
 Write the motor constants into a `MotorSpec`:

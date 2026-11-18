@@ -176,6 +176,27 @@ ct, cp = propeller.get_coefficients(rpm=6000.0, advance_ratio=0.3)
 
 See [Data Files](data_files.md) for what `read_apc` takes from the file.
 
+### Blade Geometry
+
+`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file into a
+`BladeGeometry`, the input of a blade-element propeller model:
+
+| Field | Unit | Description |
+|---|---:|---|
+| `blade_count` | - | Number of blades |
+| `radius_m` | m | Tip radius |
+| `r_m` | m | Station radii, root to tip |
+| `chord_m` | m | Chord at each station |
+| `blade_angle_rad` | rad | Blade angle from the plane of rotation at each station |
+| `sections` | - | `BladeSection` at each station |
+
+`BladeSection` holds QPROP's airfoil parameters: `cl0`, `cl_alpha_per_rad`,
+`cl_min`, `cl_max`, `cd0`, `cd2_upper`, `cd2_lower`, `cl_at_cd0`,
+`reynolds_ref` and `reynolds_exp`. Lift is
+`CL = cl0 + cl_alpha_per_rad * alpha`, clipped to `[cl_min, cl_max]`; drag is
+`CD = (cd0 + cd2 * (CL - cl_at_cd0)^2) * (Re / reynolds_ref)^reynolds_exp`, with
+`cd2_upper` above `cl_at_cd0` and `cd2_lower` below it.
+
 ## OpenMDAO
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.
