@@ -13,11 +13,9 @@ PyThrust is an open-source framework for electric propulsion system analysis, co
 
 ## Feature Visuals
 
-| System Resistance Calibration | OpenMDAO Hover Co-Design |
+| System Resistance Calibration | Empirical Propeller Database |
 | :---: | :---: |
-| ![System Resistance Calibration](docs/images/calibration_results.png) | ![OpenMDAO Hover Co-Design](docs/images/optimize_and_plot_results.png) |
-| **Empirical Propeller Database** | **Hover Efficiency Map** |
-| ![Empirical Propeller Database](docs/images/propeller_coefficients.png) | ![Hover Efficiency Map](docs/images/efficiency_heatmap.png) |
+| ![System Resistance Calibration](docs/images/calibration_results.png) | ![Empirical Propeller Database](docs/images/propeller_coefficients.png) |
 
 ## Documentation
 

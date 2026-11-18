@@ -36,11 +36,9 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 ## Feature Visuals
 
-| System Resistance Calibration | OpenMDAO Hover Co-Design |
+| System Resistance Calibration | Empirical Propeller Database |
 | :---: | :---: |
-| ![System resistance calibration](images/calibration_results.png) | ![OpenMDAO hover co-design](images/optimize_and_plot_results.png) |
-| **Empirical Propeller Database** | **Hover Efficiency Map** |
-| ![Empirical propeller database](images/propeller_coefficients.png) | ![Hover efficiency map](images/efficiency_heatmap.png) |
+| ![System resistance calibration](images/calibration_results.png) | ![Empirical propeller database](images/propeller_coefficients.png) |
 
 ## Explore the Docs
 

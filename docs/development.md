@@ -30,13 +30,7 @@ PYTHONPATH=. python examples/select_motor_from_database.py
 
 See [Examples](examples.md) for a user-facing walkthrough of each script.
 
-Generated plots are written under `docs/images/` and are used by the documentation site.
-
-Regenerate the README and documentation feature visuals:
-
-```bash
-PYTHONPATH=. python scripts/generate_readme_plots.py
-```
+The images under `docs/images/` are maintained by hand.
 
 ## Documentation Site
 
