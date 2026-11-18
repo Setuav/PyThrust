@@ -18,8 +18,9 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
+from pythrust.motors import MotorDatabase
 from pythrust.propellers import PropellerDatabase
-from pythrust.propulsion import MotorSpec, PropellerSpec, PropulsionSolver, SystemSpec
+from pythrust.propulsion import PropellerSpec, PropulsionSolver, SystemSpec
 
 
 MISSION_SEGMENTS = [
@@ -39,20 +40,24 @@ def load_propeller():
     return prop_entry
 
 
+def load_motor():
+    db = MotorDatabase()
+    db.load(dataset_dir() / "motors")
+    motor_entry = db.get("SunnySky_X2820_KV860_V3_3-4S")
+    if motor_entry is None:
+        raise SystemExit("Motor 'SunnySky_X2820_KV860_V3_3-4S' not found in dataset.")
+    return motor_entry.to_spec()
+
+
 def main():
     battery_dataset = dataset_dir() / "batteries" / "example_liion_cell.json"
     battery = RateMapBattery.from_json(battery_dataset, series=4, parallel=2)
     state = BatteryState(soc=0.95)
 
-    motor = MotorSpec(
-        kv_rpm_per_v=860.0,
-        resistance_ohm=0.0258,
-        no_load_current_a=1.3,
-        current_max_a=65.0,
-    )
+    motor = load_motor()
     system = SystemSpec(resistance_ohm=0.095)
-    propeller = PropellerSpec(diameter_m=0.3302)
     prop_entry = load_propeller()
+    propeller = PropellerSpec(diameter_m=prop_entry.diameter_m)
     solver = PropulsionSolver()
 
     total_energy_wh = 0.0
@@ -63,7 +68,7 @@ def main():
     print(f"Initial SoC: {state.soc * 100.0:.1f}%")
     print()
 
-    header = f"{'Segment':<10}{'min':>6}{'thr':>7}{'SoC':>17}{'I [A]':>9}{'V [V]':>9}"
+    header = f"{'Segment':<10}{'min':>6}{'thr':>7}{'T [g]':>8}{'SoC':>17}{'I [A]':>9}{'V [V]':>9}"
     print(header)
     print("-" * len(header))
 
@@ -98,6 +103,7 @@ def main():
             f"{segment['name']:<10}"
             f"{segment['duration_s'] / 60.0:>6.1f}"
             f"{segment['throttle'] * 100.0:>6.0f}%"
+            f"{op.thrust_n * 1000.0 / 9.80665:>8.0f}"
             f"{state.soc * 100.0:>7.1f}% -> {next_state.soc * 100.0:>5.1f}%"
             f"{op.battery_current_a:>9.2f}"
             f"{op.battery_voltage_v:>9.2f}"

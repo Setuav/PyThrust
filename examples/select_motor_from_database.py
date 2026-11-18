@@ -1,7 +1,20 @@
-"""Select commercially available brushless motors from the database.
+"""Select catalog motors for a hover requirement.
 
-This example first solves for an efficient theoretical hover design, then uses
-the motor database to find real motors near the optimized Kv and current.
+For one catalog propeller and battery voltage, this example solves every
+catalog motor at full throttle and in hover, then ranks the motors that pass by
+the battery power they draw in hover.
+
+A motor passes when:
+
+- the catalog gives its maximum current,
+- its current at full throttle stays within that maximum, and
+- its thrust at full throttle is at least ``MIN_THRUST_TO_WEIGHT`` times the
+  hover thrust.
+
+The hover thrust includes the motor's own weight, so a heavier motor also has
+to lift itself. Catalogs list one frame in several windings (Kv values); the
+table shows the best winding of each frame, taking motors of one manufacturer
+with the same weight as one frame.
 
 Usage::
 
@@ -9,121 +22,151 @@ Usage::
 """
 
 import sys
+from collections import Counter
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-import openmdao.api as om
+from scipy.optimize import brentq
 
 from pythrust import dataset_dir
+from pythrust.battery import FixedVoltageBattery
 from pythrust.motors import MotorDatabase
-from pythrust.openmdao import PropulsionComponent
 from pythrust.propellers import PropellerDatabase
+from pythrust.propulsion import PropellerSpec, PropulsionSolver, SystemSpec
+
+PROP_ID = "APC_13x6.5E"
+BATTERY = FixedVoltageBattery(voltage_v=14.8)        # 4S LiPo, nominal
+SYSTEM = SystemSpec(resistance_ohm=0.095)            # ESC and wiring, see calibrate_system_resistance.py
+AIRFRAME_MASS_PER_MOTOR_G = 400.0                    # everything except the motor, per rotor
+MIN_THRUST_TO_WEIGHT = 2.0
+RHO = 1.225
+GRAVITY = 9.80665
+TOP_N = 10
+
+SOLVER = PropulsionSolver()
+
+
+def solve(motor, propeller, prop_entry, throttle):
+    return SOLVER.solve_operating_point(
+        motor=motor,
+        battery=BATTERY,
+        system=SYSTEM,
+        propeller=propeller,
+        prop_entry=prop_entry,
+        rho=RHO,
+        airspeed_mps=0.0,
+        throttle=throttle,
+    )
+
+
+def hover_point(motor, propeller, prop_entry, thrust_n):
+    """Return the feasible operating point that gives ``thrust_n``, or None."""
+
+    def thrust_error(throttle):
+        return solve(motor, propeller, prop_entry, throttle).thrust_n - thrust_n
+
+    lowest_throttle = 0.05
+    if thrust_error(lowest_throttle) >= 0.0:
+        return None
+    throttle = brentq(thrust_error, lowest_throttle, 1.0, xtol=1e-5)
+    point = solve(motor, propeller, prop_entry, throttle)
+    return (throttle, point) if point.is_feasible else None
+
+
+def evaluate(entry, propeller, prop_entry):
+    """Return ``(reason, result)``; ``reason`` is None when the motor passes."""
+    if not entry.has_current_limit:
+        return "no published max current", None
+
+    motor = entry.to_spec()
+    hover_thrust_n = (AIRFRAME_MASS_PER_MOTOR_G + entry.weight_g) * GRAVITY / 1000.0
+
+    full = solve(motor, propeller, prop_entry, 1.0)
+    if full.infeasible_reason == "current_limit":
+        return "over max current at full throttle", None
+    if not full.is_feasible:
+        return "no full-throttle operating point", None
+    if full.thrust_n < MIN_THRUST_TO_WEIGHT * hover_thrust_n:
+        return f"thrust-to-weight below {MIN_THRUST_TO_WEIGHT:g}", None
+
+    hover = hover_point(motor, propeller, prop_entry, hover_thrust_n)
+    if hover is None:
+        return "no hover operating point", None
+    throttle, point = hover
+    return None, {
+        "entry": entry,
+        "hover_thrust_g": hover_thrust_n * 1000.0 / GRAVITY,
+        "hover_power_w": point.battery_power_w,
+        "hover_throttle": throttle,
+        "hover_current_a": point.motor_current_a,
+        "full_current_a": full.motor_current_a,
+        "thrust_to_weight": full.thrust_n / hover_thrust_n,
+    }
 
 
 def main():
-    # 1. Load propeller aerodynamic data.
-    db = PropellerDatabase()
-    db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-    prop_entry = db.get("APC_13x6.5E")
+    prop_db = PropellerDatabase()
+    prop_db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
+    prop_entry = prop_db.get(PROP_ID)
     if prop_entry is None:
-        print("Error: Propeller 'APC_13x6.5E' not found.")
-        sys.exit(1)
+        raise SystemExit(f"Propeller '{PROP_ID}' not found in dataset.")
+    propeller = PropellerSpec(diameter_m=prop_entry.diameter_m)
 
-    # 2. Run co-design optimization to find the ideal theoretical motor.
-    print("=== Running Theoretical Optimization ===")
-    prob = om.Problem()
-    model = prob.model
-    model.add_subsystem("prop", PropulsionComponent(prop_entry=prop_entry), promotes=["*"])
+    motor_db = MotorDatabase()
+    if not motor_db.load(dataset_dir() / "motors"):
+        raise SystemExit("Motor database not found.")
 
-    model.add_design_var("kv_rpm_per_v", lower=500.0, upper=1500.0, ref=1000.0)
-    model.add_design_var("diameter_m", lower=0.254, upper=0.381, ref=0.3)
-    model.add_design_var("throttle", lower=0.2, upper=0.9, ref=0.5)
+    print(f"Propeller       : {PROP_ID}")
+    print(f"Battery         : {BATTERY.voltage_v:.1f} V, system resistance {SYSTEM.resistance_ohm:.3f} ohm")
+    print(f"Airframe / motor: {AIRFRAME_MASS_PER_MOTOR_G:.0f} g, plus the motor's own weight")
+    print(f"Thrust-to-weight: >= {MIN_THRUST_TO_WEIGHT:g} at full throttle")
+    print(f"Motors in catalog: {motor_db.motor_count}")
 
-    model.add_constraint("thrust_n", equals=4.903, ref=5.0)
-    model.add_constraint("motor_current_a", upper=25.0, ref=25.0)
-    model.add_objective("battery_power_w", ref=100.0)
+    rejected = Counter()
+    passed = []
+    for motor_id in motor_db.list_motors():
+        reason, result = evaluate(motor_db.get(motor_id), propeller, prop_entry)
+        if reason is None:
+            passed.append(result)
+        else:
+            rejected[reason] += 1
 
-    prob.driver = om.ScipyOptimizeDriver(optimizer="SLSQP")
-    prob.driver.options["disp"] = False
-    prob.setup()
+    print(f"\nPassed: {len(passed)}")
+    for reason, count in rejected.most_common():
+        print(f"Rejected, {reason}: {count}")
 
-    prob.set_val("kv_rpm_per_v", 860.0)
-    prob.set_val("resistance_ohm", 0.0258)
-    prob.set_val("no_load_current_a", 1.3)
-    prob.set_val("current_max_a", 65.0)
-    prob.set_val("voltage_v", 14.8)
-    prob.set_val("resistance_system_ohm", 0.095)
-    prob.set_val("diameter_m", 0.3302)
-    prob.set_val("throttle", 0.5)
-    prob.set_val("rho", 1.225)
-    prob.set_val("airspeed_mps", 0.0)
+    passed.sort(key=lambda r: r["hover_power_w"])
+    best_per_frame = {}
+    for r in passed:
+        best_per_frame.setdefault((r["entry"].manufacturer, r["entry"].weight_g), r)
+    ranked = list(best_per_frame.values())
 
-    prob.run_driver()
-
-    opt_kv = float(prob.get_val("kv_rpm_per_v")[0])
-    opt_dia = float(prob.get_val("diameter_m")[0]) * 39.3701
-    opt_power = float(prob.get_val("battery_power_w")[0])
-    opt_current = float(prob.get_val("motor_current_a")[0])
-
-    print("\nIdeal Theoretical Design:")
-    print(f"  Target Kv           : {opt_kv:.1f} RPM/V")
-    print(f"  Target Diameter     : {opt_dia:.2f} inches")
-    print(f"  Target Hover Current: {opt_current:.2f} A")
-    print(f"  Min Hover Power     : {opt_power:.2f} W")
-
-    # 3. Load motor database and find catalog candidates near the optimum.
-    motors_db_path = Path(__file__).resolve().parent.parent / "pythrust" / "data" / "motors"
-    db_motors = MotorDatabase()
-    if not db_motors.load(motors_db_path):
-        print(f"\nError: Motor database not found at {motors_db_path}")
-        sys.exit(1)
-
-    print(f"\n=== Loading Motor Database ({motors_db_path.name}) ===")
-    print(f"Loaded {db_motors.motor_count} unique reference motors.")
-
-    min_kv = opt_kv * 0.85
-    max_kv = opt_kv * 1.15
-    min_max_current = opt_current * 1.5
-
-    results = db_motors.search(
-        min_kv=min_kv,
-        max_kv=max_kv,
-        min_max_current=min_max_current,
-        min_weight=30.0,
-        max_weight=180.0,
+    print(f"\nTop {min(TOP_N, len(ranked))} frames by hover battery power (best winding of each):\n")
+    header = (
+        f"{'#':>2}  {'Motor':<38}{'Kv':>6}{'Mass':>8}{'Hover':>9}{'Eff.':>8}"
+        f"{'Throttle':>10}{'I hover':>9}{'I full/max':>13}{'T/W':>6}"
     )
-
-    candidates = []
-    for entry in results:
-        kv_err = abs(entry.kv - opt_kv) / opt_kv
-        candidates.append(
-            {
-                "name": entry.name,
-                "manufacturer": entry.manufacturer,
-                "kv": entry.kv,
-                "resistance": entry.resistance,
-                "max_current": entry.max_current,
-                "weight_g": entry.weight_g,
-                "kv_error_pct": kv_err * 100.0,
-            }
+    units = f"{'':>2}  {'':<38}{'':>6}{'[g]':>8}{'[W]':>9}{'[g/W]':>8}{'[%]':>10}{'[A]':>9}{'[A]':>13}{'':>6}"
+    print(header)
+    print(units)
+    print("-" * len(header))
+    for rank, r in enumerate(ranked[:TOP_N], start=1):
+        entry = r["entry"]
+        name = f"{entry.manufacturer} {entry.name}"[:37]
+        print(
+            f"{rank:>2}  {name:<38}"
+            f"{entry.kv:>6.0f}"
+            f"{entry.weight_g:>8.1f}"
+            f"{r['hover_power_w']:>9.1f}"
+            f"{r['hover_thrust_g'] / r['hover_power_w']:>8.2f}"
+            f"{r['hover_throttle'] * 100.0:>10.1f}"
+            f"{r['hover_current_a']:>9.2f}"
+            f"{r['full_current_a']:>7.1f}/{entry.max_current:<5.0f}"
+            f"{r['thrust_to_weight']:>6.2f}"
         )
-
-    candidates.sort(key=lambda x: (x["resistance"], x["weight_g"]))
-
-    print(f"\n=== Top 5 Real-World Motor Matches (Ideal Kv ~ {opt_kv:.0f}) ===")
-    if not candidates:
-        print("No matching real motors found with specified criteria.")
-    else:
-        for idx, c in enumerate(candidates[:5]):
-            print(f"\n{idx + 1}. {c['manufacturer']} {c['name']}")
-            print(f"   Kv          : {c['kv']:.0f} RPM/V (Diff: {c['kv_error_pct']:.1f}%)")
-            res_mohm = c["resistance"] * 1000.0 if c["resistance"] else float("inf")
-            print(f"   Resistance  : {res_mohm:.1f} mOhm")
-            print(f"   Weight      : {c['weight_g']:.1f} g")
-            print(f"   Max Current : {c['max_current']:.1f} A")
 
 
 if __name__ == "__main__":
