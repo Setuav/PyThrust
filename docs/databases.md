@@ -43,7 +43,7 @@ The motor database is a directory of individual JSON files representing brushles
 ### Motor Spec format (`*.json`)
 ```json
 {
-  "id": "SunnySky_X2826_KV550",
+  "id": "SunnySky_X2826_KV550_3-4S",
   "name": "X2826 KV550 3-4S",
   "manufacturer": "SunnySky",
   "kv": 550.0,
@@ -55,6 +55,11 @@ The motor database is a directory of individual JSON files representing brushles
   "io_voltage": 10.0
 }
 ```
+
+`max_current` is `0` when the manufacturer does not publish a maximum current.
+`MotorEntry.has_current_limit` is then `False`, and `to_spec()` gives the motor
+an infinite `current_max_a`, so the solver never flags it with `current_limit`.
+Exclude such motors, or apply your own limit, when current capacity matters.
 
 ---
 
@@ -81,5 +86,5 @@ db = MotorDatabase()
 db.load(dataset_dir() / "motors")
 
 # Get motor by ID
-motor_entry = db.get("SunnySky_X2826_KV550")
+motor_entry = db.get("SunnySky_X2826_KV550_3-4S")
 ```

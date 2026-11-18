@@ -5,13 +5,17 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 import json
+import math
 from typing import Dict, List, Optional
 from pythrust.propulsion.models import MotorSpec
 
 
 @dataclass(frozen=True)
 class MotorEntry:
-    """A database entry for a single brushless motor."""
+    """A database entry for a single brushless motor.
+
+    ``max_current`` is 0 when the catalog does not give a maximum current.
+    """
     id: str
     name: str
     manufacturer: str
@@ -23,13 +27,24 @@ class MotorEntry:
     max_power: float
     io_voltage: float
 
+    @property
+    def has_current_limit(self) -> bool:
+        """Whether the catalog gives a maximum current for this motor."""
+        return math.isfinite(self.max_current) and self.max_current > 0.0
+
     def to_spec(self) -> MotorSpec:
-        """Convert the database entry to a PyThrust MotorSpec object."""
+        """Convert the database entry to a PyThrust MotorSpec object.
+
+        An entry without a maximum current gets an infinite ``current_max_a``,
+        so the solver never reports ``current_limit`` for it. A zero limit would
+        make every operating point infeasible. Check :attr:`has_current_limit`
+        before relying on the solver's current-limit check.
+        """
         return MotorSpec(
             kv_rpm_per_v=self.kv,
             resistance_ohm=self.resistance,
             no_load_current_a=self.io,
-            current_max_a=self.max_current,
+            current_max_a=self.max_current if self.has_current_limit else math.inf,
             no_load_voltage_v=self.io_voltage,
         )
 
