@@ -26,10 +26,12 @@ The full documentation is available at:
 Key sections:
 
 - [Getting Started](https://setuav.github.io/PyThrust/getting_started/)
-- [Propulsion Solver](https://setuav.github.io/PyThrust/usage/)
+- [Solving an Operating Point](https://setuav.github.io/PyThrust/usage/)
 - [Examples](https://setuav.github.io/PyThrust/examples/)
-- [Propulsion and Battery Theory](https://setuav.github.io/PyThrust/theory/)
-- [Data Files](https://setuav.github.io/PyThrust/data_files/)
+- [Propellers](https://setuav.github.io/PyThrust/reference/propellers/)
+- [Motor](https://setuav.github.io/PyThrust/reference/motor/)
+- [Battery](https://setuav.github.io/PyThrust/reference/battery/)
+- [Propulsion Solver](https://setuav.github.io/PyThrust/reference/propulsion_solver/)
 
 ## License
 

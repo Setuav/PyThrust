@@ -10,8 +10,8 @@ theme:
   logo: images/setuav_logo.png
   favicon: images/setuav_logo.png
   font:
-    text: Ubuntu
-    code: Ubuntu Mono
+    text: Fira Sans
+    code: Fira Code
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -29,11 +29,20 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
-    - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        theory.md: reference/propulsion_solver.md
+        api_reference.md: reference/propulsion_solver.md
+        data_files.md: reference/propellers.md
+        battery_model.md: reference/battery.md
 
 extra_css:
   - stylesheets/extra.css
@@ -61,18 +70,22 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js
 
 nav:
   - User Guide:
-      - Home: index.md
+      - index.md
       - Getting Started: getting_started.md
-      - Propulsion Solver: usage.md
+      - Solving an Operating Point: usage.md
       - Examples: examples.md
   - Reference:
-      - API Reference: api_reference.md
-      - Propulsion and Battery Theory: theory.md
-      - Battery Model: battery_model.md
-      - Data Files: data_files.md
+      - Propellers:
+          - reference/propellers.md
+          - Tabulated Propeller: reference/table_propeller.md
+          - Blade-Element Propeller: reference/blade_element_propeller.md
+      - Motor: reference/motor.md
+      - Battery: reference/battery.md
+      - Propulsion Solver: reference/propulsion_solver.md
+      - OpenMDAO: reference/openmdao.md
   - Developer Guide:
       - Development & Testing: development.md

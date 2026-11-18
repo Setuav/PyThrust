@@ -20,7 +20,15 @@ Optional extras:
 
 ## Installation
 
-Clone the repository and install the package in editable mode:
+Install the released package from PyPI:
+
+```bash
+pip install setuav-pythrust
+pip install "setuav-pythrust[openmdao]"   # with the OpenMDAO component
+```
+
+To work on PyThrust itself, clone the repository and install it in editable
+mode:
 
 ```bash
 git clone https://github.com/Setuav/PyThrust.git
@@ -42,7 +50,7 @@ pip install -e .[plot,openmdao,dev,docs]
 The core workflow is:
 
 1. Download an APC propeller performance file, here `PER3_13x65E.dat` from
-   <https://www.apcprop.com/files/PER3_13x65E.dat>. See [Data Files](data_files.md).
+   <https://www.apcprop.com/files/PER3_13x65E.dat>. See [Tabulated Propeller](reference/table_propeller.md).
 2. Define motor, battery, system, and propeller specifications.
 3. Solve the operating point for an airspeed and throttle.
 
@@ -82,6 +90,9 @@ print(point.thrust_n)
 print(point.motor_current_a)
 print(point.is_feasible)
 ```
+
+To compute the propeller from its blade geometry instead of a table, see
+[Solving an Operating Point](usage.md#blade-element-propeller).
 
 ## Run the Examples
 
