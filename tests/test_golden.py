@@ -6,40 +6,31 @@ is meant to alter that result.
 """
 
 from dataclasses import asdict
+from pathlib import Path
 
 import pytest
 
 from pythrust import dataset_dir
 from pythrust.battery import BatteryNetwork, BatteryState, FixedVoltageBattery, RateMapBattery
-from pythrust.motors import MotorDatabase
-from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.io import read_apc
+from pythrust.motor import MotorSpec
 from pythrust.propulsion import (
     BusSolver,
-    MotorSpec,
     PropulsionSolver,
     PropulsionUnit,
     SystemSpec,
 )
 
-MOTOR_ID = "SunnySky_X2820_KV860_V3_3-4S"
-PROP_ID = "APC_13x6.5E"
+APC_FILE = Path(__file__).parent / "data" / "PER3_13x65E.dat"
 REL_TOL = 1e-9
 
-
-@pytest.fixture(scope="module")
-def prop_entry():
-    db = PropellerDatabase()
-    entry = db.load_entry(dataset_dir() / "propellers" / "apc_202602" / f"{PROP_ID}.json")
-    assert entry is not None
-    return entry
+# SunnySky X2820 KV860 V3, as the motor catalog gave it.
+CATALOG_MOTOR = MotorSpec(kv_rpm_per_v=860.0, resistance_ohm=0.0258, no_load_current_a=1.3, current_max_a=65.0)
 
 
 @pytest.fixture(scope="module")
-def catalog_motor():
-    db = MotorDatabase()
-    entry = db.load_entry(dataset_dir() / "motors" / f"{MOTOR_ID}.json")
-    assert entry is not None
-    return entry.to_spec()
+def propeller():
+    return read_apc(APC_FILE)
 
 
 SECOND_ORDER_MOTOR = MotorSpec(
@@ -62,7 +53,7 @@ def _rate_map_pack():
 
 
 # name: (motor, battery, battery soc, system, diameter_m, airspeed_mps, throttle)
-# motor None is the catalog motor; diameter_m None is the propeller's own diameter.
+# motor None is CATALOG_MOTOR; diameter_m None is the propeller's own diameter.
 CASES = {
     "static_low_throttle": (None, FixedVoltageBattery(14.8), None, SystemSpec(0.03), None, 0.0, 0.3),
     "static_mid_throttle": (None, FixedVoltageBattery(14.8), None, SystemSpec(0.03), None, 0.0, 0.7),
@@ -438,15 +429,15 @@ GOLDEN_BUS = {'voltage_v': 15.468720238178781,
  'unit_battery_current_a': [27.67662357245026, 5.605370473080113]}
 
 
-def solve_case(name, prop_entry, catalog_motor):
+def solve_case(name, propeller):
     motor, battery, soc, system, diameter_m, airspeed_mps, throttle = CASES[name]
     if battery == "rate_map":
         battery = _rate_map_pack()
     return PropulsionSolver().solve_operating_point(
-        motor=motor or catalog_motor,
+        motor=motor or CATALOG_MOTOR,
         battery=battery,
         system=system,
-        propeller=TablePropeller(prop_entry, diameter_m=diameter_m),
+        propeller=propeller if diameter_m is None else propeller.scaled(diameter_m),
         rho=1.225,
         airspeed_mps=airspeed_mps,
         throttle=throttle,
@@ -454,17 +445,17 @@ def solve_case(name, prop_entry, catalog_motor):
     )
 
 
-def solve_bus(prop_entry, catalog_motor):
+def solve_bus(propeller):
     network = BatteryNetwork.single(_rate_map_pack())
     units = [
         PropulsionUnit(
-            motor=catalog_motor,
-            propeller=TablePropeller(prop_entry),
+            motor=CATALOG_MOTOR,
+            propeller=propeller,
             system=SystemSpec(0.015),
         ),
         PropulsionUnit(
             motor=SECOND_ORDER_MOTOR,
-            propeller=TablePropeller(prop_entry, diameter_m=0.28),
+            propeller=propeller.scaled(0.28),
             system=SystemSpec(0.02),
         ),
     ]
@@ -490,9 +481,9 @@ def _assert_matches(actual, expected):
 
 
 @pytest.mark.parametrize("name", sorted(CASES))
-def test_operating_point_matches_golden(name, prop_entry, catalog_motor):
-    _assert_matches(asdict(solve_case(name, prop_entry, catalog_motor)), GOLDEN[name])
+def test_operating_point_matches_golden(name, propeller):
+    _assert_matches(asdict(solve_case(name, propeller)), GOLDEN[name])
 
 
-def test_bus_matches_golden(prop_entry, catalog_motor):
-    _assert_matches(solve_bus(prop_entry, catalog_motor), GOLDEN_BUS)
+def test_bus_matches_golden(propeller):
+    _assert_matches(solve_bus(propeller), GOLDEN_BUS)

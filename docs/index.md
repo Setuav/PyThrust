@@ -10,7 +10,7 @@ PyThrust combines empirical propeller data, brushless motor models, battery/syst
 
 ## Core Capabilities
 
-Electric UAV propulsion design usually crosses several domains: aerodynamics, motor electrical behavior, battery loading, component catalogs, and mission constraints. PyThrust keeps those pieces in one workflow:
+Electric UAV propulsion design usually crosses several domains: aerodynamics, motor electrical behavior, battery loading, and mission constraints. PyThrust keeps those pieces in one workflow:
 
 <div class="grid cards" markdown>
 
@@ -18,9 +18,9 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
     Solve equilibrium RPM, thrust, torque, current, voltage, power, and efficiency for a coupled motor-propeller-battery system.
 
--   **Catalog-backed selection**
+-   **Manufacturer data**
 
-    Query empirical propeller data and brushless motor records instead of sizing only against abstract component assumptions.
+    Read APC propeller performance files and enter motor datasheet constants, instead of sizing only against abstract component assumptions.
 
 -   **Battery-aware analysis**
 
@@ -36,9 +36,9 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 ## Feature Visuals
 
-| Empirical Propeller Database | Rate-Map Battery Mission |
+| APC Propeller Coefficients | Rate-Map Battery Mission |
 | :---: | :---: |
-| ![Empirical propeller database](images/propeller_coefficients.png) | ![Rate-map battery mission](images/rate_map_battery_mission.png) |
+| ![APC propeller coefficients](images/propeller_coefficients.png) | ![Rate-map battery mission](images/rate_map_battery_mission.png) |
 
 ## Explore the Docs
 
@@ -64,7 +64,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **Examples**
 
-    Run motor selection and battery workflows from the repository.
+    Run battery and mission workflows from the repository.
 
     [Open examples](examples.md)
 
@@ -76,7 +76,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **API Reference**
 
-    Find the main classes, database loaders, and OpenMDAO wrapper.
+    Find the main classes, data file readers, and OpenMDAO wrapper.
 
     [Open API](api_reference.md)
 

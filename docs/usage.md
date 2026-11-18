@@ -16,7 +16,7 @@ The operating-point solver combines five inputs:
 
 | Input | Class or value | Purpose |
 |---|---|---|
-| Motor | `MotorSpec` | Kv, winding resistance, no-load current, current limit, optional higher-order loss terms |
+| Motor | `pythrust.motor.MotorSpec` | Kv, winding resistance, no-load current, current limit, optional higher-order loss terms |
 | Battery | `FixedVoltageBattery` or `RateMapBattery` | Fixed pack voltage or state-dependent pack voltage from cell curves |
 | System | `SystemSpec` | Lumped resistance for ESC, battery internal resistance, wiring, and connectors |
 | Propeller | A `PropellerModel`, such as `TablePropeller` | Thrust and torque at a given density, airspeed and RPM |
@@ -84,7 +84,7 @@ $$
 J = \frac{V}{nD}
 $$
 
-The propeller database returns empirical coefficients at that RPM and advance ratio:
+The propeller model gives thrust and torque at that RPM and advance ratio; a `TablePropeller` interpolates tabulated coefficients:
 
 $$
 C_t = C_t(\text{RPM}, J)
@@ -269,21 +269,18 @@ An operating point is marked as infeasible when one of these checks fails:
 
 ## Example Usage
 
-Here is a complete example showing how to load a propeller dataset, define specifications, and solve for an operating point:
+Here is a complete example showing how to read a propeller file, define specifications, and solve for an operating point. It needs the APC performance file `PER3_13x65E.dat` (see [Data Files](data_files.md)):
 
 ```python
-from pythrust import dataset_dir
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.io import read_apc
+from pythrust.motor import MotorSpec
 from pythrust.propulsion import (
-    MotorSpec,
     PropulsionSolver,
     SystemSpec,
 )
 
-db = PropellerDatabase()
-db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-propeller = TablePropeller(db.get("APC_13x6.5E"))
+propeller = read_apc("PER3_13x65E.dat")
 
 motor = MotorSpec(
     kv_rpm_per_v=860.0,

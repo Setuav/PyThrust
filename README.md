@@ -9,13 +9,13 @@
 
 ## About
 
-PyThrust is an open-source framework for electric propulsion system analysis, co-design, and parameter optimization in UAV applications. It can be used for multidisciplinary design optimization (MDO) within OpenMDAO. It includes steady-state performance solvers and database search tools to map theoretical designs onto real-world brushless motor and propeller catalogs.
+PyThrust is an open-source framework for electric propulsion system analysis, co-design, and parameter optimization in UAV applications. It can be used for multidisciplinary design optimization (MDO) within OpenMDAO. It includes steady-state performance solvers that couple motor, propeller and battery models, with readers for manufacturer propeller data.
 
 ## Feature Visuals
 
-| Empirical Propeller Database | Rate-Map Battery Mission |
+| APC Propeller Coefficients | Rate-Map Battery Mission |
 | :---: | :---: |
-| ![Empirical Propeller Database](docs/images/propeller_coefficients.png) | ![Rate-Map Battery Mission](docs/images/rate_map_battery_mission.png) |
+| ![APC propeller coefficients](docs/images/propeller_coefficients.png) | ![Rate-Map Battery Mission](docs/images/rate_map_battery_mission.png) |
 
 ## Documentation
 
@@ -29,7 +29,7 @@ Key sections:
 - [Propulsion Solver](https://setuav.github.io/PyThrust/usage/)
 - [Examples](https://setuav.github.io/PyThrust/examples/)
 - [Propulsion and Battery Theory](https://setuav.github.io/PyThrust/theory/)
-- [Component Databases](https://setuav.github.io/PyThrust/databases/)
+- [Data Files](https://setuav.github.io/PyThrust/data_files/)
 
 ## License
 

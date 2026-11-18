@@ -3,9 +3,10 @@ import math
 import pytest
 
 from pythrust.battery import BatteryNetwork, BatteryState, RateMapBattery
-from pythrust.propeller import PropellerDataPoint, PropellerEntry, PropellerMetadata, TablePropeller
+from pythrust.motor import MotorSpec
+from pythrust.propeller import PropellerDataPoint, TablePropeller
 from pythrust.propulsion import BusSolver, PropulsionSolver, PropulsionUnit
-from pythrust.propulsion.models import MotorSpec, SystemSpec
+from pythrust.propulsion.models import SystemSpec
 
 
 @pytest.fixture
@@ -17,15 +18,6 @@ def unit():
         current_max_a=30.0,
         torque_constant_kv_ratio=1.0,
         magnetic_lag_tau=0.0001,
-    )
-    meta = PropellerMetadata(
-        id="apc_10x4.7",
-        manufacturer="APC",
-        model="SF",
-        diameter_in=10.0,
-        pitch_in=4.7,
-        blade_count=2,
-        data_csv="apc_10x4.7.csv",
     )
     data = {
         1000.0: [
@@ -41,7 +33,7 @@ def unit():
     }
     return PropulsionUnit(
         motor=motor,
-        propeller=TablePropeller(PropellerEntry(metadata=meta, data_by_rpm=data)),
+        propeller=TablePropeller(diameter_m=0.254, data_by_rpm=data),
         system=SystemSpec(resistance_ohm=0.015),
     )
 

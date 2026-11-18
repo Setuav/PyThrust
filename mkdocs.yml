@@ -73,6 +73,6 @@ nav:
       - API Reference: api_reference.md
       - Propulsion and Battery Theory: theory.md
       - Battery Model: battery_model.md
-      - Component Databases: databases.md
+      - Data Files: data_files.md
   - Developer Guide:
       - Development & Testing: development.md

@@ -2,9 +2,9 @@
 
 This page summarizes the main public classes and helpers. For implementation details, see the source modules under `pythrust/`.
 
-## Propulsion Models
+## Motor Model
 
-`MotorSpec` defines brushless motor electrical parameters:
+`pythrust.motor.MotorSpec` defines brushless motor electrical parameters:
 
 | Field | Unit | Description |
 |---|---:|---|
@@ -155,85 +155,41 @@ The solver takes any object that satisfies `pythrust.propeller.PropellerModel`:
 | `max_advance_ratio` | Advance ratio up to which the model is expected to give thrust; the RPM search starts there |
 | `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and shaft torque in N m; zero torque where the model has no data |
 
-`TablePropeller` is the model for tabulated coefficients. It interpolates a
-`PropellerEntry` from the database:
+`TablePropeller` is the model for tabulated coefficients. It holds a diameter
+and, for each RPM band, a list of `PropellerDataPoint(j, ct, cp)` sorted by
+advance ratio. `pythrust.io.read_apc` builds one from an APC performance file:
 
 ```python
-from pythrust.propeller import TablePropeller
+from pythrust.io import read_apc
 
-propeller = TablePropeller(entry)
+propeller = read_apc("PER3_13x65E.dat")
 thrust_n, torque_nm = propeller.thrust_torque(rho=1.225, airspeed_mps=10.0, rpm=6000.0)
+ct, cp = propeller.get_coefficients(rpm=6000.0, advance_ratio=0.3)
 ```
 
-`TablePropeller(entry, diameter_m=0.30)` scales the tabulated propeller to
-another diameter with its coefficients unchanged: a geometrically similar
-propeller, without the Reynolds number effects of the size change.
-
-## Propeller Database
-
-`PropellerDatabase` loads JSON metadata and CSV performance tables:
-
-```python
-from pythrust import dataset_dir
-from pythrust.propeller import PropellerDatabase
-
-db = PropellerDatabase()
-db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-entry = db.get("APC_13x6.5E")
-ct, cp = entry.get_coefficients(rpm=5000.0, advance_ratio=0.4)
-```
-
-Main helpers:
-
-| Method | Description |
+| Member | Description |
 |---|---|
-| `load(data_dir, strict=False)` | Load every propeller JSON file in a directory |
-| `load_entry(json_path, data_dir=None, strict=False)` | Load one propeller entry |
-| `list_propellers()` | Return sorted propeller IDs |
-| `get(prop_id)` | Return a `PropellerEntry` by ID |
-| `find_by_size(diameter_in, pitch_in, blade_count=2, tolerance=0.5)` | Find the closest size match |
-| `get_interpolated_coefficients(...)` | Fetch `Ct` and `Cp` through a size lookup |
+| `TablePropeller(diameter_m, data_by_rpm)` | Build a table from your own data |
+| `scaled(diameter_m)` | The propeller at another diameter with its coefficients unchanged: a geometrically similar propeller, without the Reynolds number effects of the size change |
+| `get_coefficients(rpm, advance_ratio)` | Interpolated `Ct` and `Cp`; zero past a band's largest advance ratio |
+| `rpm_levels` | Sorted RPM bands |
 
-## Motor Database
-
-`MotorDatabase` loads brushless motor JSON files and converts catalog entries into solver specs:
-
-```python
-from pythrust import dataset_dir
-from pythrust.motors import MotorDatabase
-
-db = MotorDatabase()
-db.load(dataset_dir() / "motors")
-motor_entry = db.get("SunnySky_X2826_KV550_3-4S")
-motor = motor_entry.to_spec()
-```
-
-Main helpers:
-
-| Method | Description |
-|---|---|
-| `load(data_dir)` | Recursively load motor JSON files |
-| `load_entry(json_path)` | Load one motor JSON file |
-| `list_motors()` | Return sorted motor IDs |
-| `get(motor_id)` | Return a `MotorEntry` by ID |
-| `search(...)` | Filter by Kv, current, and weight constraints |
-
-`MotorEntry.has_current_limit` is `False` for catalog entries without a maximum
-current (`max_current` of `0`); `to_spec()` gives those motors an infinite
-`current_max_a`.
+See [Data Files](data_files.md) for what `read_apc` takes from the file.
 
 ## OpenMDAO
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.
 
+Its `propeller` option is a `TablePropeller`, for example `PropulsionComponent(propeller=read_apc("PER3_13x65E.dat"))`.
+
 Inputs include motor parameters, fixed battery voltage, system resistance, propeller diameter, throttle, density, and airspeed. Outputs include RPM, thrust, torque, battery current, battery power, motor current, motor voltage, and feasibility.
 
-!!! warning "Inputs are not catalog parts"
+!!! warning "Inputs are not real parts"
     The motor inputs are independent: changing `kv_rpm_per_v` leaves
     `resistance_ohm` and `no_load_current_a` unchanged, although a real motor
     with a lower Kv has a higher resistance. `diameter_m` scales the
-    `prop_entry` propeller with unchanged coefficients, which describes a
+    `propeller` option's table with unchanged coefficients, which describes a
     geometrically similar propeller that may not exist. An optimizer that
     varies Kv or diameter therefore drifts toward low Kv and large diameter.
-    Use catalog values as fixed inputs, or check any optimum against real
+    Use datasheet values as fixed inputs, or check any optimum against real
     motors and propellers.

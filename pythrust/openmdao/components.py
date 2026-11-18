@@ -6,9 +6,9 @@ import math
 import openmdao.api as om
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propeller import PropellerEntry, TablePropeller
+from pythrust.motor import MotorSpec
+from pythrust.propeller import TablePropeller
 from pythrust.propulsion import (
-    MotorSpec,
     PropulsionSolver,
     SystemSpec,
 )
@@ -17,25 +17,25 @@ from pythrust.propulsion import (
 class PropulsionComponent(om.ExplicitComponent):
     """OpenMDAO ExplicitComponent wrapping the PyThrust propulsion solver.
 
-    The motor and propeller inputs are independent numbers, not catalog parts:
+    The motor and propeller inputs are independent numbers, not real parts:
 
     - ``kv_rpm_per_v``, ``resistance_ohm`` and ``no_load_current_a`` do not
       depend on each other. A real motor with a lower Kv has a higher winding
       resistance, so optimizing Kv with the resistance held fixed favors low Kv.
-    - ``diameter_m`` scales the propeller in ``prop_entry`` with its
+    - ``diameter_m`` scales the ``propeller`` option's table with its
       coefficients unchanged: a geometrically similar propeller with the same
       pitch/diameter ratio, which need not exist, without the Reynolds number
       effects of the size change.
 
-    Use the component with fixed catalog values, or check an optimum against
+    Use the component with fixed datasheet values, or check an optimum against
     real motors and propellers.
     """
 
     def initialize(self) -> None:
         self.options.declare(
-            'prop_entry',
-            types=PropellerEntry,
-            desc='PropellerEntry database object',
+            'propeller',
+            types=TablePropeller,
+            desc='Tabulated propeller, scaled to the diameter_m input',
         )
 
     def setup(self) -> None:
@@ -82,10 +82,7 @@ class PropulsionComponent(om.ExplicitComponent):
         system = SystemSpec(
             resistance_ohm=float(inputs['resistance_system_ohm'][0]),
         )
-        propeller = TablePropeller(
-            self.options['prop_entry'],
-            diameter_m=float(inputs['diameter_m'][0]),
-        )
+        propeller = self.options['propeller'].scaled(float(inputs['diameter_m'][0]))
         return motor, battery, system, propeller
 
     def compute(self, inputs: om.Vector, outputs: om.Vector) -> None:

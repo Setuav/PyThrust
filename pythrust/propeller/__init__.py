@@ -1,9 +1,4 @@
-"""Propeller models, database and lookup utilities."""
+"""Propeller models."""
 
-from .database import (  # noqa: F401
-    PropellerDataPoint,
-    PropellerEntry,
-    PropellerMetadata,
-    PropellerDatabase,
-)
-from .model import PropellerModel, TablePropeller  # noqa: F401
+from .model import PropellerModel  # noqa: F401
+from .table import PropellerDataPoint, TablePropeller  # noqa: F401

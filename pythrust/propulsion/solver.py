@@ -11,8 +11,9 @@ import math
 from scipy.optimize import root_scalar
 
 from pythrust.battery import Battery, BatteryPoint, BatteryState, FixedVoltageBattery
+from pythrust.motor import MotorSpec
 from pythrust.propeller.model import PropellerModel
-from .models import MotorSpec, OperatingPoint, SystemSpec
+from .models import OperatingPoint, SystemSpec
 
 
 @dataclass(frozen=True)

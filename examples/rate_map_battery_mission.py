@@ -6,9 +6,14 @@ state of charge using the solved battery current.
 
 Usage::
 
-    PYTHONPATH=. python examples/rate_map_battery_mission.py
+    PYTHONPATH=. python examples/rate_map_battery_mission.py [PER3_13x65E.dat]
+
+The argument is an APC performance file, from
+https://www.apcprop.com/technical-information/performance-data/. Without it
+the example uses the APC 13x6.5E file kept with the tests.
 """
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -18,8 +23,8 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pythrust import dataset_dir
 from pythrust.battery import BatteryState, RateMapBattery
-from pythrust.motors import MotorDatabase
-from pythrust.propeller import PropellerDatabase, TablePropeller
+from pythrust.io import read_apc
+from pythrust.motor import MotorSpec
 from pythrust.propulsion import PropulsionSolver, SystemSpec
 
 
@@ -31,32 +36,24 @@ MISSION_SEGMENTS = [
 ]
 
 
-def load_propeller():
-    db = PropellerDatabase()
-    db.load(dataset_dir() / "propellers" / "apc_202602", strict=False)
-    prop_entry = db.get("APC_13x6.5E")
-    if prop_entry is None:
-        raise SystemExit("Propeller 'APC_13x6.5E' not found in dataset.")
-    return TablePropeller(prop_entry)
+DEFAULT_APC_FILE = PROJECT_ROOT / "tests" / "data" / "PER3_13x65E.dat"
 
-
-def load_motor():
-    db = MotorDatabase()
-    db.load(dataset_dir() / "motors")
-    motor_entry = db.get("SunnySky_X2820_KV860_V3_3-4S")
-    if motor_entry is None:
-        raise SystemExit("Motor 'SunnySky_X2820_KV860_V3_3-4S' not found in dataset.")
-    return motor_entry.to_spec()
+# SunnySky X2820 KV860 V3, from the manufacturer's datasheet.
+MOTOR = MotorSpec(kv_rpm_per_v=860.0, resistance_ohm=0.0258, no_load_current_a=1.3, current_max_a=65.0)
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("apc_file", nargs="?", type=Path, default=DEFAULT_APC_FILE, help="APC PER3_*.dat file")
+    args = parser.parse_args()
+
     battery_dataset = dataset_dir() / "batteries" / "example_liion_cell.json"
     battery = RateMapBattery.from_json(battery_dataset, series=4, parallel=2)
     state = BatteryState(soc=0.95)
 
-    motor = load_motor()
+    motor = MOTOR
     system = SystemSpec(resistance_ohm=0.015)  # ESC and wiring; the battery model has its own resistance
-    propeller = load_propeller()
+    propeller = read_apc(args.apc_file)
     solver = PropulsionSolver()
 
     total_energy_wh = 0.0

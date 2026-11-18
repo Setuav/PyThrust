@@ -1,41 +1,35 @@
 import math
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.propeller import (
-    PropellerDataPoint,
-    PropellerEntry,
-    PropellerMetadata,
-    TablePropeller,
-)
-from pythrust.propulsion import MotorSpec, PropulsionSolver, SystemSpec
+from pythrust.motor import MotorSpec
+from pythrust.propeller import PropellerDataPoint, TablePropeller
+from pythrust.propulsion import PropulsionSolver, SystemSpec
 
 RHO = 1.225
 
 
-def _entry():
-    meta = PropellerMetadata("p", "A", "B", 10.0, 5.0, 2, "csv")
+def _propeller():
     points = [
         PropellerDataPoint(j=0.0, ct=0.10, cp=0.05),
         PropellerDataPoint(j=0.8, ct=0.02, cp=0.02),
     ]
-    return PropellerEntry(metadata=meta, data_by_rpm={1000.0: list(points), 9000.0: list(points)})
+    return TablePropeller(diameter_m=0.254, data_by_rpm={1000.0: list(points), 9000.0: list(points)})
 
 
 def test_table_propeller_turns_coefficients_into_thrust_and_torque():
-    propeller = TablePropeller(_entry())
+    propeller = _propeller()
     rpm, diameter_m = 6000.0, 0.254
     n = rpm / 60.0
 
     thrust_n, torque_nm = propeller.thrust_torque(RHO, 0.0, rpm)
 
-    assert propeller.diameter_m == _entry().diameter_m
     assert math.isclose(thrust_n, 0.10 * RHO * n**2 * diameter_m**4)
     assert math.isclose(torque_nm, 0.05 * RHO * n**2 * diameter_m**5 / (2.0 * math.pi))
 
 
 def test_table_propeller_diameter_scales_with_unchanged_coefficients():
-    base = TablePropeller(_entry())
-    scaled = TablePropeller(_entry(), diameter_m=2.0 * base.diameter_m)
+    base = _propeller()
+    scaled = base.scaled(2.0 * base.diameter_m)
 
     thrust_n, torque_nm = base.thrust_torque(RHO, 0.0, 6000.0)
     scaled_thrust_n, scaled_torque_nm = scaled.thrust_torque(RHO, 0.0, 6000.0)
@@ -45,7 +39,7 @@ def test_table_propeller_diameter_scales_with_unchanged_coefficients():
 
 
 def test_table_propeller_has_no_torque_past_its_data():
-    propeller = TablePropeller(_entry())
+    propeller = _propeller()
     airspeed_mps = 1.0 * (6000.0 / 60.0) * propeller.diameter_m  # J = 1.0, past the table's 0.8
 
     assert propeller.thrust_torque(RHO, airspeed_mps, 6000.0) == (0.0, 0.0)
