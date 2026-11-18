@@ -248,6 +248,20 @@ print(result.stop_reason)
 
 ## Python API
 
+`pythrust.battery` exposes:
+
+| Class | Purpose |
+|---|---|
+| `FixedVoltageBattery` | Fixed pack-voltage model with scalar discharge efficiency |
+| `RateMapBattery` | Equivalent-circuit model using cell OCV and resistance curves |
+| `BatteryState` | State of charge/depth of discharge passed to dynamic battery models |
+| `BatteryPoint` | Evaluated terminal voltage, current, power, C-rate, efficiency, and feasibility |
+| `BatteryNetwork` | Rate-map packs wired as parallel strings of series-connected packs |
+| `NetworkState` / `NetworkPoint` | Per-pack states and the network's terminal and per-pack electrical state |
+
+`Battery` is the union of the two models and is the battery type accepted by
+`PropulsionSolver`.
+
 Use explicit names for the two battery fidelities:
 
 === "Fixed voltage"
@@ -292,6 +306,17 @@ result = battery.integrate_power(state=state, power_w=power, dt_s=dt)
 For the fixed-voltage model, `terminal_voltage` returns the configured voltage.
 For the rate-map model, it evaluates the cell/pack equivalent circuit.
 
+Main `RateMapBattery` point-state helpers:
+
+| Method | Description |
+|---|---|
+| `state_at_current(state, current_a)` | Evaluate voltage, power, C-rate, efficiency, and feasibility at pack current |
+| `state_at_c_rate(state, c_rate)` | Evaluate the state at cell C-rate |
+| `state_at_voltage(state, voltage_v)` | Evaluate current required to hold pack terminal voltage |
+| `state_at_power(state, power_w)` | Evaluate current and voltage at pack terminal power |
+| `state_at_load_resistance(state, resistance_ohm)` | Evaluate a resistive load |
+| `state_at_power_loss(state, power_loss_w)` | Evaluate a requested pack internal loss power |
+
 ## Dataset Shape
 
 The JSON dataset describes one cell. Pack topology is passed when loading the
@@ -318,6 +343,9 @@ dataset:
 ```python
 battery = RateMapBattery.from_json(cell_path, series=4, parallel=2)
 ```
+
+`pythrust.dataset_dir()` holds the example cell
+`batteries/example_liion_cell.json`.
 
 The current implementation interpolates `OCV(dod)` and `R(dod)` directly.
 Manufacturer discharge curves are usually terminal voltage under load, so real

@@ -4,7 +4,7 @@
 
 Welcome to the official documentation for **PyThrust** - an open-source Python framework for electric propulsion system analysis, co-design, and parameter optimization in UAV applications.
 
-PyThrust combines empirical propeller data, brushless motor models, battery/system loss modeling, and OpenMDAO integration so UAV designers can move from theoretical propulsion sizing to real component choices with traceable calculations.
+PyThrust combines tabulated and blade-element propeller models, brushless motor models, battery/system loss modeling, and OpenMDAO integration so UAV designers can move from theoretical propulsion sizing to real component choices with traceable calculations.
 
 ---
 
@@ -20,7 +20,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **Manufacturer data**
 
-    Read APC propeller performance files and enter motor datasheet constants, instead of sizing only against abstract component assumptions.
+    Read APC performance files, or QPROP propeller and motor files for a blade-element model, and enter motor datasheet constants, instead of sizing only against abstract component assumptions.
 
 -   **Battery-aware analysis**
 
@@ -50,17 +50,17 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
     [Open guide](getting_started.md)
 
--   **Propulsion Solver**
+-   **Solving an Operating Point**
 
-    Review solver inputs, equations, feasibility rules, result fields, and usage examples.
+    Wire a motor, propeller and battery into the solver and read the result.
 
     [Open guide](usage.md)
 
--   **Battery Model**
+-   **Propellers**
 
-    Understand fixed-voltage and rate-map batteries, JSON datasets, and solver integration.
+    Tabulated coefficients from APC files, or a blade-element model from QPROP files.
 
-    [Open reference](battery_model.md)
+    [Open reference](reference/propellers.md)
 
 -   **Examples**
 
@@ -68,16 +68,16 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
     [Open examples](examples.md)
 
--   **Theory**
+-   **Motor and Battery**
 
-    Trace the propeller, motor, electrical loss, and battery equations used by the solver.
+    Drela's motor model with QPROP motor files, and fixed-voltage or rate-map batteries.
 
-    [Open theory](theory.md)
+    [Motor](reference/motor.md) · [Battery](reference/battery.md)
 
--   **API Reference**
+-   **Propulsion Solver**
 
-    Find the main classes, data file readers, and OpenMDAO wrapper.
+    The equilibrium equations, RPM search, result fields, feasibility rules and bus solver.
 
-    [Open API](api_reference.md)
+    [Open reference](reference/propulsion_solver.md)
 
 </div>
