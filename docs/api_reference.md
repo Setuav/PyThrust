@@ -12,9 +12,11 @@ This page summarizes the main public classes and helpers. For implementation det
 | `resistance_ohm` | ohm | Winding resistance |
 | `no_load_current_a` | A | Datasheet no-load current |
 | `current_max_a` | A | Maximum continuous or configured current limit |
-| `torque_constant_kv_ratio` | - | Optional second-order motor model ratio |
+| `torque_constant_kv_ratio` | - | Optional second-order ratio of torque to speed constant |
 | `magnetic_lag_tau` | s | Optional magnetic lag time constant |
-| `iron_loss_exponent` | - | Optional no-load current speed scaling exponent |
+| `no_load_current_linear` | A·s | Optional linear speed term of the no-load current |
+| `no_load_current_quadratic` | A·s² | Optional quadratic speed term of the no-load current |
+| `resistance_quadratic` | ohm/A² | Optional current-dependent winding resistance |
 
 Use `get_no_load_current(rpm)` and `get_winding_resistance(current_a)` when evaluating speed-dependent or current-dependent motor behavior.
 

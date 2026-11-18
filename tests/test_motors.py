@@ -42,7 +42,6 @@ def test_motor_database():
     assert spec.resistance_ohm == entry.resistance
     assert spec.no_load_current_a == entry.io
     assert spec.current_max_a == entry.max_current
-    assert spec.no_load_voltage_v == entry.io_voltage
 
     # Test search filters (Kv and Weight limits)
     results = db.search(

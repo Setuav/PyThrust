@@ -61,6 +61,10 @@ The motor database is a directory of individual JSON files representing brushles
 an infinite `current_max_a`, so the solver never flags it with `current_limit`.
 Exclude such motors, or apply your own limit, when current capacity matters.
 
+`io_voltage` is the voltage at which the manufacturer measured the no-load
+current `io`. It is kept as catalog data; `to_spec()` builds a first-order motor
+model, whose no-load current does not depend on speed.
+
 ---
 
 ## 3) Code Examples

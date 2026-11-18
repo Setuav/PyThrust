@@ -18,23 +18,10 @@ def test_motor_spec_no_load_current():
     assert motor.get_no_load_current(-10.0) == 1.2
     assert motor.get_no_load_current(0.0) == 1.2
 
-    # 2. Power-law iron loss (iron_loss_exponent > 0)
-    # rpm_0 = kv_rpm_per_v * no_load_voltage_v = 980.0 * 10.0 = 9800.0
-    # rpm = 4900.0 -> (4900.0 / 9800.0)^1.5 = 0.5^1.5 approx 0.35355
-    # no_load_current = 1.2 * 0.35355 = 0.42426
-    motor_iron = MotorSpec(
-        kv_rpm_per_v=980.0,
-        resistance_ohm=0.06,
-        no_load_current_a=1.2,
-        current_max_a=30.0,
-        no_load_voltage_v=10.0,
-        iron_loss_exponent=1.5
-    )
-    expected_rpm_0 = 980.0 * 10.0
-    expected_current = 1.2 * (4900.0 / expected_rpm_0) ** 1.5
-    assert math.isclose(motor_iron.get_no_load_current(4900.0), expected_current)
+    # 2. First-order model: constant no-load current at any speed
+    assert motor.get_no_load_current(4900.0) == 1.2
 
-    # 3. Drela's quadratic speed model (iron_loss_exponent = 0.0)
+    # 3. Drela's quadratic speed model
     # omega = rpm * pi / 30 = 3000 * pi / 30 = 100 * pi
     # Io = Io0 + Io1 * omega + Io2 * omega^2
     motor_drela = MotorSpec(

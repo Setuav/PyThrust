@@ -149,7 +149,6 @@ $$
 | `no_load_current_linear` | Adds a linear speed term to no-load current |
 | `no_load_current_quadratic` | Adds a quadratic speed term to no-load current |
 | `resistance_quadratic` | Adds current-dependent winding resistance |
-| `iron_loss_exponent` | Scales no-load current with RPM using a power law |
 
 When these fields are left at their defaults, the model reduces to the simpler first-order motor equations above. See [Propulsion and Battery Theory](theory.md) for the full equations and Drela references.
 

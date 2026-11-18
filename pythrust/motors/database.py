@@ -15,6 +15,8 @@ class MotorEntry:
     """A database entry for a single brushless motor.
 
     ``max_current`` is 0 when the catalog does not give a maximum current.
+    ``io_voltage`` is the voltage at which ``io`` was measured; the first-order
+    motor model from :meth:`to_spec` does not use it.
     """
     id: str
     name: str
@@ -45,7 +47,6 @@ class MotorEntry:
             resistance_ohm=self.resistance,
             no_load_current_a=self.io,
             current_max_a=self.max_current if self.has_current_limit else math.inf,
-            no_load_voltage_v=self.io_voltage,
         )
 
 
