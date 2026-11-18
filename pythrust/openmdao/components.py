@@ -16,7 +16,21 @@ from pythrust.propulsion import (
 
 
 class PropulsionComponent(om.ExplicitComponent):
-    """OpenMDAO ExplicitComponent wrapping the PyThrust propulsion solver."""
+    """OpenMDAO ExplicitComponent wrapping the PyThrust propulsion solver.
+
+    The motor and propeller inputs are independent numbers, not catalog parts:
+
+    - ``kv_rpm_per_v``, ``resistance_ohm`` and ``no_load_current_a`` do not
+      depend on each other. A real motor with a lower Kv has a higher winding
+      resistance, so optimizing Kv with the resistance held fixed favors low Kv.
+    - ``diameter_m`` scales the propeller in ``prop_entry`` with its
+      coefficients unchanged: a geometrically similar propeller with the same
+      pitch/diameter ratio, which need not exist, without the Reynolds number
+      effects of the size change.
+
+    Use the component with fixed catalog values, or check an optimum against
+    real motors and propellers.
+    """
 
     def initialize(self) -> None:
         self.options.declare(
@@ -35,7 +49,7 @@ class PropulsionComponent(om.ExplicitComponent):
         self.add_input('voltage_v', val=14.8, desc='Battery pack voltage [V]')
         self.add_input('discharge_efficiency', val=1.0, desc='Battery discharge efficiency')
 
-        self.add_input('resistance_system_ohm', val=0.095, desc='Lumped system transmission resistance [ohm]')
+        self.add_input('resistance_system_ohm', val=0.03, desc='Lumped system transmission resistance [ohm]')
         self.add_input('diameter_m', val=0.3302, desc='Propeller diameter [m]')
         self.add_input('throttle', val=0.7, desc='Throttle fraction [0, 1]')
 

@@ -26,9 +26,9 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
     Use fixed-voltage batteries for quick studies or rate-map batteries when voltage sag and state of charge matter.
 
--   **Calibration and optimization**
+-   **Optimization**
 
-    Fit lumped system resistance from test data and use the solver inside OpenMDAO co-design workflows.
+    Use the solver inside OpenMDAO co-design workflows.
 
 </div>
 
@@ -36,11 +36,9 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 ## Feature Visuals
 
-| System Resistance Calibration | OpenMDAO Hover Co-Design |
+| Empirical Propeller Database | Rate-Map Battery Mission |
 | :---: | :---: |
-| ![System resistance calibration](images/calibration_results.png) | ![OpenMDAO hover co-design](images/optimize_and_plot_results.png) |
-| **Empirical Propeller Database** | **Hover Efficiency Map** |
-| ![Empirical propeller database](images/propeller_coefficients.png) | ![Hover efficiency map](images/efficiency_heatmap.png) |
+| ![Empirical propeller database](images/propeller_coefficients.png) | ![Rate-map battery mission](images/rate_map_battery_mission.png) |
 
 ## Explore the Docs
 
@@ -66,7 +64,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **Examples**
 
-    Run calibration, motor selection, battery, and OpenMDAO workflows from the repository.
+    Run motor selection and battery workflows from the repository.
 
     [Open examples](examples.md)
 
@@ -78,7 +76,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **API Reference**
 
-    Find the main classes, database loaders, calibration objects, and OpenMDAO wrapper.
+    Find the main classes, database loaders, and OpenMDAO wrapper.
 
     [Open API](api_reference.md)
 

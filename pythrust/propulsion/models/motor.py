@@ -8,9 +8,17 @@ import math
 
 @dataclass(frozen=True)
 class MotorSpec:
-    """Motor electrical parameters (supporting both 1st and 2nd order models).
+    """Motor parameters of Mark Drela's DC motor model.
 
-    All values are taken directly from the manufacturer datasheet or calibrated.
+    With the optional fields at their defaults this is the first-order model:
+    constant resistance, constant no-load current and a torque constant equal
+    to the speed constant. The optional fields give the second-order model:
+
+    - ``resistance_quadratic``: R(i) = R0 + R2 i^2 (winding heating)
+    - ``no_load_current_linear``, ``no_load_current_quadratic``:
+      io(w) = io0 + io1 w + io2 w^2, with w in rad/s
+    - ``torque_constant_kv_ratio``: KQ / KV
+    - ``magnetic_lag_tau``: back-EMF vm = (1 + tau w) w / KV
 
     Units:
     - kv_rpm_per_v: RPM / V
@@ -31,19 +39,10 @@ class MotorSpec:
     no_load_current_quadratic: float = 0.0
     resistance_quadratic: float = 0.0
 
-    # Simplified power-law iron loss parameters
-    no_load_voltage_v: float = 10.0
-    iron_loss_exponent: float = 0.0
-
     def get_no_load_current(self, rpm: float) -> float:
         """Calculate the no-load current at a given shaft speed (RPM)."""
         if rpm <= 0.0:
             return self.no_load_current_a
-
-        if self.iron_loss_exponent > 0.0:
-            rpm_0 = self.kv_rpm_per_v * self.no_load_voltage_v
-            if rpm_0 > 0.0:
-                return self.no_load_current_a * (rpm / rpm_0) ** self.iron_loss_exponent
 
         omega = rpm * (math.pi / 30.0)
         return (

@@ -55,25 +55,48 @@ $$
 
 ## 3) Brushless DC Motor Model
 
-The relationship between torque, back-EMF, and speed is defined below:
+PyThrust uses Mark Drela's DC motor model [1, 2]. The torque constant, the
+no-load current and the winding resistance are
 
 $$
-K_t = \frac{30}{\pi K_v}
+K_t = \frac{30}{\pi K_v} \cdot \frac{K_V}{K_Q}
 $$
 
 $$
-I = \frac{Q}{K_t} + I_0
+I = \frac{Q}{K_t} + I_0(\omega), \qquad
+I_0(\omega) = I_{00} + I_{01}\,\omega + I_{02}\,\omega^2
 $$
+
+$$
+R(I) = R_0 + R_2 I^2
+$$
+
+and the back-EMF and terminal voltage are
 
 $$
 V_{\text{back}} = \frac{\text{RPM}}{K_v} (1 + \tau \omega)
 $$
 
 $$
-V_m = V_{\text{back}} + I R
+V_m = V_{\text{back}} + I R(I)
 $$
 
-where $\tau$ is the magnetic lag time constant (set to $0$ for first-order models), and $\omega = n \cdot 2\pi$.
+where $\omega = n \cdot 2\pi$ in rad/s and $\tau$ is the magnetic lag time
+constant.
+
+With the second-order terms at their defaults ($K_Q = K_V$, $I_{01} = I_{02} = 0$,
+$R_2 = 0$, $\tau = 0$) this is the first-order model [1]: constant resistance and
+constant no-load current. Catalog motors use the first-order model, because the
+catalog gives only $K_v$, $R_0$ and $I_{00}$; their `io_voltage` records the
+voltage at which the no-load current was measured.
+
+| Symbol | `MotorSpec` field |
+|---|---|
+| $K_v$ | `kv_rpm_per_v` |
+| $K_Q / K_V$ | `torque_constant_kv_ratio` |
+| $R_0$, $R_2$ | `resistance_ohm`, `resistance_quadratic` |
+| $I_{00}$, $I_{01}$, $I_{02}$ | `no_load_current_a`, `no_load_current_linear`, `no_load_current_quadratic` |
+| $\tau$ | `magnetic_lag_tau` |
 
 ---
 

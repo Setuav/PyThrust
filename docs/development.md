@@ -22,23 +22,14 @@ The CI workflow runs the test suite on Python 3.10, 3.11, and 3.12.
 ## Run Example Workflows
 
 ```bash
-PYTHONPATH=. python examples/calibrate_system_resistance.py
 PYTHONPATH=. python examples/rate_map_battery_point_states.py
 PYTHONPATH=. python examples/rate_map_battery_mission.py
 PYTHONPATH=. python examples/select_motor_from_database.py
-PYTHONPATH=. python examples/openmdao_hover_optimization.py
 ```
 
 See [Examples](examples.md) for a user-facing walkthrough of each script.
 
-Generated plots are written under `docs/images/` and are used by the documentation site.
-
-Regenerate the README and documentation feature visuals:
-
-```bash
-PYTHONPATH=. python scripts/generate_readme_plots.py
-PYTHONPATH=. python examples/openmdao_hover_optimization.py
-```
+The images under `docs/images/` are maintained by hand.
 
 ## Documentation Site
 
