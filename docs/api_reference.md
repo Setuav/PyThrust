@@ -180,7 +180,7 @@ from pythrust.motors import MotorDatabase
 
 db = MotorDatabase()
 db.load(dataset_dir() / "motors")
-motor_entry = db.get("SunnySky_X2826_KV550")
+motor_entry = db.get("SunnySky_X2826_KV550_3-4S")
 motor = motor_entry.to_spec()
 ```
 
@@ -193,6 +193,10 @@ Main helpers:
 | `list_motors()` | Return sorted motor IDs |
 | `get(motor_id)` | Return a `MotorEntry` by ID |
 | `search(...)` | Filter by Kv, current, and weight constraints |
+
+`MotorEntry.has_current_limit` is `False` for catalog entries without a maximum
+current (`max_current` of `0`); `to_spec()` gives those motors an infinite
+`current_max_a`.
 
 ## Calibration
 
