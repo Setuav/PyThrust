@@ -39,7 +39,7 @@ from pythrust.propulsion import PropellerSpec, PropulsionSolver, SystemSpec
 
 PROP_ID = "APC_13x6.5E"
 BATTERY = FixedVoltageBattery(voltage_v=14.8)        # 4S LiPo, nominal
-SYSTEM = SystemSpec(resistance_ohm=0.095)            # ESC and wiring, see calibrate_system_resistance.py
+SYSTEM = SystemSpec(resistance_ohm=0.095)            # ESC, wiring and battery
 AIRFRAME_MASS_PER_MOTOR_G = 400.0                    # everything except the motor, per rotor
 MIN_THRUST_TO_WEIGHT = 2.0
 RHO = 1.225

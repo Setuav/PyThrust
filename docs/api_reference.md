@@ -198,28 +198,6 @@ Main helpers:
 current (`max_current` of `0`); `to_spec()` gives those motors an infinite
 `current_max_a`.
 
-## Calibration
-
-`PropulsionCalibrator` fits `SystemSpec.resistance_ohm` against manufacturer or thrust-stand data:
-
-```python
-from pythrust.propulsion import PropulsionCalibrator
-
-calibrator = PropulsionCalibrator(system_bounds=(0.0, 1.0))
-points = calibrator.load_csv("table.csv")
-result = calibrator.calibrate(
-    points,
-    motor,
-    battery,
-    system,
-    propeller,
-    prop_entry,
-)
-system = result.to_system_spec()
-```
-
-`CalibrationResult` reports fitted resistance, thrust/current RMSE values, thrust `R^2`, convergence status, and quality warnings.
-
 ## OpenMDAO
 
 `pythrust.openmdao.PropulsionComponent` wraps `PropulsionSolver` as an `ExplicitComponent` for optimization models.

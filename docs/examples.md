@@ -1,8 +1,8 @@
 # Examples
 
-PyThrust includes runnable examples that show the main workflows: solving and
-calibrating propulsion models, inspecting rate-map battery behavior, and
-selecting catalog motors. They load the bundled datasets through
+PyThrust includes runnable examples that show the main workflows: solving
+propulsion models, inspecting rate-map battery behavior, and selecting catalog
+motors. They load the bundled datasets through
 `pythrust.dataset_dir()`.
 
 ```bash
@@ -13,7 +13,6 @@ PYTHONPATH=. python examples/<example_name>.py
 
 | Example | Extra dependencies |
 |---|---|
-| `calibrate_system_resistance.py` | Core PyThrust dependencies |
 | `rate_map_battery_point_states.py` | Core PyThrust dependencies |
 | `rate_map_battery_mission.py` | Core PyThrust dependencies |
 | `select_motor_from_database.py` | Core PyThrust dependencies |
@@ -23,41 +22,6 @@ Install PyThrust from the repository root:
 ```bash
 pip install -e .
 ```
-
-## System Resistance Calibration
-
-Script:
-
-```bash
-PYTHONPATH=. python examples/calibrate_system_resistance.py
-```
-
-This example identifies the lumped system resistance for a motor, propeller,
-fixed-voltage battery, ESC, and wiring setup.
-
-It uses:
-
-| Input | Value or source |
-|---|---|
-| Motor | Datasheet Kv, resistance, no-load current, and current limit |
-| Propeller | `APC_13x6.5E` from `data/propellers/apc_202602` |
-| Battery | Fixed 4S nominal voltage, `14.8 V` |
-| Test table | RPM, thrust in grams, and battery current in amps |
-
-The output reports:
-
-| Metric | Meaning |
-|---|---|
-| System resistance | Fitted `SystemSpec.resistance_ohm` |
-| Thrust RMSE | Propeller-model thrust error against measured thrust |
-| Current RMSE | Battery-current prediction error |
-| Thrust R2 | Fit quality for the aerodynamic thrust prediction |
-| Per-point table | Predicted vs measured thrust/current for each RPM row |
-
-See [Motor Calibration](motor_calibration.md) for the calibration model and
-equations.
-
-![System resistance calibration](images/calibration_results.png)
 
 ## Rate-Map Battery Point States
 
