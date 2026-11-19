@@ -38,11 +38,13 @@ def test_table_propeller_diameter_scales_with_unchanged_coefficients():
     assert math.isclose(scaled_torque_nm, 2.0**5 * torque_nm)
 
 
-def test_table_propeller_has_no_torque_past_its_data():
+def test_table_propeller_has_no_result_past_its_data():
     propeller = _propeller()
     airspeed_mps = 1.0 * (6000.0 / 60.0) * propeller.diameter_m  # J = 1.0, past the table's 0.8
 
-    assert propeller.thrust_torque(RHO, airspeed_mps, 6000.0) == (0.0, 0.0)
+    thrust_n, torque_nm = propeller.thrust_torque(RHO, airspeed_mps, 6000.0)
+    assert math.isnan(thrust_n) and math.isnan(torque_nm)
+    assert propeller.get_coefficients(6000.0, 1.0) == (0.0, 0.0)
 
 
 class _ConstantCoefficientPropeller:

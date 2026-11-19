@@ -417,3 +417,71 @@ def test_solver_preserves_first_infeasible_reason(test_setup):
 
     assert op.is_feasible is False
     assert op.infeasible_reason == "current_limit"
+
+
+class _LinearPropeller:
+    """Ct and Cp fall linearly with the advance ratio and turn negative.
+
+    Ct is zero at J = 0.667 and Cp at J = 0.833; the solver's search starts at
+    J = 1.2, where both are negative, as for a windmilling propeller.
+    """
+
+    diameter_m = 0.254
+    max_advance_ratio = 1.2
+
+    def __init__(self):
+        self.torques = []
+
+    def thrust_torque(self, rho, airspeed_mps, rpm):
+        n = rpm / 60.0
+        j = airspeed_mps / (n * self.diameter_m)
+        ct, cp = 0.10 - 0.15 * j, 0.05 - 0.06 * j
+        torque = cp * rho * n**2 * self.diameter_m**5 / (2.0 * math.pi)
+        self.torques.append(torque)
+        return ct * rho * n**2 * self.diameter_m**4, torque
+
+
+_SEARCH_MOTOR = MotorSpec(kv_rpm_per_v=1000.0, resistance_ohm=0.08, no_load_current_a=0.6, current_max_a=40.0)
+
+
+def _rate_map_3s():
+    from pythrust import dataset_dir
+
+    return RateMapBattery.from_json(dataset_dir() / "batteries" / "example_liion_cell.json", series=3, parallel=1)
+
+
+def test_search_keeps_negative_torque_and_finds_the_root():
+    propeller = _LinearPropeller()
+
+    point = PropulsionSolver().solve_operating_point(
+        motor=_SEARCH_MOTOR, battery=FixedVoltageBattery(voltage_v=11.1), system=SystemSpec(resistance_ohm=0.02),
+        propeller=propeller, rho=1.225, airspeed_mps=20.0, throttle=0.9,
+    )
+
+    assert any(torque < 0.0 for torque in propeller.torques)
+    assert point.is_feasible
+    assert point.thrust_n > 0.0
+
+
+@pytest.mark.parametrize("throttle", [0.4, 0.6])
+def test_root_with_negative_thrust_is_infeasible(throttle):
+    point = PropulsionSolver().solve_operating_point(
+        motor=_SEARCH_MOTOR, battery=FixedVoltageBattery(voltage_v=11.1), system=SystemSpec(resistance_ohm=0.02),
+        propeller=_LinearPropeller(), rho=1.225, airspeed_mps=20.0, throttle=throttle,
+    )
+
+    assert point.thrust_n < 0.0
+    assert not point.is_feasible
+    assert point.infeasible_reason == "invalid_coefficients"
+
+
+def test_rate_map_battery_takes_negative_motor_current_in_the_search():
+    point = PropulsionSolver().solve_operating_point(
+        motor=_SEARCH_MOTOR, battery=_rate_map_3s(), battery_state=BatteryState(soc=0.9),
+        system=SystemSpec(resistance_ohm=0.02), propeller=_LinearPropeller(), rho=1.225, airspeed_mps=20.0,
+        throttle=0.4,
+    )
+
+    assert point.torque_nm < 0.0
+    assert point.motor_current_a < 0.0
+    assert point.infeasible_reason == "invalid_coefficients"

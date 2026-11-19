@@ -118,3 +118,30 @@ def test_solver_finds_an_operating_point(propeller_10x5):
     assert point.thrust_n == pytest.approx(thrust)
     assert point.torque_nm == pytest.approx(torque)
     assert 0.0 < point.propeller_efficiency < 1.0
+
+
+@pytest.mark.parametrize("airspeed", [0.0, 8.0, 15.0])
+def test_solver_needs_few_propeller_evaluations(propeller_10x5, airspeed):
+    """Negative thrust near the search's start is a result, not a gap to scan past."""
+    calls = []
+
+    class Counted:
+        diameter_m = propeller_10x5.diameter_m
+        max_advance_ratio = propeller_10x5.max_advance_ratio
+
+        def thrust_torque(self, rho, airspeed_mps, rpm):
+            calls.append(rpm)
+            return propeller_10x5.thrust_torque(rho, airspeed_mps, rpm)
+
+    point = PropulsionSolver().solve_operating_point(
+        motor=MotorSpec(kv_rpm_per_v=1000.0, resistance_ohm=0.08, no_load_current_a=0.6, current_max_a=40.0),
+        battery=FixedVoltageBattery(voltage_v=11.1),
+        system=SystemSpec(resistance_ohm=0.02),
+        propeller=Counted(),
+        rho=RHO,
+        airspeed_mps=airspeed,
+        throttle=0.8,
+    )
+
+    assert point.is_feasible
+    assert len(calls) <= 20

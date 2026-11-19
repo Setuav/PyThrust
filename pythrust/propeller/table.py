@@ -50,9 +50,17 @@ class TablePropeller:
         return TablePropeller(diameter_m, self.data_by_rpm)
 
     def thrust_torque(self, rho: float, airspeed_mps: float, rpm: float) -> Tuple[float, float]:
+        """Thrust in N and torque in N m; NaN for both where the table gives no thrust and power.
+
+        That is where the interpolated power coefficient is not positive or the
+        thrust coefficient is negative: past the table's data, or in windmilling
+        rows a table may hold.
+        """
         n = max(rpm / 60.0, 1e-6)
         j = airspeed_mps / (n * self.diameter_m) if self.diameter_m > 0 else 0.0
         ct, cp = self.get_coefficients(rpm, j)
+        if cp <= 0.0 or ct < 0.0:
+            return math.nan, math.nan
         thrust_n = ct * rho * (n**2) * (self.diameter_m**4)
         torque_nm = cp * rho * (n**2) * (self.diameter_m**5) / (2.0 * math.pi)
         return thrust_n, torque_nm

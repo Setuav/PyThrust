@@ -109,7 +109,7 @@ thrust_n, torque_nm = propeller.thrust_torque(rho=1.225, airspeed_mps=10.0, rpm=
 | `mu`, `speed_of_sound` | Air viscosity in kg/(m s) and speed of sound in m/s; the defaults are QPROP's |
 | `diameter_m` | Twice the tip radius |
 | `max_advance_ratio` | Advance ratio at which the section at 75% radius has zero lift, an estimate of zero thrust |
-| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and torque in N m; zero for both at zero RPM or where a station has no solution |
+| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and torque in N m, negative for a windmilling blade; zero at zero RPM, NaN where a station has no solution |
 
 ## Theory
 
@@ -246,8 +246,8 @@ $$
 Q = \rho B \sum \left(\Gamma W_a + \tfrac{1}{2} W c\, c_d\, W_t\right) r\, \Delta r
 $$
 
-At zero RPM, or where a station has no root, the model gives zero thrust and
-torque.
+At zero RPM the model gives zero thrust and torque; where a station has no
+root, it gives NaN.
 
 ### Start of the RPM search
 

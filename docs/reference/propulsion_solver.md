@@ -89,6 +89,11 @@ Before solving, PyThrust builds a search interval:
 
 If the residual does not change sign inside the bracket, the point is returned as infeasible with reason `no_bracket`.
 
+Where the propeller model gives NaN, the residual has no value. If it has none
+at the lower bound, as past the end of a table, the solver raises the lower
+bound to the lowest RPM where it has one. Negative thrust or torque counts as
+a value, so a blade-element propeller needs no such search.
+
 ## API
 
 ### Solving an Operating Point

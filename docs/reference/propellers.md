@@ -17,7 +17,12 @@ The solver takes any object that satisfies `pythrust.propeller.PropellerModel`:
 |---|---|
 | `diameter_m` | Propeller diameter in metres |
 | `max_advance_ratio` | Advance ratio up to which the model is expected to give thrust; the RPM search starts there |
-| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and shaft torque in N m; zero torque where the model has no data |
+| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust in N and shaft torque in N m; NaN where the model has no result |
+
+Negative thrust or torque, as for a windmilling propeller, is a result: the
+solver keeps it in its RPM search and marks an operating point that lands
+there infeasible (`invalid_coefficients`). NaN tells the solver that the model
+has no answer at that RPM, as past the end of a table.
 
 ## Coefficients
 

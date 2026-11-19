@@ -52,7 +52,7 @@ Operating instructions for coding agents. Keep this file short and concrete.
   - Release: bump `__version__` in `pythrust/__init__.py` in a separate `chore(release): bump version to X.Y.Z` commit. Publishing a GitHub release uploads to PyPI.
   - SI units, with the unit as a field-name suffix (`resistance_ohm`, `diameter_m`, `kv_rpm_per_v`).
   - Solvers return an infeasible `OperatingPoint` with `infeasible_reason`; they do not raise for infeasible operating points.
-  - Every behavior change comes with a test, and with a docs update when it touches the public API (`docs/api_reference.md`, `docs/theory.md`).
+  - Every behavior change comes with a test, and with a docs update when it touches the public API (the component page under `docs/reference/`).
 
 ## Project Learnings
 
