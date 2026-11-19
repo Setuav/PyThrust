@@ -1,10 +1,29 @@
+import math
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
 
-from pythrust.io import read_apc
+from pythrust.io import read_apc, read_apc_geometry
+from pythrust.propeller import BladeElementPropeller, BladeGeometry, BladeSection
 
 APC_FILE = Path(__file__).parent / "data" / "PER3_13x65E.dat"
+GEOMETRY_FILE = Path(__file__).parent / "data" / "10x5E-PERF.PE0"
+INCH = 0.0254
+
+E63 = BladeSection(
+    cl0=0.50,
+    cl_alpha_per_rad=5.8,
+    cl_min=-0.3,
+    cl_max=1.2,
+    cd0=0.028,
+    cd2_upper=0.050,
+    cd2_lower=0.020,
+    cl_at_cd0=0.5,
+    reynolds_ref=70000.0,
+    reynolds_exp=-0.7,
+)
+APC12 = replace(E63, cl0=0.30, cd0=0.010)
 
 
 def test_read_apc_file():
@@ -59,3 +78,63 @@ def test_read_apc_rejects_a_file_without_data(tmp_path):
 
     with pytest.raises(ValueError, match="no performance data"):
         read_apc(path)
+
+
+def test_read_apc_geometry_in_si_units():
+    blade = read_apc_geometry(GEOMETRY_FILE, E63)
+
+    assert isinstance(blade, BladeGeometry)
+    assert blade.blade_count == 2
+    assert blade.radius_m == pytest.approx(5.0 * INCH)
+    assert len(blade.r_m) == 41  # the 53 stations from the hub transition at 0.95 in
+    assert (blade.r_m[0], blade.chord_m[0], blade.blade_angle_rad[0]) == pytest.approx(
+        (0.95 * INCH, 0.7898 * INCH, math.radians(36.9991))
+    )
+    assert (blade.r_m[-1], blade.chord_m[-1], blade.blade_angle_rad[-1]) == pytest.approx(
+        (5.0 * INCH, 0.0163 * INCH, math.radians(9.0475))
+    )
+    assert blade.sections == (E63,) * 41
+
+
+def test_read_apc_geometry_blends_the_two_airfoils_across_the_transition():
+    """AIRFOIL1 E63 at 0.95 in, AIRFOIL2 APC12 from 3.66 in."""
+    blade = read_apc_geometry(GEOMETRY_FILE, {"E63": E63, "APC12": APC12})
+
+    r_in = [r / INCH for r in blade.r_m]
+    for r, section in zip(r_in, blade.sections):
+        weight = min(max((r - 0.95) / (3.66 - 0.95), 0.0), 1.0)
+        assert section.cl0 == pytest.approx(0.50 + (0.30 - 0.50) * weight)
+        assert section.cd0 == pytest.approx(0.028 + (0.010 - 0.028) * weight)
+        assert section.cl_alpha_per_rad == pytest.approx(5.8)
+    assert blade.sections[0] == E63
+    assert blade.sections[-1] == APC12
+
+
+def test_read_apc_geometry_names_a_missing_airfoil():
+    with pytest.raises(KeyError, match="no section for airfoil 'APC12'"):
+        read_apc_geometry(GEOMETRY_FILE, {"E63": E63})
+
+
+@pytest.mark.parametrize(
+    "edit, message",
+    [
+        (lambda text: text.replace(" BLADES:", " BLADE:"), "no BLADES line"),
+        (lambda text: text.replace(" RADIUS:", " RADIUS ").replace(" HUBTRA:", " HUBTRA "), "no RADIUS, HUBTRA line"),
+        (lambda text: text.replace(" AIRFOIL2:", " AIRFOIL :"), "expected AIRFOIL1 and AIRFOIL2 lines"),
+        (lambda text: text.replace("HUBTRA:  0.95", "HUBTRA:  4.99"), "a blade needs at least two stations"),
+    ],
+)
+def test_read_apc_geometry_rejects_a_malformed_file(tmp_path, edit, message):
+    path = tmp_path / "prop.PE0"
+    path.write_text(edit(GEOMETRY_FILE.read_text()))
+
+    with pytest.raises(ValueError, match=f"prop.PE0: {message}"):
+        read_apc_geometry(path, {"E63": E63, "APC12": APC12})
+
+
+def test_apc_geometry_gives_a_working_propeller_model():
+    propeller = BladeElementPropeller(read_apc_geometry(GEOMETRY_FILE, E63))
+    thrust, torque = propeller.thrust_torque(1.225, 0.0, 6000.0)
+
+    assert propeller.diameter_m == pytest.approx(10.0 * INCH)
+    assert thrust > 0.0 and torque > 0.0

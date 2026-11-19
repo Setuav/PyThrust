@@ -99,14 +99,45 @@ APC Thin Electric 10x5 gives a static thrust coefficient 7–15% above the UIUC
 measurement and a power coefficient 16–42% above it, the largest gap at the
 lowest RPM. Section parameters fitted to the propeller's airfoil narrow the gap.
 
+## APC Geometry Files
+
+APC publishes a geometry file for each propeller, such as `10x5E-PERF.PE0`, on
+its [technical data page](https://www.apcprop.com/propeller-technical-data/).
+The file gives the chord and blade angle (`TWIST`) at about 50 stations in
+inches, the tip radius, the hub transition radius, the blade count, and the
+two airfoils of the blade: the first up to a transition start radius, the
+second from a transition end radius. APC's thin electric propellers, for
+example, go from an Eppler E63 to the APC12, equivalent to a NACA 4412.
+
+`pythrust.io.read_apc_geometry` reads the stations from the hub transition
+outward. The blade angle is APC's, measured to the flat lower surface of the
+section. `sections` is one `BladeSection` for the whole blade, or a mapping from
+the file's airfoil names to sections; between the two transition radii each
+parameter is interpolated linearly:
+
+```python
+from pythrust.io import read_apc_geometry
+from pythrust.propeller import BladeElementPropeller
+
+# e63 and apc12 are BladeSection values for the two airfoils.
+blade = read_apc_geometry("10x5E-PERF.PE0", {"E63": e63, "APC12": apc12})
+propeller = BladeElementPropeller(blade)
+```
+
+With the generic section of the previous example, the APC 10x5E geometry gives
+a static thrust coefficient 5–12% and a power coefficient 8–33% above the UIUC
+measurement; at 6005 RPM in forward flight the mean thrust and power errors are
+about 5%.
+
 ## API
 
 ### Blade Geometry
 
-`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file, and
+`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file,
 `pythrust.io.read_uiuc_geometry(path, diameter_m, section, blade_count=2)` a
-UIUC geometry file, into a `BladeGeometry`, the input of a blade-element
-propeller model:
+UIUC geometry file, and `pythrust.io.read_apc_geometry(path, sections)` an APC
+geometry file into a `BladeGeometry`, the input of a blade-element propeller
+model:
 
 | Field | Unit | Description |
 |---|---:|---|
