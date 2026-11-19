@@ -58,7 +58,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **Propellers**
 
-    Tabulated coefficients from APC files, or a blade-element model from QPROP files.
+    Tabulated coefficients from APC files, or a blade-element model from QPROP, APC or UIUC geometry files with NeuralFoil airfoil polars.
 
     [Open reference](reference/propellers.md)
 
