@@ -4,8 +4,7 @@ from pythrust.battery import BatteryState, FixedVoltageBattery, RateMapBattery
 from pythrust.motor import MotorSpec
 from pythrust.propeller import PropellerDataPoint, TablePropeller
 from pythrust.propulsion.models import (
-    SystemSpec,
-    OperatingPoint
+    SystemSpec
 )
 from pythrust.propulsion.solver import PropulsionSolver, SolverConfig
 

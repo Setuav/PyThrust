@@ -1,5 +1,4 @@
 import math
-import pytest
 from pythrust.battery import FixedVoltageBattery
 from pythrust.motor import MotorSpec
 from pythrust.propulsion.models.operating_point import OperatingPoint

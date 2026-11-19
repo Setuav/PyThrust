@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import math
 import openmdao.api as om
 
 from pythrust.battery import FixedVoltageBattery

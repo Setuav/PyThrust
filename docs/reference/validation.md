@@ -12,7 +12,7 @@ and APC publishes a geometry file for: 75 propellers, 7 to 21 inches, in three f
 
 ## Method
 
-Four propeller models are compared with UIUC's static tests (thrust and power coefficients
+Three propeller models are compared with UIUC's static tests (thrust and power coefficients
 against RPM) and forward-flight runs (against advance ratio, at a few RPM each):
 
 - **Blade-element model, NeuralFoil polars**: APC's geometry file read with

@@ -11,7 +11,7 @@ from pythrust.io import read_apc_geometry
 from pythrust.motor import MotorSpec
 from pythrust.propeller import AirfoilPolar, BladeElementPropeller, BladeGeometry, BladeSection, BlendedPolar
 from pythrust.propeller import apc_airfoil_polars
-from pythrust.propeller.polar import NEURALFOIL_ALPHA_DEG, REYNOLDS, StationPolars
+from pythrust.propeller.polar import REYNOLDS, StationPolars
 from pythrust.propulsion import PropulsionSolver, SystemSpec
 
 DATA = Path(__file__).parent / "data"
