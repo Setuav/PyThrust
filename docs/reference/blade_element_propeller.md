@@ -68,12 +68,115 @@ and uses `R` as written, so a file that gives `R` with `Rfac` other than 1 or
 Without `R`, or with the radii in metres, the two agree. `R` must not be less
 than the last station's radius.
 
+## UIUC Geometry Files
+
+The [UIUC Propeller Database](https://m-selig.ae.illinois.edu/props/propDB.html)
+gives the measured geometry of many small propellers next to their wind-tunnel
+data. A geometry file, such as `apce_10x5_geom.txt`, has a header line
+`r/R c/R beta` and one station per line from root to tip: radius and chord as
+fractions of the tip radius, and the blade angle in degrees.
+
+The file gives neither the diameter, the blade count nor the airfoil, so
+`pythrust.io.read_uiuc_geometry` takes them as arguments; the one `section`
+applies to every station:
+
+```python
+from pythrust.io import read_uiuc_geometry
+from pythrust.propeller import BladeElementPropeller, BladeSection
+
+# The example section of the QPROP user guide, a generic starting point.
+section = BladeSection(
+    cl0=0.50, cl_alpha_per_rad=5.8, cl_min=-0.3, cl_max=1.2,
+    cd0=0.028, cd2_upper=0.050, cd2_lower=0.020, cl_at_cd0=0.5,
+    reynolds_ref=70000.0, reynolds_exp=-0.7,
+)
+blade = read_uiuc_geometry("apce_10x5_geom.txt", diameter_m=0.254, section=section)
+propeller = BladeElementPropeller(blade)
+```
+
+The section parameters set the accuracy. With the generic section above, the
+APC Thin Electric 10x5 gives a static thrust coefficient 7–15% above the UIUC
+measurement and a power coefficient 16–42% above it, the largest gap at the
+lowest RPM. Section parameters fitted to the propeller's airfoil narrow the gap.
+
+## APC Geometry Files
+
+APC publishes a geometry file for each propeller, such as `10x5E-PERF.PE0`, on
+its [technical data page](https://www.apcprop.com/propeller-technical-data/).
+The file gives the chord and blade angle (`TWIST`) at about 50 stations in
+inches, the tip radius, the hub transition radius, the blade count, and the
+two airfoils of the blade: the first up to a transition start radius, the
+second from a transition end radius. APC's thin electric propellers, for
+example, go from an Eppler E63 to the APC12, equivalent to a NACA 4412.
+
+`pythrust.io.read_apc_geometry` reads the stations from the hub transition
+outward. The blade angle is that of the chord line, between the leading- and
+trailing-edge mold parting lines; the file's `TWIST` column matches its `LE-TE`
+pitch, not the lower `PRATHER` pitch a gauge on the lower surface would read.
+
+`sections` is one section for the whole blade, or a mapping from the file's
+airfoil names to sections. `apc_airfoil_polars()` gives the
+[polars](#airfoil-polars) of the airfoils APC names, E63, APC12 and CLARK-Y,
+computed with NeuralFoil:
+
+```python
+from pythrust.io import read_apc_geometry
+from pythrust.propeller import BladeElementPropeller, apc_airfoil_polars
+
+blade = read_apc_geometry("10x5E-PERF.PE0", apc_airfoil_polars())
+propeller = BladeElementPropeller(blade)
+```
+
+Between the two transition radii the stations mix the two airfoils: polars in a
+`BlendedPolar`, `BladeSection` parameters linearly.
+
+Against UIUC's wind-tunnel measurements of 75 APC propellers, this model is
+about as accurate as APC's own performance tables: some 10% mean error per
+propeller in thrust and power, less than the tables' in thrust. See
+[Validation](validation.md).
+
+## Airfoil Polars
+
+An `AirfoilPolar` tabulates an airfoil's lift and drag coefficients against
+angle of attack and Reynolds number. `AirfoilPolar.from_neuralfoil` computes
+them with [NeuralFoil](https://github.com/Setuav/NeuralFoil), a neural network
+trained on XFOIL results, from a NACA 4- or 5-digit designation, a Selig or
+Lednicer `.dat` file, or coordinates:
+
+```python
+from pythrust.propeller import AirfoilPolar
+
+naca = AirfoilPolar.from_neuralfoil("NACA 4412")
+e387 = AirfoilPolar.from_neuralfoil("e387.dat")
+cl, cd = naca.coefficients(alpha_rad=0.1, reynolds=8e4, mach=0.1)
+```
+
+- NeuralFoil gives the table from -20 to 25 degrees, every 0.5 degree, at 13
+  Reynolds numbers from 1e4 to 1e6. Beyond -35 and 40 degrees the section is
+  a flat plate, $c_l = \sin 2\alpha$ and $c_d = 2 \sin^2 \alpha$. Between the
+  table's points the coefficients are interpolated linearly in the angle of
+  attack and in $\log Re$; beyond its Reynolds numbers the nearest is used.
+- The angle of attack is from the chord line.
+- Lift is divided by $\sqrt{1 - M^2}$ (Prandtl-Glauert).
+- `n_crit` is the amplification factor at which the boundary layer turns
+  turbulent: 9 for a quiet wind tunnel, lower for a turbulent free stream.
+  The default, 7, fits the [validation](validation.md) measurements best.
+- Building one table takes about 0.2 s; `apc_airfoil_polars()` caches its
+  polars per `n_crit`.
+
+A blade's sections are all `BladeSection` or all polars. The analysis stations
+mix the polars of the two nearest geometry stations linearly. A solved
+operating point of the APC 10x5E takes about 60 ms.
+
 ## API
 
 ### Blade Geometry
 
-`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file into a
-`BladeGeometry`, the input of a blade-element propeller model:
+`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file,
+`pythrust.io.read_uiuc_geometry(path, diameter_m, section, blade_count=2)` a
+UIUC geometry file, and `pythrust.io.read_apc_geometry(path, sections)` an APC
+geometry file into a `BladeGeometry`, the input of a blade-element propeller
+model:
 
 | Field | Unit | Description |
 |---|---:|---|
@@ -82,10 +185,11 @@ than the last station's radius.
 | `r_m` | m | Station radii, root to tip |
 | `chord_m` | m | Chord at each station |
 | `blade_angle_rad` | rad | Blade angle from the plane of rotation at each station |
-| `sections` | - | `BladeSection` at each station |
+| `sections` | - | `BladeSection`, `AirfoilPolar` or `BlendedPolar` at each station |
 
 `BladeSection` holds QPROP's airfoil parameters, listed with their symbols in
-[Section lift and drag](#section-lift-and-drag).
+[Section lift and drag](#section-lift-and-drag); `AirfoilPolar` and
+`BlendedPolar` are [tabulated polars](#airfoil-polars).
 `section_coefficients(section, alpha_rad, reynolds, mach)` evaluates the section
 model on scalars or NumPy arrays and returns `(CL, CD)`.
 
@@ -257,8 +361,12 @@ ratio at which the section at 75% radius has zero lift, ignoring the induced
 velocity, which is small near zero thrust:
 
 $$
-J_{\max} = \pi \, \frac{r_{75}}{R_{\text{tip}}} \tan\left(\beta_{75} + \frac{c_{l0}}{c_{l\alpha}}\right)
+J_{\max} = \pi \, \frac{r_{75}}{R_{\text{tip}}} \tan\left(\beta_{75} - \alpha_{0}\right)
 $$
+
+where $\alpha_0$ is the section's zero-lift angle: $-c_{l0}/c_{l\alpha}$ for a
+`BladeSection`, and for a polar the lowest over its Reynolds numbers, so that
+the search starts past zero thrust.
 
 ### Differences from QPROP
 

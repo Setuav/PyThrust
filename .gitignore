@@ -22,3 +22,7 @@ htmlcov/
 # build artifacts
 *.egg-info/
 dist/
+
+# Validation downloads and results (validation/apc_uiuc.py)
+validation/.cache/
+validation/results/

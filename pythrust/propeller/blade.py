@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Tuple
+from typing import TYPE_CHECKING, Tuple, Union
+
+if TYPE_CHECKING:
+    from .polar import AirfoilPolar, BlendedPolar
 
 
 @dataclass(frozen=True)
@@ -39,7 +42,9 @@ class BladeGeometry:
     - chord_m: chord, m
     - blade_angle_rad: blade angle from the plane of rotation, rad
 
-    ``sections`` gives the airfoil parameters at each station.
+    ``sections`` gives the airfoil at each station: QPROP's ``BladeSection``
+    parameters, or tabulated polars (``AirfoilPolar``, ``BlendedPolar``); a
+    blade uses one kind throughout.
     """
 
     blade_count: int
@@ -47,7 +52,7 @@ class BladeGeometry:
     r_m: Tuple[float, ...]
     chord_m: Tuple[float, ...]
     blade_angle_rad: Tuple[float, ...]
-    sections: Tuple[BladeSection, ...]
+    sections: Tuple[Union[BladeSection, "AirfoilPolar", "BlendedPolar"], ...]
 
     def __post_init__(self) -> None:
         count = len(self.r_m)

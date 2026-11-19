@@ -1,6 +1,7 @@
 # Core Dependencies
 numpy>=1.20
 scipy>=1.7
+setuav-neuralfoil>=0.3.3.1
 
 # Optional Dependencies (For visualization and plotting)
 matplotlib>=3.4
