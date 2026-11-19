@@ -1,0 +1,2063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Electric propulsion system co-design, analysis, and optimization framework for UAVs">
+      
+      
+        <meta name="author" content="Hüseyin Karakaya">
+      
+      
+      
+        <link rel="prev" href="../table_propeller/">
+      
+      
+        <link rel="next" href="../motor/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/setuav_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Blade-Element Propeller - PyThrust</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blade-element-propeller" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="PyThrust" class="md-header__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../../images/setuav_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PyThrust
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blade-Element Propeller
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../propellers/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PyThrust" class="md-nav__button md-logo" aria-label="PyThrust" data-md-component="logo">
+      
+  <img src="../../images/setuav_logo.png" alt="logo">
+
+    </a>
+    PyThrust
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Setuav/PyThrust" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Setuav/PyThrust
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solving an Operating Point
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propellers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Propellers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propellers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propeller Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../table_propeller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabulated Propeller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blade-Element Propeller
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blade-Element Propeller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symbols
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qprop-propeller-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QPROP Propeller Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uiuc-geometry-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UIUC Geometry Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apc-geometry-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APC Geometry Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#airfoil-polars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Airfoil Polars
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blade-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blade Geometry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blade-element-propeller_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blade-Element Propeller
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-stations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis stations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circulation-from-the-wake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circulation from the wake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-lift-and-drag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section lift and drag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Station equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thrust-and-torque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thrust and torque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-of-the-rpm-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start of the RPM search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-qprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences from QPROP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-against-qprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification against QPROP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../motor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../battery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Battery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../propulsion_solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propulsion Solver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openmdao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenMDAO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symbols
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qprop-propeller-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QPROP Propeller Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uiuc-geometry-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UIUC Geometry Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apc-geometry-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        APC Geometry Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#airfoil-polars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Airfoil Polars
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blade-geometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blade Geometry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blade-element-propeller_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blade-Element Propeller
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-stations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis stations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circulation-from-the-wake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circulation from the wake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section-lift-and-drag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Section lift and drag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#station-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Station equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thrust-and-torque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Thrust and torque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-of-the-rpm-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start of the RPM search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differences-from-qprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Differences from QPROP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-against-qprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification against QPROP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="blade-element-propeller">Blade-Element Propeller</h1>
+<p><code>BladeElementPropeller</code> follows the blade-element/vortex formulation of
+Drela's QPROP [1], with the section model of the QPROP user guide [2]. Each
+blade station is solved on its own; the stations' loads then sum to the
+thrust and torque.</p>
+<h2 id="symbols">Symbols</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Description</th>
+<th>SI Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\Omega\)</span></td>
+<td>Propeller angular speed, <span class="arithmatex">\(2\pi n\)</span></td>
+<td><span class="arithmatex">\(\text{rad/s}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(B\)</span></td>
+<td>Number of blades</td>
+<td>Dimensionless</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{\text{tip}}\)</span></td>
+<td>Propeller tip radius</td>
+<td><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(r\)</span></td>
+<td>Radius of a blade station</td>
+<td><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c\)</span></td>
+<td>Blade chord</td>
+<td><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\beta\)</span></td>
+<td>Blade angle from the plane of rotation</td>
+<td><span class="arithmatex">\(\text{rad}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(W_a, W_t\)</span></td>
+<td>Axial and tangential velocity seen by the blade</td>
+<td><span class="arithmatex">\(\text{m/s}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\phi, \alpha\)</span></td>
+<td>Inflow angle and angle of attack</td>
+<td><span class="arithmatex">\(\text{rad}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Gamma\)</span></td>
+<td>Circulation of one blade</td>
+<td><span class="arithmatex">\(\text{m}^2\text{/s}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c_l, c_d\)</span></td>
+<td>Section lift and drag coefficients</td>
+<td>Dimensionless</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Re, M\)</span></td>
+<td>Section Reynolds and Mach numbers</td>
+<td>Dimensionless</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mu, a\)</span></td>
+<td>Air viscosity and speed of sound</td>
+<td><span class="arithmatex">\(\text{kg/(m s)}\)</span>, <span class="arithmatex">\(\text{m/s}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="qprop-propeller-files">QPROP Propeller Files</h2>
+<p>A QPROP propeller file describes the blade itself: chord and blade angle at
+radial stations, and the airfoil's lift and drag parameters. The format is
+defined in the <a href="https://web.mit.edu/drela/Public/web/qprop/qprop_doc.txt">QPROP user guide</a>.
+<code>pythrust.io.read_qprop_propeller</code> reads one into a <code>BladeGeometry</code> in SI units:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">read_qprop_propeller</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">blade</span> <span class="o">=</span> <span class="n">read_qprop_propeller</span><span class="p">(</span><span class="s2">"prop.txt"</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">blade</span><span class="o">.</span><span class="n">blade_count</span><span class="p">,</span> <span class="n">blade</span><span class="o">.</span><span class="n">radius_m</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">blade</span><span class="o">.</span><span class="n">r_m</span><span class="p">,</span> <span class="n">blade</span><span class="o">.</span><span class="n">chord_m</span><span class="p">,</span> <span class="n">blade</span><span class="o">.</span><span class="n">blade_angle_rad</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">blade</span><span class="o">.</span><span class="n">sections</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cl_alpha_per_rad</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The file holds, in order:</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>Nblades [R]</code>; without <code>R</code>, the last station's radius is the tip radius</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>CL0 CL_a</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>CLmin CLmax</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>CD0 CD2u CD2l CLCD0</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>REref REexp</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>Rfac Cfac Bfac</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>Radd Cadd Badd</code></td>
+</tr>
+<tr>
+<td>9 on</td>
+<td><code>r chord beta</code>, one station per line from root to tip</td>
+</tr>
+</tbody>
+</table>
+<p>Radii and chords become <code>value * fac + add</code> in metres, and the blade angle
+<code>beta * Bfac + Badd</code> in degrees, converted to radians. A station line may
+append its own <code>CL0 CL_a CLmin CLmax CD0 CD2u CD2l CLCD0 REref REexp</code>; values it
+leaves out take those of lines 3 to 6. Lines starting with <code>#</code> and blank lines
+are skipped, and text after <code>!</code> is ignored.</p>
+<p><code>CL_a</code> is read per radian. The QPROP guide does not state its unit; its example
+value of 5.8 is a lift slope per radian.</p>
+<p>The tip radius <code>R</code> on line 2 is scaled like the station radii, as the QPROP
+guide states. QPROP 1.22 itself applies <code>Rfac</code> and <code>Radd</code> only to the stations
+and uses <code>R</code> as written, so a file that gives <code>R</code> with <code>Rfac</code> other than 1 or
+<code>Radd</code> other than 0 gives different tip losses in QPROP and in PyThrust.
+Without <code>R</code>, or with the radii in metres, the two agree. <code>R</code> must not be less
+than the last station's radius.</p>
+<h2 id="uiuc-geometry-files">UIUC Geometry Files</h2>
+<p>The <a href="https://m-selig.ae.illinois.edu/props/propDB.html">UIUC Propeller Database</a>
+gives the measured geometry of many small propellers next to their wind-tunnel
+data. A geometry file, such as <code>apce_10x5_geom.txt</code>, has a header line
+<code>r/R c/R beta</code> and one station per line from root to tip: radius and chord as
+fractions of the tip radius, and the blade angle in degrees.</p>
+<p>The file gives neither the diameter, the blade count nor the airfoil, so
+<code>pythrust.io.read_uiuc_geometry</code> takes them as arguments; the one <code>section</code>
+applies to every station:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">read_uiuc_geometry</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propeller</span><span class="w"> </span><span class="kn">import</span> <span class="n">BladeElementPropeller</span><span class="p">,</span> <span class="n">BladeSection</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># The example section of the QPROP user guide, a generic starting point.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">section</span> <span class="o">=</span> <span class="n">BladeSection</span><span class="p">(</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">cl0</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span> <span class="n">cl_alpha_per_rad</span><span class="o">=</span><span class="mf">5.8</span><span class="p">,</span> <span class="n">cl_min</span><span class="o">=-</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">cl_max</span><span class="o">=</span><span class="mf">1.2</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">cd0</span><span class="o">=</span><span class="mf">0.028</span><span class="p">,</span> <span class="n">cd2_upper</span><span class="o">=</span><span class="mf">0.050</span><span class="p">,</span> <span class="n">cd2_lower</span><span class="o">=</span><span class="mf">0.020</span><span class="p">,</span> <span class="n">cl_at_cd0</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">reynolds_ref</span><span class="o">=</span><span class="mf">70000.0</span><span class="p">,</span> <span class="n">reynolds_exp</span><span class="o">=-</span><span class="mf">0.7</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">blade</span> <span class="o">=</span> <span class="n">read_uiuc_geometry</span><span class="p">(</span><span class="s2">"apce_10x5_geom.txt"</span><span class="p">,</span> <span class="n">diameter_m</span><span class="o">=</span><span class="mf">0.254</span><span class="p">,</span> <span class="n">section</span><span class="o">=</span><span class="n">section</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">propeller</span> <span class="o">=</span> <span class="n">BladeElementPropeller</span><span class="p">(</span><span class="n">blade</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The section parameters set the accuracy. With the generic section above, the
+APC Thin Electric 10x5 gives a static thrust coefficient 7–15% above the UIUC
+measurement and a power coefficient 16–42% above it, the largest gap at the
+lowest RPM. Section parameters fitted to the propeller's airfoil narrow the gap.</p>
+<h2 id="apc-geometry-files">APC Geometry Files</h2>
+<p>APC publishes a geometry file for each propeller, such as <code>10x5E-PERF.PE0</code>, on
+its <a href="https://www.apcprop.com/propeller-technical-data/">technical data page</a>.
+The file gives the chord and blade angle (<code>TWIST</code>) at about 50 stations in
+inches, the tip radius, the hub transition radius, the blade count, and the
+two airfoils of the blade: the first up to a transition start radius, the
+second from a transition end radius. APC's thin electric propellers, for
+example, go from an Eppler E63 to the APC12, equivalent to a NACA 4412.</p>
+<p><code>pythrust.io.read_apc_geometry</code> reads the stations from the hub transition
+outward. The blade angle is that of the chord line, between the leading- and
+trailing-edge mold parting lines; the file's <code>TWIST</code> column matches its <code>LE-TE</code>
+pitch, not the lower <code>PRATHER</code> pitch a gauge on the lower surface would read.</p>
+<p><code>sections</code> is one section for the whole blade, or a mapping from the file's
+airfoil names to sections. <code>apc_airfoil_polars()</code> gives the
+<a href="#airfoil-polars">polars</a> of the airfoils APC names, E63, APC12 and CLARK-Y,
+computed with NeuralFoil:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">read_apc_geometry</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propeller</span><span class="w"> </span><span class="kn">import</span> <span class="n">BladeElementPropeller</span><span class="p">,</span> <span class="n">apc_airfoil_polars</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">blade</span> <span class="o">=</span> <span class="n">read_apc_geometry</span><span class="p">(</span><span class="s2">"10x5E-PERF.PE0"</span><span class="p">,</span> <span class="n">apc_airfoil_polars</span><span class="p">())</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">propeller</span> <span class="o">=</span> <span class="n">BladeElementPropeller</span><span class="p">(</span><span class="n">blade</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Between the two transition radii the stations mix the two airfoils: polars in a
+<code>BlendedPolar</code>, <code>BladeSection</code> parameters linearly.</p>
+<p>Against UIUC's wind-tunnel measurements of 75 APC propellers, this model is
+about as accurate as APC's own performance tables: some 10% mean error per
+propeller in thrust and power, less than the tables' in thrust. See
+<a href="../validation/">Validation</a>.</p>
+<h2 id="airfoil-polars">Airfoil Polars</h2>
+<p>An <code>AirfoilPolar</code> tabulates an airfoil's lift and drag coefficients against
+angle of attack and Reynolds number. <code>AirfoilPolar.from_neuralfoil</code> computes
+them with <a href="https://github.com/Setuav/NeuralFoil">NeuralFoil</a>, a neural network
+trained on XFOIL results, from a NACA 4- or 5-digit designation, a Selig or
+Lednicer <code>.dat</code> file, or coordinates:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propeller</span><span class="w"> </span><span class="kn">import</span> <span class="n">AirfoilPolar</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">naca</span> <span class="o">=</span> <span class="n">AirfoilPolar</span><span class="o">.</span><span class="n">from_neuralfoil</span><span class="p">(</span><span class="s2">"NACA 4412"</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">e387</span> <span class="o">=</span> <span class="n">AirfoilPolar</span><span class="o">.</span><span class="n">from_neuralfoil</span><span class="p">(</span><span class="s2">"e387.dat"</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">cl</span><span class="p">,</span> <span class="n">cd</span> <span class="o">=</span> <span class="n">naca</span><span class="o">.</span><span class="n">coefficients</span><span class="p">(</span><span class="n">alpha_rad</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">reynolds</span><span class="o">=</span><span class="mf">8e4</span><span class="p">,</span> <span class="n">mach</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>NeuralFoil gives the table from -20 to 25 degrees, every 0.5 degree, at 13
+  Reynolds numbers from 1e4 to 1e6. Beyond -35 and 40 degrees the section is
+  a flat plate, <span class="arithmatex">\(c_l = \sin 2\alpha\)</span> and <span class="arithmatex">\(c_d = 2 \sin^2 \alpha\)</span>. Between the
+  table's points the coefficients are interpolated linearly in the angle of
+  attack and in <span class="arithmatex">\(\log Re\)</span>; beyond its Reynolds numbers the nearest is used.</li>
+<li>The angle of attack is from the chord line.</li>
+<li>Lift is divided by <span class="arithmatex">\(\sqrt{1 - M^2}\)</span> (Prandtl-Glauert).</li>
+<li><code>n_crit</code> is the amplification factor at which the boundary layer turns
+  turbulent: 9 for a quiet wind tunnel, lower for a turbulent free stream.
+  The default, 7, fits the <a href="../validation/">validation</a> measurements best.</li>
+<li>Building one table takes about 0.2 s; <code>apc_airfoil_polars()</code> caches its
+  polars per <code>n_crit</code>.</li>
+</ul>
+<p>A blade's sections are all <code>BladeSection</code> or all polars. The analysis stations
+mix the polars of the two nearest geometry stations linearly. A solved
+operating point of the APC 10x5E takes about 60 ms.</p>
+<h2 id="api">API</h2>
+<h3 id="blade-geometry">Blade Geometry</h3>
+<p><code>pythrust.io.read_qprop_propeller(path)</code> reads a QPROP propeller file,
+<code>pythrust.io.read_uiuc_geometry(path, diameter_m, section, blade_count=2)</code> a
+UIUC geometry file, and <code>pythrust.io.read_apc_geometry(path, sections)</code> an APC
+geometry file into a <code>BladeGeometry</code>, the input of a blade-element propeller
+model:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th style="text-align: right;">Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blade_count</code></td>
+<td style="text-align: right;">-</td>
+<td>Number of blades</td>
+</tr>
+<tr>
+<td><code>radius_m</code></td>
+<td style="text-align: right;">m</td>
+<td>Tip radius</td>
+</tr>
+<tr>
+<td><code>r_m</code></td>
+<td style="text-align: right;">m</td>
+<td>Station radii, root to tip</td>
+</tr>
+<tr>
+<td><code>chord_m</code></td>
+<td style="text-align: right;">m</td>
+<td>Chord at each station</td>
+</tr>
+<tr>
+<td><code>blade_angle_rad</code></td>
+<td style="text-align: right;">rad</td>
+<td>Blade angle from the plane of rotation at each station</td>
+</tr>
+<tr>
+<td><code>sections</code></td>
+<td style="text-align: right;">-</td>
+<td><code>BladeSection</code>, <code>AirfoilPolar</code> or <code>BlendedPolar</code> at each station</td>
+</tr>
+</tbody>
+</table>
+<p><code>BladeSection</code> holds QPROP's airfoil parameters, listed with their symbols in
+<a href="#section-lift-and-drag">Section lift and drag</a>; <code>AirfoilPolar</code> and
+<code>BlendedPolar</code> are <a href="#airfoil-polars">tabulated polars</a>.
+<code>section_coefficients(section, alpha_rad, reynolds, mach)</code> evaluates the section
+model on scalars or NumPy arrays and returns <code>(CL, CD)</code>.</p>
+<h3 id="blade-element-propeller_1">Blade-Element Propeller</h3>
+<p><code>BladeElementPropeller(geometry, mu=1.78e-5, speed_of_sound=340.0, stations=25)</code>
+is a <code>PropellerModel</code> computed from a <code>BladeGeometry</code> with QPROP's
+blade-element/vortex formulation:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">read_qprop_propeller</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pythrust.propeller</span><span class="w"> </span><span class="kn">import</span> <span class="n">BladeElementPropeller</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">propeller</span> <span class="o">=</span> <span class="n">BladeElementPropeller</span><span class="p">(</span><span class="n">read_qprop_propeller</span><span class="p">(</span><span class="s2">"prop.txt"</span><span class="p">))</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">thrust_n</span><span class="p">,</span> <span class="n">torque_nm</span> <span class="o">=</span> <span class="n">propeller</span><span class="o">.</span><span class="n">thrust_torque</span><span class="p">(</span><span class="n">rho</span><span class="o">=</span><span class="mf">1.225</span><span class="p">,</span> <span class="n">airspeed_mps</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">rpm</span><span class="o">=</span><span class="mf">8000.0</span><span class="p">)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>geometry</code></td>
+<td>The <code>BladeGeometry</code></td>
+</tr>
+<tr>
+<td><code>mu</code>, <code>speed_of_sound</code></td>
+<td>Air viscosity in kg/(m s) and speed of sound in m/s; the defaults are QPROP's</td>
+</tr>
+<tr>
+<td><code>diameter_m</code></td>
+<td>Twice the tip radius</td>
+</tr>
+<tr>
+<td><code>max_advance_ratio</code></td>
+<td>Advance ratio at which the section at 75% radius has zero lift, an estimate of zero thrust</td>
+</tr>
+<tr>
+<td><code>thrust_torque(rho, airspeed_mps, rpm)</code></td>
+<td>Thrust in N and torque in N m, negative for a windmilling blade; zero at zero RPM, NaN where a station has no solution</td>
+</tr>
+</tbody>
+</table>
+<h2 id="theory">Theory</h2>
+<h3 id="analysis-stations">Analysis stations</h3>
+<p>The blade is described at stations <span class="arithmatex">\(r_1 &lt; \dots &lt; r_K\)</span> with chord, blade
+angle and section parameters. It is analysed at the midpoints of <span class="arithmatex">\(N\)</span> equal
+intervals from <span class="arithmatex">\(r_1\)</span> to <span class="arithmatex">\(r_K\)</span> (<span class="arithmatex">\(N = 25\)</span> by default), each of width
+<span class="arithmatex">\(\Delta r = (r_K - r_1)/N\)</span>. Chord, blade angle and section parameters there
+come from a cubic spline through the stations whose second derivative is
+constant in the first and last intervals (zero third derivative). The tip
+radius <span class="arithmatex">\(R_{\text{tip}}\)</span> is given, or else <span class="arithmatex">\(r_K\)</span>.</p>
+<h3 id="velocities">Velocities</h3>
+<p>Without induced velocity, a station at radius <span class="arithmatex">\(r\)</span> sees the axial velocity
+<span class="arithmatex">\(U_a = V\)</span> and the tangential velocity <span class="arithmatex">\(U_t = \Omega r\)</span>, of magnitude
+<span class="arithmatex">\(U = \sqrt{U_a^2 + U_t^2}\)</span>. The velocities with the blade's own induced
+velocity are written with one angle <span class="arithmatex">\(\psi\)</span>:</p>
+<div class="arithmatex">\[
+W_a = \tfrac{1}{2}\left(U_a + U \sin\psi\right)
+\]</div>
+<div class="arithmatex">\[
+W_t = \tfrac{1}{2}\left(U_t + U \cos\psi\right)
+\]</div>
+<p>so that the induced velocities <span class="arithmatex">\(v_a = W_a - U_a\)</span> and <span class="arithmatex">\(v_t = U_t - W_t\)</span> are
+perpendicular to the total velocity <span class="arithmatex">\(W = \sqrt{W_a^2 + W_t^2}\)</span> for every <span class="arithmatex">\(\psi\)</span>.
+At <span class="arithmatex">\(\psi_0 = \arctan(U_a / U_t)\)</span> there is no induced velocity. Then</p>
+<div class="arithmatex">\[
+\phi = \arctan\frac{W_a}{W_t}, \qquad \alpha = \beta - \phi
+\]</div>
+<div class="arithmatex">\[
+Re = \frac{\rho W c}{\mu}, \qquad M = \frac{W}{a}
+\]</div>
+<h3 id="circulation-from-the-wake">Circulation from the wake</h3>
+<p>With the local wake advance ratio <span class="arithmatex">\(\lambda_w\)</span> and Prandtl's tip-loss factor
+<span class="arithmatex">\(F_{\text{tip}}\)</span> evaluated on it,</p>
+<div class="arithmatex">\[
+\lambda_w = \frac{r}{R_{\text{tip}}} \frac{W_a}{W_t}
+\]</div>
+<div class="arithmatex">\[
+F_{\text{tip}} = \frac{2}{\pi} \arccos\left(
+  \exp\left[-\frac{B}{2} \left(1 - \frac{r}{R_{\text{tip}}}\right) \frac{1}{\lambda_w}\right]
+\right)
+\]</div>
+<p>the circulation of one blade follows from the tangential induced velocity:</p>
+<div class="arithmatex">\[
+\Gamma_w = v_t \, \frac{4 \pi r}{B} \, F_{\text{tip}}
+\sqrt{1 + \left(\frac{4 \lambda_w R_{\text{tip}}}{\pi B r}\right)^2}
+\]</div>
+<p>The square root grows near the hub and keeps the relation consistent with a
+heavily loaded actuator disk.</p>
+<h3 id="section-lift-and-drag">Section lift and drag</h3>
+<p>The section's lift is linear in the angle of attack, with the Prandtl-Glauert
+factor:</p>
+<div class="arithmatex">\[
+c_{l,\text{lin}} = \frac{c_{l0} + c_{l\alpha}\,\alpha}{\sqrt{1 - M^2}}
+\]</div>
+<p>Where <span class="arithmatex">\(c_{l,\text{lin}}\)</span> passes <span class="arithmatex">\(c_{l,\max}\)</span> or <span class="arithmatex">\(c_{l,\min}\)</span>, the section is
+stalled and its lift falls off with the angle of attack:</p>
+<div class="arithmatex">\[
+c_l =
+\begin{cases}
+c_{l,\max} \cos\left(\alpha - c_{l0}/c_{l\alpha}\right) &amp; c_{l,\text{lin}} &gt; c_{l,\max} \\
+c_{l,\min} \cos\left(\alpha - c_{l0}/c_{l\alpha}\right) &amp; c_{l,\text{lin}} &lt; c_{l,\min} \\
+c_{l,\text{lin}} &amp; \text{otherwise}
+\end{cases}
+\]</div>
+<p>The drag is quadratic in the lift and scales with the Reynolds number; a
+stalled section adds a term that does not:</p>
+<div class="arithmatex">\[
+c_d = \left[c_{d0} + c_{d2} \left(c_l - c_{l,cd0}\right)^2\right]
+\left(\frac{Re}{Re_{\text{ref}}}\right)^{e}
++ \begin{cases} 2 \sin^2\left(\alpha - \alpha_{cd0}\right) &amp; \text{stalled} \\ 0 &amp; \text{otherwise} \end{cases}
+\]</div>
+<p>with <span class="arithmatex">\(c_{d2} = c_{d2,u}\)</span> for <span class="arithmatex">\(c_l &gt; c_{l,cd0}\)</span>, <span class="arithmatex">\(c_{d2} = c_{d2,l}\)</span> otherwise, and
+<span class="arithmatex">\(\alpha_{cd0} = (c_{l,cd0} - c_{l0})/c_{l\alpha}\)</span>. The QPROP guide gives the
+linear lift, the clipping limits, the drag polar and the stall drag term; the
+stalled lift and the unscaled stall drag were measured from QPROP 1.22's
+output.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th><code>BladeSection</code> field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(c_{l0}\)</span>, <span class="arithmatex">\(c_{l\alpha}\)</span></td>
+<td><code>cl0</code>, <code>cl_alpha_per_rad</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c_{l,\min}\)</span>, <span class="arithmatex">\(c_{l,\max}\)</span></td>
+<td><code>cl_min</code>, <code>cl_max</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(c_{d0}\)</span>, <span class="arithmatex">\(c_{d2,u}\)</span>, <span class="arithmatex">\(c_{d2,l}\)</span>, <span class="arithmatex">\(c_{l,cd0}\)</span></td>
+<td><code>cd0</code>, <code>cd2_upper</code>, <code>cd2_lower</code>, <code>cl_at_cd0</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Re_{\text{ref}}\)</span>, <span class="arithmatex">\(e\)</span></td>
+<td><code>reynolds_ref</code>, <code>reynolds_exp</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="station-equation">Station equation</h3>
+<p>The section's lift gives the circulation <span class="arithmatex">\(\Gamma_l = \tfrac{1}{2} W c\, c_l\)</span>.
+A station is solved where the two circulations agree:</p>
+<div class="arithmatex">\[
+\mathcal{R}(\psi) = \Gamma_w(\psi) - \tfrac{1}{2} W(\psi)\, c\, c_l(\psi) = 0
+\]</div>
+<p><span class="arithmatex">\(\psi\)</span> is searched between the angles where <span class="arithmatex">\(W_a\)</span> and where <span class="arithmatex">\(W_t\)</span> fall to zero,
+<span class="arithmatex">\(-\arcsin(U_a/U) &lt; \psi &lt; \arccos(-U_t/U)\)</span>. PyThrust samples <span class="arithmatex">\(\mathcal{R}\)</span> on that
+range, takes the sign change nearest <span class="arithmatex">\(\psi_0\)</span>, the flow without induced
+velocity, and refines the root with the Illinois method.</p>
+<h3 id="thrust-and-torque">Thrust and torque</h3>
+<p>The lift and drag of a station resolve into thrust and torque along <span class="arithmatex">\(\phi\)</span>.
+With <span class="arithmatex">\(\Gamma = \tfrac{1}{2} W c\, c_l\)</span> and <span class="arithmatex">\(W\cos\phi = W_t\)</span>, <span class="arithmatex">\(W\sin\phi = W_a\)</span>,
+the midpoint sums over the stations are</p>
+<div class="arithmatex">\[
+T = \rho B \sum \left(\Gamma W_t - \tfrac{1}{2} W c\, c_d\, W_a\right) \Delta r
+\]</div>
+<div class="arithmatex">\[
+Q = \rho B \sum \left(\Gamma W_a + \tfrac{1}{2} W c\, c_d\, W_t\right) r\, \Delta r
+\]</div>
+<p>At zero RPM the model gives zero thrust and torque; where a station has no
+root, it gives NaN.</p>
+<h3 id="start-of-the-rpm-search">Start of the RPM search</h3>
+<p>The solver starts its RPM search at the advance ratio the propeller model
+gives as <code>max_advance_ratio</code>. For the blade-element model this is the advance
+ratio at which the section at 75% radius has zero lift, ignoring the induced
+velocity, which is small near zero thrust:</p>
+<div class="arithmatex">\[
+J_{\max} = \pi \, \frac{r_{75}}{R_{\text{tip}}} \tan\left(\beta_{75} - \alpha_{0}\right)
+\]</div>
+<p>where <span class="arithmatex">\(\alpha_0\)</span> is the section's zero-lift angle: <span class="arithmatex">\(-c_{l0}/c_{l\alpha}\)</span> for a
+<code>BladeSection</code>, and for a polar the lowest over its Reynolds numbers, so that
+the search starts past zero thrust.</p>
+<h3 id="differences-from-qprop">Differences from QPROP</h3>
+<ul>
+<li><strong>Tip radius scaling.</strong> A QPROP propeller file may give the tip radius on its
+  second line. The QPROP guide scales it with <code>Rfac</code> and <code>Radd</code> like the
+  station radii; QPROP 1.22 uses it unscaled. PyThrust follows the guide.</li>
+<li><strong>Multiple roots.</strong> At a stalled station of a windmilling blade
+  <span class="arithmatex">\(\mathcal{R}(\psi)\)</span> can have more than one root, and QPROP can pick another one
+  than PyThrust.</li>
+<li><strong>Externally induced velocity.</strong> QPROP accepts a velocity induced by another
+  rotor ahead of the propeller; PyThrust does not.</li>
+</ul>
+<h3 id="verification-against-qprop">Verification against QPROP</h3>
+<p>The tests compare PyThrust with QPROP 1.22 run on the same input files:</p>
+<ul>
+<li><strong>Section model:</strong> 22 points from <span class="arithmatex">\(-68°\)</span> to <span class="arithmatex">\(+68°\)</span> angle of attack and Mach
+  0.13 to 0.55, including both stall limits; <span class="arithmatex">\(c_l\)</span> and <span class="arithmatex">\(c_d\)</span> agree to the
+  digits QPROP prints.</li>
+<li><strong>Stations:</strong> 7 operating points on two blades, static to negative thrust;
+  <span class="arithmatex">\(c_l\)</span>, <span class="arithmatex">\(c_d\)</span>, <span class="arithmatex">\(Re\)</span>, <span class="arithmatex">\(M\)</span> and <span class="arithmatex">\(W_a\)</span> at all 25 stations agree to the digits
+  QPROP prints.</li>
+<li><strong>Thrust and torque:</strong> 13 operating points on three blades agree within
+  0.04%, inside QPROP's four printed digits.</li>
+<li><strong>Propeller and motor:</strong> with a QPROP motor file and a set voltage, RPM,
+  thrust, torque and current agree to the digits QPROP prints.</li>
+</ul>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p><strong>QPROP Formulation</strong><br />
+   Mark Drela, MIT Aero &amp; Astro, June 2006<br />
+<a href="https://web.mit.edu/drela/Public/web/qprop/qprop_theory.pdf">PDF Link</a></p>
+</li>
+<li>
+<p><strong>QPROP User Guide</strong>, version 1.21<br />
+   Mark Drela, MIT Aero &amp; Astro, July 2007<br />
+<a href="https://web.mit.edu/drela/Public/web/qprop/qprop_doc.txt">Text Link</a></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

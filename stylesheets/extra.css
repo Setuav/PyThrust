@@ -1,0 +1,57 @@
+/* PyThrust documentation accents, aligned with the Setuav MkDocs Material style. */
+
+:root {
+  --pythrust-blue: #1565c0;
+  --pythrust-green: #2e7d32;
+  --pythrust-orange: #ef6c00;
+}
+
+.md-typeset img {
+  border-radius: 6px;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+[data-md-color-scheme="default"] .md-typeset a {
+  color: var(--pythrust-blue);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #90caf9;
+}
+
+[data-md-color-scheme="default"] .node.propStyle rect {
+  fill: #e3f2fd !important;
+  stroke: #1565c0 !important;
+}
+
+[data-md-color-scheme="default"] .node.motorStyle rect {
+  fill: #f1f8e9 !important;
+  stroke: #558b2f !important;
+}
+
+[data-md-color-scheme="default"] .node.batteryStyle rect {
+  fill: #fff3e0 !important;
+  stroke: #ef6c00 !important;
+}
+
+[data-md-color-scheme="slate"] .node.propStyle rect {
+  fill: #1e3a8a !important;
+  stroke: #93c5fd !important;
+}
+
+[data-md-color-scheme="slate"] .node.motorStyle rect {
+  fill: #14532d !important;
+  stroke: #86efac !important;
+}
+
+[data-md-color-scheme="slate"] .node.batteryStyle rect {
+  fill: #7c2d12 !important;
+  stroke: #fdba74 !important;
+}
