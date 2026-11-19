@@ -110,24 +110,75 @@ second from a transition end radius. APC's thin electric propellers, for
 example, go from an Eppler E63 to the APC12, equivalent to a NACA 4412.
 
 `pythrust.io.read_apc_geometry` reads the stations from the hub transition
-outward. The blade angle is APC's, measured to the flat lower surface of the
-section. `sections` is one `BladeSection` for the whole blade, or a mapping from
-the file's airfoil names to sections; between the two transition radii each
-parameter is interpolated linearly:
+outward. The blade angle is that of the chord line, between the leading- and
+trailing-edge mold parting lines; the file's `TWIST` column matches its `LE-TE`
+pitch, not the lower `PRATHER` pitch a gauge on the lower surface would read.
+
+`sections` is one section for the whole blade, or a mapping from the file's
+airfoil names to sections. `apc_airfoil_polars()` gives the
+[polars](#airfoil-polars) of the airfoils APC names, E63, APC12 and CLARK-Y,
+computed with NeuralFoil:
 
 ```python
 from pythrust.io import read_apc_geometry
-from pythrust.propeller import BladeElementPropeller
+from pythrust.propeller import BladeElementPropeller, apc_airfoil_polars
 
-# e63 and apc12 are BladeSection values for the two airfoils.
-blade = read_apc_geometry("10x5E-PERF.PE0", {"E63": e63, "APC12": apc12})
+blade = read_apc_geometry("10x5E-PERF.PE0", apc_airfoil_polars(n_crit=5.0))
 propeller = BladeElementPropeller(blade)
 ```
 
-With the generic section of the previous example, the APC 10x5E geometry gives
-a static thrust coefficient 5–12% and a power coefficient 8–33% above the UIUC
-measurement; at 6005 RPM in forward flight the mean thrust and power errors are
-about 5%.
+Between the two transition radii the stations mix the two airfoils: polars in a
+`BlendedPolar`, `BladeSection` parameters linearly.
+
+Against the UIUC wind-tunnel measurement of the APC 10x5E, from 2500 to 6700
+RPM static and at 6005 RPM in forward flight, the mean errors are:
+
+| Coefficient | Generic `BladeSection` | Polars, `n_crit` 9 | Polars, `n_crit` 5 | APC's table |
+|---|---:|---:|---:|---:|
+| Static $C_T$ | 8.2% | 12.5% | 4.0% | 5.1% |
+| Static $C_P$ | 19.1% | 3.4% | 3.0% | 3.9% |
+| Forward $C_T$ | 5.1% | 15.5% | 4.0% | 5.4% |
+| Forward $C_P$ | 5.6% | 13.2% | 9.2% | 4.4% |
+| Forward efficiency | 2.7% | 2.7% | 5.8% | 1.3% |
+
+The generic section is the example of the QPROP user guide. With `n_crit` 9
+the low Reynolds number of the slow static points, about 3e4, separates the
+laminar flow and the static thrust falls up to 32% short; `n_crit` 5, for a
+turbulent free stream, follows the measurement. In forward flight the polars
+give about 10% too little power past an advance ratio of 0.25, so too high an
+efficiency.
+
+## Airfoil Polars
+
+An `AirfoilPolar` tabulates an airfoil's lift and drag coefficients against
+angle of attack and Reynolds number. `AirfoilPolar.from_neuralfoil` computes
+them with [NeuralFoil](https://github.com/Setuav/NeuralFoil), a neural network
+trained on XFOIL results, from a NACA 4- or 5-digit designation, a Selig or
+Lednicer `.dat` file, or coordinates:
+
+```python
+from pythrust.propeller import AirfoilPolar
+
+naca = AirfoilPolar.from_neuralfoil("NACA 4412", n_crit=5.0)
+e387 = AirfoilPolar.from_neuralfoil("e387.dat")
+cl, cd = naca.coefficients(alpha_rad=0.1, reynolds=8e4, mach=0.1)
+```
+
+- NeuralFoil gives the table from -20 to 25 degrees, every 0.5 degree, at 13
+  Reynolds numbers from 1e4 to 1e6. Beyond -35 and 40 degrees the section is
+  a flat plate, $c_l = \sin 2\alpha$ and $c_d = 2 \sin^2 \alpha$. Between the
+  table's points the coefficients are interpolated linearly in the angle of
+  attack and in $\log Re$; beyond its Reynolds numbers the nearest is used.
+- The angle of attack is from the chord line.
+- Lift is divided by $\sqrt{1 - M^2}$ (Prandtl-Glauert).
+- `n_crit` is the amplification factor at which the boundary layer turns
+  turbulent: 9 for a quiet wind tunnel, lower for a turbulent free stream.
+- Building one table takes about 0.2 s; `apc_airfoil_polars()` caches its
+  polars per `n_crit`.
+
+A blade's sections are all `BladeSection` or all polars. The analysis stations
+mix the polars of the two nearest geometry stations linearly. A solved
+operating point of the APC 10x5E takes about 60 ms.
 
 ## API
 
@@ -146,10 +197,11 @@ model:
 | `r_m` | m | Station radii, root to tip |
 | `chord_m` | m | Chord at each station |
 | `blade_angle_rad` | rad | Blade angle from the plane of rotation at each station |
-| `sections` | - | `BladeSection` at each station |
+| `sections` | - | `BladeSection`, `AirfoilPolar` or `BlendedPolar` at each station |
 
 `BladeSection` holds QPROP's airfoil parameters, listed with their symbols in
-[Section lift and drag](#section-lift-and-drag).
+[Section lift and drag](#section-lift-and-drag); `AirfoilPolar` and
+`BlendedPolar` are [tabulated polars](#airfoil-polars).
 `section_coefficients(section, alpha_rad, reynolds, mach)` evaluates the section
 model on scalars or NumPy arrays and returns `(CL, CD)`.
 
@@ -321,8 +373,12 @@ ratio at which the section at 75% radius has zero lift, ignoring the induced
 velocity, which is small near zero thrust:
 
 $$
-J_{\max} = \pi \, \frac{r_{75}}{R_{\text{tip}}} \tan\left(\beta_{75} + \frac{c_{l0}}{c_{l\alpha}}\right)
+J_{\max} = \pi \, \frac{r_{75}}{R_{\text{tip}}} \tan\left(\beta_{75} - \alpha_{0}\right)
 $$
+
+where $\alpha_0$ is the section's zero-lift angle: $-c_{l0}/c_{l\alpha}$ for a
+`BladeSection`, and for a polar the lowest over its Reynolds numbers, so that
+the search starts past zero thrust.
 
 ### Differences from QPROP
 

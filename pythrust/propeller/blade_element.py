@@ -10,6 +10,7 @@ import numpy as np
 
 from .bem import solve_stations
 from .blade import BladeGeometry, BladeSection
+from .polar import AirfoilPolar, BlendedPolar, StationPolars
 
 QPROP_MU = 1.78e-5
 """QPROP's default air viscosity, kg/(m s)."""
@@ -22,8 +23,10 @@ class BladeElementPropeller:
 
     The blade is analysed at ``stations`` points: the midpoints of equal
     intervals from the first to the last station of ``geometry``. Chord, blade
-    angle and section parameters there come from a cubic spline through the
-    geometry's stations, with zero third derivative in the end intervals.
+    angle and ``BladeSection`` parameters there come from a cubic spline through
+    the geometry's stations, with zero third derivative in the end intervals;
+    tabulated polars (``AirfoilPolar``, ``BlendedPolar``) are mixed linearly
+    between the two nearest stations instead.
     Thrust and torque sum each station's load over its interval (Drela, QPROP
     Formulation, section 3.2).
 
@@ -50,7 +53,12 @@ class BladeElementPropeller:
         self._dr = np.diff(edges)
         self._chord = _spline(r, np.asarray(geometry.chord_m, dtype=float), self._r)
         self._beta = _spline(r, np.asarray(geometry.blade_angle_rad, dtype=float), self._r)
-        self._sections = _spline_sections(r, geometry.sections, self._r)
+        if all(isinstance(s, BladeSection) for s in geometry.sections):
+            self._sections = _spline_sections(r, geometry.sections, self._r)
+        elif all(isinstance(s, (AirfoilPolar, BlendedPolar)) for s in geometry.sections):
+            self._sections = StationPolars.interpolate(r, geometry.sections, self._r)
+        else:
+            raise TypeError("sections must be all BladeSection or all AirfoilPolar/BlendedPolar")
 
     @property
     def diameter_m(self) -> float:
@@ -68,7 +76,10 @@ class BladeElementPropeller:
         r75 = min(max(0.75 * radius, r[0]), r[-1])
         beta = float(_spline(r, np.asarray(self.geometry.blade_angle_rad, dtype=float), np.array([r75]))[0])
         section = self._sections[int(np.argmin(np.abs(self._r - r75)))]
-        phi = beta + section.cl0 / section.cl_alpha_per_rad
+        if isinstance(section, BladeSection):
+            phi = beta + section.cl0 / section.cl_alpha_per_rad
+        else:
+            phi = beta - section.zero_lift_alpha_rad
         if phi <= 0.0:
             return 0.0
         if phi >= 0.5 * math.pi:

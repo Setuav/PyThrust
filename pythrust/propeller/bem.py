@@ -10,12 +10,13 @@ section's lift.
 from __future__ import annotations
 
 from dataclasses import dataclass, fields
-from typing import Sequence
+from typing import Sequence, Union
 
 import numpy as np
 from numpy.typing import ArrayLike
 
 from .blade import BladeSection
+from .polar import StationPolars
 from .section import section_coefficients
 
 _GRID_POINTS = 64
@@ -56,7 +57,7 @@ def solve_stations(
     r_m: ArrayLike,
     chord_m: ArrayLike,
     blade_angle_rad: ArrayLike,
-    sections: Sequence[BladeSection],
+    sections: Union[Sequence[BladeSection], StationPolars],
     airspeed_mps: float,
     omega_rad_s: float,
     rho: float,
@@ -75,12 +76,22 @@ def solve_stations(
     where ``Gamma = W c CL / 2``.
 
     Where several roots exist, the one nearest the uninduced flow is taken.
+
+    ``sections`` gives each station's lift and drag: one ``BladeSection`` per
+    station, or ``StationPolars``.
     """
     r = np.asarray(r_m, dtype=float)
     chord = np.asarray(chord_m, dtype=float)
     beta = np.asarray(blade_angle_rad, dtype=float)
-    section = _stack(sections)
     blades = float(blade_count)
+    if isinstance(sections, StationPolars):
+        coefficients = sections.coefficients
+    else:
+        stacked = _stack(sections)
+        columns = _columns(stacked)
+
+        def coefficients(alpha, reynolds, mach):
+            return section_coefficients(columns if np.ndim(alpha) == 2 else stacked, alpha, reynolds, mach)
 
     ua = np.full_like(r, float(airspeed_mps))
     ut = float(omega_rad_s) * r
@@ -94,14 +105,14 @@ def solve_stations(
     psi_high = psi_high - _EDGE * span
 
     @np.errstate(divide="ignore", invalid="ignore", over="ignore")
-    def flow(psi, rr, cc, bb, sec, uaa, utt, uu):
+    def flow(psi, rr, cc, bb, uaa, utt, uu):
         wa = 0.5 * (uaa + uu * np.sin(psi))
         wt = 0.5 * (utt + uu * np.cos(psi))
         w = np.hypot(wa, wt)
         alpha = bb - np.arctan2(wa, wt)
         reynolds = rho * w * cc / mu
         mach = w / speed_of_sound
-        cl, cd = section_coefficients(sec, alpha, reynolds, mach)
+        cl, cd = coefficients(alpha, reynolds, mach)
         wake_ratio = (rr / radius_m) * wa / wt
         tip = 0.5 * blades * (1.0 - rr / radius_m) / wake_ratio
         prandtl = (2.0 / np.pi) * np.arccos(np.exp(-tip))
@@ -114,9 +125,7 @@ def solve_stations(
 
     column = lambda a: a[:, None]  # noqa: E731
     grid = psi_low[:, None] + span[:, None] * (1.0 - 2.0 * _EDGE) * np.linspace(0.0, 1.0, _GRID_POINTS)[None, :]
-    residual = flow(
-        grid, column(r), column(chord), column(beta), _columns(section), column(ua), column(ut), column(u)
-    )[0]
+    residual = flow(grid, column(r), column(chord), column(beta), column(ua), column(ut), column(u))[0]
     change = np.signbit(residual[:, :-1]) != np.signbit(residual[:, 1:])
     change &= np.isfinite(residual[:, :-1]) & np.isfinite(residual[:, 1:])
     midpoints = 0.5 * (grid[:, :-1] + grid[:, 1:])
@@ -136,7 +145,7 @@ def solve_stations(
         if not active.any():
             break
         c = np.where(active, (a * fb - b * fa) / (fb - fa), b)
-        fc = flow(c, r, chord, beta, section, ua, ut, u)[0]
+        fc = flow(c, r, chord, beta, ua, ut, u)[0]
         crossed = np.signbit(fc) != np.signbit(fb)
         a, fa = (
             np.where(active & crossed, b, a),
@@ -145,7 +154,7 @@ def solve_stations(
         b, fb = np.where(active, c, b), np.where(active, fc, fb)
     psi = np.where(converged, b, np.nan)
 
-    _, wa, wt, alpha, cl, cd, reynolds, mach, gamma = flow(psi, r, chord, beta, section, ua, ut, u)
+    _, wa, wt, alpha, cl, cd, reynolds, mach, gamma = flow(psi, r, chord, beta, ua, ut, u)
     return StationSolution(
         psi=psi,
         axial_velocity=wa,

@@ -9,6 +9,7 @@ from dataclasses import fields
 from typing import Dict, List, Mapping, Union
 
 from pythrust.propeller.blade import BladeGeometry, BladeSection
+from pythrust.propeller.polar import AirfoilPolar, BlendedPolar
 from pythrust.propeller.table import PropellerDataPoint, TablePropeller
 
 _RPM_RE = re.compile(r"PROP RPM\s*=\s*(\d+(?:\.\d+)?)")
@@ -76,19 +77,23 @@ def read_apc(path: Union[str, Path]) -> TablePropeller:
 
 def read_apc_geometry(
     path: Union[str, Path],
-    sections: Union[BladeSection, Mapping[str, BladeSection]],
+    sections: Union[BladeSection, AirfoilPolar, Mapping[str, Union[BladeSection, AirfoilPolar]]],
 ) -> BladeGeometry:
     """Read an APC geometry file (``*-PERF.PE0``) into a blade geometry in SI units.
 
     The file gives the chord and blade angle (``TWIST``) at stations in
     inches, the tip radius, the hub transition radius and the blade count.
-    Stations inside the hub transition are left out. The blade angle is APC's,
-    measured to the flat lower surface of the section.
+    Stations inside the hub transition are left out. The blade angle is that of
+    the chord line, between the leading- and trailing-edge mold parting lines;
+    the file also gives the lower-surface (Prather gauge) pitch, which is
+    lower.
 
     The file names two airfoils: the first up to the transition start radius,
-    the second from the transition end radius. ``sections`` is one
-    ``BladeSection`` for every station, or a mapping from those airfoil names
-    to sections; between the two radii each parameter is interpolated linearly.
+    the second from the transition end radius. ``sections`` is one section for
+    every station, or a mapping from those airfoil names to sections; a section
+    is a ``BladeSection`` or an ``AirfoilPolar``, such as those of
+    ``apc_airfoil_polars()``. Between the two radii, ``BladeSection`` parameters
+    are interpolated linearly, and polars are mixed in a ``BlendedPolar``.
 
     Raises ``ValueError`` naming what is missing from a malformed file, and
     ``KeyError`` naming an airfoil that ``sections`` does not map.
@@ -107,7 +112,7 @@ def read_apc_geometry(
     except ValueError as error:
         raise ValueError(f"{path.name}: {error}") from None
 
-    if isinstance(sections, BladeSection):
+    if isinstance(sections, (BladeSection, AirfoilPolar)):
         first = second = sections
         start_in = end_in = 0.0
     else:
@@ -157,11 +162,15 @@ def _fraction(r: float, start: float, end: float) -> float:
     return min(max((r - start) / (end - start), 0.0), 1.0)
 
 
-def _blend(first: BladeSection, second: BladeSection, weight: float) -> BladeSection:
+def _blend(first, second, weight: float):
     if weight <= 0.0:
         return first
     if weight >= 1.0:
         return second
+    if isinstance(first, AirfoilPolar) and isinstance(second, AirfoilPolar):
+        return BlendedPolar(first, second, weight)
+    if not (isinstance(first, BladeSection) and isinstance(second, BladeSection)):
+        raise TypeError("the two airfoils' sections must both be BladeSection or both AirfoilPolar")
     return BladeSection(
         **{
             field.name: (1.0 - weight) * getattr(first, field.name) + weight * getattr(second, field.name)
