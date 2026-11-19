@@ -23,6 +23,7 @@ ct, cp = propeller.get_coefficients(rpm=6000.0, advance_ratio=0.3)
 | `TablePropeller(diameter_m, data_by_rpm)` | Build a table from your own data |
 | `scaled(diameter_m)` | The propeller at another diameter with its coefficients unchanged: a geometrically similar propeller, without the Reynolds number effects of the size change |
 | `get_coefficients(rpm, advance_ratio)` | Interpolated `Ct` and `Cp`; zero past a band's largest advance ratio |
+| `thrust_torque(rho, airspeed_mps, rpm)` | Thrust and torque; NaN where the interpolated `Cp` is not positive or `Ct` is negative, as past the table's data |
 | `rpm_levels` | Sorted RPM bands |
 
 ## APC Performance Files

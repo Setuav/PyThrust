@@ -25,7 +25,10 @@ class PropellerModel(Protocol):
     def thrust_torque(self, rho: float, airspeed_mps: float, rpm: float) -> tuple[float, float]:
         """Return thrust in N and shaft torque in N m.
 
-        ``rho`` is the air density in kg/m^3. A model returns zero torque where
-        it has no data; the solver treats that condition as having no solution.
+        ``rho`` is the air density in kg/m^3. Where the model has no result, such
+        as outside a table's data, it returns NaN; the solver treats that as no
+        solution. Negative thrust or torque, as for a windmilling propeller, is a
+        result: the solver keeps it in its search and marks an operating point
+        that lands there infeasible.
         """
         ...

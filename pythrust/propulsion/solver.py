@@ -99,7 +99,7 @@ class PropulsionSolver:
                 airspeed_mps,
                 rpm,
             )
-            if torque_nm <= 0.0 or thrust_n < 0.0 or j < 0.0:
+            if not (math.isfinite(thrust_n) and math.isfinite(torque_nm)) or j < 0.0:
                 return float("inf")
             v_motor = v_back + current_a * motor.get_winding_resistance(current_a)
             battery_current_for_voltage_a = throttle * current_a
@@ -173,11 +173,11 @@ class PropulsionSolver:
     def _lowest_valid_rpm(g: Callable[[float], float], rpm_low: float, rpm_high: float) -> float:
         """Return the lowest RPM in ``[rpm_low, rpm_high]`` where ``g`` is finite.
 
-        The bracket starts at the propeller data's largest advance ratio, where the
-        coefficients can already describe a windmilling propeller. The coefficients
-        become valid as the RPM rises, so the search moves the bracket's lower end
-        onto the first valid RPM. ``g(rpm_low)`` is not finite; the method returns
-        ``rpm_high`` when no sample is valid.
+        The bracket starts at the propeller model's largest advance ratio, where a
+        table can already be out of data. The model gives a result as the RPM
+        rises, so the search moves the bracket's lower end onto the first RPM
+        with one. ``g(rpm_low)`` is not finite; the method returns ``rpm_high``
+        when no sample is valid.
         """
         samples = [rpm_low + (rpm_high - rpm_low) * index / 32 for index in range(33)]
         valid = next((index for index, rpm in enumerate(samples) if math.isfinite(g(rpm))), None)

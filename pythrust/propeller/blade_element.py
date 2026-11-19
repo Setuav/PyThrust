@@ -76,7 +76,7 @@ class BladeElementPropeller:
         return math.pi * (r75 / radius) * math.tan(phi)
 
     def thrust_torque(self, rho: float, airspeed_mps: float, rpm: float) -> Tuple[float, float]:
-        """Thrust in N and torque in N m; zero for both where a station has no solution."""
+        """Thrust in N and torque in N m; zero at zero RPM, NaN where a station has no solution."""
         omega = float(rpm) * math.pi / 30.0
         if omega <= 0.0:
             return 0.0, 0.0
@@ -94,7 +94,7 @@ class BladeElementPropeller:
             self.speed_of_sound,
         )
         if not s.converged.all():
-            return 0.0, 0.0
+            return math.nan, math.nan
         w = np.hypot(s.axial_velocity, s.tangential_velocity)
         # Gamma * eps = Gamma * cd / cl = W c cd / 2, finite where cl is zero.
         profile = 0.5 * w * self._chord * s.cd
