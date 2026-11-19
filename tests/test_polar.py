@@ -102,6 +102,11 @@ def test_flat_plate_beyond_neuralfoils_range(naca4412):
     np.testing.assert_allclose(cd, 2 * np.sin(alpha) ** 2, atol=1e-12)
 
 
+def test_default_n_crit_is_7():
+    assert AirfoilPolar.from_neuralfoil.__defaults__[0] == 7.0
+    assert apc_airfoil_polars() is not None and apc_airfoil_polars()["E63"] is apc_airfoil_polars(7.0)["E63"]
+
+
 def test_zero_lift_angle():
     """The lowest over the Reynolds numbers; near Re 5e4 the NACA 0012's lift bends about zero angle."""
     symmetric = AirfoilPolar.from_neuralfoil("0012")
@@ -116,8 +121,8 @@ def test_dat_file_and_coordinates_give_the_naca_polar(tmp_path, naca4412):
     path = tmp_path / "naca4412.dat"
     path.write_text("NACA 4412\n" + "\n".join(f"{x:.16f} {y:.16f}" for x, y in coordinates) + "\n")
 
-    from_file = AirfoilPolar.from_neuralfoil(path)
-    from_coordinates = AirfoilPolar.from_neuralfoil(coordinates)
+    from_file = AirfoilPolar.from_neuralfoil(path, n_crit=9.0)
+    from_coordinates = AirfoilPolar.from_neuralfoil(coordinates, n_crit=9.0)
 
     np.testing.assert_allclose(from_file.cl, naca4412.cl, rtol=1e-8)
     np.testing.assert_array_equal(from_coordinates.cl, naca4412.cl)

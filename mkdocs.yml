@@ -87,5 +87,6 @@ nav:
       - Battery: reference/battery.md
       - Propulsion Solver: reference/propulsion_solver.md
       - OpenMDAO: reference/openmdao.md
+      - Validation: reference/validation.md
   - Developer Guide:
       - Development & Testing: development.md

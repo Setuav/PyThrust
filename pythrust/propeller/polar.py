@@ -49,7 +49,7 @@ class AirfoilPolar:
     def from_neuralfoil(
         cls,
         airfoil: AirfoilShape,
-        n_crit: float = 9.0,
+        n_crit: float = 7.0,
         name: Optional[str] = None,
         model_size: str = "xlarge",
     ) -> "AirfoilPolar":
@@ -60,7 +60,8 @@ class AirfoilPolar:
         ``CL = sin(2 alpha)`` and ``CD = 2 sin(alpha)^2``; in between the table interpolates.
 
         ``n_crit`` is the transition amplification factor: 9 for a quiet wind tunnel, lower
-        for a turbulent free stream. ``model_size`` selects NeuralFoil's network.
+        for a turbulent free stream. The default, 7, fits UIUC's measurements of 75 APC
+        propellers best, with 5 nearly as well. ``model_size`` selects NeuralFoil's network.
         """
         import setuav_neuralfoil as nf
 

@@ -38,7 +38,7 @@ def _apc_airfoil_polars(n_crit: float) -> Dict[str, AirfoilPolar]:
     }
 
 
-def apc_airfoil_polars(n_crit: float = 9.0) -> Dict[str, AirfoilPolar]:
+def apc_airfoil_polars(n_crit: float = 7.0) -> Dict[str, AirfoilPolar]:
     """Polars of the airfoils in APC geometry files: E63, APC12 (NACA 4412) and CLARK-Y.
 
     The result goes straight to ``read_apc_geometry(path, apc_airfoil_polars())``. The polars are

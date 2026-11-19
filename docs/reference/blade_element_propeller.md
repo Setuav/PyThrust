@@ -123,30 +123,17 @@ computed with NeuralFoil:
 from pythrust.io import read_apc_geometry
 from pythrust.propeller import BladeElementPropeller, apc_airfoil_polars
 
-blade = read_apc_geometry("10x5E-PERF.PE0", apc_airfoil_polars(n_crit=5.0))
+blade = read_apc_geometry("10x5E-PERF.PE0", apc_airfoil_polars())
 propeller = BladeElementPropeller(blade)
 ```
 
 Between the two transition radii the stations mix the two airfoils: polars in a
 `BlendedPolar`, `BladeSection` parameters linearly.
 
-Against the UIUC wind-tunnel measurement of the APC 10x5E, from 2500 to 6700
-RPM static and at 6005 RPM in forward flight, the mean errors are:
-
-| Coefficient | Generic `BladeSection` | Polars, `n_crit` 9 | Polars, `n_crit` 5 | APC's table |
-|---|---:|---:|---:|---:|
-| Static $C_T$ | 8.2% | 12.5% | 4.0% | 5.1% |
-| Static $C_P$ | 19.1% | 3.4% | 3.0% | 3.9% |
-| Forward $C_T$ | 5.1% | 15.5% | 4.0% | 5.4% |
-| Forward $C_P$ | 5.6% | 13.2% | 9.2% | 4.4% |
-| Forward efficiency | 2.7% | 2.7% | 5.8% | 1.3% |
-
-The generic section is the example of the QPROP user guide. With `n_crit` 9
-the low Reynolds number of the slow static points, about 3e4, separates the
-laminar flow and the static thrust falls up to 32% short; `n_crit` 5, for a
-turbulent free stream, follows the measurement. In forward flight the polars
-give about 10% too little power past an advance ratio of 0.25, so too high an
-efficiency.
+Against UIUC's wind-tunnel measurements of 75 APC propellers, this model is
+about as accurate as APC's own performance tables: some 10% mean error per
+propeller in thrust and power, less than the tables' in thrust. See
+[Validation](validation.md).
 
 ## Airfoil Polars
 
@@ -159,7 +146,7 @@ Lednicer `.dat` file, or coordinates:
 ```python
 from pythrust.propeller import AirfoilPolar
 
-naca = AirfoilPolar.from_neuralfoil("NACA 4412", n_crit=5.0)
+naca = AirfoilPolar.from_neuralfoil("NACA 4412")
 e387 = AirfoilPolar.from_neuralfoil("e387.dat")
 cl, cd = naca.coefficients(alpha_rad=0.1, reynolds=8e4, mach=0.1)
 ```
@@ -173,6 +160,7 @@ cl, cd = naca.coefficients(alpha_rad=0.1, reynolds=8e4, mach=0.1)
 - Lift is divided by $\sqrt{1 - M^2}$ (Prandtl-Glauert).
 - `n_crit` is the amplification factor at which the boundary layer turns
   turbulent: 9 for a quiet wind tunnel, lower for a turbulent free stream.
+  The default, 7, fits the [validation](validation.md) measurements best.
 - Building one table takes about 0.2 s; `apc_airfoil_polars()` caches its
   polars per `n_crit`.
 
