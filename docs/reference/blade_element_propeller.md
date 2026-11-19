@@ -68,12 +68,45 @@ and uses `R` as written, so a file that gives `R` with `Rfac` other than 1 or
 Without `R`, or with the radii in metres, the two agree. `R` must not be less
 than the last station's radius.
 
+## UIUC Geometry Files
+
+The [UIUC Propeller Database](https://m-selig.ae.illinois.edu/props/propDB.html)
+gives the measured geometry of many small propellers next to their wind-tunnel
+data. A geometry file, such as `apce_10x5_geom.txt`, has a header line
+`r/R c/R beta` and one station per line from root to tip: radius and chord as
+fractions of the tip radius, and the blade angle in degrees.
+
+The file gives neither the diameter, the blade count nor the airfoil, so
+`pythrust.io.read_uiuc_geometry` takes them as arguments; the one `section`
+applies to every station:
+
+```python
+from pythrust.io import read_uiuc_geometry
+from pythrust.propeller import BladeElementPropeller, BladeSection
+
+# The example section of the QPROP user guide, a generic starting point.
+section = BladeSection(
+    cl0=0.50, cl_alpha_per_rad=5.8, cl_min=-0.3, cl_max=1.2,
+    cd0=0.028, cd2_upper=0.050, cd2_lower=0.020, cl_at_cd0=0.5,
+    reynolds_ref=70000.0, reynolds_exp=-0.7,
+)
+blade = read_uiuc_geometry("apce_10x5_geom.txt", diameter_m=0.254, section=section)
+propeller = BladeElementPropeller(blade)
+```
+
+The section parameters set the accuracy. With the generic section above, the
+APC Thin Electric 10x5 gives a static thrust coefficient 7–15% above the UIUC
+measurement and a power coefficient 16–42% above it, the largest gap at the
+lowest RPM. Section parameters fitted to the propeller's airfoil narrow the gap.
+
 ## API
 
 ### Blade Geometry
 
-`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file into a
-`BladeGeometry`, the input of a blade-element propeller model:
+`pythrust.io.read_qprop_propeller(path)` reads a QPROP propeller file, and
+`pythrust.io.read_uiuc_geometry(path, diameter_m, section, blade_count=2)` a
+UIUC geometry file, into a `BladeGeometry`, the input of a blade-element
+propeller model:
 
 | Field | Unit | Description |
 |---|---:|---|

@@ -7,7 +7,7 @@ a manufacturer's file and pick the model that reads it.
 | Model | Input | Page |
 |---|---|---|
 | `TablePropeller` | Tabulated thrust and power coefficients, such as an APC performance file | [Tabulated Propeller](table_propeller.md) |
-| `BladeElementPropeller` | Blade geometry and airfoil parameters, such as a QPROP propeller file | [Blade-Element Propeller](blade_element_propeller.md) |
+| `BladeElementPropeller` | Blade geometry and airfoil parameters, such as a QPROP propeller file or a UIUC geometry file | [Blade-Element Propeller](blade_element_propeller.md) |
 
 ## Model Interface
 

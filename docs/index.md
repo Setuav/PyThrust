@@ -20,7 +20,7 @@ Electric UAV propulsion design usually crosses several domains: aerodynamics, mo
 
 -   **Manufacturer data**
 
-    Read APC performance files, or QPROP propeller and motor files for a blade-element model, and enter motor datasheet constants, instead of sizing only against abstract component assumptions.
+    Read APC performance files, QPROP propeller and motor files or UIUC geometry files for a blade-element model, and enter motor datasheet constants, instead of sizing only against abstract component assumptions.
 
 -   **Battery-aware analysis**
 
