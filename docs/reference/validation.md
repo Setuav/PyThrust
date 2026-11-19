@@ -68,20 +68,6 @@ Mean signed error over all propellers of a family:
 - **Slow Flyer**: forward thrust 17% low. These thin, flexible blades bend under load, which
   neither computation models; expect errors of 15 to 20%.
 
-Two explanations were tried and did not hold:
-
-- **Thickness.** APC scales its airfoils to a thickness ratio that varies along the blade: 14% at
-  0.75 R and up to 26% near the hub on Sport propellers, against CLARK-Y's own 11.7%. Scaling the
-  airfoils' thickness to each station, about the camber line or with it, raised the mean static
-  power error from 13.7% to 17.4% and did not close the Sport gap: at these Reynolds numbers
-  NeuralFoil's thick sections lose lift, likely more than a rotating blade's inner sections do.
-- **Geometry version.** APC's files are from 2025, UIUC's tests from 2005 to 2015. On the 30
-  propellers UIUC also measured, the blade angle at 0.75 R differs from APC's file by −2.2 to
-  +3.3 degrees, yet the model on UIUC's measured geometry is no closer to the measurements
-  (forward thrust error 18.7% against 13.2%).
-
-![Geometry: UIUC against APC](../images/validation/geometry.png)
-
 ## Operating points
 
 With a fixed-voltage battery and a motor whose no-load speed is 1.25 times the propeller's median
@@ -98,6 +84,14 @@ the truth (49 test propellers, mean absolute error):
 
 The motor holds the RPM within 0.3%, so the power error shows in the current and the thrust error
 in the thrust, each somewhat smaller than in the coefficients.
+
+## Range
+
+The measurements cover APC propellers of 7 to 21 inches, mostly below 8000 RPM. Above that, on
+APC's own grid of RPM and advance ratio, the model gives 5 to 10% more thrust and power than
+APC's tables, with no measurement to say which is right. The section lift has the
+Prandtl-Glauert factor but the drag does not rise as the tip nears the speed of sound, so results
+at high tip Mach numbers are outside what was validated.
 
 ## Reproducing
 

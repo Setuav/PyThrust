@@ -85,12 +85,10 @@ def catalog() -> list[dict]:
             entry = propellers.setdefault(
                 key,
                 dict(key=key, family=family, diameter_in=float(diameter), pitch_in=float(pitch),
-                     static=[], forward=[], geometry=None, volume=volume),
+                     static=[], forward=[], volume=volume),
             )
             url = f"{UIUC}/volume-{volume}/data/{name}.txt"
-            if rest == "geom":
-                entry["geometry"] = url
-            elif rest.startswith("static"):
+            if rest.startswith("static"):
                 entry["static"].append(url)
             elif re.search(r"_\d+$", rest):
                 entry["forward"].append(url)
@@ -111,9 +109,6 @@ def download(entry: dict) -> dict | None:
     local = dict(entry)
     local["static"] = [str(fetch(u, folder / u.rsplit("/", 1)[1])) for u in entry["static"][:1]]
     local["forward"] = [str(p) for p in (fetch(u, folder / u.rsplit("/", 1)[1]) for u in entry["forward"]) if p]
-    if entry["geometry"]:
-        geometry = fetch(entry["geometry"], folder / entry["geometry"].rsplit("/", 1)[1])
-        local["geometry"] = str(geometry) if geometry else None
     name = entry["apc_name"]
     pe0 = fetch(APC_GEOMETRY.format(name=name), CACHE / "apc" / f"{name}-PERF.PE0")
     per3 = fetch(APC_PERFORMANCE.format(name=name), CACHE / "apc" / f"PER3_{name}.dat")
@@ -199,7 +194,6 @@ def evaluate(entry: dict) -> dict:
         out["models"][name] = dict(static_ct=s_ct, static_cp=s_cp, forward_ct=f_ct, forward_cp=f_cp,
                                    forward_eta=f_eta, eta_max=eta_max)
     out["operating_points"] = operating_points(entry, all_models, diameter)
-    out["geometry_check"] = geometry_check(entry)
     return out
 
 
@@ -235,25 +229,6 @@ def operating_points(entry: dict, all_models: dict, diameter: float) -> dict:
                     thrust=point.thrust_n / reference.thrust_n - 1,
                 )
     return result
-
-
-def geometry_check(entry: dict) -> dict | None:
-    """Blade angle and chord at 75% radius: APC's current file against UIUC's measurement."""
-    if not entry.get("geometry"):
-        return None
-    from pythrust.io import read_apc_geometry
-    from pythrust.propeller import BladeSection
-
-    section = BladeSection(0.5, 5.8, -0.3, 1.2, 0.028, 0.05, 0.02, 0.5, 7e4, -0.7)
-    apc = read_apc_geometry(entry["pe0"], section)
-    uiuc = np.array([r for r in rows(entry["geometry"]) if len(r) == 3])
-    r_apc = np.array(apc.r_m) / apc.radius_m
-    return dict(
-        beta_apc_deg=float(np.degrees(np.interp(0.75, r_apc, apc.blade_angle_rad))),
-        beta_uiuc_deg=float(np.interp(0.75, uiuc[:, 0], uiuc[:, 2])),
-        chord_apc=float(np.interp(0.75, r_apc, np.array(apc.chord_m) / apc.radius_m)),
-        chord_uiuc=float(np.interp(0.75, uiuc[:, 0], uiuc[:, 1])),
-    )
 
 
 # ----------------------------------------------------------------------------- summary

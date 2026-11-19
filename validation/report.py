@@ -94,18 +94,9 @@ def main():
                 cells.append(f"{q} {np.mean(v):.1f}% (n={len(v)})")
             print(f"  {case:6s} {names[model]:22s} " + ", ".join(cells))
 
-    # Geometry check.
-    checks = [r for r in results if r["geometry_check"]]
-    d_beta = np.array([c["geometry_check"]["beta_uiuc_deg"] - c["geometry_check"]["beta_apc_deg"] for c in checks])
-    d_chord = np.array([c["geometry_check"]["chord_uiuc"] / c["geometry_check"]["chord_apc"] - 1 for c in checks])
-    print(f"\nGeometry at 0.75 R, UIUC minus APC ({len(checks)} propellers): beta median {np.median(d_beta):+.2f} deg,"
-          f" range {d_beta.min():+.2f}..{d_beta.max():+.2f}; chord median {100*np.median(d_chord):+.1f}%,"
-          f" range {100*d_chord.min():+.1f}..{100*d_chord.max():+.1f}%")
-
     figure_errors(test, models, names, chosen)
     figure_bias_by_size(test, names, chosen)
     figure_operating_points(test, models, names, chosen)
-    figure_geometry(checks, d_beta, d_chord)
 
 
 def color(model, chosen):
@@ -169,21 +160,6 @@ def figure_operating_points(test, models, names, chosen):
     fig.suptitle("Operating point with a fixed motor and battery, against the measured table", fontsize=13)
     fig.tight_layout()
     fig.savefig(FIGURES / "operating_points.png", dpi=100)
-
-
-def figure_geometry(checks, d_beta, d_chord):
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
-    axes[0].hist(d_beta, bins=15, color="#2e86ab", alpha=0.85)
-    axes[0].set_title("Blade angle at 0.75 R: UIUC − APC file")
-    axes[0].set_xlabel("deg")
-    axes[1].hist(100 * d_chord, bins=15, color="#2a9d8f", alpha=0.85)
-    axes[1].set_title("Chord at 0.75 R: UIUC / APC file − 1")
-    axes[1].set_xlabel("%")
-    for ax in axes:
-        ax.grid(alpha=0.3)
-    fig.suptitle(f"Measured (UIUC) and current APC geometry, {len(checks)} propellers", fontsize=12)
-    fig.tight_layout()
-    fig.savefig(FIGURES / "geometry.png", dpi=100)
 
 
 if __name__ == "__main__":
