@@ -83,7 +83,9 @@ def read_apc_geometry(
 
     The file gives the chord and blade angle (``TWIST``) at stations in
     inches, the tip radius, the hub transition radius and the blade count.
-    Stations inside the hub transition are left out. The blade angle is that of
+    Stations inside the hub transition are left out. The tip radius is the
+    file's ``RADIUS``, or the last station's where that is larger: ``RADIUS``
+    is rounded to two decimals. The blade angle is that of
     the chord line, between the leading- and trailing-edge mold parting lines;
     the file also gives the lower-surface (Prather gauge) pitch, which is
     lower.
@@ -145,7 +147,7 @@ def read_apc_geometry(
     try:
         return BladeGeometry(
             blade_count=blade_count,
-            radius_m=radius_in * _INCH_TO_M,
+            radius_m=max(radius_in * _INCH_TO_M, r_m[-1]) if r_m else radius_in * _INCH_TO_M,
             r_m=tuple(r_m),
             chord_m=tuple(chord_m),
             blade_angle_rad=tuple(blade_angle_rad),

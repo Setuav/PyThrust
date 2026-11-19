@@ -138,3 +138,13 @@ def test_apc_geometry_gives_a_working_propeller_model():
 
     assert propeller.diameter_m == pytest.approx(10.0 * INCH)
     assert thrust > 0.0 and torque > 0.0
+
+
+def test_read_apc_geometry_tip_radius_is_at_least_the_last_station(tmp_path):
+    """RADIUS is rounded to two decimals: 13x8E gives 6.47 in, its last station 6.475 in."""
+    path = tmp_path / "prop.PE0"
+    path.write_text(GEOMETRY_FILE.read_text().replace(" RADIUS:  5.00", " RADIUS:  4.99"))
+
+    blade = read_apc_geometry(path, E63)
+
+    assert blade.radius_m == pytest.approx(5.0 * INCH)

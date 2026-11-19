@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 from pythrust.battery import FixedVoltageBattery
-from pythrust.io import read_uiuc_geometry
+from pythrust.io import read_uiuc_geometry, read_uiuc_performance
 from pythrust.motor import MotorSpec
 from pythrust.propeller import BladeElementPropeller, BladeGeometry, BladeSection
 from pythrust.propulsion import PropulsionSolver, SystemSpec
@@ -108,3 +108,50 @@ def test_solver_runs_with_a_uiuc_propeller():
 
     assert point.is_feasible
     assert 0.0 < point.propeller_efficiency < 1.0
+
+
+STATIC = DATA / "apce_10x5_static_pg0819.txt"
+FORWARD = DATA / "apce_10x5_kt0823_6005.txt"
+
+
+def test_performance_bands_start_at_the_static_point():
+    table = read_uiuc_performance(DIAMETER, STATIC, [FORWARD])
+
+    assert table.diameter_m == DIAMETER
+    assert table.rpm_levels == [6005.0]
+    points = table.data_by_rpm[6005.0]
+    # Static: 5869 RPM CT 0.0977 CP 0.0373, 6146 RPM CT 0.0983 CP 0.0374.
+    assert (points[0].j, points[0].ct, points[0].cp) == pytest.approx(
+        (0.0, 0.0977 + (6005 - 5869) / (6146 - 5869) * 0.0006, 0.0373 + (6005 - 5869) / (6146 - 5869) * 0.0001)
+    )
+    assert (points[1].j, points[1].ct, points[1].cp) == (0.093, 0.0942, 0.0385)
+    assert (points[-1].j, points[-1].ct, points[-1].cp) == (0.484, 0.0338, 0.0249)
+    assert len(points) == 18
+
+
+def test_performance_from_static_data_only():
+    table = read_uiuc_performance(DIAMETER, STATIC)
+
+    assert len(table.rpm_levels) == 16
+    assert table.get_coefficients(2508.0, 0.0) == pytest.approx((0.0914, 0.0374))
+
+
+def test_performance_needs_the_rpm_in_a_forward_file_name(tmp_path):
+    path = tmp_path / "apce_10x5_forward.txt"
+    path.write_text(FORWARD.read_text())
+
+    with pytest.raises(ValueError, match="does not end in the test RPM"):
+        read_uiuc_performance(DIAMETER, forward=[path])
+
+
+def test_performance_rejects_a_malformed_row(tmp_path):
+    path = tmp_path / "apce_10x5_kt0823_6005.txt"
+    path.write_text("J CT CP eta\n0.1 0.09 0.04\n")
+
+    with pytest.raises(ValueError, match="apce_10x5_kt0823_6005.txt:2: expected 4 numbers"):
+        read_uiuc_performance(DIAMETER, forward=[path])
+
+
+def test_performance_needs_some_data():
+    with pytest.raises(ValueError, match="no measurements"):
+        read_uiuc_performance(DIAMETER)
